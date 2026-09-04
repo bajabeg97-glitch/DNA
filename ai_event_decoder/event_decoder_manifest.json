@@ -1,0 +1,12 @@
+{
+  "schema": "dna-event-decoder-dataset",
+  "version": "1.0",
+  "songs": 163,
+  "samples": 16250,
+  "train": 12747,
+  "validation": 1766,
+  "holdout": 1737,
+  "velocityUsed": false,
+  "sourceHash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+  "datasetHash": "a96da81c160a2b8a0b10f8585716f5a3375994dcbd827911258b564673026970"
+}

@@ -1,0 +1,999 @@
+{
+  "targetBindings": [
+    {
+      "requestId": "i1cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i1cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i1cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i1cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i1cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i2cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i2cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i2cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i2cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "i2cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v1cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v1cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v1cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v1cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v1cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v2cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v2cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v2cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v2cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v2cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:percussion",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "targetTrackUid": "trk-70327a19925883cd95e4",
+      "targetTrackIndex": 2,
+      "targetTrackNumber": 3,
+      "channelIndex": 10,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 27,
+      "factoryProfileIds": [
+        "079.825.782",
+        "305.311.683",
+        "983.751.646",
+        "991.664.210"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:riff",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "targetTrackUid": "trk-fd9d43c448c6144b2031",
+      "targetTrackIndex": 5,
+      "targetTrackNumber": 6,
+      "channelIndex": 13,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v3cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:percussion",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "targetTrackUid": "trk-70327a19925883cd95e4",
+      "targetTrackIndex": 2,
+      "targetTrackNumber": 3,
+      "channelIndex": 10,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:riff",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "targetTrackUid": "trk-fd9d43c448c6144b2031",
+      "targetTrackIndex": 5,
+      "targetTrackNumber": 6,
+      "channelIndex": 13,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "v4cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f1cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f1cv1:percussion",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "targetTrackUid": "trk-70327a19925883cd95e4",
+      "targetTrackIndex": 2,
+      "targetTrackNumber": 3,
+      "channelIndex": 10,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f1cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f1cv1:riff",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "targetTrackUid": "trk-fd9d43c448c6144b2031",
+      "targetTrackIndex": 5,
+      "targetTrackNumber": 6,
+      "channelIndex": 13,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f2cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f2cv1:percussion",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "targetTrackUid": "trk-70327a19925883cd95e4",
+      "targetTrackIndex": 2,
+      "targetTrackNumber": 3,
+      "channelIndex": 10,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f2cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "f2cv1:riff",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "targetTrackUid": "trk-fd9d43c448c6144b2031",
+      "targetTrackIndex": 5,
+      "targetTrackNumber": 6,
+      "channelIndex": 13,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e1cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e1cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e1cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e1cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e1cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e2cv1:drums",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "targetTrackIndex": 1,
+      "targetTrackNumber": 2,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e2cv1:bass",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "targetTrackIndex": 0,
+      "targetTrackNumber": 1,
+      "channelIndex": 8,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e2cv1:guitar",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "targetTrackIndex": 3,
+      "targetTrackNumber": 4,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e2cv1:accompaniment",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "targetTrackIndex": 4,
+      "targetTrackNumber": 5,
+      "channelIndex": 12,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    },
+    {
+      "requestId": "e2cv1:pad",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "targetTrackIndex": 6,
+      "targetTrackNumber": 7,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "confirmation": "EXACT_FACTORY_SOFTWARE",
+      "deviceConfirmed": false
+    }
+  ]
+}

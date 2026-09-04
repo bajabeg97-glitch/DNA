@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/solo-safety-report-v1.schema.json",
+  "title": "DNA Premium SoloSafety report v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["passed", "trackUid", "trackIndex", "trackNumber", "channelIndex", "channelNumber", "beforeHash", "afterProtectedHash", "protectedNoteCount", "missingNotes"],
+  "properties": {
+    "passed": {"type": "boolean"},
+    "trackUid": {"type": "string", "pattern": "^trk-[0-9a-f]{20}(-[1-9][0-9]*)?$"},
+    "trackIndex": {"type": "integer", "minimum": 0, "maximum": 15},
+    "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+    "channelIndex": {"type": "integer", "minimum": 0, "maximum": 15},
+    "channelNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+    "beforeHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "afterProtectedHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "protectedNoteCount": {"type": "integer", "minimum": 0},
+    "missingNotes": {"type": "array", "items": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "integer"}}}
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "dna-premium-quality-calibration-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "corpusHash": "d84320f2cb4d70a4d0228f94016f1555845b1e70bf1dabc9c13627302f62ce95",
+  "vaultHash": "83702c418033cfb730e65d04569a049198947c507c33958813a6971478eec2b5",
+  "mode": "SOFTWARE_STRUCTURAL_NORMALIZATION_ONLY",
+  "trainingCaseIds": [
+    "song19-01",
+    "song19-02",
+    "song19-03",
+    "song19-05",
+    "song19-06",
+    "song19-07",
+    "song19-09",
+    "song19-10",
+    "song19-11",
+    "song19-13",
+    "song19-14",
+    "song19-15",
+    "song19-17",
+    "song19-18",
+    "song19-19",
+    "quality37-21",
+    "quality37-22",
+    "quality37-23",
+    "quality37-25",
+    "quality37-26",
+    "quality37-27",
+    "quality37-29",
+    "quality37-30",
+    "quality37-31"
+  ],
+  "holdoutCaseIdsSealed": [
+    "song19-04",
+    "song19-08",
+    "song19-12",
+    "song19-16",
+    "song19-20",
+    "quality37-24",
+    "quality37-28",
+    "quality37-32"
+  ],
+  "trainingCaseCount": 24,
+  "holdoutCaseCount": 8,
+  "structuralNormalizers": {
+    "noteCount": {
+      "median": 118.0,
+      "medianAbsoluteDeviation": 0.0,
+      "minimum": 102.0,
+      "maximum": 134.0
+    },
+    "pitchSpan": {
+      "median": 46.0,
+      "medianAbsoluteDeviation": 1.0,
+      "minimum": 34.0,
+      "maximum": 58.0
+    },
+    "durationTicks": {
+      "median": 15350.0,
+      "medianAbsoluteDeviation": 0.0,
+      "minimum": 15350.0,
+      "maximum": 15350.0
+    }
+  },
+  "metricWeights": {
+    "harmony": 0.2,
+    "groove": 0.16,
+    "registerCollision": 0.14,
+    "densityCurve": 0.14,
+    "transitionContinuity": 0.14,
+    "repetition": 0.1,
+    "endingResolution": 0.12
+  },
+  "qualityControls": {
+    "version": "1.0",
+    "premiumVariantId": "C",
+    "minimumMetricScore": 2.5,
+    "minimumAutomatedOverall": 3.5,
+    "minimumHumanOverallMedian": 4.0,
+    "minimumPremiumPreferenceRate": 0.7,
+    "minimumHumanEvaluators": 2,
+    "maximumHarmonyViolationRate": 0.45,
+    "maximumRegisterCollisionRate": 0.12
+  },
+  "metricWeightsChanged": false,
+  "thresholdsChanged": false,
+  "humanListeningClaim": false,
+  "productionExpressionClaim": false,
+  "sealedBeforeHoldoutEvaluation": true,
+  "calibrationHash": "61160f8edb49a75364889a61ec31f4be29745a66c0b5c6b1827992afbb63a0d1"
+}

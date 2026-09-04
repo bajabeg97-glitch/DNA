@@ -1,0 +1,577 @@
+{
+  "schema": "dna-premium-song-map",
+  "version": "2.0",
+  "source": {
+    "fileName": "session26-reference.mid",
+    "bytes": 213,
+    "sha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "format": 1,
+    "ppq": 480,
+    "trackCount": 4,
+    "noteCount": 12
+  },
+  "sourceSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+  "ppq": 480,
+  "endTick": 2040,
+  "tempoMap": [
+    {
+      "tick": 0,
+      "bpm": 120.0,
+      "microsecondsPerQuarter": 500000,
+      "sourceTrackIndex": 0
+    }
+  ],
+  "meterMap": [
+    {
+      "tick": 0,
+      "numerator": 4,
+      "denominator": 4,
+      "sourceTrackIndex": -1
+    }
+  ],
+  "bars": [
+    {
+      "bar": 1,
+      "startTick": 0,
+      "endTick": 1920,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "bar": 2,
+      "startTick": 1920,
+      "endTick": 2040,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "beatGrid": [
+    {
+      "tick": 0,
+      "bar": 1,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 480,
+      "bar": 1,
+      "beat": 2,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 960,
+      "bar": 1,
+      "beat": 3,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 1440,
+      "bar": 1,
+      "beat": 4,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 1920,
+      "bar": 2,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 4,
+      "denominator": 4
+    }
+  ],
+  "key": {
+    "root": 4,
+    "mode": "minor",
+    "name": "Em",
+    "confidence": 0.3229,
+    "source": "duration-weighted-pitch-class-profile"
+  },
+  "chordCells": [
+    {
+      "cellIndex": 0,
+      "bar": 1,
+      "part": 1,
+      "startTick": 0,
+      "endTick": 960,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "Cmaj7",
+      "root": 0,
+      "quality": "major-seventh",
+      "bass": null,
+      "confidence": 0.7421,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "C",
+          "score": 0.8483
+        },
+        {
+          "symbol": "Em",
+          "score": 0.82634
+        },
+        {
+          "symbol": "Cadd9",
+          "score": 0.7288
+        }
+      ],
+      "uncertainty": [
+        "close-chord-alternatives"
+      ],
+      "noteEvidenceCount": 6,
+      "evidenceWeights": {
+        "harmony": 960.0,
+        "melody": 652.8
+      },
+      "analysisVelocityUsed": false,
+      "decision": "MANUAL_REVIEW"
+    },
+    {
+      "cellIndex": 1,
+      "bar": 1,
+      "part": 2,
+      "startTick": 960,
+      "endTick": 1920,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "C6",
+      "root": 0,
+      "quality": "sixth",
+      "bass": null,
+      "confidence": 0.7255,
+      "coverage": 0.9775,
+      "nonChordToneRatio": 0.0225,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Am7",
+          "score": 0.86156
+        },
+        {
+          "symbol": "Am",
+          "score": 0.82304
+        },
+        {
+          "symbol": "Cmaj7",
+          "score": 0.73604
+        }
+      ],
+      "uncertainty": [
+        "close-chord-alternatives"
+      ],
+      "noteEvidenceCount": 9,
+      "evidenceWeights": {
+        "harmony": 1080.0,
+        "melody": 734.4
+      },
+      "analysisVelocityUsed": false,
+      "decision": "MANUAL_REVIEW"
+    },
+    {
+      "cellIndex": 2,
+      "bar": 2,
+      "part": 1,
+      "startTick": 1920,
+      "endTick": 1980,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "Am",
+      "root": 9,
+      "quality": "minor",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Am7",
+          "score": 0.79312
+        },
+        {
+          "symbol": "Am6",
+          "score": 0.79312
+        },
+        {
+          "symbol": "C6",
+          "score": 0.76169
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 60.0,
+        "melody": 40.8
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 3,
+      "bar": 2,
+      "part": 2,
+      "startTick": 1980,
+      "endTick": 2040,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "Am",
+      "root": 9,
+      "quality": "minor",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Am7",
+          "score": 0.79312
+        },
+        {
+          "symbol": "Am6",
+          "score": 0.79312
+        },
+        {
+          "symbol": "C6",
+          "score": 0.76169
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 60.0,
+        "melody": 40.8
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-001",
+      "label": "chorus",
+      "startTick": 0,
+      "endTick": 1920,
+      "confidence": 0.72,
+      "evidence": {
+        "kind": "density-phrase-heuristic",
+        "meanOnsets": 12
+      },
+      "decision": "ACCEPT"
+    },
+    {
+      "id": "sec-002",
+      "label": "ending",
+      "startTick": 1920,
+      "endTick": 2040,
+      "confidence": 0.72,
+      "evidence": {
+        "kind": "density-phrase-heuristic",
+        "meanOnsets": 0
+      },
+      "decision": "ACCEPT"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-001",
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "barStart": 1,
+      "barEnd": 1,
+      "density": 12,
+      "trend": 0,
+      "cues": [
+        "pickup"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "phrase-002",
+      "sectionId": "sec-002",
+      "startTick": 1920,
+      "endTick": 2040,
+      "barStart": 2,
+      "barEnd": 2,
+      "density": 0,
+      "trend": 0,
+      "cues": [
+        "break",
+        "ending-phrase"
+      ],
+      "confidence": 0.7
+    }
+  ],
+  "cadences": [
+    {
+      "sectionId": "sec-001",
+      "tick": 1920,
+      "type": "unresolved",
+      "confidence": 0.7255,
+      "evidenceSymbols": [
+        "Cmaj7",
+        "C6"
+      ],
+      "decision": "MANUAL_REVIEW"
+    },
+    {
+      "sectionId": "sec-002",
+      "tick": 2040,
+      "type": "unresolved",
+      "confidence": 0.9988,
+      "evidenceSymbols": [
+        "Am"
+      ],
+      "decision": "MANUAL_REVIEW"
+    }
+  ],
+  "roleSegments": [
+    {
+      "trackUid": "trk-91348a7bd43f05141f5f",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "role": "harmony",
+      "confidence": 0.84,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "",
+        "program": 24,
+        "noteCount": 4,
+        "medianPitch": 56.0,
+        "averageDuration": 540,
+        "polyphonyPeak": 2,
+        "reasons": [
+          "polyphony-or-harmony-program"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-91348a7bd43f05141f5f",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "channelIndex": 11,
+      "channelNumber": 12,
+      "sectionId": "sec-002",
+      "startTick": 1920,
+      "endTick": 2040,
+      "role": "harmony",
+      "confidence": 0.84,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "",
+        "program": 24,
+        "noteCount": 1,
+        "medianPitch": 57,
+        "averageDuration": 360,
+        "polyphonyPeak": 1,
+        "reasons": [
+          "polyphony-or-harmony-program"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-7011fbb5d9807ae262bf",
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "channelIndex": 2,
+      "channelNumber": 3,
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "role": "accompaniment",
+      "confidence": 0.62,
+      "decision": "MANUAL_REVIEW",
+      "evidence": {
+        "trackName": "",
+        "program": 40,
+        "noteCount": 4,
+        "medianPitch": 65.5,
+        "averageDuration": 540,
+        "polyphonyPeak": 2,
+        "reasons": [
+          "mixed-role-evidence"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-7011fbb5d9807ae262bf",
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "channelIndex": 2,
+      "channelNumber": 3,
+      "sectionId": "sec-002",
+      "startTick": 1920,
+      "endTick": 2040,
+      "role": "melody",
+      "confidence": 0.76,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "",
+        "program": 40,
+        "noteCount": 1,
+        "medianPitch": 72,
+        "averageDuration": 360,
+        "polyphonyPeak": 1,
+        "reasons": [
+          "monophonic-contour"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-91223ae1e5498bd7ed27",
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "channelIndex": 3,
+      "channelNumber": 4,
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "role": "accompaniment",
+      "confidence": 0.62,
+      "decision": "MANUAL_REVIEW",
+      "evidence": {
+        "trackName": "",
+        "program": 80,
+        "noteCount": 4,
+        "medianPitch": 70.0,
+        "averageDuration": 540,
+        "polyphonyPeak": 2,
+        "reasons": [
+          "mixed-role-evidence"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-91223ae1e5498bd7ed27",
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "channelIndex": 3,
+      "channelNumber": 4,
+      "sectionId": "sec-002",
+      "startTick": 1920,
+      "endTick": 2040,
+      "role": "melody",
+      "confidence": 0.76,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "",
+        "program": 80,
+        "noteCount": 1,
+        "medianPitch": 76,
+        "averageDuration": 360,
+        "polyphonyPeak": 1,
+        "reasons": [
+          "monophonic-contour"
+        ]
+      }
+    }
+  ],
+  "polyphony": {
+    "globalPeak": 6,
+    "sections": [
+      {
+        "sectionId": "sec-001",
+        "peak": 6
+      },
+      {
+        "sectionId": "sec-002",
+        "peak": 3
+      }
+    ],
+    "method": "full-note-duration-sweep"
+  },
+  "manualReview": [
+    {
+      "kind": "chord",
+      "id": 0,
+      "startTick": 0,
+      "endTick": 960,
+      "confidence": 0.7421,
+      "reasons": [
+        "close-chord-alternatives"
+      ]
+    },
+    {
+      "kind": "chord",
+      "id": 1,
+      "startTick": 960,
+      "endTick": 1920,
+      "confidence": 0.7255,
+      "reasons": [
+        "close-chord-alternatives"
+      ]
+    },
+    {
+      "kind": "role",
+      "id": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "confidence": 0.62,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    },
+    {
+      "kind": "role",
+      "id": "sec-001",
+      "startTick": 0,
+      "endTick": 1920,
+      "confidence": 0.62,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    },
+    {
+      "kind": "cadence",
+      "id": "sec-001",
+      "startTick": 1920,
+      "endTick": 1920,
+      "confidence": 0.7255,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    },
+    {
+      "kind": "cadence",
+      "id": "sec-002",
+      "startTick": 2040,
+      "endTick": 2040,
+      "confidence": 0.9988,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    }
+  ],
+  "confidence": 0.7788,
+  "analysisVelocityUsed": false,
+  "correctionAudit": [],
+  "analysis": {
+    "halfBarHarmony": true,
+    "variableTempo": false,
+    "variableMeter": false,
+    "sourceBytesMutated": false
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "sourceMidiMutated": false,
+    "lowConfidenceRequiresManualReview": true,
+    "trackRolesAreTimeScoped": true
+  },
+  "mapHash": "068835ef7d4468145bd2e01838b222ff9b9fd8f3d9208b462b2d32347f9025c6"
+}

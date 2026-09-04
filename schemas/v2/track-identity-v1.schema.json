@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/track-identity-v1.schema.json",
+  "title": "DNA Premium TrackIdentity v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["trackUid", "trackIndex", "trackNumber", "eventCount", "channelIndices", "channelNumbers", "smf0Merged"],
+  "properties": {
+    "trackUid": {"type": "string", "pattern": "^trk-[0-9a-f]{20}(-[1-9][0-9]*)?$"},
+    "trackIndex": {"type": "integer", "minimum": 0, "maximum": 15},
+    "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+    "eventCount": {"type": "integer", "minimum": 0},
+    "channelIndices": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 0, "maximum": 15}},
+    "channelNumbers": {"type": "array", "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 16}},
+    "smf0Merged": {"type": "boolean"}
+  }
+}

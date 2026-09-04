@@ -1,0 +1,8 @@
+{
+  "schema": "dna-module-import-audit",
+  "version": "1.0",
+  "projectVersion": "4.39.0",
+  "moduleCount": 100,
+  "passed": 100,
+  "failed": []
+}

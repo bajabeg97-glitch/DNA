@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session38-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "pa800-device-capture-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/pa800-device-capture-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "d13f6590d4fbedd62461042bc5e7a4a039ce9c7dc9551fb95a760497938b90c1"
+    },
+    {
+      "name": "device-profile-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/device-profile-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "375e6593fddf39932295126d794e003018d538603f270b8c1056544329fa0ed7"
+    },
+    {
+      "name": "device-certification-report-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/device-certification-report-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "477e0c07bc79c4f42e85ccbe2073e9efa89d7ccc550ebb262adb3b0319046738"
+    }
+  ],
+  "catalogHash": "3a01520302c2eb948a83afe2ba1aa8a55b32b6ac0bf3983328e4843b3865f582"
+}

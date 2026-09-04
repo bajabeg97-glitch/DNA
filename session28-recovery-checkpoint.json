@@ -1,0 +1,31 @@
+{
+  "schema": "dna-premium-workflow-recovery",
+  "version": "1.0",
+  "checkpointId": "checkpoint-5b5cbdbb6d9768b25eb6",
+  "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+  "sourceMidiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+  "cancelledStageId": "VERIFY",
+  "reason": "USER_CANCELLED",
+  "completedStageIds": [
+    "IMPORT",
+    "ANALYZE",
+    "BRIEF",
+    "PLAN",
+    "VARIANTS",
+    "EDIT"
+  ],
+  "resumeStageId": "VERIFY",
+  "selectedVariantId": "C",
+  "locks": {
+    "global": false,
+    "elements": [
+      "v2cv1"
+    ],
+    "lockedTimelineItems": 1,
+    "partialRegenerationAllowed": true
+  },
+  "midiEmbedded": false,
+  "audioEmbedded": false,
+  "readOnly": true,
+  "checkpointHash": "4c21a149a17b845ef313b7bd7da72f42fd6576b8efe51ffe24072a47b4d2d053"
+}

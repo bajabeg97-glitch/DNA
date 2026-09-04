@@ -1,0 +1,113 @@
+{
+  "schema": "dna-premium-feature-matrix",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "softwareBaseline": "3.17",
+  "premiumProductStatus": "PLANNED",
+  "features": [
+    {
+      "session": 15,
+      "id": "baseline-freeze",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED"
+    },
+    {
+      "session": 16,
+      "id": "pa800-mapping-lab",
+      "priority": "P0",
+      "status": "DEVICE_BLOCKED",
+      "blocker": "physical Korg Pa800 required"
+    },
+    {
+      "session": 17,
+      "id": "production-adapter",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 18,
+      "id": "track-identity-solo-safety-2",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 19,
+      "id": "song-understanding-2",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 20,
+      "id": "ai-producer-brief",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 21,
+      "id": "arrangement-graph",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 22,
+      "id": "candidate-variation-engine",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 23,
+      "id": "groove-polyphony-voice-cost",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 24,
+      "id": "solo-expression-director",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 25,
+      "id": "confirmed-articulation-maps",
+      "priority": "P0",
+      "status": "DEVICE_BLOCKED",
+      "blocker": "confirmed device maps required"
+    },
+    {
+      "session": 26,
+      "id": "premium-preview",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 27,
+      "id": "music-quality-evaluator",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 28,
+      "id": "premium-gui",
+      "priority": "P0",
+      "status": "PLANNED"
+    },
+    {
+      "session": 29,
+      "id": "personal-producer-profile",
+      "priority": "P1",
+      "status": "PLANNED"
+    },
+    {
+      "session": 30,
+      "id": "ai-premium-release-gate",
+      "priority": "P0",
+      "status": "PLANNED"
+    }
+  ],
+  "invariants": {
+    "plannedDoesNotMeanImplemented": true,
+    "physicalPa800": "WAITING_FOR_DEVICE",
+    "goldAffectsDynamics": false,
+    "aiWritesFinalMidi": false
+  }
+}

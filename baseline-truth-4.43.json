@@ -1,0 +1,17 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.43.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "claims": {
+    "multiRegionPlanner": true,
+    "globalRepairBudget": true,
+    "replaceAndAugmentSeparatelyBudgeted": true,
+    "nonEmptySoloGenericReplaceBlocked": true,
+    "factoryVelocityAuthority": true,
+    "interactionEvidenceSoftOnly": true
+  },
+  "externalGates": {
+    "humanListening": "PENDING_USER_TEST",
+    "pa800Hardware": "WAITING_FOR_DEVICE"
+  }
+}

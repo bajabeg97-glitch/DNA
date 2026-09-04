@@ -1,0 +1,84 @@
+{
+  "schema": "dna-premium-blind-listening-package",
+  "version": "1.0",
+  "benchmarkId": "blind-392726dc2c8d0f5c203c",
+  "baselineReference": {
+    "schema": "dna-premium-baseline-reference",
+    "version": "1.0",
+    "baselineId": "premium-3.17-98a6d52a09ccc789",
+    "contentHash": "98a6d52a09ccc7899d6a56321c7b9aeb4fc041cd935183d43a90a474f7510ff5",
+    "artifactPath": "premium/baseline/reference-style.mid",
+    "artifactSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+    "policy": "SAME_SOURCE_PAIRED_RENDER_REQUIRED_FOR_LISTENING_CLAIM",
+    "referenceHash": "d56308f757471f94fc3b6911cffe44c5d56566b629a7be019d5074320c21ffd7"
+  },
+  "sourceMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+  "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f",
+  "seed": 2727,
+  "blind": true,
+  "locked": true,
+  "trialCount": 2,
+  "trials": [
+    {
+      "trialId": "trial-001",
+      "clips": [
+        {
+          "position": "left",
+          "clipId": "clip-d90518ae4e636b95bf73",
+          "audioSha256": "a267952767c5a15b8f431346382238d38bc5826b80005c576e98579be559d2f7",
+          "durationSeconds": 2.0,
+          "loudnessMethod": "SESSION26_MATCHED_PROXY"
+        },
+        {
+          "position": "right",
+          "clipId": "clip-f57a83d7776b199c9b95",
+          "audioSha256": "45b3ce38824dd5427b9b37a4314b7d18eacb71684a526758e6bc963644a1028d",
+          "durationSeconds": 2.0,
+          "loudnessMethod": "SESSION26_MATCHED_PROXY"
+        }
+      ],
+      "ratingCategories": [
+        "drum",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "solo",
+        "transition",
+        "overall"
+      ],
+      "prompt": "Choose the preferred clip or TIE, then rate the selected musical result."
+    },
+    {
+      "trialId": "trial-002",
+      "clips": [
+        {
+          "position": "left",
+          "clipId": "clip-f91e61713024d1a221ec",
+          "audioSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe",
+          "durationSeconds": 2.0,
+          "loudnessMethod": "SESSION26_MATCHED_PROXY"
+        },
+        {
+          "position": "right",
+          "clipId": "clip-6136841dfc48e1ca4f78",
+          "audioSha256": "a267952767c5a15b8f431346382238d38bc5826b80005c576e98579be559d2f7",
+          "durationSeconds": 2.0,
+          "loudnessMethod": "SESSION26_MATCHED_PROXY"
+        }
+      ],
+      "ratingCategories": [
+        "drum",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "solo",
+        "transition",
+        "overall"
+      ],
+      "prompt": "Choose the preferred clip or TIE, then rate the selected musical result."
+    }
+  ],
+  "privateKeyHash": "5466c2f5f872eefa989c24cedc76fd251fd58c9d5377b612fccc6624e0a38476",
+  "authority": "PROTOCOL_READY_PROXY_AUDIO_NOT_HUMAN_RESULT",
+  "packageHash": "42f0ccba8a90a52aaa51e690990ec93e36ba78d5ea83ff8bcbe378ac8de52dcf"
+}

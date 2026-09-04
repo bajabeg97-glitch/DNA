@@ -1,0 +1,160 @@
+{
+  "schema": "dna-premium-device-profile",
+  "version": "2.0",
+  "manufacturer": "Korg",
+  "model": "Pa800",
+  "osVersion": "",
+  "serialNumberHash": null,
+  "status": "WAITING_FOR_DEVICE",
+  "styleChannels": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "markerContract": [
+    "i1cv1",
+    "i2cv1",
+    "v1cv1",
+    "v2cv1",
+    "v3cv1",
+    "v4cv1",
+    "f1cv1",
+    "f2cv1",
+    "e1cv1",
+    "e2cv1"
+  ],
+  "soundBindings": [
+    {
+      "channel": 9,
+      "role": "bass",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 10,
+      "role": "drums",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 11,
+      "role": "percussion",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 12,
+      "role": "acc1",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 13,
+      "role": "acc2",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 14,
+      "role": "acc3",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 15,
+      "role": "acc4",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    },
+    {
+      "channel": 16,
+      "role": "acc5",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": ""
+    }
+  ],
+  "articulationMaps": [
+    {
+      "engine": "GUITAR",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerCount": 0
+    },
+    {
+      "engine": "RX",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerCount": 0
+    },
+    {
+      "engine": "DNC",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerCount": 0
+    }
+  ],
+  "polyphony": {
+    "midiNoteCeiling": 54,
+    "voiceCostMeasured": false,
+    "measuredSafeMidiPeak": null,
+    "roleVoiceCosts": []
+  },
+  "evidence": {
+    "captureHash": "913f867b0c0074e8313902feaa6ac1031c99c2b855ca48905fec979a0d696939",
+    "operatorApprovedHash": "",
+    "reportHash": "a2bcde9c8d9c1d4e22da619fa0cd17abd4fd1f73aeedc89d0dce80f65b87734e",
+    "verifiedEvidenceHashes": []
+  },
+  "activation": {
+    "deviceSpecificMapsAllowed": false,
+    "voiceCostModelAllowed": false,
+    "pa800CertifiedLabelAllowed": false,
+    "finalCertifiedMidiExportAllowed": false
+  },
+  "profileHash": "d5452c6240bc14f2cbea3287c09a4953295c8d761739d162d129e3e935457941"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.32.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "focus": "MAX_STRUCTURE_AND_APPLICATION",
+  "implemented": [
+    "central MAX model registry with hashes and role/scope/authority metadata",
+    "unified candidate score breakdown across GOLD/Factory/neural sources",
+    "hard-invalid candidates rejected before ranking",
+    "transition-only autoregressive event candidate gated by learned transitionStrength",
+    "Track Replacement A/B/C reports maxScore and scoreBreakdown per bar",
+    "lazy ai_learning package imports to reduce hidden ETL/runtime coupling",
+    "GET /api/ai-max-status and ai-max-status.bat operational status surface"
+  ],
+  "modelRegistry": {
+    "present": 10,
+    "missing": 0
+  },
+  "authority": {
+    "velocity": "FACTORY_ONLY",
+    "goldVelocity": false,
+    "neuralVelocity": false,
+    "hardValidatorRequired": true,
+    "originalProtectedOutsideTarget": true
+  },
+  "tests": {
+    "cleanFinished": {
+      "passed": 72,
+      "failed": 0,
+      "notes": "5 MAX + 24 core event/replacement/debug + 30 melodic/learning/reconstruct/performance + 13 transition/section/multibar"
+    },
+    "phrasePlannerBatch": {
+      "observedPassedBeforeWrapperTimeout": 4,
+      "status": "UNVERIFIED_TIMEOUT_AFTER_PROGRESS"
+    },
+    "packageSelfcheck": "PASS"
+  },
+  "knownLimitations": [
+    "MAX orchestrator ranks candidates but final production/Pa800 validation remains mandatory",
+    "transition event source reuses trained autoregressive V2 under transition gating; it is not yet a separately trained fill-only checkpoint",
+    "Break marker remains unverified and is never inferred/exported as a confirmed Korg Break",
+    "human listening gate and physical Pa800 certification remain external",
+    "some legacy ETL functions still require repository-root adapters when actually rebuilding datasets, though package import is now lazy"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  }
+}

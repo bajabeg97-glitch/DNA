@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/device-audio-capture-v1.schema.json",
+  "title": "DNA Premium Device Audio Capture",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "authority", "device", "capturedAt", "operatorId", "sourceMidiSha256", "session16EvidenceHash", "notes", "audio", "comparisonAllowed", "certificationAllowed", "pa800DeviceCertified", "captureHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-device-audio-capture"},
+    "version": {"const": "1.0"},
+    "authority": {"const": "DEVICE_AUDIO_COMPARISON_ONLY"},
+    "device": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manufacturer", "model", "osVersion"],
+      "properties": {
+        "manufacturer": {"const": "Korg"},
+        "model": {"const": "Pa800"},
+        "osVersion": {"type": "string", "minLength": 1}
+      }
+    },
+    "capturedAt": {"type": "string", "format": "date"},
+    "operatorId": {"type": "string", "pattern": "^[A-Za-z0-9_.-]{3,64}$"},
+    "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "session16EvidenceHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "notes": {"type": "string", "maxLength": 2000},
+    "audio": {
+      "type": "object", "additionalProperties": false,
+      "required": ["channels", "sampleRate", "sampleWidthBits", "frameCount", "durationSeconds", "measuredRmsDbfs", "measuredPeakDbfs", "wavSha256"],
+      "properties": {
+        "channels": {"enum": [1, 2]},
+        "sampleRate": {"type": "integer", "minimum": 8000, "maximum": 192000},
+        "sampleWidthBits": {"const": 16},
+        "frameCount": {"type": "integer", "minimum": 1},
+        "durationSeconds": {"type": "number", "exclusiveMinimum": 0},
+        "measuredRmsDbfs": {"type": "number", "maximum": 0},
+        "measuredPeakDbfs": {"type": "number", "maximum": 0},
+        "wavSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "comparisonAllowed": {"const": true},
+    "certificationAllowed": {"const": false},
+    "pa800DeviceCertified": {"const": false},
+    "captureHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-certification-authority": false
+}

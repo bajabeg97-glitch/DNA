@@ -1,0 +1,19 @@
+{
+  "track_index": 9,
+  "channel": 13,
+  "start_tick": 1800,
+  "end_tick": 5760,
+  "seed": 806,
+  "intensity": 50,
+  "map_id": "160.100.001",
+  "profile_id": "160.014.001",
+  "requested_actions": [
+    "pick_noise",
+    "release_noise",
+    "position_noise",
+    "phrase_release"
+  ],
+  "allow_synthetic_map": true,
+  "max_generated_events": 16,
+  "existing_tolerance_ticks": 8
+}

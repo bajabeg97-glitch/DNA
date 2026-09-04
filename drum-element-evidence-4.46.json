@@ -1,0 +1,29 @@
+{
+  "schema": "dna-drum-element-evidence",
+  "version": "4.46.0",
+  "gold": {
+    "patterns": 1442,
+    "elements": {
+      "closed-hat": 11789,
+      "crash": 455,
+      "percussion": 8303,
+      "snare": 6064,
+      "tom": 1235,
+      "open-hat": 1535,
+      "kick": 3083,
+      "ride": 330
+    },
+    "authority": "TIMING_GATE_GROOVE_FILL"
+  },
+  "factory": {
+    "profiles": 1421,
+    "authority": "VELOCITY_DEVICE_REFERENCE"
+  },
+  "wiring": {
+    "velocity": "FACTORY_ONLY",
+    "timingGateGroove": "GOLD_PRIMARY_FACTORY_REFERENCE",
+    "repair": "PER_ELEMENT",
+    "generation": "PER_ELEMENT"
+  },
+  "status": "SOFTWARE_COMPLETE"
+}

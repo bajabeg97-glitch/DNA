@@ -1,0 +1,50 @@
+{
+  "schema": "dna-phase4-editor-test-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "realMidi": {
+    "source": "A JA VOLIM ONO T-KORIJENI UZIVO.MID",
+    "format": 0,
+    "tracks": 1,
+    "ppq": 384,
+    "tempo": 174.0,
+    "meter": "4/4",
+    "durationSeconds": 216.754,
+    "originalNotes": 14775,
+    "optimizedNotes": 14708,
+    "channels": 10,
+    "previewTruncated": false
+  },
+  "optimizer": {
+    "qualityBefore": 65.5,
+    "qualityAfter": 94.9,
+    "originalPreviewEndpoint": true,
+    "optimizedPreviewEndpoint": true,
+    "formatPreserved": true,
+    "tracksPreserved": true,
+    "ppqPreserved": true
+  },
+  "gui": {
+    "pianoRoll": true,
+    "playPauseStop": true,
+    "timelineSeek": true,
+    "channelFilter": true,
+    "zoom": true,
+    "originalOptimizedAB": true,
+    "undoRedoDepth": 50,
+    "localAutosave": true,
+    "javascriptSyntax": "pass"
+  },
+  "limits": {
+    "previewNotes": 25000,
+    "previewSeconds": 600,
+    "midiUploadBytes": 64000000
+  },
+  "invariants": {
+    "previewReadOnly": true,
+    "originalOverwritten": false,
+    "goldAffectsDynamics": false,
+    "midiStoredInLocalStorage": false
+  }
+}

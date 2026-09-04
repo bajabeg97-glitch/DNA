@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/device-profile-v1.schema.json",
+  "title": "DNA Premium DeviceProfile v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "manufacturer", "model", "osVersion", "status", "styleChannels", "markerContract", "polyphony", "soundBindings", "evidence"],
+  "properties": {
+    "schema": {"const": "dna-premium-device-profile"},
+    "version": {"const": "1.0"},
+    "manufacturer": {"const": "Korg"},
+    "model": {"const": "Pa800"},
+    "osVersion": {"type": "string", "minLength": 1},
+    "status": {"enum": ["PLANNED", "WAITING_FOR_DEVICE", "DEVICE_TEST_FAILED", "PA800_DEVICE_CERTIFIED"]},
+    "styleChannels": {"type": "array", "minItems": 8, "maxItems": 8, "uniqueItems": true, "items": {"type": "integer", "minimum": 9, "maximum": 16}},
+    "markerContract": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "polyphony": {"type": "object", "additionalProperties": false, "required": ["midiNoteLimitsKnown", "voiceCostMeasured"], "properties": {"midiNoteLimitsKnown": {"type": "boolean"}, "voiceCostMeasured": {"type": "boolean"}, "measuredSafePeak": {"type": ["integer", "null"], "minimum": 1}}},
+    "soundBindings": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}}
+  }
+}

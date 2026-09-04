@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "selectedVariantId": "C",
+  "seed": 2828,
+  "globalLock": false,
+  "elementLocks": [
+    "v2cv1"
+  ],
+  "palette": "HIGH_CONTRAST",
+  "reducedMotion": false
+}

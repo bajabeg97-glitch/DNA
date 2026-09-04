@@ -1,0 +1,238 @@
+{
+  "schema": "dna-continuity-evidence-profiles",
+  "version": "4.34",
+  "velocityUsed": false,
+  "rules": {
+    "factoryVelocityAuthorityPreserved": true,
+    "goldVelocityUsed": false,
+    "neuralVelocityUsed": false,
+    "drumsSmoothed": false,
+    "userListeningFeedback": "Residual chopping strongest on solo tracks; smaller percentage on rhythm section."
+  },
+  "profiles": {
+    "solo": {
+      "role": "solo",
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_SEQUENCE_SOURCE_SOLO",
+      "evidenceCount": 61669,
+      "confidence": 0.92,
+      "durationQn": {
+        "p10": 0.02969,
+        "p25": 0.0401,
+        "p50": 0.05781
+      },
+      "gapQn": {
+        "p25": 0.0,
+        "p50": 0.00208,
+        "p75": 0.01719
+      },
+      "ioiQn": {
+        "p90": 0.24219,
+        "p95": 0.325
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.325
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "third": {
+      "role": "third",
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_THIRD",
+      "evidenceCount": 12051,
+      "confidence": 0.88,
+      "durationQn": {
+        "p10": 0.02969,
+        "p25": 0.0401,
+        "p50": 0.05573
+      },
+      "gapQn": {
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.01562
+      },
+      "ioiQn": {
+        "p90": 0.21094,
+        "p95": 0.375
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.375
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "echo": {
+      "role": "echo",
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_ECHO",
+      "evidenceCount": 45527,
+      "confidence": 0.88,
+      "durationQn": {
+        "p10": 0.02969,
+        "p25": 0.0401,
+        "p50": 0.05781
+      },
+      "gapQn": {
+        "p25": 0.0,
+        "p50": 0.0026,
+        "p75": 0.01927
+      },
+      "ioiQn": {
+        "p90": 0.23958,
+        "p95": 0.31979
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.31979
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "bass": {
+      "role": "bass",
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "evidenceCount": 6281,
+      "confidence": 0.86,
+      "durationQn": {
+        "p10": 0.10417,
+        "p25": 0.15625,
+        "p50": 0.33333
+      },
+      "gapQn": {
+        "p25": 0.13542,
+        "p50": 0.35938,
+        "p75": 0.60417
+      },
+      "ioiQn": {
+        "p90": 0.0,
+        "p95": 0.0
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.15625,
+        "bridgeGapQn": 0.22,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "accompaniment": {
+      "role": "accompaniment",
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "evidenceCount": 4334,
+      "confidence": 0.86,
+      "durationQn": {
+        "p10": 0.04167,
+        "p25": 0.0625,
+        "p50": 0.1875
+      },
+      "gapQn": {
+        "p25": 0.01042,
+        "p50": 0.14583,
+        "p75": 0.25
+      },
+      "ioiQn": {
+        "p90": 0.0,
+        "p95": 0.0
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.0625,
+        "bridgeGapQn": 0.14,
+        "releaseGapQn": 0.005,
+        "phraseLegatoMaxIoiQn": 0.0
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "power_riff": {
+      "role": "power_riff",
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "evidenceCount": 33616,
+      "confidence": 0.86,
+      "durationQn": {
+        "p10": 0.0625,
+        "p25": 0.08333,
+        "p50": 0.125
+      },
+      "gapQn": {
+        "p25": 0.125,
+        "p50": 0.375,
+        "p75": 0.4375
+      },
+      "ioiQn": {
+        "p90": 0.0,
+        "p95": 0.0
+      },
+      "shortGateEvidenceRatio": 0.0,
+      "policy": {
+        "minGateQn": 0.08333,
+        "bridgeGapQn": 0.14,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "rhythm_guitar": {
+      "role": "rhythm_guitar",
+      "source": "FACTORY_STRUMMING_STROKE_EVIDENCE",
+      "evidenceCount": 46995,
+      "confidence": 0.96,
+      "durationQn": {
+        "p10": 0.125,
+        "p25": 0.20833,
+        "p50": 0.27083
+      },
+      "gapQn": {
+        "p25": 0.33333,
+        "p50": 0.66667,
+        "p75": 1.0
+      },
+      "ioiQn": {
+        "p90": 0.0,
+        "p95": 0.0
+      },
+      "shortGateEvidenceRatio": 0.48173,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.07,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    },
+    "guitar": {
+      "role": "guitar",
+      "source": "FACTORY_STRUMMING_STROKE_EVIDENCE",
+      "evidenceCount": 46995,
+      "confidence": 0.96,
+      "durationQn": {
+        "p10": 0.125,
+        "p25": 0.20833,
+        "p50": 0.27083
+      },
+      "gapQn": {
+        "p25": 0.33333,
+        "p50": 0.66667,
+        "p75": 1.0
+      },
+      "ioiQn": {
+        "p90": 0.0,
+        "p95": 0.0
+      },
+      "shortGateEvidenceRatio": 0.48173,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.07,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      },
+      "authority": "EVIDENCE_ADAPTIVE_CONTINUITY_ONLY__NO_PITCH_ONSET_VELOCITY_CHANGE"
+    }
+  }
+}

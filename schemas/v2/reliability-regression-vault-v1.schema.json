@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/reliability-regression-vault-v1.schema.json",
+  "title": "Reliability Regression Vault",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "entries", "summary", "vaultHash"],
+  "properties": {
+    "schema": {"const": "dna-reliability-regression-vault"},
+    "version": {"const": "1.0"},
+    "date": {"type": "string", "format": "date"},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["regressionId", "category", "caseId", "severity", "expectedOutcome", "status", "discoveredDate", "evidenceHash"]
+      }
+    },
+    "summary": {"type": "object"},
+    "vaultHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

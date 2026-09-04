@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/articulation-capture-v1.schema.json",
+  "title": "Pa800 Articulation Capture 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "x-contract-version": "1.0",
+  "required": ["schema", "version", "captureId", "authority", "device", "capturedAt", "operatorId", "evidence", "maps", "captureHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-articulation-capture"},
+    "version": {"const": "1.0"},
+    "captureId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"},
+    "authority": {"enum": ["SOFTWARE_TEST_ONLY", "DEVICE_CAPTURED"]},
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["manufacturer", "model", "osVersion", "serialHash", "hardwareVerified"],
+      "properties": {
+        "manufacturer": {"const": "Korg"},
+        "model": {"const": "Pa800"},
+        "osVersion": {"type": "string", "minLength": 1},
+        "serialHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "hardwareVerified": {"type": "boolean"}
+      }
+    },
+    "capturedAt": {"type": "string", "format": "date"},
+    "operatorId": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceMidiSha256", "audioSha256", "imageSha256", "notes"],
+      "properties": {
+        "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "audioSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "imageSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "notes": {"type": "string", "minLength": 1}
+      }
+    },
+    "maps": {"type": "array", "minItems": 1, "items": {"$ref": "articulation-map-v2.schema.json#/$defs/captureMap"}},
+    "captureHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

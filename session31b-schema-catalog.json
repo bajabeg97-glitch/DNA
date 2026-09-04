@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session31b-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "evidence-ledger-v3.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/evidence-ledger-v3.schema.json",
+      "contractVersion": "3.0",
+      "sha256": "435cbe734642d853e7215ba8064b69bc0b1649ab5c47959d0e64abbe81e5eea6"
+    },
+    {
+      "name": "authority-decision-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/authority-decision-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "9dde7a307cceb4838ee26a7ef2aa7b2a2b05bc49733e40e04195b2a66df1b9d3"
+    },
+    {
+      "name": "evidence-coverage-report-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/evidence-coverage-report-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "1e41c8a1bad248bd8349c28d9b17cf85afe31ce8594fb3926ce70a8e5bd8daed"
+    }
+  ],
+  "catalogHash": "5d347e3c6c8540bdf967c5d5c2101dc201b2d1b0f65dc85b3813265f9d8d5130"
+}

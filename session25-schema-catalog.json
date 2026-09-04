@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session25-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "articulation-capture-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/articulation-capture-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "3fa21a0fcb98f7e773d2078f2d53f33f063e99abebe7073507f13c78563d2a45"
+    },
+    {
+      "name": "articulation-map-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/articulation-map-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "291b3b332b063c04f8ffbd8cf9cfdc4c8e2d5ad11534dfe07da5830fbb24d983"
+    },
+    {
+      "name": "articulation-plan-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/articulation-plan-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "cf270af96503f9d181d30ac6d6f0c71a9e40f35cc0782690f904a412e56f6493"
+    }
+  ],
+  "catalogHash": "73de316c8487bfd6023ac1604cce9af4896f239a1d634b711d0f3cb0fc50f8af"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "dna-session8-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "local-agent-runtime-and-optional-metadata-cloud",
+  "formalSuite": {
+    "testsRun": 21,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "task": "data/session8-demo-task.json",
+    "manifest": "artifacts/session8-manifest.json",
+    "traceEvents": 17,
+    "traceHash": "e3db034c6aa3ec9183bfe6c7258dedbf56baaccf7f9ef071215e389303c4e547"
+  },
+  "invariants": {
+    "structuredHandoffComplete": true,
+    "exclusiveOwnershipEnforced": true,
+    "structuredEvaluationRecorded": true,
+    "readOnlyBrief": true,
+    "agentCanWriteFinalMidi": false,
+    "humanApprovalRecorded": true,
+    "independentValidatorPassed": true,
+    "validatorCanBeBypassed": false,
+    "cloudEnabledByDefault": false,
+    "cloudRequiresExplicitConsent": true,
+    "midiAllowedInCloudPayload": false,
+    "apiKeysStoredInProject": false,
+    "networkFailureBreaksOfflineCore": false,
+    "cloudProbeMode": "local",
+    "finalStatus": "COMPLETE"
+  },
+  "status": {
+    "session8Runtime": "SOFTWARE_VALIDATED",
+    "cloudApi": "OPTIONAL_OPT_IN",
+    "offlineCore": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

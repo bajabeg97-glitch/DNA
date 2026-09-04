@@ -1,0 +1,40 @@
+{
+  "schema": "dna-session10-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "atomic-commit-cancel-resume-crash-recovery",
+  "formalSuite": {
+    "testsRun": 22,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session10-before.mid",
+    "output": "artifacts/session10-after_OPT.mid",
+    "journal": "artifacts/session10-after_OPT.mid.journal.json",
+    "sourceHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+    "configHash": "6d7d8e81dcae2fa3f010559918a52aca7b2c441748ba8b6bfd6df5ff6a7c706f",
+    "databaseHash": "baf4cbdc6f7c8d28668f97621e686dcc593a3cf427a29c2ac3ed508e1d44f54f",
+    "outputHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6",
+    "resumeObserved": true
+  },
+  "invariants": {
+    "temporaryWriteBeforeVerify": true,
+    "atomicReplace": true,
+    "invalidCandidatePublished": false,
+    "partialMidiAfterCancel": false,
+    "partialMidiAfterCrash": false,
+    "outputLocking": true,
+    "resumeUsesSourceConfigDatabaseHashes": true,
+    "diskFullRollback": true,
+    "lockedFileIsolation": true,
+    "unicodeAndLongNamesSafe": true,
+    "pathTraversalBlocked": true,
+    "batchPerFileFailures": true
+  },
+  "status": {
+    "session10Transactions": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

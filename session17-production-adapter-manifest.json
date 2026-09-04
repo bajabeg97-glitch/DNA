@@ -1,0 +1,3082 @@
+{
+  "schema": "dna-unified-pipeline-result",
+  "version": "1.0",
+  "configHash": "f7d1903d4b11b68206c3feebfe1dd567439c409ba00f97247f86eafe958be3d3",
+  "inputHash": "0e5630b3a6bdb4ec7c0d8951fa64b98f9731a847aeb47af2e9d77bcda2360e27",
+  "sourceBytesHash": "0e5630b3a6bdb4ec7c0d8951fa64b98f9731a847aeb47af2e9d77bcda2360e27",
+  "outputHash": "5e6a8f3f9b0adeeeea063c884adbea11da9d72915685f9d495906bbed996cbe3",
+  "midi": {
+    "format": 1,
+    "ppq": 192,
+    "trackCount": 1
+  },
+  "stages": [
+    {
+      "index": 0,
+      "engine": "guitar",
+      "decision": "REPLACE",
+      "registry": "production-registries",
+      "manifest": {
+        "schema": "dna-session4-guitar-plan",
+        "version": "1.0",
+        "decision": "REPLACE",
+        "reason": "Proven Factory ACC strumming mapped to playable chord voicings",
+        "inputHash": "0e5630b3a6bdb4ec7c0d8951fa64b98f9731a847aeb47af2e9d77bcda2360e27",
+        "selectionHash": "9ca7a7394f3527b2323e981c2ecb166c82810e180bc35fb975d8689aaa15d985",
+        "seed": 171717,
+        "channel": 12,
+        "section": "body",
+        "window": [
+          0,
+          2943
+        ],
+        "factoryProfileId": "388.910.492",
+        "factoryPatternId": "605.100.303",
+        "controlMapId": null,
+        "candidateIds": [
+          "041.492.409",
+          "199.443.319",
+          "275.053.568",
+          "297.889.144",
+          "605.100.303",
+          "671.941.910",
+          "735.198.717",
+          "808.534.005"
+        ],
+        "sourceIds": [
+          "546.140.784"
+        ],
+        "removedNotes": 32,
+        "generatedNotes": 121,
+        "strokeCounts": {
+          "block": 18,
+          "down": 17,
+          "mute": 0,
+          "stop": 0,
+          "up": 0
+        },
+        "maxFretSpan": 3,
+        "goldControlsRhythmGuitar": false,
+        "controlNotesGuessed": false,
+        "goldAffectsVelocity": false,
+        "notes": [
+          {
+            "tick": 0,
+            "duration": 41,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 0,
+            "duration": 41,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 0,
+            "duration": 41,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 0,
+            "duration": 41,
+            "note": 60,
+            "velocity": 110,
+            "direction": "block",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 48,
+            "duration": 44,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 48,
+            "duration": 44,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 48,
+            "duration": 44,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 96,
+            "duration": 30,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 96,
+            "duration": 30,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 96,
+            "duration": 30,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 96,
+            "duration": 30,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 144,
+            "duration": 9,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 144,
+            "duration": 9,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 144,
+            "duration": 9,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 144,
+            "duration": 9,
+            "note": 60,
+            "velocity": 110,
+            "direction": "block",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 288,
+            "duration": 30,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 288,
+            "duration": 30,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 288,
+            "duration": 30,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 336,
+            "duration": 44,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 336,
+            "duration": 44,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 336,
+            "duration": 44,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 382,
+            "duration": 29,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 384,
+            "duration": 29,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 384,
+            "duration": 29,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 384,
+            "duration": 29,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 432,
+            "duration": 19,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 432,
+            "duration": 19,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 432,
+            "duration": 19,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 432,
+            "duration": 19,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 672,
+            "duration": 18,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 672,
+            "duration": 18,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 672,
+            "duration": 18,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 768,
+            "duration": 40,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 768,
+            "duration": 40,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 768,
+            "duration": 40,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 816,
+            "duration": 44,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 816,
+            "duration": 44,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 816,
+            "duration": 44,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 864,
+            "duration": 28,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 864,
+            "duration": 28,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 864,
+            "duration": 28,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 864,
+            "duration": 28,
+            "note": 60,
+            "velocity": 110,
+            "direction": "block",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 912,
+            "duration": 19,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 912,
+            "duration": 19,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 912,
+            "duration": 19,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 912,
+            "duration": 19,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1008,
+            "duration": 32,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1008,
+            "duration": 32,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1008,
+            "duration": 32,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1056,
+            "duration": 18,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1056,
+            "duration": 18,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1056,
+            "duration": 18,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1200,
+            "duration": 16,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1200,
+            "duration": 16,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1200,
+            "duration": 16,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1242,
+            "duration": 22,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1248,
+            "duration": 22,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 6,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1248,
+            "duration": 22,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 6,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1248,
+            "duration": 22,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 6,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1344,
+            "duration": 86,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1344,
+            "duration": 86,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1344,
+            "duration": 86,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1532,
+            "duration": 46,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1536,
+            "duration": 46,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1536,
+            "duration": 46,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1536,
+            "duration": 46,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1584,
+            "duration": 44,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1584,
+            "duration": 44,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1584,
+            "duration": 44,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1632,
+            "duration": 29,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1632,
+            "duration": 29,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1632,
+            "duration": 29,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1632,
+            "duration": 29,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1680,
+            "duration": 9,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1680,
+            "duration": 9,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1680,
+            "duration": 9,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1680,
+            "duration": 9,
+            "note": 60,
+            "velocity": 110,
+            "direction": "block",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1824,
+            "duration": 38,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1824,
+            "duration": 38,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1824,
+            "duration": 38,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1872,
+            "duration": 44,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1872,
+            "duration": 44,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1872,
+            "duration": 44,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1918,
+            "duration": 28,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1920,
+            "duration": 28,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1920,
+            "duration": 28,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1920,
+            "duration": 28,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1968,
+            "duration": 19,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1968,
+            "duration": 19,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1968,
+            "duration": 19,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 1968,
+            "duration": 19,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2304,
+            "duration": 48,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2304,
+            "duration": 48,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2304,
+            "duration": 48,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2352,
+            "duration": 40,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2352,
+            "duration": 40,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2352,
+            "duration": 40,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2398,
+            "duration": 24,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2400,
+            "duration": 24,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2400,
+            "duration": 24,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2400,
+            "duration": 24,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 2,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2448,
+            "duration": 19,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2448,
+            "duration": 19,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2448,
+            "duration": 19,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2448,
+            "duration": 19,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2540,
+            "duration": 32,
+            "note": 48,
+            "velocity": 110,
+            "direction": "down",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2544,
+            "duration": 32,
+            "note": 52,
+            "velocity": 110,
+            "direction": "down",
+            "string": 1,
+            "fret": 7,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2544,
+            "duration": 32,
+            "note": 55,
+            "velocity": 110,
+            "direction": "down",
+            "string": 2,
+            "fret": 5,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2544,
+            "duration": 32,
+            "note": 60,
+            "velocity": 110,
+            "direction": "down",
+            "string": 3,
+            "fret": 5,
+            "offset": 4,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2592,
+            "duration": 18,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2592,
+            "duration": 18,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2592,
+            "duration": 18,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2736,
+            "duration": 16,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2736,
+            "duration": 16,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2736,
+            "duration": 16,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2784,
+            "duration": 20,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2784,
+            "duration": 20,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2784,
+            "duration": 20,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2880,
+            "duration": 63,
+            "note": 48,
+            "velocity": 110,
+            "direction": "block",
+            "string": 0,
+            "fret": 8,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2880,
+            "duration": 63,
+            "note": 52,
+            "velocity": 110,
+            "direction": "block",
+            "string": 1,
+            "fret": 7,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          },
+          {
+            "tick": 2880,
+            "duration": 63,
+            "note": 55,
+            "velocity": 110,
+            "direction": "block",
+            "string": 2,
+            "fret": 5,
+            "offset": 0,
+            "controlAction": null,
+            "factoryProfileId": "388.910.492",
+            "factoryPatternId": "605.100.303"
+          }
+        ],
+        "applied": true,
+        "outputHash": "5e6a8f3f9b0adeeeea063c884adbea11da9d72915685f9d495906bbed996cbe3",
+        "programChangePreserved": true,
+        "notePairingValid": true
+      },
+      "soloSafety": [],
+      "stageDiff": {
+        "beforeHash": "0e5630b3a6bdb4ec7c0d8951fa64b98f9731a847aeb47af2e9d77bcda2360e27",
+        "afterHash": "5e6a8f3f9b0adeeeea063c884adbea11da9d72915685f9d495906bbed996cbe3",
+        "changed": true,
+        "beforeNoteCount": 32,
+        "afterNoteCount": 121,
+        "beforeTrackCount": 1,
+        "afterTrackCount": 1,
+        "rollbackSafe": true
+      },
+      "productionAdapter": {
+        "schema": "dna-session17-production-adapter",
+        "version": "1.0",
+        "allowed": true,
+        "status": "PRODUCTION_ADAPTER_VALIDATED",
+        "reason": "Factory-only strumming adapted without GOLD or unconfirmed control triggers",
+        "options": {
+          "version": "1.0",
+          "maxPatterns": 8,
+          "allowSharedChannel": false,
+          "expectedTrackUid": null
+        },
+        "preflight": {
+          "allowed": true,
+          "reason": "Exact physical-track and time-scoped SoundBinding verified",
+          "trackIdentity": {
+            "trackUid": "trk-2613ec6063a6b4a65dc8",
+            "trackIndex": 0,
+            "trackNumber": 1,
+            "eventCount": 68,
+            "channelIndices": [
+              11
+            ],
+            "channelNumbers": [
+              12
+            ],
+            "smf0Merged": false
+          },
+          "soundBindings": [
+            {
+              "schema": "dna-premium-sound-binding",
+              "version": "2.0",
+              "trackUid": "trk-2613ec6063a6b4a65dc8",
+              "trackIndex": 0,
+              "trackNumber": 1,
+              "channelIndex": 11,
+              "channelNumber": 12,
+              "startTick": 0,
+              "endTick": 2943,
+              "bankMsb": 121,
+              "bankLsb": 13,
+              "program": 28,
+              "complete": true,
+              "status": "EXACT"
+            }
+          ],
+          "exactSound": [
+            121,
+            13,
+            28
+          ],
+          "channelOwnerTrackIndices": [
+            0
+          ],
+          "channelOwnerTrackNumbers": [
+            1
+          ],
+          "sharedChannelApproved": false,
+          "smf0Merged": false
+        },
+        "registries": {
+          "factoryProfiles": {
+            "path": "data/factory-velocity-profiles.json",
+            "schema": "midi-arranger.factory-velocity-profiles",
+            "version": "3.3",
+            "databaseVersion": "factory-schema3.3-f91c235f676f9d15",
+            "sha256": "7a21fc2fefc88de5c9ed34f4d99d9750f40705dc627a7290d562077d54c8cd60"
+          },
+          "factorySegments": {
+            "path": "data/factory-style-segments.json",
+            "schema": "dna.factory-style-segments",
+            "version": "1.1",
+            "databaseVersion": "factory-style-b27e30a67f43c553",
+            "sha256": "cc46bd686e73e0f3b560b0fe6afb7b96d9bd7e54b4d14e6a36ecb35a50251978"
+          },
+          "factoryStrumming": {
+            "path": "data/factory-strumming.json",
+            "schema": "dna.factory-strumming",
+            "version": "1.1",
+            "databaseVersion": "factory-strum-a2b0a022e8fbc99f",
+            "sha256": "ccc65c0abce165ad460b6ec1d43d327009b90eb8ebc545489df53f1fef367308"
+          },
+          "goldLegacy": {
+            "path": "data/gold-patterns.json",
+            "schema": "midi-arranger.gold-patterns",
+            "version": "3.2",
+            "databaseVersion": "gold-schema3.2-83cb5288a724dd03",
+            "sha256": "251d42aac5af2f9d78a3afe392655ce4d879aeb0bd9ee0431c5d715e6337107e"
+          },
+          "goldPerformance": {
+            "path": "data/gold-performance-patterns.json",
+            "schema": "dna.gold-performance-patterns",
+            "version": "1.1",
+            "databaseVersion": "gold-performance-2facc0a181563909",
+            "sha256": "b41ad979e0a4a91dd27a40181b0cb94c4ceddbfe2f718e6fdf744b434369d4e7"
+          }
+        },
+        "authority": {
+          "factoryVelocityOnly": true,
+          "goldRelativePerformanceOnly": true,
+          "goldBankProgramAuthority": false,
+          "goldGuitarAuthority": false,
+          "unconfirmedArticulationTriggers": false
+        },
+        "engine": "guitar",
+        "patternIds": [
+          "041.492.409",
+          "199.443.319",
+          "275.053.568",
+          "297.889.144",
+          "605.100.303",
+          "671.941.910",
+          "735.198.717",
+          "808.534.005"
+        ],
+        "factoryProfileIds": [
+          "388.910.492"
+        ],
+        "droppedMixedStrokes": 0,
+        "transformations": [
+          "six-string-cap",
+          "root-third-fifth-string-projection",
+          "timing-resolution-to-midi-ppq"
+        ],
+        "goldControlsRhythmGuitar": false,
+        "controlNotesGuessed": false
+      }
+    }
+  ],
+  "trackView": [
+    {
+      "track": 1,
+      "trackUid": "trk-2613ec6063a6b4a65dc8",
+      "trackIndex": 0,
+      "trackNumber": 1,
+      "present": true,
+      "eventCount": 246,
+      "noteCount": 121,
+      "channels": [
+        12
+      ],
+      "programs": [
+        28
+      ],
+      "channelIndices": [
+        11
+      ],
+      "channelNumbers": [
+        12
+      ],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        48,
+        60
+      ]
+    },
+    {
+      "track": 2,
+      "trackUid": null,
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 3,
+      "trackUid": null,
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 4,
+      "trackUid": null,
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 5,
+      "trackUid": null,
+      "trackIndex": 4,
+      "trackNumber": 5,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 6,
+      "trackUid": null,
+      "trackIndex": 5,
+      "trackNumber": 6,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 7,
+      "trackUid": null,
+      "trackIndex": 6,
+      "trackNumber": 7,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 8,
+      "trackUid": null,
+      "trackIndex": 7,
+      "trackNumber": 8,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 9,
+      "trackUid": null,
+      "trackIndex": 8,
+      "trackNumber": 9,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 10,
+      "trackUid": null,
+      "trackIndex": 9,
+      "trackNumber": 10,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 11,
+      "trackUid": null,
+      "trackIndex": 10,
+      "trackNumber": 11,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 12,
+      "trackUid": null,
+      "trackIndex": 11,
+      "trackNumber": 12,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 13,
+      "trackUid": null,
+      "trackIndex": 12,
+      "trackNumber": 13,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 14,
+      "trackUid": null,
+      "trackIndex": 13,
+      "trackNumber": 14,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 15,
+      "trackUid": null,
+      "trackIndex": 14,
+      "trackNumber": 15,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    },
+    {
+      "track": 16,
+      "trackUid": null,
+      "trackIndex": 15,
+      "trackNumber": 16,
+      "present": false,
+      "eventCount": 0,
+      "noteCount": 0,
+      "channels": [],
+      "programs": [],
+      "channelIndices": [],
+      "channelNumbers": [],
+      "sharedChannelNumbers": [],
+      "smf0Merged": false,
+      "pitchRange": [
+        null,
+        null
+      ]
+    }
+  ],
+  "preview": {
+    "profile": "pa800-gm",
+    "readOnly": true,
+    "affectsMidiValidation": false,
+    "truncated": false,
+    "noteCount": 121,
+    "notes": [
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 0,
+        "duration": 41,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 0,
+        "duration": 41,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 0,
+        "duration": 41,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 0,
+        "duration": 41,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 48,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 48,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 48,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 96,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 96,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 96,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 96,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 144,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 144,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 144,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 144,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 288,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 288,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 288,
+        "duration": 30,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 336,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 336,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 336,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 382,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 384,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 384,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 384,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 432,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 432,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 432,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 432,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 672,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 672,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 672,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 768,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 768,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 768,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 816,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 816,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 816,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 864,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 864,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 864,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 864,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 912,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 912,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 912,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 912,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1008,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1008,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1008,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1056,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1056,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1056,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1200,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1200,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1200,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1242,
+        "duration": 22,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1248,
+        "duration": 22,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1248,
+        "duration": 22,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1248,
+        "duration": 22,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1344,
+        "duration": 86,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1344,
+        "duration": 86,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1344,
+        "duration": 86,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1532,
+        "duration": 46,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1536,
+        "duration": 46,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1536,
+        "duration": 46,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1536,
+        "duration": 46,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1584,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1584,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1584,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1632,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1632,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1632,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1632,
+        "duration": 29,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1680,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1680,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1680,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1680,
+        "duration": 9,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1824,
+        "duration": 38,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1824,
+        "duration": 38,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1824,
+        "duration": 38,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1872,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1872,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1872,
+        "duration": 44,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1918,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1920,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1920,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1920,
+        "duration": 28,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 1968,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 1968,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 1968,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 1968,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2304,
+        "duration": 48,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2304,
+        "duration": 48,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2304,
+        "duration": 48,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2352,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2352,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2352,
+        "duration": 40,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2398,
+        "duration": 24,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2400,
+        "duration": 24,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2400,
+        "duration": 24,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 2400,
+        "duration": 24,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2448,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2448,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2448,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 2448,
+        "duration": 19,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2540,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2544,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2544,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 60,
+        "start": 2544,
+        "duration": 32,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2592,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2592,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2592,
+        "duration": 18,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2736,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2736,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2736,
+        "duration": 16,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2784,
+        "duration": 20,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2784,
+        "duration": 20,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2784,
+        "duration": 20,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 48,
+        "start": 2880,
+        "duration": 63,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 52,
+        "start": 2880,
+        "duration": 63,
+        "velocity": 110
+      },
+      {
+        "track": 1,
+        "channel": 12,
+        "pitch": 55,
+        "start": 2880,
+        "duration": 63,
+        "velocity": 110
+      }
+    ]
+  },
+  "invariants": {
+    "singleEngineAcrossTransports": true,
+    "originalInputImmutable": true,
+    "noOpPreservesSourceBytes": false,
+    "previewAffectsMidiValidation": false,
+    "stageRollbackIsInMemory": true,
+    "originalSoloVerifiedAfterEveryStage": true,
+    "soloGuardCount": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "faults": [
+    {
+      "faultId": "cancel_before",
+      "status": "CANCELLED",
+      "errorCode": "REL_CANCELLED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "disk_full",
+      "status": "BLOCKED",
+      "errorCode": "REL_DISK_FULL",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "permission_denied",
+      "status": "BLOCKED",
+      "errorCode": "REL_PERMISSION_DENIED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "crash_after_temp",
+      "status": "BLOCKED",
+      "errorCode": "REL_STAGE_EXCEPTION",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "verifier_exception",
+      "status": "BLOCKED",
+      "errorCode": "REL_STAGE_EXCEPTION",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "validator_block",
+      "status": "BLOCKED",
+      "errorCode": "REL_VALIDATOR_BLOCKED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    },
+    {
+      "faultId": "output_lock",
+      "status": "BLOCKED",
+      "errorCode": "REL_OUTPUT_LOCKED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "partialOutput": false,
+      "temporaryFiles": [],
+      "sourceBytesChanged": false
+    }
+  ],
+  "happyPath": {
+    "firstStatus": "COMMITTED",
+    "secondStatus": "COMMITTED",
+    "resumeDetected": true,
+    "sameOutputHash": true,
+    "temporaryFiles": [],
+    "lockFiles": []
+  },
+  "noPartialOutputs": true,
+  "noTemporaryFiles": true,
+  "resumeSafe": true,
+  "matrixHash": "f912d822825abb7be3d5fce89c11d5b7213cbccb421e54f6eb3a84bef9b57ebf"
+}

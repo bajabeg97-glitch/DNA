@@ -1,0 +1,260 @@
+{
+  "schema": "dna-agent-runtime-job",
+  "version": "1.0",
+  "task": {
+    "taskId": "session8.release-demo",
+    "owner": "codex-lead-engineer",
+    "exclusiveFiles": [
+      "artifacts/session8-manifest.json"
+    ],
+    "inputHashes": {
+      "teamContract": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "offlineCore": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "dependencies": [
+      "offline-core",
+      "independent-validator"
+    ],
+    "requestedBehavior": "Prove bounded local orchestration, approval and validator authority without allowing an agent or cloud service to write MIDI.",
+    "exclusions": [
+      "write-final-midi",
+      "bypass-validator",
+      "send-midi-to-cloud",
+      "store-api-key"
+    ],
+    "acceptanceTests": [
+      "allowed-handoffs-only",
+      "hash-chained-trace",
+      "explicit-human-approval",
+      "independent-validator-pass",
+      "offline-cloud-fallback"
+    ],
+    "acceptanceCommand": "py session8_release_check.py",
+    "action": "export-to-device",
+    "access": "read-only-brief",
+    "mayWriteFinalMidi": false
+  },
+  "currentOwner": "chatgpt-orchestrator",
+  "status": "COMPLETE",
+  "humanApproved": true,
+  "validatorPassed": true,
+  "evaluations": [
+    {
+      "actor": "chatgpt-style-evaluator",
+      "criteria": {
+        "boundedScope": true,
+        "midiUntouched": true,
+        "validatorIndependent": true
+      },
+      "notes": "The advisory result respects every Session 8 safety boundary.",
+      "passed": true
+    }
+  ],
+  "trace": [
+    {
+      "sequence": 1,
+      "event": "task-created",
+      "actor": "codex-lead-engineer",
+      "details": {
+        "briefHash": "b7b14e14230931103114abf1397d8a0ba8c6dd385c6d83332d2718fb92737677"
+      },
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "eventHash": "ded57d8361c62b3c36b545375a6b9ef6f4caa1e1299dc987634442ce086f25a8"
+    },
+    {
+      "sequence": 2,
+      "event": "task-started",
+      "actor": "codex-lead-engineer",
+      "details": {},
+      "previousHash": "ded57d8361c62b3c36b545375a6b9ef6f4caa1e1299dc987634442ce086f25a8",
+      "eventHash": "80d4159e0d291fc9488977df921f0e46718f67b1ce6c34f967954c362b02db86"
+    },
+    {
+      "sequence": 3,
+      "event": "submission-recorded",
+      "actor": "codex-lead-engineer",
+      "details": {
+        "producedFiles": [
+          "artifacts/session8-code-review.json"
+        ],
+        "diffSummary": "Runtime implementation reviewed.",
+        "observedTestOutput": "Session 8 bounded check PASS",
+        "unresolvedRisks": [],
+        "status": "HANDOFF_READY",
+        "recommendation": "Continue through the contracted gate."
+      },
+      "previousHash": "80d4159e0d291fc9488977df921f0e46718f67b1ce6c34f967954c362b02db86",
+      "eventHash": "5e03a508fceb516bb5441673ee7108bed6ff289cfaf065102821cc47744e7eff"
+    },
+    {
+      "sequence": 4,
+      "event": "task-handed-off",
+      "actor": "codex-lead-engineer",
+      "details": {
+        "target": "codex-midi-compliance"
+      },
+      "previousHash": "5e03a508fceb516bb5441673ee7108bed6ff289cfaf065102821cc47744e7eff",
+      "eventHash": "b23b478583d203a890337a21d7ab05cdd2528b5d182a0b2bbfe83998fe06d8a2"
+    },
+    {
+      "sequence": 5,
+      "event": "task-started",
+      "actor": "codex-midi-compliance",
+      "details": {},
+      "previousHash": "b23b478583d203a890337a21d7ab05cdd2528b5d182a0b2bbfe83998fe06d8a2",
+      "eventHash": "99bbd593148bdefd9107ef878ae5686c5a26f10783fd5e9c7ccb610ceaf6c417"
+    },
+    {
+      "sequence": 6,
+      "event": "submission-recorded",
+      "actor": "codex-midi-compliance",
+      "details": {
+        "producedFiles": [
+          "artifacts/session8-validator-report.json"
+        ],
+        "diffSummary": "Independent validator gate executed.",
+        "observedTestOutput": "Session 8 bounded check PASS",
+        "unresolvedRisks": [],
+        "status": "HANDOFF_READY",
+        "recommendation": "Continue through the contracted gate."
+      },
+      "previousHash": "99bbd593148bdefd9107ef878ae5686c5a26f10783fd5e9c7ccb610ceaf6c417",
+      "eventHash": "0a445cba5feedc2a1e7de3078e5c58c0f848a12e32345d1b3f05dde80407175e"
+    },
+    {
+      "sequence": 7,
+      "event": "validator-result",
+      "actor": "codex-midi-compliance",
+      "details": {
+        "passed": true,
+        "reportHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+      },
+      "previousHash": "0a445cba5feedc2a1e7de3078e5c58c0f848a12e32345d1b3f05dde80407175e",
+      "eventHash": "fff6bf6c1cf24a1b26265ca43277c0993e84f83d3ef5212f46644928a42d7fb2"
+    },
+    {
+      "sequence": 8,
+      "event": "task-handed-off",
+      "actor": "codex-midi-compliance",
+      "details": {
+        "target": "chatgpt-style-evaluator"
+      },
+      "previousHash": "fff6bf6c1cf24a1b26265ca43277c0993e84f83d3ef5212f46644928a42d7fb2",
+      "eventHash": "92bbb63f470bbb35f16bb663541c8418934cbee8a23b7808cdaa9225a6086be4"
+    },
+    {
+      "sequence": 9,
+      "event": "task-started",
+      "actor": "chatgpt-style-evaluator",
+      "details": {},
+      "previousHash": "92bbb63f470bbb35f16bb663541c8418934cbee8a23b7808cdaa9225a6086be4",
+      "eventHash": "f3cebe4243baf03651273635ed186d3d2c256f27494dffa56357322a6cea9758"
+    },
+    {
+      "sequence": 10,
+      "event": "submission-recorded",
+      "actor": "chatgpt-style-evaluator",
+      "details": {
+        "producedFiles": [
+          "artifacts/session8-evaluation.json"
+        ],
+        "diffSummary": "Advisory evaluation recorded.",
+        "observedTestOutput": "Session 8 bounded check PASS",
+        "unresolvedRisks": [],
+        "status": "HANDOFF_READY",
+        "recommendation": "Continue through the contracted gate."
+      },
+      "previousHash": "f3cebe4243baf03651273635ed186d3d2c256f27494dffa56357322a6cea9758",
+      "eventHash": "217b6f70efcfabfd4ed3e4c25a2f23009757f7eaff187fa0236ad9979014dcc1"
+    },
+    {
+      "sequence": 11,
+      "event": "evaluation-recorded",
+      "actor": "chatgpt-style-evaluator",
+      "details": {
+        "actor": "chatgpt-style-evaluator",
+        "criteria": {
+          "boundedScope": true,
+          "midiUntouched": true,
+          "validatorIndependent": true
+        },
+        "notes": "The advisory result respects every Session 8 safety boundary.",
+        "passed": true
+      },
+      "previousHash": "217b6f70efcfabfd4ed3e4c25a2f23009757f7eaff187fa0236ad9979014dcc1",
+      "eventHash": "2f09b41fea68d051d9dffc9773939f69fa86388e5fdcbde0cfe6523e2884b687"
+    },
+    {
+      "sequence": 12,
+      "event": "task-handed-off",
+      "actor": "chatgpt-style-evaluator",
+      "details": {
+        "target": "chatgpt-orchestrator"
+      },
+      "previousHash": "2f09b41fea68d051d9dffc9773939f69fa86388e5fdcbde0cfe6523e2884b687",
+      "eventHash": "389ce77f5622d91530406cc4498b3f3685345d9ed34b4fa69b8dff53a110a760"
+    },
+    {
+      "sequence": 13,
+      "event": "task-started",
+      "actor": "chatgpt-orchestrator",
+      "details": {},
+      "previousHash": "389ce77f5622d91530406cc4498b3f3685345d9ed34b4fa69b8dff53a110a760",
+      "eventHash": "ba89a89a082dd59c7773273a2208de79751ab223d3913a53b57d38de8cde3771"
+    },
+    {
+      "sequence": 14,
+      "event": "submission-recorded",
+      "actor": "chatgpt-orchestrator",
+      "details": {
+        "producedFiles": [
+          "artifacts/session8-approval-request.json"
+        ],
+        "diffSummary": "Manager requested human approval.",
+        "observedTestOutput": "Session 8 bounded check PASS",
+        "unresolvedRisks": [],
+        "status": "HANDOFF_READY",
+        "recommendation": "Continue through the contracted gate."
+      },
+      "previousHash": "ba89a89a082dd59c7773273a2208de79751ab223d3913a53b57d38de8cde3771",
+      "eventHash": "8d6907f22bf0917a2f3634acaabbe815e7939844acdd08f5482b284c4788e0c0"
+    },
+    {
+      "sequence": 15,
+      "event": "approval-requested",
+      "actor": "chatgpt-orchestrator",
+      "details": {
+        "action": "export-to-device"
+      },
+      "previousHash": "8d6907f22bf0917a2f3634acaabbe815e7939844acdd08f5482b284c4788e0c0",
+      "eventHash": "a877e98a99578136619c4db40df34a5308ee388f58f97c1e642a4f103c0f5954"
+    },
+    {
+      "sequence": 16,
+      "event": "human-approved",
+      "actor": "local-user",
+      "details": {
+        "action": "export-to-device"
+      },
+      "previousHash": "a877e98a99578136619c4db40df34a5308ee388f58f97c1e642a4f103c0f5954",
+      "eventHash": "362da115728f2b59439aedd1534ab4068f14c8150550e6a6d2e97d6e8ff273f8"
+    },
+    {
+      "sequence": 17,
+      "event": "task-completed",
+      "actor": "chatgpt-orchestrator",
+      "details": {},
+      "previousHash": "362da115728f2b59439aedd1534ab4068f14c8150550e6a6d2e97d6e8ff273f8",
+      "eventHash": "e3db034c6aa3ec9183bfe6c7258dedbf56baaccf7f9ef071215e389303c4e547"
+    }
+  ],
+  "traceHash": "e3db034c6aa3ec9183bfe6c7258dedbf56baaccf7f9ef071215e389303c4e547",
+  "cloudProbe": {
+    "mode": "local",
+    "reason": "cloud-unavailable:ConnectionError",
+    "result": {
+      "decision": "KEEP",
+      "offlineCore": true
+    }
+  }
+}

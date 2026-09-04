@@ -1,0 +1,42 @@
+{
+  "schema": "dna-session31b-evidence-authority-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+  "ledgerHash": "db16f833225282cb8c63a64ec2cf52b8d1e4268d81500e989bd51d9aa3b61a05",
+  "totalSubjects": 1657,
+  "explicitAuthoritySubjects": 1657,
+  "coverageRate": 1.0,
+  "decisionCounts": {
+    "ALLOW": 1559,
+    "KEEP": 1,
+    "SKIP": 94,
+    "MANUAL_REVIEW": 3,
+    "BLOCK": 0
+  },
+  "subjectCounts": {
+    "ARTICULATION_EVENT": 11,
+    "CC11_POINT": 16,
+    "EXPRESSION_EVENT": 83,
+    "GROOVE_EVENT": 1490,
+    "PATTERN_SELECTION": 52,
+    "TRACK": 1,
+    "TRACK_SEGMENT": 4
+  },
+  "evidenceCount": 111,
+  "verifiedRegistryCount": 3,
+  "firstBuildSeconds": 1.353717,
+  "cachedBuildSeconds": 0.200262,
+  "cache": {
+    "contentIndexCount": 2
+  },
+  "deterministic": true,
+  "softwareTestExpressionSkipped": true,
+  "deviceArticulationSkipped": true,
+  "goldDynamicsAuthority": false,
+  "midiMutationAuthority": false,
+  "finalMidiExportAllowed": false,
+  "passed": true,
+  "benchmarkHash": "5a7a1dab3b229a6bb9e19d0ebf8856f44f4927b1d9b3818134adf1ef76a64ea6"
+}

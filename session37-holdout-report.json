@@ -1,0 +1,112 @@
+{
+  "schema": "dna-premium-locked-holdout-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "corpusHash": "d84320f2cb4d70a4d0228f94016f1555845b1e70bf1dabc9c13627302f62ce95",
+  "calibrationHash": "61160f8edb49a75364889a61ec31f4be29745a66c0b5c6b1827992afbb63a0d1",
+  "caseCount": 8,
+  "results": [
+    {
+      "caseId": "song19-04",
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "song19-08",
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "song19-12",
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "song19-16",
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "song19-20",
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "quality37-24",
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "quality37-28",
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    },
+    {
+      "caseId": "quality37-32",
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "chordExactRate": 1.0,
+      "sectionBoundaryExactRate": 1.0,
+      "trackRoleExactRate": 1.0,
+      "transitionExactRate": 1.0,
+      "parsed": true
+    }
+  ],
+  "coverage": {
+    "genres": [
+      "acoustic",
+      "ballad",
+      "dance",
+      "pop",
+      "pop-folk",
+      "rock",
+      "waltz"
+    ],
+    "meters": [
+      "3/4",
+      "4/4",
+      "6/8"
+    ],
+    "densityClasses": [
+      "HIGH",
+      "LOW",
+      "MEDIUM"
+    ]
+  },
+  "groundTruthKinds": [
+    "chord",
+    "section",
+    "trackRole",
+    "transition"
+  ],
+  "structuralPass": true,
+  "humanListeningClaim": false,
+  "holdoutHash": "1125cc747a6f9e029af62d293766b0121b239a86eb41884f82c92d6e70c2b0ac"
+}

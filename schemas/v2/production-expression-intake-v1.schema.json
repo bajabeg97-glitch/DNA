@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/production-expression-intake-v1.schema.json",
+  "title": "Production Expression Evidence Intake",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "status", "exactSoundBindingRequired", "productionEligible", "testOnly", "soundBinding", "sourceMidi", "audioEvidence", "operatorAttestation", "relationships", "allowedRelationshipDimensions", "forbiddenAuthorities", "missingEvidence", "intakeHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-production-expression-intake"},
+    "version": {"const": "1.0"},
+    "date": {"type": "string", "format": "date"},
+    "status": {"enum": ["AWAITING_OPERATOR_CAPTURE", "SOFTWARE_TEST_ONLY", "PRODUCTION_READY"]},
+    "exactSoundBindingRequired": {"const": true},
+    "productionEligible": {"type": "boolean"},
+    "testOnly": {"type": "boolean"},
+    "soundBinding": {"type": ["object", "null"]},
+    "sourceMidi": {"type": ["object", "null"]},
+    "audioEvidence": {"type": ["object", "null"]},
+    "operatorAttestation": {"type": ["object", "null"]},
+    "relationships": {"type": "array"},
+    "allowedRelationshipDimensions": {"type": "array"},
+    "forbiddenAuthorities": {"type": "array"},
+    "missingEvidence": {"type": "array"},
+    "intakeHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

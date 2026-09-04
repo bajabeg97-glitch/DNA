@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: dna-midi-studio-pa800
+Version: 4.22.0
+Summary: Local-first MIDI reconstruction and Korg Pa800 evidence engine
+Author: DNA MIDI Studio
+Requires-Python: >=3.10
+Provides-Extra: ai
+Requires-Dist: numpy>=1.24; extra == "ai"
+Requires-Dist: torch>=2.2; extra == "ai"
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"

@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session26-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "preview-session-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/preview-session-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "5e053a3ec87dcb190b7e1e967e1d7a8610dc1996d87c0f695cf01111a77b58aa"
+    },
+    {
+      "name": "audio-render-adapter-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/audio-render-adapter-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "e8ad2c109fd56b93b0ef90bb948196156a2f14e1f6fa5f854585e0d6783ad111"
+    },
+    {
+      "name": "device-audio-capture-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/device-audio-capture-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "0a951fde525a38d9c6605ad1319ba73dafc622ad4e7d8001639f61a1e1f3e0bb"
+    }
+  ],
+  "catalogHash": "eb513a1c2cf1b03e648a225c4b0c1dfa4ea9307e4d3358306805b9d7e03346d7"
+}

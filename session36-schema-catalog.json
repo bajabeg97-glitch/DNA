@@ -1,0 +1,20 @@
+{
+  "schema": "dna-session36-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "reliability-report-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/reliability-report-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "9df8d4209c6b48d88d767f9f369818f8082d313ca89d0ee8b4050e27737dd0a6"
+    },
+    {
+      "name": "reliability-regression-vault-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/reliability-regression-vault-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "144d725a4ab60a7e1ece14e6b5b10117ebe1b1e02f745c73f1f08bda290e8d41"
+    }
+  ],
+  "catalogHash": "f28d30e20e076d6657116315114a10f82341a30ca5a9966bbb40f4a6085b633f"
+}

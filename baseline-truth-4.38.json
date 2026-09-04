@@ -1,0 +1,42 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "1.0",
+  "projectVersion": "4.38.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "instrumentBehaviorBrain": {
+    "roles": [
+      "drums",
+      "percussion",
+      "bass",
+      "rhythm-guitar",
+      "power-riff",
+      "riff",
+      "accompaniment",
+      "pad",
+      "brass",
+      "accordion",
+      "solo",
+      "terca",
+      "echo"
+    ],
+    "drumElementSpecific": true,
+    "soloDeepTreatment": true,
+    "deviceTriggerGuessing": false,
+    "velocityAuthority": "FACTORY_ONLY"
+  },
+  "consolidation": {
+    "packageModulesImportable": 99,
+    "packageModulesFailedImport": 0,
+    "legacyLiteralCopyClaimed": false
+  },
+  "hardCoreRules": {
+    "protectedEvents": true,
+    "outsideTargetSourcePreservation": true,
+    "canonicalReparse": true,
+    "musicalTasteHardLimited": false
+  },
+  "externalGates": {
+    "humanListening": "PENDING",
+    "pa800Hardware": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.28.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "implemented": [
+    "four_bar_phrase_context_dataset",
+    "source_song_disjoint_phrase_split",
+    "phrase_planner_network",
+    "phrase_level_candidate_scoring",
+    "four_bar_candidate_beam_selection",
+    "factory_only_velocity_preserved",
+    "safe_ai_debugger_retained"
+  ],
+  "training": {
+    "songs": 163,
+    "samples": 16099,
+    "train": 12930,
+    "validation": 1449,
+    "holdout": 1720,
+    "bestValidationLoss": 0.012657911361505588,
+    "holdoutLoss": 0.008770246058702469,
+    "velocityInput": false,
+    "velocityOutput": false
+  },
+  "tests": {
+    "command": "PYTHONPATH=src:. python -m pytest -q tests/test_ai_phrase_decoder_v428.py tests/test_ai_event_decoder_v425.py tests/test_ai_track_replacement_v419.py tests/test_ai_song_inpainting_v418.py tests/test_ai_melodic_sequence_v423.py tests/test_ai_melodic_relationship_v420.py tests/test_ai_relationship_learning_v421.py tests/test_ai_learning_v417.py tests/test_ai_learning_v416.py tests/test_safe_debugger_v427.py tests/test_echo_terca_engine_v413.py",
+    "passed": 54,
+    "failed": 0
+  },
+  "externalGates": ["human_listening", "physical_pa800_certification"]
+}

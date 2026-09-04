@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session32-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "track-plan-v3.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/track-plan-v3.schema.json",
+      "contractVersion": "3.0",
+      "sha256": "4f3e306d332f171c8a08085116b841064796effcb01f2788803df1dd21d7e1e6"
+    },
+    {
+      "name": "optimizer-operation-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/optimizer-operation-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "b9236b6a251fd328af1e6b139527806d05f39b340c3a79ba8c2f84510f129dd3"
+    },
+    {
+      "name": "optimizer-dry-run-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/optimizer-dry-run-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "a7b888af8c3644fa473fff4e5c34bebebc819bd789febd52f0612708bc75f318"
+    }
+  ],
+  "catalogHash": "1cae75eda25b192977a4e25671ce9138781b5507358ab9b655156c151b3f72d8"
+}

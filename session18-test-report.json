@@ -1,0 +1,57 @@
+{
+  "schema": "dna-session18-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "track-identity-solo-safety-mapping-2.0",
+  "formalSuite": {
+    "testsRun": 28,
+    "failures": 0,
+    "errors": 0
+  },
+  "artifacts": {
+    "beforeMidi": "artifacts/session18-before.mid",
+    "afterMidi": "artifacts/session18-after.mid",
+    "mappingManifest": "artifacts/session18-mapping-manifest.json",
+    "schemaCatalog": "data/session18-schema-catalog.json",
+    "inputHash": "e8895ab3f245ab330df087815e84c57d8c04a00b291aa4c5c7ac119091edad90",
+    "outputHash": "dc2006e2a963aa2213792fcd0578d6baee780e7455cc2bc2e424cda22138413a"
+  },
+  "mapping": {
+    "trackUid": "trk-db52b3826d34baac6ac6",
+    "trackIndex": 7,
+    "trackNumber": 8,
+    "channelIndex": 14,
+    "channelNumber": 15,
+    "soundBindingSegments": 1,
+    "delayTrackUid": "trk-747c151c1f356205d242",
+    "delayTrackIndex": 8,
+    "delayTrackNumber": 9,
+    "warningCode": "SOLO_TRACK_MAPPING"
+  },
+  "contracts": {
+    "count": 3,
+    "catalogHash": "f813039f14e0cc64b94664fab74d1f1c2f2b612d8afc47f27dc8400beac73c4a"
+  },
+  "invariants": {
+    "trackUidStableAcrossRoundTrip": true,
+    "trackAndChannelNumberingUnambiguous": true,
+    "soundBindingIsTrackLocalAndTimeScoped": true,
+    "midSongBankProgramMismatchBlocked": true,
+    "smf0MergeDetected": true,
+    "sharedChannelRequiresApproval": true,
+    "delayUsesFirstCompletelyFreeTrack": true,
+    "delayLimitedToSixteenTracks": true,
+    "originalSoloFingerprintPreserved": true,
+    "originalSoloVerifiedAfterEveryPipelineStage": true,
+    "goldAffectsDynamics": false,
+    "aiWritesFinalMidi": false
+  },
+  "status": {
+    "session18TrackIdentitySoloSafety": "SOFTWARE_VALIDATED",
+    "session16Pa800MappingLab": "DEVICE_BLOCKED",
+    "session17ProductionAdapter": "PLANNED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

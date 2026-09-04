@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/premium-workflow-v2.schema.json",
+  "title": "DNA Premium Producer Workflow 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "workflowId", "source", "controls", "stages", "timeline", "trackMatrix", "explain", "locks", "diff", "verification", "exportGate", "commandPalette", "accessibility", "jobs", "producerTask", "safety", "workflowHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-producer-workflow"},
+    "version": {"const": "2.0"},
+    "workflowId": {"type": "string", "pattern": "^workflow-[0-9a-f]{20}$"},
+    "source": {"type": "object"},
+    "controls": {"type": "object"},
+    "stages": {
+      "type": "array", "minItems": 8, "maxItems": 8,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["stageId", "index", "status", "progressPercent", "artifactType", "artifactHash", "blockingReasons", "canOpen"],
+        "properties": {
+          "stageId": {"enum": ["IMPORT", "ANALYZE", "BRIEF", "PLAN", "VARIANTS", "EDIT", "VERIFY", "EXPORT"]},
+          "index": {"type": "integer", "minimum": 0, "maximum": 7},
+          "status": {"enum": ["COMPLETE", "BLOCKED"]},
+          "progressPercent": {"type": "integer", "minimum": 0, "maximum": 100},
+          "artifactType": {"type": ["string", "null"]},
+          "artifactHash": {"type": ["string", "null"]},
+          "blockingReasons": {"type": "array", "items": {"type": "string"}},
+          "canOpen": {"type": "boolean"}
+        }
+      }
+    },
+    "timeline": {"type": "array", "minItems": 10},
+    "trackMatrix": {"type": "array", "minItems": 1},
+    "explain": {"type": "array", "minItems": 1},
+    "locks": {"type": "object"},
+    "diff": {"type": "object"},
+    "verification": {"type": "object"},
+    "exportGate": {"type": "object"},
+    "commandPalette": {"type": "array", "minItems": 10},
+    "accessibility": {"type": "object"},
+    "jobs": {"type": "array", "minItems": 8, "maxItems": 8},
+    "producerTask": {"type": "object"},
+    "safety": {"type": "object"},
+    "workflowHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "2.0"
+}

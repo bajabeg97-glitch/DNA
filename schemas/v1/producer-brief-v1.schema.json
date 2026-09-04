@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/producer-brief-v1.schema.json",
+  "title": "DNA Premium ProducerBrief v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "prompt", "genre", "energyCurve", "density", "requiredRoles", "forbiddenRoles", "lockedElements", "transformationTolerance"],
+  "properties": {
+    "schema": {"const": "dna-premium-producer-brief"},
+    "version": {"const": "1.0"},
+    "prompt": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "genre": {"type": "string", "minLength": 1, "maxLength": 80},
+    "energyCurve": {"type": "array", "minItems": 2, "maxItems": 16, "items": {"type": "number", "minimum": 0, "maximum": 100}},
+    "density": {"enum": ["sparse", "balanced", "full"]},
+    "requiredRoles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+    "forbiddenRoles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+    "lockedElements": {"type": "array", "uniqueItems": true, "items": {"enum": ["i1cv1", "i2cv1", "v1cv1", "v2cv1", "v3cv1", "v4cv1", "f1cv1", "f2cv1", "e1cv1", "e2cv1"]}},
+    "transformationTolerance": {"type": "integer", "minimum": 0, "maximum": 100},
+    "notes": {"type": "string", "maxLength": 2000}
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "dna-session30-hardening-report",
+  "version": "1.0",
+  "releaseDate": "2026-09-03",
+  "runtime": {
+    "python": "3.12.13",
+    "implementation": "CPython",
+    "platform": "Linux"
+  },
+  "performance": {
+    "analysis25000Notes": {
+      "noteCount": 25000,
+      "seconds": 3.742566,
+      "limitSeconds": 10.0,
+      "passed": true
+    },
+    "globalPlan": {
+      "nodeCount": 10,
+      "seconds": 0.001332,
+      "limitSeconds": 5.0,
+      "passed": true
+    },
+    "partialRegeneration": {
+      "markers": [
+        "v3cv1"
+      ],
+      "seconds": 0.474607,
+      "limitSeconds": 2.0,
+      "passed": true
+    }
+  },
+  "memory": {
+    "migrationItems": 10000,
+    "seconds": 0.26842,
+    "peakBytes": 3343577,
+    "limitBytes": 67108864,
+    "passed": true
+  },
+  "paths": {
+    "samples": {
+      "unicode": "Žužana_Ćirilica_ŠĐČŽ",
+      "long": "vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-vrlo-duga-mapa-",
+      "reserved": "_CON",
+      "traversal": "projekt"
+    },
+    "unicodePreserved": true,
+    "longBounded": true,
+    "reservedProtected": true,
+    "traversalRemoved": true
+  },
+  "transactions": {
+    "crashRollback": true,
+    "diskFullRollback": true,
+    "cancelRollback": true,
+    "atomicReplace": true
+  },
+  "cleanExtract": {
+    "mode": "clean-extract-full",
+    "passed": true
+  },
+  "migration": {
+    "referenceMigrationHash": "6bea65fb22cf9fa642b69314cd66dc8ef75e356acbcb762c4b05438aca3f27f4",
+    "largeMigrationHash": "8d8ba1fb01ad214f9e5b1da557f8c4be2ee359c70aaa8ef686504dd03fa455a5",
+    "originalOverwriteAllowed": false
+  },
+  "passed": true,
+  "hardeningHash": "2d101cec28d37b2387f0f71fa521f4de4cd9e6862523d6ebfae47ea19ab61362"
+}

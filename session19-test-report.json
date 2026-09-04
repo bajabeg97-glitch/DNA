@@ -1,0 +1,47 @@
+{
+  "schema": "dna-session19-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "song-understanding-2.0-read-only-analysis-and-correction-overlay",
+  "formalSuite": {
+    "testsRun": 36,
+    "failures": 0,
+    "errors": 0,
+    "durationSeconds": 2.053
+  },
+  "benchmark": {
+    "labels": "data/session19-labeled-benchmark.json",
+    "report": "data/session19-benchmark-report.json",
+    "corpusHash": "ee6ed6fae429959b42a92c258969e1ac8a1c25cbe7b9afc3291074c64e201bae",
+    "songCount": 20,
+    "halfBarCells": 320,
+    "chordWeightedF1": 1.0,
+    "sectionBoundaryF1": 1.0
+  },
+  "artifacts": {
+    "referenceSongMap": "artifacts/session19-song-map.json",
+    "referenceMapHash": "a1534c5b34210d15fc0bc6246f7e299cccaa54d4147fb081b4008032cf16deb5",
+    "variableMeterSongMap": "artifacts/session19-variable-meter-song-map.json",
+    "schemaCatalog": "data/session19-schema-catalog.json"
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "sourceMidiMutated": false,
+    "halfBarHarmony": true,
+    "variableTempoAndMeter": true,
+    "trackRolesAreTimeScoped": true,
+    "lowConfidenceRequiresManualReview": true,
+    "correctionsAreReadOnlyOverlay": true,
+    "sameInputProducesSameMapHash": true,
+    "goldAffectsDynamics": false,
+    "aiWritesFinalMidi": false
+  },
+  "status": {
+    "session19SongUnderstanding": "FOUNDATION_VALIDATED / PRODUCTION_CALIBRATION_PENDING",
+    "session16Pa800MappingLab": "DEVICE_BLOCKED",
+    "session20AiProducerBrief": "PLANNED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

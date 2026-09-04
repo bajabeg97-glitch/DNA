@@ -1,0 +1,24 @@
+{
+  "version": "4.33.0",
+  "scope": "MAX Phrase Continuity Guard",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "observedTests": {"passed": 19, "failed": 0},
+  "continuity": {
+    "roles": ["bass", "rhythm_guitar", "guitar", "power_riff", "accompaniment", "solo", "third", "terca", "echo"],
+    "drumsSmoothed": false,
+    "pitchPreserved": true,
+    "onsetPreserved": true,
+    "velocityPreserved": true,
+    "barBoundaryAware": true,
+    "metricsReported": true
+  },
+  "authority": {
+    "velocity": "FACTORY_ONLY",
+    "goldVelocity": false,
+    "neuralVelocity": false
+  },
+  "knownLimitations": [
+    "Listening validation on the user's Pa800 remains external.",
+    "Continuity parameters are conservative software defaults and may require per-sound hardware calibration."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "dna-multibar-phrase-dataset",
+  "version": "1.0",
+  "songs": 163,
+  "samples": 16099,
+  "train": 12930,
+  "validation": 1449,
+  "holdout": 1720,
+  "source_hash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+  "dataset_hash": "e10ea7d2271d142da052d8afb382aba893ea6f15bfd6dd06d2eb124860605835",
+  "velocity_used": false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "dna-session20-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "bilingual-ai-producer-brief-2.0-and-safe-optional-enrichment",
+  "formalSuite": {
+    "testsRun": 52,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "corpus": "data/session20-intent-corpus.json",
+    "report": "data/session20-benchmark-report.json",
+    "corpusHash": "1111414bce0e0fd5e99898043dac2abd14a38e7a051d2eea0e6b77aa413ea332",
+    "caseCount": 30,
+    "fieldAccuracy": 1.0,
+    "conflictAccuracy": 1.0
+  },
+  "artifacts": {
+    "referenceBrief": "artifacts/session20-producer-brief.json",
+    "approvedConflictBrief": "artifacts/session20-approved-conflict-brief.json",
+    "offlineFallbackBrief": "artifacts/session20-offline-fallback-brief.json",
+    "schemaCatalog": "data/session20-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session20_producer_brief.py",
+    "localApi": "/api/premium-producer-brief",
+    "guiCard": "AI je razumio",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "readOnly": true,
+    "midiBytesAccepted": false,
+    "midiWriterAvailable": false,
+    "pathWriteAllowed": false,
+    "bankProgramAuthority": false,
+    "validatorBypassAllowed": false,
+    "goldAffectsDynamics": false,
+    "originalSoloMutationAllowed": false,
+    "cloudEnabledByDefault": false,
+    "cloudRequiresExplicitConsent": true,
+    "cloudMetadataOnly": true,
+    "invalidCloudResponseFallsBackLocally": true,
+    "conflictsRequireExplicitUserResolution": true,
+    "offlineCoreEquivalent": true
+  },
+  "status": {
+    "session20AiProducerBrief": "SOFTWARE_VALIDATED",
+    "session16Pa800MappingLab": "DEVICE_BLOCKED",
+    "session21ArrangementGraph": "PLANNED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

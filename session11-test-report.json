@@ -1,0 +1,38 @@
+{
+  "schema": "dna-session11-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "independent-verifier-and-reproducibility",
+  "formalSuite": {
+    "testsRun": 24,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "source": "artifacts/session10-before.mid",
+    "candidate": "artifacts/session10-after_OPT.mid",
+    "pipelineManifest": "artifacts/session9-manifest.json",
+    "atomicJournal": "artifacts/session10-after_OPT.mid.journal.json",
+    "verification": "artifacts/session11-independent-report.json",
+    "sourceHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+    "candidateHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6"
+  },
+  "invariants": {
+    "optimizerVerdictReused": false,
+    "independentByteParser": true,
+    "protectedNoteDiff": true,
+    "protectedEventDiff": true,
+    "authorizedExceptionsOnly": true,
+    "manifestToMidi": true,
+    "atomicJournalVerified": true,
+    "idempotency": true,
+    "workerCountsOneTwoFourEqual": true,
+    "pa800ContractImplemented": true,
+    "invalidCandidateBlocked": true
+  },
+  "status": {
+    "session11IndependentVerifier": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

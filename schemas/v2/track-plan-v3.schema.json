@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/track-plan-v3.schema.json",
+  "title": "DNA MIDI Studio TrackPlan 3.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "planId", "source", "controls", "targetBindings", "sourceTrackPlans", "fragments", "dryRun", "partialInvalidation", "readiness", "manualReview", "safety", "trackPlanHash"],
+  "properties": {
+    "schema": {"const": "dna-track-plan"},
+    "version": {"const": "3.0"},
+    "planId": {"type": "string", "pattern": "^track-plan-[0-9a-f]{20}$"},
+    "source": {"type": "object"},
+    "controls": {"type": "object"},
+    "targetBindings": {"type": "array", "items": {"type": "object"}},
+    "sourceTrackPlans": {"type": "array", "items": {"type": "object"}},
+    "fragments": {"type": "array", "items": {"type": "object"}},
+    "dryRun": {"$ref": "optimizer-dry-run-v1.schema.json"},
+    "partialInvalidation": {"type": "object"},
+    "readiness": {"type": "object"},
+    "manualReview": {"type": "array", "items": {"type": "object"}},
+    "safety": {"type": "object"},
+    "trackPlanHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "3.0"
+}

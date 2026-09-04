@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session23-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "groove-plan-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/groove-plan-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "d8203b8f2a76df92c6c95e36ddc18a0ba5a8554718f4de7cd40cb2ab07f24ca5"
+    }
+  ],
+  "catalogHash": "79d40e7be44652b9f52158497f6fbc1fe538f11f93e1c2bd65ad748caa4f114d"
+}

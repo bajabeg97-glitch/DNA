@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "stages": [
+    {
+      "engine": "dnc",
+      "registry": "data/session7-demo-registry.json",
+      "config": {
+        "track_index": 10,
+        "channel": 12,
+        "start_tick": 1800,
+        "end_tick": 5760,
+        "seed": 807,
+        "intensity": 50,
+        "role": "strings",
+        "map_id": "170.100.001",
+        "profile_id": "170.012.001",
+        "requested_articulations": ["legato_switch", "accent_cc", "release_pressure", "phrase_switch"],
+        "allow_synthetic_map": true,
+        "max_generated_events": 16,
+        "existing_tolerance_ticks": 8
+      }
+    }
+  ],
+  "previewProfile": "pa800-gm",
+  "previewNoteLimit": 25000
+}

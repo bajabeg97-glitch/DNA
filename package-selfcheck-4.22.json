@@ -1,0 +1,42 @@
+{
+  "schema": "dna-package-selfcheck",
+  "version": "1.0",
+  "projectVersion": "4.37.0",
+  "result": "pass",
+  "imports": [
+    {
+      "module": "dna_midi_studio",
+      "file": "src/dna_midi_studio/__init__.py"
+    },
+    {
+      "module": "dna_midi_studio.pa800_validator",
+      "file": "src/dna_midi_studio/pa800_validator.py"
+    },
+    {
+      "module": "dna_midi_studio.reliability_gate",
+      "file": "src/dna_midi_studio/reliability_gate.py"
+    },
+    {
+      "module": "dna_midi_studio.arrangement_renderer",
+      "file": "src/dna_midi_studio/arrangement_renderer.py"
+    },
+    {
+      "module": "dna_midi_studio.global_coherence",
+      "file": "src/dna_midi_studio/global_coherence.py"
+    },
+    {
+      "module": "dna_midi_studio.device_certification",
+      "file": "src/dna_midi_studio/device_certification.py"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.model",
+      "file": "src/dna_midi_studio/ai_learning/model.py"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_model",
+      "file": "src/dna_midi_studio/ai_learning/relationship_model.py"
+    }
+  ],
+  "rootValidatorImportOffenders": [],
+  "canonicalVersionSource": "VERSION"
+}

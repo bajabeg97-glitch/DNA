@@ -1,0 +1,78 @@
+{
+  "schema": "dna-session6-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic confirmed RX note map for software validation only.",
+  "rxMaps": [
+    {
+      "id": "160.100.001",
+      "version": "synthetic-test-1",
+      "source": "synthetic-test",
+      "evidence": "Deterministic Session 6 software fixture; not a Pa800 production map.",
+      "confirmed": true,
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 24,
+      "sourceIds": ["160.900.001"],
+      "triggers": [
+        {
+          "action": "pick_noise",
+          "eventType": "note",
+          "note": 28,
+          "placement": "before_onset",
+          "offsetTicks": 24,
+          "durationTicks": 30,
+          "condition": "every_note",
+          "intensityOffset": -18
+        },
+        {
+          "action": "release_noise",
+          "eventType": "note",
+          "note": 29,
+          "placement": "after_release",
+          "offsetTicks": 0,
+          "durationTicks": 48,
+          "condition": "long_note",
+          "minSourceDuration": 480,
+          "intensityOffset": -12
+        },
+        {
+          "action": "position_noise",
+          "eventType": "note",
+          "note": 30,
+          "placement": "before_onset",
+          "offsetTicks": 60,
+          "durationTicks": 42,
+          "condition": "leap",
+          "minInterval": 5,
+          "intensityOffset": -25
+        },
+        {
+          "action": "phrase_release",
+          "eventType": "note",
+          "note": 31,
+          "placement": "after_release",
+          "offsetTicks": 12,
+          "durationTicks": 72,
+          "condition": "phrase_end",
+          "minGapAfter": 200,
+          "intensityOffset": -22
+        }
+      ]
+    }
+  ],
+  "factoryProfiles": [
+    {
+      "id": "160.014.001",
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 24,
+      "floor": 20,
+      "soft": 28,
+      "lowMid": 36,
+      "optimal": 44,
+      "highMid": 52,
+      "strong": 60,
+      "ceiling": 68
+    }
+  ]
+}

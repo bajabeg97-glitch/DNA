@@ -1,0 +1,43 @@
+{
+  "schema": "dna-session2-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session2-foundation",
+  "limitations": [
+    "Production Factory/GOLD registries and source MIDI corpus are not present in this workspace.",
+    "GUI/API integration from the historical application cannot be tested because its source is absent."
+  ],
+  "formalSuite": {
+    "testsRun": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session2-before.mid",
+    "output": "artifacts/session2-after.mid",
+    "manifest": "artifacts/session2-manifest.json",
+    "inputNotesInWindow": 4,
+    "outputNotesInWindow": 26,
+    "selectedPattern": "210.010.001",
+    "selectionHash": "4edb27400f331155bbd77f3257e007734eb8d1e18b3d622d99278e21a14add55",
+    "inputHash": "91b1dcccd143690414f2d6fe8b2863645392e872995031b2532d7c7582eb7f26",
+    "outputHash": "568ccf91b25ea509e43c6d607ddb26039a55a30433f276ec3eb9e89a1de2b180"
+  },
+  "invariants": {
+    "goldAffectsVelocity": false,
+    "goldAffectsProgramChange": false,
+    "factoryProfileForEveryGeneratedNote": true,
+    "programChangePreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true,
+    "sectionAwarePatternSelected": true,
+    "elementBudgetActive": true
+  },
+  "status": {
+    "session2Foundation": "SOFTWARE_VALIDATED",
+    "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

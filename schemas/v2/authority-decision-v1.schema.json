@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/authority-decision-v1.schema.json",
+  "title": "DNA MIDI Studio AuthorityDecision 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "decisionId", "subjectType", "subjectId", "document", "authority", "disposition", "scopes", "evidenceIds", "evidenceHashes", "confidence", "reasonCode", "productionEligible", "budget", "conflicts", "decisionHash"],
+  "properties": {
+    "schema": {"const": "dna-authority-decision"},
+    "version": {"const": "1.0"},
+    "decisionId": {"type": "string", "pattern": "^auth-[0-9a-f]{24}$"},
+    "subjectType": {"type": "string", "minLength": 1},
+    "subjectId": {"type": "string", "minLength": 1},
+    "document": {"type": "string", "minLength": 1},
+    "authority": {"enum": ["FACTORY_DYNAMICS", "FACTORY_SOUND", "FACTORY_STYLE", "GOLD_RELATIONSHIP", "SONG_ANALYSIS", "USER_INTENT", "GLOBAL_PLAN", "CANDIDATE_SELECTION", "TIMING_ONLY", "FACTORY_EXPRESSION", "DEVICE_ARTICULATION", "PERSONAL_SOFT_RANKING", "NONE"]},
+    "disposition": {"enum": ["ALLOW", "KEEP", "SKIP", "MANUAL_REVIEW", "BLOCK"]},
+    "scopes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "evidenceIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "evidenceHashes": {"type": "array", "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "uniqueItems": true},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "reasonCode": {"type": "string", "minLength": 1},
+    "productionEligible": {"type": "boolean"},
+    "budget": {"type": "object", "additionalProperties": false, "required": ["noteCost", "controllerCost"], "properties": {"noteCost": {"type": "integer", "minimum": 0}, "controllerCost": {"type": "integer", "minimum": 0}}},
+    "conflicts": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "decisionHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

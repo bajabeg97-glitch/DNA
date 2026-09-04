@@ -1,0 +1,32 @@
+{
+  "name": "ŠĐČŽ Premium projekt",
+  "state": {
+    "optimizer": {
+      "enabled": true,
+      "seed": 2300
+    },
+    "style": {
+      "variant": "C",
+      "target": "Korg Pa800"
+    },
+    "locks": [
+      "v2cv1:bass",
+      "v4cv1:drums"
+    ],
+    "audit": [
+      {
+        "operation": "ACCEPT_VARIANT",
+        "variant": "C"
+      }
+    ],
+    "path": "C:/Glazba/Ćirilica/ŠĐČŽ/vrlo-duga-mapa/pjesma.mid"
+  },
+  "source": {
+    "name": "izvorna-pjesma.mid",
+    "embedded": false
+  },
+  "artifacts": {
+    "styleManifest": null,
+    "optimizerReport": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session24-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "expression-plan-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/expression-plan-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "e6ff89f1fc5822afa68066ab77ceba3be4c06969288acbcf74924cbb30bad8af"
+    }
+  ],
+  "catalogHash": "4834e7afe0ee79be565f71b2d1518a111fdbc906d7cffa8c772d4e2573b5cac7"
+}

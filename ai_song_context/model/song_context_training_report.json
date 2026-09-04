@@ -1,0 +1,23 @@
+{
+  "schema": "dna-song-context-training",
+  "version": "1.0",
+  "epochs": 2,
+  "bestValidationMSE": 0.015550711968292793,
+  "holdoutMSE": 0.02063988016120025,
+  "holdoutMAE": 0.07975335844925471,
+  "velocityInput": false,
+  "velocityTarget": false,
+  "velocityOutputHead": false,
+  "history": [
+    {
+      "epoch": 1,
+      "trainMSE": 0.04838232931991418,
+      "validationMSE": 0.018958054017275572
+    },
+    {
+      "epoch": 2,
+      "trainMSE": 0.017457842868235377,
+      "validationMSE": 0.015550711968292793
+    }
+  ]
+}

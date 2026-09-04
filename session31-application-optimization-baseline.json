@@ -1,0 +1,51 @@
+{
+  "schema": "dna-application-optimization-baseline",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "sourceAnalysisHash": "6a50b4327c23cf7ab50655b9001e457720d7762c4225285b589c78d80d8bc2f6",
+  "automaticTrackPolicy": {
+    "safeAutomaticTracks": [
+      "trk-73d42a90c72bbb77e696",
+      "trk-c033749a0911da758f2a",
+      "trk-b2584cc98e960cb6a2a1"
+    ],
+    "protectedOrReviewTracks": [
+      "trk-009b3050283ebda73248",
+      "trk-6794732adc19e812d520"
+    ],
+    "downstreamPolicy": "Only ACCEPT tracks may enter automatic TrackPlan; all others stay KEEP/MANUAL_REVIEW.",
+    "fullOptimizationStage": "PLANNED_AFTER_EVIDENCE_RESOLUTION"
+  },
+  "workstreams": [
+    {
+      "id": "analysis-fusion",
+      "status": "FOUNDATION_VALIDATED"
+    },
+    {
+      "id": "evidence-authority-resolver",
+      "status": "NEXT"
+    },
+    {
+      "id": "track-plan-full-optimizer",
+      "status": "PLANNED"
+    },
+    {
+      "id": "deterministic-renderer",
+      "status": "PLANNED"
+    },
+    {
+      "id": "performance-memory-io",
+      "status": "PLANNED"
+    },
+    {
+      "id": "zero-silent-failure",
+      "status": "PLANNED"
+    }
+  ],
+  "invariants": {
+    "readOnly": true,
+    "finalMidiExportAllowed": false,
+    "factoryDynamicsAuthorityChanged": false,
+    "physicalPa800Claimed": false
+  }
+}

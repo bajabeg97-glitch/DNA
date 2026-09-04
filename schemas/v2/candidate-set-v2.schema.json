@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/v2/candidate-set-v2.schema.json",
+  "title": "DNA Premium CandidateSet 2.0",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "registries", "controls", "requests", "variants", "partialRegeneration", "audit", "manualReview", "readyForVariantRendering", "safety", "candidateSetHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-candidate-set"},
+    "version": {"const": "2.0"},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["graphHash", "songMapHash", "sourceMidiSha256", "planVariantId", "seed", "variantCount"],
+      "properties": {
+        "graphHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "songMapHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "planVariantId": {"type": "string", "pattern": "^plan-0[1-4]$"},
+        "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+        "variantCount": {"type": "integer", "minimum": 2, "maximum": 4}
+      }
+    },
+    "registries": {"type": "object", "additionalProperties": false, "required": ["factoryStrumming", "goldPerformance"], "properties": {"factoryStrumming": {"$ref": "#/$defs/registry"}, "goldPerformance": {"$ref": "#/$defs/registry"}}},
+    "controls": {"$ref": "#/$defs/controls"},
+    "requests": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/request"}},
+    "variants": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"$ref": "#/$defs/variant"}},
+    "partialRegeneration": {"type": "object", "additionalProperties": false, "required": ["enabled", "previousCandidateSetHash", "regeneratedMarkers", "preservedMarkers", "preservedSelectionCount", "preservedFragmentHashes"], "properties": {"enabled": {"type": "boolean"}, "previousCandidateSetHash": {"type": ["string", "null"]}, "regeneratedMarkers": {"type": "array", "items": {"$ref": "#/$defs/marker"}, "uniqueItems": true}, "preservedMarkers": {"type": "array", "items": {"$ref": "#/$defs/marker"}, "uniqueItems": true}, "preservedSelectionCount": {"type": "integer", "minimum": 0}, "preservedFragmentHashes": {"type": "array", "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}},
+    "audit": {"type": "object", "additionalProperties": false, "required": ["productionPatternCount", "requestCount", "fastRetrievedCount", "hardPassedCount", "hardRejectedCount", "rankedReturnedCount", "rankedOmittedCount", "rejectionReasonCounts", "allDetailedRejectionsAudited"], "properties": {"productionPatternCount": {"type": "integer", "minimum": 1}, "requestCount": {"type": "integer", "minimum": 1}, "fastRetrievedCount": {"type": "integer", "minimum": 0}, "hardPassedCount": {"type": "integer", "minimum": 0}, "hardRejectedCount": {"type": "integer", "minimum": 0}, "rankedReturnedCount": {"type": "integer", "minimum": 0}, "rankedOmittedCount": {"type": "integer", "minimum": 0}, "rejectionReasonCounts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}}, "allDetailedRejectionsAudited": {"const": true}}},
+    "manualReview": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["requestId", "code", "reason"], "properties": {"requestId": {"type": "string"}, "code": {"type": "string"}, "reason": {"type": "string"}}}},
+    "readyForVariantRendering": {"type": "boolean"},
+    "safety": {"type": "object", "additionalProperties": false, "required": ["readOnly", "midiMutationAllowed", "finalMidiGenerated", "factoryDynamicsAuthority", "goldDynamicsAuthority", "goldBankProgramAuthority", "goldGuitarAuthority", "originalSoloMutationAllowed", "hardConstraintsBeforeScoring", "deviceProfileConfirmed"], "properties": {"readOnly": {"const": true}, "midiMutationAllowed": {"const": false}, "finalMidiGenerated": {"const": false}, "factoryDynamicsAuthority": {"const": true}, "goldDynamicsAuthority": {"const": false}, "goldBankProgramAuthority": {"const": false}, "goldGuitarAuthority": {"const": false}, "originalSoloMutationAllowed": {"const": false}, "hardConstraintsBeforeScoring": {"const": true}, "deviceProfileConfirmed": {"const": false}}},
+    "candidateSetHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "marker": {"type": "string", "enum": ["i1cv1", "i2cv1", "v1cv1", "v2cv1", "v3cv1", "v4cv1", "f1cv1", "f2cv1", "e1cv1", "e2cv1"]},
+    "registry": {"type": "object", "additionalProperties": false, "required": ["path", "schema", "version", "databaseVersion", "sha256"], "properties": {"path": {"type": "string"}, "schema": {"type": "string"}, "version": {"type": "string"}, "databaseVersion": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}},
+    "controls": {"type": "object", "additionalProperties": false, "required": ["version", "lockedSelections", "excludedPatternIds", "nextCandidateOffsets", "regenerateMarkers", "maxCandidatesPerRequest"], "properties": {"version": {"const": "1.0"}, "lockedSelections": {"type": "array", "items": {"type": "object"}}, "excludedPatternIds": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"}}, "nextCandidateOffsets": {"type": "array", "items": {"type": "object"}}, "regenerateMarkers": {"type": "array", "items": {"$ref": "#/$defs/marker"}}, "maxCandidatesPerRequest": {"type": "integer", "minimum": 4, "maximum": 32}}},
+    "request": {"type": "object", "additionalProperties": false, "required": ["requestId", "marker", "role", "status", "lockedByGraph", "retrieval", "rankedCandidates", "rejectedCandidates", "hardPassedCount", "hardRejectedCount", "rankedOmittedCount", "requestHash"], "properties": {"requestId": {"type": "string"}, "marker": {"$ref": "#/$defs/marker"}, "role": {"type": "string"}, "status": {"enum": ["READY", "KEEP", "KEEP_ORIGINAL_SOLO", "MANUAL_REVIEW"]}, "lockedByGraph": {"type": "boolean"}, "retrieval": {"type": "object"}, "rankedCandidates": {"type": "array", "items": {"$ref": "#/$defs/candidate"}}, "rejectedCandidates": {"type": "array", "items": {"type": "object"}}, "hardPassedCount": {"type": "integer", "minimum": 0}, "hardRejectedCount": {"type": "integer", "minimum": 0}, "rankedOmittedCount": {"type": "integer", "minimum": 0}, "requestHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}},
+    "candidate": {"type": "object", "additionalProperties": false, "required": ["candidateId", "patternId", "sourceKind", "patternRole", "score", "criteria", "hardConstraintsPassed", "rejectionReasons", "transformations", "transformationOperations", "lengthBars", "density", "polyphonyPeak", "register", "sourceSection", "rhythmSignature", "provenance", "candidateHash", "rank"], "properties": {"candidateId": {"type": "string"}, "patternId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"}, "sourceKind": {"enum": ["GOLD_PERFORMANCE", "FACTORY_STRUMMING"]}, "patternRole": {"type": "string"}, "score": {"type": "number", "minimum": 0, "maximum": 1}, "criteria": {"type": "object", "minProperties": 14, "maxProperties": 14, "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}}, "hardConstraintsPassed": {"const": true}, "rejectionReasons": {"type": "array", "maxItems": 0}, "transformations": {"type": "array", "items": {"type": "string"}}, "transformationOperations": {"type": "integer", "minimum": 0}, "lengthBars": {"type": "number", "exclusiveMinimum": 0}, "density": {"type": "number", "minimum": 0}, "polyphonyPeak": {"type": "integer", "minimum": 1}, "register": {"type": "object"}, "sourceSection": {"type": "string"}, "rhythmSignature": {"type": "string"}, "provenance": {"type": "object"}, "candidateHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "rank": {"type": "integer", "minimum": 1}}},
+    "variant": {"type": "object", "additionalProperties": false, "required": ["variantId", "planVariantId", "selections", "score", "diversityDistanceFromA", "variantHash"], "properties": {"variantId": {"type": "string", "pattern": "^variant-[A-D]$"}, "planVariantId": {"type": "string", "pattern": "^plan-0[1-4]$"}, "selections": {"type": "array", "items": {"type": "object"}}, "score": {"type": "number", "minimum": 0, "maximum": 1}, "diversityDistanceFromA": {"type": "number", "minimum": 0, "maximum": 1}, "variantHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+  }
+}

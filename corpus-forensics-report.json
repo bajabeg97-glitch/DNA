@@ -1,0 +1,2586 @@
+{
+  "schema": "dna-midi-studio-corpus-forensics",
+  "version": "3.1",
+  "date": "2026-09-03",
+  "archive": {
+    "path": "prism-uploads/DNA.zip",
+    "sha256": "125f4486625db44f7cdd49bd670aff252a961c88ea14741ec970ec3ae5eec85a"
+  },
+  "factory": {
+    "source": {
+      "files": 3211,
+      "sha256": "1ea0bc4b5685a79942f163fba9e39d41e7a3036d623e91b9ad274bd1c044799a"
+    },
+    "parsed": {
+      "filesParsed": 3211,
+      "tracks": 65021,
+      "notes": 1432867
+    },
+    "errors": [],
+    "styleEvidence": {
+      "elementTrackLabels": {
+        "break": 2760,
+        "ending 1": 4448,
+        "ending 2": 3473,
+        "ending 3": 11041,
+        "fill 1": 3194,
+        "fill 2": 3433,
+        "intro 1": 4444,
+        "intro 2": 2961,
+        "intro 3": 1829,
+        "variation 1": 2721,
+        "variation 2": 4037,
+        "variation 3": 4433,
+        "variation 4": 4674
+      },
+      "cvTrackCombinations": 370,
+      "cvTracks": [
+        {
+          "element": "break",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 182
+        },
+        {
+          "element": "break",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 23
+        },
+        {
+          "element": "break",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 164
+        },
+        {
+          "element": "break",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 24
+        },
+        {
+          "element": "break",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 143
+        },
+        {
+          "element": "break",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 20
+        },
+        {
+          "element": "break",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 101
+        },
+        {
+          "element": "break",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 14
+        },
+        {
+          "element": "break",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 76
+        },
+        {
+          "element": "break",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 10
+        },
+        {
+          "element": "break",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 225
+        },
+        {
+          "element": "break",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 27
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 211
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 206
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 227
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 227
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 227
+        },
+        {
+          "element": "break",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 227
+        },
+        {
+          "element": "break",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 133
+        },
+        {
+          "element": "break",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 17
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 142
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 136
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 155
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 145
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 149
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 147
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 142
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 125
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 123
+        },
+        {
+          "element": "ending 1",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 119
+        },
+        {
+          "element": "ending 1",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 140
+        },
+        {
+          "element": "ending 1",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 138
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 228
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 178
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 227
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 227
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 227
+        },
+        {
+          "element": "ending 1",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 227
+        },
+        {
+          "element": "ending 1",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 171
+        },
+        {
+          "element": "ending 1",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 163
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 187
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 89
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 193
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 88
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 189
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 81
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 153
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 64
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 130
+        },
+        {
+          "element": "ending 2",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 51
+        },
+        {
+          "element": "ending 2",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 201
+        },
+        {
+          "element": "ending 2",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 65
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 223
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 225
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 226
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 227
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 227
+        },
+        {
+          "element": "ending 2",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 227
+        },
+        {
+          "element": "ending 2",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 178
+        },
+        {
+          "element": "ending 2",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 63
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 60
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 11
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 51
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 12
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 61
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 11
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 43
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 5
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 41
+        },
+        {
+          "element": "ending 3",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 3
+        },
+        {
+          "element": "ending 3",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 79
+        },
+        {
+          "element": "ending 3",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 11
+        },
+        {
+          "element": "ending 3",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 42
+        },
+        {
+          "element": "ending 3",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 11
+        },
+        {
+          "element": "ending 3",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 25
+        },
+        {
+          "element": "ending 3",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 4
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 185
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 81
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 186
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 86
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 152
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 72
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 102
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 40
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 71
+        },
+        {
+          "element": "fill 1",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 31
+        },
+        {
+          "element": "fill 1",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 227
+        },
+        {
+          "element": "fill 1",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 94
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 214
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 201
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 227
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 227
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 227
+        },
+        {
+          "element": "fill 1",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 227
+        },
+        {
+          "element": "fill 1",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 169
+        },
+        {
+          "element": "fill 1",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 71
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 202
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 80
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 205
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 94
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 199
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 84
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 146
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 55
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 123
+        },
+        {
+          "element": "fill 2",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 43
+        },
+        {
+          "element": "fill 2",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 226
+        },
+        {
+          "element": "fill 2",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 94
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 228
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 223
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 227
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 227
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 227
+        },
+        {
+          "element": "fill 2",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 227
+        },
+        {
+          "element": "fill 2",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 181
+        },
+        {
+          "element": "fill 2",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 73
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 214
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 215
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 224
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 225
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 202
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 200
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 165
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 174
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 148
+        },
+        {
+          "element": "intro 1",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 149
+        },
+        {
+          "element": "intro 1",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 232
+        },
+        {
+          "element": "intro 1",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 233
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 153
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 160
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 243
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 241
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 242
+        },
+        {
+          "element": "intro 1",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 241
+        },
+        {
+          "element": "intro 1",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 170
+        },
+        {
+          "element": "intro 1",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 171
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 168
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 61
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 171
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 59
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 146
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 52
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 97
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 30
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 71
+        },
+        {
+          "element": "intro 2",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 22
+        },
+        {
+          "element": "intro 2",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 211
+        },
+        {
+          "element": "intro 2",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 65
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 209
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 180
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 231
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 231
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 231
+        },
+        {
+          "element": "intro 2",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 230
+        },
+        {
+          "element": "intro 2",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 162
+        },
+        {
+          "element": "intro 2",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 54
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 16
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 16
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 13
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 13
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 11
+        },
+        {
+          "element": "intro 3",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "intro 3",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 87
+        },
+        {
+          "element": "intro 3",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 3
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 206
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 213
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 225
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 225
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 225
+        },
+        {
+          "element": "intro 3",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 225
+        },
+        {
+          "element": "intro 3",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 79
+        },
+        {
+          "element": "intro 3",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "unknown",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 1
+        },
+        {
+          "element": "unknown",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 9
+        },
+        {
+          "element": "unknown",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 5
+        },
+        {
+          "element": "unknown",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 3
+        },
+        {
+          "element": "unknown",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "unknown",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 191
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 118
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 3,
+          "tracks": 60
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 4,
+          "tracks": 8
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 5,
+          "tracks": 4
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC1",
+          "cv": 6,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 191
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 108
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 3,
+          "tracks": 53
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 4,
+          "tracks": 7
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC2",
+          "cv": 6,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 124
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 81
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 3,
+          "tracks": 41
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 4,
+          "tracks": 7
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC3",
+          "cv": 6,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 72
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 41
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC4",
+          "cv": 3,
+          "tracks": 16
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC4",
+          "cv": 4,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 49
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 25
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 3,
+          "tracks": 9
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 4,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 5,
+          "tracks": 1
+        },
+        {
+          "element": "variation 1",
+          "role": "ACC5",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 243
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 134
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 3,
+          "tracks": 66
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 4,
+          "tracks": 9
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 5,
+          "tracks": 4
+        },
+        {
+          "element": "variation 1",
+          "role": "BASS",
+          "cv": 6,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 238
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 133
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 65
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 9
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 4
+        },
+        {
+          "element": "variation 1",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 180
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 100
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 3,
+          "tracks": 48
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 4,
+          "tracks": 6
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 5,
+          "tracks": 2
+        },
+        {
+          "element": "variation 1",
+          "role": "PERC",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 215
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 125
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 3,
+          "tracks": 64
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 4,
+          "tracks": 12
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC1",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 196
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 113
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 3,
+          "tracks": 58
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 4,
+          "tracks": 11
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 5,
+          "tracks": 2
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC2",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 182
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 104
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 3,
+          "tracks": 53
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 4,
+          "tracks": 10
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC3",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 118
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 60
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 3,
+          "tracks": 27
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 4,
+          "tracks": 5
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 5,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC4",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 75
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 35
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC5",
+          "cv": 3,
+          "tracks": 18
+        },
+        {
+          "element": "variation 2",
+          "role": "ACC5",
+          "cv": 4,
+          "tracks": 4
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 242
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 133
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 3,
+          "tracks": 67
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 4,
+          "tracks": 12
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 2",
+          "role": "BASS",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 242
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 243
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 243
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 243
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 243
+        },
+        {
+          "element": "variation 2",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 243
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 196
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 107
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 3,
+          "tracks": 54
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 4,
+          "tracks": 10
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 2",
+          "role": "PERC",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 223
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 128
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 3,
+          "tracks": 70
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 4,
+          "tracks": 19
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC1",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 225
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 130
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 3,
+          "tracks": 71
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 4,
+          "tracks": 19
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC2",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 218
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 127
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 3,
+          "tracks": 69
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 4,
+          "tracks": 19
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC3",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 159
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 85
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 3,
+          "tracks": 42
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 4,
+          "tracks": 10
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 5,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC4",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 115
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 56
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 3,
+          "tracks": 33
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 4,
+          "tracks": 8
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 5,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "ACC5",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 239
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 137
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 3,
+          "tracks": 73
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 4,
+          "tracks": 19
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 3",
+          "role": "BASS",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 241
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 242
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 242
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 242
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 242
+        },
+        {
+          "element": "variation 3",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 242
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 209
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 124
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 3,
+          "tracks": 65
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 4,
+          "tracks": 16
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 3",
+          "role": "PERC",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 1,
+          "tracks": 229
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 2,
+          "tracks": 130
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 3,
+          "tracks": 70
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 4,
+          "tracks": 20
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 5,
+          "tracks": 7
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC1",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 1,
+          "tracks": 231
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 2,
+          "tracks": 134
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 3,
+          "tracks": 74
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 4,
+          "tracks": 21
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 5,
+          "tracks": 7
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC2",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 1,
+          "tracks": 229
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 2,
+          "tracks": 130
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 3,
+          "tracks": 73
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 4,
+          "tracks": 20
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 5,
+          "tracks": 7
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC3",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 1,
+          "tracks": 188
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 2,
+          "tracks": 104
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 3,
+          "tracks": 52
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 4,
+          "tracks": 15
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC4",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 1,
+          "tracks": 159
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 2,
+          "tracks": 78
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 3,
+          "tracks": 42
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 4,
+          "tracks": 11
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 5,
+          "tracks": 3
+        },
+        {
+          "element": "variation 4",
+          "role": "ACC5",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 1,
+          "tracks": 241
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 2,
+          "tracks": 137
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 3,
+          "tracks": 75
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 4,
+          "tracks": 21
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 5,
+          "tracks": 7
+        },
+        {
+          "element": "variation 4",
+          "role": "BASS",
+          "cv": 6,
+          "tracks": 1
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 1,
+          "tracks": 240
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 2,
+          "tracks": 240
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 3,
+          "tracks": 242
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 4,
+          "tracks": 241
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 5,
+          "tracks": 242
+        },
+        {
+          "element": "variation 4",
+          "role": "DRUMS",
+          "cv": 6,
+          "tracks": 242
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 1,
+          "tracks": 221
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 2,
+          "tracks": 126
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 3,
+          "tracks": 71
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 4,
+          "tracks": 21
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 5,
+          "tracks": 7
+        },
+        {
+          "element": "variation 4",
+          "role": "PERC",
+          "cv": 6,
+          "tracks": 1
+        }
+      ]
+    },
+    "controllerEvidence": {
+      "ccCounts": {
+        "0": 31459,
+        "1": 18532,
+        "2": 4,
+        "3": 5,
+        "4": 8,
+        "5": 16,
+        "6": 53,
+        "7": 31228,
+        "8": 144,
+        "10": 1,
+        "11": 31220,
+        "13": 2,
+        "14": 1,
+        "17": 1,
+        "18": 1,
+        "19": 42,
+        "20": 1,
+        "22": 23431,
+        "30": 1,
+        "31": 3273,
+        "32": 31348,
+        "38": 1,
+        "49": 1,
+        "51": 1,
+        "64": 5792,
+        "66": 67,
+        "67": 168,
+        "69": 4,
+        "71": 6,
+        "72": 1,
+        "78": 1,
+        "80": 9,
+        "86": 1,
+        "87": 1,
+        "88": 1,
+        "90": 2,
+        "97": 21,
+        "100": 94,
+        "101": 13,
+        "103": 65,
+        "104": 1,
+        "105": 5,
+        "106": 1,
+        "108": 3,
+        "110": 60,
+        "111": 10,
+        "114": 26,
+        "115": 56,
+        "116": 33,
+        "117": 2,
+        "119": 1,
+        "121": 42,
+        "127": 4
+      },
+      "soundsWithVolumeOrExpression": 581,
+      "volumeEvents": 29825,
+      "expressionEvents": 29826,
+      "fxSendEvents": 0
+    },
+    "velocityCurveFeasibility": {
+      "profiles": 1964,
+      "samplesAtLeast32": 1197,
+      "samplesAtLeast128": 810,
+      "samplesAtLeast512": 424
+    },
+    "guitarStrummingEvidence": {
+      "candidateTracks": 5643,
+      "candidateNotes": 380901,
+      "strumClusters": 51308,
+      "up-pitch": 23423,
+      "mixed": 25888,
+      "down-pitch": 1997,
+      "offsetTicks7": [
+        0,
+        0,
+        1,
+        3,
+        6,
+        9,
+        98
+      ],
+      "gateTicks7": [
+        0,
+        2,
+        22,
+        47,
+        94,
+        188,
+        165277
+      ],
+      "chordSize7": [
+        3,
+        3,
+        3,
+        4,
+        5,
+        5,
+        13
+      ],
+      "byElement": {
+        "ending 2:bars:7": 5,
+        "fill 1:bars:1": 1169,
+        "fill 2:bars:1": 1118,
+        "intro 1:bars:10": 214,
+        "intro 2:bars:2": 434,
+        "variation 1:bars:8": 3103,
+        "variation 2:bars:8": 3697,
+        "variation 3:bars:8": 4579,
+        "variation 4:bars:8": 6699,
+        "break:bars:1": 305,
+        "variation 1:bars:4": 2138,
+        "variation 2:bars:4": 2440,
+        "variation 3:bars:4": 2839,
+        "variation 4:bars:4": 3016,
+        "ending 1:bars:8": 552,
+        "ending 2:bars:9": 2,
+        "intro 1:bars:8": 1348,
+        "intro 2:bars:5": 391,
+        "ending 1:bars:6": 435,
+        "intro 1:bars:4": 938,
+        "ending 1:bars:7": 78,
+        "ending 3:bars:2": 216,
+        "variation 1:bars:2": 631,
+        "variation 2:bars:2": 512,
+        "variation 3:bars:2": 549,
+        "ending 1:bars:3": 289,
+        "ending 2:bars:1": 28,
+        "intro 2:bars:1": 5,
+        "intro 3:bars:1": 256,
+        "intro 2:bars:4": 923,
+        "ending 2:bars:2": 376,
+        "intro 1:bars:2": 151,
+        "variation 4:bars:2": 761,
+        "ending 1:bars:4": 632,
+        "ending 2:bars:3": 393,
+        "intro 1:bars:5": 1727,
+        "intro 2:bars:3": 47,
+        "ending 2:bars:4": 829,
+        "ending 3:bars:1": 161,
+        "ending 1:bars:5": 547,
+        "intro 1:bars:7": 66,
+        "ending 1:bars:9": 851,
+        "ending 2:bars:5": 259,
+        "intro 1:bars:13": 170,
+        "intro 1:bars:9": 986,
+        "ending 2:bars:6": 202,
+        "variation 1:bars:12": 193,
+        "variation 2:bars:12": 395,
+        "variation 3:bars:12": 307,
+        "variation 4:bars:12": 439,
+        "ending 1:bars:2": 72,
+        "fill 1:bars:5": 100,
+        "intro 1:bars:12": 504,
+        "ending 1:bars:11": 132,
+        "intro 1:bars:11": 74,
+        "intro 1:bars:3": 3,
+        "fill 1:bars:2": 99,
+        "fill 2:bars:2": 107,
+        "intro 1:bars:6": 252,
+        "ending 1:bars:10": 334,
+        "ending 3:bars:3": 6,
+        "intro 2:bars:9": 278,
+        "intro 2:bars:8": 26,
+        "variation 2:bars:16": 138,
+        "variation 3:bars:15": 138,
+        "variation 4:bars:16": 398,
+        "intro 3:bars:2": 19,
+        "intro 1:bars:17": 27,
+        "intro 1:bars:16": 1,
+        "variation 1:bars:16": 14,
+        "break:bars:2": 25,
+        "ending 1:bars:18": 0,
+        "ending 1:bars:12": 148,
+        "ending 2:bars:8": 12
+      }
+    }
+  },
+  "gold": {
+    "source": {
+      "files": 182,
+      "sha256": "a7d7a642b3e21de3d2b609a6ad212a077e733adb3e9a9f862cb8b35066d939b2"
+    },
+    "parsed": {
+      "filesParsed": 182,
+      "meta:2": 182,
+      "meta:81": 219,
+      "meta:88": 514,
+      "sysexEvents": 151684,
+      "command:11": 168624,
+      "command:12": 5893,
+      "meta:127": 45491,
+      "noChordEvents": 226,
+      "command:9": 4168672,
+      "notes": 2272811,
+      "command:14": 98607,
+      "decodedChordEvents": 40867,
+      "command:8": 377124,
+      "command:13": 26471,
+      "meta:47": 193,
+      "meta:5": 3566,
+      "meta:3": 19,
+      "meta:6": 21,
+      "meta:89": 3,
+      "meta:33": 2
+    },
+    "formats": {
+      "0": 180,
+      "1": 2
+    },
+    "divisions": {
+      "120": 2,
+      "192": 1,
+      "384": 178,
+      "480": 1
+    },
+    "errors": [],
+    "controllerEvidence": {
+      "ccCounts": {
+        "0": 5682,
+        "1": 50108,
+        "2": 3160,
+        "6": 7453,
+        "7": 4004,
+        "10": 3880,
+        "11": 42121,
+        "12": 111,
+        "32": 5682,
+        "64": 576,
+        "71": 2835,
+        "72": 2836,
+        "73": 2835,
+        "74": 2834,
+        "75": 2834,
+        "76": 2827,
+        "77": 2827,
+        "78": 2827,
+        "91": 3797,
+        "93": 3813,
+        "100": 7504,
+        "101": 7504,
+        "119": 564,
+        "121": 10
+      },
+      "programChangeAuthority": false,
+      "velocityAuthority": false
+    },
+    "korgChordEvidence": {
+      "decoderStatus": "EVIDENCE_BACKED_CANDIDATE_REQUIRES_DEVICE_CONFIRMATION",
+      "filesWithDecodedEvents": 177,
+      "decodedEvents": 40867,
+      "qualities": {
+        "augmented": 76,
+        "augmented7": 4,
+        "augmentedMajor7": 4,
+        "diminished": 58,
+        "dominant7": 5893,
+        "dominant7b5": 9,
+        "dominant7sus4": 7,
+        "major": 17627,
+        "major6": 39,
+        "major7": 98,
+        "major7b5": 1,
+        "major7sus4": 11,
+        "majorNo3": 235,
+        "minor": 11356,
+        "minor6": 1,
+        "minor7": 91,
+        "minor7b5": 7,
+        "minorMajor7": 4,
+        "rootOnly": 5052,
+        "sus2": 1,
+        "sus4": 293
+      },
+      "format": "FF 7F 07 42 60 08 type root bass flags; type matches zero-based Pa chord table"
+    },
+    "korgNativeEventEvidence": {
+      "meta127Families": {
+        "426008": 41094,
+        "426009": 3642,
+        "42600b": 387,
+        "42600a": 197,
+        "42600c": 165,
+        "120901": 6
+      },
+      "sysexFamilies": {
+        "423f7801": 148360,
+        "427f6000": 1675,
+        "7f7f0401": 1311,
+        "7f7f0404": 180,
+        "427f6041": 84,
+        "427f6040": 66,
+        "12273d4f": 6,
+        "7e7f0901": 2
+      },
+      "paired42_3f_78_01": {
+        "on": 74180,
+        "paired": 74180,
+        "danglingOn": 0
+      },
+      "policy": "preserve raw bytes; do not synthesize until semantics are independently proven"
+    },
+    "explicitStyleMarkers": {}
+  },
+  "confirmedFindings": [
+    "Factory contains explicit Style Element, track-role and CV labels ignored by the current v2 builder.",
+    "Factory contains CC7/CC11 mixer evidence and extensive GM guitar-program ACC evidence.",
+    "Factory source contains no CC91-95 FX-send evidence, so Factory-learned FX claims are unsupported.",
+    "GOLD contains Korg manufacturer meta/SysEx events, RPN/NRPN, FX sends, lyrics and complete song form.",
+    "GOLD has no reliable explicit Intro/Variation/Fill/Ending markers; form must be inferred or decoded from proven events.",
+    "GOLD Program Change and velocity remain non-authoritative and must not enter selection or mutation decisions."
+  ],
+  "nextImplementationGates": [
+    "Build Factory seven-point velocity and mixer curves with per-profile sample thresholds.",
+    "Segment Factory tracks by real element/CV labels and build guitar strumming evidence.",
+    "Decode GOLD Korg chord meta events read-only and validate against note-derived chords.",
+    "Add independent protected-event verifier before volume, FX, key-range or relationship mutation.",
+    "Do not promise equal acoustic loudness without a Pa800 audio render; expose a MIDI energy/headroom proxy instead."
+  ],
+  "invariants": {
+    "goldAffectsVelocity": false,
+    "goldAffectsProgramChange": false,
+    "sourceFilesModified": false,
+    "auditDoesNotRewriteUnknownKorgEvents": true
+  }
+}

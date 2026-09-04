@@ -1,0 +1,149 @@
+{
+  "schema": "dna-premium-expression-plan",
+  "version": "2.0",
+  "layers": [
+    {
+      "layerId": "fixture-layer-grace",
+      "layerType": "PREVIEW",
+      "subtype": "grace",
+      "priorityTier": "DECORATIVE",
+      "removable": true,
+      "decision": "ADD",
+      "reason": "SELF_AUTHORED_SESSION26_FIXTURE",
+      "budget": 2,
+      "events": [
+        {
+          "eventId": "fixture-grace-1",
+          "kind": "grace",
+          "sourceNoteUid": "source-1",
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "phraseId": "phrase-001",
+          "chordCellIndex": 0,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "routing": "SESSION26_PREVIEW_LAYER",
+          "onsetTick": 204,
+          "durationTick": 36,
+          "pitch": 59,
+          "velocity": 64,
+          "productionEligible": false,
+          "eventHash": "53af0d84471d1c6c22cc74e6631b3e569b352df38e4ba015a3bc9683eff955ad"
+        },
+        {
+          "eventId": "fixture-grace-2",
+          "kind": "grace",
+          "sourceNoteUid": "source-2",
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "phraseId": "phrase-001",
+          "chordCellIndex": 1,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "routing": "SESSION26_PREVIEW_LAYER",
+          "onsetTick": 684,
+          "durationTick": 36,
+          "pitch": 66,
+          "velocity": 65,
+          "productionEligible": false,
+          "eventHash": "2ba409e26ea876999343bed502607b5e1163d467a4341768e1cd9cdef46b8eb2"
+        }
+      ],
+      "skipped": {},
+      "layerHash": "73889c1a5a9b0e98216a0a61230f02dacf87d825e1885e70f1d1bbc985f6dde9"
+    },
+    {
+      "layerId": "fixture-layer-third",
+      "layerType": "PREVIEW",
+      "subtype": "third",
+      "priorityTier": "DECORATIVE",
+      "removable": true,
+      "decision": "ADD",
+      "reason": "SELF_AUTHORED_SESSION26_FIXTURE",
+      "budget": 2,
+      "events": [
+        {
+          "eventId": "fixture-third-1",
+          "kind": "third",
+          "sourceNoteUid": "source-1",
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "phraseId": "phrase-001",
+          "chordCellIndex": 0,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "routing": "SESSION26_PREVIEW_LAYER",
+          "onsetTick": 240,
+          "durationTick": 240,
+          "pitch": 64,
+          "velocity": 64,
+          "productionEligible": false,
+          "eventHash": "de857fc337bdee5b5c84260ae3978e70b7c9fd9041b1b45e9896ee484821d0f4"
+        },
+        {
+          "eventId": "fixture-third-2",
+          "kind": "third",
+          "sourceNoteUid": "source-2",
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "phraseId": "phrase-001",
+          "chordCellIndex": 1,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "routing": "SESSION26_PREVIEW_LAYER",
+          "onsetTick": 720,
+          "durationTick": 240,
+          "pitch": 71,
+          "velocity": 65,
+          "productionEligible": false,
+          "eventHash": "aafa6ae80e274e66f7b5e206713b74d2f46c32fa0f8f9b085deeb591b3833821"
+        }
+      ],
+      "skipped": {},
+      "layerHash": "b7e853ca078e6d47aa5e1f8ecf8a90fa9befcdaa4e9c4500dcd1165da8b503f3"
+    },
+    {
+      "layerId": "fixture-layer-echo",
+      "layerType": "PREVIEW",
+      "subtype": "echo",
+      "priorityTier": "DECORATIVE",
+      "removable": true,
+      "decision": "ADD",
+      "reason": "SELF_AUTHORED_SESSION26_FIXTURE",
+      "budget": 1,
+      "events": [
+        {
+          "eventId": "fixture-echo-1",
+          "kind": "echo",
+          "sourceNoteUid": "source-1",
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_ECHO_PREVIEW",
+          "phraseId": "phrase-001",
+          "chordCellIndex": 0,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "routing": "SESSION26_PREVIEW_LAYER",
+          "onsetTick": 360,
+          "durationTick": 240,
+          "pitch": 67,
+          "velocity": 64,
+          "productionEligible": false,
+          "eventHash": "c63be10da6ab2b368e9a05d769f3726d0bd636b6c032548021b5e5862571435e"
+        }
+      ],
+      "skipped": {},
+      "layerHash": "18f36260fb7e0a13a767de55ee34565164caa49f31e2f2ec035613ac1138c013"
+    }
+  ],
+  "audit": {
+    "maximumEstimatedPeak": 8
+  },
+  "readyForPreview": true,
+  "readyForProductionRender": false,
+  "expressionPlanHash": "b617d34be94f1763ff48098539f5624587ffc53a9c05785392da4161cc30eaab"
+}

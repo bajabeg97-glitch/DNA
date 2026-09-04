@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session22-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "candidate-set-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/v2/candidate-set-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "041d94a3bf7743f9f616347925d4e37a59fefb08549f24e460c8b479c3008f14"
+    }
+  ],
+  "catalogHash": "d7b8d6f5f8e83b6f15bbbd5a63e3c0c1993ca02c5a19206df3511ef333cbdc8d"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/arranger-project-checkpoint-v1.schema.json",
+  "title": "Arranger Project Checkpoint 1.0",
+  "type": "object",
+  "required": ["schema", "version", "checkpointId", "projectHash", "sourceMidiSha256", "resumeStage", "reason", "completedStages", "lastConfirmedStageHash", "controls", "history", "midiEmbedded", "checkpointHash"],
+  "properties": {
+    "schema": {"const": "dna-arranger-project-checkpoint"}, "version": {"const": "1.0"},
+    "checkpointId": {"type": "string"}, "projectHash": {"type": "string"},
+    "sourceMidiSha256": {"type": "string"}, "resumeStage": {"type": "string"},
+    "reason": {"type": "string"}, "completedStages": {"type": "array"},
+    "lastConfirmedStageHash": {"type": "string"}, "controls": {"type": "object"},
+    "history": {"type": "object"}, "midiEmbedded": {"const": false},
+    "checkpointHash": {"type": "string"}
+  },
+  "additionalProperties": false,
+  "x-contract-version": "1.0"
+}

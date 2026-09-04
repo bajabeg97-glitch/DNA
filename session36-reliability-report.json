@@ -1,0 +1,2244 @@
+{
+  "schema": "dna-zero-silent-failure-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "passed": true,
+  "structuralCorpus": [
+    {
+      "caseId": "missing_header",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "short_header",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "invalid_header_length",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "unsupported_format_2",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "smf0_two_tracks",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "smpte_division",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "zero_ppq",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "zero_tracks_format1",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "missing_track_chunk",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "wrong_track_chunk",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "declared_track_too_long",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "trailing_bytes",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "missing_eot",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "eot_non_empty",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "event_after_eot",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "running_status_without_status",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "truncated_channel_event",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "channel_data_high_bit",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "unsupported_system_status",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "truncated_sysex",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "truncated_meta",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "vlq_exceeds_four_bytes",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "orphan_note_off",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    },
+    {
+      "caseId": "dangling_note_on",
+      "status": "BLOCKED",
+      "errorCode": "REL_MIDI_MALFORMED",
+      "failClosed": true,
+      "fallbackUsed": false,
+      "outcomeHash": "e2545b32fa8da0aa6deeb6abaebb85e842c36ed2de10aec38dc4134bcdb9bdeb"
+    }
+  ],
+  "sealedMutationFuzz": [
+    {
+      "mutationId": "mutation-001",
+      "byteOffset": 39,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-002",
+      "byteOffset": 7958,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-003",
+      "byteOffset": 3130,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-004",
+      "byteOffset": 11049,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-005",
+      "byteOffset": 6221,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-006",
+      "byteOffset": 1393,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-007",
+      "byteOffset": 9312,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-008",
+      "byteOffset": 4484,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-009",
+      "byteOffset": 12403,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-010",
+      "byteOffset": 7575,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-011",
+      "byteOffset": 2747,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-012",
+      "byteOffset": 10666,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-013",
+      "byteOffset": 5838,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-014",
+      "byteOffset": 1010,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-015",
+      "byteOffset": 8929,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-016",
+      "byteOffset": 4101,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-017",
+      "byteOffset": 12020,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-018",
+      "byteOffset": 7192,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-019",
+      "byteOffset": 2364,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-020",
+      "byteOffset": 10283,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-021",
+      "byteOffset": 5455,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-022",
+      "byteOffset": 627,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-023",
+      "byteOffset": 8546,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-024",
+      "byteOffset": 3718,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-025",
+      "byteOffset": 11637,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-026",
+      "byteOffset": 6809,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-027",
+      "byteOffset": 1981,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-028",
+      "byteOffset": 9900,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-029",
+      "byteOffset": 5072,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-030",
+      "byteOffset": 244,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-031",
+      "byteOffset": 8163,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-032",
+      "byteOffset": 3335,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-033",
+      "byteOffset": 11254,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-034",
+      "byteOffset": 6426,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-035",
+      "byteOffset": 1598,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-036",
+      "byteOffset": 9517,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-037",
+      "byteOffset": 4689,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-038",
+      "byteOffset": 12608,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-039",
+      "byteOffset": 7780,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-040",
+      "byteOffset": 2952,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-041",
+      "byteOffset": 10871,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-042",
+      "byteOffset": 6043,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-043",
+      "byteOffset": 1215,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-044",
+      "byteOffset": 9134,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-045",
+      "byteOffset": 4306,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-046",
+      "byteOffset": 12225,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-047",
+      "byteOffset": 7397,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-048",
+      "byteOffset": 2569,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-049",
+      "byteOffset": 10488,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-050",
+      "byteOffset": 5660,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-051",
+      "byteOffset": 832,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-052",
+      "byteOffset": 8751,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-053",
+      "byteOffset": 3923,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-054",
+      "byteOffset": 11842,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-055",
+      "byteOffset": 7014,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-056",
+      "byteOffset": 2186,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-057",
+      "byteOffset": 10105,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-058",
+      "byteOffset": 5277,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-059",
+      "byteOffset": 449,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-060",
+      "byteOffset": 8368,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-061",
+      "byteOffset": 3540,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-062",
+      "byteOffset": 11459,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-063",
+      "byteOffset": 6631,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-064",
+      "byteOffset": 1803,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-065",
+      "byteOffset": 9722,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-066",
+      "byteOffset": 4894,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-067",
+      "byteOffset": 66,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-068",
+      "byteOffset": 7985,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-069",
+      "byteOffset": 3157,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-070",
+      "byteOffset": 11076,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-071",
+      "byteOffset": 6248,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-072",
+      "byteOffset": 1420,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-073",
+      "byteOffset": 9339,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-074",
+      "byteOffset": 4511,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-075",
+      "byteOffset": 12430,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-076",
+      "byteOffset": 7602,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-077",
+      "byteOffset": 2774,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-078",
+      "byteOffset": 10693,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-079",
+      "byteOffset": 5865,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-080",
+      "byteOffset": 1037,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-081",
+      "byteOffset": 8956,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-082",
+      "byteOffset": 4128,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-083",
+      "byteOffset": 12047,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-084",
+      "byteOffset": 7219,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-085",
+      "byteOffset": 2391,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-086",
+      "byteOffset": 10310,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-087",
+      "byteOffset": 5482,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-088",
+      "byteOffset": 654,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-089",
+      "byteOffset": 8573,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-090",
+      "byteOffset": 3745,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-091",
+      "byteOffset": 11664,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-092",
+      "byteOffset": 6836,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-093",
+      "byteOffset": 2008,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-094",
+      "byteOffset": 9927,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-095",
+      "byteOffset": 5099,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-096",
+      "byteOffset": 271,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-097",
+      "byteOffset": 8190,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-098",
+      "byteOffset": 3362,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-099",
+      "byteOffset": 11281,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-100",
+      "byteOffset": 6453,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-101",
+      "byteOffset": 1625,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-102",
+      "byteOffset": 9544,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-103",
+      "byteOffset": 4716,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-104",
+      "byteOffset": 12635,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-105",
+      "byteOffset": 7807,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-106",
+      "byteOffset": 2979,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-107",
+      "byteOffset": 10898,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-108",
+      "byteOffset": 6070,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-109",
+      "byteOffset": 1242,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-110",
+      "byteOffset": 9161,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-111",
+      "byteOffset": 4333,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-112",
+      "byteOffset": 12252,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-113",
+      "byteOffset": 7424,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-114",
+      "byteOffset": 2596,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-115",
+      "byteOffset": 10515,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-116",
+      "byteOffset": 5687,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-117",
+      "byteOffset": 859,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-118",
+      "byteOffset": 8778,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-119",
+      "byteOffset": 3950,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-120",
+      "byteOffset": 11869,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-121",
+      "byteOffset": 7041,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-122",
+      "byteOffset": 2213,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-123",
+      "byteOffset": 10132,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-124",
+      "byteOffset": 5304,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-125",
+      "byteOffset": 476,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-126",
+      "byteOffset": 8395,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-127",
+      "byteOffset": 3567,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-128",
+      "byteOffset": 11486,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-129",
+      "byteOffset": 6658,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-130",
+      "byteOffset": 1830,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-131",
+      "byteOffset": 9749,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-132",
+      "byteOffset": 4921,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-133",
+      "byteOffset": 93,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-134",
+      "byteOffset": 8012,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-135",
+      "byteOffset": 3184,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-136",
+      "byteOffset": 11103,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-137",
+      "byteOffset": 6275,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-138",
+      "byteOffset": 1447,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-139",
+      "byteOffset": 9366,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-140",
+      "byteOffset": 4538,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-141",
+      "byteOffset": 12457,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-142",
+      "byteOffset": 7629,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-143",
+      "byteOffset": 2801,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-144",
+      "byteOffset": 10720,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-145",
+      "byteOffset": 5892,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-146",
+      "byteOffset": 1064,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-147",
+      "byteOffset": 8983,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-148",
+      "byteOffset": 4155,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-149",
+      "byteOffset": 12074,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-150",
+      "byteOffset": 7246,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-151",
+      "byteOffset": 2418,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-152",
+      "byteOffset": 10337,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-153",
+      "byteOffset": 5509,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-154",
+      "byteOffset": 681,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-155",
+      "byteOffset": 8600,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-156",
+      "byteOffset": 3772,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-157",
+      "byteOffset": 11691,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-158",
+      "byteOffset": 6863,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-159",
+      "byteOffset": 2035,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-160",
+      "byteOffset": 9954,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-161",
+      "byteOffset": 5126,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-162",
+      "byteOffset": 298,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-163",
+      "byteOffset": 8217,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-164",
+      "byteOffset": 3389,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-165",
+      "byteOffset": 11308,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-166",
+      "byteOffset": 6480,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-167",
+      "byteOffset": 1652,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-168",
+      "byteOffset": 9571,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-169",
+      "byteOffset": 4743,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-170",
+      "byteOffset": 12662,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-171",
+      "byteOffset": 7834,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-172",
+      "byteOffset": 3006,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-173",
+      "byteOffset": 10925,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-174",
+      "byteOffset": 6097,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-175",
+      "byteOffset": 1269,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-176",
+      "byteOffset": 9188,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-177",
+      "byteOffset": 4360,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-178",
+      "byteOffset": 12279,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-179",
+      "byteOffset": 7451,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-180",
+      "byteOffset": 2623,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-181",
+      "byteOffset": 10542,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-182",
+      "byteOffset": 5714,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-183",
+      "byteOffset": 886,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-184",
+      "byteOffset": 8805,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-185",
+      "byteOffset": 3977,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-186",
+      "byteOffset": 11896,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-187",
+      "byteOffset": 7068,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-188",
+      "byteOffset": 2240,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-189",
+      "byteOffset": 10159,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-190",
+      "byteOffset": 5331,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-191",
+      "byteOffset": 503,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-192",
+      "byteOffset": 8422,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-193",
+      "byteOffset": 3594,
+      "bit": 0,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-194",
+      "byteOffset": 11513,
+      "bit": 1,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-195",
+      "byteOffset": 6685,
+      "bit": 2,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-196",
+      "byteOffset": 1857,
+      "bit": 3,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-197",
+      "byteOffset": 9776,
+      "bit": 4,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-198",
+      "byteOffset": 4948,
+      "bit": 5,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-199",
+      "byteOffset": 120,
+      "bit": 6,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    },
+    {
+      "mutationId": "mutation-200",
+      "byteOffset": 8039,
+      "bit": 7,
+      "status": "BLOCKED",
+      "errorCode": "REL_HASH_MISMATCH",
+      "failClosed": true,
+      "outcomeHash": "c6d04df5f085ec38bb7b3346d7e87c5931d4858cc6f5bc1a4c2e67b646704ce4"
+    }
+  ],
+  "atomicPublication": {
+    "faults": [
+      {
+        "faultId": "cancel_before",
+        "status": "CANCELLED",
+        "errorCode": "REL_CANCELLED",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "disk_full",
+        "status": "BLOCKED",
+        "errorCode": "REL_DISK_FULL",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "permission_denied",
+        "status": "BLOCKED",
+        "errorCode": "REL_PERMISSION_DENIED",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "crash_after_temp",
+        "status": "BLOCKED",
+        "errorCode": "REL_STAGE_EXCEPTION",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "verifier_exception",
+        "status": "BLOCKED",
+        "errorCode": "REL_STAGE_EXCEPTION",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "validator_block",
+        "status": "BLOCKED",
+        "errorCode": "REL_VALIDATOR_BLOCKED",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      },
+      {
+        "faultId": "output_lock",
+        "status": "BLOCKED",
+        "errorCode": "REL_OUTPUT_LOCKED",
+        "failClosed": true,
+        "fallbackUsed": false,
+        "partialOutput": false,
+        "temporaryFiles": [],
+        "sourceBytesChanged": false
+      }
+    ],
+    "happyPath": {
+      "firstStatus": "COMMITTED",
+      "secondStatus": "COMMITTED",
+      "resumeDetected": true,
+      "sameOutputHash": true,
+      "temporaryFiles": [],
+      "lockFiles": []
+    },
+    "noPartialOutputs": true,
+    "noTemporaryFiles": true,
+    "resumeSafe": true,
+    "matrixHash": "f912d822825abb7be3d5fce89c11d5b7213cbccb421e54f6eb3a84bef9b57ebf"
+  },
+  "workerParity": {
+    "runs": [
+      {
+        "workers": 1,
+        "jobs": 4,
+        "outputHashes": [
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+        ],
+        "singleHash": true
+      },
+      {
+        "workers": 2,
+        "jobs": 4,
+        "outputHashes": [
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+        ],
+        "singleHash": true
+      },
+      {
+        "workers": 4,
+        "jobs": 4,
+        "outputHashes": [
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+          "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+        ],
+        "singleHash": true
+      }
+    ],
+    "byteIdenticalAcrossWorkers": true,
+    "sharedInputsUnchanged": true,
+    "inputHashBefore": "f1947fce10fe12e45e090fd24d18da45b92121a67bee9d19b96bbf86c15a35eb",
+    "inputHashAfter": "f1947fce10fe12e45e090fd24d18da45b92121a67bee9d19b96bbf86c15a35eb",
+    "parityHash": "1952ee9e0f142f373096e56eb599824d71e8f458a96992a80207ae1e77e65f3c"
+  },
+  "batchIsolation": {
+    "statuses": [
+      "PASS",
+      "BLOCKED",
+      "PASS"
+    ],
+    "laterItemContinued": true,
+    "blockedItemStructured": true,
+    "unhandledExceptions": 0,
+    "batchHash": "7b6925028289bf943208897181b633da45a0ccb6ac7ffe0578dcac9739be6cff"
+  },
+  "pathSafety": {
+    "rows": [
+      {
+        "input": "CON.mid",
+        "safeStem": "_CON"
+      },
+      {
+        "input": "aux.MID",
+        "safeStem": "_aux"
+      },
+      {
+        "input": "../escape.mid",
+        "safeStem": "escape"
+      },
+      {
+        "input": "a<b>c.mid",
+        "safeStem": "a_b_c"
+      },
+      {
+        "input": " song .mid",
+        "safeStem": "song"
+      },
+      {
+        "input": "čćž šđ.mid",
+        "safeStem": "čćž šđ"
+      },
+      {
+        "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.mid",
+        "safeStem": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      {
+        "input": "...",
+        "safeStem": "DNA_OUTPUT"
+      },
+      {
+        "input": "NUL",
+        "safeStem": "_NUL"
+      },
+      {
+        "input": "normal.mid",
+        "safeStem": "normal"
+      }
+    ],
+    "allBounded": true,
+    "noSeparators": true,
+    "pathHash": "ad5ed779e4999d2cfdadf9c177bda44aa697546e078a1d63548715c6420ba9bf"
+  },
+  "stressProfiles": [
+    {
+      "noteCount": 25000,
+      "parsedNoteCount": 25000,
+      "midiBytes": 200026,
+      "seconds": 1.476284,
+      "secondsLimit": 10.0,
+      "peakBytes": 17646484,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "46aa1a9da1d53d4aabac4e83e3e0529a2f92a76b4c1c3b48d225363971cc963b"
+    },
+    {
+      "noteCount": 100000,
+      "parsedNoteCount": 100000,
+      "midiBytes": 800026,
+      "seconds": 6.062056,
+      "secondsLimit": 35.0,
+      "peakBytes": 70858084,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "2144430554ca68ed5cee7ea23ada2d95718eb15f207f0d5a773252bdf49ec3d4"
+    }
+  ],
+  "regressionVault": {
+    "vaultHash": "cda60c7fdf113c6d08e1ea823494e2e99449c0b2a84864f9e0ac84da96687b30",
+    "entryCount": 232,
+    "openSeverity1": 0,
+    "openSeverity2": 0,
+    "lockedRegressions": 232
+  },
+  "summary": {
+    "malformedCases": 24,
+    "fuzzMutations": 200,
+    "atomicFaults": 7,
+    "workerCounts": [
+      1,
+      2,
+      4
+    ],
+    "unhandledExceptions": 0,
+    "silentFallbacks": 0,
+    "partialOutputs": 0,
+    "openSeverity1": 0,
+    "openSeverity2": 0,
+    "byteIdenticalAcrossWorkers": true
+  },
+  "release": {
+    "softwareBaseline": "4.10.2-zero-silent-failure-reliability-foundation",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "finalCertifiedMidiExportAllowed": false,
+    "humanListening": "PENDING_0_OF_2",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  },
+  "reportHash": "1b14066953745d4dab961ba22e103cee502c3e7caf4c21d53ecdf7e731362375"
+}

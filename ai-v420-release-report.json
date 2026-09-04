@@ -1,0 +1,23 @@
+{
+  "schema": "dna-v420-release-report",
+  "version": "4.20",
+  "status": "SOFTWARE_TESTED_PA800_PENDING",
+  "tests": {
+    "targetedPass": 31,
+    "targetedFail": 0
+  },
+  "features": [
+    "solo-performance-pitch-velocity-lock",
+    "diatonic-third-relationship",
+    "nonrecursive-echo-relationship",
+    "factory-only-new-note-velocity",
+    "A/B/C-rendering",
+    "protected-event-fingerprint"
+  ],
+  "limitations": [
+    "NO_APPROVED_GOLD_SOLO_THIRD_ECHO_CORPUS",
+    "FULL_NEURAL_SOLO_REPLACEMENT_BLOCKED"
+  ],
+  "python": "3.13.5",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+}

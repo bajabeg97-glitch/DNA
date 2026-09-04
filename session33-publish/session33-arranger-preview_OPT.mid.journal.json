@@ -1,0 +1,37 @@
+{
+  "schema": "dna-atomic-export-journal",
+  "version": "1.0",
+  "status": "COMMITTED",
+  "identity": "4366444131a27b5091d2ee0c17d3ff6639f52241434ef00813360d3075b26c72",
+  "sourceHash": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+  "configHash": "19fefe7d19baf57f124040b17b09d3aa4a6a730b8a2b5ad5bd683f40b851bb17",
+  "databaseHash": "075b3cc6dc4eeffa94dffe34f42b30b7d7bc415c6c05291dedaddb689e077b9e",
+  "output": "session33-arranger-preview_OPT.mid",
+  "outputHash": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+  "validation": {
+    "schema": "dna-renderer-final-verification",
+    "version": "1.0",
+    "passed": true,
+    "issues": [],
+    "checks": {
+      "manifestValid": true,
+      "pa800HardValidator": true,
+      "globalPolyphony": true,
+      "independentParse": true,
+      "byteRoundTrip": true,
+      "manifestOutputHash": true,
+      "manifestNoteCount": true,
+      "controllerWhitelist": true,
+      "fragmentEventHashes": true,
+      "registerBounds": true,
+      "factoryVelocityBounds": true,
+      "markerScopedSoundBinding": true,
+      "sourceUnchanged": true,
+      "embeddedVerificationHash": true
+    },
+    "midiSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+    "verdictSource": "independent-byte-parser-plus-pa800-hard-validator"
+  },
+  "partialOutput": false
+}

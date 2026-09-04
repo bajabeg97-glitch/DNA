@@ -1,0 +1,164 @@
+{
+  "schema": "dna-premium-contract-catalog",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "contracts": [
+    {
+      "name": "producer-brief-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/producer-brief-v1.schema.json",
+      "title": "DNA Premium ProducerBrief v1",
+      "sha256": "b62781e5fb1b2763d30ad001da53fbf57181b427ebace79c7b2121bd591d7ce0",
+      "required": [
+        "schema",
+        "version",
+        "prompt",
+        "genre",
+        "energyCurve",
+        "density",
+        "requiredRoles",
+        "forbiddenRoles",
+        "lockedElements",
+        "transformationTolerance"
+      ]
+    },
+    {
+      "name": "song-map-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/song-map-v1.schema.json",
+      "title": "DNA Premium SongMap v1",
+      "sha256": "07ce0ad710f2f055f5021835dbaa4f13f45ae68873e357abcdce48904ecb0c66",
+      "required": [
+        "schema",
+        "version",
+        "sourceSha256",
+        "ppq",
+        "tempoMap",
+        "meterMap",
+        "chordCells",
+        "sections",
+        "roleSegments",
+        "analysisVelocityUsed",
+        "confidence"
+      ]
+    },
+    {
+      "name": "sound-binding-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/sound-binding-v1.schema.json",
+      "title": "DNA Premium SoundBinding v1",
+      "sha256": "0fb3584c2783a196d00eb0941f26794e5813f0a88dbe42b216c0e2a684c29bf4",
+      "required": [
+        "schema",
+        "version",
+        "trackUid",
+        "trackIndex",
+        "trackNumber",
+        "channelIndex",
+        "channelNumber",
+        "bankMsb",
+        "bankLsb",
+        "program",
+        "role",
+        "playableRange",
+        "factoryProfileId",
+        "status"
+      ]
+    },
+    {
+      "name": "arrangement-graph-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/arrangement-graph-v1.schema.json",
+      "title": "DNA Premium ArrangementGraph v1",
+      "sha256": "e555bd1feb157c7e47000984d7b36b1a2c0d85b1a0f93b3db04487e73f8c627b",
+      "required": [
+        "schema",
+        "version",
+        "nodes",
+        "edges",
+        "globalBudgets",
+        "readOnly"
+      ]
+    },
+    {
+      "name": "candidate-set-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/candidate-set-v1.schema.json",
+      "title": "DNA Premium CandidateSet v1",
+      "sha256": "533dfdc513f48c16e4f290b331fd0d18cf79b1f4c837449097be4b4e2e845694",
+      "required": [
+        "schema",
+        "version",
+        "role",
+        "marker",
+        "candidates",
+        "selectedCandidateId",
+        "deterministic"
+      ]
+    },
+    {
+      "name": "track-plan-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/track-plan-v1.schema.json",
+      "title": "DNA Premium TrackPlan v1",
+      "sha256": "8aa0c44f21643539cef6692e66c5fd9e379da2a7937bd8bc55b3249bb9b29e78",
+      "required": [
+        "schema",
+        "version",
+        "sourceSha256",
+        "configHash",
+        "decisions",
+        "readOnly",
+        "sourceMutated"
+      ]
+    },
+    {
+      "name": "render-manifest-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/render-manifest-v1.schema.json",
+      "title": "DNA Premium RenderManifest v1",
+      "sha256": "c1f1cd266b4086932c7fd120cebf7f4cb24fbbeca32010260fb523a18d0b081d",
+      "required": [
+        "schema",
+        "version",
+        "inputSha256",
+        "outputSha256",
+        "configHash",
+        "databaseHashes",
+        "seed",
+        "selectedPatterns",
+        "interventions",
+        "validation",
+        "authority"
+      ]
+    },
+    {
+      "name": "evaluation-report-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/evaluation-report-v1.schema.json",
+      "title": "DNA Premium EvaluationReport v1",
+      "sha256": "7542697d54d1b9a38d49dea8ca012f0d767552783227dab466d75ac63bc6f884",
+      "required": [
+        "schema",
+        "version",
+        "renderSha256",
+        "technicalPassed",
+        "metrics",
+        "manualReview",
+        "listening"
+      ]
+    },
+    {
+      "name": "device-profile-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/device-profile-v1.schema.json",
+      "title": "DNA Premium DeviceProfile v1",
+      "sha256": "f08976dc655896b9e7458f0340c4f65217ffba4d4b729857616ecc0627784e5e",
+      "required": [
+        "schema",
+        "version",
+        "manufacturer",
+        "model",
+        "osVersion",
+        "status",
+        "styleChannels",
+        "markerContract",
+        "polyphony",
+        "soundBindings",
+        "evidence"
+      ]
+    }
+  ],
+  "catalogHash": "4eff2ac2e7901c69dd86fc26bbc10daa001e7388ff4db074f5b999b57faa02ba"
+}

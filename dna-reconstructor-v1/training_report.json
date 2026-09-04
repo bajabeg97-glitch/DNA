@@ -1,0 +1,53 @@
+{
+  "schema": "dna-neural-training-report",
+  "version": "1.0",
+  "modelConfig": {
+    "feature_dim": 14,
+    "d_model": 32,
+    "nhead": 4,
+    "layers": 1,
+    "ff_dim": 64,
+    "dropout": 0.1,
+    "max_events": 96,
+    "embedding_dim": 16,
+    "roles": 11,
+    "meters": 7,
+    "sections": 9,
+    "sources": 2
+  },
+  "trainingConfig": {
+    "epochs": 1,
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "seed": 800,
+    "patience": 1,
+    "device": "auto",
+    "compile_model": false,
+    "max_train_samples": 16,
+    "max_validation_samples": 8,
+    "max_holdout_samples": 8
+  },
+  "device": "cpu",
+  "trainSamples": 16,
+  "validationSamples": 8,
+  "holdoutSamples": 8,
+  "bestEpoch": 1,
+  "bestValidationLoss": 17.43619441986084,
+  "holdoutLoss": 17.09592056274414,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 17.25460958480835,
+      "validationLoss": 17.43619441986084
+    }
+  ],
+  "elapsedSeconds": 8.153,
+  "checkpoint": "dna_reconstruction_model_v1.npz",
+  "checkpointSha256": "924c6dccfa05dd5f99743d070578347607fb42673da9eb55f1484d2aa8af0a7d",
+  "authority": {
+    "goldVelocityUsed": false,
+    "velocityOutputHead": false,
+    "hardValidatorRequired": true
+  }
+}

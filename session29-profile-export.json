@@ -1,0 +1,1543 @@
+{
+  "schema": "dna-personal-profile-export",
+  "version": "1.0",
+  "exportDate": "2026-09-03",
+  "profile": {
+    "schema": "dna-personal-producer-profile",
+    "version": "2.0",
+    "identity": {
+      "profileId": "profile-local-producer",
+      "displayName": "Moj Premium producent",
+      "locale": "hr-HR",
+      "enabled": true,
+      "localOnly": true,
+      "createdDate": "2026-09-03",
+      "updatedDate": "2026-09-03"
+    },
+    "source": {
+      "workflowHashes": [
+        "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911"
+      ],
+      "candidateSetHashes": [
+        "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72"
+      ],
+      "learningEventHashes": [
+        "51414e351ed80dfaff1184f369c5270a9ce6dad133036aa12870f1b32d9795b3",
+        "8464026b2815deff218193d001001e5e03d2caf8466b8e563c89cb81edac3f14"
+      ]
+    },
+    "learning": {
+      "eventCount": 2,
+      "acceptedVariantCount": 1,
+      "manualLockCount": 1,
+      "events": [
+        {
+          "eventId": "decision-accept-c-001",
+          "eventType": "ACCEPT_VARIANT",
+          "source": "USER_EXPLICIT",
+          "accepted": true,
+          "eventDate": "2026-09-03",
+          "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+          "candidateSetHash": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+          "variantId": "C",
+          "marker": null,
+          "role": null,
+          "patternId": null,
+          "context": {
+            "genre": "pop-folk",
+            "density": "balanced",
+            "transitions": "subtle",
+            "syncopation": "medium",
+            "space": "balanced"
+          },
+          "selections": [
+            {
+              "requestId": "i1cv1:drums",
+              "marker": "i1cv1",
+              "role": "drums",
+              "patternId": "162.029.414",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 15.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "46db9eddfd7c2efb16ae0d9dc66de49917f539f1c926b6cdf2e992de116c2e49"
+            },
+            {
+              "requestId": "i1cv1:bass",
+              "marker": "i1cv1",
+              "role": "bass",
+              "patternId": "855.530.329",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 4.0,
+              "register": {
+                "low": 0,
+                "high": 7
+              },
+              "candidateHash": "2ade3cd57f9c5dad09f30a38c2d875cf449ddcaf6dbee82ac4e980d1cb3141fa"
+            },
+            {
+              "requestId": "i1cv1:guitar",
+              "marker": "i1cv1",
+              "role": "guitar",
+              "patternId": "221.016.188",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 12.0,
+              "register": {
+                "low": 0,
+                "high": 17
+              },
+              "candidateHash": "d468606ae90367a1fa2618dc8f2ff6794b4b796f05b5a92db51bd7d56d014750"
+            },
+            {
+              "requestId": "i1cv1:accompaniment",
+              "marker": "i1cv1",
+              "role": "accompaniment",
+              "patternId": "433.730.033",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "6270ec828688fae1a587c2a5c3d4bb139d0a1ba9609292d3abdabe4386a79be8"
+            },
+            {
+              "requestId": "i1cv1:pad",
+              "marker": "i1cv1",
+              "role": "pad",
+              "patternId": "817.483.113",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "e7df516aa44b84a7e3dc2ad841f98ff8dbff16ce46480d5878e7918435f58925"
+            },
+            {
+              "requestId": "i2cv1:drums",
+              "marker": "i2cv1",
+              "role": "drums",
+              "patternId": "352.080.660",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "59d8aa03ff41b0181dd186c9fbe2168dff79758a6e2ab25456d7de344cea01c3"
+            },
+            {
+              "requestId": "i2cv1:bass",
+              "marker": "i2cv1",
+              "role": "bass",
+              "patternId": "325.888.314",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 4.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "3d1ea7f9a8d775c1f0304b941b3867104057cf2a627548a61b07b4016637453b"
+            },
+            {
+              "requestId": "i2cv1:guitar",
+              "marker": "i2cv1",
+              "role": "guitar",
+              "patternId": "939.356.320",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 11.6,
+              "register": {
+                "low": 0,
+                "high": 19
+              },
+              "candidateHash": "29a8cedfcc57549f0ea34bac7c4f9afa706fe1e79075cee17949b87bbe615d54"
+            },
+            {
+              "requestId": "i2cv1:accompaniment",
+              "marker": "i2cv1",
+              "role": "accompaniment",
+              "patternId": "710.244.816",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "ce8b0152469c01791abbe365e3ed38115dbeaedff152200224621956f3892ced"
+            },
+            {
+              "requestId": "i2cv1:pad",
+              "marker": "i2cv1",
+              "role": "pad",
+              "patternId": "389.122.481",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "0910e389cca366fd7c3b15da4fe5be0aaae28ac9549faac9e54c44bd25f61be0"
+            },
+            {
+              "requestId": "v1cv1:drums",
+              "marker": "v1cv1",
+              "role": "drums",
+              "patternId": "316.022.022",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 46
+              },
+              "candidateHash": "ec86906ea1ad12da7b7d76152b655c4e655607aaa9bb6271591388a230a9cdfc"
+            },
+            {
+              "requestId": "v1cv1:bass",
+              "marker": "v1cv1",
+              "role": "bass",
+              "patternId": "882.124.169",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 4.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "94a2f5f2f312eaa282afb942ad654b413a187b8e703af7495f22497b97fbdd65"
+            },
+            {
+              "requestId": "v1cv1:guitar",
+              "marker": "v1cv1",
+              "role": "guitar",
+              "patternId": "287.188.654",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 9.5,
+              "register": {
+                "low": 0,
+                "high": 16
+              },
+              "candidateHash": "a5ea69f55d4d3e25b6b4639830e9e5c066132d9459d04164581cfb4348315ce0"
+            },
+            {
+              "requestId": "v1cv1:accompaniment",
+              "marker": "v1cv1",
+              "role": "accompaniment",
+              "patternId": "640.216.299",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "6bfa9955be00f576719518cea77cc74a1c4486c236c3f809ad3deede3ce0a6b5"
+            },
+            {
+              "requestId": "v1cv1:pad",
+              "marker": "v1cv1",
+              "role": "pad",
+              "patternId": "092.805.847",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 0,
+                "high": 0
+              },
+              "candidateHash": "a5b5a3f2717ebeb5b9a64cf44a5cb7345e48cb824e4767e36af4fbe6f806ca39"
+            },
+            {
+              "requestId": "v2cv1:drums",
+              "marker": "v2cv1",
+              "role": "drums",
+              "patternId": "080.792.087",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "ffdbbf406876a2f3a1c4d328a00419e7c518da607ffa449eda0e8b2a353e4f6f"
+            },
+            {
+              "requestId": "v2cv1:bass",
+              "marker": "v2cv1",
+              "role": "bass",
+              "patternId": "730.336.141",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 4.0,
+              "register": {
+                "low": 0,
+                "high": 7
+              },
+              "candidateHash": "5981ddd7d1d37e7baeca0813db34594ebb07cfc3b9bf368b4724c8560f88e9dd"
+            },
+            {
+              "requestId": "v2cv1:guitar",
+              "marker": "v2cv1",
+              "role": "guitar",
+              "patternId": "459.412.112",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 9.5,
+              "register": {
+                "low": 0,
+                "high": 16
+              },
+              "candidateHash": "727311f9a2867e14de3d1a1e7cc49140d2501e63fcdd2116e3452000288f7a50"
+            },
+            {
+              "requestId": "v2cv1:accompaniment",
+              "marker": "v2cv1",
+              "role": "accompaniment",
+              "patternId": "587.243.106",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": 0,
+                "high": 2
+              },
+              "candidateHash": "6472f5ed6a71853cf42fbf4ef008cd51e582094a2758a4281087acd68519e1e6"
+            },
+            {
+              "requestId": "v2cv1:pad",
+              "marker": "v2cv1",
+              "role": "pad",
+              "patternId": "013.887.683",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 0,
+                "high": 0
+              },
+              "candidateHash": "b98fb0186cd5f8132b16fdfe7509ffa03ca6d80aa02b5f2471399acf858c0590"
+            },
+            {
+              "requestId": "v3cv1:drums",
+              "marker": "v3cv1",
+              "role": "drums",
+              "patternId": "327.992.584",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "708ae888cc5d9b92b35420998de0bee6a8a9954984ecbd34119ac24d6456eb5c"
+            },
+            {
+              "requestId": "v3cv1:percussion",
+              "marker": "v3cv1",
+              "role": "percussion",
+              "patternId": "347.948.299",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 25.0,
+              "register": {
+                "low": 35,
+                "high": 70
+              },
+              "candidateHash": "f55194a3c1a9f94f5f553f7bc163802ac3b43d7b482cbfa42aa5b8bda357cf60"
+            },
+            {
+              "requestId": "v3cv1:bass",
+              "marker": "v3cv1",
+              "role": "bass",
+              "patternId": "474.836.183",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 4.0,
+              "register": {
+                "low": 0,
+                "high": 7
+              },
+              "candidateHash": "f2e173d00876f042d6f5e1f0da5fabcf620f9c1bbdaaa307dc89125452146cee"
+            },
+            {
+              "requestId": "v3cv1:guitar",
+              "marker": "v3cv1",
+              "role": "guitar",
+              "patternId": "091.559.876",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 17.0,
+              "register": {
+                "low": 0,
+                "high": 16
+              },
+              "candidateHash": "2f1f02453a05feaf4e47feae7d71647eba3248354824fa016d8eef2c358cb104"
+            },
+            {
+              "requestId": "v3cv1:accompaniment",
+              "marker": "v3cv1",
+              "role": "accompaniment",
+              "patternId": "758.750.547",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 33.0,
+              "register": {
+                "low": 0,
+                "high": 24
+              },
+              "candidateHash": "138d209e6e403ada4ad52d6663206ecb9b4bcc88880b4a3a38668bcd4d21f605"
+            },
+            {
+              "requestId": "v3cv1:riff",
+              "marker": "v3cv1",
+              "role": "riff",
+              "patternId": "972.518.680",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 24.0,
+              "register": {
+                "low": -5,
+                "high": 4
+              },
+              "candidateHash": "7813773ec8ab04d8afe73c4b38f6abf7c7289bed3321f809fcf4149e66d289c1"
+            },
+            {
+              "requestId": "v3cv1:pad",
+              "marker": "v3cv1",
+              "role": "pad",
+              "patternId": "795.889.617",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 23.0,
+              "register": {
+                "low": 0,
+                "high": 27
+              },
+              "candidateHash": "11fbe2afdab32ed7ef2cc799194608f18f14d1c522a97a28bbf2bc3add26c13c"
+            },
+            {
+              "requestId": "v4cv1:drums",
+              "marker": "v4cv1",
+              "role": "drums",
+              "patternId": "821.875.336",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "c0a2922649aaf45b64ffa6d3004409dd7320d6c1bac87db3dbf1ec8f5244e006"
+            },
+            {
+              "requestId": "v4cv1:percussion",
+              "marker": "v4cv1",
+              "role": "percussion",
+              "patternId": "804.335.633",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 38.0,
+              "register": {
+                "low": 35,
+                "high": 64
+              },
+              "candidateHash": "326efc69e1333558003db2861e1c3c3b14ae62d37ec074cfbcec04348826378a"
+            },
+            {
+              "requestId": "v4cv1:bass",
+              "marker": "v4cv1",
+              "role": "bass",
+              "patternId": "329.207.411",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 23.0,
+              "register": {
+                "low": 0,
+                "high": 12
+              },
+              "candidateHash": "e0db630dcc09cc277ac4a32b98819d25e1a5d73490c52466306d352684af51ec"
+            },
+            {
+              "requestId": "v4cv1:guitar",
+              "marker": "v4cv1",
+              "role": "guitar",
+              "patternId": "811.588.504",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 17.0,
+              "register": {
+                "low": 0,
+                "high": 16
+              },
+              "candidateHash": "5221af9cd2af9969616c901c1b23cca22c48fdbdb6ee8e6d540e2a05036acdf5"
+            },
+            {
+              "requestId": "v4cv1:accompaniment",
+              "marker": "v4cv1",
+              "role": "accompaniment",
+              "patternId": "751.578.963",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 33.0,
+              "register": {
+                "low": 0,
+                "high": 24
+              },
+              "candidateHash": "5b038009fd5a833f560088816a5a674758b2aa5a80f814fc8a69b7b55852da8a"
+            },
+            {
+              "requestId": "v4cv1:riff",
+              "marker": "v4cv1",
+              "role": "riff",
+              "patternId": "530.980.805",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 24.0,
+              "register": {
+                "low": -5,
+                "high": 4
+              },
+              "candidateHash": "271d0e479afe7a20d1ba9d6031f8808ee5b77ffbd8285f945b9b845004a44ea1"
+            },
+            {
+              "requestId": "v4cv1:pad",
+              "marker": "v4cv1",
+              "role": "pad",
+              "patternId": "488.799.744",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 23.0,
+              "register": {
+                "low": 0,
+                "high": 27
+              },
+              "candidateHash": "8094baad54da13ddcfe4c262cc8cafc4ed42c46b8b811a353fff5626fc5b86ae"
+            },
+            {
+              "requestId": "f1cv1:drums",
+              "marker": "f1cv1",
+              "role": "drums",
+              "patternId": "609.590.038",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 15.0,
+              "register": {
+                "low": 36,
+                "high": 46
+              },
+              "candidateHash": "6189fdacfc55918a4c5a6f34001ffc1312a052b04da91bda2f863e82c0fc4165"
+            },
+            {
+              "requestId": "f1cv1:percussion",
+              "marker": "f1cv1",
+              "role": "percussion",
+              "patternId": "346.464.973",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 39.0,
+              "register": {
+                "low": 35,
+                "high": 64
+              },
+              "candidateHash": "1471cdff6cb661ced77e57dbc43beed3d1d254c0b00ae152c549c63187903e92"
+            },
+            {
+              "requestId": "f1cv1:bass",
+              "marker": "f1cv1",
+              "role": "bass",
+              "patternId": "125.929.851",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 5.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "c31892ce4712a5820c9bd989667bb24830d6eb628c34bc3e0e6ce89981407a11"
+            },
+            {
+              "requestId": "f1cv1:riff",
+              "marker": "f1cv1",
+              "role": "riff",
+              "patternId": "888.061.182",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 24.0,
+              "register": {
+                "low": 0,
+                "high": 12
+              },
+              "candidateHash": "c7e365d68994fd5397f30694ac5a0eb7cacddebcff5e5560e934744681a2e52b"
+            },
+            {
+              "requestId": "f2cv1:drums",
+              "marker": "f2cv1",
+              "role": "drums",
+              "patternId": "177.819.936",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 40.0,
+              "register": {
+                "low": 36,
+                "high": 46
+              },
+              "candidateHash": "e1a4a5e8c75a1ec5bba640306825ca13f3a431222124d7a54ccde6a345763d0f"
+            },
+            {
+              "requestId": "f2cv1:percussion",
+              "marker": "f2cv1",
+              "role": "percussion",
+              "patternId": "603.961.175",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 38.0,
+              "register": {
+                "low": 35,
+                "high": 64
+              },
+              "candidateHash": "95b25b2db75c75c6a3bf20f993f73c043c561c5755bdbb03ec1316fbcfaf76be"
+            },
+            {
+              "requestId": "f2cv1:bass",
+              "marker": "f2cv1",
+              "role": "bass",
+              "patternId": "543.166.588",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 5.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "266df3cb3d146cd328ee98c3b753ae2211d76a75b3c4865947d69ca160679b13"
+            },
+            {
+              "requestId": "f2cv1:riff",
+              "marker": "f2cv1",
+              "role": "riff",
+              "patternId": "319.005.194",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 24.0,
+              "register": {
+                "low": 0,
+                "high": 12
+              },
+              "candidateHash": "803130f81fa64c6f32561e7b74099d6f0c130c1445f5bca352335299d39daef7"
+            },
+            {
+              "requestId": "e1cv1:drums",
+              "marker": "e1cv1",
+              "role": "drums",
+              "patternId": "169.230.091",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 15.5,
+              "register": {
+                "low": 36,
+                "high": 46
+              },
+              "candidateHash": "088a98d48362a1f60e75649a20831b4c4ddc15393c751c7d2daec4d5c19c0ad7"
+            },
+            {
+              "requestId": "e1cv1:bass",
+              "marker": "e1cv1",
+              "role": "bass",
+              "patternId": "001.678.467",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "6d5ab89c3b8fa46fe0993b5d806000723413edd9c7b37ce714ff894d03d53757"
+            },
+            {
+              "requestId": "e1cv1:guitar",
+              "marker": "e1cv1",
+              "role": "guitar",
+              "patternId": "631.972.034",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 14.333,
+              "register": {
+                "low": 0,
+                "high": 12
+              },
+              "candidateHash": "c2f4637cfe5216351545c43e4d88ed0b826a88975d3796f0a177b054f20e36c0"
+            },
+            {
+              "requestId": "e1cv1:accompaniment",
+              "marker": "e1cv1",
+              "role": "accompaniment",
+              "patternId": "786.633.171",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": -5,
+                "high": 12
+              },
+              "candidateHash": "cb6bc636fc837ac8953f2a4c5f46c7039822163608f1a9301deea896bee495d0"
+            },
+            {
+              "requestId": "e1cv1:pad",
+              "marker": "e1cv1",
+              "role": "pad",
+              "patternId": "237.873.880",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 0,
+                "high": 0
+              },
+              "candidateHash": "be5c83286bdee345377e86415db46513545a659f39b1a23a89c717ebbd92d60f"
+            },
+            {
+              "requestId": "e2cv1:drums",
+              "marker": "e2cv1",
+              "role": "drums",
+              "patternId": "686.125.928",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "33b4da65ef311c3c55a3c45fb0c0c65681ee5c1c3ac284dae11404b0f0333679"
+            },
+            {
+              "requestId": "e2cv1:bass",
+              "marker": "e2cv1",
+              "role": "bass",
+              "patternId": "024.777.862",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 8.0,
+              "register": {
+                "low": -5,
+                "high": 0
+              },
+              "candidateHash": "150b31feba7d3372b92a6d7e26a0d19e53abf430cace77ae619be387332772af"
+            },
+            {
+              "requestId": "e2cv1:guitar",
+              "marker": "e2cv1",
+              "role": "guitar",
+              "patternId": "611.187.387",
+              "sourceKind": "FACTORY_STRUMMING",
+              "density": 11.333,
+              "register": {
+                "low": 0,
+                "high": 37
+              },
+              "candidateHash": "4cfdefb4d3642a7370c3cbd9f0cf54fa1cabb2311a21cf30c41f99931f6a7158"
+            },
+            {
+              "requestId": "e2cv1:accompaniment",
+              "marker": "e2cv1",
+              "role": "accompaniment",
+              "patternId": "569.373.087",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 0,
+                "high": 0
+              },
+              "candidateHash": "a2813aa49e0bc923a83d8a892f86ae0eb32c39b1e7a02b71d803de087c620f84"
+            },
+            {
+              "requestId": "e2cv1:pad",
+              "marker": "e2cv1",
+              "role": "pad",
+              "patternId": "569.373.087",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 0,
+                "high": 0
+              },
+              "candidateHash": "0230840125962303632e173fc2453c9806d72d75c8faafd11ff23f3cfb3022c9"
+            }
+          ],
+          "eventHash": "8464026b2815deff218193d001001e5e03d2caf8466b8e563c89cb81edac3f14"
+        },
+        {
+          "eventId": "decision-lock-v2-001",
+          "eventType": "LOCK_SELECTION",
+          "source": "USER_EXPLICIT",
+          "accepted": true,
+          "eventDate": "2026-09-03",
+          "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+          "candidateSetHash": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+          "variantId": "C",
+          "marker": "v2cv1",
+          "role": "drums",
+          "patternId": "080.792.087",
+          "context": {
+            "genre": "pop-folk",
+            "density": "balanced",
+            "transitions": "subtle",
+            "syncopation": "medium",
+            "space": "balanced"
+          },
+          "selections": [
+            {
+              "requestId": "v2cv1:drums",
+              "marker": "v2cv1",
+              "role": "drums",
+              "patternId": "080.792.087",
+              "sourceKind": "GOLD_PERFORMANCE",
+              "density": 16.0,
+              "register": {
+                "low": 36,
+                "high": 44
+              },
+              "candidateHash": "ffdbbf406876a2f3a1c4d328a00419e7c518da607ffa449eda0e8b2a353e4f6f"
+            }
+          ],
+          "eventHash": "51414e351ed80dfaff1184f369c5270a9ce6dad133036aa12870f1b32d9795b3"
+        }
+      ],
+      "explicitUserActionsOnly": true,
+      "prohibitedSignals": [
+        "PLAYBACK",
+        "PREVIEW_POSITION",
+        "HOVER",
+        "REJECT_VARIANT",
+        "CLOUD_TELEMETRY",
+        "IMPLICIT_BEHAVIOR",
+        "MIDI_CONTENT"
+      ]
+    },
+    "preferences": {
+      "genres": [
+        {
+          "genre": "pop-folk",
+          "weight": 1.0,
+          "evidenceCount": 2
+        }
+      ],
+      "dimensions": {
+        "density": [
+          {
+            "value": "balanced",
+            "weight": 1.0,
+            "evidenceCount": 2
+          }
+        ],
+        "transitions": [
+          {
+            "value": "subtle",
+            "weight": 1.0,
+            "evidenceCount": 2
+          }
+        ],
+        "syncopation": [
+          {
+            "value": "medium",
+            "weight": 1.0,
+            "evidenceCount": 2
+          }
+        ],
+        "space": [
+          {
+            "value": "balanced",
+            "weight": 1.0,
+            "evidenceCount": 2
+          }
+        ]
+      },
+      "roles": [
+        {
+          "role": "accompaniment",
+          "weight": 0.727273,
+          "evidenceCount": 8
+        },
+        {
+          "role": "bass",
+          "weight": 0.909091,
+          "evidenceCount": 10
+        },
+        {
+          "role": "drums",
+          "weight": 1.0,
+          "evidenceCount": 11
+        },
+        {
+          "role": "guitar",
+          "weight": 0.727273,
+          "evidenceCount": 8
+        },
+        {
+          "role": "pad",
+          "weight": 0.727273,
+          "evidenceCount": 8
+        },
+        {
+          "role": "percussion",
+          "weight": 0.363636,
+          "evidenceCount": 4
+        },
+        {
+          "role": "riff",
+          "weight": 0.363636,
+          "evidenceCount": 4
+        }
+      ],
+      "markers": [
+        {
+          "marker": "e1cv1",
+          "weight": 0.714286,
+          "evidenceCount": 5
+        },
+        {
+          "marker": "e2cv1",
+          "weight": 0.714286,
+          "evidenceCount": 5
+        },
+        {
+          "marker": "f1cv1",
+          "weight": 0.571429,
+          "evidenceCount": 4
+        },
+        {
+          "marker": "f2cv1",
+          "weight": 0.571429,
+          "evidenceCount": 4
+        },
+        {
+          "marker": "i1cv1",
+          "weight": 0.714286,
+          "evidenceCount": 5
+        },
+        {
+          "marker": "i2cv1",
+          "weight": 0.714286,
+          "evidenceCount": 5
+        },
+        {
+          "marker": "v1cv1",
+          "weight": 0.714286,
+          "evidenceCount": 5
+        },
+        {
+          "marker": "v2cv1",
+          "weight": 0.857143,
+          "evidenceCount": 6
+        },
+        {
+          "marker": "v3cv1",
+          "weight": 1.0,
+          "evidenceCount": 7
+        },
+        {
+          "marker": "v4cv1",
+          "weight": 1.0,
+          "evidenceCount": 7
+        }
+      ],
+      "patterns": [
+        {
+          "patternId": "001.678.467",
+          "role": "bass",
+          "marker": "e1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "013.887.683",
+          "role": "pad",
+          "marker": "v2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "024.777.862",
+          "role": "bass",
+          "marker": "e2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "080.792.087",
+          "role": "drums",
+          "marker": "v2cv1",
+          "weight": 1.0,
+          "evidenceCount": 2,
+          "eventIds": [
+            "decision-accept-c-001",
+            "decision-lock-v2-001"
+          ]
+        },
+        {
+          "patternId": "091.559.876",
+          "role": "guitar",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "092.805.847",
+          "role": "pad",
+          "marker": "v1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "125.929.851",
+          "role": "bass",
+          "marker": "f1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "162.029.414",
+          "role": "drums",
+          "marker": "i1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "169.230.091",
+          "role": "drums",
+          "marker": "e1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "177.819.936",
+          "role": "drums",
+          "marker": "f2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "221.016.188",
+          "role": "guitar",
+          "marker": "i1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "237.873.880",
+          "role": "pad",
+          "marker": "e1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "287.188.654",
+          "role": "guitar",
+          "marker": "v1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "316.022.022",
+          "role": "drums",
+          "marker": "v1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "319.005.194",
+          "role": "riff",
+          "marker": "f2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "325.888.314",
+          "role": "bass",
+          "marker": "i2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "327.992.584",
+          "role": "drums",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "329.207.411",
+          "role": "bass",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "346.464.973",
+          "role": "percussion",
+          "marker": "f1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "347.948.299",
+          "role": "percussion",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "352.080.660",
+          "role": "drums",
+          "marker": "i2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "389.122.481",
+          "role": "pad",
+          "marker": "i2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "433.730.033",
+          "role": "accompaniment",
+          "marker": "i1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "459.412.112",
+          "role": "guitar",
+          "marker": "v2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "474.836.183",
+          "role": "bass",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "488.799.744",
+          "role": "pad",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "530.980.805",
+          "role": "riff",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "543.166.588",
+          "role": "bass",
+          "marker": "f2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "569.373.087",
+          "role": "accompaniment",
+          "marker": "e2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "569.373.087",
+          "role": "pad",
+          "marker": "e2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "587.243.106",
+          "role": "accompaniment",
+          "marker": "v2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "603.961.175",
+          "role": "percussion",
+          "marker": "f2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "609.590.038",
+          "role": "drums",
+          "marker": "f1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "611.187.387",
+          "role": "guitar",
+          "marker": "e2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "631.972.034",
+          "role": "guitar",
+          "marker": "e1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "640.216.299",
+          "role": "accompaniment",
+          "marker": "v1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "686.125.928",
+          "role": "drums",
+          "marker": "e2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "710.244.816",
+          "role": "accompaniment",
+          "marker": "i2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "730.336.141",
+          "role": "bass",
+          "marker": "v2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "751.578.963",
+          "role": "accompaniment",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "758.750.547",
+          "role": "accompaniment",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "786.633.171",
+          "role": "accompaniment",
+          "marker": "e1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "795.889.617",
+          "role": "pad",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "804.335.633",
+          "role": "percussion",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "811.588.504",
+          "role": "guitar",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "817.483.113",
+          "role": "pad",
+          "marker": "i1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "821.875.336",
+          "role": "drums",
+          "marker": "v4cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "855.530.329",
+          "role": "bass",
+          "marker": "i1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "882.124.169",
+          "role": "bass",
+          "marker": "v1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "888.061.182",
+          "role": "riff",
+          "marker": "f1cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "939.356.320",
+          "role": "guitar",
+          "marker": "i2cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "patternId": "972.518.680",
+          "role": "riff",
+          "marker": "v3cv1",
+          "weight": 0.5,
+          "evidenceCount": 1,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        }
+      ],
+      "registerBands": [
+        {
+          "role": "accompaniment",
+          "low": -1,
+          "high": 8,
+          "center": 3.5,
+          "evidenceCount": 8,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "role": "bass",
+          "low": -3,
+          "high": 3,
+          "center": 0.0,
+          "evidenceCount": 10,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "role": "drums",
+          "low": 36,
+          "high": 45,
+          "center": 40.5,
+          "evidenceCount": 11,
+          "eventIds": [
+            "decision-accept-c-001",
+            "decision-lock-v2-001"
+          ]
+        },
+        {
+          "role": "guitar",
+          "low": 0,
+          "high": 19,
+          "center": 9.5,
+          "evidenceCount": 8,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "role": "pad",
+          "low": 0,
+          "high": 7,
+          "center": 3.5,
+          "evidenceCount": 8,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "role": "percussion",
+          "low": 35,
+          "high": 66,
+          "center": 50.5,
+          "evidenceCount": 4,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        },
+        {
+          "role": "riff",
+          "low": -2,
+          "high": 8,
+          "center": 3.0,
+          "evidenceCount": 4,
+          "eventIds": [
+            "decision-accept-c-001"
+          ]
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "dimension": "pattern",
+        "key": "080.792.087",
+        "weight": 0.5,
+        "reason": "Izričito prihvaćen omiljeni pattern",
+        "source": "USER_EXPLICIT",
+        "overrideHash": "9e039e1996241a89afcc212de66f27ee1e6011b8896cd9f584ab8f5e89179cf3"
+      }
+    ],
+    "audit": {
+      "coldStart": false,
+      "explainable": true,
+      "reversible": true,
+      "profileAffectsSoftRankingOnly": true,
+      "implicitLearningCount": 0
+    },
+    "safety": {
+      "localOnly": true,
+      "cloudSyncAllowed": false,
+      "containsMidi": false,
+      "containsProject": false,
+      "containsAudio": false,
+      "telemetryAllowed": false,
+      "hardConstraintAuthority": false,
+      "factoryDynamicsAuthority": false,
+      "soundBindingAuthority": false,
+      "validatorAuthority": false,
+      "bankProgramAuthority": false,
+      "midiMutationAllowed": false
+    },
+    "profileHash": "d811c91740e8f1e1ba05a7d4f987bbc97101bc100f98bee0bc0993ff1d5473db"
+  },
+  "containsMidi": false,
+  "containsProject": false,
+  "containsAudio": false,
+  "localOnly": true,
+  "exportHash": "9c5385203cd4ca3650f9ca08b47549468c836a48d32ada115c50a9d8ca5a5e00"
+}

@@ -1,0 +1,944 @@
+{
+  "schema": "dna-ai-premium-software-manifest",
+  "version": "1.0",
+  "releaseDate": "2026-09-03",
+  "targetBaseline": "4.8-release-candidate-preview",
+  "platform": {
+    "os": [
+      "Windows 10 x64",
+      "Windows 11 x64"
+    ],
+    "python": [
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14"
+    ],
+    "offlineCore": true,
+    "thirdPartyRuntimeDependencies": []
+  },
+  "application": [
+    {
+      "path": "install.bat",
+      "bytes": 38,
+      "sha256": "781e1ad636904858897a62c7859c3c0ec326965a7e8bb45b5f1ab529faa69c6e"
+    },
+    {
+      "path": "izgradi-dna.bat",
+      "bytes": 779,
+      "sha256": "1032e3cb73bde5bc6e95e254ab86695842df862c4aec67c7fef6d01ceee71d78"
+    },
+    {
+      "path": "pokreni.bat",
+      "bytes": 376,
+      "sha256": "9ce73651529ee9508b8fdd7968a33ad9db6f3aed06ca32c2351b4976a31a5937"
+    },
+    {
+      "path": "premium_config.py",
+      "bytes": 20407,
+      "sha256": "2c1657aa5d0e0d498bc2655f6bdffaa351a3d86078c50cf3b86c64eead4d2098"
+    },
+    {
+      "path": "project_model.py",
+      "bytes": 3419,
+      "sha256": "555bd90563ae4bac181af3993ac545adf9c0503ac07ceb75cdc630672499ccc6"
+    },
+    {
+      "path": "recovery_release_check.py",
+      "bytes": 10687,
+      "sha256": "5a525190712a979fc63b8a74f76c2dae54ac72922f2c7f3f5cb3a633ab04163e"
+    },
+    {
+      "path": "release_check.py",
+      "bytes": 12919,
+      "sha256": "0064292c9b664d62c16bcb753c06bcd72d84c3e1b4ed040d4469451b885389e1"
+    },
+    {
+      "path": "release_packager.py",
+      "bytes": 7409,
+      "sha256": "16c48b36151003e9d99749a8e62f881b286c1ba4580a0631eb99f3e78b20ca13"
+    },
+    {
+      "path": "run.bat",
+      "bytes": 34,
+      "sha256": "5aaf29243c21ed2286c56e6e81c4c35d7660b32e3ec0d944d9f2ccaa113347e5"
+    },
+    {
+      "path": "server.py",
+      "bytes": 92717,
+      "sha256": "c5108a0c7298831e5fdf0ea278fc1b357d9a028f4f58a2087d185f91828dbaca"
+    },
+    {
+      "path": "session10_release_check.py",
+      "bytes": 3483,
+      "sha256": "d7617a82d591e24a6e0412efe9672cbed908dfbc792a52ccb8b9a73b1965efbe"
+    },
+    {
+      "path": "session11_release_check.py",
+      "bytes": 3638,
+      "sha256": "ddd0335a79d68064f1d307ee1e809ac7ad1442c226c6d490ddd86edaa130390d"
+    },
+    {
+      "path": "session12_release_check.py",
+      "bytes": 3571,
+      "sha256": "71ebebca5458d0a1e70ed011097252b9c5743ea8b5515c4201f986f5d717e666"
+    },
+    {
+      "path": "session13_release_check.py",
+      "bytes": 6162,
+      "sha256": "66921779d9c1be2dbc511dfcdd143ba1d2058375f7b9466ec618f6fec2c5f16d"
+    },
+    {
+      "path": "session14_release_check.py",
+      "bytes": 3271,
+      "sha256": "e4e60234f881002f455af2b4d324cfd200775c6c7370798caf517bcdcd84cb93"
+    },
+    {
+      "path": "session15_release_check.py",
+      "bytes": 4615,
+      "sha256": "bb13e503c9805e97bcb11058eb0c9238467b7b1262b0fd5538069e413b20a0d7"
+    },
+    {
+      "path": "session17_release_check.py",
+      "bytes": 11008,
+      "sha256": "fab525e825a280a718fbb18453229c06104f2a27ba7d7d90914a02a69da0c797"
+    },
+    {
+      "path": "session18_release_check.py",
+      "bytes": 8453,
+      "sha256": "3425a0b40d7db0f7a0ba73ac6abf549c59022f93dfeb030d60726d3bd28b19e0"
+    },
+    {
+      "path": "session19_release_check.py",
+      "bytes": 9829,
+      "sha256": "7106f5554c8d67ebe37dfa63e7a097be1b95c88e4596e232d30f4583203a1efc"
+    },
+    {
+      "path": "session20_release_check.py",
+      "bytes": 9342,
+      "sha256": "536adc0cb157b7f36fdbdf873478337b65125f3c53f4224b83e30f210c377571"
+    },
+    {
+      "path": "session21_release_check.py",
+      "bytes": 10478,
+      "sha256": "5366d65fcfa0b2d1367f3a94c6903f0acb70e2fd61a4cc64aaecfd78730ce24c"
+    },
+    {
+      "path": "session22_release_check.py",
+      "bytes": 13634,
+      "sha256": "b3a9df6af53cbf6d7957d839a6e657b10d35d8a1d58d0331d4a8bd4774b1d7f9"
+    },
+    {
+      "path": "session23_release_check.py",
+      "bytes": 13861,
+      "sha256": "5852bbd5c0bc99800ffd77015e6d1e53dff604d8a775c594cfaae8bc849e2274"
+    },
+    {
+      "path": "session24_release_check.py",
+      "bytes": 9994,
+      "sha256": "0a632e2ae43af760eaf14529856ce240408b4e8d35d66529fe19251ace394379"
+    },
+    {
+      "path": "session25_release_check.py",
+      "bytes": 10859,
+      "sha256": "1b8a703c2663eae4f561752701afa302ea7926c2497c6a2341c2f99f4bb55bb4"
+    },
+    {
+      "path": "session26_release_check.py",
+      "bytes": 12287,
+      "sha256": "afdd0beba15034caa31b23275e397fe8e22729d48505b541fcc01b9ac7d3f731"
+    },
+    {
+      "path": "session27_release_check.py",
+      "bytes": 11479,
+      "sha256": "c70da0fe8d8e3b66b805e452821f31c65c6b67869579245a84db02405b68d0a9"
+    },
+    {
+      "path": "session28_release_check.py",
+      "bytes": 13740,
+      "sha256": "74d77c69548fc479bfaf43f8dec52168f9e55cae9bb5b88bc688488b33ed8233"
+    },
+    {
+      "path": "session29_release_check.py",
+      "bytes": 14409,
+      "sha256": "91bf0680ac514c3930e4e5b0d4cc9cb3f9fc9cd62c7a778099ae511eb20d79cc"
+    },
+    {
+      "path": "session2_release_check.py",
+      "bytes": 4118,
+      "sha256": "2b86d33750e4be3b8fee215f6e0420fea5ed56583bc3308138227c000db5744d"
+    },
+    {
+      "path": "session30_release_check.py",
+      "bytes": 12069,
+      "sha256": "76470eb377f15705c76e83d5338548e56e7261f2dc24ff41f1291d5f9e015fe4"
+    },
+    {
+      "path": "session30_release_readiness.py",
+      "bytes": 2342,
+      "sha256": "774ec6012487eb7a0c12a18dd26afafff045ceecc4b3299a55599ca08539520b"
+    },
+    {
+      "path": "session31_release_check.py",
+      "bytes": 12559,
+      "sha256": "79e808bc018f0875a4f558d2bc3d0a3b523bfb87a6cf672d3794ac610d17e387"
+    },
+    {
+      "path": "session31b_release_check.py",
+      "bytes": 11012,
+      "sha256": "9d921d1f6ee4006757c82862a5c592e01e1bfe0b7b7ceaa9ee501ed12dcf588d"
+    },
+    {
+      "path": "session32_release_check.py",
+      "bytes": 10931,
+      "sha256": "9cce0849714decee26aabb575a80d8a1ccbba3c4eaebdff543b71df3f16c46d8"
+    },
+    {
+      "path": "session33_release_check.py",
+      "bytes": 15616,
+      "sha256": "6bba6ec60768a7f80f8fc8ca7090e5b90a2a25cbd717c848529b725e381f39cd"
+    },
+    {
+      "path": "session34_release_check.py",
+      "bytes": 1979,
+      "sha256": "99d3e7db3d74d517702b7f102379634acd344d74d65923623e4a6a6e740a776b"
+    },
+    {
+      "path": "session35_release_check.py",
+      "bytes": 5301,
+      "sha256": "da097de46e3d3ac7d7045cd8a450d5781af8436cd9e52b2311601af66b3d6d75"
+    },
+    {
+      "path": "session36_release_check.py",
+      "bytes": 8277,
+      "sha256": "913ff139ccc90cfb2d702fe4789890bc684290bda92b392917937b0437f0d22c"
+    },
+    {
+      "path": "session37_release_check.py",
+      "bytes": 9091,
+      "sha256": "d9adf206ebbadef4f27ca04e185ca0005f1c09d689c3eee505d6a0e3e5bd9cb7"
+    },
+    {
+      "path": "session38_release_check.py",
+      "bytes": 7972,
+      "sha256": "75478467ff83dada8c05cd134819a00cb57e3ee3ac38328e7b8809cc00f491c4"
+    },
+    {
+      "path": "session3_release_check.py",
+      "bytes": 4698,
+      "sha256": "293efcdf4d6755e6707b5b8b4f31d0b800268af32635aef4da04b2af34855ea0"
+    },
+    {
+      "path": "session4_release_check.py",
+      "bytes": 5107,
+      "sha256": "86ecd9be2528c0c1bd73ff2ed5042426709bc5e7f850a9135b79fe8bbdb35971"
+    },
+    {
+      "path": "session5_release_check.py",
+      "bytes": 5643,
+      "sha256": "14f8bd0c6ae35ecadf92295c42c77be6c67860ad82793d3db128b7f9a6f01173"
+    },
+    {
+      "path": "session6_release_check.py",
+      "bytes": 4066,
+      "sha256": "fbf113a20cac6732ed3cc58fbc9a57b1dc46c864e9a3d8b91d3f69c54d91a29f"
+    },
+    {
+      "path": "session7_release_check.py",
+      "bytes": 3953,
+      "sha256": "95695ff749de8ff60d5431345bc496e1a62fdefde1c2eb14ebb7f2cb0852f8d6"
+    },
+    {
+      "path": "session8_release_check.py",
+      "bytes": 5228,
+      "sha256": "bfcc57588cb0846cf0cb155de0e6300e7041f0a53df45b72d7efa1a0c955ee5c"
+    },
+    {
+      "path": "session9_release_check.py",
+      "bytes": 3424,
+      "sha256": "8963827401dbeaae91b3852a04d63ba272c06f936646dd56c9699779f9750d22"
+    },
+    {
+      "path": "src/dna_midi_studio/__init__.py",
+      "bytes": 26321,
+      "sha256": "07ecfc79536689bc311a6255896de7e09fb1c48eeec677b18af3d974aa4c92d8"
+    },
+    {
+      "path": "src/dna_midi_studio/agent_runtime.py",
+      "bytes": 13854,
+      "sha256": "e7e313e6cf283fc4457b00968986ff11872f0a689d25559aa3ea68e47a36b35f"
+    },
+    {
+      "path": "src/dna_midi_studio/arrangement_graph.py",
+      "bytes": 33272,
+      "sha256": "82279f30c3a6cb54a0ad00e71923faa32f7d244544d31f9102955671b0097648"
+    },
+    {
+      "path": "src/dna_midi_studio/arrangement_renderer.py",
+      "bytes": 49737,
+      "sha256": "f34ad7f96ad42896721d0f8c39c62d37df1b8580a8cce95b0f0525bdceef6223"
+    },
+    {
+      "path": "src/dna_midi_studio/articulation_mapping.py",
+      "bytes": 44722,
+      "sha256": "dac275144750273d606a68d8d2d3be8f6215d1819923e5d2196700fe23eb42c1"
+    },
+    {
+      "path": "src/dna_midi_studio/candidate_search.py",
+      "bytes": 50619,
+      "sha256": "6c97957f1e8861f470fbd94115150d1ae2ed1d77643a4187d033117ceb3fa29b"
+    },
+    {
+      "path": "src/dna_midi_studio/device_certification.py",
+      "bytes": 16661,
+      "sha256": "336d8d12100176517a60502f3258047f32899fe1b2cddab81bad0a2850d8005f"
+    },
+    {
+      "path": "src/dna_midi_studio/device_profile_certification.py",
+      "bytes": 29062,
+      "sha256": "63c6dbed16e611242d45a4e87f348c3703b77178c7da0133046ba033c1b78d57"
+    },
+    {
+      "path": "src/dna_midi_studio/dnc_engine.py",
+      "bytes": 27670,
+      "sha256": "64b59a8258b4f121a1e2b3f9118b2af8c63de3783b5fc91d7c4a220af23be8f3"
+    },
+    {
+      "path": "src/dna_midi_studio/drum_reconstruction.py",
+      "bytes": 22133,
+      "sha256": "92fc321b3bb8aea59971d82205d94992885086724a58134bbbb9f78fe9b2e261"
+    },
+    {
+      "path": "src/dna_midi_studio/end_to_end_arranger.py",
+      "bytes": 22826,
+      "sha256": "d5778eb70d450c9e1deca2b5c3d20cc3f0836f544ed8705afcb78834d8aa081a"
+    },
+    {
+      "path": "src/dna_midi_studio/evidence_authority.py",
+      "bytes": 29742,
+      "sha256": "a9b65fbb8e45ef382aca021b36735bf90b174d1959a6a5b3f3a7df620c334eca"
+    },
+    {
+      "path": "src/dna_midi_studio/global_coherence.py",
+      "bytes": 17976,
+      "sha256": "937334846c7dffb2326eec47938766ce327f724ff1b0ba32ebd404942ee8b1ee"
+    },
+    {
+      "path": "src/dna_midi_studio/groove_polyphony.py",
+      "bytes": 45639,
+      "sha256": "a1c93002cf16bed6b540e0da3f8a6303be98406410bab2c6d3997f2f36f6bc43"
+    },
+    {
+      "path": "src/dna_midi_studio/guitar_reconstruction.py",
+      "bytes": 29264,
+      "sha256": "54374eb6c82ee5f9840d9bc599145c70a757cfc7ec43add9e335906006135525"
+    },
+    {
+      "path": "src/dna_midi_studio/harmonic_reconstruction.py",
+      "bytes": 30234,
+      "sha256": "f85b118f2e9f4840290083a061699408882f9d74d0bab324cf4bd6e06c271462"
+    },
+    {
+      "path": "src/dna_midi_studio/independent_verifier.py",
+      "bytes": 9184,
+      "sha256": "a29620b73a6c1d183056e563a47207d0a35c347cfc4f272e2cedb8af13538ea4"
+    },
+    {
+      "path": "src/dna_midi_studio/midi.py",
+      "bytes": 19809,
+      "sha256": "f48e2942ca0f95f4aade73d8b3965a25961023403e26db372881ca97ed52d02c"
+    },
+    {
+      "path": "src/dna_midi_studio/music_quality.py",
+      "bytes": 49973,
+      "sha256": "4934ebecca4af63d52bb72d33d0ff28a0a605611029ab28306dbc8b72fd7704a"
+    },
+    {
+      "path": "src/dna_midi_studio/personal_profile.py",
+      "bytes": 37663,
+      "sha256": "b284091ec56e6eccd5725266ef7e5ef381f51a1b6e828c7bd3739a312a9ecb65"
+    },
+    {
+      "path": "src/dna_midi_studio/premium_expression.py",
+      "bytes": 58382,
+      "sha256": "150347f5d9bedad1cdf77ee920380e26e79ec9a0f826e12c8c260fe1416b75e5"
+    },
+    {
+      "path": "src/dna_midi_studio/premium_preview.py",
+      "bytes": 39521,
+      "sha256": "0d5c2ba54c0e2a3e2165abff5d3160062e9e383d283a7a8342d47f67ea2c8dab"
+    },
+    {
+      "path": "src/dna_midi_studio/premium_workflow.py",
+      "bytes": 25201,
+      "sha256": "829d4a0049303a2254bdf343604c3567beaebfbd229022304ba186982e516bf6"
+    },
+    {
+      "path": "src/dna_midi_studio/producer_brief.py",
+      "bytes": 33209,
+      "sha256": "5bedaec0714c583a4f54072c86c0b281b51d66231ab06b2bdefc66966d8d5999"
+    },
+    {
+      "path": "src/dna_midi_studio/production_adapter.py",
+      "bytes": 29524,
+      "sha256": "c0c3fc932895ebbedfe091702f303c988832d4e6c8d83ecd5e7f1948ce94b13a"
+    },
+    {
+      "path": "src/dna_midi_studio/quality_calibration.py",
+      "bytes": 37704,
+      "sha256": "29c7167aebb9ab41352823364f5f098e80b227bf8d64c8caa9283f482603ea9e"
+    },
+    {
+      "path": "src/dna_midi_studio/regression_vault.py",
+      "bytes": 5117,
+      "sha256": "ae9d4c65f6ce9d065bf8f5c73bec3b525c84c3e32d0736e425db26b035abb1d0"
+    },
+    {
+      "path": "src/dna_midi_studio/release_readiness.py",
+      "bytes": 42553,
+      "sha256": "7109c3c9df336cd10d40df3fd01105e38a57ff7bff82a5b20293e4839558b828"
+    },
+    {
+      "path": "src/dna_midi_studio/reliability_gate.py",
+      "bytes": 26670,
+      "sha256": "95d23b63350db8eee40597bd8a90c1ed2e9e6cc3aadbe723a274e0fb323594aa"
+    },
+    {
+      "path": "src/dna_midi_studio/rx_engine.py",
+      "bytes": 25825,
+      "sha256": "d9397be59e41c0c6cde20680cf6e16e38f0a5ea35c1e901dc4dc557096a44d1e"
+    },
+    {
+      "path": "src/dna_midi_studio/session19_fixture.py",
+      "bytes": 6008,
+      "sha256": "ed64aa16f06eaf0a2a0e699f5fec7685a6e9b0eaab52b06472f90aee624f1396"
+    },
+    {
+      "path": "src/dna_midi_studio/session20_fixture.py",
+      "bytes": 5451,
+      "sha256": "7ba349567c6553dc39484cc87d4ddb55ec0ffc760d70eb115bdecfad4539ea64"
+    },
+    {
+      "path": "src/dna_midi_studio/session24_fixture.py",
+      "bytes": 2858,
+      "sha256": "e83e31703c03d4530e9bd65ba4c2acba2305421c853d913a42ff2943c409cfd8"
+    },
+    {
+      "path": "src/dna_midi_studio/session25_fixture.py",
+      "bytes": 3361,
+      "sha256": "6593f1e279f9f0bcce91d2652dd68ddf0c112c4e0c779ca7cc90deb641cc8428"
+    },
+    {
+      "path": "src/dna_midi_studio/session26_fixture.py",
+      "bytes": 4980,
+      "sha256": "a640f7825d7f35ae77619801b2fa244943b570510d17e7e2966459914d37e073"
+    },
+    {
+      "path": "src/dna_midi_studio/session27_fixture.py",
+      "bytes": 3304,
+      "sha256": "b64434471468a4032d1f8023eb1b43f624818c047398bcbc8dedfb70f60f891c"
+    },
+    {
+      "path": "src/dna_midi_studio/session28_fixture.py",
+      "bytes": 2972,
+      "sha256": "fb3039d9f9fb723b19abdd7f5b82401b4632d492c4d593ddd7ca1ffe6e693c48"
+    },
+    {
+      "path": "src/dna_midi_studio/session29_fixture.py",
+      "bytes": 4230,
+      "sha256": "27bfe70094be94156c6bb188d8058767c2c2914e8b716f82a5d96af39b5b2875"
+    },
+    {
+      "path": "src/dna_midi_studio/session2_fixture.py",
+      "bytes": 2128,
+      "sha256": "f0ed67dafd7008fffb71ee13d3970b11ff120ae9435a824958515ec347a45154"
+    },
+    {
+      "path": "src/dna_midi_studio/session30_fixture.py",
+      "bytes": 1931,
+      "sha256": "2edb5f07e91932b5b8399c1a9e25badb89b81f9adc3a073e2230575768fa3132"
+    },
+    {
+      "path": "src/dna_midi_studio/session31_fixture.py",
+      "bytes": 5231,
+      "sha256": "75cc2f646562e242812143fb4d1f3c0d6e2bdaef1b51690b3980afad212ded88"
+    },
+    {
+      "path": "src/dna_midi_studio/session31b_fixture.py",
+      "bytes": 1939,
+      "sha256": "cf030d6f2fc9557e2214ce1c6b64e2ac3822b499adf298c81bebc89e79549814"
+    },
+    {
+      "path": "src/dna_midi_studio/session32_fixture.py",
+      "bytes": 9268,
+      "sha256": "fac343df5688f6feb69e6253f7bf0203fc620ab196b49fd5ce1fea5d96397f9c"
+    },
+    {
+      "path": "src/dna_midi_studio/session33_fixture.py",
+      "bytes": 734,
+      "sha256": "c920bb952c19e5cfffc4ff1517400db5f9dc9ee07bbffb28e32c9391b1d730a8"
+    },
+    {
+      "path": "src/dna_midi_studio/session34_fixture.py",
+      "bytes": 585,
+      "sha256": "bc400bca4abc5af041efbb5d84d5cd70c1a720fb31d932285e8e9ef02759766d"
+    },
+    {
+      "path": "src/dna_midi_studio/session35_fixture.py",
+      "bytes": 507,
+      "sha256": "a83b7c7efb705946d65e94c82c671160e8d338d73b4feee078aef1b0827ad774"
+    },
+    {
+      "path": "src/dna_midi_studio/session36_fixture.py",
+      "bytes": 510,
+      "sha256": "a194e2b7052ad1f683f0f0a85bb231bec85576eb894f7fdd823bbf275ecef686"
+    },
+    {
+      "path": "src/dna_midi_studio/session37_fixture.py",
+      "bytes": 1749,
+      "sha256": "544bcf02988e541213f8c7df86727022fbaac9ab9fc79f2802c688063ed551c6"
+    },
+    {
+      "path": "src/dna_midi_studio/session38_fixture.py",
+      "bytes": 299,
+      "sha256": "5462109cecad5d4890916e5cbbedba1c52c1881a3af10e695f1786e303067188"
+    },
+    {
+      "path": "src/dna_midi_studio/session3_fixture.py",
+      "bytes": 3184,
+      "sha256": "f80ad4a0c8bbf76db2f0eaa52c106227fb3616a7094b643e81cfcf0d54e82296"
+    },
+    {
+      "path": "src/dna_midi_studio/session4_fixture.py",
+      "bytes": 1210,
+      "sha256": "ddc0cc39cdb8df94a7a0d04233f400c6891f08a5c14ca001eafed6e965c597ca"
+    },
+    {
+      "path": "src/dna_midi_studio/session5_fixture.py",
+      "bytes": 2535,
+      "sha256": "1239e2c5b39747acbf6e84b6c65e2faf56f2c52821f59d28eafc12eed5b73af6"
+    },
+    {
+      "path": "src/dna_midi_studio/session6_fixture.py",
+      "bytes": 2478,
+      "sha256": "92bc4a2a50c316ba619efacf81c5b747c796a76908b8ffc9c35ee7087b89622d"
+    },
+    {
+      "path": "src/dna_midi_studio/session7_fixture.py",
+      "bytes": 2276,
+      "sha256": "a25f4679b39e7eeeb006e7bc72a14a9b36d5a2befac9616a76b6352b76e77683"
+    },
+    {
+      "path": "src/dna_midi_studio/solo_enhancement.py",
+      "bytes": 41972,
+      "sha256": "76de6e1373ca5276e4e730e224e54c7b552735ed7f6a57d1e21e8db2ed30b557"
+    },
+    {
+      "path": "src/dna_midi_studio/song_understanding.py",
+      "bytes": 40242,
+      "sha256": "026953233ed5a02a749a965b2e025d8cf0431e50134cc6d30295893cd50b868f"
+    },
+    {
+      "path": "src/dna_midi_studio/track_identity.py",
+      "bytes": 14695,
+      "sha256": "16b82ab8c5bfc7b02f151618a0756d60afc8b4c2644e59092ecedba6ccdaf6e2"
+    },
+    {
+      "path": "src/dna_midi_studio/track_instrument_analysis.py",
+      "bytes": 23520,
+      "sha256": "c8b7a119dbf72b1609f1f4f6b4fc331c464e36d0d406b1c46869a365426bee86"
+    },
+    {
+      "path": "src/dna_midi_studio/track_plan.py",
+      "bytes": 35436,
+      "sha256": "cd700fb99653bbaac363c37ca6618c75e6e1d49a13029eeb0bd22ab0dab871e5"
+    },
+    {
+      "path": "src/dna_midi_studio/transactional_export.py",
+      "bytes": 7972,
+      "sha256": "f943ffdf22867fed8d9dcf7b352d499a48e1730d55dfb8e594f8ed5d6e7840f7"
+    },
+    {
+      "path": "src/dna_midi_studio/unified_pipeline.py",
+      "bytes": 15349,
+      "sha256": "eb366469665d31ec01c3273da3fdac91793185555efff79c2153c21a68234b72"
+    },
+    {
+      "path": "testiraj.bat",
+      "bytes": 593,
+      "sha256": "c0322adebdffabfbdaf9e9d3a31d7eb5d217e4c649c939d84919662eea13d83c"
+    },
+    {
+      "path": "web_gui.py",
+      "bytes": 133908,
+      "sha256": "636f2126ab42926a96f39dee753f77cfc2ec61d1c5013ea9e8f5c1e2475f1c0d"
+    }
+  ],
+  "registries": [
+    {
+      "path": "data/factory-velocity-profiles.json",
+      "bytes": 15145620,
+      "sha256": "7a21fc2fefc88de5c9ed34f4d99d9750f40705dc627a7290d562077d54c8cd60"
+    },
+    {
+      "path": "data/gold-patterns.json",
+      "bytes": 5195949,
+      "sha256": "251d42aac5af2f9d78a3afe392655ce4d879aeb0bd9ee0431c5d715e6337107e"
+    },
+    {
+      "path": "data/factory-style-segments.json",
+      "bytes": 39965976,
+      "sha256": "cc46bd686e73e0f3b560b0fe6afb7b96d9bd7e54b4d14e6a36ecb35a50251978"
+    },
+    {
+      "path": "data/factory-strumming.json",
+      "bytes": 16386522,
+      "sha256": "ccc65c0abce165ad460b6ec1d43d327009b90eb8ebc545489df53f1fef367308"
+    },
+    {
+      "path": "data/gold-performance-patterns.json",
+      "bytes": 26635700,
+      "sha256": "b41ad979e0a4a91dd27a40181b0cb94c4ceddbfe2f718e6fdf744b434369d4e7"
+    }
+  ],
+  "contracts": [
+    {
+      "path": "premium/schemas/catalog.json",
+      "bytes": 4656,
+      "sha256": "400bc1188cab73dae3517416a9f89b87e01ae4611d44cb17c6af0a7ae599d9c3"
+    },
+    {
+      "path": "premium/schemas/v1/arrangement-graph-v1.schema.json",
+      "bytes": 1717,
+      "sha256": "e555bd1feb157c7e47000984d7b36b1a2c0d85b1a0f93b3db04487e73f8c627b"
+    },
+    {
+      "path": "premium/schemas/v1/candidate-set-v1.schema.json",
+      "bytes": 1283,
+      "sha256": "533dfdc513f48c16e4f290b331fd0d18cf79b1f4c837449097be4b4e2e845694"
+    },
+    {
+      "path": "premium/schemas/v1/device-profile-v1.schema.json",
+      "bytes": 1635,
+      "sha256": "f08976dc655896b9e7458f0340c4f65217ffba4d4b729857616ecc0627784e5e"
+    },
+    {
+      "path": "premium/schemas/v1/evaluation-report-v1.schema.json",
+      "bytes": 1733,
+      "sha256": "7542697d54d1b9a38d49dea8ca012f0d767552783227dab466d75ac63bc6f884"
+    },
+    {
+      "path": "premium/schemas/v1/producer-brief-v1.schema.json",
+      "bytes": 1493,
+      "sha256": "b62781e5fb1b2763d30ad001da53fbf57181b427ebace79c7b2121bd591d7ce0"
+    },
+    {
+      "path": "premium/schemas/v1/render-manifest-v1.schema.json",
+      "bytes": 1851,
+      "sha256": "c1f1cd266b4086932c7fd120cebf7f4cb24fbbeca32010260fb523a18d0b081d"
+    },
+    {
+      "path": "premium/schemas/v1/song-map-v1.schema.json",
+      "bytes": 2516,
+      "sha256": "07ce0ad710f2f055f5021835dbaa4f13f45ae68873e357abcdce48904ecb0c66"
+    },
+    {
+      "path": "premium/schemas/v1/sound-binding-v1.schema.json",
+      "bytes": 1636,
+      "sha256": "0fb3584c2783a196d00eb0941f26794e5813f0a88dbe42b216c0e2a684c29bf4"
+    },
+    {
+      "path": "premium/schemas/v1/track-plan-v1.schema.json",
+      "bytes": 1252,
+      "sha256": "8aa0c44f21643539cef6692e66c5fd9e379da2a7937bd8bc55b3249bb9b29e78"
+    },
+    {
+      "path": "premium/schemas/v2/arrangement-graph-v2.schema.json",
+      "bytes": 9343,
+      "sha256": "f71c73acf313f9e502daa53ec38ad74bb163ee96acf7ca0af17fd62d8f540433"
+    },
+    {
+      "path": "premium/schemas/v2/arranger-project-checkpoint-v1.schema.json",
+      "bytes": 1034,
+      "sha256": "02b7f03aba32d811bea0d65a070e034dfa04b8f37249af80f8750822044632c3"
+    },
+    {
+      "path": "premium/schemas/v2/articulation-capture-v1.schema.json",
+      "bytes": 1949,
+      "sha256": "3fa21a0fcb98f7e773d2078f2d53f33f063e99abebe7073507f13c78563d2a45"
+    },
+    {
+      "path": "premium/schemas/v2/articulation-map-v2.schema.json",
+      "bytes": 4561,
+      "sha256": "291b3b332b063c04f8ffbd8cf9cfdc4c8e2d5ad11534dfe07da5830fbb24d983"
+    },
+    {
+      "path": "premium/schemas/v2/articulation-plan-v2.schema.json",
+      "bytes": 1184,
+      "sha256": "cf270af96503f9d181d30ac6d6f0c71a9e40f35cc0782690f904a412e56f6493"
+    },
+    {
+      "path": "premium/schemas/v2/audio-render-adapter-v1.schema.json",
+      "bytes": 890,
+      "sha256": "e8ad2c109fd56b93b0ef90bb948196156a2f14e1f6fa5f854585e0d6783ad111"
+    },
+    {
+      "path": "premium/schemas/v2/authority-decision-v1.schema.json",
+      "bytes": 2059,
+      "sha256": "9dde7a307cceb4838ee26a7ef2aa7b2a2b05bc49733e40e04195b2a66df1b9d3"
+    },
+    {
+      "path": "premium/schemas/v2/blind-listening-package-v1.schema.json",
+      "bytes": 1357,
+      "sha256": "d03c35b1c987e76ea5b55a794a4676371121c7db6fc77ed60eaa32a4e920d24d"
+    },
+    {
+      "path": "premium/schemas/v2/candidate-set-v2.schema.json",
+      "bytes": 8492,
+      "sha256": "041d94a3bf7743f9f616347925d4e37a59fefb08549f24e460c8b479c3008f14"
+    },
+    {
+      "path": "premium/schemas/v2/coherence-plan-v2.schema.json",
+      "bytes": 180,
+      "sha256": "54595a3b3736b3ab13a918aee052233d85277c671e62c97e72fb380aaa97dae6"
+    },
+    {
+      "path": "premium/schemas/v2/coherence-verification-v1.schema.json",
+      "bytes": 188,
+      "sha256": "911283baaa222417463a598aea54a6ab84bf9bd84438eb123e1c0131fb6ca6d8"
+    },
+    {
+      "path": "premium/schemas/v2/device-audio-capture-v1.schema.json",
+      "bytes": 2315,
+      "sha256": "0a951fde525a38d9c6605ad1319ba73dafc622ad4e7d8001639f61a1e1f3e0bb"
+    },
+    {
+      "path": "premium/schemas/v2/device-certification-report-v2.schema.json",
+      "bytes": 1921,
+      "sha256": "477e0c07bc79c4f42e85ccbe2073e9efa89d7ccc550ebb262adb3b0319046738"
+    },
+    {
+      "path": "premium/schemas/v2/device-profile-v2.schema.json",
+      "bytes": 1960,
+      "sha256": "375e6593fddf39932295126d794e003018d538603f270b8c1056544329fa0ed7"
+    },
+    {
+      "path": "premium/schemas/v2/evaluation-report-v2.schema.json",
+      "bytes": 2026,
+      "sha256": "dbc3ef564befc329fa2e872ad7365468f143c02a9be4b21260d9b43ba5e0fb56"
+    },
+    {
+      "path": "premium/schemas/v2/evidence-coverage-report-v1.schema.json",
+      "bytes": 1285,
+      "sha256": "1e41c8a1bad248bd8349c28d9b17cf85afe31ce8594fb3926ce70a8e5bd8daed"
+    },
+    {
+      "path": "premium/schemas/v2/evidence-ledger-v3.schema.json",
+      "bytes": 992,
+      "sha256": "435cbe734642d853e7215ba8064b69bc0b1649ab5c47959d0e64abbe81e5eea6"
+    },
+    {
+      "path": "premium/schemas/v2/expression-plan-v2.schema.json",
+      "bytes": 14337,
+      "sha256": "e6ff89f1fc5822afa68066ab77ceba3be4c06969288acbcf74924cbb30bad8af"
+    },
+    {
+      "path": "premium/schemas/v2/groove-plan-v2.schema.json",
+      "bytes": 15340,
+      "sha256": "d8203b8f2a76df92c6c95e36ddc18a0ba5a8554718f4de7cd40cb2ab07f24ca5"
+    },
+    {
+      "path": "premium/schemas/v2/human-listening-intake-v1.schema.json",
+      "bytes": 1295,
+      "sha256": "6da78b4ea0a650ebfef99c1e2c6e2f34c1e02f1ab3058ee2f98185528d5e3efc"
+    },
+    {
+      "path": "premium/schemas/v2/listening-response-v1.schema.json",
+      "bytes": 1366,
+      "sha256": "147adf7c681ef0ba3fcfae8734db31bc0cb467b976eaced850715081292dbed4"
+    },
+    {
+      "path": "premium/schemas/v2/optimizer-dry-run-v1.schema.json",
+      "bytes": 1621,
+      "sha256": "a7b888af8c3644fa473fff4e5c34bebebc819bd789febd52f0612708bc75f318"
+    },
+    {
+      "path": "premium/schemas/v2/optimizer-operation-v1.schema.json",
+      "bytes": 1415,
+      "sha256": "b9236b6a251fd328af1e6b139527806d05f39b340c3a79ba8c2f84510f129dd3"
+    },
+    {
+      "path": "premium/schemas/v2/pa800-device-capture-v2.schema.json",
+      "bytes": 6352,
+      "sha256": "d13f6590d4fbedd62461042bc5e7a4a039ce9c7dc9551fb95a760497938b90c1"
+    },
+    {
+      "path": "premium/schemas/v2/personal-producer-profile-v2.schema.json",
+      "bytes": 923,
+      "sha256": "9f51e82f7eaa02af366814c60c68d77a46b8d56c5ee0977ff685184ddbc6897b"
+    },
+    {
+      "path": "premium/schemas/v2/personal-profile-deletion-v1.schema.json",
+      "bytes": 1004,
+      "sha256": "6124aae52592e16320141b2fa87d599765f0d9ced6e51cddc99b091a952474cc"
+    },
+    {
+      "path": "premium/schemas/v2/personal-ranking-overlay-v1.schema.json",
+      "bytes": 758,
+      "sha256": "946b3e4eb9b8ad2d8c4b0aaa333e28ff20a7f50c0403416ab018104b87330619"
+    },
+    {
+      "path": "premium/schemas/v2/premium-workflow-v2.schema.json",
+      "bytes": 2256,
+      "sha256": "cd0677fa350c48d14538979e5ed030ec6a704c637dc1332cccc409bca50ad038"
+    },
+    {
+      "path": "premium/schemas/v2/preview-session-v2.schema.json",
+      "bytes": 2076,
+      "sha256": "5e053a3ec87dcb190b7e1e967e1d7a8610dc1996d87c0f695cf01111a77b58aa"
+    },
+    {
+      "path": "premium/schemas/v2/producer-brief-v2.schema.json",
+      "bytes": 4577,
+      "sha256": "113ce2e371a4c7509778d081ee2d4c72162bfc72eaa204b6239fd7c8a8c691b1"
+    },
+    {
+      "path": "premium/schemas/v2/production-expression-intake-v1.schema.json",
+      "bytes": 1454,
+      "sha256": "aeecbb30a4999465551a5165ba2e73f5ec4b3465897727571ae3eaf3b31d7d3a"
+    },
+    {
+      "path": "premium/schemas/v2/project-migration-report-v1.schema.json",
+      "bytes": 911,
+      "sha256": "eb35889f55eee17924e84a262078986b91f3fce92eb966a20376abcd644bc6bd"
+    },
+    {
+      "path": "premium/schemas/v2/quality-calibration-report-v1.schema.json",
+      "bytes": 1711,
+      "sha256": "f7f5d71c1c712a5c8f5a88428d2513122d68bfe69f2bb59c55a53b575782c77f"
+    },
+    {
+      "path": "premium/schemas/v2/quality-corpus-v2.schema.json",
+      "bytes": 1026,
+      "sha256": "df0e1c1515affc51fdba8934cb2d18babbca3fdf088d16cd4bb43f1126b78b25"
+    },
+    {
+      "path": "premium/schemas/v2/quality-regression-vault-v1.schema.json",
+      "bytes": 829,
+      "sha256": "46eb5caf819f44572cc4ee5ff383c2cd336746884d0adf37cc415dbfc4fe39b5"
+    },
+    {
+      "path": "premium/schemas/v2/quality-release-gate-v1.schema.json",
+      "bytes": 1383,
+      "sha256": "f8c9affd9c26e0025bf3bfd5c1a5c025aad6d8f9fd8989bf9eeba3ba90129f00"
+    },
+    {
+      "path": "premium/schemas/v2/release-readiness-v2.schema.json",
+      "bytes": 1136,
+      "sha256": "b810b2eaed7bfe6f8fa66f185176a7cf0e0a2d2961e4af7223c32e283a31fdf5"
+    },
+    {
+      "path": "premium/schemas/v2/release-status-matrix-v1.schema.json",
+      "bytes": 813,
+      "sha256": "61092ffb5209e76ec4a7cbee3badbf00a160161f47fc3fff1e5453e78e080d74"
+    },
+    {
+      "path": "premium/schemas/v2/reliability-regression-vault-v1.schema.json",
+      "bytes": 887,
+      "sha256": "144d725a4ab60a7e1ece14e6b5b10117ebe1b1e02f745c73f1f08bda290e8d41"
+    },
+    {
+      "path": "premium/schemas/v2/reliability-report-v1.schema.json",
+      "bytes": 1297,
+      "sha256": "9df8d4209c6b48d88d767f9f369818f8082d313ca89d0ee8b4050e27737dd0a6"
+    },
+    {
+      "path": "premium/schemas/v2/render-manifest-v2.schema.json",
+      "bytes": 1841,
+      "sha256": "4748643861b340a516560d3a00b1d16992129ff6e6c740ce0f46748ab172a7bc"
+    },
+    {
+      "path": "premium/schemas/v2/rendered-fragment-v1.schema.json",
+      "bytes": 1021,
+      "sha256": "ad774d4dd96a3ec39d3978cfbe508385aca84ce3a8243ff040367b0ef6c2d634"
+    },
+    {
+      "path": "premium/schemas/v2/renderer-verification-v1.schema.json",
+      "bytes": 766,
+      "sha256": "d7fa2f0f33d66c7e43393f92e45d995129467599b0bf79de73dba59ed511459c"
+    },
+    {
+      "path": "premium/schemas/v2/software-manifest-v1.schema.json",
+      "bytes": 1705,
+      "sha256": "659d30a8cd7985be3f0c1542d8e081472d9e3c903af01aed463f2281f988f069"
+    },
+    {
+      "path": "premium/schemas/v2/solo-safety-report-v1.schema.json",
+      "bytes": 1207,
+      "sha256": "17f95b04730528cdd7f2d5a184dfcad142b8ea5f1a5607fecf5d598571aaa5f0"
+    },
+    {
+      "path": "premium/schemas/v2/song-map-corrections-v1.schema.json",
+      "bytes": 1199,
+      "sha256": "9a84fe57bafd6140dad6a6a36c40f76a99387067009d68ba338bafd33f2536a2"
+    },
+    {
+      "path": "premium/schemas/v2/song-map-v2.schema.json",
+      "bytes": 1996,
+      "sha256": "c15a7086454a926987d9ce36355fc68bf73df474ee8e4570b0b4b0c33809348d"
+    },
+    {
+      "path": "premium/schemas/v2/song-to-style-project-v1.schema.json",
+      "bytes": 1064,
+      "sha256": "b37d26671f6c75acae61736ceb3b0b17650aafa3d4554c0dd6fc48c8c24f7ec2"
+    },
+    {
+      "path": "premium/schemas/v2/sound-binding-v2.schema.json",
+      "bytes": 1380,
+      "sha256": "8730f7afe38bc97bd6aac3f3a3c27346f1476f4e2e8a86db816ddad39d9b68be"
+    },
+    {
+      "path": "premium/schemas/v2/track-identity-v1.schema.json",
+      "bytes": 964,
+      "sha256": "35eddf3ce3c364a82db128b578c1bbd0496330f50cf51421d505a9fe143aad3a"
+    },
+    {
+      "path": "premium/schemas/v2/track-instrument-analysis-v3.schema.json",
+      "bytes": 1179,
+      "sha256": "e27ce5c9c86ea6cfb4048eb29c5c028a43ed6adf57269d4d1943345bcbac0468"
+    },
+    {
+      "path": "premium/schemas/v2/track-plan-v3.schema.json",
+      "bytes": 1241,
+      "sha256": "4f3e306d332f171c8a08085116b841064796effcb01f2788803df1dd21d7e1e6"
+    },
+    {
+      "path": "premium/schemas/v2/workflow-recovery-v1.schema.json",
+      "bytes": 1433,
+      "sha256": "6b478e23afef6cd6544800c476aca5dc727c854149a34f787932c98c76ae9988"
+    }
+  ],
+  "modelPromptVersions": {
+    "producerBriefParser": "LOCAL_RULE_BASED_2.0",
+    "optionalAiAdapter": "DEFAULT_OFF_METADATA_ONLY",
+    "arrangementPlanner": "ARRANGEMENT_GRAPH_2.0",
+    "candidateEngine": "CANDIDATE_SET_2.0",
+    "profileEngine": "PERSONAL_PRODUCER_PROFILE_2.0",
+    "cloudRequired": false
+  },
+  "deviceProfile": {
+    "target": "Korg Pa800",
+    "status": "WAITING_FOR_DEVICE",
+    "certified": false,
+    "profileHash": null
+  },
+  "contentHash": "6ed3d22093e47996cca8693268b28df016253c05b11f69bcc802e8fe027041ce",
+  "signature": {
+    "algorithm": "SHA256-CONTENT-SEAL",
+    "authority": "DNA_LOCAL_SOFTWARE_GATE",
+    "signedContentHash": "6ed3d22093e47996cca8693268b28df016253c05b11f69bcc802e8fe027041ce",
+    "signatureValue": "5d0a61d739fb30058965bb5e96a7403ce113d09aa9b887a1df9c4db077d9d812",
+    "identityClaim": false
+  },
+  "manifestHash": "a9544db2cd2469c7d8d8f18006e5b7897d6597e07aefcc4e364f961d9517a211"
+}

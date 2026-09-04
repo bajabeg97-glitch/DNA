@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/optimizer-dry-run-v1.schema.json",
+  "title": "DNA MIDI Studio OptimizerDryRun 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "sourceMidiSha256", "candidateMidiGenerated", "midiBytesWritten", "operationCounts", "sourceDecisionCounts", "fragmentDecisionCounts", "predictedMaximumChanges", "protectedOriginalNoteChanges", "soundBindingChanges", "goldVelocityChanges", "goldBankProgramChanges", "blockedOperationCount", "dryRunHash"],
+  "properties": {
+    "schema": {"const": "dna-optimizer-dry-run"},
+    "version": {"const": "1.0"},
+    "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "candidateMidiGenerated": {"const": false},
+    "midiBytesWritten": {"const": 0},
+    "operationCounts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "sourceDecisionCounts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "fragmentDecisionCounts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "predictedMaximumChanges": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "protectedOriginalNoteChanges": {"const": 0},
+    "soundBindingChanges": {"const": 0},
+    "goldVelocityChanges": {"const": 0},
+    "goldBankProgramChanges": {"const": 0},
+    "blockedOperationCount": {"type": "integer", "minimum": 0},
+    "dryRunHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

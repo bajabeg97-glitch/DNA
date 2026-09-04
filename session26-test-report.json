@@ -1,0 +1,93 @@
+{
+  "schema": "dna-session26-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synchronized-abc-preview-loop-role-mix-polyphony-loudness-proxy-and-device-audio-separation",
+  "formalSuite": {
+    "testsRun": 96,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session26-benchmark-report.json",
+    "variantNoteCounts": {
+      "A": 12,
+      "B": 16,
+      "C": 17
+    },
+    "variantAudibleCounts": {
+      "A": 12,
+      "B": 16,
+      "C": 17
+    },
+    "variantPeaks": {
+      "A": 6,
+      "B": 7,
+      "C": 7
+    },
+    "articulationEventCount": 11,
+    "proxyWavSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe",
+    "proxyDurationSeconds": 2.0,
+    "deterministicWav": true,
+    "profileChangePreservedValidatorIdentity": true,
+    "gainChangePreservedValidatorIdentity": true,
+    "deviceCaptureComparisonOnly": true,
+    "benchmarkHash": "8d460c9d534579027175fa9844ff88a6965b9955039d58a282efcd9b3a0ead28"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session26-reference.mid",
+    "songMap": "artifacts/session26-song-map.json",
+    "groovePlan": "artifacts/session26-groove-plan.json",
+    "expressionPlan": "artifacts/session26-expression-plan.json",
+    "controls": "artifacts/session26-preview-controls.json",
+    "validatorVerdict": "artifacts/session26-validator-verdict.json",
+    "previewSession": "artifacts/session26-preview-session.json",
+    "proxyWav": "artifacts/session26-variant-c-proxy.wav",
+    "audioManifest": "artifacts/session26-audio-manifest.json",
+    "deviceCapture": "artifacts/session26-device-audio-capture.json",
+    "audioComparison": "artifacts/session26-audio-comparison.json",
+    "articulationPlan1": "artifacts/session26-articulation-plan-1.json",
+    "articulationPlan2": "artifacts/session26-articulation-plan-2.json",
+    "articulationPlan3": "artifacts/session26-articulation-plan-3.json",
+    "schemaCatalog": "data/session26-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session26_premium_preview.py",
+    "api": "/api/premium-preview-session",
+    "audioApi": "/api/premium-preview-audio",
+    "guiCard": "PREMIUM PREVIEW 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "synchronizedAbcClock": true,
+    "sectionLoop": true,
+    "roleSoloMute": true,
+    "oneClickVerifiedBaseline": true,
+    "activeNoteTrackChannelUidSoundBindingVisible": true,
+    "fullDurationPolyphonyVisible": true,
+    "softwareMidiNoteCeiling": 54,
+    "loudnessMethod": "MIDI_ENERGY_RMS_PROXY",
+    "loudnessAffectsMidi": false,
+    "profileAffectsMidi": false,
+    "externalRendererManifestOnly": true,
+    "apiClientCannotSupplyFinalValidatorVerdict": true,
+    "externalCommandExecution": false,
+    "proxyIsDeviceAudio": false,
+    "deviceCaptureComparisonOnly": true,
+    "session16CertAuthorityPreserved": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false
+  },
+  "status": {
+    "session26PremiumPreview": "SOFTWARE_VALIDATED / DEVICE_AUDIO_COMPARISON_ONLY",
+    "activeSoftwareBaseline": "4.4-alpha",
+    "aiArrangerAlpha": "SOFTWARE_VALIDATED / ALPHA",
+    "productionAudioRenderer": "OPTIONAL_MANIFEST_ONLY",
+    "pa800AudioCapture": "COMPARISON_READY / CERTIFICATION_BLOCKED",
+    "qualityListeningBenchmark": "PENDING_SESSION27",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

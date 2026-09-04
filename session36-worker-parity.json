@@ -1,0 +1,42 @@
+{
+  "runs": [
+    {
+      "workers": 1,
+      "jobs": 4,
+      "outputHashes": [
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+      ],
+      "singleHash": true
+    },
+    {
+      "workers": 2,
+      "jobs": 4,
+      "outputHashes": [
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+      ],
+      "singleHash": true
+    },
+    {
+      "workers": 4,
+      "jobs": 4,
+      "outputHashes": [
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+        "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+      ],
+      "singleHash": true
+    }
+  ],
+  "byteIdenticalAcrossWorkers": true,
+  "sharedInputsUnchanged": true,
+  "inputHashBefore": "f1947fce10fe12e45e090fd24d18da45b92121a67bee9d19b96bbf86c15a35eb",
+  "inputHashAfter": "f1947fce10fe12e45e090fd24d18da45b92121a67bee9d19b96bbf86c15a35eb",
+  "parityHash": "1952ee9e0f142f373096e56eb599824d71e8f458a96992a80207ae1e77e65f3c"
+}

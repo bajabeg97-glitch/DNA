@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/evaluation-report-v1.schema.json",
+  "title": "DNA Premium EvaluationReport v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "renderSha256", "technicalPassed", "metrics", "manualReview", "listening"],
+  "properties": {
+    "schema": {"const": "dna-premium-evaluation-report"},
+    "version": {"const": "1.0"},
+    "renderSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "technicalPassed": {"type": "boolean"},
+    "metrics": {"type": "object", "additionalProperties": false, "required": ["harmony", "groove", "register", "transitionContinuity", "repetition", "endingResolution", "overall"], "properties": {"harmony": {"type": "number", "minimum": 0, "maximum": 5}, "groove": {"type": "number", "minimum": 0, "maximum": 5}, "register": {"type": "number", "minimum": 0, "maximum": 5}, "transitionContinuity": {"type": "number", "minimum": 0, "maximum": 5}, "repetition": {"type": "number", "minimum": 0, "maximum": 5}, "endingResolution": {"type": "number", "minimum": 0, "maximum": 5}, "overall": {"type": "number", "minimum": 0, "maximum": 5}}},
+    "manualReview": {"type": "array", "items": {"type": "object", "required": ["code", "message"], "properties": {"code": {"type": "string"}, "message": {"type": "string"}}, "additionalProperties": false}},
+    "listening": {"type": "object", "additionalProperties": false, "required": ["performed", "premiumPreferred", "evaluators"], "properties": {"performed": {"type": "boolean"}, "premiumPreferred": {"type": ["boolean", "null"]}, "evaluators": {"type": "integer", "minimum": 0}}}
+  }
+}

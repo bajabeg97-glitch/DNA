@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/song-map-corrections-v1.schema.json",
+  "title": "DNA SongMap Correction Overlay 1.0",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "sourceSha256"],
+  "properties": {
+    "schema": {"const": "dna-song-map-corrections"},
+    "version": {"const": "1.0"},
+    "sourceSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "reason": {"type": "string", "maxLength": 1000},
+    "chordOverrides": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["cellIndex", "symbol"], "properties": {"cellIndex": {"type": "integer", "minimum": 0}, "symbol": {"type": "string", "minLength": 1, "maxLength": 16}}}},
+    "sectionOverrides": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id"], "properties": {"id": {"type": "string", "minLength": 1}, "label": {"enum": ["intro", "verse", "chorus", "bridge", "break", "build-up", "drop", "ending"]}, "startTick": {"type": "integer", "minimum": 0}, "endTick": {"type": "integer", "minimum": 1}}}}
+  }
+}

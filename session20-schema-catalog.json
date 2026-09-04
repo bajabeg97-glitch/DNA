@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session20-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "producer-brief-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/producer-brief-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "113ce2e371a4c7509778d081ee2d4c72162bfc72eaa204b6239fd7c8a8c691b1"
+    }
+  ],
+  "catalogHash": "8b5fc57ffb61606a5cb46de76419bb848fd4bb3e36a1b290580d28b1ba3acae8"
+}

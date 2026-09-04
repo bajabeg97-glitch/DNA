@@ -1,0 +1,70 @@
+{
+  "schema": "dna-personal-producer-profile",
+  "version": "2.0",
+  "identity": {
+    "profileId": "profile-local-producer",
+    "displayName": "Moj producent",
+    "locale": "hr-HR",
+    "enabled": true,
+    "localOnly": true,
+    "createdDate": "2026-09-03",
+    "updatedDate": "2026-09-03"
+  },
+  "source": {
+    "workflowHashes": [],
+    "candidateSetHashes": [],
+    "learningEventHashes": []
+  },
+  "learning": {
+    "eventCount": 0,
+    "acceptedVariantCount": 0,
+    "manualLockCount": 0,
+    "events": [],
+    "explicitUserActionsOnly": true,
+    "prohibitedSignals": [
+      "PLAYBACK",
+      "PREVIEW_POSITION",
+      "HOVER",
+      "REJECT_VARIANT",
+      "CLOUD_TELEMETRY",
+      "IMPLICIT_BEHAVIOR",
+      "MIDI_CONTENT"
+    ]
+  },
+  "preferences": {
+    "genres": [],
+    "dimensions": {
+      "density": [],
+      "transitions": [],
+      "syncopation": [],
+      "space": []
+    },
+    "roles": [],
+    "markers": [],
+    "patterns": [],
+    "registerBands": []
+  },
+  "overrides": [],
+  "audit": {
+    "coldStart": true,
+    "explainable": true,
+    "reversible": true,
+    "profileAffectsSoftRankingOnly": true,
+    "implicitLearningCount": 0
+  },
+  "safety": {
+    "localOnly": true,
+    "cloudSyncAllowed": false,
+    "containsMidi": false,
+    "containsProject": false,
+    "containsAudio": false,
+    "telemetryAllowed": false,
+    "hardConstraintAuthority": false,
+    "factoryDynamicsAuthority": false,
+    "soundBindingAuthority": false,
+    "validatorAuthority": false,
+    "bankProgramAuthority": false,
+    "midiMutationAllowed": false
+  },
+  "profileHash": "cf29bdf5a06ce5dc35252ceba3b96a447a3e35cc1a7b69a0cc6a1800ce18cb86"
+}

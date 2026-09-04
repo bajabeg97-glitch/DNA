@@ -1,0 +1,53 @@
+{
+  "schema": "dna-session6-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session6-rx-foundation",
+  "limitations": [
+    "The confirmed RX map is synthetic and requires explicit test opt-in.",
+    "No official or device-captured Pa800 RX map is present in this snapshot.",
+    "Historical GUI/API integration and physical Pa800 listening are unavailable."
+  ],
+  "formalSuite": {
+    "testsRun": 26,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session6-before.mid",
+    "output": "artifacts/session6-after.mid",
+    "manifest": "artifacts/session6-manifest.json",
+    "sourceNotes": 6,
+    "generatedRxEvents": 13,
+    "counts": {
+      "pick_noise": 6,
+      "release_noise": 2,
+      "position_noise": 1,
+      "phrase_release": 4
+    },
+    "selectionHash": "e3f33eb787e6167534bd1af1d305791382a51be6ca964da5e3b50393db1d16a5",
+    "inputHash": "215590139a1ebadc4baa096b234a1f7fcfc016070ac9c52dcd8fc00df42114a7",
+    "outputHash": "e00db51bba4d4688d75a0d42c0a3bcfe994fae4df339c55de63912dbc66cad55"
+  },
+  "invariants": {
+    "rxTriggersGuessed": false,
+    "exactSoundMatchRequired": true,
+    "unconfirmedMapBlocked": true,
+    "syntheticMapRequiresOptIn": true,
+    "analysisVelocityUsed": false,
+    "goldAffectsVelocity": false,
+    "factoryVelocityOnly": true,
+    "originalEventsPreserved": true,
+    "targetSoundPreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true
+  },
+  "status": {
+    "session6Foundation": "SOFTWARE_VALIDATED",
+    "productionRxMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

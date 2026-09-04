@@ -1,0 +1,36 @@
+{
+  "schema": "dna-session9-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "unified-recovery-engine-transport-parity",
+  "formalSuite": {
+    "testsRun": 19,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session9-before.mid",
+    "output": "artifacts/session9-after.mid",
+    "manifest": "artifacts/session9-manifest.json",
+    "config": "data/session9-demo-config.json",
+    "inputHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+    "outputHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6",
+    "configHash": "6d7d8e81dcae2fa3f010559918a52aca7b2c441748ba8b6bfd6df5ff6a7c706f"
+  },
+  "invariants": {
+    "cliWebGuiBatchApiSameMidiHash": true,
+    "cliWebGuiBatchApiSameManifest": true,
+    "allRecoveryEnginesShareDispatcher": true,
+    "trackViewRows": 16,
+    "previewReadOnly": true,
+    "previewAffectsMidiValidation": false,
+    "originalInputImmutable": true,
+    "sameRequestSameMidiBytes": true
+  },
+  "status": {
+    "session9UnifiedPipeline": "SOFTWARE_VALIDATED",
+    "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "dna-project-migration-report",
+  "version": "1.0",
+  "migrationDate": "2026-09-03",
+  "source": {
+    "format": "legacy-state-wrapper",
+    "version": 0,
+    "sha256": "c358b45b04fbc35cbc45b9ca8a62ad248654f955c16e2ccdef372b550bcab729"
+  },
+  "output": {
+    "schema": "dna-midi-studio-project",
+    "version": 1,
+    "sha256": "cea366bc59f2f3314e7e3ebf85f0350abb1d3de47bee77ef9cc0874d0b61e5d7",
+    "projectHash": "6a3c79d377fbfdcd626b7482d47074b132b060bb69c411666488b41fee182fcc"
+  },
+  "preservation": {
+    "sourceObjectUnchanged": true,
+    "statePreserved": true,
+    "locksPreserved": true,
+    "auditPreserved": true,
+    "originalFileOverwriteAllowed": false
+  },
+  "safety": {
+    "midiEmbedded": false,
+    "audioEmbedded": false,
+    "goldAffectsDynamics": false,
+    "validatorBypassAllowed": false
+  },
+  "migratedProject": {
+    "schema": "dna-midi-studio-project",
+    "version": 1,
+    "name": "ŠĐČŽ Premium projekt",
+    "createdAt": "2026-09-03T00:00:00+00:00",
+    "updatedAt": "2026-09-03T00:00:00+00:00",
+    "state": {
+      "optimizer": {
+        "enabled": true,
+        "seed": 2300
+      },
+      "style": {
+        "variant": "C",
+        "target": "Korg Pa800"
+      },
+      "locks": [
+        "v2cv1:bass",
+        "v4cv1:drums"
+      ],
+      "audit": [
+        {
+          "operation": "ACCEPT_VARIANT",
+          "variant": "C"
+        }
+      ],
+      "path": "C:/Glazba/Ćirilica/ŠĐČŽ/vrlo-duga-mapa/pjesma.mid"
+    },
+    "source": {
+      "name": "izvorna-pjesma.mid",
+      "embedded": false
+    },
+    "artifacts": {
+      "styleManifest": null,
+      "optimizerReport": null
+    },
+    "invariants": {
+      "midiEmbedded": false,
+      "audioEmbedded": false,
+      "goldAffectsDynamics": false
+    },
+    "projectHash": "6a3c79d377fbfdcd626b7482d47074b132b060bb69c411666488b41fee182fcc"
+  },
+  "migrationHash": "6bea65fb22cf9fa642b69314cd66dc8ef75e356acbcb762c4b05438aca3f27f4"
+}

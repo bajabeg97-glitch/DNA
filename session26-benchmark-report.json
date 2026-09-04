@@ -1,0 +1,38 @@
+{
+  "schema": "dna-session26-preview-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+  "validatorIdentityHash": "3f48d363a397518ee38afb69281639c28ad872e164bb6632d020d65d5ab171f6",
+  "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f",
+  "variantNoteCounts": {
+    "A": 12,
+    "B": 16,
+    "C": 17
+  },
+  "variantAudibleCounts": {
+    "A": 12,
+    "B": 16,
+    "C": 17
+  },
+  "variantPeaks": {
+    "A": 6,
+    "B": 7,
+    "C": 7
+  },
+  "articulationEventCount": 11,
+  "proxyWavSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe",
+  "proxyDurationSeconds": 2.0,
+  "deviceComparisonHash": "849868f072295107e9e8b8388d862749f6ae0556ef1961209fd3d379266ba54d",
+  "deterministicWav": true,
+  "deterministicAudioManifest": true,
+  "profileChangePreservedMidiHash": true,
+  "profileChangePreservedValidatorIdentity": true,
+  "gainChangePreservedMidiHash": true,
+  "gainChangePreservedValidatorIdentity": true,
+  "deviceCaptureComparisonOnly": true,
+  "softwareMidiNoteCeiling": 54,
+  "passed": true,
+  "benchmarkHash": "8d460c9d534579027175fa9844ff88a6965b9955039d58a282efcd9b3a0ead28"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "dna-factory-calibration-status",
+  "version": "4.37.0",
+  "summary": {
+    "factoryProfiles": 1964,
+    "profilesWithCalibration": 1713,
+    "heldOutExactProfiles": 1052,
+    "roleFallbacks": 8,
+    "factorySegments": 26922
+  },
+  "policy": {
+    "split": "source-hash deterministic 80/20",
+    "tolerance": "95th percentile absolute held-out deviation",
+    "fallback": "exact profile observed -> role held-out -> MANUAL_REVIEW",
+    "velocityAuthority": "FACTORY_ONLY",
+    "deviceUnknowns": "ABSTAIN_NOT_INFER"
+  },
+  "calibrationHash": "6b2c5d8cadfb8979762caa2d0bb877e6b71f1a9f704fb17efe6198975664542f",
+  "status": "SOFTWARE_CALIBRATED_FACTORY_EVIDENCE",
+  "deviceCertification": "WAITING_FOR_DEVICE"
+}

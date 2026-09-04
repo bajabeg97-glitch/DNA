@@ -1,0 +1,71 @@
+{
+  "schema": "dna-session33-renderer-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+  "trackPlanHash": "19fefe7d19baf57f124040b17b09d3aa4a6a730b8a2b5ad5bd683f40b851bb17",
+  "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+  "outputMidiSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+  "renderedMidiBytes": 12769,
+  "renderedFragments": 52,
+  "renderedNotes": 1400,
+  "markers": 10,
+  "usedChannels": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "globalPeakConcurrentMidiNotes": 14,
+  "softwareMidiNoteCeiling": 54,
+  "channelPolyphonyNotesRemoved": 90,
+  "channelPolyphonyTailsTrimmed": 70,
+  "deviceUnconfirmedLayersExcluded": {
+    "ARTICULATION_EVENT": 11,
+    "EXPRESSION_EVENT": 83
+  },
+  "transportHashes": {
+    "direct": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "api": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "gui": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "batch": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27"
+  },
+  "transportParity": true,
+  "independentVerifierPassed": true,
+  "pa800HardValidatorPassed": true,
+  "deterministic": true,
+  "renderSeconds": 0.316769,
+  "renderSamplesSeconds": [
+    0.320399,
+    0.316769,
+    0.311512
+  ],
+  "atomicPublication": "COMMITTED",
+  "sourceMidiMutated": false,
+  "goldAffectsDynamics": false,
+  "finalCertifiedMidiExportAllowed": false,
+  "checks": {
+    "fragmentCount": true,
+    "noteCount": true,
+    "markerCount": true,
+    "channels": true,
+    "peak": true,
+    "ceiling": true,
+    "deviceLayersExcluded": true,
+    "transportParity": true,
+    "independentVerifier": true,
+    "pa800Validator": true,
+    "deterministic": true,
+    "medianRenderUnderTwoSeconds": true,
+    "atomicCommitOrExactResume": true,
+    "sourceImmutable": true,
+    "goldDynamicsZero": true,
+    "certifiedExportBlocked": true
+  },
+  "passed": true,
+  "benchmarkHash": "c8a5f1466561f0a5c2b8606c96a99223c8152c29d393b9c80674bab3742975f5"
+}

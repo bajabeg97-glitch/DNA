@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/evidence-ledger-v3.schema.json",
+  "title": "DNA MIDI Studio EvidenceLedger 3.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "registries", "documents", "evidence", "decisions", "coverage", "cache", "safety", "ledgerHash"],
+  "properties": {
+    "schema": {"const": "dna-evidence-ledger"},
+    "version": {"const": "3.0"},
+    "source": {"type": "object"},
+    "registries": {"type": "object"},
+    "documents": {"type": "object"},
+    "evidence": {"type": "array", "items": {"type": "object"}},
+    "decisions": {"type": "array", "items": {"$ref": "authority-decision-v1.schema.json"}},
+    "coverage": {"$ref": "evidence-coverage-report-v1.schema.json"},
+    "cache": {"type": "object"},
+    "safety": {"type": "object"},
+    "ledgerHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "3.0"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "trackUid": "trk-afd2be6e213ec34b8cd2",
+  "trackNumber": 4,
+  "channelNumber": 3,
+  "startTick": 0,
+  "endTick": 15350,
+  "seed": 2424,
+  "intensity": 58,
+  "profileId": "698.771.685",
+  "enabledLayers": [
+    "grace",
+    "trill",
+    "slide",
+    "turnaround",
+    "third",
+    "echo",
+    "cc11"
+  ],
+  "minEvidenceConfidence": 0.9,
+  "layerBudgets": {
+    "ornament": 24,
+    "third": 16,
+    "echo": 8
+  },
+  "allowSharedChannel": false
+}

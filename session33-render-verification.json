@@ -1,0 +1,25 @@
+{
+  "schema": "dna-renderer-final-verification",
+  "version": "1.0",
+  "passed": true,
+  "issues": [],
+  "checks": {
+    "manifestValid": true,
+    "pa800HardValidator": true,
+    "globalPolyphony": true,
+    "independentParse": true,
+    "byteRoundTrip": true,
+    "manifestOutputHash": true,
+    "manifestNoteCount": true,
+    "controllerWhitelist": true,
+    "fragmentEventHashes": true,
+    "registerBounds": true,
+    "factoryVelocityBounds": true,
+    "markerScopedSoundBinding": true,
+    "sourceUnchanged": true,
+    "embeddedVerificationHash": true
+  },
+  "midiSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+  "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+  "verdictSource": "independent-byte-parser-plus-pa800-hard-validator"
+}

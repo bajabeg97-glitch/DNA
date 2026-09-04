@@ -1,0 +1,71 @@
+{
+  "schema": "dna-session38-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "pa800-device-lab-intake-and-device-profile-certification-foundation",
+  "formalSuite": {
+    "testsRun": 200,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session38-benchmark-report.json",
+    "schema": "dna-session38-device-lab-benchmark",
+    "version": "1.0",
+    "date": "2026-09-03",
+    "requiredPhysicalChecks": 17,
+    "requiredMarkers": 10,
+    "requiredStyleBindings": 8,
+    "requiredArticulationEngines": 3,
+    "requiredVoiceCostRows": 8,
+    "captureAuthority": "PENDING",
+    "deviceStatus": "WAITING_FOR_DEVICE",
+    "machineObservedPhysicalDevice": false,
+    "deviceSpecificMapsAllowed": false,
+    "voiceCostModelAllowed": false,
+    "pa800CertifiedLabelAllowed": false,
+    "finalCertifiedMidiExportAllowed": false,
+    "requiredExternalEvidence": [
+      "HASHED_DEVICE_IMAGE",
+      "HASHED_DEVICE_AUDIO",
+      "OPERATOR_APPROVED_HASH",
+      "INDEPENDENT_REVIEW"
+    ],
+    "benchmarkHash": "81336006d9af1073e73506fe2fa5596f8c8a6397af78c51caae40f0072207a6c"
+  },
+  "artifacts": {
+    "captureTemplate": "artifacts/session38-device-capture-template.json",
+    "report": "artifacts/session38-device-certification-report.json",
+    "profile": "artifacts/session38-device-profile.json",
+    "schemaCatalog": "data/session38-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session38_device_lab.py",
+    "api": "/api/device-certification",
+    "guiWorkspace": "PA800 DEVICE LAB",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "allEightStyleChannelsRequired": true,
+    "allTenMarkersRequired": true,
+    "exactBankProgramOnly": true,
+    "confirmedUnsupportedUnknownSeparated": true,
+    "voiceCostRequiresPhysicalMeasurement": true,
+    "imageAndAudioMagicHashVerified": true,
+    "operatorApprovedHashRequired": true,
+    "softwareReferenceCanCertify": false,
+    "machinePhysicalObservationClaimed": false,
+    "finalCertifiedMidiExportAllowed": false
+  },
+  "status": {
+    "session38DeviceLab": "SOFTWARE_VALIDATED / WAITING_FOR_DEVICE",
+    "activeSoftwareBaseline": "4.11.1-device-certification-intake-foundation",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "physicalPa800": "WAITING_FOR_DEVICE",
+    "deviceProfile": "PENDING_EXTERNAL_CAPTURE",
+    "deviceSpecificMaps": "BLOCKED",
+    "voiceCostModel": "BLOCKED",
+    "finalCertifiedMidiExport": "BLOCKED"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "dna-safe-debug-report",
+  "version": "1.0",
+  "createdAt": "2026-09-04T11:35:03.567002+00:00",
+  "mode": "DIAGNOSE_ONLY",
+  "mutatedSource": false,
+  "commandResult": {
+    "command": [
+      "python",
+      "-c",
+      "import definitely_missing_dna_module"
+    ],
+    "cwd": "/mnt/data/project_427/work",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import definitely_missing_dna_module\nModuleNotFoundError: No module named 'definitely_missing_dna_module'\n",
+    "duration_seconds": 0.6542563140001221,
+    "timed_out": false,
+    "passed": false
+  },
+  "diagnostic": {
+    "signature": "28429f916708a10d1f868d54f2ae24f58fd78a5bb6ea6c2b27717dd78a84be1a",
+    "category": "IMPORT_PATH_OR_DEPENDENCY",
+    "exception_type": "ModuleNotFoundError",
+    "message": "No module named 'definitely_missing_dna_module'",
+    "missing_module": "definitely_missing_dna_module",
+    "files": [
+      "<string>"
+    ],
+    "likely_causes": [
+      "Python package is not installed or not visible on sys.path.",
+      "A launcher may omit the repository src directory from PYTHONPATH.",
+      "A root compatibility wrapper may import a package before bootstrap initialization."
+    ],
+    "recommended_checks": [
+      "Run package_selfcheck.py from the same launcher/runtime that failed.",
+      "Verify that <project>/src is present before importing dna_midi_studio.",
+      "Prefer package imports over relying on the current working directory."
+    ]
+  }
+}

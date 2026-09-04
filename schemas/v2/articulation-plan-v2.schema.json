@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/articulation-plan-v2.schema.json",
+  "title": "ArticulationPlan 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "x-contract-version": "2.0",
+  "required": ["schema", "version", "source", "controls", "map", "soundBinding", "sourceNotes", "events", "audit", "productionBlocks", "readyForPreview", "readyForProductionRender", "finalMidiGenerated", "midiMutationAllowed", "articulationPlanHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-articulation-plan"},
+    "version": {"const": "2.0"},
+    "source": {"type": "object"},
+    "controls": {"type": "object"},
+    "map": {"type": "object"},
+    "soundBinding": {"type": "object"},
+    "sourceNotes": {"type": "array"},
+    "events": {"type": "array"},
+    "audit": {"type": "object"},
+    "productionBlocks": {"type": "array"},
+    "readyForPreview": {"type": "boolean"},
+    "readyForProductionRender": {"type": "boolean"},
+    "finalMidiGenerated": {"const": false},
+    "midiMutationAllowed": {"const": false},
+    "articulationPlanHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

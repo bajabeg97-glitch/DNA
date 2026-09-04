@@ -1,0 +1,55 @@
+{
+  "schema": "dna-session17-production-registry-catalog",
+  "version": "1.0",
+  "registries": {
+    "factoryProfiles": {
+      "path": "data/factory-velocity-profiles.json",
+      "schema": "midi-arranger.factory-velocity-profiles",
+      "version": "3.3",
+      "databaseVersion": "factory-schema3.3-f91c235f676f9d15",
+      "sha256": "7a21fc2fefc88de5c9ed34f4d99d9750f40705dc627a7290d562077d54c8cd60"
+    },
+    "factorySegments": {
+      "path": "data/factory-style-segments.json",
+      "schema": "dna.factory-style-segments",
+      "version": "1.1",
+      "databaseVersion": "factory-style-b27e30a67f43c553",
+      "sha256": "cc46bd686e73e0f3b560b0fe6afb7b96d9bd7e54b4d14e6a36ecb35a50251978"
+    },
+    "factoryStrumming": {
+      "path": "data/factory-strumming.json",
+      "schema": "dna.factory-strumming",
+      "version": "1.1",
+      "databaseVersion": "factory-strum-a2b0a022e8fbc99f",
+      "sha256": "ccc65c0abce165ad460b6ec1d43d327009b90eb8ebc545489df53f1fef367308"
+    },
+    "goldLegacy": {
+      "path": "data/gold-patterns.json",
+      "schema": "midi-arranger.gold-patterns",
+      "version": "3.2",
+      "databaseVersion": "gold-schema3.2-83cb5288a724dd03",
+      "sha256": "251d42aac5af2f9d78a3afe392655ce4d879aeb0bd9ee0431c5d715e6337107e"
+    },
+    "goldPerformance": {
+      "path": "data/gold-performance-patterns.json",
+      "schema": "dna.gold-performance-patterns",
+      "version": "1.1",
+      "databaseVersion": "gold-performance-2facc0a181563909",
+      "sha256": "b41ad979e0a4a91dd27a40181b0cb94c4ceddbfe2f718e6fdf744b434369d4e7"
+    }
+  },
+  "counts": {
+    "factoryProfiles": 1964,
+    "factorySegments": 26922,
+    "factoryStrumming": 2919,
+    "goldLegacy": 10637,
+    "goldPerformance": 12918,
+    "drumBassRelationships": 4373
+  },
+  "invariants": {
+    "goldAffectsVelocity": false,
+    "goldAffectsBankSelect": false,
+    "goldAffectsProgramChange": false,
+    "goldControlsRhythmGuitar": false
+  }
+}

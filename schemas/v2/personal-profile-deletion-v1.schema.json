@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/personal-profile-deletion-v1.schema.json",
+  "title": "DNA MIDI Studio Personal Profile Deletion 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "profileId", "deletedProfileHash", "deletionDate", "dataRetained", "profileUsable", "localOnly", "deletionHash"],
+  "properties": {
+    "schema": {"const": "dna-personal-profile-deletion"},
+    "version": {"const": "1.0"},
+    "profileId": {"type": "string", "pattern": "^profile-[a-z0-9][a-z0-9-]{2,63}$"},
+    "deletedProfileHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "deletionDate": {"type": "string", "format": "date"},
+    "dataRetained": {"const": false},
+    "profileUsable": {"const": false},
+    "localOnly": {"const": true},
+    "deletionHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-authority": "complete-local-profile-deletion"
+}

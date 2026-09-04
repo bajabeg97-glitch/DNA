@@ -1,0 +1,115 @@
+{
+  "schema": "dna-recovery-release-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "tests": {
+    "run": 289,
+    "failures": 0,
+    "errors": 0
+  },
+  "gates": {
+    "session2": {
+      "result": "pass",
+      "testsRun": 12,
+      "evidence": "data/session2-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session3": {
+      "result": "pass",
+      "testsRun": 16,
+      "evidence": "data/session3-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session4": {
+      "result": "pass",
+      "testsRun": 19,
+      "evidence": "data/session4-test-report.json",
+      "productionGates": {
+        "productionFactoryGate": "BLOCKED_MISSING_SOURCE_DATA",
+        "productionControlMapGate": "BLOCKED_MISSING_CONFIRMED_MAP"
+      }
+    },
+    "session5": {
+      "result": "pass",
+      "testsRun": 36,
+      "evidence": "data/session5-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session6": {
+      "result": "pass",
+      "testsRun": 26,
+      "evidence": "data/session6-test-report.json",
+      "productionGates": {
+        "productionRxMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+        "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE"
+      }
+    },
+    "session7": {
+      "result": "pass",
+      "testsRun": 30,
+      "evidence": "data/session7-test-report.json",
+      "productionGates": {
+        "productionDncMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+        "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE"
+      }
+    },
+    "session8": {
+      "result": "pass",
+      "testsRun": 21,
+      "evidence": "data/session8-test-report.json",
+      "productionGates": {}
+    },
+    "session9": {
+      "result": "pass",
+      "testsRun": 19,
+      "evidence": "data/session9-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session10": {
+      "result": "pass",
+      "testsRun": 22,
+      "evidence": "data/session10-test-report.json",
+      "productionGates": {}
+    },
+    "session11": {
+      "result": "pass",
+      "testsRun": 24,
+      "evidence": "data/session11-test-report.json",
+      "productionGates": {}
+    },
+    "session12": {
+      "result": "pass",
+      "testsRun": 36,
+      "evidence": "data/session12-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "SOFTWARE_VALIDATED"
+      }
+    },
+    "session14Preflight": {
+      "result": "pass",
+      "testsRun": 12,
+      "evidence": "data/session14-preflight-report.json",
+      "productionGates": {}
+    },
+    "session13": {
+      "result": "pass",
+      "testsRun": 16,
+      "evidence": "data/session13-test-report.json",
+      "productionGates": {}
+    }
+  },
+  "limitations": {
+    "legacySourceTreePresent": true,
+    "productionRegistriesPresent": true,
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

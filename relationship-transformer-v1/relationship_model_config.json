@@ -1,0 +1,8 @@
+{
+  "feature_dim": 17,
+  "d_model": 64,
+  "nhead": 4,
+  "layers": 2,
+  "ff_dim": 128,
+  "max_pairs": 192
+}

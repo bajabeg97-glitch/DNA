@@ -1,0 +1,16 @@
+{
+  "schema": "dna-atomic-export-journal",
+  "version": "1.0",
+  "status": "COMMITTED",
+  "identity": "372bfd02d604f53e4e5d067eb0c4a5408a8cf006ab568e9e52a17462e729c958",
+  "sourceHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+  "configHash": "6d7d8e81dcae2fa3f010559918a52aca7b2c441748ba8b6bfd6df5ff6a7c706f",
+  "databaseHash": "baf4cbdc6f7c8d28668f97621e686dcc593a3cf427a29c2ac3ed508e1d44f54f",
+  "output": "session10-after_OPT.mid",
+  "outputHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6",
+  "validation": {
+    "passed": true,
+    "parser": "independent-round-trip-fixture"
+  },
+  "partialOutput": false
+}

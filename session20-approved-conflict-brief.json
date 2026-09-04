@@ -1,0 +1,115 @@
+{
+  "schema": "dna-premium-producer-brief",
+  "version": "2.0",
+  "sourceText": "Use drums but make it without drums.",
+  "sourceTextSha256": "66bb239c12517b21484b380a2e685b6d7413a8800e07c48df09605f2514f4f2e",
+  "language": "en",
+  "intent": {
+    "genre": "unspecified",
+    "energyCurve": [
+      {
+        "section": "intro",
+        "value": 35
+      },
+      {
+        "section": "verse",
+        "value": 45
+      },
+      {
+        "section": "chorus",
+        "value": 75
+      },
+      {
+        "section": "bridge",
+        "value": 60
+      },
+      {
+        "section": "ending",
+        "value": 45
+      }
+    ],
+    "density": "balanced",
+    "syncopation": "medium",
+    "space": "balanced",
+    "transitions": "balanced",
+    "soloTreatment": "preserve",
+    "requiredRoles": [
+      "drums"
+    ],
+    "forbiddenRoles": [],
+    "lockedElements": [],
+    "transformationTolerance": 50
+  },
+  "evidence": [
+    {
+      "field": "requiredRoles",
+      "value": "drums",
+      "matchedText": "use drums",
+      "confidence": 0.96,
+      "source": "local-rule"
+    },
+    {
+      "field": "forbiddenRoles",
+      "value": "drums",
+      "matchedText": "without drums",
+      "confidence": 0.96,
+      "source": "local-rule"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "role-drums",
+      "field": "roles",
+      "code": "ROLE_REQUIRED_AND_FORBIDDEN",
+      "reason": "Role drums is both required and forbidden.",
+      "blocking": true,
+      "choices": [
+        "require:drums",
+        "forbid:drums"
+      ],
+      "resolvedChoice": "require:drums"
+    }
+  ],
+  "approval": {
+    "required": true,
+    "status": "APPROVED",
+    "approvedBy": "local-user",
+    "resolutions": {
+      "role-drums": "require:drums"
+    }
+  },
+  "understanding": {
+    "title": "AI je razumio",
+    "summary": "unspecified / balanced / medium syncopation; balanced transitions; solo=preserve",
+    "assumptions": [
+      "genre defaulted to unspecified",
+      "density defaulted to balanced",
+      "syncopation defaulted to medium",
+      "space defaulted to balanced",
+      "transitions defaulted to balanced",
+      "soloTreatment defaulted to preserve"
+    ],
+    "warnings": []
+  },
+  "adapter": {
+    "mode": "local",
+    "cloudRequested": false,
+    "explicitConsent": false,
+    "metadataOnly": true,
+    "responseAccepted": false,
+    "fallbackReason": "cloud-disabled"
+  },
+  "readyForPlanning": true,
+  "safety": {
+    "readOnly": true,
+    "midiBytesAccepted": false,
+    "midiWriterAvailable": false,
+    "pathWriteAllowed": false,
+    "bankProgramAuthority": false,
+    "validatorBypassAllowed": false,
+    "factoryDynamicsAuthority": true,
+    "goldDynamicsAuthority": false,
+    "originalSoloMutationAllowed": false
+  },
+  "briefHash": "16c824fd8e02c840f965f166c8c26eda50d07691be6be31a4be80998a0f8e618"
+}

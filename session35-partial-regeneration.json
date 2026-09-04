@@ -1,0 +1,17 @@
+{
+  "schema": "dna-partial-fragment-regeneration",
+  "version": "1.0",
+  "projectHash": "fcaa2eead353a05a2713d8bd566e62135782cb067f7f5399ccda1c117b0dccaa",
+  "marker": "v1cv1",
+  "role": "guitar",
+  "selectedVariant": "C",
+  "donorVariant": "B",
+  "changedMidiEvents": 2,
+  "outsideFragmentUnchanged": true,
+  "lockedFragmentsChanged": 0,
+  "inputMidiSha256": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241",
+  "outputMidiSha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+  "previewOnly": true,
+  "finalCertifiedExportAllowed": false,
+  "reportHash": "9651ce08ca4c363fda7154db5d2236c925b94950b5008446863c0e0fdf551a4f"
+}

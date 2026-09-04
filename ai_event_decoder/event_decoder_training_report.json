@@ -1,0 +1,24 @@
+{
+  "schema": "dna-event-decoder-training",
+  "version": "1.0",
+  "epochs": 2,
+  "bestValidationLoss": 7.760773181915283,
+  "holdoutLoss": 8.644277095794678,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 12.174117240905762,
+      "validationLoss": 9.355884313583374
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 8.597970848083497,
+      "validationLoss": 7.760773181915283
+    }
+  ],
+  "velocityInput": false,
+  "velocityOutput": false,
+  "trainSamples": 12747,
+  "validationSamples": 1766,
+  "holdoutSamples": 1737
+}

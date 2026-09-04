@@ -1,0 +1,42 @@
+{
+  "schema": "dna-midi-studio-project",
+  "version": 1,
+  "name": "ŠĐČŽ Premium projekt",
+  "createdAt": "2026-09-03T00:00:00+00:00",
+  "updatedAt": "2026-09-03T00:00:00+00:00",
+  "state": {
+    "optimizer": {
+      "enabled": true,
+      "seed": 2300
+    },
+    "style": {
+      "variant": "C",
+      "target": "Korg Pa800"
+    },
+    "locks": [
+      "v2cv1:bass",
+      "v4cv1:drums"
+    ],
+    "audit": [
+      {
+        "operation": "ACCEPT_VARIANT",
+        "variant": "C"
+      }
+    ],
+    "path": "C:/Glazba/Ćirilica/ŠĐČŽ/vrlo-duga-mapa/pjesma.mid"
+  },
+  "source": {
+    "name": "izvorna-pjesma.mid",
+    "embedded": false
+  },
+  "artifacts": {
+    "styleManifest": null,
+    "optimizerReport": null
+  },
+  "invariants": {
+    "midiEmbedded": false,
+    "audioEmbedded": false,
+    "goldAffectsDynamics": false
+  },
+  "projectHash": "6a3c79d377fbfdcd626b7482d47074b132b060bb69c411666488b41fee182fcc"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "dna-personal-profile-deletion",
+  "version": "1.0",
+  "profileId": "profile-local-producer",
+  "deletedProfileHash": "d811c91740e8f1e1ba05a7d4f987bbc97101bc100f98bee0bc0993ff1d5473db",
+  "deletionDate": "2026-09-03",
+  "dataRetained": false,
+  "profileUsable": false,
+  "localOnly": true,
+  "deletionHash": "f981664db5af32a2c6b41b217944b3e13debc2b8da482634dee7f0cd77f93ae4"
+}

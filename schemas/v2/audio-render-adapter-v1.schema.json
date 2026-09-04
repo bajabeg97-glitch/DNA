@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/audio-render-adapter-v1.schema.json",
+  "title": "DNA Premium Audio Render Adapter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "mode", "rendererId", "executableSha256", "soundfontSha256"],
+  "properties": {
+    "schema": {"const": "dna-premium-audio-render-adapter"},
+    "version": {"const": "1.0"},
+    "mode": {"enum": ["DISABLED", "SOUNDFONT", "COMMAND"]},
+    "rendererId": {"type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$"},
+    "executableSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "soundfontSha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-safety": "Manifest only. No path, command line, MIDI mutation or validator authority."
+}

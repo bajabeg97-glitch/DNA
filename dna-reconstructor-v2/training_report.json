@@ -1,0 +1,59 @@
+{
+  "schema": "dna-neural-training-report",
+  "version": "2.0",
+  "objective": "MASKED_EVENT_INFILL_PLUS_DEFECT_CLASSIFICATION",
+  "modelConfig": {
+    "feature_dim": 14,
+    "d_model": 32,
+    "nhead": 4,
+    "layers": 1,
+    "ff_dim": 64,
+    "dropout": 0.1,
+    "max_events": 96,
+    "embedding_dim": 16,
+    "roles": 11,
+    "meters": 7,
+    "sections": 9,
+    "sources": 2,
+    "defect_classes": 3
+  },
+  "trainingConfig": {
+    "epochs": 1,
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "seed": 800,
+    "patience": 1,
+    "device": "auto",
+    "compile_model": false,
+    "mask_probability": 0.22,
+    "replace_probability": 0.35,
+    "max_train_samples": 16,
+    "max_validation_samples": 8,
+    "max_holdout_samples": 8
+  },
+  "device": "cpu",
+  "trainSamples": 16,
+  "validationSamples": 8,
+  "holdoutSamples": 8,
+  "bestEpoch": 1,
+  "bestValidationLoss": 17.82591724395752,
+  "holdoutLoss": 17.92061424255371,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 17.841731071472168,
+      "validationLoss": 17.82591724395752
+    }
+  ],
+  "elapsedSeconds": 8.136,
+  "checkpoint": "dna_reconstruction_model_v2.npz",
+  "checkpointSha256": "20a3441fd574b0605f80d88d2468cad0a1dcd9bb16aa8cfa08a1dedb63fc7e0b",
+  "authority": {
+    "goldVelocityUsed": false,
+    "velocityOutputHead": false,
+    "hardValidatorRequired": true,
+    "harmonyLocked": true,
+    "formLocked": true
+  }
+}

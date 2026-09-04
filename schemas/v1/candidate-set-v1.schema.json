@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/candidate-set-v1.schema.json",
+  "title": "DNA Premium CandidateSet v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "role", "marker", "candidates", "selectedCandidateId", "deterministic"],
+  "properties": {
+    "schema": {"const": "dna-premium-candidate-set"},
+    "version": {"const": "1.0"},
+    "role": {"type": "string", "minLength": 1},
+    "marker": {"type": "string", "minLength": 1},
+    "candidates": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["candidateId", "patternId", "score", "criteria", "hardConstraintsPassed", "rejectionReasons"], "properties": {"candidateId": {"type": "string", "minLength": 1}, "patternId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"}, "score": {"type": "number"}, "criteria": {"type": "object", "minProperties": 10, "additionalProperties": {"type": "number"}}, "hardConstraintsPassed": {"type": "boolean"}, "rejectionReasons": {"type": "array", "items": {"type": "string"}}}}},
+    "selectedCandidateId": {"type": ["string", "null"]},
+    "deterministic": {"const": true}
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "dna-session37-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "locked-train-holdout-quality-calibration-and-external-evidence-intake",
+  "formalSuite": {
+    "testsRun": 192,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session37-benchmark-report.json",
+    "caseCount": 32,
+    "trainCaseCount": 24,
+    "holdoutCaseCount": 8,
+    "sourceCaseCounts": {
+      "session19": 20,
+      "session37-expansion": 12
+    },
+    "holdoutCoverage": {
+      "genres": [
+        "acoustic",
+        "ballad",
+        "dance",
+        "pop",
+        "pop-folk",
+        "rock",
+        "waltz"
+      ],
+      "meters": [
+        "3/4",
+        "4/4",
+        "6/8"
+      ],
+      "densityClasses": [
+        "HIGH",
+        "LOW",
+        "MEDIUM"
+      ]
+    },
+    "holdoutGroundTruthKinds": [
+      "chord",
+      "section",
+      "trackRole",
+      "transition"
+    ],
+    "minimumHoldoutScores": {
+      "chord": 1.0,
+      "section": 1.0,
+      "trackRole": 1.0,
+      "transition": 1.0
+    },
+    "holdoutStructuralPass": true,
+    "metricWeightsChanged": false,
+    "thresholdsChanged": false,
+    "verifiedHumanEvaluators": 0,
+    "requiredHumanEvaluators": 2,
+    "productionExpressionEvidence": "AWAITING_OPERATOR_CAPTURE",
+    "automatedOverallScore": 4.543,
+    "qualityReleaseGatePassed": false,
+    "qualityReleaseGateBlockers": [
+      "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+      "PRODUCTION_EXPRESSION_EVIDENCE_REQUIRED",
+      "SESSION27_HUMAN_QUALITY_THRESHOLDS_NOT_MET"
+    ],
+    "benchmarkHash": "cc6a7bbfbc01cdfb32f7d7e48d00951979c613a177c2fcc88ab378d084b4b70f"
+  },
+  "artifacts": {
+    "corpus": "artifacts/session37-quality-corpus.json",
+    "groundTruthVault": "artifacts/session37-private-ground-truth-vault.json",
+    "calibration": "artifacts/session37-calibration-report.json",
+    "holdout": "artifacts/session37-holdout-report.json",
+    "expressionIntake": "artifacts/session37-expression-intake.json",
+    "listeningIntake": "artifacts/session37-listening-intake.json",
+    "qualityGate": "artifacts/session37-quality-release-gate.json",
+    "schemaCatalog": "data/session37-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session37_quality_calibration.py",
+    "api": "/api/quality-calibration",
+    "guiWorkspace": "PRODUCTION QUALITY & EVIDENCE",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "corpusLockedBeforeScoring": true,
+    "trainHoldoutOverlap": false,
+    "holdoutLabelsVisibleToCalibration": false,
+    "fourGroundTruthKinds": [
+      "chord",
+      "section",
+      "trackRole",
+      "transition"
+    ],
+    "metricWeightsChangedWithoutHumans": false,
+    "qualityThresholdsWeakened": false,
+    "proxyAudioCountsAsHuman": false,
+    "softwareTestBundleCountsAsHuman": false,
+    "testExpressionEvidenceProductionEligible": false,
+    "goldVelocityAuthority": false,
+    "finalCertifiedMidiExportAllowed": false,
+    "physicalCertificationClaimed": false
+  },
+  "status": {
+    "session37QualityCalibration": "SOFTWARE_VALIDATED / HUMAN_AND_PRODUCTION_EVIDENCE_PENDING",
+    "activeSoftwareBaseline": "4.11-quality-calibration-foundation",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "productionExpressionEvidence": "AWAITING_OPERATOR_CAPTURE",
+    "qualityReleaseGate": "BLOCKED_EXTERNAL_EVIDENCE",
+    "finalCertifiedMidiExport": "BLOCKED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "dna-session12-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "adversarial-and-available-corpus-foundation",
+  "formalSuite": {
+    "testsRun": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "fuzz": {
+    "deterministicMutations": 200,
+    "seed": 12012,
+    "unexpectedExceptions": 0,
+    "largeTrackNotes": 5000
+  },
+  "coverage": {
+    "truncatedChunksAndVlq": true,
+    "smpteRejected": true,
+    "runningStatus": true,
+    "sysex": true,
+    "rpnNrpn": true,
+    "channelAndPolyAftertouch": true,
+    "pitchBend": true,
+    "zeroAndLargeTracks": true,
+    "illegalBytes": true,
+    "eotAndStuckNotes": true,
+    "fakeRxDncSoloEvidence": true,
+    "deepGoldDynamicFields": true,
+    "roleSpecificCalibration": true,
+    "sustainedNotePolyphony": true,
+    "validatorPolyphonyOverflow": true
+  },
+  "corpus": {
+    "vault": "data/session12-regression-vault.json",
+    "availableRegistryFiles": 12,
+    "stableIds": 59635,
+    "vaultHash": "53b6b36d3b61f9f773d5fe28146a4db7eb8094d174b0605c992a56337cbb7b99",
+    "vaultReverified": true,
+    "productionFactoryGoldPresent": true
+  },
+  "skips": [],
+  "status": {
+    "session12AdversarialFoundation": "SOFTWARE_VALIDATED",
+    "productionCorpusGate": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

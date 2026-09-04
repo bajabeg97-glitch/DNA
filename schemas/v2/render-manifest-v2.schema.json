@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/render-manifest-v2.schema.json",
+  "title": "Arrangement RenderManifest 2.0",
+  "type": "object",
+  "required": ["schema", "version", "renderId", "target", "source", "midi", "channelBindings", "markerSetup", "fragments", "audit", "verification", "safety", "certification", "renderManifestHash"],
+  "properties": {
+    "schema": {"const": "dna-arrangement-render-manifest"},
+    "version": {"const": "2.0"},
+    "renderId": {"type": "string", "pattern": "^render-[0-9a-f]{20}$"},
+    "target": {"const": "Korg Pa800 OS 2.0+ Style Import SMF0"},
+    "source": {"type": "object"},
+    "midi": {
+      "type": "object",
+      "required": ["format", "ppq", "trackCount", "markers", "usedChannels", "noteCount", "globalPeakConcurrentMidiNotes", "outputSha256"],
+      "properties": {
+        "format": {"const": 0},
+        "ppq": {"const": 480},
+        "trackCount": {"const": 1},
+        "markers": {"type": "array", "minItems": 1, "uniqueItems": true},
+        "usedChannels": {"type": "array", "items": {"type": "integer", "minimum": 9, "maximum": 16}, "uniqueItems": true},
+        "noteCount": {"type": "integer", "minimum": 1},
+        "globalPeakConcurrentMidiNotes": {"type": "integer", "minimum": 1, "maximum": 54},
+        "outputSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "channelBindings": {"type": "array"},
+    "markerSetup": {"type": "array"},
+    "fragments": {"type": "array", "minItems": 1},
+    "audit": {"type": "object"},
+    "verification": {"type": "object"},
+    "safety": {"type": "object"},
+    "certification": {"type": "object"},
+    "renderManifestHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false,
+  "x-contract-version": "2.0"
+}

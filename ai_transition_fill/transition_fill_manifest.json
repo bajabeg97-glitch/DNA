@@ -1,0 +1,26 @@
+{
+  "schema": "dna-transition-fill-context",
+  "version": "1.0",
+  "samples": 16099,
+  "train": 12930,
+  "validation": 1449,
+  "holdout": 1720,
+  "songs": 163,
+  "candidateCount": 277,
+  "labels": "WEAK_TARGET_ROLE_TRANSITION_CANDIDATE_NOT_CONFIRMED_KORG_FILL",
+  "drumFill": "ONLY_AFTER_RUNTIME_DRUM_FILL_CRITERIA",
+  "break": "NOT_INFERRED",
+  "velocityUsed": false,
+  "features": [
+    "density",
+    "registerCenter",
+    "registerSpan",
+    "gate",
+    "onsetMean",
+    "onsetSpread",
+    "presence"
+  ],
+  "phraseHash": "e10ea7d2271d142da052d8afb382aba893ea6f15bfd6dd06d2eb124860605835",
+  "sectionHash": "94a6ff404070af95a30d2687c5a79a4a24cc4c34567125ce9d2169141200e4cc",
+  "datasetHash": "f08d1bb0514595b69d4042203d25202436030dbb7593b4c12ac44db009c2adf4"
+}

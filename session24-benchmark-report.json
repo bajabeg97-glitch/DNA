@@ -1,0 +1,33 @@
+{
+  "schema": "dna-session24-expression-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+  "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+  "groovePlanHash": "904b4ba11b23aadf32dd069a3e983736abb3d37ca20e35b36e0a526f0dcd136d",
+  "expressionPlanHash": "195a3d4eaebe78d7f1c59277924734412c3c036ff600e47d9ef948ea3aa66820",
+  "deterministic": true,
+  "originalNoteCount": 16,
+  "originalFingerprintSha256": "2ed4cc84df9a40eea70e92651cbab2bb499c269b4577045021f053fac31f8365",
+  "layerCounts": {
+    "grace": 13,
+    "trill": 24,
+    "slide": 0,
+    "turnaround": 24,
+    "third": 14,
+    "echo": 8
+  },
+  "generatedNoteCount": 83,
+  "cc11PointCount": 16,
+  "maximumEstimatedPeak": 20,
+  "softwareMidiNoteCeiling": 54,
+  "aBPreviewCount": 2,
+  "removalEventCount": 83,
+  "productionEligibleGeneratedNotes": 0,
+  "referenceEvidenceAuthority": "SOFTWARE_TEST_ONLY",
+  "previewReady": true,
+  "productionRenderReady": false,
+  "passed": true,
+  "benchmarkHash": "f89dc4e4345f291780232f3a445597a311a554b0b5e1b1c56cb9e276ed0ef87a"
+}

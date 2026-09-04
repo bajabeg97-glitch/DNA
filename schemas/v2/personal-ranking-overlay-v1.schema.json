@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/personal-ranking-overlay-v1.schema.json",
+  "title": "DNA MIDI Studio Personal Ranking Overlay 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "requests", "audit", "safety", "overlayHash"],
+  "properties": {
+    "schema": {"const": "dna-personal-ranking-overlay"},
+    "version": {"const": "1.0"},
+    "source": {"type": "object"},
+    "requests": {"type": "array"},
+    "audit": {"type": "object"},
+    "safety": {"type": "object"},
+    "overlayHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-authority": "eligible-candidate-soft-ranking-overlay"
+}

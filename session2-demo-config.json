@@ -1,0 +1,13 @@
+{
+  "track_index": 1,
+  "channel": 9,
+  "role": "drums",
+  "section": "variation",
+  "start_tick": 1920,
+  "end_tick": 5760,
+  "seed": 800,
+  "intensity": 50,
+  "meter": "4/4",
+  "desired_notes_per_quarter": 3.25,
+  "expected_program": 0
+}

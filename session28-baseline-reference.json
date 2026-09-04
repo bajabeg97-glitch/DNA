@@ -1,0 +1,10 @@
+{
+  "schema": "dna-premium-baseline-reference",
+  "version": "1.0",
+  "baselineId": "premium-3.17-98a6d52a09ccc789",
+  "contentHash": "98a6d52a09ccc7899d6a56321c7b9aeb4fc041cd935183d43a90a474f7510ff5",
+  "artifactPath": "premium/baseline/reference-style.mid",
+  "artifactSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "policy": "SAME_SOURCE_PAIRED_RENDER_REQUIRED_FOR_LISTENING_CLAIM",
+  "referenceHash": "d56308f757471f94fc3b6911cffe44c5d56566b629a7be019d5074320c21ffd7"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/song-to-style-project-v1.schema.json",
+  "title": "Song-to-Style Project 1.0",
+  "type": "object",
+  "required": ["schema", "version", "projectId", "source", "controls", "stages", "hashChain", "workflow", "history", "recovery", "publication", "errors", "safety", "projectHash"],
+  "properties": {
+    "schema": {"const": "dna-song-to-style-project"},
+    "version": {"const": "1.0"},
+    "projectId": {"type": "string", "pattern": "^project-"},
+    "source": {"type": "object"}, "controls": {"type": "object"},
+    "stages": {"type": "array", "minItems": 10, "maxItems": 10},
+    "hashChain": {"type": "object"}, "workflow": {"type": "object"},
+    "history": {"type": "object"}, "recovery": {"type": "object"},
+    "publication": {"type": "object"}, "errors": {"type": "array"},
+    "safety": {"type": "object"},
+    "projectHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false,
+  "x-contract-version": "1.0"
+}

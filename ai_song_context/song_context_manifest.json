@@ -1,0 +1,12 @@
+{
+  "schema": "dna-song-context-dataset",
+  "version": "1.0",
+  "songs": 163,
+  "samples": 28923,
+  "train": 22848,
+  "validation": 2733,
+  "holdout": 3342,
+  "source_hash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+  "dataset_hash": "5103c86e5907c98c5074df8de4d017c441541b01ab3b3ab82d7f37e9c83f46a3",
+  "velocity_used": false
+}

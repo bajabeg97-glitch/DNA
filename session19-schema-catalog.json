@@ -1,0 +1,20 @@
+{
+  "schema": "dna-session19-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "song-map-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/song-map-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "c15a7086454a926987d9ce36355fc68bf73df474ee8e4570b0b4b0c33809348d"
+    },
+    {
+      "name": "song-map-corrections-v1.schema.json",
+      "$id": "https://dna.local/schemas/premium/song-map-corrections-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "9a84fe57bafd6140dad6a6a36c40f76a99387067009d68ba338bafd33f2536a2"
+    }
+  ],
+  "catalogHash": "afef10c43000b1d4c12602e2679e92e173893d0fe4406cbcb3a584589db5c2a3"
+}

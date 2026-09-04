@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/track-plan-v1.schema.json",
+  "title": "DNA Premium TrackPlan v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "sourceSha256", "configHash", "decisions", "readOnly", "sourceMutated"],
+  "properties": {
+    "schema": {"const": "dna-premium-track-plan"},
+    "version": {"const": "1.0"},
+    "sourceSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "configHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "decisions": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["trackUid", "sectionId", "decision", "reasonCode", "confidence", "transformationBudget"], "properties": {"trackUid": {"type": "string", "pattern": "^trk-[0-9a-f]{16}$"}, "sectionId": {"type": "string", "minLength": 1}, "decision": {"enum": ["KEEP", "REPAIR", "REPLACE", "MANUAL_REVIEW"]}, "reasonCode": {"type": "string", "minLength": 1}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "transformationBudget": {"type": "integer", "minimum": 0}}}},
+    "readOnly": {"const": true},
+    "sourceMutated": {"const": false}
+  }
+}

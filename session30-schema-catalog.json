@@ -1,0 +1,32 @@
+{
+  "schema": "dna-session30-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "release-readiness-v2.schema.json",
+      "$id": "https://dna-midi.local/schemas/release-readiness-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "b810b2eaed7bfe6f8fa66f185176a7cf0e0a2d2961e4af7223c32e283a31fdf5"
+    },
+    {
+      "name": "software-manifest-v1.schema.json",
+      "$id": "https://dna-midi.local/schemas/software-manifest-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "659d30a8cd7985be3f0c1542d8e081472d9e3c903af01aed463f2281f988f069"
+    },
+    {
+      "name": "project-migration-report-v1.schema.json",
+      "$id": "https://dna-midi.local/schemas/project-migration-report-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "eb35889f55eee17924e84a262078986b91f3fce92eb966a20376abcd644bc6bd"
+    },
+    {
+      "name": "release-status-matrix-v1.schema.json",
+      "$id": "https://dna-midi.local/schemas/release-status-matrix-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "61092ffb5209e76ec4a7cbee3badbf00a160161f47fc3fff1e5453e78e080d74"
+    }
+  ],
+  "catalogHash": "52b1557e35d4d85c4cb525e1c5ebbfaa65182082da0e5e2c7718db8558480ebf"
+}

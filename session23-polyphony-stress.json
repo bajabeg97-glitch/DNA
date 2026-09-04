@@ -1,0 +1,86 @@
+{
+  "schema": "dna-session23-polyphony-stress",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "cases": [
+    {
+      "id": "dense-fill-decorative-first",
+      "beforePeak": 60,
+      "afterPeak": 40,
+      "blocked": false,
+      "operations": [
+        {
+          "operation": "DROP_DECORATIVE_LAYER",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:percussion",
+          "eventCount": 20,
+          "reason": "MIDI_NOTE_CEILING"
+        }
+      ]
+    },
+    {
+      "id": "support-thinning",
+      "beforePeak": 60,
+      "afterPeak": 54,
+      "blocked": false,
+      "operations": [
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        },
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        },
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        },
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        },
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        },
+        {
+          "operation": "THIN_SUPPORT_VOICE",
+          "marker": "f2cv1",
+          "requestId": "f2cv1:guitar",
+          "eventCount": 1,
+          "reason": "MIDI_NOTE_CEILING"
+        }
+      ]
+    },
+    {
+      "id": "core-overflow-manual-review",
+      "beforePeak": 60,
+      "afterPeak": 60,
+      "blocked": true,
+      "operations": []
+    },
+    {
+      "id": "sustain-window",
+      "peak": 2,
+      "longestDurationTick": 480,
+      "sustainWindowCount": 1
+    }
+  ],
+  "stressHash": "85e6b1a5e49cc68fc58c6c1b895df26cee95473eb5cc9c9783cb6b9bbf36e69b"
+}

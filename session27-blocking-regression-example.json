@@ -1,0 +1,23 @@
+{
+  "schema": "dna-premium-quality-regression-vault",
+  "version": "1.0",
+  "locked": true,
+  "entries": [
+    {
+      "caseId": "open-baseline-better-example",
+      "baselineAudioSha256": "a267952767c5a15b8f431346382238d38bc5826b80005c576e98579be559d2f7",
+      "premiumAudioSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe",
+      "outcome": "BASELINE_BETTER",
+      "status": "OPEN",
+      "evaluatorEvidenceHash": "e923d22ef9a2a3dbbaf3de924a60042b34321e1956bcdf97dac74d44ad3bae15",
+      "resolutionEvidenceHash": null,
+      "reason": "Deliberate blocker fixture: baseline sounded better.",
+      "entryHash": "442db8191890d526239bf2fa78ea67609e69cff3df70946ab89f3a2500a2485a"
+    }
+  ],
+  "openBaselineBetterCases": [
+    "open-baseline-better-example"
+  ],
+  "releaseBlocked": true,
+  "vaultHash": "f0cc36931e936cec4bbafdd191757c1e4622d4d9299e57a30d60a31a48a4db9f"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "dna-session36-reliability-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-adversarial-fixtures",
+  "reportHash": "1b14066953745d4dab961ba22e103cee502c3e7caf4c21d53ecdf7e731362375",
+  "vaultHash": "cda60c7fdf113c6d08e1ea823494e2e99449c0b2a84864f9e0ac84da96687b30",
+  "malformedMidiCases": 24,
+  "sealedByteMutations": 200,
+  "atomicFaults": 7,
+  "workerCounts": [
+    1,
+    2,
+    4
+  ],
+  "byteIdenticalAcrossWorkers": true,
+  "unhandledExceptions": 0,
+  "silentFallbacks": 0,
+  "partialOutputs": 0,
+  "openSeverity1": 0,
+  "openSeverity2": 0,
+  "stressProfiles": [
+    {
+      "noteCount": 25000,
+      "parsedNoteCount": 25000,
+      "midiBytes": 200026,
+      "seconds": 1.476284,
+      "secondsLimit": 10.0,
+      "peakBytes": 17646484,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "46aa1a9da1d53d4aabac4e83e3e0529a2f92a76b4c1c3b48d225363971cc963b"
+    },
+    {
+      "noteCount": 100000,
+      "parsedNoteCount": 100000,
+      "midiBytes": 800026,
+      "seconds": 6.062056,
+      "secondsLimit": 35.0,
+      "peakBytes": 70858084,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "2144430554ca68ed5cee7ea23ada2d95718eb15f207f0d5a773252bdf49ec3d4"
+    }
+  ],
+  "lockedRegressions": 232,
+  "zeroTrackParserRegressionClosed": true,
+  "finalCertifiedMidiExportAllowed": false,
+  "benchmarkPassed": true,
+  "benchmarkHash": "185a8f50b5665e481ae0ac78ce3f911f5b9de3d960e0426eb60a0c4544240568"
+}

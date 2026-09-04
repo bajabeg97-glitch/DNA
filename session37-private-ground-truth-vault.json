@@ -1,0 +1,2763 @@
+{
+  "schema": "dna-premium-quality-ground-truth-vault",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "corpusHash": "d84320f2cb4d70a4d0228f94016f1555845b1e70bf1dabc9c13627302f62ce95",
+  "private": true,
+  "entries": [
+    {
+      "caseId": "song19-01",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "predictedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826"
+    },
+    {
+      "caseId": "song19-02",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "predictedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83"
+    },
+    {
+      "caseId": "song19-03",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "predictedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a"
+    },
+    {
+      "caseId": "song19-04",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "predictedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354"
+    },
+    {
+      "caseId": "song19-05",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "predictedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88"
+    },
+    {
+      "caseId": "song19-06",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "predictedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b"
+    },
+    {
+      "caseId": "song19-07",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "predictedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c"
+    },
+    {
+      "caseId": "song19-08",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "predictedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b"
+    },
+    {
+      "caseId": "song19-09",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4",
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4"
+        ],
+        "predictedChordLabels": [
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4",
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "1de73472d23826f9132e3f901031ac7a691f207605cd2de4c51b69c9c86df13f"
+    },
+    {
+      "caseId": "song19-10",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9",
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9"
+        ],
+        "predictedChordLabels": [
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9",
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "074aae0d6aae9a92f513fd4d6d00d43db813a122c65771fb3a661df8b99b2577"
+    },
+    {
+      "caseId": "song19-11",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2",
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2"
+        ],
+        "predictedChordLabels": [
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2",
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "ff4abe4055fa40c524c0bd519e90efd46071b40d9a908db79733849e749038eb"
+    },
+    {
+      "caseId": "song19-12",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7",
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7"
+        ],
+        "predictedChordLabels": [
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7",
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32"
+    },
+    {
+      "caseId": "song19-13",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "predictedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826"
+    },
+    {
+      "caseId": "song19-14",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "predictedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83"
+    },
+    {
+      "caseId": "song19-15",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "predictedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a"
+    },
+    {
+      "caseId": "song19-16",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "predictedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354"
+    },
+    {
+      "caseId": "song19-17",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "predictedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88"
+    },
+    {
+      "caseId": "song19-18",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "predictedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b"
+    },
+    {
+      "caseId": "song19-19",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "predictedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c"
+    },
+    {
+      "caseId": "song19-20",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "predictedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b"
+    },
+    {
+      "caseId": "quality37-21",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4",
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4"
+        ],
+        "predictedChordLabels": [
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4",
+          "4:major:4",
+          "9:major:9",
+          "11:dominant-seventh:11",
+          "4:major-seventh:4",
+          "1:minor:1",
+          "9:suspended-4:9",
+          "11:dominant-seventh:11",
+          "4:major:4"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "1de73472d23826f9132e3f901031ac7a691f207605cd2de4c51b69c9c86df13f"
+    },
+    {
+      "caseId": "quality37-22",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9",
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9"
+        ],
+        "predictedChordLabels": [
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9",
+          "9:major:9",
+          "2:major:2",
+          "4:dominant-seventh:4",
+          "9:major-seventh:9",
+          "6:minor:6",
+          "2:suspended-4:2",
+          "4:dominant-seventh:4",
+          "9:major:9"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "074aae0d6aae9a92f513fd4d6d00d43db813a122c65771fb3a661df8b99b2577"
+    },
+    {
+      "caseId": "quality37-23",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2",
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2"
+        ],
+        "predictedChordLabels": [
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2",
+          "2:major:2",
+          "7:major:7",
+          "9:dominant-seventh:9",
+          "2:major-seventh:2",
+          "11:minor:11",
+          "7:suspended-4:7",
+          "9:dominant-seventh:9",
+          "2:major:2"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "ff4abe4055fa40c524c0bd519e90efd46071b40d9a908db79733849e749038eb"
+    },
+    {
+      "caseId": "quality37-24",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7",
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7"
+        ],
+        "predictedChordLabels": [
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7",
+          "7:major:7",
+          "0:major:0",
+          "2:dominant-seventh:2",
+          "7:major-seventh:11",
+          "4:minor:4",
+          "0:suspended-4:0",
+          "2:dominant-seventh:2",
+          "7:major:7"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32"
+    },
+    {
+      "caseId": "quality37-25",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "predictedChordLabels": [
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0",
+          "0:major:0",
+          "5:major:5",
+          "7:dominant-seventh:7",
+          "0:major-seventh:0",
+          "9:minor:9",
+          "5:suspended-4:5",
+          "7:dominant-seventh:7",
+          "0:major:0"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826"
+    },
+    {
+      "caseId": "quality37-26",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "predictedChordLabels": [
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5",
+          "5:major:5",
+          "10:major:10",
+          "0:dominant-seventh:0",
+          "5:major-seventh:5",
+          "2:minor:2",
+          "10:suspended-4:10",
+          "0:dominant-seventh:0",
+          "5:major:5"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83"
+    },
+    {
+      "caseId": "quality37-27",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "predictedChordLabels": [
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10",
+          "10:major:10",
+          "3:major:3",
+          "5:dominant-seventh:5",
+          "10:major-seventh:10",
+          "7:minor:7",
+          "3:suspended-4:3",
+          "5:dominant-seventh:5",
+          "10:major:10"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a"
+    },
+    {
+      "caseId": "quality37-28",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "predictedChordLabels": [
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3",
+          "3:major:3",
+          "8:major:8",
+          "10:dominant-seventh:10",
+          "3:major-seventh:7",
+          "0:minor:0",
+          "8:suspended-4:8",
+          "10:dominant-seventh:10",
+          "3:major:3"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354"
+    },
+    {
+      "caseId": "quality37-29",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "predictedChordLabels": [
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8",
+          "8:major:8",
+          "1:major:1",
+          "3:dominant-seventh:3",
+          "8:major-seventh:8",
+          "5:minor:5",
+          "1:suspended-4:1",
+          "3:dominant-seventh:3",
+          "8:major:8"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88"
+    },
+    {
+      "caseId": "quality37-30",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "predictedChordLabels": [
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1",
+          "1:major:1",
+          "6:major:6",
+          "8:dominant-seventh:8",
+          "1:major-seventh:1",
+          "10:minor:10",
+          "6:suspended-4:6",
+          "8:dominant-seventh:8",
+          "1:major:1"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b"
+    },
+    {
+      "caseId": "quality37-31",
+      "split": "TRAIN",
+      "calibrationAccessible": true,
+      "labels": {
+        "expectedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "predictedChordLabels": [
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6",
+          "6:major:6",
+          "11:major:11",
+          "1:dominant-seventh:1",
+          "6:major-seventh:6",
+          "3:minor:3",
+          "11:suspended-4:11",
+          "1:dominant-seventh:1",
+          "6:major:6"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c"
+    },
+    {
+      "caseId": "quality37-32",
+      "split": "HOLDOUT",
+      "calibrationAccessible": false,
+      "labels": {
+        "expectedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "predictedChordLabels": [
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11",
+          "11:major:11",
+          "4:major:4",
+          "6:dominant-seventh:6",
+          "11:major-seventh:3",
+          "8:minor:8",
+          "4:suspended-4:4",
+          "6:dominant-seventh:6",
+          "11:major:11"
+        ],
+        "expectedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "predictedSectionBoundaries": [
+          0,
+          3840,
+          7680,
+          11520
+        ],
+        "expectedSectionLabels": [
+          "intro",
+          "verse",
+          "chorus",
+          "ending"
+        ],
+        "expectedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "predictedTrackRoles": [
+          "conductor",
+          "harmony",
+          "bass",
+          "solo",
+          "drums"
+        ],
+        "expectedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ],
+        "predictedTransitions": [
+          "intro>verse",
+          "verse>chorus",
+          "chorus>ending"
+        ]
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b"
+    }
+  ],
+  "policy": "TRAIN_ONLY_DURING_CALIBRATION_HOLDOUT_OPENED_AFTER_CALIBRATION_SEAL",
+  "vaultHash": "83702c418033cfb730e65d04569a049198947c507c33958813a6971478eec2b5"
+}

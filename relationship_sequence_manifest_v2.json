@@ -1,0 +1,30 @@
+{
+  "schema": "dna-relationship-sequence-dataset",
+  "version": "2.0",
+  "rows": 697,
+  "songs": 97,
+  "trainRows": 452,
+  "validationRows": 101,
+  "holdoutRows": 144,
+  "noteActions": {
+    "PLAY": 57361,
+    "SKIP": 4091,
+    "HOLD": 217
+  },
+  "featureNames": [
+    "pitch_norm",
+    "delta_prev",
+    "delta_next",
+    "ioi_prev_qn",
+    "ioi_next_qn",
+    "duration_qn",
+    "beat_pos_qn",
+    "phrase_pos",
+    "local_density",
+    "is_repeat"
+  ],
+  "velocityFeature": false,
+  "velocityTarget": false,
+  "sourceDisjoint": true,
+  "datasetHash": "21b7e6e76f3cea0783abaf292b45caeb7816c7b1f7717891004bcb2776b4432a"
+}

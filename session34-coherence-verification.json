@@ -1,0 +1,19 @@
+{
+  "schema": "dna-global-coherence-verification",
+  "version": "1.0",
+  "passed": true,
+  "issues": [],
+  "checks": {
+    "planValid": true,
+    "baselineHash": true,
+    "threeDistinctVariants": true,
+    "allVariantGates": true,
+    "noEventAuthorityExpansion": true
+  },
+  "coherencePlanHash": "e135f1ca1faff7f7bed7d395373c13011cab293be61ed348f3c0d87712b3e87d",
+  "variantMidiSha256": {
+    "A": "29531d1cff32088c81ebabd4f4178d8c0aea28a36407681f4d6bba631242c6a7",
+    "B": "8ea031decafdb831272ac2dca42f728da1ebc788b4fdbf4db851f803b28f336e",
+    "C": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241"
+  }
+}

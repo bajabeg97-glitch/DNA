@@ -1,0 +1,13 @@
+{
+  "schema": "dna-session19-benchmark-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "corpusHash": "ee6ed6fae429959b42a92c258969e1ac8a1c25cbe7b9afc3291074c64e201bae",
+  "songCount": 20,
+  "halfBarCells": 320,
+  "chordWeightedF1": 1.0,
+  "chordGate": 0.85,
+  "sectionBoundaryF1": 1.0,
+  "sectionGate": 0.8,
+  "passed": true
+}

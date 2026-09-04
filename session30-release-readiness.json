@@ -1,0 +1,99 @@
+{
+  "schema": "dna-ai-premium-release-readiness",
+  "version": "2.0",
+  "releaseId": "preview-rc-6ed3d22093e47996cca8",
+  "releaseDate": "2026-09-03",
+  "targetBaseline": "4.8-release-candidate-preview",
+  "sources": [
+    {
+      "path": "data/release-check-report.json",
+      "sha256": "4d3f2de71d6d97ee87511dfce6af0783736cf3b7d61a6aceab9936112bff4cdf"
+    },
+    {
+      "path": "data/recovery-release-report.json",
+      "sha256": "75e4dd04015999582234f0f84c07bcb8777a2851f5f0428f69058f6f1a0002b4"
+    },
+    {
+      "path": "data/session13-test-report.json",
+      "sha256": "ff95e44b7181e33d1667f855a73ed163f24b526b16b1cd4ac0f16b9d2d27ba19"
+    },
+    {
+      "path": "data/session24-test-report.json",
+      "sha256": "35b3b1369724f4973099daa7349de3819d7ab17dddbb9a0354b34dca6966b136"
+    },
+    {
+      "path": "data/session25-test-report.json",
+      "sha256": "4364517f440952fce81f00ab2f8ef13383ba583af031303d1147899006a21d46"
+    },
+    {
+      "path": "data/session27-test-report.json",
+      "sha256": "2e5a8132758e674093f9b566cd732ea009d15bed468b133d15969140ee8eae5f"
+    },
+    {
+      "path": "data/session28-test-report.json",
+      "sha256": "9795da88d04f1d123c0fdf85b492f6158950260a994987133721bd20b9380851"
+    },
+    {
+      "path": "data/session29-test-report.json",
+      "sha256": "fee78c704cb361e09f3a675a77a2a309f022ee743df0539d18e3366b910ad6e2"
+    },
+    {
+      "path": "data/premium-feature-matrix.json",
+      "sha256": "f5214e64f9bc02760c2f632e31ba897da838b049228e4b890cc2e5d9a48e49dc"
+    }
+  ],
+  "evidence": {
+    "migrationHash": "6bea65fb22cf9fa642b69314cd66dc8ef75e356acbcb762c4b05438aca3f27f4",
+    "softwareManifestHash": "a9544db2cd2469c7d8d8f18006e5b7897d6597e07aefcc4e364f961d9517a211",
+    "softwareContentHash": "6ed3d22093e47996cca8693268b28df016253c05b11f69bcc802e8fe027041ce",
+    "hardeningHash": "2d101cec28d37b2387f0f71fa521f4de4cd9e6862523d6ebfae47ea19ab61362",
+    "statusMatrixHash": "5eee57dec2554ebcba2154be0d62964af20e36434b389375101934ae96c75318",
+    "priorRecoveryTests": 2900,
+    "expectedRecoveryTestsWithSession30": 1388
+  },
+  "quality": {
+    "technicalPassed": true,
+    "automatedPassed": true,
+    "automatedOverallScore": 4.543,
+    "verifiedHumanEvaluators": 0,
+    "requiredHumanEvaluators": 2,
+    "premiumPreferenceRate": null
+  },
+  "defects": {
+    "openSeverity1": 0,
+    "openSeverity2": 0,
+    "knownLimitations": [
+      "Physical Korg Pa800 import, NTT, save/reload and voice-cost evidence are missing.",
+      "Human listening evidence is 0/2 and Premium preference is not established.",
+      "Expression and articulation production evidence remains blocked.",
+      "The release candidate is Preview-only and final MIDI export remains blocked."
+    ]
+  },
+  "gates": {
+    "softwareReleaseCandidateReady": true,
+    "finalPremiumReleaseAllowed": false,
+    "finalMidiExportAllowed": false,
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "forbiddenProductName": "AI PREMIUM ARRANGER",
+    "blockers": [
+      "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+      "HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+      "PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+      "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+      "ARTICULATION_DEVICE_CAPTURE_BLOCKED",
+      "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+      "PA800_VOICE_COST_UNCONFIRMED"
+    ]
+  },
+  "safety": {
+    "readOnlyAssessment": true,
+    "midiMutationAllowed": false,
+    "validatorBypassAllowed": false,
+    "qualityGateBypassAllowed": false,
+    "deviceGateBypassAllowed": false,
+    "marketingGateBypassAllowed": false,
+    "cloudRequired": false,
+    "physicalCertificationClaimed": false
+  },
+  "readinessHash": "34fc428690c3080571b37a13e32492920a5899cf82a945a2708f2af684048fd2"
+}

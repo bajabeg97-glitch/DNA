@@ -1,0 +1,83 @@
+{
+  "schema": "dna-session25-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "exact-sound-guitar-rx-dnc-articulation-capture-trust-collision-noteoff-and-polyphony-safety",
+  "formalSuite": {
+    "testsRun": 88,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session25-benchmark-report.json",
+    "mapCount": 3,
+    "entryCount": 9,
+    "confirmedEntryCount": 7,
+    "eventCounts": {
+      "GUITAR": 3,
+      "RX": 3,
+      "DNC": 5
+    },
+    "standardEventTypes": [
+      "CC",
+      "CHANNEL_PRESSURE",
+      "KEYSWITCH"
+    ],
+    "keyswitchNoteOffCount": 8,
+    "maximumEstimatedPeak": 19,
+    "deterministic": true,
+    "previewReady": true,
+    "productionRenderReady": false,
+    "productionEligibleMapCount": 0,
+    "benchmarkHash": "dd367ed5c1fad7e55e1976d90f28abec3613f5d45d24c8ee7de0ec3dd7b70548"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session25-reference.mid",
+    "capture": "artifacts/session25-reference-capture.json",
+    "catalog": "artifacts/session25-articulation-map.json",
+    "groovePlan": "artifacts/session25-groove-plan.json",
+    "expressionPlan": "artifacts/session25-expression-plan.json",
+    "guitarPlan": "artifacts/session25-guitar-articulation-plan.json",
+    "guitarControls": "artifacts/session25-guitar-controls.json",
+    "rxPlan": "artifacts/session25-rx-articulation-plan.json",
+    "rxControls": "artifacts/session25-rx-controls.json",
+    "dncPlan": "artifacts/session25-dnc-articulation-plan.json",
+    "dncControls": "artifacts/session25-dnc-controls.json",
+    "schemaCatalog": "data/session25-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session25_articulation_map.py",
+    "api": "/api/premium-articulation-map",
+    "guiCard": "ARTICULATION MAPS 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "exactSoundBindingOnly": true,
+    "approximateNameMatching": false,
+    "nearestProgramFallback": false,
+    "confirmedUnknownBlockedExplicit": true,
+    "keyswitchCcPressureOnly": true,
+    "proprietarySysExBlocked": true,
+    "keyswitchNoteOffRequired": true,
+    "triggerPlayableCollisionBlocked": true,
+    "duplicateTriggerBlocked": true,
+    "grooveExpressionPeakUsed": true,
+    "softwareMidiNoteCeiling": 54,
+    "softwareFixtureCannotAuthorizeProduction": true,
+    "operatorApprovedDeviceHashRequired": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false
+  },
+  "status": {
+    "session25ArticulationMaps": "SOFTWARE_VALIDATED / DEVICE_CAPTURE_BLOCKED",
+    "activeSoftwareBaseline": "4.3-alpha",
+    "aiArrangerAlpha": "SOFTWARE_VALIDATED / ALPHA",
+    "productionGuitarMap": "MISSING_DEVICE_CAPTURE",
+    "productionRxMap": "MISSING_DEVICE_CAPTURE",
+    "productionDncMap": "MISSING_DEVICE_CAPTURE",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

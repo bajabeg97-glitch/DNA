@@ -1,0 +1,51 @@
+{
+  "schema": "dna-session13-test-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "scope": "deterministic-windows-portable-release",
+  "formalSuite": {
+    "testsRun": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "package": {
+    "zip": "dist/DNA-MIDI-Studio-Pa800-Windows-3.16.zip",
+    "checksum": "dist/DNA-MIDI-Studio-Pa800-Windows-3.16.zip.sha256",
+    "zipSha256": "0edd6f07245af636cf3e50e6b76cd9f2066bbd48a195831b15084ecf8eb5b719",
+    "bytes": 27461651,
+    "files": 163,
+    "contentHash": "71ef400c952f093792ff4296d61c719a6914ae5cfd500da9904918a164de2f18"
+  },
+  "cleanExtractSmoke": {
+    "mode": "clean-extract-full",
+    "legacyRelease": {
+      "command": "/usr/bin/python release_check.py",
+      "returnCode": 0,
+      "stdoutTail": "\nDNA MIDI Studio release check: PASS\nFizički Pa800 status: WAITING_FOR_DEVICE\n",
+      "stderrTail": "itor_transpose_is_audited_and_preserves_structure) ... ok\ntest_half_bar_chords_phase_evidence_and_korg_candidate (test_master_prompt.UnitTests.test_half_bar_chords_phase_evidence_and_korg_candidate) ... ok\ntest_invalid_duration_is_repaired_and_audited (test_master_prompt.UnitTests.test_invalid_duration_is_repaired_and_audited) ... ok\ntest_invalid_export_is_blocked_when_cleanup_disabled (test_master_prompt.UnitTests.test_invalid_export_is_blocked_when_cleanup_disabled) ... ok\ntest_piecewise_velocity_curve (test_master_prompt.UnitTests.test_piecewise_velocity_curve) ... ok\ntest_preflight_is_read_only_and_reports_structure (test_master_prompt.UnitTests.test_preflight_is_read_only_and_reports_structure) ... ok\ntest_project_migration_and_safety_validation (test_master_prompt.UnitTests.test_project_migration_and_safety_validation) ... ok\ntest_result_cache_limits_and_immutable_payload (test_master_prompt.UnitTests.test_result_cache_limits_and_immutable_payload) ... ok\ntest_song_analysis_is_velocity_independent (test_master_prompt.UnitTests.test_song_analysis_is_velocity_independent) ... ok\n\n----------------------------------------------------------------------\nRan 43 tests in 32.536s\n\nOK\n"
+    },
+    "recoveryRelease": {
+      "command": "/usr/bin/python recovery_release_check.py",
+      "returnCode": 0,
+      "stdoutTail": "Session 4 foundation PASS: 19 tests; /tmp/tmpkdg0ddsd/release/data/session4-test-report.json\nSession 5 foundation PASS: 36 tests; /tmp/tmpkdg0ddsd/release/data/session5-test-report.json\nSession 6 foundation PASS: 26 tests; /tmp/tmpkdg0ddsd/release/data/session6-test-report.json\nSession 7 foundation PASS: 30 tests; /tmp/tmpkdg0ddsd/release/data/session7-test-report.json\nSession 8 runtime PASS: 21 tests; /tmp/tmpkdg0ddsd/release/data/session8-test-report.json\nSession 9 pipeline PASS: 19 tests; /tmp/tmpkdg0ddsd/release/data/session9-test-report.json\nSession 10 transaction PASS: 22 tests; /tmp/tmpkdg0ddsd/release/data/session10-test-report.json\nSession 11 verifier PASS: 24 tests; /tmp/tmpkdg0ddsd/release/data/session11-test-report.json\nSession 12 adversarial foundation PASS: 36 tests; /tmp/tmpkdg0ddsd/release/data/session12-test-report.json\nSession 14 device preflight PASS: 12 tests; /tmp/tmpkdg0ddsd/release/data/session14-preflight-report.json\nPhysical Pa800 status: WAITING_FOR_DEVICE\nSession 13 Windows release PASS: 16 tests; /tmp/tmpkdg0ddsd/release/dist/DNA-MIDI-Studio-Pa800-Windows-3.16.zip\nRecovery release PASS: 289/289; /tmp/tmpkdg0ddsd/release/data/recovery-release-report.json\n",
+      "stderrTail": "uthoritative_and_device_kit_zips (test_session13.Session13WindowsPackageTests.test_package_contains_only_authoritative_and_device_kit_zips) ... ok\ntest_package_has_no_cache_lock_or_temp_files (test_session13.Session13WindowsPackageTests.test_package_has_no_cache_lock_or_temp_files) ... ok\ntest_rebuild_script_uses_authoritative_archive (test_session13.Session13WindowsPackageTests.test_rebuild_script_uses_authoritative_archive) ... ok\ntest_release_directory_has_one_user_zip (test_session13.Session13WindowsPackageTests.test_release_directory_has_one_user_zip) ... ok\ntest_required_batch_entry_points_exist (test_session13.Session13WindowsPackageTests.test_required_batch_entry_points_exist) ... ok\ntest_testiraj_runs_legacy_and_recovery_gates (test_session13.Session13WindowsPackageTests.test_testiraj_runs_legacy_and_recovery_gates) ... ok\ntest_user_guide_and_pdf_are_in_package (test_session13.Session13WindowsPackageTests.test_user_guide_and_pdf_are_in_package) ... ok\ntest_zip_file_hashes_match_manifest (test_session13.Session13WindowsPackageTests.test_zip_file_hashes_match_manifest) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 13.933s\n\nOK\n"
+    }
+  },
+  "invariants": {
+    "singleUserZip": true,
+    "byteReproducible": true,
+    "asciiCrLfBatch": true,
+    "noThirdPartyDependencies": true,
+    "productionRegistriesIncluded": true,
+    "authoritativeSourceArchiveIncluded": true,
+    "manifestHashesVerified": true,
+    "legacy43Pass": true,
+    "recoverySuitePass": true,
+    "sustainedNotePolyphonyGate": true
+  },
+  "status": {
+    "session13WindowsRelease": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,1652 @@
+{
+  "schema": "dna-premium-preview-session",
+  "version": "2.0",
+  "source": {
+    "midiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "songMapHash": "068835ef7d4468145bd2e01838b222ff9b9fd8f3d9208b462b2d32347f9025c6",
+    "groovePlanHash": "0f437631eb9c1939fddf7f164b108abcd0276fef07ebe55bcced224aa546b3aa",
+    "expressionPlanHash": "b617d34be94f1763ff48098539f5624587ffc53a9c05785392da4161cc30eaab",
+    "articulationPlanHashes": [
+      "42be10ca936d1277db2709b0ff3c086b686f56703d343605c8e855123817c8e8",
+      "52a9a27911a3dc9689d431d8f6466286343eaf25f01a3345f0ece06efae8944a",
+      "57bd01e29b8de6c45ff8c284ec5a65ab7c7c12f75b8eab619724293d26590a1a"
+    ]
+  },
+  "validatorIdentity": {
+    "passed": true,
+    "finalMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "reportHash": "a1b7f96676f68d5b2bab71132ce1224a43a5c941f8a7c85fa1cce1dad28c2eb2",
+    "scope": "FINAL_MIDI",
+    "identityHash": "3f48d363a397518ee38afb69281639c28ad872e164bb6632d020d65d5ab171f6"
+  },
+  "controls": {
+    "version": "1.0",
+    "profileId": "PA800_PROXY_V1",
+    "variants": [
+      "A",
+      "B",
+      "C"
+    ],
+    "loopSectionId": "sec-001",
+    "soloRoles": [],
+    "mutedRoles": [],
+    "targetRmsDbfs": -20.0,
+    "sampleRate": 12000,
+    "maxAudioSeconds": 4,
+    "masterGainDb": 0.0,
+    "externalAdapter": {
+      "schema": "dna-premium-audio-render-adapter",
+      "version": "1.0",
+      "mode": "DISABLED",
+      "rendererId": "builtin-proxy",
+      "executableSha256": null,
+      "soundfontSha256": null
+    }
+  },
+  "transport": {
+    "synchronized": true,
+    "variantIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "startSeconds": 0.0,
+    "endSeconds": 2.0,
+    "seekResolutionTicks": 1,
+    "loop": {
+      "enabled": true,
+      "sectionId": "sec-001",
+      "label": "chorus",
+      "startTick": 0,
+      "endTick": 1920
+    }
+  },
+  "variants": [
+    {
+      "variantId": "A",
+      "label": "Verified baseline",
+      "clockId": "preview-clock-3f48d363a397518e",
+      "notes": [
+        {
+          "noteUid": "preview-src-1668c8edfa3fea9328e8",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 52,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "d3c80eece90afebf0dce8d802add32b9061f24524646d54a8dcca0bc935a7c2b"
+        },
+        {
+          "noteUid": "preview-src-0307f93497490ce43a11",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 60,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "1f37574ef020e46c85d23d5ac36622b10ed2ae743380eb715a10d49a1ae4c06b"
+        },
+        {
+          "noteUid": "preview-src-67f75fa9c6faefcc2214",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 64,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "f8774e3f9e3cee2d52cf29c47689073b0941b0037e5a02c210325a75f5c46014"
+        },
+        {
+          "noteUid": "preview-src-1363e91508be527c5402",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 55,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "af1a4c713a15563bc1e39759a5053cd9964509dfbeeececd55dfabc726145504"
+        },
+        {
+          "noteUid": "preview-src-ada0aec676d954ab527f",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 67,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "0d04915a41f1566c9cd4ea5506f2fc3a8f5de5acc8bef62ea9f23592061d5c3b"
+        },
+        {
+          "noteUid": "preview-src-dc7ddde033a064df4a00",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 71,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "66ba52539b74d3dc4d9efe9a03ccf19154be35e04beac0cc9a59a40564c286c4"
+        },
+        {
+          "noteUid": "preview-src-8bace490f72ec9be20d4",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 60,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "04e03245897228efb214a6345af787f0a85de9a088232ba3d7cb606cae798105"
+        },
+        {
+          "noteUid": "preview-src-a71be18af3026421c025",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 64,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "ddeb0c71872a29961900516b92f407c89829f47e916dee617da9a37cbec4599c"
+        },
+        {
+          "noteUid": "preview-src-2edd9ce28275b78895de",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 69,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "4ba0dc6f735a1a1480e49ef60bca626502222a79f307f61847263ea4c9d13079"
+        },
+        {
+          "noteUid": "preview-src-c9d4533113ff2319e401",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 57,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "6db8bd2bd3395c40bf23372dfc4959600550dfded68e272e0143f9a6910618cc"
+        },
+        {
+          "noteUid": "preview-src-b2024ee17ea6005505fd",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 72,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "c169566402bd4aa1c8fb0375d57e27be260c030d3fd8dc3066e44802e3778cc8"
+        },
+        {
+          "noteUid": "preview-src-c6bb1ba3d7376f2531d1",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 76,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "a8fe2d34b2106e6db88a5b9881c440eab1c9504e0bd2330d1d41d8045a694e5d"
+        }
+      ],
+      "audibleNoteCount": 12,
+      "filteredNoteCount": 0,
+      "articulationEvents": [],
+      "polyphony": {
+        "globalPeak": 6,
+        "byRole": {
+          "harmony": 2,
+          "unknown": 4
+        },
+        "byTrackUid": {
+          "trk-7011fbb5d9807ae262bf": 2,
+          "trk-91223ae1e5498bd7ed27": 2,
+          "trk-91348a7bd43f05141f5f": 2
+        },
+        "byChannelNumber": {
+          "3": 2,
+          "4": 2,
+          "12": 2
+        },
+        "timeline": [
+          {
+            "tick": 240,
+            "active": 3
+          },
+          {
+            "tick": 720,
+            "active": 6
+          },
+          {
+            "tick": 960,
+            "active": 3
+          },
+          {
+            "tick": 1080,
+            "active": 0
+          },
+          {
+            "tick": 1200,
+            "active": 3
+          },
+          {
+            "tick": 1680,
+            "active": 6
+          },
+          {
+            "tick": 1920,
+            "active": 3
+          },
+          {
+            "tick": 2040,
+            "active": 0
+          }
+        ]
+      },
+      "loudness": {
+        "method": "MIDI_ENERGY_RMS_PROXY",
+        "measuredRmsDbfs": -17.903,
+        "targetRmsDbfs": -20.0,
+        "matchGainDb": -2.097,
+        "masterGainDb": 0.0,
+        "affectsMidi": false
+      }
+    },
+    {
+      "variantId": "B",
+      "label": "Expression",
+      "clockId": "preview-clock-3f48d363a397518e",
+      "notes": [
+        {
+          "noteUid": "fixture-grace-1",
+          "source": "AI_EXPRESSION",
+          "layer": "grace",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 204,
+          "endTick": 240,
+          "startSeconds": 0.2125,
+          "endSeconds": 0.25,
+          "pitch": 59,
+          "velocity": 64,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "noteHash": "77edeba7eeccb38faa4ccd8fbc40e41726da1af9516f76613843ae813b97b305"
+        },
+        {
+          "noteUid": "preview-src-1668c8edfa3fea9328e8",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 52,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "d3c80eece90afebf0dce8d802add32b9061f24524646d54a8dcca0bc935a7c2b"
+        },
+        {
+          "noteUid": "preview-src-0307f93497490ce43a11",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 60,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "1f37574ef020e46c85d23d5ac36622b10ed2ae743380eb715a10d49a1ae4c06b"
+        },
+        {
+          "noteUid": "fixture-third-1",
+          "source": "AI_EXPRESSION",
+          "layer": "third",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 480,
+          "startSeconds": 0.25,
+          "endSeconds": 0.5,
+          "pitch": 64,
+          "velocity": 64,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "noteHash": "e63ef54ee8ed2f1b79ef61921f996f59bc9396ffbc8f5ea98f75641fe006c3e0"
+        },
+        {
+          "noteUid": "preview-src-67f75fa9c6faefcc2214",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 64,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "f8774e3f9e3cee2d52cf29c47689073b0941b0037e5a02c210325a75f5c46014"
+        },
+        {
+          "noteUid": "fixture-grace-2",
+          "source": "AI_EXPRESSION",
+          "layer": "grace",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 684,
+          "endTick": 720,
+          "startSeconds": 0.7125,
+          "endSeconds": 0.75,
+          "pitch": 66,
+          "velocity": 65,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "noteHash": "f4773018c64f19f73e31cf3240be6b90186382fb16c1ff9a8e40777b919660f7"
+        },
+        {
+          "noteUid": "preview-src-1363e91508be527c5402",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 55,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "af1a4c713a15563bc1e39759a5053cd9964509dfbeeececd55dfabc726145504"
+        },
+        {
+          "noteUid": "preview-src-ada0aec676d954ab527f",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 67,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "0d04915a41f1566c9cd4ea5506f2fc3a8f5de5acc8bef62ea9f23592061d5c3b"
+        },
+        {
+          "noteUid": "fixture-third-2",
+          "source": "AI_EXPRESSION",
+          "layer": "third",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 960,
+          "startSeconds": 0.75,
+          "endSeconds": 1.0,
+          "pitch": 71,
+          "velocity": 65,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "noteHash": "7586a26be8f511a691302eb76cdc75ea73feaea1eb053b216fb77927b97112d5"
+        },
+        {
+          "noteUid": "preview-src-dc7ddde033a064df4a00",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 71,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "66ba52539b74d3dc4d9efe9a03ccf19154be35e04beac0cc9a59a40564c286c4"
+        },
+        {
+          "noteUid": "preview-src-8bace490f72ec9be20d4",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 60,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "04e03245897228efb214a6345af787f0a85de9a088232ba3d7cb606cae798105"
+        },
+        {
+          "noteUid": "preview-src-a71be18af3026421c025",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 64,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "ddeb0c71872a29961900516b92f407c89829f47e916dee617da9a37cbec4599c"
+        },
+        {
+          "noteUid": "preview-src-2edd9ce28275b78895de",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 69,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "4ba0dc6f735a1a1480e49ef60bca626502222a79f307f61847263ea4c9d13079"
+        },
+        {
+          "noteUid": "preview-src-c9d4533113ff2319e401",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 57,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "6db8bd2bd3395c40bf23372dfc4959600550dfded68e272e0143f9a6910618cc"
+        },
+        {
+          "noteUid": "preview-src-b2024ee17ea6005505fd",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 72,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "c169566402bd4aa1c8fb0375d57e27be260c030d3fd8dc3066e44802e3778cc8"
+        },
+        {
+          "noteUid": "preview-src-c6bb1ba3d7376f2531d1",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 76,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "a8fe2d34b2106e6db88a5b9881c440eab1c9504e0bd2330d1d41d8045a694e5d"
+        }
+      ],
+      "audibleNoteCount": 16,
+      "filteredNoteCount": 0,
+      "articulationEvents": [],
+      "polyphony": {
+        "globalPeak": 7,
+        "byRole": {
+          "harmony": 2,
+          "unknown": 5
+        },
+        "byTrackUid": {
+          "trk-7011fbb5d9807ae262bf": 3,
+          "trk-91223ae1e5498bd7ed27": 2,
+          "trk-91348a7bd43f05141f5f": 2
+        },
+        "byChannelNumber": {
+          "3": 3,
+          "4": 2,
+          "12": 2
+        },
+        "timeline": [
+          {
+            "tick": 204,
+            "active": 1
+          },
+          {
+            "tick": 240,
+            "active": 4
+          },
+          {
+            "tick": 480,
+            "active": 3
+          },
+          {
+            "tick": 684,
+            "active": 4
+          },
+          {
+            "tick": 720,
+            "active": 7
+          },
+          {
+            "tick": 960,
+            "active": 3
+          },
+          {
+            "tick": 1080,
+            "active": 0
+          },
+          {
+            "tick": 1200,
+            "active": 3
+          },
+          {
+            "tick": 1680,
+            "active": 6
+          },
+          {
+            "tick": 1920,
+            "active": 3
+          },
+          {
+            "tick": 2040,
+            "active": 0
+          }
+        ]
+      },
+      "loudness": {
+        "method": "MIDI_ENERGY_RMS_PROXY",
+        "measuredRmsDbfs": -17.626,
+        "targetRmsDbfs": -20.0,
+        "matchGainDb": -2.374,
+        "masterGainDb": 0.0,
+        "affectsMidi": false
+      }
+    },
+    {
+      "variantId": "C",
+      "label": "Full preview",
+      "clockId": "preview-clock-3f48d363a397518e",
+      "notes": [
+        {
+          "noteUid": "fixture-grace-1",
+          "source": "AI_EXPRESSION",
+          "layer": "grace",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 204,
+          "endTick": 240,
+          "startSeconds": 0.2125,
+          "endSeconds": 0.25,
+          "pitch": 59,
+          "velocity": 64,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "noteHash": "77edeba7eeccb38faa4ccd8fbc40e41726da1af9516f76613843ae813b97b305"
+        },
+        {
+          "noteUid": "preview-src-1668c8edfa3fea9328e8",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 52,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "d3c80eece90afebf0dce8d802add32b9061f24524646d54a8dcca0bc935a7c2b"
+        },
+        {
+          "noteUid": "preview-src-0307f93497490ce43a11",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 60,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "1f37574ef020e46c85d23d5ac36622b10ed2ae743380eb715a10d49a1ae4c06b"
+        },
+        {
+          "noteUid": "fixture-third-1",
+          "source": "AI_EXPRESSION",
+          "layer": "third",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 480,
+          "startSeconds": 0.25,
+          "endSeconds": 0.5,
+          "pitch": 64,
+          "velocity": 64,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "noteHash": "e63ef54ee8ed2f1b79ef61921f996f59bc9396ffbc8f5ea98f75641fe006c3e0"
+        },
+        {
+          "noteUid": "preview-src-67f75fa9c6faefcc2214",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 240,
+          "endTick": 960,
+          "startSeconds": 0.25,
+          "endSeconds": 1.0,
+          "pitch": 64,
+          "velocity": 72,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "f8774e3f9e3cee2d52cf29c47689073b0941b0037e5a02c210325a75f5c46014"
+        },
+        {
+          "noteUid": "fixture-echo-1",
+          "source": "AI_EXPRESSION",
+          "layer": "echo",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 360,
+          "endTick": 600,
+          "startSeconds": 0.375,
+          "endSeconds": 0.625,
+          "pitch": 67,
+          "velocity": 64,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_ECHO_PREVIEW",
+          "noteHash": "3c7e4c896aba121856c4ef9297c07fc834d1666c8ec4163317984156380af82d"
+        },
+        {
+          "noteUid": "fixture-grace-2",
+          "source": "AI_EXPRESSION",
+          "layer": "grace",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 684,
+          "endTick": 720,
+          "startSeconds": 0.7125,
+          "endSeconds": 0.75,
+          "pitch": 66,
+          "velocity": 65,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_GRACE_PREVIEW",
+          "noteHash": "f4773018c64f19f73e31cf3240be6b90186382fb16c1ff9a8e40777b919660f7"
+        },
+        {
+          "noteUid": "preview-src-1363e91508be527c5402",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 55,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "af1a4c713a15563bc1e39759a5053cd9964509dfbeeececd55dfabc726145504"
+        },
+        {
+          "noteUid": "preview-src-ada0aec676d954ab527f",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 67,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "0d04915a41f1566c9cd4ea5506f2fc3a8f5de5acc8bef62ea9f23592061d5c3b"
+        },
+        {
+          "noteUid": "fixture-third-2",
+          "source": "AI_EXPRESSION",
+          "layer": "third",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 960,
+          "startSeconds": 0.75,
+          "endSeconds": 1.0,
+          "pitch": 71,
+          "velocity": 65,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": false,
+          "evidenceId": "260.100.001",
+          "reasonCode": "SESSION26_THIRD_PREVIEW",
+          "noteHash": "7586a26be8f511a691302eb76cdc75ea73feaea1eb053b216fb77927b97112d5"
+        },
+        {
+          "noteUid": "preview-src-dc7ddde033a064df4a00",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 720,
+          "endTick": 1080,
+          "startSeconds": 0.75,
+          "endSeconds": 1.125,
+          "pitch": 71,
+          "velocity": 73,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "66ba52539b74d3dc4d9efe9a03ccf19154be35e04beac0cc9a59a40564c286c4"
+        },
+        {
+          "noteUid": "preview-src-8bace490f72ec9be20d4",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 60,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "04e03245897228efb214a6345af787f0a85de9a088232ba3d7cb606cae798105"
+        },
+        {
+          "noteUid": "preview-src-a71be18af3026421c025",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 64,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "ddeb0c71872a29961900516b92f407c89829f47e916dee617da9a37cbec4599c"
+        },
+        {
+          "noteUid": "preview-src-2edd9ce28275b78895de",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1200,
+          "endTick": 1920,
+          "startSeconds": 1.25,
+          "endSeconds": 2.0,
+          "pitch": 69,
+          "velocity": 74,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "4ba0dc6f735a1a1480e49ef60bca626502222a79f307f61847263ea4c9d13079"
+        },
+        {
+          "noteUid": "preview-src-c9d4533113ff2319e401",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 11,
+          "channelNumber": 12,
+          "role": "harmony",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 57,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 0,
+            "program": 24,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "6db8bd2bd3395c40bf23372dfc4959600550dfded68e272e0143f9a6910618cc"
+        },
+        {
+          "noteUid": "preview-src-b2024ee17ea6005505fd",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 72,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 1,
+            "program": 40,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "c169566402bd4aa1c8fb0375d57e27be260c030d3fd8dc3066e44802e3778cc8"
+        },
+        {
+          "noteUid": "preview-src-c6bb1ba3d7376f2531d1",
+          "source": "ORIGINAL_MIDI",
+          "layer": "BASELINE",
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "role": "unknown",
+          "startTick": 1680,
+          "endTick": 2040,
+          "startSeconds": 1.75,
+          "endSeconds": 2.125,
+          "pitch": 76,
+          "velocity": 75,
+          "soundBinding": {
+            "bankMsb": 121,
+            "bankLsb": 2,
+            "program": 80,
+            "status": "EXACT"
+          },
+          "productionEligible": true,
+          "noteHash": "a8fe2d34b2106e6db88a5b9881c440eab1c9504e0bd2330d1d41d8045a694e5d"
+        }
+      ],
+      "audibleNoteCount": 17,
+      "filteredNoteCount": 0,
+      "articulationEvents": [
+        {
+          "eventId": "art-8bfe72fc89bc1d0e167a2df7",
+          "source": "AI_ARTICULATION",
+          "engine": "DNC",
+          "articulation": "breath",
+          "eventType": "CC",
+          "tick": 240,
+          "noteOffTick": null,
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackNumber": 4,
+          "channelNumber": 4,
+          "sourceNoteUid": "srcnote-c4fe2da726f05543aaac84ba",
+          "sourceEvidenceId": "250.900.008",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-72e012fbbe29ecbea3086733",
+          "source": "AI_ARTICULATION",
+          "engine": "DNC",
+          "articulation": "legato_switch",
+          "eventType": "KEYSWITCH",
+          "tick": 696,
+          "noteOffTick": 744,
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackNumber": 4,
+          "channelNumber": 4,
+          "sourceNoteUid": "srcnote-593039cc14ea97367150f284",
+          "sourceEvidenceId": "250.900.007",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-11ad3ebc12ab150836597178",
+          "source": "AI_ARTICULATION",
+          "engine": "GUITAR",
+          "articulation": "stop",
+          "eventType": "KEYSWITCH",
+          "tick": 960,
+          "noteOffTick": 1020,
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackNumber": 2,
+          "channelNumber": 12,
+          "sourceNoteUid": "srcnote-a6fcc8426d821708990de270",
+          "sourceEvidenceId": "250.900.002",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-84c263705a7fadaa438a9dc7",
+          "source": "AI_ARTICULATION",
+          "engine": "RX",
+          "articulation": "fret_noise",
+          "eventType": "KEYSWITCH",
+          "tick": 968,
+          "noteOffTick": 1016,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "sourceNoteUid": "srcnote-9d8c59365d47a0659e4201ae",
+          "sourceEvidenceId": "250.900.004",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-ddaabe4a873a01487190c148",
+          "source": "AI_ARTICULATION",
+          "engine": "DNC",
+          "articulation": "breath",
+          "eventType": "CC",
+          "tick": 1200,
+          "noteOffTick": null,
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackNumber": 4,
+          "channelNumber": 4,
+          "sourceNoteUid": "srcnote-31a3b5205e7a1e65fc5e45f8",
+          "sourceEvidenceId": "250.900.008",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-82fb3b46c5d7a5ce489fc104",
+          "source": "AI_ARTICULATION",
+          "engine": "DNC",
+          "articulation": "legato_switch",
+          "eventType": "KEYSWITCH",
+          "tick": 1656,
+          "noteOffTick": 1704,
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackNumber": 4,
+          "channelNumber": 4,
+          "sourceNoteUid": "srcnote-919fc26fce559d2e4f1be4db",
+          "sourceEvidenceId": "250.900.007",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-3cf7518cd331ee886521ffd5",
+          "source": "AI_ARTICULATION",
+          "engine": "GUITAR",
+          "articulation": "mute",
+          "eventType": "KEYSWITCH",
+          "tick": 1680,
+          "noteOffTick": 1740,
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackNumber": 2,
+          "channelNumber": 12,
+          "sourceNoteUid": "srcnote-45f9d8cd2c4c6a6883f259b6",
+          "sourceEvidenceId": "250.900.001",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-a50389f6a6d46b3790a17c6f",
+          "source": "AI_ARTICULATION",
+          "engine": "GUITAR",
+          "articulation": "stop",
+          "eventType": "KEYSWITCH",
+          "tick": 1920,
+          "noteOffTick": 1980,
+          "trackUid": "trk-91348a7bd43f05141f5f",
+          "trackNumber": 2,
+          "channelNumber": 12,
+          "sourceNoteUid": "srcnote-1210d3426037325ea67010c9",
+          "sourceEvidenceId": "250.900.002",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-a625b5cbaf1398c356bebee6",
+          "source": "AI_ARTICULATION",
+          "engine": "RX",
+          "articulation": "fret_noise",
+          "eventType": "KEYSWITCH",
+          "tick": 1928,
+          "noteOffTick": 1976,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "sourceNoteUid": "srcnote-c82bd785990709a8efbd8fa7",
+          "sourceEvidenceId": "250.900.004",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-2310c22b6aa6c594fe010047",
+          "source": "AI_ARTICULATION",
+          "engine": "DNC",
+          "articulation": "fall_pressure",
+          "eventType": "CHANNEL_PRESSURE",
+          "tick": 2040,
+          "noteOffTick": null,
+          "trackUid": "trk-91223ae1e5498bd7ed27",
+          "trackNumber": 4,
+          "channelNumber": 4,
+          "sourceNoteUid": "srcnote-919fc26fce559d2e4f1be4db",
+          "sourceEvidenceId": "250.900.009",
+          "productionEligible": false,
+          "audibleProxy": false
+        },
+        {
+          "eventId": "art-ca7b9268a4fac79115d31e63",
+          "source": "AI_ARTICULATION",
+          "engine": "RX",
+          "articulation": "release_noise",
+          "eventType": "KEYSWITCH",
+          "tick": 2040,
+          "noteOffTick": 2088,
+          "trackUid": "trk-7011fbb5d9807ae262bf",
+          "trackNumber": 3,
+          "channelNumber": 3,
+          "sourceNoteUid": "srcnote-8bed5e95051f07e3de8f2084",
+          "sourceEvidenceId": "250.900.005",
+          "productionEligible": false,
+          "audibleProxy": false
+        }
+      ],
+      "polyphony": {
+        "globalPeak": 7,
+        "byRole": {
+          "harmony": 2,
+          "unknown": 5
+        },
+        "byTrackUid": {
+          "trk-7011fbb5d9807ae262bf": 3,
+          "trk-91223ae1e5498bd7ed27": 2,
+          "trk-91348a7bd43f05141f5f": 2
+        },
+        "byChannelNumber": {
+          "3": 3,
+          "4": 2,
+          "12": 2
+        },
+        "timeline": [
+          {
+            "tick": 204,
+            "active": 1
+          },
+          {
+            "tick": 240,
+            "active": 4
+          },
+          {
+            "tick": 360,
+            "active": 5
+          },
+          {
+            "tick": 480,
+            "active": 4
+          },
+          {
+            "tick": 600,
+            "active": 3
+          },
+          {
+            "tick": 684,
+            "active": 4
+          },
+          {
+            "tick": 720,
+            "active": 7
+          },
+          {
+            "tick": 960,
+            "active": 3
+          },
+          {
+            "tick": 1080,
+            "active": 0
+          },
+          {
+            "tick": 1200,
+            "active": 3
+          },
+          {
+            "tick": 1680,
+            "active": 6
+          },
+          {
+            "tick": 1920,
+            "active": 3
+          },
+          {
+            "tick": 2040,
+            "active": 0
+          }
+        ]
+      },
+      "loudness": {
+        "method": "MIDI_ENERGY_RMS_PROXY",
+        "measuredRmsDbfs": -17.512,
+        "targetRmsDbfs": -20.0,
+        "matchGainDb": -2.488,
+        "masterGainDb": 0.0,
+        "affectsMidi": false
+      }
+    }
+  ],
+  "audioSeparation": {
+    "midiStructuralPreview": "VERIFIED_SOURCE_VIEW",
+    "builtinAudio": "GM_PA800_PROXY_NOT_DEVICE_AUDIO",
+    "externalRenderer": "OPTIONAL_MANIFEST_ONLY_NOT_EXECUTED",
+    "deviceCapture": "COMPARISON_ONLY_REQUIRES_SESSION16_FOR_CERTIFICATION"
+  },
+  "warnings": [
+    "Preview audio is not a Korg Pa800 certification.",
+    "Articulation controls are annotations unless confirmed by physical-device capture."
+  ],
+  "audit": {
+    "sourceNoteCount": 12,
+    "expressionNoteCount": 5,
+    "articulationEventCount": 11,
+    "variantCount": 3,
+    "maximumFullDurationPeak": 7,
+    "allVariantsWithinMidiNoteCeiling": true,
+    "exactTrackUidCoverage": true,
+    "soundBindingCoverage": true,
+    "layerSourceCoverage": true
+  },
+  "readOnly": true,
+  "midiMutationAllowed": false,
+  "finalMidiGenerated": false,
+  "validatorVerdictMutableByPreview": false,
+  "pa800DeviceCertified": false,
+  "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "dna-session27-quality-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "baselineVersion": "3.17",
+  "baselineId": "premium-3.17-98a6d52a09ccc789",
+  "baselineMidiSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f",
+  "evaluationReportHash": "e232880b2fc4aac2731c84e4a30f2195953d97ca4f8d80a3dd376060b3e3ff42",
+  "automatedOverallScore": 4.543,
+  "automatedMetrics": {
+    "harmony": 5.0,
+    "groove": 4.781,
+    "registerCollision": 5.0,
+    "densityCurve": 3.55,
+    "transitionContinuity": 4.25,
+    "repetition": 3.929,
+    "endingResolution": 4.8
+  },
+  "technicalGatePassed": true,
+  "automatedGatePassed": true,
+  "blindTrialCount": 2,
+  "verifiedHumanEvaluatorCount": 0,
+  "softwareTestResponseCount": 1,
+  "premiumPreferenceRate": null,
+  "releaseQualityGatePassed": false,
+  "releaseQualityGateBlockers": [
+    "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+    "HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+    "PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING"
+  ],
+  "regressionVaultClear": true,
+  "proxyAudioCountsAsHumanEvidence": false,
+  "privateKeyExportedToGui": false,
+  "softwareEvaluatorPassed": true,
+  "benchmarkHash": "21e90f4947eaf3a9169dbba1d723c8cd266b5a3f829e97a52c852a53dc07d362"
+}

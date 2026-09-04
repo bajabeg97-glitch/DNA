@@ -1,0 +1,50 @@
+{
+  "schema": "dna-session3-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session3-foundation",
+  "limitations": [
+    "Production Factory/GOLD registries and source MIDI corpus are not present in this workspace.",
+    "Historical GUI/API integration cannot be tested because its source tree is absent."
+  ],
+  "formalSuite": {
+    "testsRun": 16,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session3-before.mid",
+    "output": "artifacts/session3-after.mid",
+    "manifest": "artifacts/session3-manifest.json",
+    "inputNotesInWindow": 2,
+    "outputNotesInWindow": 12,
+    "selectedPattern": "220.010.001",
+    "relationship": "230.001.001",
+    "selectionHash": "f645a3341fb4aebecf2aebae0887e0b44f6090741b2f7e0ffd8ea0c33e70f49c",
+    "inputHash": "10df26f503fd1f9549c55cfc5af04f13c14cd85887e947bf2ac013e784575291",
+    "outputHash": "ca2aabba480d10fe3beeae4e627f0c5b23a56f555b87b5b8d7a364dafaba8d97",
+    "collisionShifts": 1,
+    "collisionDrops": 0,
+    "maxVoiceLeadingLeap": 8
+  },
+  "invariants": {
+    "goldContainsAbsolutePitch": false,
+    "goldAffectsVelocity": false,
+    "goldAffectsProgramChange": false,
+    "factoryProfileForEveryGeneratedNote": true,
+    "registerSafe": true,
+    "confirmedDrumBassRelationship": true,
+    "manualBassProtected": true,
+    "qualityIdentityProtection": true,
+    "programChangePreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true
+  },
+  "status": {
+    "session3Foundation": "SOFTWARE_VALIDATED",
+    "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

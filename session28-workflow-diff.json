@@ -1,0 +1,30 @@
+{
+  "notes": {
+    "baseline": 118,
+    "premium": 179,
+    "added": 61,
+    "removed": 0,
+    "originalNotesChanged": 0
+  },
+  "controllers": {
+    "cc11Added": 16,
+    "protectedControllersChanged": 0
+  },
+  "soundSetup": {
+    "bankProgramChanges": 0,
+    "soundBindingChanges": 0
+  },
+  "manifest": {
+    "artifactHashes": {
+      "songMap": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+      "producerBrief": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+      "arrangementGraph": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8",
+      "candidateSet": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+      "groovePlan": "904b4ba11b23aadf32dd069a3e983736abb3d37ca20e35b36e0a526f0dcd136d",
+      "expressionPlan": "195a3d4eaebe78d7f1c59277924734412c3c036ff600e47d9ef948ea3aa66820",
+      "previewSession": "52f8172d96d4e097c48bcf702d15949094b51f0f7546b44d836dfe7354825545",
+      "evaluationReport": "37da1a88fb03aa82c3c9a7273a6990d0fc69b0cd1b6d958867b94151fe98836e"
+    }
+  },
+  "diffHash": "f00b197123057101874ed5c94d14a485f24a59c2674fd6943289714d88a16b4c"
+}

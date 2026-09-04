@@ -1,0 +1,196 @@
+{
+  "schema": "dna-premium-evaluation-report",
+  "version": "2.0",
+  "source": {
+    "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f",
+    "midiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "validatorIdentityHash": "3f48d363a397518ee38afb69281639c28ad872e164bb6632d020d65d5ab171f6",
+    "songMapHash": "068835ef7d4468145bd2e01838b222ff9b9fd8f3d9208b462b2d32347f9025c6",
+    "baselineReferenceHash": "d56308f757471f94fc3b6911cffe44c5d56566b629a7be019d5074320c21ffd7",
+    "blindPackageHash": "42f0ccba8a90a52aaa51e690990ec93e36ba78d5ea83ff8bcbe378ac8de52dcf",
+    "regressionVaultHash": "10c7f350594bb588512df6272fa168190fca47e3af3488392d1e8bcdb86edcca"
+  },
+  "controls": {
+    "version": "1.0",
+    "premiumVariantId": "C",
+    "minimumMetricScore": 2.5,
+    "minimumAutomatedOverall": 3.5,
+    "minimumHumanOverallMedian": 4.0,
+    "minimumPremiumPreferenceRate": 0.7,
+    "minimumHumanEvaluators": 2,
+    "maximumHarmonyViolationRate": 0.45,
+    "maximumRegisterCollisionRate": 0.12
+  },
+  "technical": {
+    "passed": true,
+    "hardFailures": [],
+    "validatorPassed": true,
+    "midiNotePeak": 7,
+    "midiNoteCeiling": 54
+  },
+  "automated": {
+    "variantId": "C",
+    "metrics": {
+      "harmony": {
+        "score": 5.0,
+        "facts": {
+          "testedNoteCount": 4,
+          "violationCount": 0,
+          "violationRate": 0.0,
+          "unresolvedCount": 0,
+          "examples": []
+        },
+        "explanation": "Chord-tone agreement at each note onset; drums and unresolved cells are excluded.",
+        "weight": 0.2
+      },
+      "groove": {
+        "score": 4.781,
+        "facts": {
+          "noteCount": 17,
+          "gridTicks": 120,
+          "meanAbsoluteDeviationTicks": 4.235,
+          "strongOffGridRate": 0.0
+        },
+        "explanation": "Onset stability relative to a 1/16 grid; expressive offsets remain measurable.",
+        "weight": 0.16
+      },
+      "registerCollision": {
+        "score": 5.0,
+        "facts": {
+          "overlappingCrossRolePairs": 0,
+          "collisionCount": 0,
+          "collisionRate": 0.0,
+          "examples": []
+        },
+        "explanation": "Simultaneous cross-role semitone/unison congestion; same-role voicing is not penalized.",
+        "weight": 0.14
+      },
+      "densityCurve": {
+        "score": 3.55,
+        "facts": {
+          "sections": [
+            {
+              "sectionId": "sec-001",
+              "label": "chorus",
+              "noteCount": 17,
+              "durationTicks": 1920,
+              "normalizedDensity": 1.0,
+              "targetDensity": 1.0
+            },
+            {
+              "sectionId": "sec-002",
+              "label": "ending",
+              "noteCount": 0,
+              "durationTicks": 120,
+              "normalizedDensity": 0.0,
+              "targetDensity": 0.58
+            }
+          ],
+          "meanAbsoluteTargetError": 0.29
+        },
+        "explanation": "Section density shape normalized within the candidate and compared with role-neutral targets.",
+        "weight": 0.14
+      },
+      "transitionContinuity": {
+        "score": 4.25,
+        "facts": {
+          "boundaryCount": 1,
+          "boundaries": [
+            {
+              "tick": 1920,
+              "fromSection": "sec-001",
+              "toSection": "sec-002",
+              "rolesBefore": [
+                "harmony",
+                "unknown"
+              ],
+              "rolesAfter": [],
+              "continuity": 0.0,
+              "activity": 0.5,
+              "boundaryScore": 0.85
+            }
+          ]
+        },
+        "explanation": "Activity and role continuity in one-quarter-note windows around section boundaries.",
+        "weight": 0.14
+      },
+      "repetition": {
+        "score": 3.929,
+        "facts": {
+          "barSignatureCount": 1,
+          "duplicateCount": 0,
+          "duplicateRate": 0.0
+        },
+        "explanation": "Exact role/onset/pitch-class bar repetition; moderate recurrence is treated as identity.",
+        "weight": 0.08
+      },
+      "endingResolution": {
+        "score": 4.8,
+        "facts": {
+          "lastNoteUid": "preview-src-c9d4533113ff2319e401",
+          "pitch": 57,
+          "pitchClass": 9,
+          "keyRoot": 4,
+          "endingChord": "Am",
+          "resolutionReason": "ENDING_CHORD_ROOT"
+        },
+        "explanation": "Final pitched note resolution against the ending chord and detected key tonic.",
+        "weight": 0.14
+      }
+    },
+    "categoryScores": {
+      "drum": 4.165,
+      "bass": 4.89,
+      "guitar": 5.0,
+      "accompaniment": 4.275,
+      "solo": 4.9,
+      "transition": 4.525,
+      "overall": 4.543
+    },
+    "overallScore": 4.543,
+    "method": "DETERMINISTIC_MIDI_STRUCTURE_ONLY",
+    "humanListeningClaim": false,
+    "passed": true,
+    "lowMetrics": []
+  },
+  "listening": {
+    "performed": false,
+    "verifiedHumanEvaluatorCount": 0,
+    "softwareTestResponseCount": 1,
+    "trialDecisionCount": 0,
+    "premiumPreferredCount": 0,
+    "baselinePreferredCount": 0,
+    "tieCount": 0,
+    "premiumPreferenceRate": null,
+    "categoryMedians": {
+      "drum": null,
+      "bass": null,
+      "guitar": null,
+      "accompaniment": null,
+      "solo": null,
+      "transition": null,
+      "overall": null
+    },
+    "humanEvidenceOnly": true
+  },
+  "regression": {
+    "openBaselineBetterCases": [],
+    "passed": true
+  },
+  "releaseQualityGate": {
+    "passed": false,
+    "blockers": [
+      "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+      "HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+      "PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING"
+    ],
+    "requiresRealHumanEvidence": true,
+    "proxyAudioCanSatisfyHumanGate": false
+  },
+  "status": "QUALITY_GATE_BLOCKED",
+  "readOnly": true,
+  "midiMutationAllowed": false,
+  "finalMidiGenerated": false,
+  "pa800DeviceCertified": false,
+  "evaluationReportHash": "e232880b2fc4aac2731c84e4a30f2195953d97ca4f8d80a3dd376060b3e3ff42"
+}

@@ -1,0 +1,387 @@
+{
+  "schema": "dna-master-prompt-compliance",
+  "version": "2.1",
+  "date": "2026-09-04",
+  "result": "SOFTWARE_VALIDATED_SCOPE",
+  "summary": {
+    "mandatoryImplemented": 22,
+    "mandatoryTotal": 22,
+    "testsPassed": 43,
+    "testsTotal": 43,
+    "physicalPa800": "WAITING_FOR_DEVICE",
+    "session14DevicePreflight": "12/12 PASS",
+    "session15PremiumBaseline": "20/20 PASS",
+    "aiPremiumArranger": "PARTIAL_IMPLEMENTED_TARGETED_TESTED",
+    "session18TrackIdentitySoloSafety": "28/28 PASS",
+    "session17ProductionAdapter": "35/35 PASS",
+    "productionAdapterStatus": "FOUNDATION_VALIDATED / PRODUCTION_PARTIAL",
+    "session19SongUnderstanding": "36/36 PASS",
+    "activeSoftwareBaseline": "4.22.0-clean-package-truth-audit",
+    "session20AiProducerBrief": "52/52 PASS",
+    "session21ArrangementGraph": "62/62 PASS",
+    "session22CandidateVariationEngine": "68/68 PASS",
+    "aiArranger": "ALPHA",
+    "session23GroovePolyphony": "70/70 PASS",
+    "deviceVoiceCost": "UNCONFIRMED",
+    "session24SoloExpression": "80/80 PASS",
+    "productionOrnamentEvidence": "MISSING",
+    "session25ArticulationMaps": "88/88 PASS",
+    "productionArticulationCapture": "MISSING",
+    "session26PremiumPreview": "96/96 PASS",
+    "previewAudio": "PROXY_AND_COMPARISON_ONLY",
+    "session27MusicQualityEvaluator": "104/104 PASS",
+    "automatedMusicQuality": "4.543/5 PASS",
+    "releaseQualityGate": "BLOCKED_HUMAN_LISTENING",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "session28PremiumProducerWorkflow": "112/112 PASS",
+    "guidedReferenceTask": "COMPLETE",
+    "finalMidiExport": "BLOCKED",
+    "session29PersonalProducerProfile": "120/120 PASS",
+    "personalRanking": "SOFT_ONLY",
+    "profileStorage": "LOCAL_ONLY",
+    "session30ReleaseReadiness": "128/128 PASS",
+    "softwareReleaseCandidate": "READY_PREVIEW_ONLY",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "session31AutomaticTrackAnalysis": "136/136 PASS",
+    "automaticTrackInstrumentAnalysis": "SOFTWARE_VALIDATED_READ_ONLY",
+    "fullApplicationOptimization": "ROADMAP_ACTIVE",
+    "evidenceAuthorityResolver": "SOFTWARE_VALIDATED_READ_ONLY",
+    "recoveryPremiumAnalysis": "2900/2900 PASS",
+    "session31BEvidenceAuthority": "144/144 PASS",
+    "trackPlanFullOptimizer": "SOFTWARE_VALIDATED_READ_ONLY",
+    "recoveryPremiumAnalysisEvidence": "2900/2900 PASS",
+    "session32TrackPlanFullOptimizer": "152/152 PASS",
+    "evidenceDrivenRenderer": "NEXT",
+    "recoveryPremiumTrackPlan": "2900/2900 PASS",
+    "session33ArrangementRenderer": "160/160 PASS",
+    "arrangementRenderer": "SOFTWARE_VALIDATED_PREVIEW_MIDI",
+    "globalCoherence": "NEXT",
+    "recoveryPremiumRenderer": "2900/2900 PASS",
+    "session34GlobalCoherence": "168/168 PASS",
+    "session35EndToEndArranger": "176/176 PASS",
+    "songToStyleWorkflow": "SOFTWARE_VALIDATED_WORKFLOW_PREVIEW",
+    "recoveryPremiumWorkflow": "2900/2900 PASS",
+    "session38DeviceLab": "200/200 PASS",
+    "deviceProfile2": "SOFTWARE_VALIDATED_INTAKE / EXTERNAL_CAPTURE_PENDING",
+    "finalCertifiedMidiExport": "BLOCKED",
+    "recoveryPremiumDeviceIntake": "2900/2900 PASS",
+    "targetedAiRegression": "36/36 PASS",
+    "fullReleaseSuite": "UNVERIFIED_TIMEOUT",
+    "packaging": "CLEAN_PACKAGE_IMPORT_PASS"
+  },
+  "workspaceRecovery": {
+    "date": "2026-09-02",
+    "legacySourceTreePresent": false,
+    "legacyReportStatus": "ARCHIVAL_43_OF_43_PASS",
+    "session2Foundation": "SOFTWARE_VALIDATED_12_OF_12_PASS",
+    "session2ProductionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "session3Foundation": "SOFTWARE_VALIDATED_16_OF_16_PASS",
+    "session3ProductionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "session4Foundation": "SOFTWARE_VALIDATED_19_OF_19_PASS",
+    "session4ProductionFactoryGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "session4ProductionControlMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "session5Foundation": "SOFTWARE_VALIDATED_27_OF_27_PASS",
+    "session5ProductionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "session5GuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE",
+    "session6Foundation": "SOFTWARE_VALIDATED_26_OF_26_PASS",
+    "session6ProductionRxMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "session6GuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE",
+    "session7Foundation": "SOFTWARE_VALIDATED_30_OF_30_PASS",
+    "session7ProductionDncMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "session7GuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE",
+    "recoveryTestsPassed": 130,
+    "recoveryTestsTotal": 130,
+    "evidence": [
+      "data/session2-test-report.json",
+      "data/session3-test-report.json",
+      "data/session4-test-report.json",
+      "data/session5-test-report.json",
+      "data/session6-test-report.json",
+      "data/session7-test-report.json"
+    ]
+  },
+  "invariants": {
+    "goldAffectsDynamics": false,
+    "analysisVelocityUsed": false,
+    "sameSeedSameOutput": true,
+    "invalidMidiExported": false,
+    "coreWorksOffline": true,
+    "goldAffectsProgramChange": false,
+    "goldAffectsMixer": false,
+    "goldControlsRhythmGuitar": false,
+    "soloTimingQuantized": false,
+    "originalSoloPreserved": true,
+    "goldAffectsSoloVelocity": false,
+    "echoRecursive": false,
+    "delayUsesFirstFreeTrack": true,
+    "delayOnSourceTrack": false,
+    "expressionFactoryBounded": true,
+    "rxTriggersGuessed": false,
+    "rxExactSoundRequired": true,
+    "rxSyntheticMapRequiresOptIn": true,
+    "dncTriggersGuessed": false,
+    "dncProprietaryEventsGenerated": false,
+    "dncExactSoundRoleRangeRequired": true,
+    "phasePlanBeforeMutation": true,
+    "stableTrackUid": true,
+    "timeScopedSoundBinding": true,
+    "originalSoloVerifiedAfterEveryStage": true,
+    "sharedChannelRequiresApproval": true,
+    "productionSoundBindingGate": true,
+    "productionStageRollback": true,
+    "goldGuitarAuthority": false,
+    "unconfirmedProductionArticulationsBlocked": true
+  },
+  "mandatory": [
+    {
+      "id": 1,
+      "name": "Factory/Gold Separation",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 2,
+      "name": "Original Song Velocity Isolation",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 3,
+      "name": "Factory Velocity Profiles",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 4,
+      "name": "Drum Profiles Per Element",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 5,
+      "name": "Intensity To Velocity",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 6,
+      "name": "Professional MIDI Optimizer",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 7,
+      "name": "Factory Dynamics Optimization",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 8,
+      "name": "Note Cleanup",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 9,
+      "name": "Controller Cleanup",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 10,
+      "name": "Timing Quantize",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 11,
+      "name": "Deterministic Engine",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 12,
+      "name": "Seven-Criteria Pattern Selection",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 13,
+      "name": "Gold Performance Logic",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 14,
+      "name": "SMF0 Engine",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 15,
+      "name": "Marker Package",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 16,
+      "name": "MIDI Writer",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 17,
+      "name": "Hard Validator",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 18,
+      "name": "Negative Validation",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 19,
+      "name": "Audit",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 20,
+      "name": "Offline Core",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 21,
+      "name": "AI Agent Safety",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 22,
+      "name": "Formal Test Suite",
+      "status": "IMPLEMENTED"
+    }
+  ],
+  "optional": [
+    {
+      "id": 23,
+      "name": "Advanced Voice Leading",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 24,
+      "name": "Advanced Register Control",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 25,
+      "name": "Intelligent Fill Transitions",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 26,
+      "name": "Advanced Trill Generation",
+      "status": "FOUNDATION_VALIDATED_PRODUCTION_BLOCKED"
+    },
+    {
+      "id": 27,
+      "name": "RX Advanced Engine",
+      "status": "FOUNDATION_VALIDATED_PRODUCTION_BLOCKED"
+    },
+    {
+      "id": 28,
+      "name": "DNC Automation",
+      "status": "FOUNDATION_VALIDATED_PRODUCTION_BLOCKED"
+    },
+    {
+      "id": 29,
+      "name": "Gold Advanced Expression",
+      "status": "FOUNDATION_VALIDATED_PRODUCTION_BLOCKED"
+    },
+    {
+      "id": 30,
+      "name": "Professional GUI",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 31,
+      "name": "Playback",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 32,
+      "name": "Undo/Redo",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 33,
+      "name": "Auto Save",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 34,
+      "name": "Agent Orchestration",
+      "status": "PARTIALLY_IMPLEMENTED"
+    },
+    {
+      "id": 35,
+      "name": "Cloud/API Integration",
+      "status": "OPTIONAL"
+    },
+    {
+      "id": 36,
+      "name": "Windows Packaging",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 37,
+      "name": "Advanced Reports",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "id": 38,
+      "name": "Physical Pa800 Certification",
+      "status": "WAITING_FOR_DEVICE"
+    },
+    {
+      "id": 39,
+      "name": "Chord Timeline and Phase Arranger",
+      "status": "IMPLEMENTED"
+    }
+  ],
+  "evidence": [
+    "data/master-prompt-test-report.json",
+    "data/dna-build-report.json",
+    "data/pa800-validator-test-report.json",
+    "data/midi-optimizer-test-report.json",
+    "data/release-check-report.json",
+    "data/phase5-test-report.json",
+    "data/session2-test-report.json",
+    "data/session3-test-report.json",
+    "data/session4-test-report.json",
+    "data/session5-test-report.json",
+    "data/session6-test-report.json",
+    "data/session7-test-report.json",
+    "data/recovery-release-report.json",
+    "data/session14-preflight-report.json",
+    "data/premium-baseline.json",
+    "data/premium-feature-matrix.json",
+    "data/session15-test-report.json",
+    "premium/schemas/catalog.json",
+    "data/session18-test-report.json",
+    "data/session18-schema-catalog.json",
+    "artifacts/session18-mapping-manifest.json",
+    "data/session17-test-report.json",
+    "data/session17-production-registry-catalog.json",
+    "data/session17-real-corpus-manifest.json",
+    "artifacts/session17-production-adapter-manifest.json",
+    "data/session31-test-report.json",
+    "data/session31-benchmark-report.json",
+    "data/session31-schema-catalog.json",
+    "artifacts/session31-track-instrument-analysis.json",
+    "artifacts/session31-application-optimization-baseline.json",
+    "data/session31b-test-report.json",
+    "data/session31b-benchmark-report.json",
+    "data/session31b-schema-catalog.json",
+    "artifacts/session31b-evidence-ledger.json",
+    "artifacts/session31b-evidence-coverage-report.json",
+    "data/session32-test-report.json",
+    "data/session32-benchmark-report.json",
+    "data/session32-schema-catalog.json",
+    "artifacts/session32-track-plan.json",
+    "artifacts/session32-optimizer-dry-run.json",
+    "data/session33-test-report.json",
+    "data/session33-benchmark-report.json",
+    "data/session33-schema-catalog.json",
+    "artifacts/session33-render-manifest.json",
+    "artifacts/session33-render-verification.json",
+    "artifacts/session33-publish/session33-arranger-preview_OPT.mid",
+    {
+      "id": "BASELINE_TRUTH_4_22",
+      "path": "data/baseline-truth-4.22.json",
+      "status": "CURRENT"
+    }
+  ]
+}

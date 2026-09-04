@@ -1,0 +1,190 @@
+{
+  "schema": "dna-premium-articulation-plan",
+  "version": "2.0",
+  "source": {
+    "inputMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "groovePlanHash": "0f437631eb9c1939fddf7f164b108abcd0276fef07ebe55bcced224aa546b3aa",
+    "expressionPlanHash": "06e2c6a4b716efb2821815c72105fac5dd81bbc9d35414ca329eef418ad70879",
+    "catalogHash": "e1cb74dc0bb552fb18f1bb1a7048d0207bdf35504814713ed7686c15a7eed12a"
+  },
+  "controls": {
+    "version": "1.0",
+    "mapId": "250.010.001",
+    "trackUid": "trk-91348a7bd43f05141f5f",
+    "trackNumber": 2,
+    "channelNumber": 12,
+    "startTick": 0,
+    "endTick": 2640,
+    "role": "guitar",
+    "requestedArticulations": [
+      "mute",
+      "stop",
+      "body_tap"
+    ],
+    "seed": 2525,
+    "allowSharedChannel": false,
+    "productionMode": false,
+    "maxGeneratedEvents": 64
+  },
+  "map": {
+    "mapId": "250.010.001",
+    "engine": "GUITAR",
+    "status": "CONFIRMED",
+    "authority": "SOFTWARE_TEST_ONLY",
+    "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32",
+    "exactSound": {
+      "bankMsb": 121,
+      "bankLsb": 0,
+      "program": 24
+    },
+    "productionEligible": false
+  },
+  "soundBinding": {
+    "schema": "dna-premium-sound-binding",
+    "version": "2.0",
+    "trackUid": "trk-91348a7bd43f05141f5f",
+    "trackIndex": 1,
+    "trackNumber": 2,
+    "channelIndex": 11,
+    "channelNumber": 12,
+    "startTick": 0,
+    "endTick": 2640,
+    "bankMsb": 121,
+    "bankLsb": 0,
+    "program": 24,
+    "complete": true,
+    "status": "EXACT_MAP_MATCH"
+  },
+  "sourceNotes": [
+    {
+      "sourceNoteUid": "srcnote-a6fcc8426d821708990de270",
+      "onsetTick": 240,
+      "durationTick": 720,
+      "pitch": 52,
+      "velocity": 72,
+      "immutable": true
+    },
+    {
+      "sourceNoteUid": "srcnote-32972ba0fe7bd9e8a2b21c38",
+      "onsetTick": 720,
+      "durationTick": 360,
+      "pitch": 55,
+      "velocity": 73,
+      "immutable": true
+    },
+    {
+      "sourceNoteUid": "srcnote-1210d3426037325ea67010c9",
+      "onsetTick": 1200,
+      "durationTick": 720,
+      "pitch": 60,
+      "velocity": 74,
+      "immutable": true
+    },
+    {
+      "sourceNoteUid": "srcnote-45f9d8cd2c4c6a6883f259b6",
+      "onsetTick": 1680,
+      "durationTick": 360,
+      "pitch": 57,
+      "velocity": 75,
+      "immutable": true
+    }
+  ],
+  "events": [
+    {
+      "eventId": "art-3cf7518cd331ee886521ffd5",
+      "mapId": "250.010.001",
+      "articulationId": "250.100.001",
+      "articulation": "mute",
+      "engine": "GUITAR",
+      "status": "CONFIRMED",
+      "eventType": "KEYSWITCH",
+      "trackUid": "trk-91348a7bd43f05141f5f",
+      "trackNumber": 2,
+      "channelNumber": 12,
+      "tick": 1680,
+      "noteOffTick": 1740,
+      "number": 2,
+      "value": null,
+      "sourceNoteUid": "srcnote-45f9d8cd2c4c6a6883f259b6",
+      "sourceEvidenceId": "250.900.001",
+      "reasonCode": "EXACT_GUITAR_PHRASE_END",
+      "productionEligible": false,
+      "eventHash": "d885937817d274f2559b316c35e9951be6ba54d01b65f9307dedc960ded83231"
+    },
+    {
+      "eventId": "art-11ad3ebc12ab150836597178",
+      "mapId": "250.010.001",
+      "articulationId": "250.100.002",
+      "articulation": "stop",
+      "engine": "GUITAR",
+      "status": "CONFIRMED",
+      "eventType": "KEYSWITCH",
+      "trackUid": "trk-91348a7bd43f05141f5f",
+      "trackNumber": 2,
+      "channelNumber": 12,
+      "tick": 960,
+      "noteOffTick": 1020,
+      "number": 3,
+      "value": null,
+      "sourceNoteUid": "srcnote-a6fcc8426d821708990de270",
+      "sourceEvidenceId": "250.900.002",
+      "reasonCode": "EXACT_GUITAR_LONG_NOTE",
+      "productionEligible": false,
+      "eventHash": "6883c36e87cc52610adc0ba55ddbea1a10a415dbe586aa4564e89fb41438d38d"
+    },
+    {
+      "eventId": "art-a50389f6a6d46b3790a17c6f",
+      "mapId": "250.010.001",
+      "articulationId": "250.100.002",
+      "articulation": "stop",
+      "engine": "GUITAR",
+      "status": "CONFIRMED",
+      "eventType": "KEYSWITCH",
+      "trackUid": "trk-91348a7bd43f05141f5f",
+      "trackNumber": 2,
+      "channelNumber": 12,
+      "tick": 1920,
+      "noteOffTick": 1980,
+      "number": 3,
+      "value": null,
+      "sourceNoteUid": "srcnote-1210d3426037325ea67010c9",
+      "sourceEvidenceId": "250.900.002",
+      "reasonCode": "EXACT_GUITAR_LONG_NOTE",
+      "productionEligible": false,
+      "eventHash": "0264a0dae346ead5d1399fedb9ad202a372aa272c3f3d41675400ca5fd4d581a"
+    }
+  ],
+  "audit": {
+    "sourceNoteCount": 4,
+    "requestedArticulationCount": 3,
+    "generatedEventCount": 3,
+    "keyswitchEventCount": 3,
+    "ccEventCount": 0,
+    "channelPressureEventCount": 0,
+    "keyswitchNoteOffCount": 3,
+    "baselinePeak": 18,
+    "articulationPeak": 1,
+    "estimatedPeak": 19,
+    "softwareMidiNoteCeiling": 54,
+    "withinPolyphonyCeiling": true,
+    "skipped": {
+      "STATUS_UNKNOWN": 1
+    },
+    "duplicateEventCount": 0
+  },
+  "productionBlocks": [
+    {
+      "code": "SOFTWARE_TEST_FIXTURE_CANNOT_AUTHORIZE_PA800_PRODUCTION",
+      "reason": "Articulation trigger map is not backed by operator-approved physical Pa800 capture."
+    },
+    {
+      "code": "UNCONFIRMED_REQUESTED_ARTICULATION",
+      "reason": "UNKNOWN/BLOCKED articulations remain KEEP/MANUAL_REVIEW and emit no trigger."
+    }
+  ],
+  "readyForPreview": true,
+  "readyForProductionRender": false,
+  "finalMidiGenerated": false,
+  "midiMutationAllowed": false,
+  "articulationPlanHash": "52b59bc484b3dcb8029f28168477b02a223da35407a4daa97167265d85fbe0ac"
+}

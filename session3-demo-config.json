@@ -1,0 +1,25 @@
+{
+  "track_index": 3,
+  "channel": 8,
+  "role": "bass",
+  "section": "variation",
+  "start_tick": 1920,
+  "end_tick": 5760,
+  "seed": 803,
+  "intensity": 50,
+  "profile_id": "120.008.001",
+  "meter": "4/4",
+  "desired_notes_per_quarter": 1.5,
+  "selected_drum_pattern_id": "210.010.001",
+  "require_relationship": true,
+  "manual_bass": false,
+  "existing_quality": 0.2,
+  "protect_existing_above": 0.8,
+  "collision_channels": [12],
+  "collision_distance": 0,
+  "collision_budget": 2,
+  "chords": [
+    {"start_tick": 1920, "end_tick": 3840, "root_pc": 0, "quality": "major", "confidence": 0.96},
+    {"start_tick": 3840, "end_tick": 5760, "root_pc": 9, "quality": "minor", "confidence": 0.94}
+  ]
+}

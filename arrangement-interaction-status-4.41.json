@@ -1,0 +1,20 @@
+{
+  "factoryVelocityAuthority": "FACTORY_ONLY",
+  "hardCoreOverride": false,
+  "policy": "SOFT_MUSICAL_EVIDENCE_ONLY",
+  "roles": [
+    "bass",
+    "brass",
+    "drums",
+    "echo",
+    "pad",
+    "percussion",
+    "power-riff",
+    "rhythm-guitar",
+    "solo",
+    "strings",
+    "terca"
+  ],
+  "schema": "dna-arrangement-interaction-status",
+  "version": "4.41.0"
+}

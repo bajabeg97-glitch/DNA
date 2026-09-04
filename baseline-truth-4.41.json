@@ -1,0 +1,13 @@
+{
+  "version": "4.41.0",
+  "status": "SOFTWARE_VALIDATED_WITH_CORPUS_DEPENDENT_GATES_PENDING",
+  "claims": {
+    "arrangementInteraction": "implemented and integrated into unified pipeline and Performance DNA soft ranking",
+    "hardCoreAuthority": "unchanged; interaction cannot override CoreInvariantGuard or device evidence",
+    "velocityAuthority": "FACTORY_ONLY",
+    "deviceCertification": "PENDING_PHYSICAL_PA800",
+    "fullSession17CorpusRegression": "NOT_RUN_FROM_CLEAN_RELEASE_BECAUSE prism-uploads/DNA.zip IS NOT DISTRIBUTED IN RELEASE ZIP"
+  },
+  "selfContainedRegression": {"passed": 41, "failed": 0},
+  "truthRule": "Missing external corpus is not reported as PASS or FAIL."
+}

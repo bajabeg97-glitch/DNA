@@ -1,0 +1,267 @@
+{
+  "schema": "dna-song-to-style-project",
+  "version": "1.0",
+  "projectId": "project-eae49f9d4af7e37b4eb1",
+  "source": {
+    "midiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+    "fileName": "song.mid",
+    "originalOverwritten": false
+  },
+  "controls": {
+    "selectedVariantId": "C",
+    "lockedMarkers": [],
+    "projectSeed": 3535,
+    "previewTier": "PREVIEW_ONLY"
+  },
+  "stages": [
+    {
+      "stageId": "IMPORT",
+      "index": 0,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "sourceMidiSha256",
+      "artifactHash": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "7c446800b23aa9cf62b1ee5588baa1b3b663ff49bc4cf5f6c1ede4cd2fdcf36f"
+    },
+    {
+      "stageId": "ANALYZE",
+      "index": 1,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "trackAnalysisHash",
+      "artifactHash": "e58226171083a13fcb52fb096f3a193b5c2a8c91d8f66bd4a8a8f08ba82ebecd",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "97e093f5c31a0b5de782a6b49e951976b03462135f4908532d303e90ca64b600"
+    },
+    {
+      "stageId": "BRIEF",
+      "index": 2,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "producerBriefHash",
+      "artifactHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "4dfdf32b76d875b17b4184f98f0bdcd624971f30a490f1cff48c7a3047b2671e"
+    },
+    {
+      "stageId": "PLAN",
+      "index": 3,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "arrangementGraphHash",
+      "artifactHash": "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "a3cf859c9e10a12b654332e64813a0bd5b47d7e4f9a7093bafff3cc4b634bec1"
+    },
+    {
+      "stageId": "SELECT",
+      "index": 4,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "candidateSetHash",
+      "artifactHash": "aaca5445354427a983bff8a4969c1869ebc5b4c3dc657430360730ccb7198629",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "d9df2f0ab36a5e2e82b1b7eb66d3344168485d675e14da490a32ab4784f41f19"
+    },
+    {
+      "stageId": "RENDER",
+      "index": 5,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "renderManifestHash",
+      "artifactHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "b6b92815812b01352853c39448ecd0c6d3d7464a4619e33632136c8ed10aeaa6"
+    },
+    {
+      "stageId": "COHERE",
+      "index": 6,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "coherencePlanHash",
+      "artifactHash": "e135f1ca1faff7f7bed7d395373c13011cab293be61ed348f3c0d87712b3e87d",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "3cd905d65d9be093c570ee0ff9d4e0da3e2237f6c28e5978e20ca9d12a85f83d"
+    },
+    {
+      "stageId": "VERIFY",
+      "index": 7,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "verificationHash",
+      "artifactHash": "f5aa363c85839ce22e6e450e40db16da80308b23da7adf9739a6028aa6d235a9",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "0ebb0e51830cd363e93ba3cc8bbaa11445297bcf6244f9d52ce42dac396690c6"
+    },
+    {
+      "stageId": "PREVIEW",
+      "index": 8,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "previewMidiSha256",
+      "artifactHash": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": true,
+      "stageHash": "ba598a6dcd8ede3f69f4e8354af9a26369c0c36a03a3ab496878a062c2e96b3c"
+    },
+    {
+      "stageId": "PUBLISH",
+      "index": 9,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "previewPublicationHash",
+      "artifactHash": "c2f8601758303b110df8970fb3a95568f428c5600629eb10658d00ee10451bf5",
+      "invalidatedBy": null,
+      "error": null,
+      "resumable": true,
+      "cancellable": false,
+      "stageHash": "1d446ec857a6fce2cd918c62938fec83b95a8164bb3174ba402afdf64dbc0a8e"
+    }
+  ],
+  "hashChain": {
+    "sourceMidiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+    "trackAnalysisHash": "e58226171083a13fcb52fb096f3a193b5c2a8c91d8f66bd4a8a8f08ba82ebecd",
+    "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+    "arrangementGraphHash": "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+    "candidateSetHash": "aaca5445354427a983bff8a4969c1869ebc5b4c3dc657430360730ccb7198629",
+    "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+    "coherencePlanHash": "e135f1ca1faff7f7bed7d395373c13011cab293be61ed348f3c0d87712b3e87d",
+    "verificationHash": "f5aa363c85839ce22e6e450e40db16da80308b23da7adf9739a6028aa6d235a9",
+    "previewMidiSha256": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241",
+    "previewPublicationHash": "c2f8601758303b110df8970fb3a95568f428c5600629eb10658d00ee10451bf5",
+    "chainHash": "db49a81a4302262f7a8af2c6b1ad9f8ec1a31fdaa36aa02e738c203903f743a2"
+  },
+  "workflow": {
+    "currentStage": "PUBLISH",
+    "completedStages": [
+      "IMPORT",
+      "ANALYZE",
+      "BRIEF",
+      "PLAN",
+      "SELECT",
+      "RENDER",
+      "COHERE",
+      "VERIFY",
+      "PREVIEW",
+      "PUBLISH"
+    ],
+    "progressPercent": 100,
+    "standardTaskWithoutTerminal": true,
+    "downstreamOnlyInvalidation": true,
+    "batchIsolation": true
+  },
+  "history": {
+    "entries": [],
+    "cursor": 0,
+    "undoAvailable": false,
+    "redoAvailable": false
+  },
+  "recovery": {
+    "lastConfirmedStage": "PUBLISH",
+    "lastConfirmedStageHash": "1d446ec857a6fce2cd918c62938fec83b95a8164bb3174ba402afdf64dbc0a8e",
+    "checkpointAvailable": true
+  },
+  "publication": {
+    "selectedMidiSha256": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241",
+    "previewDownloadAllowed": true,
+    "finalCertifiedExportAllowed": false,
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "humanListening": "PENDING_0_OF_2",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  },
+  "errors": [
+    {
+      "code": "E2E_SOURCE_HASH",
+      "message": "Source MIDI does not match the evidence chain",
+      "recoveryAction": "REIMPORT_SOURCE",
+      "stage": "IMPORT",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_RENDER_HASH",
+      "message": "Rendered MIDI or manifest hash is invalid",
+      "recoveryAction": "RERUN_RENDER",
+      "stage": "RENDER",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_COHERENCE_HASH",
+      "message": "Coherence plan or MIDI variants are invalid",
+      "recoveryAction": "RERUN_COHERENCE",
+      "stage": "COHERE",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_UNKNOWN_STAGE",
+      "message": "Requested workflow stage does not exist",
+      "recoveryAction": "OPEN_WORKFLOW_OVERVIEW",
+      "stage": "VERIFY",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_LOCKED_FRAGMENT",
+      "message": "Partial regeneration targets a locked marker",
+      "recoveryAction": "UNLOCK_OR_KEEP",
+      "stage": "SELECT",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_FRAGMENT_SCOPE",
+      "message": "Partial regeneration has no authorized differing fragment",
+      "recoveryAction": "CHOOSE_OTHER_VARIANT",
+      "stage": "COHERE",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_CHECKPOINT_HASH",
+      "message": "Checkpoint does not belong to this project",
+      "recoveryAction": "LOAD_MATCHING_PROJECT",
+      "stage": "VERIFY",
+      "failClosed": true
+    },
+    {
+      "code": "E2E_ACTION",
+      "message": "Project action is invalid",
+      "recoveryAction": "REVIEW_ACTION",
+      "stage": "PREVIEW",
+      "failClosed": true
+    }
+  ],
+  "safety": {
+    "sourceMidiMutated": false,
+    "sourceMidiOverwritten": false,
+    "goldAffectsDynamics": false,
+    "approximateSoundBinding": false,
+    "validatorBypassAllowed": false,
+    "deviceGateBypassAllowed": false,
+    "finalCertifiedMidiExportAllowed": false
+  },
+  "projectHash": "fcaa2eead353a05a2713d8bd566e62135782cb067f7f5399ccda1c117b0dccaa"
+}

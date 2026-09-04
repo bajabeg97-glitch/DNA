@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/blind-listening-package-v1.schema.json",
+  "title": "DNA Premium Blind Listening Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "benchmarkId", "baselineReference", "sourceMidiSha256", "previewSessionHash", "seed", "blind", "locked", "trialCount", "trials", "privateKeyHash", "authority", "packageHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-blind-listening-package"},
+    "version": {"const": "1.0"},
+    "benchmarkId": {"type": "string", "pattern": "^blind-[0-9a-f]{20}$"},
+    "baselineReference": {"type": "object"},
+    "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "previewSessionHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "seed": {"type": "integer", "minimum": 0},
+    "blind": {"const": true}, "locked": {"const": true},
+    "trialCount": {"type": "integer", "minimum": 1},
+    "trials": {"type": "array", "minItems": 1},
+    "privateKeyHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "authority": {"const": "PROTOCOL_READY_PROXY_AUDIO_NOT_HUMAN_RESULT"},
+    "packageHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-public-trials-must-not-reveal-variant": true
+}

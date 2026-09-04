@@ -1,0 +1,126 @@
+{
+  "schema": "dna-premium-producer-brief",
+  "version": "2.0",
+  "sourceText": "Napravi življi pop-folk Style, sa suzdržanom strofom i punim refrenom, sa gitarom i bez dodatnog sola.",
+  "sourceTextSha256": "04aba2a3b781f431a83d246b55bcfc0afcf3ca7777d152a05058915cb6c83c24",
+  "language": "hr",
+  "intent": {
+    "genre": "pop-folk",
+    "energyCurve": [
+      {
+        "section": "intro",
+        "value": 43
+      },
+      {
+        "section": "verse",
+        "value": 35
+      },
+      {
+        "section": "chorus",
+        "value": 85
+      },
+      {
+        "section": "bridge",
+        "value": 68
+      },
+      {
+        "section": "ending",
+        "value": 53
+      }
+    ],
+    "density": "balanced",
+    "syncopation": "medium",
+    "space": "balanced",
+    "transitions": "balanced",
+    "soloTreatment": "no-new-layers",
+    "requiredRoles": [
+      "guitar"
+    ],
+    "forbiddenRoles": [],
+    "lockedElements": [],
+    "transformationTolerance": 50
+  },
+  "evidence": [
+    {
+      "field": "genre",
+      "value": "pop-folk",
+      "matchedText": "pop-folk",
+      "confidence": 0.98,
+      "source": "local-rule"
+    },
+    {
+      "field": "energyCurve",
+      "value": "overall:+8",
+      "matchedText": "zivlji",
+      "confidence": 0.88,
+      "source": "local-rule"
+    },
+    {
+      "field": "energyCurve.verse",
+      "value": 35,
+      "matchedText": "suzdrzanom strofom",
+      "confidence": 0.96,
+      "source": "local-rule"
+    },
+    {
+      "field": "energyCurve.chorus",
+      "value": 85,
+      "matchedText": "punim refrenom",
+      "confidence": 0.96,
+      "source": "local-rule"
+    },
+    {
+      "field": "requiredRoles",
+      "value": "guitar",
+      "matchedText": "sa gitarom",
+      "confidence": 0.96,
+      "source": "local-rule"
+    },
+    {
+      "field": "soloTreatment",
+      "value": "no-new-layers",
+      "matchedText": "bez dodatnog sola",
+      "confidence": 0.96,
+      "source": "local-rule"
+    }
+  ],
+  "conflicts": [],
+  "approval": {
+    "required": false,
+    "status": "NOT_REQUIRED",
+    "approvedBy": null,
+    "resolutions": {}
+  },
+  "understanding": {
+    "title": "AI je razumio",
+    "summary": "pop-folk / balanced / medium syncopation; balanced transitions; solo=no-new-layers",
+    "assumptions": [
+      "density defaulted to balanced",
+      "syncopation defaulted to medium",
+      "space defaulted to balanced",
+      "transitions defaulted to balanced"
+    ],
+    "warnings": []
+  },
+  "adapter": {
+    "mode": "local",
+    "cloudRequested": false,
+    "explicitConsent": false,
+    "metadataOnly": true,
+    "responseAccepted": false,
+    "fallbackReason": "cloud-disabled"
+  },
+  "readyForPlanning": true,
+  "safety": {
+    "readOnly": true,
+    "midiBytesAccepted": false,
+    "midiWriterAvailable": false,
+    "pathWriteAllowed": false,
+    "bankProgramAuthority": false,
+    "validatorBypassAllowed": false,
+    "factoryDynamicsAuthority": true,
+    "goldDynamicsAuthority": false,
+    "originalSoloMutationAllowed": false
+  },
+  "briefHash": "adaa0db6eaf45874bd015cda80af5b59853aed0323d84e0ab1397e5029cbf872"
+}

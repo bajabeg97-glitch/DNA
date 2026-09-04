@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/evaluation-report-v2.schema.json",
+  "title": "DNA Premium EvaluationReport 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "controls", "technical", "automated", "listening", "regression", "releaseQualityGate", "status", "readOnly", "midiMutationAllowed", "finalMidiGenerated", "pa800DeviceCertified", "evaluationReportHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-evaluation-report"},
+    "version": {"const": "2.0"},
+    "source": {"type": "object"},
+    "controls": {"type": "object"},
+    "technical": {
+      "type": "object", "additionalProperties": false,
+      "required": ["passed", "hardFailures", "validatorPassed", "midiNotePeak", "midiNoteCeiling"],
+      "properties": {
+        "passed": {"type": "boolean"}, "hardFailures": {"type": "array"},
+        "validatorPassed": {"const": true}, "midiNotePeak": {"type": "integer", "minimum": 0},
+        "midiNoteCeiling": {"const": 54}
+      }
+    },
+    "automated": {"type": "object"},
+    "listening": {"type": "object"},
+    "regression": {"type": "object"},
+    "releaseQualityGate": {
+      "type": "object", "additionalProperties": false,
+      "required": ["passed", "blockers", "requiresRealHumanEvidence", "proxyAudioCanSatisfyHumanGate"],
+      "properties": {
+        "passed": {"type": "boolean"}, "blockers": {"type": "array", "items": {"type": "string"}},
+        "requiresRealHumanEvidence": {"const": true},
+        "proxyAudioCanSatisfyHumanGate": {"const": false}
+      }
+    },
+    "status": {"enum": ["QUALITY_GATE_PASS", "QUALITY_GATE_BLOCKED"]},
+    "readOnly": {"const": true}, "midiMutationAllowed": {"const": false},
+    "finalMidiGenerated": {"const": false}, "pa800DeviceCertified": {"const": false},
+    "evaluationReportHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "2.0",
+  "x-human-listening-required": true
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "dna-premium-expression-evidence",
+  "version": "1.0",
+  "authority": "SOFTWARE_TEST_ONLY",
+  "notice": "Self-authored relative-interval evidence for software validation only.",
+  "ornaments": [
+    {
+      "evidenceId": "240.100.001",
+      "kind": "grace",
+      "intervals": [
+        -1
+      ],
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "minGapTicks": 100,
+      "noteDurationTicks": 36,
+      "confidence": 0.96,
+      "status": "CONFIRMED"
+    },
+    {
+      "evidenceId": "240.100.002",
+      "kind": "trill",
+      "intervals": [
+        2,
+        0,
+        2
+      ],
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "minGapTicks": 180,
+      "noteDurationTicks": 40,
+      "confidence": 0.95,
+      "status": "CONFIRMED"
+    },
+    {
+      "evidenceId": "240.100.003",
+      "kind": "slide",
+      "intervals": [
+        -2,
+        -1
+      ],
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "minGapTicks": 150,
+      "noteDurationTicks": 36,
+      "confidence": 0.94,
+      "status": "CONFIRMED"
+    },
+    {
+      "evidenceId": "240.100.004",
+      "kind": "turnaround",
+      "intervals": [
+        -2,
+        0,
+        2
+      ],
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "minGapTicks": 220,
+      "noteDurationTicks": 36,
+      "confidence": 0.93,
+      "status": "CONFIRMED"
+    }
+  ],
+  "relationships": [
+    {
+      "evidenceId": "240.200.001",
+      "kind": "third",
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "acceptedIntervals": [
+        3,
+        4
+      ],
+      "confidence": 0.97,
+      "status": "CONFIRMED"
+    },
+    {
+      "evidenceId": "240.200.002",
+      "kind": "echo",
+      "allowedQualities": [
+        "add-nine",
+        "augmented",
+        "diminished",
+        "diminished-seventh",
+        "dominant-seventh",
+        "half-diminished",
+        "major",
+        "major-seventh",
+        "minor",
+        "minor-seventh",
+        "minor-sixth",
+        "power",
+        "sixth",
+        "suspended-2",
+        "suspended-4"
+      ],
+      "delayTicks": 360,
+      "durationRatio": 0.5,
+      "confidence": 0.96,
+      "status": "CONFIRMED"
+    }
+  ],
+  "provenanceHash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "evidenceHash": "41af25aa089d912cbf8ed68a96488c2cee6a30f4e49b36cbb64949855073a72e"
+}

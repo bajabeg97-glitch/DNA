@@ -1,0 +1,203 @@
+{
+  "schema": "dna-pa800-polyphony-stress-manifest",
+  "version": "1.0",
+  "target": "Korg Pa800 OS 2.0+",
+  "referenceKey": "C",
+  "referenceChord": "Major",
+  "marker": "v1cv1",
+  "tempo": 120,
+  "ppq": 480,
+  "tracks": {
+    "bass": {
+      "channel": 9,
+      "polyphonyLimit": 1,
+      "pitches": [
+        36
+      ],
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "profileId": "942.805.908"
+    },
+    "drum": {
+      "channel": 10,
+      "polyphonyLimit": 24,
+      "pitches": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "profileId": "drum:120:0:5"
+    },
+    "perc": {
+      "channel": 11,
+      "polyphonyLimit": 16,
+      "pitches": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "profileId": "drum:120:0:5"
+    },
+    "acc1": {
+      "channel": 12,
+      "polyphonyLimit": 4,
+      "pitches": [
+        48,
+        52,
+        55,
+        60
+      ],
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "profileId": "752.839.508"
+    },
+    "acc2": {
+      "channel": 13,
+      "polyphonyLimit": 4,
+      "pitches": [
+        60,
+        64,
+        67,
+        72
+      ],
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "profileId": "752.839.508"
+    },
+    "acc3": {
+      "channel": 14,
+      "polyphonyLimit": 1,
+      "pitches": [
+        72
+      ],
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "profileId": "698.771.685"
+    },
+    "acc4": {
+      "channel": 15,
+      "polyphonyLimit": 1,
+      "pitches": [
+        84
+      ],
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "profileId": "698.771.685"
+    },
+    "acc5": {
+      "channel": 16,
+      "polyphonyLimit": 3,
+      "pitches": [
+        48,
+        55,
+        60
+      ],
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "profileId": "752.839.508"
+    }
+  },
+  "expectedMidiNotePeak": 54,
+  "physicalSoundVoiceCostVerified": false,
+  "validation": {
+    "passed": true,
+    "issues": [],
+    "format": 0,
+    "trackCount": 1,
+    "ppq": 480,
+    "markers": [
+      "v1cv1"
+    ],
+    "usedChannels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "noteCount": 216,
+    "danglingNotes": 0,
+    "eventCount": 469,
+    "endOfTrackCount": 1,
+    "eventOrderValid": true,
+    "polyphonyPassed": true,
+    "polyphonyLimits": {
+      "9": 1,
+      "10": 24,
+      "11": 16,
+      "12": 4,
+      "13": 4,
+      "14": 1,
+      "15": 1,
+      "16": 3
+    },
+    "peakPolyphonyByChannel": {
+      "9": 1,
+      "10": 24,
+      "11": 16,
+      "12": 4,
+      "13": 4,
+      "14": 1,
+      "15": 1,
+      "16": 3
+    },
+    "globalPeakConcurrentNotes": 54,
+    "polyphonyMetric": "simultaneous-midi-notes",
+    "checkedControllersPerMarker": [
+      "CC00",
+      "CC32",
+      "ProgramChange",
+      "CC11=127"
+    ]
+  },
+  "midiSha256": "7344805d418d58bb15d2f9276e73574b83d72c849e878704c76456f0686eab5c"
+}

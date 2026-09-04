@@ -1,0 +1,76 @@
+{
+  "schema": "dna-pa800-agent-team",
+  "version": "2.1",
+  "orchestration": {
+    "pattern": "manager-with-specialists",
+    "manager": "chatgpt-orchestrator",
+    "humanApprovalRequiredFor": [
+      "export-to-device",
+      "overwrite-style",
+      "change-factory-dynamics-policy"
+    ]
+  },
+  "invariants": {
+    "dynamicsSource": "factory-only",
+    "goldAffectsDynamics": false,
+    "midiValidatorCannotBeBypassed": true,
+    "agentCannotExportMidi": true,
+    "structuredPlanRequired": true,
+    "coreArrangerWorksWithoutAgents": true,
+    "apiKeysStoredInProject": false
+  },
+  "agents": [
+    {
+      "id": "chatgpt-orchestrator",
+      "platform": "ChatGPT",
+      "role": "manager",
+      "responsibilities": ["interpret-user-goal", "route-specialists", "request-approval", "summarize-result"],
+      "output": "task-plan.json"
+    },
+    {
+      "id": "chatgpt-music-director",
+      "platform": "ChatGPT",
+      "role": "music-analysis",
+      "responsibilities": ["genre-brief", "form", "density", "instrument-roles", "intensity-curve"],
+      "forbidden": ["write-midi-bytes", "set-gold-velocity"],
+      "output": "music-brief.json"
+    },
+    {
+      "id": "chatgpt-style-evaluator",
+      "platform": "ChatGPT",
+      "role": "musical-evaluation",
+      "responsibilities": ["compare-variants", "evaluate-transitions", "explain-recommendation"],
+      "requires": ["midi-compliance-pass"],
+      "output": "style-evaluation.json"
+    },
+    {
+      "id": "codex-lead-engineer",
+      "platform": "Codex",
+      "role": "implementation",
+      "responsibilities": ["edit-code", "run-tests", "update-schemas", "update-documentation"],
+      "output": "verified-code-change"
+    },
+    {
+      "id": "codex-midi-compliance",
+      "platform": "Codex",
+      "role": "pa800-validator",
+      "responsibilities": ["validate-smf0", "validate-markers", "validate-channels-9-16", "validate-cv-controllers"],
+      "blocking": true,
+      "output": "midi-compliance-report.json"
+    },
+    {
+      "id": "codex-data-regression",
+      "platform": "Codex",
+      "role": "data-quality",
+      "responsibilities": ["build-dna", "check-id-collisions", "check-gold-velocity-zero", "compare-baseline"],
+      "output": "dna-regression-report.json"
+    }
+  ],
+  "handoffs": [
+    ["chatgpt-orchestrator", "chatgpt-music-director"],
+    ["chatgpt-orchestrator", "codex-lead-engineer"],
+    ["codex-lead-engineer", "codex-midi-compliance"],
+    ["codex-midi-compliance", "chatgpt-style-evaluator"],
+    ["chatgpt-style-evaluator", "chatgpt-orchestrator"]
+  ]
+}

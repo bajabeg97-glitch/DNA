@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/quality-calibration-report-v1.schema.json",
+  "title": "Production Quality Calibration Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "corpusHash", "vaultHash", "mode", "trainingCaseIds", "holdoutCaseIdsSealed", "trainingCaseCount", "holdoutCaseCount", "structuralNormalizers", "metricWeights", "qualityControls", "metricWeightsChanged", "thresholdsChanged", "humanListeningClaim", "productionExpressionClaim", "sealedBeforeHoldoutEvaluation", "calibrationHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-quality-calibration-report"},
+    "version": {"const": "1.0"},
+    "date": {"type": "string", "format": "date"},
+    "corpusHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "vaultHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "mode": {"const": "SOFTWARE_STRUCTURAL_NORMALIZATION_ONLY"},
+    "trainingCaseIds": {"type": "array", "minItems": 24, "maxItems": 24},
+    "holdoutCaseIdsSealed": {"type": "array", "minItems": 8, "maxItems": 8},
+    "trainingCaseCount": {"const": 24},
+    "holdoutCaseCount": {"const": 8},
+    "structuralNormalizers": {"type": "object"},
+    "metricWeights": {"type": "object"},
+    "qualityControls": {"type": "object"},
+    "metricWeightsChanged": {"const": false},
+    "thresholdsChanged": {"const": false},
+    "humanListeningClaim": {"const": false},
+    "productionExpressionClaim": {"const": false},
+    "sealedBeforeHoldoutEvaluation": {"const": true},
+    "calibrationHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

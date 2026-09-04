@@ -1,0 +1,29 @@
+{
+  "schema": "dna-premium-device-audio-capture",
+  "version": "1.0",
+  "authority": "DEVICE_AUDIO_COMPARISON_ONLY",
+  "device": {
+    "manufacturer": "Korg",
+    "model": "Pa800",
+    "osVersion": "2.03-unverified"
+  },
+  "capturedAt": "2026-09-03",
+  "operatorId": "session26-fixture",
+  "sourceMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+  "session16EvidenceHash": null,
+  "notes": "Self-authored comparison fixture; not physical certification evidence.",
+  "audio": {
+    "channels": 1,
+    "sampleRate": 12000,
+    "sampleWidthBits": 16,
+    "frameCount": 24000,
+    "durationSeconds": 2.0,
+    "measuredRmsDbfs": -29.193,
+    "measuredPeakDbfs": -16.621,
+    "wavSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe"
+  },
+  "comparisonAllowed": true,
+  "certificationAllowed": false,
+  "pa800DeviceCertified": false,
+  "captureHash": "e7779eb9f1cbd44c9a86fa3ca942ab142eaa69020c2e8311e7184732a173b484"
+}
