@@ -1,4 +1,5 @@
 const MIDI_EXTENSIONS = new Set(['mid', 'midi', 'kar']);
+const MAX_ANALYSIS_BYTES = 50 * 1024 * 1024;
 const REPAIR_PROFILES = {
   'pa800-safe': { targetVelocity: 96, preservation: 0.86 },
   'stage-ready': { targetVelocity: 100, preservation: 0.82 },
@@ -22,13 +23,17 @@ export async function analyzeUploadedFile(file) {
     throw new Error('Duboka analiza je trenutno dostupna za MIDI i KAR fajlove. Za PA800 style prvo izvezite SMF sa markerima poput v1cv1, i1cv2 ili f1cv1.');
   }
 
-  return analyzeMidi(await file.arrayBuffer(), file.name);
+  if (file.size > MAX_ANALYSIS_BYTES) throw new Error('Fajl je veći od 50 MB limita za brzu analizu.');
+  const startedAt = Date.now();
+  const result = analyzeMidi(await file.arrayBuffer(), file.name);
+  return { ...result, analysisDurationMs: Date.now() - startedAt };
 }
 
-export function getRepairPreview(analysis, presetKey = 'pa800-safe') {
+export function getRepairPreview(analysis, presetKey = 'pa800-safe', options = {}) {
   const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
-  const optimizedVelocitySpread = Math.max(1, Math.round(analysis.velocitySpread * repairProfile.preservation));
-  const optimizedAverageVelocity = Math.round(analysis.averageVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation));
+  const applyDynamics = options.applyDynamics ?? true;
+  const optimizedVelocitySpread = applyDynamics ? Math.max(1, Math.round(analysis.velocitySpread * repairProfile.preservation)) : analysis.velocitySpread;
+  const optimizedAverageVelocity = applyDynamics ? Math.round(analysis.averageVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation)) : analysis.averageVelocity;
   const optimizedExpressionScore = Math.min(99, Math.max(64, 62 + Math.round(optimizedVelocitySpread * 0.28)));
   const optimizedScore = Math.round((analysis.timingScore + optimizedExpressionScore + Math.min(99, 72 + analysis.channels * 7)) / 3);
 
@@ -38,13 +43,14 @@ export function getRepairPreview(analysis, presetKey = 'pa800-safe') {
   };
 }
 
-export async function createOptimizedMidi(file, presetKey = 'pa800-safe') {
+export async function createOptimizedMidi(file, presetKey = 'pa800-safe', options = {}) {
   const source = new Uint8Array(await file.arrayBuffer());
   const output = source.slice();
   const view = new DataView(source.buffer, source.byteOffset, source.byteLength);
   let offset = 0;
   let repairedNotes = 0;
   const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
+  const applyDynamics = options.applyDynamics ?? true;
 
   const readText = (length) => {
     if (offset + length > view.byteLength) throw new Error('MIDI fajl je nepotpun ili oštećen.');
@@ -119,9 +125,10 @@ export async function createOptimizedMidi(file, presetKey = 'pa800-safe') {
       const dataOffset = offset;
       const secondOffset = dataOffset + 1;
       offset += eventType === 0xc || eventType === 0xd ? 1 : 2;
-      if (eventType === 0x9 && view.getUint8(secondOffset) > 0) {
-        output[secondOffset] = Math.max(1, Math.min(127, Math.round(view.getUint8(secondOffset) * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation))));
-        repairedNotes += 1;
+      if (eventType === 0x9 && view.getUint8(secondOffset) > 0 && applyDynamics) {
+        const originalVelocity = view.getUint8(secondOffset);
+        output[secondOffset] = Math.max(1, Math.min(127, Math.round(originalVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation))));
+        if (output[secondOffset] !== originalVelocity) repairedNotes += 1;
       }
     }
     offset = trackEnd;
@@ -202,6 +209,8 @@ function analyzeMidi(buffer, fileName) {
   let maxTick = 0;
   let tempo = 120;
   let trackNames = 0;
+  let timingDistanceTotal = 0;
+  let timingOutliers = 0;
   const styleMarkers = [];
   let velocityTotal = 0;
   let velocityLowest = 127;
@@ -210,6 +219,7 @@ function analyzeMidi(buffer, fileName) {
   const openNotes = new Map();
   const durations = [];
   const pitchClasses = new Array(12).fill(0);
+  const timingGrid = Math.max(1, Math.round(division / 4));
 
   for (let trackIndex = 0; trackIndex < trackCount; trackIndex += 1) {
     if (readText(4) !== 'MTrk') throw new Error(`Track ${trackIndex + 1} nije validan.`);
@@ -267,6 +277,10 @@ function analyzeMidi(buffer, fileName) {
         velocityLowest = Math.min(velocityLowest, secondData);
         velocityHighest = Math.max(velocityHighest, secondData);
         pitchClasses[firstData % 12] += 1;
+        const remainder = tick % timingGrid;
+        const timingDistance = Math.min(remainder, timingGrid - remainder);
+        timingDistanceTotal += timingDistance;
+        if (timingDistance > timingGrid / 3) timingOutliers += 1;
         const noteKey = `${channel}:${firstData}`;
         const notes = openNotes.get(noteKey) ?? [];
         notes.push({ tick, velocity: secondData });
@@ -290,7 +304,8 @@ function analyzeMidi(buffer, fileName) {
   const velocitySpread = velocityHighest - velocityLowest;
   const averageDuration = durations.length ? Math.round(durations.reduce((sum, duration) => sum + duration, 0) / durations.length) : 0;
   const topPitchClass = pitchClasses.indexOf(Math.max(...pitchClasses));
-  const timingScore = Math.min(99, Math.max(72, 96 - Math.round((totalNotes - durations.length) / Math.max(1, totalNotes) * 18)));
+  const timingDrift = Math.round(timingDistanceTotal / totalNotes);
+  const timingScore = Math.min(99, Math.max(60, 100 - Math.round((timingDrift / timingGrid) * 100)));
   const expressionScore = Math.min(99, Math.max(64, 62 + Math.round(velocitySpread * 0.28)));
   const score = Math.round((timingScore + expressionScore + Math.min(99, 72 + channels.size * 7)) / 3);
 
@@ -311,6 +326,9 @@ function analyzeMidi(buffer, fileName) {
     trackNames,
     topPitchClass,
     timingScore,
+    timingGrid,
+    timingDrift,
+    timingOutliers,
     expressionScore,
     styleMarkers,
     styleCoverage: buildStyleCoverage(styleMarkers),

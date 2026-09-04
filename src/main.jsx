@@ -47,6 +47,12 @@ const REPAIR_PRESETS = [
   { key: 'more-expression', name: 'More Expression', detail: 'Keep the feel', tone: 'coral' },
 ];
 
+const REPAIR_ACTIONS = [
+  { key: 'timing', label: 'Timing map', detail: 'Analysis only · no notes changed', locked: true },
+  { key: 'dynamics', label: 'Dynamics balance', detail: 'Velocity smoothing', locked: false },
+  { key: 'structure', label: 'PA800 structure', detail: 'Markers and CV slots protected', locked: true },
+];
+
 const checks = [
   { label: 'Chord recognition', detail: 'All 24 patterns mapped', status: 'Passed', tone: 'success' },
   { label: 'Velocity consistency', detail: '3 expressive peaks found', status: 'Review', tone: 'warning' },
@@ -203,6 +209,7 @@ function OptimizerModal({ onClose, onToast }) {
   const [analysisError, setAnalysisError] = useState('');
   const [presetKey, setPresetKey] = useState('pa800-safe');
   const [previewMode, setPreviewMode] = useState('optimized');
+  const [applyDynamics, setApplyDynamics] = useState(true);
 
   const chooseFile = (file) => {
     if (!file) return;
@@ -217,7 +224,7 @@ function OptimizerModal({ onClose, onToast }) {
     setAnalysisError('');
     try {
       const result = await analyzeUploadedFile(selectedFile);
-      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey), preview: getRepairPreview(result, presetKey) });
+      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey), preview: getRepairPreview(result, presetKey, { applyDynamics }) });
       setStage('results');
     } catch (error) {
       setAnalysisError(error.message);
@@ -227,8 +234,14 @@ function OptimizerModal({ onClose, onToast }) {
 
   const previewData = analysis?.preview?.[previewMode];
 
+  const toggleDynamics = () => {
+    const nextValue = !applyDynamics;
+    setApplyDynamics(nextValue);
+    setAnalysis((currentAnalysis) => currentAnalysis ? { ...currentAnalysis, preview: getRepairPreview(currentAnalysis, presetKey, { applyDynamics: nextValue }) } : currentAnalysis);
+  };
+
   const exportRepair = async () => {
-    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile, presetKey);
+    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile, presetKey, { applyDynamics });
     const downloadUrl = URL.createObjectURL(blob);
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadUrl;
@@ -253,7 +266,7 @@ function OptimizerModal({ onClose, onToast }) {
           <input className="file-input-hidden" type="file" accept=".mid,.midi,.kar,.sty,.mp3" onChange={(event) => chooseFile(event.target.files[0])} />
           <Upload size={20} /><strong>Choose a file</strong><span>or drag and drop it here</span>
         </label>
-        <div className="supported-formats"><FileAudio size={15} /> MIDI, MP3, KAR, STY up to 250 MB</div>
+        <div className="supported-formats"><FileAudio size={15} /> MIDI, MP3, KAR, STY up to 50 MB</div>
       </>}
       {stage === 'ready' && <>
         <p className="selected-file-copy">We’ll scan the arrangement and prepare safe repair suggestions.</p>
@@ -269,7 +282,9 @@ function OptimizerModal({ onClose, onToast }) {
         <div className="preview-switcher" role="tablist" aria-label="Compare repair versions"><button className={previewMode === 'original' ? 'preview-tab preview-tab-active' : 'preview-tab'} onClick={() => setPreviewMode('original')} role="tab" aria-selected={previewMode === 'original'}>Original</button><button className={previewMode === 'optimized' ? 'preview-tab preview-tab-active' : 'preview-tab'} onClick={() => setPreviewMode('optimized')} role="tab" aria-selected={previewMode === 'optimized'}>Optimized</button></div>
         <div className="preview-metrics"><div className="preview-score"><span>{previewMode === 'optimized' ? 'Optimized score' : 'Original score'}</span><strong>{previewData?.score}</strong><small>/ 100</small></div><div><span>Average velocity</span><strong>{previewData?.averageVelocity}</strong></div><div><span>Velocity range</span><strong>{previewData?.velocitySpread}</strong></div></div>
         <div className="analysis-score-line"><strong>{previewData?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.preset?.name} · {analysis?.formatLabel}</small></div>
+        <div className="analysis-meta-line"><span>Grid drift {analysis?.timingDrift} ticks</span><span>{analysis?.timingOutliers} timing outliers</span><span>Analyzed in {analysis?.analysisDurationMs} ms</span></div>
         <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
+        <div className="repair-actions">{REPAIR_ACTIONS.map((action) => <div className="repair-action" key={action.key}><div className={`repair-action-icon ${action.locked ? 'repair-action-locked' : applyDynamics ? 'repair-action-active' : 'repair-action-inactive'}`}>{action.locked ? <SlidersHorizontal size={13} /> : <Check size={14} />}</div><div className="repair-action-copy"><strong>{action.label}</strong><span>{action.key === 'timing' ? `${analysis?.timingDrift} tick avg drift · no notes changed` : action.detail}</span></div>{action.locked ? <span className="repair-action-lock">Locked</span> : <button className={`repair-action-button ${applyDynamics ? 'repair-action-undo' : 'repair-action-accept'}`} onClick={toggleDynamics}>{applyDynamics ? 'Undo' : 'Accept'}</button>}</div>)}</div>
         <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
         {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}
         <div className="coverage-panel"><div className="coverage-heading"><span>PA800 style coverage</span><strong>{analysis?.styleCoverage.coveredSlots}/{analysis?.styleCoverage.totalSlots} CV slots</strong></div><div className="coverage-grid">{analysis?.styleCoverage.elements.map((element) => <div className={`coverage-item ${element.found === element.chordVariations ? 'coverage-complete' : ''}`} key={element.key}><span>{element.label}</span><strong>{element.found}/{element.chordVariations}</strong></div>)}</div></div>
