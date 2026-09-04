@@ -26,6 +26,7 @@ import {
   Zap,
 } from 'lucide-react';
 import './styles.css';
+import { analyzeUploadedFile, createOptimizedMidi } from './musicAnalysis';
 
 const navItems = [
   { label: 'Overview', icon: LayoutDashboard, active: true },
@@ -190,21 +191,42 @@ function App() {
 
 function OptimizerModal({ onClose, onToast }) {
   const [stage, setStage] = useState('upload');
-  const [fileName, setFileName] = useState('');
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [analysis, setAnalysis] = useState(null);
+  const [analysisError, setAnalysisError] = useState('');
 
   const chooseFile = (file) => {
     if (!file) return;
-    setFileName(file.name);
+    setSelectedFile(file);
+    setAnalysisError('');
     setStage('ready');
   };
 
-  const runAnalysis = () => {
+  const runAnalysis = async () => {
+    if (!selectedFile) return;
     setStage('analyzing');
-    window.setTimeout(() => setStage('results'), 1500);
+    setAnalysisError('');
+    try {
+      const result = await analyzeUploadedFile(selectedFile);
+      setAnalysis(result);
+      setStage('results');
+    } catch (error) {
+      setAnalysisError(error.message);
+      setStage('ready');
+    }
   };
 
-  const exportRepair = () => {
-    onToast('Optimized version is ready to export');
+  const exportRepair = async () => {
+    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile);
+    const downloadUrl = URL.createObjectURL(blob);
+    const downloadLink = document.createElement('a');
+    downloadLink.href = downloadUrl;
+    downloadLink.download = `${selectedFile.name.replace(/\.[^/.]+$/, '')}.optimized.mid`;
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    downloadLink.remove();
+    URL.revokeObjectURL(downloadUrl);
+    onToast(`${repairedNotes} notes normalized and exported`);
     onClose();
   };
 
@@ -224,13 +246,15 @@ function OptimizerModal({ onClose, onToast }) {
       </>}
       {stage === 'ready' && <>
         <p className="selected-file-copy">We’ll scan the arrangement and prepare safe repair suggestions.</p>
-        <div className="selected-file"><div className="selected-file-icon"><FileAudio size={18} /></div><div><strong>{fileName}</strong><span>Ready for analysis</span></div><button onClick={() => setStage('upload')} aria-label="Choose another file"><X size={16} /></button></div>
+        <div className="selected-file"><div className="selected-file-icon"><FileAudio size={18} /></div><div><strong>{selectedFile?.name}</strong><span>{Math.ceil((selectedFile?.size ?? 0) / 1024)} KB · Ready for analysis</span></div><button onClick={() => { setSelectedFile(null); setAnalysisError(''); setStage('upload'); }} aria-label="Choose another file"><X size={16} /></button></div>
+        {analysisError && <div className="analysis-error" role="alert"><X size={14} />{analysisError}</div>}
         <button className="modal-primary-button" onClick={runAnalysis}>Analyze file <ArrowRight size={16} /></button>
       </>}
       {stage === 'analyzing' && <div className="analysis-progress" aria-live="polite"><div className="analysis-spinner"><Activity size={22} /></div><strong>Mapping notes, chords and dynamics</strong><span>Checking PA800 compatibility profile</span><div className="progress-track"><i /></div></div>}
       {stage === 'results' && <>
-        <p className="selected-file-copy">We found three safe improvements for <strong>{fileName}</strong>.</p>
-        <div className="repair-results"><div><Check size={15} /><span>Timing cleaned</span><strong>+8 pts</strong></div><div><Check size={15} /><span>Dynamics balanced</span><strong>+6 pts</strong></div><div><Check size={15} /><span>PA800 structure preserved</span><strong>Safe</strong></div></div>
+        <p className="selected-file-copy">Analysis complete for <strong>{analysis?.fileName}</strong>.</p>
+        <div className="analysis-score-line"><strong>{analysis?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.formatLabel}</small></div>
+        <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
         <button className="modal-primary-button" onClick={exportRepair}>Apply repair & export <ArrowRight size={16} /></button>
       </>}
     </div>
