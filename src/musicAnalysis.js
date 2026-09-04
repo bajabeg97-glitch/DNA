@@ -25,6 +25,19 @@ export async function analyzeUploadedFile(file) {
   return analyzeMidi(await file.arrayBuffer(), file.name);
 }
 
+export function getRepairPreview(analysis, presetKey = 'pa800-safe') {
+  const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
+  const optimizedVelocitySpread = Math.max(1, Math.round(analysis.velocitySpread * repairProfile.preservation));
+  const optimizedAverageVelocity = Math.round(analysis.averageVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation));
+  const optimizedExpressionScore = Math.min(99, Math.max(64, 62 + Math.round(optimizedVelocitySpread * 0.28)));
+  const optimizedScore = Math.round((analysis.timingScore + optimizedExpressionScore + Math.min(99, 72 + analysis.channels * 7)) / 3);
+
+  return {
+    original: { score: analysis.score, averageVelocity: analysis.averageVelocity, velocitySpread: analysis.velocitySpread, expressionScore: analysis.expressionScore },
+    optimized: { score: optimizedScore, averageVelocity: optimizedAverageVelocity, velocitySpread: optimizedVelocitySpread, expressionScore: optimizedExpressionScore },
+  };
+}
+
 export async function createOptimizedMidi(file, presetKey = 'pa800-safe') {
   const source = new Uint8Array(await file.arrayBuffer());
   const output = source.slice();

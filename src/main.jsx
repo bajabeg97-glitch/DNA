@@ -26,7 +26,7 @@ import {
   Zap,
 } from 'lucide-react';
 import './styles.css';
-import { analyzeUploadedFile, createOptimizedMidi } from './musicAnalysis';
+import { analyzeUploadedFile, createOptimizedMidi, getRepairPreview } from './musicAnalysis';
 
 const navItems = [
   { label: 'Overview', icon: LayoutDashboard, active: true },
@@ -202,6 +202,7 @@ function OptimizerModal({ onClose, onToast }) {
   const [analysis, setAnalysis] = useState(null);
   const [analysisError, setAnalysisError] = useState('');
   const [presetKey, setPresetKey] = useState('pa800-safe');
+  const [previewMode, setPreviewMode] = useState('optimized');
 
   const chooseFile = (file) => {
     if (!file) return;
@@ -216,13 +217,15 @@ function OptimizerModal({ onClose, onToast }) {
     setAnalysisError('');
     try {
       const result = await analyzeUploadedFile(selectedFile);
-      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey) });
+      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey), preview: getRepairPreview(result, presetKey) });
       setStage('results');
     } catch (error) {
       setAnalysisError(error.message);
       setStage('ready');
     }
   };
+
+  const previewData = analysis?.preview?.[previewMode];
 
   const exportRepair = async () => {
     const { blob, repairedNotes } = await createOptimizedMidi(selectedFile, presetKey);
@@ -263,7 +266,9 @@ function OptimizerModal({ onClose, onToast }) {
       {stage === 'analyzing' && <div className="analysis-progress" aria-live="polite"><div className="analysis-spinner"><Activity size={22} /></div><strong>Mapping notes, chords and dynamics</strong><span>Checking PA800 compatibility profile</span><div className="progress-track"><i /></div></div>}
       {stage === 'results' && <>
         <p className="selected-file-copy">Analysis complete for <strong>{analysis?.fileName}</strong>.</p>
-        <div className="analysis-score-line"><strong>{analysis?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.preset?.name} · {analysis?.formatLabel}</small></div>
+        <div className="preview-switcher" role="tablist" aria-label="Compare repair versions"><button className={previewMode === 'original' ? 'preview-tab preview-tab-active' : 'preview-tab'} onClick={() => setPreviewMode('original')} role="tab" aria-selected={previewMode === 'original'}>Original</button><button className={previewMode === 'optimized' ? 'preview-tab preview-tab-active' : 'preview-tab'} onClick={() => setPreviewMode('optimized')} role="tab" aria-selected={previewMode === 'optimized'}>Optimized</button></div>
+        <div className="preview-metrics"><div className="preview-score"><span>{previewMode === 'optimized' ? 'Optimized score' : 'Original score'}</span><strong>{previewData?.score}</strong><small>/ 100</small></div><div><span>Average velocity</span><strong>{previewData?.averageVelocity}</strong></div><div><span>Velocity range</span><strong>{previewData?.velocitySpread}</strong></div></div>
+        <div className="analysis-score-line"><strong>{previewData?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.preset?.name} · {analysis?.formatLabel}</small></div>
         <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
         <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
         {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}

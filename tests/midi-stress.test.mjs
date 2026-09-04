@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { analyzeUploadedFile, createOptimizedMidi } from '../src/musicAnalysis.js';
+import { analyzeUploadedFile, createOptimizedMidi, getRepairPreview } from '../src/musicAnalysis.js';
 
 const TRACK_COUNT = 6;
 const NOTES_PER_TRACK = 2000;
@@ -74,6 +74,16 @@ test('analyzes a multi-track PA800-style stress MIDI', async () => {
   assert.equal(result.styleCoverage.coveredSlots, 6);
   assert.equal(result.styleCoverage.totalSlots, 42);
   assert.ok(result.score >= 64 && result.score <= 99);
+});
+
+test('A/B preview reports original and optimized metrics', async () => {
+  const analysis = await analyzeUploadedFile(makeFile(stressBytes, 'preview.mid'));
+  const preview = getRepairPreview(analysis, 'cleaner-groove');
+
+  assert.equal(preview.original.score, analysis.score);
+  assert.equal(preview.original.averageVelocity, analysis.averageVelocity);
+  assert.equal(preview.optimized.velocitySpread < preview.original.velocitySpread, true);
+  assert.ok(preview.optimized.score >= 64 && preview.optimized.score <= 99);
 });
 
 test('repairs and exports the full stress MIDI without changing its size', async () => {
