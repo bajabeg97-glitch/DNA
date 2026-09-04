@@ -1,0 +1,195 @@
+import { useState } from 'react';
+import {
+  Activity,
+  ArrowRight,
+  Bell,
+  Check,
+  ChevronDown,
+  CircleHelp,
+  CloudUpload,
+  FileAudio,
+  FolderOpen,
+  Headphones,
+  LayoutDashboard,
+  Library,
+  Menu,
+  MoreHorizontal,
+  Music2,
+  Play,
+  Plus,
+  Search,
+  Settings,
+  SlidersHorizontal,
+  Sparkles,
+  Upload,
+  X,
+  Zap,
+} from 'lucide-react';
+import './styles.css';
+
+const navItems = [
+  { label: 'Overview', icon: LayoutDashboard, active: true },
+  { label: 'My projects', icon: Library, count: '12' },
+  { label: 'Sound library', icon: Headphones },
+];
+
+const recentProjects = [
+  { title: 'Lepa Brena — Čik pogodi', type: 'PA800 Style', time: 'Edited 18 min ago', score: 96, color: 'coral', icon: '♫' },
+  { title: 'Live set / 2024', type: 'MIDI Collection', time: 'Edited yesterday', score: 88, color: 'violet', icon: '◒' },
+  { title: 'Balkan Groove Vol. 2', type: 'Style Pack', time: 'Edited 3 days ago', score: 74, color: 'amber', icon: '♬' },
+];
+
+const checks = [
+  { label: 'Chord recognition', detail: 'All 24 patterns mapped', status: 'Passed', tone: 'success' },
+  { label: 'Velocity consistency', detail: '3 expressive peaks found', status: 'Review', tone: 'warning' },
+  { label: 'Style structure', detail: 'Intro, fills and endings', status: 'Passed', tone: 'success' },
+  { label: 'MIDI compatibility', detail: 'PA800 profile detected', status: 'Passed', tone: 'success' },
+];
+
+function App() {
+  const [activeNav, setActiveNav] = useState('Overview');
+  const [isUploadOpen, setIsUploadOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [toast, setToast] = useState('');
+
+  const showToast = (message) => {
+    setToast(message);
+    window.setTimeout(() => setToast(''), 2600);
+  };
+
+  return (
+    <div className="app-shell">
+      <aside className="sidebar">
+        <div className="brand-lockup">
+          <div className="brand-mark"><Music2 size={18} strokeWidth={2.4} /></div>
+          <span>dna<span className="brand-dot">.</span></span>
+        </div>
+
+        <div className="workspace-switcher">
+          <div className="workspace-avatar">B</div>
+          <div className="workspace-copy">
+            <span className="workspace-label">Workspace</span>
+            <strong>Baja Studio</strong>
+          </div>
+          <ChevronDown size={15} />
+        </div>
+
+        <nav className="primary-nav" aria-label="Main navigation">
+          <span className="nav-caption">Workspace</span>
+          {navItems.map(({ label, icon: Icon, active, count }) => (
+            <button
+              className={`nav-item ${activeNav === label ? 'nav-item-active' : ''}`}
+              key={label}
+              onClick={() => setActiveNav(label)}
+            >
+              <Icon size={18} />
+              <span>{label}</span>
+              {count && <span className="nav-count">{count}</span>}
+            </button>
+          ))}
+          <button className="nav-item" onClick={() => showToast('Collections are coming soon')}>
+            <FolderOpen size={18} />
+            <span>Collections</span>
+          </button>
+        </nav>
+
+        <div className="sidebar-bottom">
+          <div className="upgrade-card">
+            <div className="upgrade-icon"><Sparkles size={16} /></div>
+            <strong>Unlock Studio Pro</strong>
+            <p>Unlimited exports and deeper repairs.</p>
+            <button onClick={() => showToast('Studio Pro preview opened')}>Explore Pro <ArrowRight size={14} /></button>
+          </div>
+          <button className="nav-item" onClick={() => showToast('Settings opened')}><Settings size={18} /><span>Settings</span></button>
+          <button className="nav-item" onClick={() => showToast('Help center opened')}><CircleHelp size={18} /><span>Help center</span></button>
+          <div className="profile-row">
+            <div className="profile-avatar">BB</div>
+            <div className="profile-copy"><strong>Baja Beg</strong><span>Free plan</span></div>
+            <MoreHorizontal size={18} />
+          </div>
+        </div>
+      </aside>
+
+      <main className="main-content">
+        <header className="topbar">
+          <button className="mobile-menu" aria-label="Open menu"><Menu size={21} /></button>
+          <div className="breadcrumb"><span>Workspace</span><span className="breadcrumb-divider">/</span><strong>{activeNav}</strong></div>
+          <div className="topbar-actions">
+            <button className="icon-button" aria-label="Search" onClick={() => showToast('Search is ready')}><Search size={19} /></button>
+            <button className="icon-button notification-button" aria-label="Notifications" onClick={() => showToast('You are all caught up')}><Bell size={19} /><span className="notification-dot" /></button>
+            <button className="new-project-button" onClick={() => setIsUploadOpen(true)}><Plus size={17} /> <span>New project</span></button>
+          </div>
+        </header>
+
+        <div className="content-wrap">
+          <section className="welcome-row">
+            <div>
+              <p className="eyebrow">Tuesday, September 24, 2024</p>
+              <h1>Good afternoon, Baja <span className="wave-mark">✦</span></h1>
+              <p className="welcome-copy">Make every note work harder. Your studio is ready.</p>
+            </div>
+            <div className="date-chip"><Activity size={16} /><span>Studio health</span><strong>86%</strong></div>
+          </section>
+
+          <section className="hero-grid">
+            <div className="hero-card">
+              <div className="hero-glow" />
+              <div className="hero-card-content">
+                <div className="hero-kicker"><span className="live-pulse" /> QUICK OPTIMIZER</div>
+                <h2>Clean up your next<br /><em>performance.</em></h2>
+                <p>Drop in a MIDI or style file. DNA finds the friction and gives you a stage-ready version in minutes.</p>
+                <button className="primary-button" onClick={() => setIsUploadOpen(true)}>Start optimizing <ArrowRight size={16} /></button>
+              </div>
+              <div className="waveform" aria-hidden="true">
+                {['18', '34', '26', '54', '42', '76', '38', '62', '28', '88', '47', '67', '36', '58', '22', '44', '30', '70', '50', '38', '62', '28', '76', '42', '54', '32', '68', '44', '26', '58', '36', '72', '48', '30', '66', '40'].map((height, index) => <i className={`wave-bar wave-bar-${height}`} key={index} />)}
+              </div>
+              <div className="hero-status"><span><span className="status-dot" /> MIDI engine online</span><span>v2.4.1</span></div>
+            </div>
+            <div className="score-card">
+              <div className="section-heading"><div><span className="card-label">LATEST ANALYSIS</span><h3>Live set / 2024</h3></div><button className="more-button" aria-label="More options"><MoreHorizontal size={19} /></button></div>
+              <div className="score-ring-wrap"><div className="score-ring"><div className="score-ring-inner"><strong>88</strong><span>/ 100</span></div></div><div className="score-summary"><span className="score-trend"><Zap size={14} /> +12 pts</span><p>Cleaner dynamics<br />than last version</p></div></div>
+              <div className="score-divider" />
+              <div className="metric-row"><span>Notes in place</span><strong>94%</strong><div className="metric-track"><i className="metric-fill fill-green fill-94" /></div></div>
+              <div className="metric-row"><span>Expression range</span><strong>81%</strong><div className="metric-track"><i className="metric-fill fill-purple fill-81" /></div></div>
+              <button className="text-button" onClick={() => showToast('Opening Live set / 2024')}>View full analysis <ArrowRight size={15} /></button>
+            </div>
+          </section>
+
+          <section className="section-block">
+            <div className="section-heading projects-heading"><div><span className="card-label">YOUR WORKSPACE</span><h2>Recent projects</h2></div><button className="view-all-button" onClick={() => setActiveNav('My projects')}>View all <ArrowRight size={15} /></button></div>
+            <div className="project-grid">
+              {recentProjects.map((project) => <ProjectCard key={project.title} project={project} onOpen={() => showToast(`${project.title} opened`)} />)}
+              <button className="add-project-card" onClick={() => setIsUploadOpen(true)}><span className="add-icon"><Plus size={20} /></span><strong>Start a new project</strong><span>Import MIDI, MP3 or style</span></button>
+            </div>
+          </section>
+
+          <section className="section-block workflow-section">
+            <div className="section-heading projects-heading"><div><span className="card-label">HOW IT WORKS</span><h2>From rough to ready</h2></div><button className="view-all-button" onClick={() => showToast('Workflow guide opened')}>See the guide <ArrowRight size={15} /></button></div>
+            <div className="workflow-card">
+              <div className="workflow-step"><div className="step-number step-done"><Check size={16} /></div><div><strong>Analyze</strong><span>Map every part of your performance.</span></div></div>
+              <div className="step-connector" />
+              <div className="workflow-step"><div className="step-number step-current">2</div><div><strong>Repair</strong><span>Fix timing, dynamics and structure.</span></div></div>
+              <div className="step-connector" />
+              <div className="workflow-step"><div className="step-number step-next">3</div><div><strong>Export</strong><span>Send a clean file to your keyboard.</span></div></div>
+              <button className="workflow-play" aria-label={isPlaying ? 'Pause demo' : 'Play demo'} onClick={() => setIsPlaying(!isPlaying)}>{isPlaying ? <span className="pause-icon">Ⅱ</span> : <Play size={15} fill="currentColor" />}<span>{isPlaying ? 'Playing demo' : 'Play 30 sec demo'}</span></button>
+            </div>
+          </section>
+
+          <section className="section-block checks-section">
+            <div className="section-heading projects-heading"><div><span className="card-label">LAST RUN</span><h2>Live set / 2024 checks</h2></div><button className="filter-button" onClick={() => showToast('Filters opened')}><SlidersHorizontal size={15} /> Filter</button></div>
+            <div className="checks-table">{checks.map((check) => <div className="check-row" key={check.label}><div className={`check-status-icon ${check.tone}`}><Check size={15} /></div><div className="check-copy"><strong>{check.label}</strong><span>{check.detail}</span></div><span className={`check-badge ${check.tone}`}>{check.status}</span><button className="row-arrow" onClick={() => showToast(`${check.label} details opened`)}><ArrowRight size={16} /></button></div>)}</div>
+          </section>
+        </div>
+      </main>
+
+      {isUploadOpen && <div className="modal-backdrop" onClick={() => setIsUploadOpen(false)}><div className="upload-modal" onClick={(event) => event.stopPropagation()}><button className="modal-close" onClick={() => setIsUploadOpen(false)} aria-label="Close"><X size={18} /></button><div className="modal-icon"><CloudUpload size={24} /></div><span className="card-label">NEW PROJECT</span><h2>Bring in your performance</h2><p>Upload a MIDI, MP3 or Korg style file and start with a clean analysis.</p><button className="dropzone" onClick={() => showToast('File picker is ready')}><Upload size={20} /><strong>Choose a file</strong><span>or drag and drop it here</span></button><div className="supported-formats"><FileAudio size={15} /> MIDI, MP3, KAR, STY up to 250 MB</div></div></div>}
+      {toast && <div className="toast"><Check size={16} />{toast}</div>}
+    </div>
+  );
+}
+
+function ProjectCard({ project, onOpen }) {
+  return <article className="project-card" onClick={onOpen}><div className={`project-art art-${project.color}`}><span>{project.icon}</span><div className="art-lines"><i /><i /><i /><i /></div><div className="play-overlay"><Play size={15} fill="currentColor" /></div></div><div className="project-card-body"><div className="project-card-top"><div><h3>{project.title}</h3><span>{project.type} · {project.time}</span></div><button className="more-button" onClick={(event) => event.stopPropagation()} aria-label="More options"><MoreHorizontal size={18} /></button></div><div className="project-score"><div className="mini-score-track"><i className={`score-fill score-fill-${project.score}`} /></div><strong>{project.score}</strong><span>health score</span></div></div></article>;
+}
+
+export default App;
