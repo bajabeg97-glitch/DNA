@@ -40,6 +40,13 @@ const recentProjects = [
   { title: 'Balkan Groove Vol. 2', type: 'Style Pack', time: 'Edited 3 days ago', score: 74, color: 'amber', icon: '♬' },
 ];
 
+const REPAIR_PRESETS = [
+  { key: 'pa800-safe', name: 'PA800 Safe', detail: 'Preserve structure', tone: 'purple' },
+  { key: 'stage-ready', name: 'Stage Ready', detail: 'Balanced dynamics', tone: 'mint' },
+  { key: 'cleaner-groove', name: 'Cleaner Groove', detail: 'Tighter velocity', tone: 'amber' },
+  { key: 'more-expression', name: 'More Expression', detail: 'Keep the feel', tone: 'coral' },
+];
+
 const checks = [
   { label: 'Chord recognition', detail: 'All 24 patterns mapped', status: 'Passed', tone: 'success' },
   { label: 'Velocity consistency', detail: '3 expressive peaks found', status: 'Review', tone: 'warning' },
@@ -194,6 +201,7 @@ function OptimizerModal({ onClose, onToast }) {
   const [selectedFile, setSelectedFile] = useState(null);
   const [analysis, setAnalysis] = useState(null);
   const [analysisError, setAnalysisError] = useState('');
+  const [presetKey, setPresetKey] = useState('pa800-safe');
 
   const chooseFile = (file) => {
     if (!file) return;
@@ -208,7 +216,7 @@ function OptimizerModal({ onClose, onToast }) {
     setAnalysisError('');
     try {
       const result = await analyzeUploadedFile(selectedFile);
-      setAnalysis(result);
+      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey) });
       setStage('results');
     } catch (error) {
       setAnalysisError(error.message);
@@ -217,7 +225,7 @@ function OptimizerModal({ onClose, onToast }) {
   };
 
   const exportRepair = async () => {
-    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile);
+    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile, presetKey);
     const downloadUrl = URL.createObjectURL(blob);
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadUrl;
@@ -248,12 +256,14 @@ function OptimizerModal({ onClose, onToast }) {
         <p className="selected-file-copy">We’ll scan the arrangement and prepare safe repair suggestions.</p>
         <div className="selected-file"><div className="selected-file-icon"><FileAudio size={18} /></div><div><strong>{selectedFile?.name}</strong><span>{Math.ceil((selectedFile?.size ?? 0) / 1024)} KB · Ready for analysis</span></div><button onClick={() => { setSelectedFile(null); setAnalysisError(''); setStage('upload'); }} aria-label="Choose another file"><X size={16} /></button></div>
         {analysisError && <div className="analysis-error" role="alert"><X size={14} />{analysisError}</div>}
+        <div className="preset-heading"><span>Choose a repair profile</span><strong>1 click</strong></div>
+        <div className="preset-grid">{REPAIR_PRESETS.map((preset) => <button className={`preset-option ${presetKey === preset.key ? 'preset-selected' : ''} preset-${preset.tone}`} key={preset.key} onClick={() => setPresetKey(preset.key)}><span className="preset-radio">{presetKey === preset.key && <Check size={11} />}</span><span><strong>{preset.name}</strong><small>{preset.detail}</small></span></button>)}</div>
         <button className="modal-primary-button" onClick={runAnalysis}>Analyze file <ArrowRight size={16} /></button>
       </>}
       {stage === 'analyzing' && <div className="analysis-progress" aria-live="polite"><div className="analysis-spinner"><Activity size={22} /></div><strong>Mapping notes, chords and dynamics</strong><span>Checking PA800 compatibility profile</span><div className="progress-track"><i /></div></div>}
       {stage === 'results' && <>
         <p className="selected-file-copy">Analysis complete for <strong>{analysis?.fileName}</strong>.</p>
-        <div className="analysis-score-line"><strong>{analysis?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.formatLabel}</small></div>
+        <div className="analysis-score-line"><strong>{analysis?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.preset?.name} · {analysis?.formatLabel}</small></div>
         <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
         <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
         {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}

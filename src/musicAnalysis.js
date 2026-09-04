@@ -1,4 +1,11 @@
 const MIDI_EXTENSIONS = new Set(['mid', 'midi', 'kar']);
+const REPAIR_PROFILES = {
+  'pa800-safe': { targetVelocity: 96, preservation: 0.86 },
+  'stage-ready': { targetVelocity: 100, preservation: 0.82 },
+  'cleaner-groove': { targetVelocity: 92, preservation: 0.76 },
+  'more-expression': { targetVelocity: 96, preservation: 0.95 },
+};
+
 const PA800_STYLE_ELEMENTS = [
   ...[1, 2, 3, 4].map((number) => ({ key: `v${number}`, label: `Variation ${number}`, chordVariations: 6 })),
   ...[1, 2, 3].flatMap((number) => [
@@ -18,12 +25,13 @@ export async function analyzeUploadedFile(file) {
   return analyzeMidi(await file.arrayBuffer(), file.name);
 }
 
-export async function createOptimizedMidi(file) {
+export async function createOptimizedMidi(file, presetKey = 'pa800-safe') {
   const source = new Uint8Array(await file.arrayBuffer());
   const output = source.slice();
   const view = new DataView(source.buffer, source.byteOffset, source.byteLength);
   let offset = 0;
   let repairedNotes = 0;
+  const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
 
   const readText = (length) => {
     if (offset + length > view.byteLength) throw new Error('MIDI fajl je nepotpun ili oštećen.');
@@ -99,7 +107,7 @@ export async function createOptimizedMidi(file) {
       const secondOffset = dataOffset + 1;
       offset += eventType === 0xc || eventType === 0xd ? 1 : 2;
       if (eventType === 0x9 && view.getUint8(secondOffset) > 0) {
-        output[secondOffset] = Math.max(1, Math.min(127, Math.round(view.getUint8(secondOffset) * 0.86 + 96 * 0.14)));
+        output[secondOffset] = Math.max(1, Math.min(127, Math.round(view.getUint8(secondOffset) * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation))));
         repairedNotes += 1;
       }
     }
