@@ -257,6 +257,7 @@ function OptimizerModal({ onClose, onToast }) {
         <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
         <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
         {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}
+        <div className="coverage-panel"><div className="coverage-heading"><span>PA800 style coverage</span><strong>{analysis?.styleCoverage.coveredSlots}/{analysis?.styleCoverage.totalSlots} CV slots</strong></div><div className="coverage-grid">{analysis?.styleCoverage.elements.map((element) => <div className={`coverage-item ${element.found === element.chordVariations ? 'coverage-complete' : ''}`} key={element.key}><span>{element.label}</span><strong>{element.found}/{element.chordVariations}</strong></div>)}</div></div>
         <button className="modal-primary-button" onClick={exportRepair}>Apply repair & export <ArrowRight size={16} /></button>
       </>}
     </div>

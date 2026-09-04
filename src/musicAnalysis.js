@@ -1,4 +1,12 @@
 const MIDI_EXTENSIONS = new Set(['mid', 'midi', 'kar']);
+const PA800_STYLE_ELEMENTS = [
+  ...[1, 2, 3, 4].map((number) => ({ key: `v${number}`, label: `Variation ${number}`, chordVariations: 6 })),
+  ...[1, 2, 3].flatMap((number) => [
+    { key: `i${number}`, label: `Intro ${number}`, chordVariations: 2 },
+    { key: `f${number}`, label: `Fill ${number}`, chordVariations: 2 },
+    { key: `e${number}`, label: `Ending ${number}`, chordVariations: 2 },
+  ]),
+];
 
 export async function analyzeUploadedFile(file) {
   const extension = file.name.split('.').pop()?.toLowerCase() ?? '';
@@ -109,6 +117,16 @@ function isPa800Marker(marker) {
   const maxElementNumber = match[1] === 'v' ? 4 : 3;
   const maxChordVariation = match[1] === 'v' ? 6 : 2;
   return elementNumber <= maxElementNumber && chordVariation <= maxChordVariation;
+}
+
+function buildStyleCoverage(markers) {
+  const elements = PA800_STYLE_ELEMENTS.map((element) => {
+    const elementMarkers = markers.filter((marker) => marker.startsWith(`${element.key}cv`));
+    return { ...element, found: elementMarkers.length, markers: elementMarkers };
+  });
+  const totalSlots = elements.reduce((sum, element) => sum + element.chordVariations, 0);
+  const coveredSlots = elements.reduce((sum, element) => sum + element.found, 0);
+  return { elements, totalSlots, coveredSlots };
 }
 
 function analyzeMidi(buffer, fileName) {
@@ -274,5 +292,6 @@ function analyzeMidi(buffer, fileName) {
     timingScore,
     expressionScore,
     styleMarkers,
+    styleCoverage: buildStyleCoverage(styleMarkers),
   };
 }
