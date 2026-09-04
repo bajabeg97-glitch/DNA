@@ -92,13 +92,26 @@ test('A/B preview reports original and optimized metrics', async () => {
 test('undoing dynamics leaves the original MIDI bytes unchanged', async () => {
   const file = makeFile(stressBytes, 'undo-dynamics.mid');
   const original = new Uint8Array(await file.arrayBuffer());
-  const preview = getRepairPreview(await analyzeUploadedFile(file), 'cleaner-groove', { applyDynamics: false });
-  const result = await createOptimizedMidi(file, 'cleaner-groove', { applyDynamics: false });
+  const preview = getRepairPreview(await analyzeUploadedFile(file), 'cleaner-groove', { applyDynamics: false, applyTiming: false });
+  const result = await createOptimizedMidi(file, 'cleaner-groove', { applyDynamics: false, applyTiming: false });
   const output = new Uint8Array(await result.blob.arrayBuffer());
 
   assert.deepEqual(preview.optimized, preview.original);
   assert.equal(result.repairedNotes, 0);
   assert.deepEqual([...output], [...original]);
+});
+
+test('timing repair reduces measured grid drift after re-parse', async () => {
+  const file = makeFile(stressBytes, 'timing-repair.mid');
+  const original = await analyzeUploadedFile(file);
+  const optimized = await createOptimizedMidi(file, 'pa800-safe', { applyDynamics: false, applyTiming: true });
+  const optimizedFile = makeFile(new Uint8Array(await optimized.blob.arrayBuffer()), 'timing-repair.optimized.mid');
+  const repaired = await analyzeUploadedFile(optimizedFile);
+
+  assert.ok(optimized.repairedTimingEvents > 0);
+  assert.ok(repaired.timingDrift < original.timingDrift);
+  assert.equal(repaired.notes, original.notes);
+  assert.deepEqual(repaired.styleMarkers, original.styleMarkers);
 });
 
 test('repairs and exports the full stress MIDI without changing its size', async () => {
@@ -107,6 +120,7 @@ test('repairs and exports the full stress MIDI without changing its size', async
   const optimizedBytes = new Uint8Array(await optimized.blob.arrayBuffer());
 
   assert.ok(optimized.repairedNotes > 0 && optimized.repairedNotes <= EXPECTED_NOTES);
+  assert.ok(optimized.repairedTimingEvents > 0);
   assert.equal(optimizedBytes.byteLength, stressBytes.byteLength);
   assert.deepEqual([...optimizedBytes.slice(0, 14)], [...stressBytes.slice(0, 14)]);
   assert.deepEqual([...optimizedBytes.slice(-4)], [...stressBytes.slice(-4)]);
@@ -123,7 +137,7 @@ test('all repair profiles produce a valid, distinct velocity result', async () =
   const velocityValues = snapshots.map((output) => output[firstNoteVelocityOffset]);
 
   assert.ok(firstNoteStatusOffset > 0);
-  assert.ok(outputs.every(({ repairedNotes }) => repairedNotes > 0 && repairedNotes <= EXPECTED_NOTES));
+  assert.ok(outputs.every(({ repairedNotes, repairedTimingEvents }) => repairedNotes > 0 && repairedNotes <= EXPECTED_NOTES && repairedTimingEvents > 0));
   assert.equal(new Set(velocityValues).size, profiles.length);
   assert.ok(velocityValues.every((velocity) => velocity >= 1 && velocity <= 127));
 });

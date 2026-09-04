@@ -7,6 +7,10 @@ const REPAIR_PROFILES = {
   'more-expression': { targetVelocity: 96, preservation: 0.95 },
 };
 
+function textBytes(value) {
+  return [...value].map((character) => character.charCodeAt(0));
+}
+
 const PA800_STYLE_ELEMENTS = [
   ...[1, 2, 3, 4].map((number) => ({ key: `v${number}`, label: `Variation ${number}`, chordVariations: 6 })),
   ...[1, 2, 3].flatMap((number) => [
@@ -32,25 +36,38 @@ export async function analyzeUploadedFile(file) {
 export function getRepairPreview(analysis, presetKey = 'pa800-safe', options = {}) {
   const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
   const applyDynamics = options.applyDynamics ?? true;
+  const applyTiming = options.applyTiming ?? true;
   const optimizedVelocitySpread = applyDynamics ? Math.max(1, Math.round(analysis.velocitySpread * repairProfile.preservation)) : analysis.velocitySpread;
   const optimizedAverageVelocity = applyDynamics ? Math.round(analysis.averageVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation)) : analysis.averageVelocity;
   const optimizedExpressionScore = Math.min(99, Math.max(64, 62 + Math.round(optimizedVelocitySpread * 0.28)));
-  const optimizedScore = Math.round((analysis.timingScore + optimizedExpressionScore + Math.min(99, 72 + analysis.channels * 7)) / 3);
+  const optimizedTimingScore = applyTiming ? Math.min(99, analysis.timingScore + Math.min(20, analysis.timingOutliers)) : analysis.timingScore;
+  const optimizedScore = Math.round((optimizedTimingScore + optimizedExpressionScore + Math.min(99, 72 + analysis.channels * 7)) / 3);
 
   return {
-    original: { score: analysis.score, averageVelocity: analysis.averageVelocity, velocitySpread: analysis.velocitySpread, expressionScore: analysis.expressionScore },
-    optimized: { score: optimizedScore, averageVelocity: optimizedAverageVelocity, velocitySpread: optimizedVelocitySpread, expressionScore: optimizedExpressionScore },
+    original: { score: analysis.score, averageVelocity: analysis.averageVelocity, velocitySpread: analysis.velocitySpread, expressionScore: analysis.expressionScore, timingScore: analysis.timingScore },
+    optimized: { score: optimizedScore, averageVelocity: optimizedAverageVelocity, velocitySpread: optimizedVelocitySpread, expressionScore: optimizedExpressionScore, timingScore: optimizedTimingScore },
   };
+}
+
+function encodeVariableLength(value) {
+  const bytes = [value & 0x7f];
+  while ((value >>= 7)) bytes.unshift((value & 0x7f) | 0x80);
+  return bytes;
+}
+
+function snapToGrid(tick, grid) {
+  return Math.max(0, Math.round(tick / grid) * grid);
 }
 
 export async function createOptimizedMidi(file, presetKey = 'pa800-safe', options = {}) {
   const source = new Uint8Array(await file.arrayBuffer());
-  const output = source.slice();
   const view = new DataView(source.buffer, source.byteOffset, source.byteLength);
-  let offset = 0;
-  let repairedNotes = 0;
   const repairProfile = REPAIR_PROFILES[presetKey] ?? REPAIR_PROFILES['pa800-safe'];
   const applyDynamics = options.applyDynamics ?? true;
+  const applyTiming = options.applyTiming ?? true;
+  let offset = 0;
+  let repairedNotes = 0;
+  let repairedTimingEvents = 0;
 
   const readText = (length) => {
     if (offset + length > view.byteLength) throw new Error('MIDI fajl je nepotpun ili oštećen.');
@@ -71,12 +88,12 @@ export async function createOptimizedMidi(file, presetKey = 'pa800-safe', option
     offset += 4;
     return value;
   };
-  const readVariableLength = (end) => {
+  const readVariableLength = (bytes, cursor, end) => {
     let value = 0;
     let count = 0;
-    while (offset < end && count < 4) {
-      const byte = view.getUint8(offset);
-      offset += 1;
+    while (cursor.value < end && count < 4) {
+      const byte = bytes[cursor.value];
+      cursor.value += 1;
       value = (value << 7) | (byte & 0x7f);
       count += 1;
       if ((byte & 0x80) === 0) return value;
@@ -89,52 +106,116 @@ export async function createOptimizedMidi(file, presetKey = 'pa800-safe', option
   if (headerLength < 6 || offset + headerLength > view.byteLength) throw new Error('MIDI header nije validan.');
   readUint16();
   const trackCount = readUint16();
-  readUint16();
+  const division = readUint16();
   offset += headerLength - 6;
+  const outputParts = [source.slice(0, offset)];
+  const timingGrid = Math.max(1, Math.round(division / 4));
 
   for (let trackIndex = 0; trackIndex < trackCount; trackIndex += 1) {
     if (readText(4) !== 'MTrk') throw new Error(`Track ${trackIndex + 1} nije validan.`);
     const trackLength = readUint32();
     const trackEnd = offset + trackLength;
     if (trackEnd > view.byteLength) throw new Error('MIDI track izlazi van granica fajla.');
-
+    const trackBytes = source.slice(offset, trackEnd);
+    const cursor = { value: 0 };
+    const events = [];
+    let tick = 0;
+    let order = 0;
     let runningStatus = null;
-    while (offset < trackEnd) {
-      readVariableLength(trackEnd);
-      let status = view.getUint8(offset);
+
+    while (cursor.value < trackBytes.length) {
+      tick += readVariableLength(trackBytes, cursor, trackBytes.length);
+      let status = trackBytes[cursor.value];
       if (status < 0x80) {
         if (runningStatus === null) throw new Error('MIDI događaj nema running status.');
         status = runningStatus;
       } else {
-        offset += 1;
+        cursor.value += 1;
         if (status < 0xf0) runningStatus = status;
       }
 
       if (status === 0xff) {
-        offset += 1;
-        const length = readVariableLength(trackEnd);
-        offset += length;
+        const metaType = trackBytes[cursor.value];
+        cursor.value += 1;
+        const length = readVariableLength(trackBytes, cursor, trackBytes.length);
+        if (cursor.value + length > trackBytes.length) throw new Error('MIDI meta događaj je nepotpun.');
+        events.push({ kind: 'meta', tick, order: order += 1, metaType, data: [...trackBytes.slice(cursor.value, cursor.value + length)] });
+        cursor.value += length;
         continue;
       }
       if (status === 0xf0 || status === 0xf7) {
-        offset += readVariableLength(trackEnd);
+        const length = readVariableLength(trackBytes, cursor, trackBytes.length);
+        if (cursor.value + length > trackBytes.length) throw new Error('MIDI sysex događaj je nepotpun.');
+        events.push({ kind: 'sysex', tick, order: order += 1, status, data: [...trackBytes.slice(cursor.value, cursor.value + length)] });
+        cursor.value += length;
         continue;
       }
 
       const eventType = status >> 4;
-      const dataOffset = offset;
-      const secondOffset = dataOffset + 1;
-      offset += eventType === 0xc || eventType === 0xd ? 1 : 2;
-      if (eventType === 0x9 && view.getUint8(secondOffset) > 0 && applyDynamics) {
-        const originalVelocity = view.getUint8(secondOffset);
-        output[secondOffset] = Math.max(1, Math.min(127, Math.round(originalVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation))));
-        if (output[secondOffset] !== originalVelocity) repairedNotes += 1;
+      const dataLength = eventType === 0xc || eventType === 0xd ? 1 : (status >= 0xf0 ? (status === 0xf1 || status === 0xf3 ? 1 : status === 0xf2 ? 2 : 0) : 2);
+      if (cursor.value + dataLength > trackBytes.length) throw new Error('MIDI channel događaj je nepotpun.');
+      events.push({ kind: status >= 0xf0 ? 'system' : 'channel', tick, order: order += 1, status, data: [...trackBytes.slice(cursor.value, cursor.value + dataLength)] });
+      cursor.value += dataLength;
+    }
+
+    const openNotes = new Map();
+    const notePairs = [];
+    for (const event of events) {
+      if (event.kind !== 'channel') continue;
+      const eventType = event.status >> 4;
+      if (eventType !== 0x8 && eventType !== 0x9) continue;
+      const noteKey = `${event.status & 0x0f}:${event.data[0]}`;
+      if (eventType === 0x9 && event.data[1] > 0) {
+        const notes = openNotes.get(noteKey) ?? [];
+        notes.push(event);
+        openNotes.set(noteKey, notes);
+      } else {
+        const notes = openNotes.get(noteKey);
+        const startEvent = notes?.shift();
+        if (startEvent) notePairs.push([startEvent, event]);
+      }
+      if (eventType === 0x9 && event.data[1] > 0 && applyDynamics) {
+        const originalVelocity = event.data[1];
+        event.data[1] = Math.max(1, Math.min(127, Math.round(originalVelocity * repairProfile.preservation + repairProfile.targetVelocity * (1 - repairProfile.preservation))));
+        if (event.data[1] !== originalVelocity) repairedNotes += 1;
       }
     }
+
+    if (applyTiming) {
+      for (const [startEvent, endEvent] of notePairs) {
+        const nextStart = snapToGrid(startEvent.tick, timingGrid);
+        const nextEnd = Math.max(nextStart + timingGrid, snapToGrid(endEvent.tick, timingGrid));
+        if (nextStart !== startEvent.tick) {
+          startEvent.tick = nextStart;
+          repairedTimingEvents += 1;
+        }
+        if (nextEnd !== endEvent.tick) {
+          endEvent.tick = nextEnd;
+          repairedTimingEvents += 1;
+        }
+      }
+    }
+
+    const endOfTrack = events.find((event) => event.kind === 'meta' && event.metaType === 0x2f);
+    if (endOfTrack) {
+      const lastEventTick = Math.max(...events.filter((event) => event !== endOfTrack).map((event) => event.tick), endOfTrack.tick);
+      endOfTrack.tick = Math.max(endOfTrack.tick, lastEventTick);
+    }
+    events.sort((left, right) => left.tick - right.tick || left.order - right.order);
+    const repairedTrack = [];
+    let previousTick = 0;
+    for (const event of events) {
+      repairedTrack.push(...encodeVariableLength(Math.max(0, event.tick - previousTick)));
+      previousTick = event.tick;
+      if (event.kind === 'meta') repairedTrack.push(0xff, event.metaType, ...encodeVariableLength(event.data.length), ...event.data);
+      else if (event.kind === 'sysex') repairedTrack.push(event.status, ...encodeVariableLength(event.data.length), ...event.data);
+      else repairedTrack.push(event.status, ...event.data);
+    }
+    outputParts.push(new Uint8Array([...textBytes('MTrk'), ...[(repairedTrack.length >>> 24) & 0xff, (repairedTrack.length >>> 16) & 0xff, (repairedTrack.length >>> 8) & 0xff, repairedTrack.length & 0xff], ...repairedTrack]));
     offset = trackEnd;
   }
 
-  return { blob: new Blob([output], { type: 'audio/midi' }), repairedNotes };
+  return { blob: new Blob(outputParts, { type: 'audio/midi' }), repairedNotes, repairedTimingEvents };
 }
 
 function isPa800Marker(marker) {

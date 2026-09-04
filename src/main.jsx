@@ -48,7 +48,7 @@ const REPAIR_PRESETS = [
 ];
 
 const REPAIR_ACTIONS = [
-  { key: 'timing', label: 'Timing map', detail: 'Analysis only · no notes changed', locked: true },
+  { key: 'timing', label: 'Timing map', detail: 'Snap notes to detected grid', locked: false },
   { key: 'dynamics', label: 'Dynamics balance', detail: 'Velocity smoothing', locked: false },
   { key: 'structure', label: 'PA800 structure', detail: 'Markers and CV slots protected', locked: true },
 ];
@@ -210,6 +210,7 @@ function OptimizerModal({ onClose, onToast }) {
   const [presetKey, setPresetKey] = useState('pa800-safe');
   const [previewMode, setPreviewMode] = useState('optimized');
   const [applyDynamics, setApplyDynamics] = useState(true);
+  const [applyTiming, setApplyTiming] = useState(true);
 
   const chooseFile = (file) => {
     if (!file) return;
@@ -224,7 +225,7 @@ function OptimizerModal({ onClose, onToast }) {
     setAnalysisError('');
     try {
       const result = await analyzeUploadedFile(selectedFile);
-      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey), preview: getRepairPreview(result, presetKey, { applyDynamics }) });
+      setAnalysis({ ...result, preset: REPAIR_PRESETS.find((preset) => preset.key === presetKey), preview: getRepairPreview(result, presetKey, { applyDynamics, applyTiming }) });
       setStage('results');
     } catch (error) {
       setAnalysisError(error.message);
@@ -237,11 +238,17 @@ function OptimizerModal({ onClose, onToast }) {
   const toggleDynamics = () => {
     const nextValue = !applyDynamics;
     setApplyDynamics(nextValue);
-    setAnalysis((currentAnalysis) => currentAnalysis ? { ...currentAnalysis, preview: getRepairPreview(currentAnalysis, presetKey, { applyDynamics: nextValue }) } : currentAnalysis);
+    setAnalysis((currentAnalysis) => currentAnalysis ? { ...currentAnalysis, preview: getRepairPreview(currentAnalysis, presetKey, { applyDynamics: nextValue, applyTiming }) } : currentAnalysis);
+  };
+
+  const toggleTiming = () => {
+    const nextValue = !applyTiming;
+    setApplyTiming(nextValue);
+    setAnalysis((currentAnalysis) => currentAnalysis ? { ...currentAnalysis, preview: getRepairPreview(currentAnalysis, presetKey, { applyDynamics, applyTiming: nextValue }) } : currentAnalysis);
   };
 
   const exportRepair = async () => {
-    const { blob, repairedNotes } = await createOptimizedMidi(selectedFile, presetKey, { applyDynamics });
+    const { blob, repairedNotes, repairedTimingEvents } = await createOptimizedMidi(selectedFile, presetKey, { applyDynamics, applyTiming });
     const downloadUrl = URL.createObjectURL(blob);
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadUrl;
@@ -250,7 +257,7 @@ function OptimizerModal({ onClose, onToast }) {
     downloadLink.click();
     downloadLink.remove();
     URL.revokeObjectURL(downloadUrl);
-    onToast(`${repairedNotes} notes normalized and exported`);
+    onToast(`${repairedNotes} notes normalized · ${repairedTimingEvents} timing events aligned`);
     onClose();
   };
 
@@ -283,8 +290,8 @@ function OptimizerModal({ onClose, onToast }) {
         <div className="preview-metrics"><div className="preview-score"><span>{previewMode === 'optimized' ? 'Optimized score' : 'Original score'}</span><strong>{previewData?.score}</strong><small>/ 100</small></div><div><span>Average velocity</span><strong>{previewData?.averageVelocity}</strong></div><div><span>Velocity range</span><strong>{previewData?.velocitySpread}</strong></div></div>
         <div className="analysis-score-line"><strong>{previewData?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.preset?.name} · {analysis?.formatLabel}</small></div>
         <div className="analysis-meta-line"><span>Grid drift {analysis?.timingDrift} ticks</span><span>{analysis?.timingOutliers} timing outliers</span><span>Analyzed in {analysis?.analysisDurationMs} ms</span></div>
-        <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
-        <div className="repair-actions">{REPAIR_ACTIONS.map((action) => <div className="repair-action" key={action.key}><div className={`repair-action-icon ${action.locked ? 'repair-action-locked' : applyDynamics ? 'repair-action-active' : 'repair-action-inactive'}`}>{action.locked ? <SlidersHorizontal size={13} /> : <Check size={14} />}</div><div className="repair-action-copy"><strong>{action.label}</strong><span>{action.key === 'timing' ? `${analysis?.timingDrift} tick avg drift · no notes changed` : action.detail}</span></div>{action.locked ? <span className="repair-action-lock">Locked</span> : <button className={`repair-action-button ${applyDynamics ? 'repair-action-undo' : 'repair-action-accept'}`} onClick={toggleDynamics}>{applyDynamics ? 'Undo' : 'Accept'}</button>}</div>)}</div>
+        <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{previewData?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
+        <div className="repair-actions">{REPAIR_ACTIONS.map((action) => { const isActive = action.key === 'timing' ? applyTiming : applyDynamics; const toggleAction = action.key === 'timing' ? toggleTiming : toggleDynamics; return <div className="repair-action" key={action.key}><div className={`repair-action-icon ${action.locked ? 'repair-action-locked' : isActive ? 'repair-action-active' : 'repair-action-inactive'}`}>{action.locked ? <SlidersHorizontal size={13} /> : <Check size={14} />}</div><div className="repair-action-copy"><strong>{action.label}</strong><span>{action.key === 'timing' ? `${analysis?.timingDrift} tick avg drift · snap to ${analysis?.timingGrid} tick grid` : action.detail}</span></div>{action.locked ? <span className="repair-action-lock">Locked</span> : <button className={`repair-action-button ${isActive ? 'repair-action-undo' : 'repair-action-accept'}`} onClick={toggleAction}>{isActive ? 'Undo' : 'Accept'}</button>}</div>; })}</div>
         <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
         {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}
         <div className="coverage-panel"><div className="coverage-heading"><span>PA800 style coverage</span><strong>{analysis?.styleCoverage.coveredSlots}/{analysis?.styleCoverage.totalSlots} CV slots</strong></div><div className="coverage-grid">{analysis?.styleCoverage.elements.map((element) => <div className={`coverage-item ${element.found === element.chordVariations ? 'coverage-complete' : ''}`} key={element.key}><span>{element.label}</span><strong>{element.found}/{element.chordVariations}</strong></div>)}</div></div>
