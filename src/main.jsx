@@ -182,10 +182,59 @@ function App() {
         </div>
       </main>
 
-      {isUploadOpen && <div className="modal-backdrop" onClick={() => setIsUploadOpen(false)}><div className="upload-modal" onClick={(event) => event.stopPropagation()}><button className="modal-close" onClick={() => setIsUploadOpen(false)} aria-label="Close"><X size={18} /></button><div className="modal-icon"><CloudUpload size={24} /></div><span className="card-label">NEW PROJECT</span><h2>Bring in your performance</h2><p>Upload a MIDI, MP3 or Korg style file and start with a clean analysis.</p><button className="dropzone" onClick={() => showToast('File picker is ready')}><Upload size={20} /><strong>Choose a file</strong><span>or drag and drop it here</span></button><div className="supported-formats"><FileAudio size={15} /> MIDI, MP3, KAR, STY up to 250 MB</div></div></div>}
+      {isUploadOpen && <OptimizerModal onClose={() => setIsUploadOpen(false)} onToast={showToast} />}
       {toast && <div className="toast"><Check size={16} />{toast}</div>}
     </div>
   );
+}
+
+function OptimizerModal({ onClose, onToast }) {
+  const [stage, setStage] = useState('upload');
+  const [fileName, setFileName] = useState('');
+
+  const chooseFile = (file) => {
+    if (!file) return;
+    setFileName(file.name);
+    setStage('ready');
+  };
+
+  const runAnalysis = () => {
+    setStage('analyzing');
+    window.setTimeout(() => setStage('results'), 1500);
+  };
+
+  const exportRepair = () => {
+    onToast('Optimized version is ready to export');
+    onClose();
+  };
+
+  return <div className="modal-backdrop" onClick={stage === 'analyzing' ? undefined : onClose}>
+    <div className="upload-modal" onClick={(event) => event.stopPropagation()}>
+      {stage !== 'analyzing' && <button className="modal-close" onClick={onClose} aria-label="Close"><X size={18} /></button>}
+      <div className="modal-icon">{stage === 'results' ? <Check size={24} /> : <CloudUpload size={24} />}</div>
+      <span className="card-label">{stage === 'results' ? 'ANALYSIS COMPLETE' : 'NEW PROJECT'}</span>
+      <h2>{stage === 'upload' && 'Bring in your performance'}{stage === 'ready' && 'Ready to optimize'}{stage === 'analyzing' && 'Reading your performance'}{stage === 'results' && 'Your stage-ready version'}</h2>
+      {stage === 'upload' && <>
+        <p>Upload a MIDI, MP3 or Korg style file and start with a clean analysis.</p>
+        <label className="dropzone" onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); chooseFile(event.dataTransfer.files[0]); }}>
+          <input className="file-input-hidden" type="file" accept=".mid,.midi,.kar,.sty,.mp3" onChange={(event) => chooseFile(event.target.files[0])} />
+          <Upload size={20} /><strong>Choose a file</strong><span>or drag and drop it here</span>
+        </label>
+        <div className="supported-formats"><FileAudio size={15} /> MIDI, MP3, KAR, STY up to 250 MB</div>
+      </>}
+      {stage === 'ready' && <>
+        <p className="selected-file-copy">We’ll scan the arrangement and prepare safe repair suggestions.</p>
+        <div className="selected-file"><div className="selected-file-icon"><FileAudio size={18} /></div><div><strong>{fileName}</strong><span>Ready for analysis</span></div><button onClick={() => setStage('upload')} aria-label="Choose another file"><X size={16} /></button></div>
+        <button className="modal-primary-button" onClick={runAnalysis}>Analyze file <ArrowRight size={16} /></button>
+      </>}
+      {stage === 'analyzing' && <div className="analysis-progress" aria-live="polite"><div className="analysis-spinner"><Activity size={22} /></div><strong>Mapping notes, chords and dynamics</strong><span>Checking PA800 compatibility profile</span><div className="progress-track"><i /></div></div>}
+      {stage === 'results' && <>
+        <p className="selected-file-copy">We found three safe improvements for <strong>{fileName}</strong>.</p>
+        <div className="repair-results"><div><Check size={15} /><span>Timing cleaned</span><strong>+8 pts</strong></div><div><Check size={15} /><span>Dynamics balanced</span><strong>+6 pts</strong></div><div><Check size={15} /><span>PA800 structure preserved</span><strong>Safe</strong></div></div>
+        <button className="modal-primary-button" onClick={exportRepair}>Apply repair & export <ArrowRight size={16} /></button>
+      </>}
+    </div>
+  </div>;
 }
 
 function ProjectCard({ project, onOpen }) {
