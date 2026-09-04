@@ -4,7 +4,7 @@ export async function analyzeUploadedFile(file) {
   const extension = file.name.split('.').pop()?.toLowerCase() ?? '';
 
   if (!MIDI_EXTENSIONS.has(extension)) {
-    throw new Error('Duboka analiza je trenutno dostupna za MIDI i KAR fajlove. STY i MP3 adapter dolazi u sledećoj fazi.');
+    throw new Error('Duboka analiza je trenutno dostupna za MIDI i KAR fajlove. Za PA800 style prvo izvezite SMF sa markerima poput v1cv1, i1cv2 ili f1cv1.');
   }
 
   return analyzeMidi(await file.arrayBuffer(), file.name);
@@ -101,6 +101,16 @@ export async function createOptimizedMidi(file) {
   return { blob: new Blob([output], { type: 'audio/midi' }), repairedNotes };
 }
 
+function isPa800Marker(marker) {
+  const match = marker.match(/^([vife])(\d)cv(\d)$/);
+  if (!match) return false;
+  const elementNumber = Number(match[2]);
+  const chordVariation = Number(match[3]);
+  const maxElementNumber = match[1] === 'v' ? 4 : 3;
+  const maxChordVariation = match[1] === 'v' ? 6 : 2;
+  return elementNumber <= maxElementNumber && chordVariation <= maxChordVariation;
+}
+
 function analyzeMidi(buffer, fileName) {
   const view = new DataView(buffer);
   let offset = 0;
@@ -153,6 +163,7 @@ function analyzeMidi(buffer, fileName) {
   let maxTick = 0;
   let tempo = 120;
   let trackNames = 0;
+  const styleMarkers = [];
   let velocityTotal = 0;
   let velocityLowest = 127;
   let velocityHighest = 0;
@@ -188,6 +199,12 @@ function analyzeMidi(buffer, fileName) {
         if (offset + length > trackEnd) throw new Error('MIDI meta događaj je nepotpun.');
         if (metaType === 0x51 && length === 3) tempo = Math.round(60000000 / ((view.getUint8(offset) << 16) | (view.getUint8(offset + 1) << 8) | view.getUint8(offset + 2)));
         if (metaType === 0x03 && length > 0) trackNames += 1;
+        if ((metaType === 0x01 || metaType === 0x06) && length > 0) {
+          let marker = '';
+          for (let markerIndex = 0; markerIndex < length; markerIndex += 1) marker += String.fromCharCode(view.getUint8(offset + markerIndex));
+          const normalizedMarker = marker.trim().toLowerCase();
+          if (isPa800Marker(normalizedMarker)) styleMarkers.push(normalizedMarker);
+        }
         offset += length;
         if (metaType === 0x2f) break;
         continue;
@@ -256,5 +273,6 @@ function analyzeMidi(buffer, fileName) {
     topPitchClass,
     timingScore,
     expressionScore,
+    styleMarkers,
   };
 }

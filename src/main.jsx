@@ -255,6 +255,8 @@ function OptimizerModal({ onClose, onToast }) {
         <p className="selected-file-copy">Analysis complete for <strong>{analysis?.fileName}</strong>.</p>
         <div className="analysis-score-line"><strong>{analysis?.score}</strong><span>/ 100 arrangement score</span><small>{analysis?.formatLabel}</small></div>
         <div className="repair-results"><div><Check size={15} /><span>Timing confidence</span><strong>{analysis?.timingScore}%</strong></div><div><Check size={15} /><span>Expression range</span><strong>{analysis?.expressionScore}%</strong></div><div><Check size={15} /><span>{analysis?.notes.toLocaleString()} notes · {analysis?.channels} channels</span><strong>{analysis?.tempo} BPM</strong></div></div>
+        <div className="marker-summary"><span>PA800 style markers</span><strong>{analysis?.styleMarkers.length || 'None detected'}</strong></div>
+        {analysis?.styleMarkers.length > 0 && <div className="marker-list">{analysis.styleMarkers.map((marker) => <span key={marker}>{marker}</span>)}</div>}
         <button className="modal-primary-button" onClick={exportRepair}>Apply repair & export <ArrowRight size={16} /></button>
       </>}
     </div>
