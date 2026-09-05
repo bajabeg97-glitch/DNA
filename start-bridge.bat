@@ -1,6 +1,6 @@
 @echo off
-rem DNA Optimizer - start bridge (AI Studio UI) on http://localhost:8123
-rem Keep this window open while you use the UI.
+rem DNA Optimizer - DNA Studio GUI (4.71) on http://localhost:8123
+rem Opens the browser and keeps the bridge running in this window.
 cd /d "%~dp0"
 
 where node >nul 2>nul
@@ -10,7 +10,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-echo Starting DNA bridge on http://localhost:8123 ...
-echo Open that URL in your browser (or use the Arena live preview).
+echo Starting DNA Studio 4.71 bridge on http://localhost:8123 ...
+start "" http://localhost:8123
 node dna_bridge.mjs
 pause

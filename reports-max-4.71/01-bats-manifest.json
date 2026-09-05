@@ -1,0 +1,62 @@
+{
+ "schema": "dna-bats-manifest",
+ "milestone": "4.71",
+ "date": "2026-09-06",
+ "note": "svih 9 .bat launcher-a: 5 iz 4.66 + 4 nova (4.71 GUI/model flow). CRLF + cist ASCII.",
+ "files": {
+  "start-bridge.bat": {
+   "sha256": "6c5ce9deb2510bc42654404c0bf22655589888faed392c2133c3a17dc538f711",
+   "purpose": "pokrece DNA Studio GUI (bridge 4.71) na http://localhost:8123 i otvara browser",
+   "bytes": 435,
+   "crlf": 16
+  },
+  "session-pass.bat": {
+   "sha256": "3662368dfc42047f2991c1ca3a366d82cb839efc63308c72bee99606959c6477",
+   "purpose": "Session Pass CLI wrapper (%*): analiza/primenjivanje jednog MIDI-ja",
+   "bytes": 819,
+   "crlf": 26
+  },
+  "run-tests.bat": {
+   "sha256": "1f22f981ced5e26bac8dc9d9ff127c2d7a3f0416942472807b1bebd45ae342bf",
+   "purpose": "puna baterija: python core 21 fajla + legacy + npm (lista u reports-max-4.71)",
+   "bytes": 1388,
+   "crlf": 44
+  },
+  "refresh-patterns.bat": {
+   "sha256": "ae77440e0afe97d587550ef545b6e7bd15f83c3baada1a1a4dbc4241bc9a0524",
+   "purpose": "regeneracija pattern evidencije (4.64 korpus + 4.65 user reference)",
+   "bytes": 702,
+   "crlf": 29
+  },
+  "setup-windows.bat": {
+   "sha256": "e4f6946e7127281a577c6b7d6f6eaa7dd8aa9fadc37c1c109fbe9f86114da9aa",
+   "purpose": "jednokratna Windows priprema: numpy + node + lista launcher-a",
+   "bytes": 1193,
+   "crlf": 34
+  },
+  "compose-songs.bat": {
+   "sha256": "6254db74538428c054487530f4c6f269b633f1b41a218b89b95fe6a141cc4459",
+   "purpose": "DNA Kompozitor 4.70: pesme .mid + scorecard u workspace-4.71",
+   "bytes": 1058,
+   "crlf": 38
+  },
+  "build-corpus.bat": {
+   "sha256": "789465998150e4562716ecada144d550096545e40c3fca8c9d39570788b60c47",
+   "purpose": "korpus 4.69 rebuild u workspace-4.71 (committed S1 ostaje netaknut)",
+   "bytes": 935,
+   "crlf": 31
+  },
+  "validate-songs.bat": {
+   "sha256": "a30dc8933e1375aeac4f36d285295a809a38f345d6902e7c7012196e4f98326f",
+   "purpose": "validatorske suita pesama/korpusa (v469 + v470)",
+   "bytes": 619,
+   "crlf": 23
+  },
+  "model-train.bat": {
+   "sha256": "7e8822a642ad6af889aaab4fc427ac7f31bee6be68fd8944fc2acb6f6fd56b1c",
+   "purpose": "S3 model trening launcher (modul stize sa S3 slojem; GUI opcije spremne)",
+   "bytes": 1133,
+   "crlf": 35
+  }
+ }
+}

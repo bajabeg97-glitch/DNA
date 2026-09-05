@@ -42,7 +42,7 @@ const get = (u, o) => fetch(base + u, o).then((r) => r.json());
 test('health reports brain 4.68', async () => {
   const h = await get('/api/health');
   assert.equal(h.ok, true);
-  assert.equal(h.version, '4.68');
+  assert.equal(h.version, '4.71');
   assert.ok(h.engines.includes('brain 4.68'));
 });
 

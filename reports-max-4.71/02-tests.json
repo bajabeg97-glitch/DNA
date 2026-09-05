@@ -1,0 +1,65 @@
+{
+ "schema": "dna-test-run-report",
+ "milestone": "4.71",
+ "date": "2026-09-06",
+ "python": "python3.11",
+ "node": "v22.22.3",
+ "suites": [
+  {
+   "command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_session_pass_v462 test_mido_independent_v452 test_pattern_library_v464 test_user_reference_bank_v465 test_windows_bats_v466 test_analysis_v467 test_assistant_brain_v468 test_composer_corpus_v469 test_generation_plan_v469 test_composer_engine_v470 test_windows_bats_v471",
+   "result": "OK",
+   "tests": 226,
+   "skipped": 3,
+   "note": "Ran 229: 226 OK, 3 skipped (zahtevaju nedostupne opcije), 0 fail — core od v449 do v471."
+  },
+  {
+   "command": "python3.11 -m unittest test_max_registry_v448",
+   "result": "OK",
+   "tests": 5,
+   "skipped": 0,
+   "note": "legacy MAX registry (10 modela pronadjena, classic layout, hard-invalid nikad ne rangira)."
+  },
+  {
+   "command": "npm test",
+   "result": "OK",
+   "tests": 29,
+   "skipped": 0,
+   "note": "node --test: bridge 9 + assistant 7 + midi-stress 5 + GUI 4.71 8 (nova suita)."
+  }
+ ],
+ "newForMilestone": {
+  "test_windows_bats_v471": {
+   "tests": 17,
+   "covered": [
+    "svih 9 .bat launcher-a postoji (5 legacy + 4 nova)",
+    ".gitattributes pina *.bat na CRLF; workspace-4.71/ je gitignorisano",
+    "CRLF zavrsnici + cist ASCII + @echo off (nema mojibake-a)",
+    "svaki launcher cd-uje na repo root preko %~dp0; nema tab karaktera",
+    "compose-songs.bat -> python -m dna_midi_studio.composer_engine + --out workspace-4.71 fallback",
+    "build-corpus.bat -> python -m dna_midi_studio.composer_corpus u workspace-4.71",
+    "validate-songs.bat -> v469 + v470 validator suita",
+    "model-train.bat -> model_train.py pre-let + S3/4.71 iskreni INFO pre nego sto modul postoji",
+    "start-bridge.bat -> node dna_bridge.mjs + start browser na localhost:8123",
+    "setup-windows.bat najavljuje svih 9 launcher-a",
+    "run-tests.bat pokriva 4.67..4.71 suita (analysis/brain/corpus/plan/composer/v471)",
+    "dna_studio_ui.html postoji sa model-learning panelom (v-model + /api/model/*)",
+    "dna_bridge.mjs nema vise inline INDEX_HTML templejt; BRIDGE_VERSION 4.71",
+    "manifest reports-max-4.71/01-bats-manifest.json sinhronizovan (sha256 + bytes + crlf)",
+    "reports-max-4.71/02-tests.json lista kuriranu python komandu"
+   ]
+  },
+  "tests/gui-4.71.test.mjs": {
+   "tests": 8,
+   "covered": [
+    "health 4.71: engines gui/composer/corpus + workDir + modelReady:false",
+    "UI se servira iz dna_studio_ui.html sa v-model/v-compose/v-corpus markerima",
+    "/api/compose/info: 10 stilova sa bpm/signaturom (iz composer_engine.py)",
+    "POST /api/compose: rock seed 7 -> .mid + scorecard u workspace, download preko /api/ws/file",
+    "komponovanje odbija nepoznate stilove i nevalidna semena",
+    "/api/corpus/status: S1 korpus 779 predmeta / 843545 tokena, validator OK",
+    "/api/model/status: S3 nije instaliran (iskreno); /api/model/train vraca not_ready sa echo",
+    "server-side validacija opcija treninga: clamp + odbijanje cuda (samo CPU)"
+   ]
+  }
+ }
+}

@@ -40,7 +40,7 @@ test('bridge health reports engines and python', async () => {
   await withServer(async (base) => {
     const h = await (await fetch(base + '/api/health')).json();
     assert.equal(h.ok, true);
-    assert.equal(h.version, '4.68');
+    assert.equal(h.version, '4.71');
     assert.ok(h.engines.includes('session_pass 4.60'));
   });
 });
