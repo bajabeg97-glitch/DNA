@@ -1,0 +1,1007 @@
+{
+  "schema": "dna-mix-engine-run",
+  "version": "4.52",
+  "sourceName": "reference-style",
+  "sourceSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "request": {
+    "gainFactorByChannel": {
+      "10": 0.55,
+      "13": 0.55,
+      "14": 0.55
+    },
+    "interpretation": "per-bar CC11 expression automation scaled by the factor (0.55 = -45%); note velocities untouched"
+  },
+  "channelFacts": {
+    "8": {
+      "channel": 8,
+      "role": "bass",
+      "sound": [
+        121,
+        6,
+        33
+      ],
+      "noteCount": 107,
+      "register": [
+        34,
+        55
+      ],
+      "avgDurTicks": 222.0,
+      "avgVel": 116.3,
+      "velMin": 97,
+      "velMax": 126,
+      "distinctPitches": 13,
+      "distinctStarts": 107
+    },
+    "9": {
+      "channel": 9,
+      "role": "drums",
+      "sound": [
+        120,
+        0,
+        5
+      ],
+      "noteCount": 263,
+      "register": [
+        16,
+        79
+      ],
+      "avgDurTicks": 113.7,
+      "avgVel": 108.2,
+      "velMin": 36,
+      "velMax": 127,
+      "distinctPitches": 17,
+      "distinctStarts": 166
+    },
+    "10": {
+      "channel": 10,
+      "role": "percussion",
+      "sound": [
+        120,
+        0,
+        5
+      ],
+      "noteCount": 589,
+      "register": [
+        17,
+        69
+      ],
+      "avgDurTicks": 87.5,
+      "avgVel": 101.1,
+      "velMin": 36,
+      "velMax": 127,
+      "distinctPitches": 14,
+      "distinctStarts": 381
+    },
+    "11": {
+      "channel": 11,
+      "role": "accompaniment",
+      "sound": [
+        121,
+        3,
+        0
+      ],
+      "noteCount": 213,
+      "register": [
+        43,
+        79
+      ],
+      "avgDurTicks": 210.4,
+      "avgVel": 104.4,
+      "velMin": 78,
+      "velMax": 124,
+      "distinctPitches": 10,
+      "distinctStarts": 205
+    },
+    "12": {
+      "channel": 12,
+      "role": "accompaniment",
+      "sound": [
+        121,
+        3,
+        0
+      ],
+      "noteCount": 272,
+      "register": [
+        52,
+        84
+      ],
+      "avgDurTicks": 184.4,
+      "avgVel": 100.4,
+      "velMin": 78,
+      "velMax": 124,
+      "distinctPitches": 9,
+      "distinctStarts": 222
+    },
+    "13": {
+      "channel": 13,
+      "role": "accompaniment",
+      "sound": [
+        120,
+        0,
+        64
+      ],
+      "noteCount": 254,
+      "register": [
+        60,
+        91
+      ],
+      "avgDurTicks": 74.4,
+      "avgVel": 100.1,
+      "velMin": 66,
+      "velMax": 124,
+      "distinctPitches": 12,
+      "distinctStarts": 254
+    },
+    "14": {
+      "channel": 14,
+      "role": "accompaniment",
+      "sound": [
+        120,
+        0,
+        64
+      ],
+      "noteCount": 242,
+      "register": [
+        67,
+        96
+      ],
+      "avgDurTicks": 57.6,
+      "avgVel": 101.5,
+      "velMin": 66,
+      "velMax": 124,
+      "distinctPitches": 12,
+      "distinctStarts": 242
+    },
+    "15": {
+      "channel": 15,
+      "role": "accompaniment",
+      "sound": [
+        121,
+        3,
+        0
+      ],
+      "noteCount": 141,
+      "register": [
+        48,
+        84
+      ],
+      "avgDurTicks": 187.5,
+      "avgVel": 103.4,
+      "velMin": 78,
+      "velMax": 124,
+      "distinctPitches": 9,
+      "distinctStarts": 106
+    }
+  },
+  "percussionAccentReport": {
+    "drumChannel": 9,
+    "percussionChannel": 10,
+    "accentNoteCount": 70,
+    "byKind": {
+      "double=False,corePitch=False": 68,
+      "double=False,corePitch=True": 2
+    },
+    "accents": [
+      {
+        "pitch": 57,
+        "startTick": 1920,
+        "velocity": 108,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 11520,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 47,
+        "startTick": 11640,
+        "velocity": 88,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 47,
+        "startTick": 11880,
+        "velocity": 88,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 45,
+        "startTick": 12120,
+        "velocity": 99,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 43,
+        "startTick": 12240,
+        "velocity": 100,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 12480,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 12720,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 12960,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 12960,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 13200,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 13320,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 54,
+        "startTick": 14880,
+        "velocity": 36,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 15360,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 47,
+        "startTick": 15480,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 47,
+        "startTick": 15720,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 45,
+        "startTick": 15960,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 43,
+        "startTick": 16080,
+        "velocity": 117,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 16320,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 16560,
+        "velocity": 124,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 16800,
+        "velocity": 83,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 16800,
+        "velocity": 124,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 17040,
+        "velocity": 124,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 17160,
+        "velocity": 124,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 54,
+        "startTick": 18720,
+        "velocity": 61,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 19200,
+        "velocity": 113,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 47,
+        "startTick": 19320,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 47,
+        "startTick": 19560,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 45,
+        "startTick": 19800,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 43,
+        "startTick": 19920,
+        "velocity": 125,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 20160,
+        "velocity": 113,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 40,
+        "startTick": 20400,
+        "velocity": 125,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 19,
+        "startTick": 20640,
+        "velocity": 113,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 20640,
+        "velocity": 125,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 20880,
+        "velocity": 125,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 40,
+        "startTick": 21000,
+        "velocity": 125,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 54,
+        "startTick": 22560,
+        "velocity": 101,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 23280,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 23760,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 24240,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 24720,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 25200,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 25680,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 26160,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 26640,
+        "velocity": 121,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 26880,
+        "velocity": 120,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 27120,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 27360,
+        "velocity": 120,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 27600,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 27840,
+        "velocity": 120,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 28080,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 28320,
+        "velocity": 120,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 28560,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 39,
+        "startTick": 28800,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 54,
+        "startTick": 28800,
+        "velocity": 112,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 54,
+        "startTick": 29760,
+        "velocity": 112,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 79,
+        "startTick": 30240,
+        "velocity": 127,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 30480,
+        "velocity": 123,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 30720,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 31440,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 31680,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 32160,
+        "velocity": 96,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 32640,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 33360,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 16,
+        "startTick": 33600,
+        "velocity": 97,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 17,
+        "startTick": 34080,
+        "velocity": 96,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 36000,
+        "velocity": 111,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 37920,
+        "velocity": 111,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 39840,
+        "velocity": 111,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 41760,
+        "velocity": 111,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      }
+    ],
+    "applied": false,
+    "policy": "report-only: velocity on protected channels is FACTORY_ONLY; whole-channel percussion cut happens via CC11 on ch10"
+  },
+  "maskingBefore": {
+    "schema": "dna-mix-masking-windows",
+    "pitchWindowSemitones": 12,
+    "pairs": {
+      "8-9": 179,
+      "8-10": 254,
+      "8-11": 106,
+      "8-12": 55,
+      "8-13": 18,
+      "8-15": 27,
+      "9-10": 449,
+      "9-11": 112,
+      "9-12": 20,
+      "9-13": 10,
+      "9-14": 3,
+      "9-15": 47,
+      "10-11": 216,
+      "10-12": 151,
+      "10-13": 94,
+      "10-14": 22,
+      "10-15": 84,
+      "11-12": 459,
+      "11-13": 219,
+      "11-14": 75,
+      "11-15": 256,
+      "12-13": 412,
+      "12-14": 246,
+      "12-15": 303,
+      "13-14": 144,
+      "13-15": 168,
+      "14-15": 52
+    },
+    "totalCollidingChannelNotes": 4181,
+    "busiestPair": "11-12"
+  },
+  "planSummary": {
+    "controller": 11,
+    "targets": {
+      "10": 0.55,
+      "13": 0.55,
+      "14": 0.55
+    },
+    "eventsPlanned": 30,
+    "channelsMissingCC": [],
+    "noteForMissing": "channel has no CC11 automation; note velocities left untouched (FACTORY_ONLY) — no change applied"
+  },
+  "plan": [
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 28800,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 34560,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 28800,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 34560,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 28800,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 34560,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    }
+  ],
+  "gates": {
+    "reparsed": true,
+    "noteGeometryUnchanged": true,
+    "velocitiesUntouched": true,
+    "onlyTargetChannelCCScaled": true,
+    "exactScaleApplied": true,
+    "maskingWindowsUnchanged": true
+  },
+  "status": "MIX_APPLIED",
+  "artifactMidi": "artifacts-max-4.52/mix-arranged-reference-style.mid"
+}

@@ -1,0 +1,676 @@
+{
+  "schema": "dna-mix-engine-run",
+  "version": "4.52",
+  "sourceName": "session35-arranged",
+  "sourceSha256": "ba040970a648fcd06fcbf9c87f18919a87757faf4433638210dbc29b847b2b10",
+  "request": {
+    "gainFactorByChannel": {
+      "10": 0.55,
+      "11": 0.55,
+      "13": 0.55,
+      "14": 0.55
+    },
+    "interpretation": "per-bar CC11 expression automation scaled by the factor (0.55 = -45%); note velocities untouched"
+  },
+  "channelFacts": {
+    "8": {
+      "channel": 8,
+      "role": "bass",
+      "sound": [
+        121,
+        6,
+        33
+      ],
+      "noteCount": 122,
+      "register": [
+        28,
+        48
+      ],
+      "avgDurTicks": 113.1,
+      "avgVel": 117.0,
+      "velMin": 105,
+      "velMax": 124,
+      "distinctPitches": 14,
+      "distinctStarts": 122
+    },
+    "9": {
+      "channel": 9,
+      "role": "drums",
+      "sound": [
+        120,
+        0,
+        5
+      ],
+      "noteCount": 308,
+      "register": [
+        36,
+        46
+      ],
+      "avgDurTicks": 57.4,
+      "avgVel": 113.2,
+      "velMin": 81,
+      "velMax": 124,
+      "distinctPitches": 5,
+      "distinctStarts": 256
+    },
+    "10": {
+      "channel": 10,
+      "role": "percussion",
+      "sound": [
+        120,
+        0,
+        27
+      ],
+      "noteCount": 203,
+      "register": [
+        35,
+        70
+      ],
+      "avgDurTicks": 63.1,
+      "avgVel": 108.8,
+      "velMin": 67,
+      "velMax": 127,
+      "distinctPitches": 12,
+      "distinctStarts": 176
+    },
+    "11": {
+      "channel": 11,
+      "role": "accompaniment",
+      "sound": [
+        121,
+        15,
+        25
+      ],
+      "noteCount": 195,
+      "register": [
+        48,
+        82
+      ],
+      "avgDurTicks": 191.1,
+      "avgVel": 72.0,
+      "velMin": 53,
+      "velMax": 96,
+      "distinctPitches": 28,
+      "distinctStarts": 178
+    },
+    "12": {
+      "channel": 12,
+      "role": "accompaniment",
+      "sound": [
+        121,
+        3,
+        0
+      ],
+      "noteCount": 260,
+      "register": [
+        50,
+        84
+      ],
+      "avgDurTicks": 88.9,
+      "avgVel": 96.0,
+      "velMin": 79,
+      "velMax": 110,
+      "distinctPitches": 22,
+      "distinctStarts": 228
+    },
+    "13": {
+      "channel": 13,
+      "role": "accompaniment",
+      "sound": [
+        120,
+        0,
+        64
+      ],
+      "noteCount": 96,
+      "register": [
+        50,
+        77
+      ],
+      "avgDurTicks": 29.4,
+      "avgVel": 105.0,
+      "velMin": 94,
+      "velMax": 113,
+      "distinctPitches": 12,
+      "distinctStarts": 96
+    },
+    "14": {
+      "channel": 14,
+      "role": "accompaniment",
+      "sound": [
+        120,
+        0,
+        89
+      ],
+      "noteCount": 216,
+      "register": [
+        55,
+        87
+      ],
+      "avgDurTicks": 62.9,
+      "avgVel": 123.5,
+      "velMin": 99,
+      "velMax": 127,
+      "distinctPitches": 15,
+      "distinctStarts": 216
+    },
+    "15": {
+      "channel": 15,
+      "role": "accompaniment",
+      "sound": null,
+      "noteCount": 372,
+      "register": [
+        48,
+        72
+      ],
+      "avgDurTicks": 160.0,
+      "avgVel": 83.7,
+      "velMin": 82,
+      "velMax": 114,
+      "distinctPitches": 23,
+      "distinctStarts": 275
+    }
+  },
+  "percussionAccentReport": {
+    "drumChannel": 9,
+    "percussionChannel": 10,
+    "accentNoteCount": 10,
+    "byKind": {
+      "double=False,corePitch=False": 5,
+      "double=True,corePitch=True": 5
+    },
+    "accents": [
+      {
+        "pitch": 46,
+        "startTick": 9361,
+        "velocity": 103,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 11279,
+        "velocity": 103,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 36,
+        "startTick": 15360,
+        "velocity": 118,
+        "coreKitPitch": true,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 36,
+        "startTick": 15839,
+        "velocity": 118,
+        "coreKitPitch": true,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 36,
+        "startTick": 17760,
+        "velocity": 118,
+        "coreKitPitch": true,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 36,
+        "startTick": 18241,
+        "velocity": 118,
+        "coreKitPitch": true,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 36,
+        "startTick": 18720,
+        "velocity": 118,
+        "coreKitPitch": true,
+        "doubleTriggerOnPerc": true
+      },
+      {
+        "pitch": 46,
+        "startTick": 23760,
+        "velocity": 110,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 26768,
+        "velocity": 114,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      },
+      {
+        "pitch": 46,
+        "startTick": 28561,
+        "velocity": 110,
+        "coreKitPitch": false,
+        "doubleTriggerOnPerc": false
+      }
+    ],
+    "applied": false,
+    "policy": "report-only: velocity on protected channels is FACTORY_ONLY; whole-channel percussion cut happens via CC11 on ch10"
+  },
+  "maskingBefore": {
+    "schema": "dna-mix-masking-windows",
+    "pitchWindowSemitones": 12,
+    "pairs": {
+      "8-9": 206,
+      "8-10": 91,
+      "8-11": 65,
+      "8-12": 53,
+      "8-13": 19,
+      "8-14": 20,
+      "8-15": 110,
+      "9-10": 170,
+      "9-11": 136,
+      "9-12": 21,
+      "9-13": 8,
+      "9-14": 12,
+      "9-15": 174,
+      "10-11": 275,
+      "10-12": 256,
+      "10-13": 141,
+      "10-14": 123,
+      "10-15": 421,
+      "11-12": 557,
+      "11-13": 206,
+      "11-14": 435,
+      "11-15": 817,
+      "12-13": 190,
+      "12-14": 430,
+      "12-15": 765,
+      "13-14": 107,
+      "13-15": 239,
+      "14-15": 680
+    },
+    "totalCollidingChannelNotes": 6727,
+    "busiestPair": "11-15"
+  },
+  "planSummary": {
+    "controller": 11,
+    "targets": {
+      "10": 0.55,
+      "11": 0.55,
+      "13": 0.55,
+      "14": 0.55
+    },
+    "eventsPlanned": 40,
+    "channelsMissingCC": [],
+    "noteForMissing": "channel has no CC11 automation; note velocities left untouched (FACTORY_ONLY) — no change applied"
+  },
+  "plan": [
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 7680,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 24960,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 10,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 7680,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 24960,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 11,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 7680,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 24960,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 13,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 0,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 3840,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 7680,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 11520,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 15360,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 19200,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 23040,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 24960,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 26880,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    },
+    {
+      "track": 0,
+      "tick": 30720,
+      "channel": 14,
+      "controller": 11,
+      "oldValue": 127,
+      "newValue": 70,
+      "factor": 0.55
+    }
+  ],
+  "gates": {
+    "reparsed": true,
+    "noteGeometryUnchanged": true,
+    "velocitiesUntouched": true,
+    "onlyTargetChannelCCScaled": true,
+    "exactScaleApplied": true,
+    "maskingWindowsUnchanged": true
+  },
+  "status": "MIX_APPLIED",
+  "artifactMidi": "artifacts-max-4.52/mix-arranged-session35-arranged.mid"
+}

@@ -2,6 +2,12 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Mix Engineer 4.52:** gain staging dodan u postojeći projekat —
+> CC11 expression automatics scaled x0.55 (-45%) on detected pad layers and the
+> percussion channel (notes, velocities and CC7 untouched; gates prove it).
+> Evidence: `artifacts-max-4.52/` + `reports-max-4.52/`; mido = independent
+> verifier in tests (dev-only). Guide: `docs/studio-mix-4.52.md`; next steps in
+> `docs/roadmap-ai-session-musician.md`.
 > **Studio Truth Engine 4.51:** the studio flow now *applies*: it never blocks
 > when an evidence-backed improvement exists — it fills only empty legal ACC
 > slots (strum/comp live-cell chord-tone parts, pad fills), clamps velocity only

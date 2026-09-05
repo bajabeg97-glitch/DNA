@@ -1,0 +1,12 @@
+{
+  "session35-arranged": {
+    "effectiveMaskingBefore": 6727.0,
+    "effectiveMaskingAfter": 4297.9,
+    "effectiveMaskingReductionPercent": 36.1
+  },
+  "reference-style": {
+    "effectiveMaskingBefore": 4181.0,
+    "effectiveMaskingAfter": 3003.3,
+    "effectiveMaskingReductionPercent": 28.2
+  }
+}
