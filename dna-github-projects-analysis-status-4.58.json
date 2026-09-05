@@ -1,0 +1,33 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.58-research-github",
+  "status": "complete",
+  "date": "2026-09-05",
+  "kind": "research",
+  "summary": "Analiza 20 najjacih MIDI projekata (gh api + README signal sken): pokrivenost generisanja (magenta 19800★, muzic 4951★, NotaGen, MidiTok, muspy, midi-model, sym-diffusion, MIDI-GPT), aranzera (JJazzLab LGPL, Cadenza/BandInMuseScore/Favorites-with-Style GPL, autoaccompany/fleet-midi-bass MIT) i analize (music21, pretty-midi, mido, musicaiz, mgeval). Zakljucak: niko ne pokriva evidencijsku optimizaciju postojecg fajla, Korg uloge, terca/echo trackove ni factory velocity autoritet; MIT projekti se mogu ugraditi uz atribuciju, GPL/AGPL/LGPL samo studija.",
+  "deliverables": {
+    "analysis": "reports-max-4.58/01-github-projects.json",
+    "guide": "docs/github-midi-projects-analysis.md"
+  },
+  "projectsAnalyzed": 20,
+  "topByStars": [
+    "magenta/magenta 19800",
+    "microsoft/muzic 4951",
+    "cuthbertLab/music21 2573",
+    "mido/mido 1638",
+    "ElectricAlexis/NotaGen 1224",
+    "craffel/pretty-midi 1036"
+  ],
+  "verdicts": {
+    "reusableWithAttribution": "mido, pretty-midi, music21, MidiTok, muspy, NotaGen, MIDI-GPT, autoaccompany, fleet-midi-bass, Muzic, magenta (mido vec u upotrebi kao dev-only verifikator)",
+    "studyOnly": "Cadenza, BandInMuseScore, Favorites-with-Style, expremigen, musicaiz, JJazzLab",
+    "nobodyCovers": [
+      "evidence-gated optimization of an existing file",
+      "Korg Pa style role/section mapping",
+      "terca/echo special-track optimization",
+      "factory velocity authority",
+      "CC7/CC11 masking gain",
+      "groove evidence vs real drummers"
+    ]
+  }
+}
