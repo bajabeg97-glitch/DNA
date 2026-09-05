@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Session Pass 4.60 (Faza A):** jedan CLI poziv protera fajl kroz sve
+> engine-e (4.52 miks, 4.53 STY, 4.54 groove, 4.55 tehnike, 4.57 echo/terca,
+> 4.59 role patterni) i vrati jedan izveštaj sa 5 akcija: STY_EXPORT,
+> percussion CC11 gain, echo/terca, studio fills (odluka), trigeri LOCKED.
+> `--apply-safe` piše nove artefakte; izvor se nikad ne menja. Suita 98 + 5.
+> Evidence: `artifacts-max-4.60/`; vodič `docs/session-pass-4.60.md`; vizija
+> `docs/dna-optimizer-vision.md`.
+> **DNA Optimizer 5.0 (vizija):** proizvodni cilj je „Suno iskustvo", ali SAMO
 > **DNA Optimizer 5.0 (vizija):** proizvodni cilj je „Suno iskustvo", ali SAMO
 > optimizacija (nema generisanja od nule), na Korg Pa800 temelju: upload →
 > razumevanje (role/patterni 4.59, groove 4.54, tehnike 4.55, echo/terca 4.57,

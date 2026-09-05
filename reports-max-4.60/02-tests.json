@@ -1,0 +1,28 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.60",
+  "date": "2026-09-05",
+  "python": "python3.11 (engine stdlib-only)",
+  "suites": [
+    {"command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_mido_independent_v452",
+     "result": "OK", "tests": 98, "note": "98 = 87 pre-4.60 + 11 new"},
+    {"command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5},
+    {"command": "python3.11 -m unittest test_session_pass_v460", "result": "OK", "tests": 11,
+     "newForMilestone": true,
+     "covered": [
+       "identity + 10 Korg markers on reference-style",
+       "explicit role map used (8 bass .. 15 accompaniment)",
+       "per-role patterns ch8=107 bass, ch9=263 drums, ch10=589 percussion",
+       "groove vs human (ch9 std 6.64 ms 98.9% on-grid; ch10 std 22.24 ms)",
+       "technique candidates: bass ch8 (107) + chordal ch11 rhythm-guitar (205)",
+       "mix plan targets percussion ch10 factor 0.55 with 10 CC11 events",
+       "action statuses [APPLIED, APPLIED, SKIPPED, NEEDS_DECISION, LOCKED]",
+       "STY export gates all true (addedTotal 0, cc11Added [])",
+       "mix gates prove note velocities untouched",
+       "session35 READY/READY readiness; song19 solo echo scan runs with 0 findings",
+       "deterministic recompute"]
+    },
+    {"command": "session_pass CLI runs", "result": "OK", "files": 3,
+     "note": "reference-style (apply-safe: 2 APPLIED artifacts), session35 (READY), song19-01 (solo scan, SKIPPED where inapplicable)"}
+  ]
+}

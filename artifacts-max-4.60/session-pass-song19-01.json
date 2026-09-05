@@ -1,0 +1,351 @@
+{
+  "schema": "dna-session-pass",
+  "version": "4.60",
+  "sourceName": "song19-01.mid",
+  "sourceSha256": "c992893d6ab4ceb8ec0851212ab6212e734794c9b048887534b24dd2638e1833",
+  "fileFacts": {
+    "format": 1,
+    "ppq": 480,
+    "tracks": 5,
+    "channels": [
+      0,
+      1,
+      2,
+      9
+    ],
+    "markers": [
+      "intro",
+      "verse",
+      "chorus",
+      "ending"
+    ],
+    "markerCount": 4,
+    "elementsInStyle": 2
+  },
+  "roleMapUsed": {
+    "0": "accompaniment",
+    "1": "bass",
+    "2": "solo",
+    "9": "drums"
+  },
+  "unclassifiedChannels": [],
+  "perRolePatterns": {
+    "0": {
+      "role": "accompaniment",
+      "channel": 0,
+      "noteCount": 54,
+      "register": [
+        60,
+        71
+      ],
+      "densityNotesPerBar": 6.75,
+      "velocity": {
+        "n": 54,
+        "min": 38.0,
+        "max": 38.0,
+        "mean": 38.0,
+        "q20": 38.0,
+        "q50": 38.0,
+        "q80": 38.0,
+        "std": 0.0
+      },
+      "durationTicks": {
+        "n": 54,
+        "min": 940.0,
+        "max": 940.0,
+        "mean": 940.0,
+        "q20": 940.0,
+        "q50": 940.0,
+        "q80": 940.0,
+        "std": 0.0
+      },
+      "gateRatio": {
+        "n": 54,
+        "min": 0.495,
+        "max": 0.979,
+        "mean": 0.952,
+        "q20": 0.979,
+        "q50": 0.979,
+        "q80": 0.979,
+        "std": 0.111
+      },
+      "onsetGapTicks": {
+        "n": 51,
+        "min": 960.0,
+        "max": 960.0,
+        "mean": 960.0,
+        "q20": 960.0,
+        "q50": 960.0,
+        "q80": 960.0,
+        "std": 0.0
+      },
+      "polyphonyPeak": 4,
+      "graceShortNoteShare": 0.0,
+      "shortGateShare": 0.0
+    },
+    "1": {
+      "role": "bass",
+      "channel": 1,
+      "noteCount": 16,
+      "register": [
+        36,
+        45
+      ],
+      "densityNotesPerBar": 2.0,
+      "velocity": {
+        "n": 16,
+        "min": 100.0,
+        "max": 100.0,
+        "mean": 100.0,
+        "q20": 100.0,
+        "q50": 100.0,
+        "q80": 100.0,
+        "std": 0.0
+      },
+      "durationTicks": {
+        "n": 16,
+        "min": 950.0,
+        "max": 950.0,
+        "mean": 950.0,
+        "q20": 950.0,
+        "q50": 950.0,
+        "q80": 950.0,
+        "std": 0.0
+      },
+      "gateRatio": {
+        "n": 16,
+        "min": 0.497,
+        "max": 0.99,
+        "mean": 0.959,
+        "q20": 0.99,
+        "q50": 0.99,
+        "q80": 0.99,
+        "std": 0.119
+      },
+      "onsetGapTicks": {
+        "n": 15,
+        "min": 960.0,
+        "max": 960.0,
+        "mean": 960.0,
+        "q20": 960.0,
+        "q50": 960.0,
+        "q80": 960.0,
+        "std": 0.0
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.0,
+      "shortGateShare": 0.0
+    },
+    "2": {
+      "role": "solo",
+      "channel": 2,
+      "noteCount": 16,
+      "register": [
+        72,
+        83
+      ],
+      "densityNotesPerBar": 2.0,
+      "velocity": {
+        "n": 16,
+        "min": 25.0,
+        "max": 25.0,
+        "mean": 25.0,
+        "q20": 25.0,
+        "q50": 25.0,
+        "q80": 25.0,
+        "std": 0.0
+      },
+      "durationTicks": {
+        "n": 16,
+        "min": 240.0,
+        "max": 240.0,
+        "mean": 240.0,
+        "q20": 240.0,
+        "q50": 240.0,
+        "q80": 240.0,
+        "std": 0.0
+      },
+      "gateRatio": {
+        "n": 16,
+        "min": 0.2,
+        "max": 0.25,
+        "mean": 0.247,
+        "q20": 0.25,
+        "q50": 0.25,
+        "q80": 0.25,
+        "std": 0.012
+      },
+      "onsetGapTicks": {
+        "n": 15,
+        "min": 960.0,
+        "max": 960.0,
+        "mean": 960.0,
+        "q20": 960.0,
+        "q50": 960.0,
+        "q80": 960.0,
+        "std": 0.0
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.0,
+      "shortGateShare": 1.0,
+      "melodyPattern": {
+        "upShare": 0.533,
+        "downShare": 0.4,
+        "sameShare": 0.067,
+        "meanAbsSemis": 4.8,
+        "chromaticShare": 0.0,
+        "thirdShare": 0.133,
+        "leapShare": 0.267,
+        "meanSemis": 0.0,
+        "phraseCount": 16,
+        "phraseLenNotes": 1.0,
+        "barsCovered": 7.5
+      }
+    },
+    "9": {
+      "role": "drums",
+      "channel": 9,
+      "noteCount": 32,
+      "register": [
+        36,
+        38
+      ],
+      "densityNotesPerBar": 4.0,
+      "velocity": {
+        "n": 32,
+        "min": 64.0,
+        "max": 64.0,
+        "mean": 64.0,
+        "q20": 64.0,
+        "q50": 64.0,
+        "q80": 64.0,
+        "std": 0.0
+      },
+      "durationTicks": {
+        "n": 32,
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "q20": 60.0,
+        "q50": 60.0,
+        "q80": 60.0,
+        "std": 0.0
+      },
+      "gateRatio": {
+        "n": 32,
+        "min": 0.059,
+        "max": 0.125,
+        "mean": 0.123,
+        "q20": 0.125,
+        "q50": 0.125,
+        "q80": 0.125,
+        "std": 0.012
+      },
+      "onsetGapTicks": {
+        "n": 31,
+        "min": 480.0,
+        "max": 480.0,
+        "mean": 480.0,
+        "q20": 480.0,
+        "q50": 480.0,
+        "q80": 480.0,
+        "std": 0.0
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 1.0,
+      "shortGateShare": 1.0
+    }
+  },
+  "grooveVsHuman": [
+    {
+      "channel": 9,
+      "role": "drums",
+      "noteCount": 32,
+      "stdMs": 0.0,
+      "exactOnGridShare": 1.0
+    }
+  ],
+  "techniqueCandidates": [
+    {
+      "channel": 1,
+      "role": "bass",
+      "counts": {
+        "total": 16,
+        "perLabel": {
+          "sustain": 15,
+          "ghost-candidate": 1
+        }
+      }
+    },
+    {
+      "channel": 0,
+      "role": "rhythm-guitar",
+      "counts": {
+        "total": 16,
+        "perLabel": {
+          "open-strum": 15,
+          "mid-strum": 1
+        }
+      }
+    }
+  ],
+  "echoScan": {
+    "run": true,
+    "soloChannel": [
+      2
+    ],
+    "candidatesChecked": 4,
+    "findings": [],
+    "note": "optimization computed on throwaway copies only; the source file is never edited by this pass"
+  },
+  "mixPlan": {
+    "targets": {},
+    "eventsPlanned": 0,
+    "channelsMissingCC": []
+  },
+  "actions": [
+    {
+      "id": "A01_STY_EXPORT",
+      "engine": "sty_mapper 4.53",
+      "status": "SKIPPED",
+      "reason": "style export not applicable: Korg style import requires SMF type 0 (one track)"
+    },
+    {
+      "id": "A02_PERCUSSION_CC11_GAIN",
+      "engine": "mix_engine 4.52",
+      "status": "SKIPPED",
+      "reason": "no percussion channel with existing CC11 automation (no percussion role in map)"
+    },
+    {
+      "id": "A03_ECHO_TERCA",
+      "engine": "special_track_engine 4.57",
+      "status": "SKIPPED",
+      "reason": "no consistent echo/terca structure detected"
+    },
+    {
+      "id": "A04_STUDIO_FILLS",
+      "engine": "studio_flow 4.50-4.51",
+      "status": "NEEDS_DECISION",
+      "reason": "legal only in empty, warranted slots of a chosen target channel; requires user decision + chord context"
+    },
+    {
+      "id": "A05_DEVICE_LOCKED_TRIGGERS",
+      "engine": "instrument_techniques 4.55",
+      "status": "LOCKED",
+      "reason": "slap/pop/guitar-mode/DNC triggers require an exact sound profile + device capture (warrant ledger); never emitted",
+      "evidence": {
+        "emittedTriggers": 0
+      }
+    }
+  ],
+  "gatesSummary": {
+    "readOnly": true,
+    "techniqueRunsGates": [
+      {},
+      {}
+    ],
+    "mix": null,
+    "sty": null
+  },
+  "note": "engine set: 4.52 mix, 4.53 sty, 4.54 groove, 4.55 techniques, 4.57 special track, 4.59 role patterns"
+}

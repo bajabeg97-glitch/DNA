@@ -38,6 +38,14 @@ main tajmingu uz harmony dokaz, inferencija neimenovanih aux treka; main se
 nikada ne menja, 0 trigera. Dokazi: `artifacts-max-4.57/`, guide
 `docs/studio-special-track-4.57.md`.
 
+## 4.60 Session Pass — DONE (Faza A)
+`session_pass.py` — jedan CLI poziv kroz sve engine-e (4.52–4.59) → jedan
+izveštaj: per-role patterni, groove vs ljudska referenca, tehnike, echo/terca
+sken, miks plan i 5 akcija (A01 STY_EXPORT, A02 percussion CC11, A03
+echo/terca, A04 fills, A05 LOCKED trigeri). `--apply-safe` piše nove artefakte,
+izvor se nikad ne menja. Dokazi: `artifacts-max-4.60/`, vodič
+`docs/session-pass-4.60.md`.
+
 ## 5.0 DNA Optimizer — „Suno iskustvo", samo optimizacija, na Korg Pa800 temelju
 Proizvodni cilj (korisnik): korisnik donese fajl → sistem razume, predloži,
 korisnik klikne, dobije Pa800 rezultat. Nema generisanja od nule — sve je
