@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// DNA Optimizer bridge 4.65 — AI Studio UI (assistant + sidebar) over Session Pass. From 4.61 (Phase B): stdlib node:http, no npm deps.
+// DNA Optimizer bridge 4.68 — AI Studio UI (assistant + sidebar) over Session Pass. From 4.61 (Phase B): stdlib node:http, no npm deps.
 //
 // One node:http server (stdlib only) that
 //   * serves a minimal dark UI at /
@@ -21,7 +21,7 @@ import { randomUUID } from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.join(ROOT, 'artifacts-max-4.61');
+const OUT_DIR = path.join(ROOT, process.env.DNA_OUT_DIR || 'artifacts-max-4.61');
 const PY = process.env.PYTHON || 'python3.11';
 const MAX_BYTES = 50 * 1024 * 1024;
 const PY_TIMEOUT_MS = 240_000;
@@ -47,7 +47,18 @@ function json(res, code, payload) {
   res.end(body);
 }
 
-function runPython(args, timeoutMs = PY_TIMEOUT_MS) {
+async function readJsonBody(req, maxBytes) {
+  const chunks = [];
+  let size = 0;
+  for await (const c of req) {
+    size += c.length;
+    if (size > maxBytes) throw new Error('body too large');
+    chunks.push(c);
+  }
+  return JSON.parse(Buffer.concat(chunks).toString('utf8'));
+}
+
+function runPython(args, timeoutMs = PY_TIMEOUT_MS, input = null) {
   return new Promise((resolve) => {
     const child = spawn(PY, args, { cwd: ROOT });
     let out = '';
@@ -56,6 +67,7 @@ function runPython(args, timeoutMs = PY_TIMEOUT_MS) {
     const timer = setTimeout(() => { if (!done) child.kill('SIGKILL'); }, timeoutMs);
     child.stdout.on('data', (d) => { out += d; });
     child.stderr.on('data', (d) => { err += d; });
+    if (input != null) child.stdin.end(input);
     child.on('error', (e) => { done = true; clearTimeout(timer); resolve({ code: -1, error: String(e), out, err }); });
     child.on('close', (code) => { done = true; clearTimeout(timer); resolve({ code, out, err }); });
   });
@@ -112,7 +124,7 @@ function contentType(name) {
 
 const INDEX_HTML = `<!doctype html><html lang="sr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DNA Optimizer — AI Studio (4.63)</title>
+<title>DNA Optimizer — AI Studio (4.68)</title>
 <style>
 :root{color-scheme:dark;--bg:#0a0e14;--panel:#11161f;--panel2:#0f141c;--line:#1e2733;--line2:#283442;
  --text:#dbe4ee;--muted:#8b98a9;--acc:#3d8bff;--acc2:#7c5cff;--ok:#2ecc71;--warn:#f0b429;--bad:#e74c3c;
@@ -237,7 +249,7 @@ pre{font-size:10.6px;max-height:300px;overflow:auto;color:#9db8dc}
   <div class="sec">Pravila</div>
   <button class="mi" onclick="rulesInfo()"><span class="ic">⚖</span>Licence i invarijante</button>
  </div>
- <footer><span class="alive"></span>bridge 4.65 · <span id="vstats">…</span></footer>
+ <footer><span class="alive"></span>bridge 4.68 · <span id="vstats">…</span></footer>
 </aside>
 <main id="main">
  <div id="top"><button id="hamb" class="ib" onclick="document.getElementById('side').classList.toggle('open')">☰</button>
@@ -258,6 +270,23 @@ pre{font-size:10.6px;max-height:300px;overflow:auto;color:#9db8dc}
 <script>
 var $=function(id){return document.getElementById(id)};
 var state={kind:null,payload:null,roles:'',file:null,lastPlan:null,thinking:false};
+var __sid='';
+function sidEnsure(){return call('/api/session',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:localStorage.getItem('dna.sid')||''})}).then(function(j){
+ __sid=j.sessionId;localStorage.setItem('dna.sid',__sid);return j;});}
+function claimsHtml(claims){if(!claims||!claims.length)return '';
+ return '<details style="margin-top:6px"><summary>izvori ('+claims.length+')</summary>'
+ +claims.map(function(c){return '<div style="padding:2px 0;border-bottom:1px solid var(--line)"><div>'+esc(c.text)+'</div><div style="color:#5b6a7e;font-size:10.5px">'+esc(c.source)+'</div></div>';}).join('')+'</details>';}
+function botText(reply,claims){addBot(card('<div style="white-space:pre-line">'+esc(reply||'')+'</div>'+claimsHtml(claims)));}
+function askBrain(text){
+ addThink();
+ sidEnsure().then(function(){return call('/api/assistant',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({text:text,sessionId:__sid})});})
+ .then(function(j){rmThink();
+  if(j.newSession){__sid=j.newSession;localStorage.setItem('dna.sid',__sid);}
+  if(j.error){botText('Asistent: '+j.reply,[]);return;}
+  if(j.plan){state.lastPlan=j.plan;renderPlan({ok:true,report:j.plan});}
+  if(j.applied&&j.applied.report){state.lastPlan=j.applied.report;renderApplied(j.applied);}
+  botText(j.reply,j.claims||[]);})
+ .catch(function(e){rmThink();botText('Greška: '+(e&&e.message||e),[]);});}
 var PRESETS=[];
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function badge(s){return '<span class="badge '+esc(s)+'">'+esc(s)+'</span>';}
@@ -274,6 +303,11 @@ function fmtBytes(n){if(n>1048576)return (n/1048576).toFixed(1)+' MB';return Mat
 function init(){call('/api/health').then(function(h){
  $('bridgeTag').textContent='bridge OK · '+h.engines[0];
  $('vstats').textContent=h.python+' · '+h.version;
+ sidEnsure().then(function(j){
+  if(j.restored&&j.report){state.lastPlan=j.report;$('sessName').textContent=(j.report.sourceName||'Sesija')+' (obnovljena)';
+   addBot('<p style="margin:0">Nastavljam sačuvanu sesiju — plan je obnovljen ispod. 👇</p>');renderPlan({ok:true,report:j.report});}
+  else{$('sessName').textContent='Nova sesija';}
+ }).catch(function(){});
  addBot('<h4 style="margin:0 0 6px">Dobar dan! 👋</h4><p style="margin:0 0 4px">Ja sam <b>DNA Optimizer</b> — radi kao AI asistent, ali <b>ne generišem muziku od nule</b>: analiziram tvoj MIDI, izmerim šta fabrika svira po ulogama, pa ti ponudim <b>optimizacije sa kapijama</b> za Korg Pa800.</p>'
   +'<p style="margin:4px 0 0;color:var(--muted)">Prikači fajl ili klikni demo u meniju. Možeš i da kucaš: „analiziraj reference-style”, „primeni sve”.</p>'
   +'<div class="sugg"><button onclick="demo(\'reference-style\')">▶ demo: reference-style</button><button onclick="demo(\'fixture\')">▶ demo: fixture</button><button onclick="demo(\'session35\')">▶ demo: session35</button><button onclick="help()">Šta sve mogu?</button></div>');})
@@ -297,8 +331,9 @@ function rulesInfo(){$('sessName').textContent='Pravila';
   +'<p>📋 Svaka akcija ima <i>reason</i> + <i>gates</i>; izveštaj je dokaz.</p>'
   +'<p style="margin-bottom:0">📜 <b>Licence</b>: MIT/Apache/BSD uz atribuciju (wobblemidi već ugrađen, sha256 zabeležen); GPL/AGPL/LGPL projekti (Cadenza, JJazzLab…) samo studija — ništa od njih nije u repou.</p>'));}
 function newSession(){state={kind:null,payload:null,roles:'',file:null,lastPlan:null,thinking:false};
- $('sessName').textContent='Nova sesija';clearFile();
- wrap.innerHTML='';
+ clearFile();wrap.innerHTML='';
+ sidEnsure().then(function(){});
+ $('sessName').textContent='Nova sesija';
  addBot('<p style="margin:0">Nova sesija. 👇 Priloži MIDI fajl ili izaberi demo iz menija.</p>');}
 function pickedFile(){var f=$('file').files[0];if(!f)return;
  state.file=f;state.kind='upload';state.payload=null;$('sessName').textContent=f.name;
@@ -330,7 +365,7 @@ function onSend(){var t=$('inp').value.trim();if(!t&&!state.file)return;
   else if(/sve/.test(cmd)){var all=((state.lastPlan&&state.lastPlan.actions)||[]).filter(function(a){return a.status==='READY';}).map(function(a){return a.id;});ids=all;}
   if(!ids.length){addBot(card('<p>Nema označenih akcija iz plana. Prvo pokreni analizu, pa „primeni A01 A02” ili „primeni sve”.</p>'));return;}
   analyze(true,ids.join(','));return;}
- addBot(card('<p>Ne razumem baš. Probaj: <b>„analiziraj reference-style”</b> · <b>„primeni sve”</b> · <b>„pomoć”</b>. 🙂</p>'));}
+ askBrain(t);}
 function demo(id){var pr=PRESETS.filter(function(p){return p.id===id;})[0];if(!pr)return;
  state={kind:'preset',payload:id,roles:pr.roles||'',file:null,lastPlan:null,thinking:false};
  clearFile();$('sessName').textContent=pr.file;
@@ -339,9 +374,9 @@ function analyze(apply,actions){if(state.thinking)return;state.thinking=true;$('
  addThink();
  var go;
  if(state.kind==='preset'){var url='/api/sample-analyze?p='+encodeURIComponent(state.payload)+'&apply='+(apply?1:0);
-  if(actions)url+='&actions='+encodeURIComponent(actions);go=call(url);}
+  if(actions)url+='&actions='+encodeURIComponent(actions);go=call(url,{headers:{'x-session':__sid}});}
  else if(state.file){var f=state.file;go=f.arrayBuffer().then(function(b){return call('/api/analyze',{method:'POST',
-  headers:{'x-filename':f.name,'x-roles':state.roles,'x-apply':apply?'1':'0','x-actions':actions},body:new Uint8Array(b)});});}
+  headers:{'x-filename':f.name,'x-roles':state.roles,'x-apply':apply?'1':'0','x-actions':actions,'x-session':__sid},body:new Uint8Array(b)});});}
  else{state.thinking=false;$('send').disabled=false;return;}
  go.then(function(j){state.thinking=false;$('send').disabled=false;rmThink();
   if(!j.ok||!j.report)throw new Error(j.pythonErrorTail||'python nije vratio izveštaj');
@@ -411,6 +446,126 @@ function renderApplied(j){var r=j.report;
 init();
 </script></body></html>`;
 
+// ============================ 4.68 sessions + assistant ============================
+const SESSION_DIR = path.join(OUT_DIR, 'sessions');
+const sessionMeta = (sid) => path.join(SESSION_DIR, sid + '.meta.json');
+const sessionLog = (sid) => path.join(SESSION_DIR, sid + '.jsonl');
+const sessionReportFile = (sid) => path.join(SESSION_DIR, sid + '.report.json');
+function ensureSessionDir() { fs.mkdirSync(SESSION_DIR, { recursive: true }); }
+function sanitizeSid(v) { return String(v || '').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 64); }
+function ensureSession(id) {
+  const sid = sanitizeSid(id) || (randomUUID().replace(/-/g, '').slice(0, 12));
+  ensureSessionDir();
+  const mf = sessionMeta(sid);
+  if (!fs.existsSync(mf)) {
+    fs.writeFileSync(mf, JSON.stringify({ id: sid, created: Date.now(), updated: Date.now(), msgs: 0 }));
+    fs.writeFileSync(sessionLog(sid), '', 'utf8');
+  }
+  return sid;
+}
+function sessionTouch(sid) {
+  const mf = sessionMeta(sid);
+  try {
+    const m = JSON.parse(fs.readFileSync(mf, 'utf8'));
+    m.updated = Date.now();
+    m.msgs = sessionHistory(sid).length;
+    fs.writeFileSync(mf, JSON.stringify(m));
+  } catch { /* ignore */ }
+}
+function sessionAppend(sid, entry) {
+  const sid2 = ensureSession(sid);
+  const log = sessionLog(sid2);
+  const lines = fs.existsSync(log) ? fs.readFileSync(log, 'utf8') : '';
+  const entries = lines ? lines.trim().split('\n').map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean) : [];
+  entries.push(Object.assign({ t: Date.now() }, entry));
+  const capped = entries.slice(-400);
+  fs.writeFileSync(log, capped.map((e) => JSON.stringify(e)).join('\n') + '\n', 'utf8');
+  sessionTouch(sid2);
+  return sid2;
+}
+function sessionHistory(sid) {
+  const log = sessionLog(sid);
+  if (!fs.existsSync(log)) return [];
+  return String(fs.readFileSync(log, 'utf8')).trim().split('\n')
+    .map((l) => { try { return JSON.parse(l); } catch { return null; } }).filter(Boolean);
+}
+function sessionSaveReport(sid, report) {
+  const sid2 = ensureSession(sid);
+  fs.writeFileSync(sessionReportFile(sid2), JSON.stringify(report), 'utf8');
+  sessionAppend(sid2, { role: 'assistant', kind: 'plan', text: 'Plan za ' + (report.sourceName || 'fajl'), sourceName: report.sourceName || null });
+  return sid2;
+}
+function sessionLastReport(sid) {
+  const f = sessionReportFile(sid);
+  if (!fs.existsSync(f)) return null;
+  try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; }
+}
+function sessionList() {
+  ensureSessionDir();
+  return fs.readdirSync(SESSION_DIR).filter((n) => n.endsWith('.meta.json')).map((n) => {
+    try {
+      const m = JSON.parse(fs.readFileSync(path.join(SESSION_DIR, n), 'utf8'));
+      return { id: m.id, created: m.created, updated: m.updated, msgCount: m.msgs || 0, hasReport: fs.existsSync(sessionReportFile(m.id)) };
+    } catch { return null; }
+  }).filter(Boolean).sort((a, b) => b.updated - a.updated);
+}
+async function brainOnce(text, report, historyTail) {
+  const py = await runPython(['dna_midi_studio/assistant_brain.py'], 30000,
+    JSON.stringify({ text: String(text || ''), report: report || null, history: historyTail || [] }));
+  if (py.code !== 0) {
+    return { intent: 'error', reply: 'Asistent trenutno nije dostupan (python greška).', claims: [], tool: null, _err: (py.err || '').slice(-300) };
+  }
+  try { return JSON.parse(py.out); } catch { return { intent: 'error', reply: 'Asistent je vratio neispravan odgovor.', claims: [], tool: null }; }
+}
+async function assistantTurn(text, sid) {
+  const sid2 = ensureSession(sid);
+  sessionAppend(sid2, { role: 'user', kind: 'text', text: String(text || '') });
+  const hist = sessionHistory(sid2);
+  let report = sessionLastReport(sid2);
+  const brain = await brainOnce(text, report, hist);
+  if (brain.intent === 'error') { sessionAppend(sid2, { role: 'assistant', kind: 'text', text: brain.reply }); return { sessionId: sid2, intent: brain.intent, reply: brain.reply, claims: [], error: brain._err }; }
+  if (brain.reply === '__NEW_SESSION__') {
+    const fresh = ensureSession(null);
+    sessionAppend(fresh, { role: 'assistant', kind: 'text', text: 'Nova sesija je spremna. Priloži fajl ili reci „analiziraj reference-style”.' });
+    return { sessionId: fresh, intent: 'session_new', reply: 'Nova sesija je spremna. Priloži fajl ili reci „analiziraj reference-style”.', claims: [], newSession: fresh };
+  }
+  if (brain.tool && brain.tool.type === 'analyzePreset') {
+    const pr = PRESETS[brain.tool.presetId];
+    if (pr) {
+      const abs = path.join(ROOT, pr.file);
+      const r = await analyze(abs, { roles: pr.roles, melody: pr.melody || '', apply: false, actions: '' });
+      if (r.ok && r.report) { report = r.report; sessionSaveReport(sid2, report); }
+      const final = await brainOnce('ukratko sažmi analizu', report, sessionHistory(sid2));
+      sessionAppend(sid2, { role: 'assistant', kind: 'text', text: final.reply, claims: final.claims || [] });
+      return { sessionId: sid2, intent: final.intent || 'summarize', reply: final.reply, claims: final.claims || [], plan: report };
+    }
+  }
+  if (brain.tool && brain.tool.type === 'applyActions' && report) {
+    const srcAbs = metaSourceOf(sid2, report);
+    if (srcAbs && fs.existsSync(srcAbs)) {
+      const actions = (brain.tool.actions || []).map((a) => String(a).toUpperCase()).join(',');
+      const r = await analyze(srcAbs, { roles: '', melody: '', apply: true, actions });
+      if (r.ok && r.report) { report = r.report; sessionSaveReport(sid2, report); }
+      const final = await brainOnce('ukratko sažmi', report, sessionHistory(sid2));
+      sessionAppend(sid2, { role: 'assistant', kind: 'text', text: final.reply, claims: final.claims || [] });
+      return { sessionId: sid2, intent: 'applied', reply: final.reply, claims: final.claims || [], applied: r };
+    }
+    const no = { intent: 'apply', sessionId: sid2, reply: 'Nemam izvor fajla za primenu u ovoj sesiji (upload fajlovi se ne pamte). Prvo uradi analizu preko UI-ja pa onda reci „primeni sve”.', claims: [] };
+    sessionAppend(sid2, { role: 'assistant', kind: 'text', text: no.reply });
+    return no;
+  }
+  sessionAppend(sid2, { role: 'assistant', kind: 'text', text: brain.reply || '', claims: brain.claims || [] });
+  return { sessionId: sid2, intent: brain.intent, reply: brain.reply || '', claims: brain.claims || [] };
+}
+function metaSourceOf(sid, report) {
+  // presets: map back by sourceName
+  const name = (report && report.sourceName) || '';
+  for (const id of Object.keys(PRESETS)) {
+    if (PRESETS[id].file.endsWith(name)) return path.join(ROOT, PRESETS[id].file);
+  }
+  return null;
+}
+
 async function route(req, res) {
   const u = new URL(req.url, 'http://localhost');
   const p = u.pathname;
@@ -419,10 +574,10 @@ async function route(req, res) {
     return res.end(INDEX_HTML);
   }
   if (req.method === 'GET' && p === '/api/health') {
-    return json(res, 200, { ok: true, version: '4.65', python: PY, outDir: OUT_DIR,
+    return json(res, 200, { ok: true, version: '4.68', python: PY, outDir: OUT_DIR,
                             engines: ['session_pass 4.60', 'mix 4.52', 'sty 4.53',
                                       'groove 4.54', 'techniques 4.55', 'special 4.57',
-                                      'roles 4.59'] });
+                                      'roles 4.59', 'brain 4.68'] });
   }
   if (req.method === 'GET' && p === '/api/presets') {
     return json(res, 200, { presets: Object.entries(PRESETS).map(([id, v]) => ({
@@ -437,6 +592,8 @@ async function route(req, res) {
     const apply = u.searchParams.get('apply') === '1';
     const actions = u.searchParams.get('actions') || '';
     const r = await analyze(abs, { roles: pr.roles, melody: pr.melody || '', apply, actions });
+    const sidA = sanitizeSid(req.headers['x-session']);
+    if (sidA && r.ok && r.report) sessionSaveReport(sidA, r.report);
     return json(res, r.ok ? 200 : 500, r);
   }
   if (req.method === 'POST' && p === '/api/analyze') {
@@ -460,7 +617,41 @@ async function route(req, res) {
       apply: String(req.headers['x-apply']) === '1',
       actions: String(req.headers['x-actions'] || '').trim(),
     });
+    const sidB = sanitizeSid(req.headers['x-session']);
+    if (sidB && r.ok && r.report) sessionSaveReport(sidB, r.report);
     return json(res, r.ok ? 200 : 500, r);
+  }
+  if (req.method === 'GET' && p === '/api/session') {
+    return json(res, 200, { sessions: sessionList() });
+  }
+  if (req.method === 'POST' && p === '/api/session') {
+    let sid = null;
+    try {
+      const body = await readJsonBody(req, 8192);
+      if (body && body.id) sid = sanitizeSid(body.id);
+    } catch { /* no body ok */ }
+    const ensured = ensureSession(sid);
+    const report = sessionLastReport(ensured);
+    return json(res, 200, { sessionId: ensured, created: !sid, restored: !!report, report });
+  }
+  if (req.method === 'POST' && p === '/api/assistant') {
+    const body = await readJsonBody(req, 65536);
+    if (!body || typeof body.text !== 'string') return json(res, 400, { error: 'očekuje se {text}' });
+    const out = await assistantTurn(body.text, body.sessionId || '');
+    return json(res, 200, out);
+  }
+  if (req.method === 'GET' && p.startsWith('/api/session/')) {
+    const sid = sanitizeSid(p.slice('/api/session/'.length));
+    if (!sid) return json(res, 400, { error: 'session id?' });
+    ensureSession(sid);
+    return json(res, 200, { id: sid, history: sessionHistory(sid), report: sessionLastReport(sid) });
+  }
+  if (req.method === 'DELETE' && p.startsWith('/api/session/')) {
+    const sid = sanitizeSid(p.slice('/api/session/'.length));
+    for (const f of [sessionMeta(sid), sessionLog(sid), sessionReportFile(sid)]) {
+      try { fs.unlinkSync(f); } catch { /* ok */ }
+    }
+    return json(res, 200, { ok: true, sessionId: sid });
   }
   if (req.method === 'GET' && p.startsWith('/api/artifacts/')) {
     const name = sanitize(decodeURIComponent(p.slice('/api/artifacts/'.length)));

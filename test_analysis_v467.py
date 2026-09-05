@@ -84,7 +84,7 @@ class CodeAnalysisTest(unittest.TestCase):
         # are excluded by construction elsewhere, so allow >=)
         self.assertGreaterEqual(len(orphans) + chain_n, engine_total)
         truly = set(data["orphans"]["trulyUnreferencedAnywhere"])
-        self.assertEqual(len(truly), 14)
+        self.assertEqual(len(truly), 15)  # 14 legacy + assistant_brain (4.68, referenced only by bridge process)
         self.assertIn("dnc_engine", truly)
         self.assertIn("agent_runtime", truly)
 

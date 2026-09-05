@@ -4,12 +4,12 @@
  "date": "2026-09-05",
  "totals": {
   "pythonFiles": 291,
-  "engineModulesTop": 91,
+  "engineModulesTop": 92,
   "engineSubmodules": 110,
   "testFilesRoot": 89,
   "rootScripts": 1,
   "pythonLocTotal": 77152,
-  "engineLocTotal": 32519,
+  "engineLocTotal": 32850,
   "engineLocByModule": {
    "dna_midi_studio/__init__.py": 974,
    "dna_midi_studio/agent_runtime.py": 278,
@@ -123,7 +123,7 @@
   ]
  },
  "orphans": {
-  "notInChain": 79,
+  "notInChain": 80,
   "modules": [
    "__init__",
    "agent_runtime",
@@ -133,6 +133,7 @@
    "arranger_planner",
    "arranger_pro",
    "articulation_mapping",
+   "assistant_brain",
    "candidate_search",
    "core_invariants",
    "device_certification",
@@ -274,6 +275,7 @@
   },
   "trulyUnreferencedAnywhere": [
    "agent_runtime",
+   "assistant_brain",
    "dnc_engine",
    "guitar_reconstruction",
    "harmonic_reconstruction",
@@ -344,5 +346,6 @@
    "dna_midi_studio/groove_polyphony.py",
    815
   ]
- ]
+ ],
+ "note468": "azurirano na 4.68: dodati assistant_brain.py (+session store je u bridge-u); lanac nepromenjen"
 }

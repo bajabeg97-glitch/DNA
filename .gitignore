@@ -10,3 +10,8 @@ build
 __pycache__/
 *.pyc
 artifacts-max-4.61/uploads/
+artifacts-max-4.61/sessions/
+artifacts-max-4.61/session-pass-*-*.json
+artifacts-max-4.61/session-sty-*-*.mid
+artifacts-max-4.61/session-mixed-*-*.mid
+tmp/
