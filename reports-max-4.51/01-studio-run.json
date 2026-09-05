@@ -1,0 +1,111 @@
+{
+  "schema": "dna-4.51-studio-run-evidence",
+  "runDate": "2026-09-05",
+  "rule": "engine never blocks when an evidence-backed improvement exists; fills only empty legal slots; velocity from exact factory profiles only; polished notes are exact live-cell chord tones; pre-existing geometry untouched",
+  "fixtureRun": {
+    "source": "session35-partial-preview.mid",
+    "sourceSha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+    "status": "STUDIO_APPLIED",
+    "fills": [
+      {
+        "channel": 15,
+        "role": "comp/strum",
+        "noteCount": 372,
+        "register": [
+          48,
+          72
+        ],
+        "planDecision": "FILL_EMPTY",
+        "evidenceSource": "dna-arranger-strum-part"
+      }
+    ],
+    "metricsPerChannel15": {
+      "addedNotes": 372,
+      "chordToneRatio": 1.0,
+      "chordToneChecked": 372,
+      "cellsWithoutChordQuality": 0,
+      "outOfSlotRegister": 0,
+      "register": [
+        48,
+        72
+      ],
+      "avgVelocity": 83.7,
+      "velocityMax": 114
+    },
+    "metricsSummary": {
+      "addedNotesTotal": 372,
+      "removedNotesTotal": 0,
+      "channelsWithAdditions": [
+        15
+      ],
+      "mixNoteCountBefore": 1400,
+      "mixNoteCountAfter": 1772
+    },
+    "gates": {
+      "reparsed": true,
+      "protectedGeometryUnchanged": true,
+      "velocityPolishOnlyLoweredByExactCeiling": true,
+      "factoryVelocityOnlyByProof": true,
+      "allChannelsWithinPolyphonyLimits": true
+    },
+    "dynamics": {
+      "applied": false,
+      "correctionCount": 0,
+      "byChannel": {},
+      "policy": "velocity above the exact-sound factory ceiling is a FACTORY_ONLY violation"
+    }
+  },
+  "realFileRun": {
+    "source": "baseline/reference-style.mid",
+    "sourceSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+    "status": "STUDIO_NO_CHANGES_NEEDED",
+    "reason": "all ACC slots (11-15) already carry material; every exact factory profile ceiling=127 and no note exceeds it; headroom within PA800 limits -> no warranted change",
+    "fills": [],
+    "skippedSlots": [
+      {
+        "channel": 11,
+        "reason": "already has material"
+      },
+      {
+        "channel": 12,
+        "reason": "already has material"
+      },
+      {
+        "channel": 13,
+        "reason": "already has material"
+      },
+      {
+        "channel": 14,
+        "reason": "already has material"
+      },
+      {
+        "channel": 15,
+        "reason": "already has material"
+      }
+    ],
+    "gates": {
+      "reparsed": true,
+      "protectedGeometryUnchanged": true,
+      "velocityPolishOnlyLoweredByExactCeiling": true,
+      "factoryVelocityOnlyByProof": true,
+      "allChannelsWithinPolyphonyLimits": true
+    },
+    "dynamics": {
+      "applied": false,
+      "correctionCount": 0,
+      "byChannel": {},
+      "policy": "velocity above the exact-sound factory ceiling is a FACTORY_ONLY violation"
+    },
+    "metrics": {
+      "schema": "dna-studio-flow-metrics",
+      "version": "4.51",
+      "addedNotesTotal": 0,
+      "removedNotesTotal": 0,
+      "channelsWithAdditions": [],
+      "perChannel": {},
+      "mixNoteCountBefore": 2081,
+      "mixNoteCountAfter": 2081,
+      "policy": "geometry outside target channels never changes; velocity factory-only"
+    }
+  }
+}

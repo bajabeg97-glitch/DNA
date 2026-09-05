@@ -26,8 +26,9 @@ from dna_midi_studio.midi import MidiFile, Note  # noqa: E402
 from dna_midi_studio.song_understanding import analyze_song_map  # noqa: E402
 from dna_midi_studio.arranger_contract import (  # noqa: E402
     ACC_CHANNELS, CHANNEL_ROLES, COMP_REGISTER, FACTORY_ROLE_BY_STYLE_ROLE,
-    STRUM_REGISTER, VELOCITY_ROLE, factory_velocity, factory_profiles,
-    instrument_catalog, polyphony_limit, protected_snapshot,
+    STRUM_REGISTER, VELOCITY_ROLE, chord_pc_set, factory_velocity,
+    factory_profiles, instrument_catalog, nearest_chord_tone, polyphony_limit,
+    protected_snapshot,
 )
 
 
@@ -144,8 +145,17 @@ def _bar_section(song: dict[str, Any], tick: int) -> str:
 
 def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
                      track_index: int | None = None,
-                     max_voices: int | None = None) -> dict[str, Any]:
-    """Generate a Factory-strum rhythm-guitar part for bars [start_bar, end_bar]."""
+                     max_voices: int | None = None,
+                     register: tuple[int, int] | None = None,
+                     chord_tone_strict: bool = True) -> dict[str, Any]:
+    """Generate a Factory-strum part for bars [start_bar, end_bar].
+
+    - rhythm source: Factory strum evidence (PerformanceDNAEngine, anti-copy fallback)
+    - register: given slot register (default the factory strum register 48-72)
+    - voicing: chord_tone_strict=True voices every note onto the bar's chord tones
+      (no passing-tone noise), which makes the fill harmonically exact.
+    - velocity: factory curves only (FACTORY_ONLY).
+    """
     from dna_midi_studio.ai_learning.performance_dna import PerformanceDNAEngine
     midi = MidiFile.from_bytes(raw)
     track = _music_track(midi) if track_index is None else track_index
@@ -153,12 +163,21 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
     bars = song["bars"]
     if not 1 <= start_bar <= end_bar <= len(bars):
         raise ValueError("invalid bar range")
+    reg_lo, reg_hi = register if register is not None else STRUM_REGISTER
     f_role = VELOCITY_ROLE["rhythm-guitar"]  # chords
     limit = max_voices if (isinstance(max_voices, int) and max_voices > 0) else polyphony_limit(channel)
+    cells_sorted = sorted(song["chordCells"], key=lambda c: int(c["startTick"]))
     engine = PerformanceDNAEngine(ROOT)
     notes: list[Note] = []
     proofs: list[dict[str, Any]] = []
     source_ids: set[str] = set()
+
+    def cell_at(tick: int) -> dict[str, Any] | None:
+        for c in cells_sorted:
+            if int(c["startTick"]) <= tick < int(c["endTick"]):
+                return c
+        return None
+
     for bar in bars[start_bar - 1:end_bar]:
         bs, be = int(bar["startTick"]), int(bar["endTick"])
         span = max(1, be - bs)
@@ -192,10 +211,16 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
                 continue
             rel = code - 64
             base = 48 + (root % 12) + rel
-            while base < STRUM_REGISTER[0]:
+            while base < reg_lo:
                 base += 12
-            while base > STRUM_REGISTER[1]:
+            while base > reg_hi:
                 base -= 12
+            live_cell = cell_at(start)
+            live_pc = chord_pc_set(live_cell) if live_cell else None
+            if live_pc is not None:
+                base = nearest_chord_tone(base, live_pc, reg_lo, reg_hi)
+            if any(n.pitch == base for n in ringing):  # no unison duplicates
+                continue
             vel = factory_velocity(midi, channel, start, base, f_role)
             note = Note(track, channel, base, start, end, vel["velocity"],
                         factory_profile_id=vel["profileId"])
@@ -203,12 +228,13 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
             proofs.append(vel)
             ringing.append(note)
     return {
-        "schema": "dna-arranger-strum-part", "version": "4.49",
+        "schema": "dna-arranger-strum-part", "version": "4.51",
         "role": "rhythm-guitar", "channel": channel, "track": track,
         "bars": [start_bar, end_bar], "noteCount": len(notes),
         "notes": notes, "velocityProofs": proofs,
         "factoryStrumSourceIds": sorted(source_ids),
-        "register": list(STRUM_REGISTER), "maxSimultaneous": limit,
+        "register": [reg_lo, reg_hi], "maxSimultaneous": limit,
+        "voicing": "chord-tone strict" if chord_tone_strict else "factory pattern",
         "velocityAuthority": "FACTORY_ONLY",
     }
 

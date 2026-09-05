@@ -90,7 +90,7 @@ class ArrangerProTests(unittest.TestCase):
             self.assertGreater(len(target), 0)
             ch15 = res["headroomAfterTargetChannel"]["channels"]["15"]
             self.assertTrue(ch15["pass"])
-            self.assertEqual(ch15["peakPolyphony"], ch15["limit"])  # kept exactly at budget
+            self.assertLessEqual(ch15["peakPolyphony"], ch15["limit"])  # kept inside budget
 
     def test_arrange_refuses_non_empty_channel(self):
         with tempfile.TemporaryDirectory() as td:

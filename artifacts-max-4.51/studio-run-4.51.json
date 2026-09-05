@@ -1,0 +1,461 @@
+{
+  "schema": "dna-studio-flow-run",
+  "version": "4.51",
+  "sourceSha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+  "plan": {
+    "schema": "dna-arranger-plan",
+    "version": "4.50",
+    "regions": {
+      "8": {
+        "channel": 8,
+        "styleRole": "bass",
+        "slot": "bass",
+        "budget": 1,
+        "registerSeparation": [
+          0,
+          127
+        ],
+        "decision": "KEEP",
+        "reason": "part matches instrument nature",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 1.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 122,
+            "register": [
+              28,
+              48
+            ],
+            "avgVelocity": 117.0,
+            "velocityMin": 105,
+            "velocityMax": 124,
+            "density": 1.697,
+            "avgGateRatio": 0.399,
+            "polyphonyPeak": 1
+          },
+          "factoryRegister": [
+            0,
+            125
+          ],
+          "densityBand": [
+            0.17,
+            5.75
+          ],
+          "velocityBand": [
+            22,
+            127
+          ],
+          "gateBand": [
+            0.35,
+            0.95
+          ]
+        }
+      },
+      "9": {
+        "channel": 9,
+        "styleRole": "drums",
+        "slot": "drums",
+        "budget": 24,
+        "registerSeparation": [
+          0,
+          127
+        ],
+        "decision": "MANUAL_REVIEW",
+        "reason": "part drifts from the instrument's nature (register/density)",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 0.263,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 308,
+            "register": [
+              36,
+              46
+            ],
+            "avgVelocity": 113.2,
+            "velocityMin": 81,
+            "velocityMax": 124,
+            "density": 4.296,
+            "avgGateRatio": 0.495,
+            "polyphonyPeak": 2
+          },
+          "factoryRegister": [
+            42,
+            42
+          ],
+          "densityBand": [
+            0.35,
+            13.8
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.15,
+            0.9
+          ]
+        }
+      },
+      "10": {
+        "channel": 10,
+        "styleRole": "percussion",
+        "slot": "percussion",
+        "budget": 16,
+        "registerSeparation": [
+          0,
+          127
+        ],
+        "decision": "MANUAL_REVIEW",
+        "reason": "part drifts from the instrument's nature (register/density)",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 0.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 203,
+            "register": [
+              35,
+              70
+            ],
+            "avgVelocity": 108.8,
+            "velocityMin": 67,
+            "velocityMax": 127,
+            "density": 8.458,
+            "avgGateRatio": 0.749,
+            "polyphonyPeak": 4
+          },
+          "factoryRegister": [
+            42,
+            42
+          ],
+          "densityBand": [
+            0.1,
+            9.2
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.1,
+            0.8
+          ]
+        }
+      },
+      "11": {
+        "channel": 11,
+        "styleRole": "accompaniment",
+        "slot": "ACC1 block comp (<=4 voices)",
+        "budget": 4,
+        "registerSeparation": [
+          48,
+          64
+        ],
+        "decision": "KEEP",
+        "reason": "part matches instrument nature",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 1.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 195,
+            "register": [
+              48,
+              82
+            ],
+            "avgVelocity": 72.0,
+            "velocityMin": 53,
+            "velocityMax": 96,
+            "density": 2.889,
+            "avgGateRatio": 0.823,
+            "polyphonyPeak": 2
+          },
+          "factoryRegister": [
+            0,
+            124
+          ],
+          "densityBand": [
+            0.12,
+            11.5
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.35,
+            1.0
+          ]
+        }
+      },
+      "12": {
+        "channel": 12,
+        "styleRole": "accompaniment",
+        "slot": "ACC2 block comp (<=4 voices)",
+        "budget": 4,
+        "registerSeparation": [
+          55,
+          72
+        ],
+        "decision": "KEEP",
+        "reason": "part matches instrument nature",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 1.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 260,
+            "register": [
+              50,
+              84
+            ],
+            "avgVelocity": 96.0,
+            "velocityMin": 79,
+            "velocityMax": 110,
+            "density": 3.612,
+            "avgGateRatio": 0.73,
+            "polyphonyPeak": 2
+          },
+          "factoryRegister": [
+            0,
+            124
+          ],
+          "densityBand": [
+            0.12,
+            11.5
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.35,
+            1.0
+          ]
+        }
+      },
+      "13": {
+        "channel": 13,
+        "styleRole": "accompaniment",
+        "slot": "ACC3 single-voice pad",
+        "budget": 1,
+        "registerSeparation": [
+          60,
+          79
+        ],
+        "decision": "KEEP",
+        "reason": "part matches instrument nature",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 1.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 96,
+            "register": [
+              50,
+              77
+            ],
+            "avgVelocity": 105.0,
+            "velocityMin": 94,
+            "velocityMax": 113,
+            "density": 4.002,
+            "avgGateRatio": 0.625,
+            "polyphonyPeak": 1
+          },
+          "factoryRegister": [
+            0,
+            124
+          ],
+          "densityBand": [
+            0.12,
+            11.5
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.35,
+            1.0
+          ]
+        }
+      },
+      "14": {
+        "channel": 14,
+        "styleRole": "accompaniment",
+        "slot": "ACC4 single-voice pad",
+        "budget": 1,
+        "registerSeparation": [
+          64,
+          84
+        ],
+        "decision": "KEEP",
+        "reason": "part matches instrument nature",
+        "severity": 0.0,
+        "fit": {
+          "registerFit": 1.0,
+          "densityFit": 1.0,
+          "dynamicsFit": 1.0,
+          "gateFit": 1.0,
+          "observed": {
+            "present": true,
+            "noteCount": 216,
+            "register": [
+              55,
+              87
+            ],
+            "avgVelocity": 123.5,
+            "velocityMin": 99,
+            "velocityMax": 127,
+            "density": 3.001,
+            "avgGateRatio": 0.48,
+            "polyphonyPeak": 1
+          },
+          "factoryRegister": [
+            0,
+            124
+          ],
+          "densityBand": [
+            0.12,
+            11.5
+          ],
+          "velocityBand": [
+            1,
+            127
+          ],
+          "gateBand": [
+            0.35,
+            1.0
+          ]
+        }
+      },
+      "15": {
+        "channel": 15,
+        "styleRole": "accompaniment",
+        "slot": "ACC5 guitar strum (<=3 voices)",
+        "budget": 3,
+        "registerSeparation": [
+          48,
+          72
+        ],
+        "decision": "FILL_EMPTY",
+        "reason": "no notes on channel",
+        "fit": null
+      }
+    },
+    "fillCandidates": [
+      15
+    ],
+    "fillPriority": [
+      15,
+      14,
+      13,
+      12,
+      11
+    ],
+    "summary": {
+      "8": "KEEP",
+      "9": "MANUAL_REVIEW",
+      "10": "MANUAL_REVIEW",
+      "11": "KEEP",
+      "12": "KEEP",
+      "13": "KEEP",
+      "14": "KEEP",
+      "15": "FILL_EMPTY"
+    }
+  },
+  "fills": [
+    {
+      "channel": 15,
+      "role": "comp/strum",
+      "noteCount": 372,
+      "register": [
+        48,
+        72
+      ],
+      "evidenceSource": "dna-arranger-strum-part",
+      "planDecision": "FILL_EMPTY"
+    }
+  ],
+  "skippedSlots": [
+    {
+      "channel": 11,
+      "reason": "already has material"
+    },
+    {
+      "channel": 12,
+      "reason": "already has material"
+    },
+    {
+      "channel": 13,
+      "reason": "already has material"
+    },
+    {
+      "channel": 14,
+      "reason": "already has material"
+    }
+  ],
+  "dynamics": {
+    "applied": false,
+    "correctionCount": 0,
+    "byChannel": {},
+    "policy": "velocity above the exact-sound factory ceiling is a FACTORY_ONLY violation"
+  },
+  "metrics": {
+    "schema": "dna-studio-flow-metrics",
+    "version": "4.51",
+    "addedNotesTotal": 372,
+    "removedNotesTotal": 0,
+    "channelsWithAdditions": [
+      15
+    ],
+    "perChannel": {
+      "15": {
+        "addedNotes": 372,
+        "chordToneRatio": 1.0,
+        "chordToneChecked": 372,
+        "cellsWithoutChordQuality": 0,
+        "outOfSlotRegister": 0,
+        "register": [
+          48,
+          72
+        ],
+        "avgVelocity": 83.7,
+        "velocityMax": 114
+      }
+    },
+    "mixNoteCountBefore": 1400,
+    "mixNoteCountAfter": 1772,
+    "policy": "geometry outside target channels never changes; velocity factory-only"
+  },
+  "gates": {
+    "reparsed": true,
+    "protectedGeometryUnchanged": true,
+    "velocityPolishOnlyLoweredByExactCeiling": true,
+    "factoryVelocityOnlyByProof": true,
+    "allChannelsWithinPolyphonyLimits": true
+  },
+  "status": "STUDIO_APPLIED",
+  "outDir": "artifacts-max-4.51",
+  "arrangedMidi": "artifacts-max-4.51/arranged-4.51-fixture.mid"
+}

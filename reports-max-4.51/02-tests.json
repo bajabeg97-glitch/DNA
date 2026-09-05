@@ -1,0 +1,18 @@
+{
+  "schema": "dna-4.51-tests",
+  "runDate": "2026-09-05",
+  "command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451",
+  "suites": [
+    { "suite": "test_truth_engine_v451.py", "ran": 8, "passed": 8,
+      "covers": ["strum/comp fill on empty ch12+ch15 and empty pad-slot ch13+ch14",
+                 "live-cell chord-tone exactness on reparsed cells",
+                 "dynamics clamp only where exact factory profile ceiling exists",
+                 "velocity-only polish never touches geometry",
+                 "no-op when slots already carry material (busy-style test)",
+                 "inside-budget polyphony"] },
+    { "suite": "test_studio_flow_v450.py", "ran": 11, "passed": 11 },
+    { "suite": "test_arranger_pro_v449.py", "ran": 6, "passed": 6 }
+  ],
+  "total": { "ran": 25, "passed": 25 },
+  "legacyCheck": { "suite": "test_max_registry_v448.py", "ran": 5, "passed": 5 }
+}

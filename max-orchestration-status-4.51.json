@@ -1,0 +1,21 @@
+{
+  "schema": "dna-orchestration-status-4.51",
+  "version": "4.51",
+  "date": "2026-09-05",
+  "milestone": "Studio Truth Engine 4.51 — applying engine",
+  "policy": "only executed truth counts: MIDI bytes, metrics, gates, tests. No .md document is proof.",
+  "engineChanges": [
+    "studio_flow.py v4.51: plan_regions -> apply fills on empty slots -> exact-ceiling dynamics -> metrics on reparsed bytes -> gates",
+    "arranger_pro.py v4.51: build_strum_part with per-note live cell_at(start) chord voicing",
+    "arranger_contract.py: nearest_chord_tone / exact_factory_profile / profile_ceiling"
+  ],
+  "executionEvidence": {
+    "fixtureRun": "artifacts-max-4.51/studio-run-4.51.json",
+    "realFileRun": "artifacts-max-4.51/studio-run-reference-style.json",
+    "arrangedMidi": "artifacts-max-4.51/studio-arranged.mid"
+  },
+  "tests": "reports-max-4.51/02-tests.json (25/25 + legacy 5/5, executed)",
+  "reports": "reports-max-4.51/",
+  "guide": "docs/studio-flow-4.51.md (guide only, not proof)",
+  "commit": "4.51"
+}

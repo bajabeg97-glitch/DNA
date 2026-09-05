@@ -197,5 +197,50 @@ def note_is_chord_tone(pitch: int, pc_set: set[int] | None) -> bool | None:
     return (pitch % 12) in pc_set
 
 
+def nearest_chord_tone(pitch: int, pc_set: set[int], lo: int, hi: int) -> int:
+    """Nearest playable chord-tone pitch inside [lo, hi] (wrap by octaves)."""
+    best = None
+    best_d = 10 ** 9
+    pc = sorted(pc_set)
+    octaves = list(range(lo // 12 - 1, hi // 12 + 2))
+    for iv in pc:
+        for octave in octaves:
+            cand = octave * 12 + iv
+            if cand < lo or cand > hi:
+                continue
+            d = abs(cand - pitch)
+            if d < best_d:
+                best_d = d
+                best = cand
+    return best if best is not None else pitch
+
+
+def exact_factory_profile(sound: tuple[int, int, int] | None,
+                          factory_role: str | None = None) -> dict[str, Any] | None:
+    """Best-evidenced factory profile for an exact (bank_msb, bank_lsb, program) sound.
+
+    Returns None when the sound is unknown (engine never guesses sound facts).
+    """
+    if sound is None:
+        return None
+    pool = [p for p in factory_profiles()
+            if (p.get("bankMsb"), p.get("bankLsb"), p.get("program")) == tuple(sound)]
+    if factory_role:
+        role_pool = [p for p in pool if p.get("role") == factory_role]
+        if role_pool:
+            pool = role_pool
+    if not pool:
+        return None
+    return max(pool, key=lambda p: (float(p.get("sample_count") or 0),
+                                    float(p.get("confidence") or 0), str(p.get("id", ""))))
+
+
+def profile_ceiling(profile: dict[str, Any] | None) -> int:
+    if not profile:
+        return 127
+    v = profile.get("velocity") or {}
+    return int(v.get("ceiling", v.get("max", 127)) or 127)
+
+
 def register_fit(pitch: int, lo: int, hi: int) -> bool:
     return lo <= pitch <= hi

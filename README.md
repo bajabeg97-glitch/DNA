@@ -2,6 +2,13 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Studio Truth Engine 4.51:** the studio flow now *applies*: it never blocks
+> when an evidence-backed improvement exists — it fills only empty legal ACC
+> slots (strum/comp live-cell chord-tone parts, pad fills), clamps velocity only
+> to exact factory-profile ceilings, and proves by gates that pre-existing
+> geometry is untouched. Evidence: `artifacts-max-4.51/` (JSON runs on fixture +
+> `baseline/reference-style.mid`), tests `reports-max-4.51/02-tests.json`,
+> guide `docs/studio-flow-4.51.md` (guide, not proof).
 > **Studio Core 4.50 (reconstruction):** design review + consolidation on a single
 > arranger contract — `dna_midi_studio/arranger_contract.py` (one factory-velocity,
 > channel/polyphony facts, chord-tone classifier), `arranger_planner.py` (per-channel
