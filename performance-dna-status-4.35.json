@@ -1,0 +1,28 @@
+{
+  "version": "4.35.0",
+  "roles": {
+    "rhythm-guitar": {
+      "patterns": 2919,
+      "events": 185850,
+      "sources": [
+        "FACTORY_STRUM"
+      ]
+    },
+    "bass": {
+      "patterns": 2866,
+      "events": 17416,
+      "sources": [
+        "GOLD"
+      ]
+    },
+    "power-riff": {
+      "patterns": 5493,
+      "events": 86110,
+      "sources": [
+        "GOLD"
+      ]
+    }
+  },
+  "velocityAuthority": "FACTORY_ONLY",
+  "goldVelocityUsed": false
+}

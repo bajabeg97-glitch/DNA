@@ -1,0 +1,54 @@
+{
+  "schema": "dna-session25-articulation-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+  "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32",
+  "catalogHash": "e1cb74dc0bb552fb18f1bb1a7048d0207bdf35504814713ed7686c15a7eed12a",
+  "mapCount": 3,
+  "entryCount": 9,
+  "confirmedEntryCount": 7,
+  "eventCounts": {
+    "GUITAR": 3,
+    "RX": 3,
+    "DNC": 5
+  },
+  "standardEventTypes": [
+    "CC",
+    "CHANNEL_PRESSURE",
+    "KEYSWITCH"
+  ],
+  "keyswitchNoteOffCount": 8,
+  "maximumEstimatedPeak": 19,
+  "softwareMidiNoteCeiling": 54,
+  "deterministic": true,
+  "previewReady": true,
+  "productionRenderReady": false,
+  "productionEligibleMapCount": 0,
+  "deviceReadiness": {
+    "GUITAR": {
+      "allowed": false,
+      "status": "DEVICE_BLOCKED_UNTRUSTED_ARTICULATION_CAPTURE",
+      "reason": "Exact map exists only as software or unapproved device evidence",
+      "mapId": "250.010.001",
+      "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32"
+    },
+    "RX": {
+      "allowed": false,
+      "status": "DEVICE_BLOCKED_UNTRUSTED_ARTICULATION_CAPTURE",
+      "reason": "Exact map exists only as software or unapproved device evidence",
+      "mapId": "250.020.001",
+      "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32"
+    },
+    "DNC": {
+      "allowed": false,
+      "status": "DEVICE_BLOCKED_UNTRUSTED_ARTICULATION_CAPTURE",
+      "reason": "Exact map exists only as software or unapproved device evidence",
+      "mapId": "250.030.001",
+      "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32"
+    }
+  },
+  "passed": true,
+  "benchmarkHash": "dd367ed5c1fad7e55e1976d90f28abec3613f5d45d24c8ee7de0ec3dd7b70548"
+}

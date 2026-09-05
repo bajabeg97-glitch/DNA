@@ -1,0 +1,63 @@
+{
+  "schema": "dna-midi-baseline-truth",
+  "version": "4.24.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "implemented": [
+    "song-disjoint full-song context corpus",
+    "velocity-free MultiTrackContextNet",
+    "masked target role/bar prediction",
+    "bass/drums context candidate scoring"
+  ],
+  "dataset": {
+    "schema": "dna-song-context-dataset",
+    "version": "1.0",
+    "songs": 163,
+    "samples": 28923,
+    "train": 22848,
+    "validation": 2733,
+    "holdout": 3342,
+    "source_hash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+    "dataset_hash": "5103c86e5907c98c5074df8de4d017c441541b01ab3b3ab82d7f37e9c83f46a3",
+    "velocity_used": false
+  },
+  "training": {
+    "schema": "dna-song-context-training",
+    "version": "1.0",
+    "epochs": 2,
+    "bestValidationMSE": 0.015550711968292793,
+    "holdoutMSE": 0.02063988016120025,
+    "holdoutMAE": 0.07975335844925471,
+    "velocityInput": false,
+    "velocityTarget": false,
+    "velocityOutputHead": false,
+    "history": [
+      {
+        "epoch": 1,
+        "trainMSE": 0.04838232931991418,
+        "validationMSE": 0.018958054017275572
+      },
+      {
+        "epoch": 2,
+        "trainMSE": 0.017457842868235377,
+        "validationMSE": 0.015550711968292793
+      }
+    ]
+  },
+  "tests": {
+    "targetedPass": 45,
+    "targetedFail": 0,
+    "command": "PYTHONPATH=src:. pytest -q test_song_context_v424.py tests/test_ai_melodic_sequence_v423.py tests/test_ai_relationship_learning_v421.py tests/test_ai_learning_v416.py tests/test_ai_learning_v417.py tests/test_ai_song_inpainting_v418.py tests/test_ai_track_replacement_v419.py tests/test_ai_melodic_relationship_v420.py test_reconstruct_v415.py test_performance_engine.py"
+  },
+  "authority": {
+    "goldVelocity": false,
+    "neuralVelocity": false,
+    "factoryVelocityOnly": true,
+    "hardValidatorsAboveContextAI": true
+  },
+  "limitations": [
+    "context model predicts performance summary, not event-level sequence",
+    "full release suite not rerun",
+    "human listening missing",
+    "Pa800 hardware certification pending"
+  ]
+}

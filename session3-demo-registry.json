@@ -1,0 +1,115 @@
+{
+  "schema": "dna-session3-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic verification registry; harmonic GOLD contains relative functions only.",
+  "goldPatterns": [
+    {
+      "id": "220.010.001",
+      "role": "bass",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.97,
+      "events": [
+        {"tick": 0, "duration": 360, "function": "root", "degree": 1},
+        {"tick": 480, "duration": 300, "function": "scale", "degree": 5},
+        {"tick": 960, "duration": 360, "function": "root", "degree": 1},
+        {"tick": 1320, "duration": 100, "function": "scale", "degree": 3},
+        {"tick": 1440, "duration": 300, "function": "scale", "degree": 5},
+        {"tick": 1800, "duration": 100, "function": "root", "degree": 1, "approach": "chromatic-below"}
+      ]
+    },
+    {
+      "id": "220.010.002",
+      "role": "bass",
+      "section": "generic",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.72,
+      "events": [
+        {"tick": 0, "duration": 420, "function": "root", "degree": 1},
+        {"tick": 960, "duration": 420, "function": "root", "degree": 1}
+      ]
+    },
+    {
+      "id": "220.020.001",
+      "role": "power-riff",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.95,
+      "events": [
+        {"tick": 0, "duration": 420, "function": "root", "degree": 1, "intervals": [0, 7], "inversion": 0},
+        {"tick": 960, "duration": 420, "function": "root", "degree": 1, "intervals": [0, 7], "inversion": 1}
+      ]
+    },
+    {
+      "id": "220.030.001",
+      "role": "riff",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.93,
+      "events": [
+        {"tick": 0, "duration": 180, "function": "scale", "degree": 1},
+        {"tick": 240, "duration": 180, "function": "scale", "degree": 2},
+        {"tick": 480, "duration": 180, "function": "scale", "degree": 3},
+        {"tick": 720, "duration": 180, "function": "scale", "degree": 5},
+        {"tick": 1440, "duration": 180, "function": "scale", "degree": 3},
+        {"tick": 1680, "duration": 180, "function": "root", "degree": 1, "approach": "chromatic-above"}
+      ]
+    }
+  ],
+  "drumBassRelationships": [
+    {
+      "id": "230.001.001",
+      "drumPatternId": "210.010.001",
+      "bassPatternId": "220.010.001",
+      "confidence": 0.98
+    }
+  ],
+  "factoryProfiles": [
+    {
+      "id": "120.008.001",
+      "role": "bass",
+      "program": 32,
+      "registerMin": 28,
+      "registerMax": 55,
+      "floor": 42,
+      "soft": 52,
+      "lowMid": 63,
+      "optimal": 76,
+      "highMid": 88,
+      "strong": 101,
+      "ceiling": 114
+    },
+    {
+      "id": "120.011.001",
+      "role": "power-riff",
+      "program": 29,
+      "registerMin": 48,
+      "registerMax": 79,
+      "floor": 40,
+      "soft": 51,
+      "lowMid": 63,
+      "optimal": 77,
+      "highMid": 91,
+      "strong": 105,
+      "ceiling": 119
+    },
+    {
+      "id": "120.013.001",
+      "role": "riff",
+      "program": 81,
+      "registerMin": 60,
+      "registerMax": 88,
+      "floor": 38,
+      "soft": 49,
+      "lowMid": 61,
+      "optimal": 74,
+      "highMid": 87,
+      "strong": 100,
+      "ceiling": 113
+    }
+  ]
+}

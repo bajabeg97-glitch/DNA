@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/renderer-verification-v1.schema.json",
+  "title": "Renderer Independent Verification 1.0",
+  "type": "object",
+  "required": ["schema", "version", "passed", "issues", "checks", "midiSha256"],
+  "properties": {
+    "schema": {"enum": ["dna-renderer-independent-verification", "dna-renderer-final-verification"]},
+    "version": {"const": "1.0"},
+    "passed": {"type": "boolean"},
+    "issues": {"type": "array", "items": {"type": "string"}},
+    "checks": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "midiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true,
+  "x-contract-version": "1.0"
+}

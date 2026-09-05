@@ -1,0 +1,276 @@
+{
+  "schema": "dna-recovery-release-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "tests": {
+    "run": 2900,
+    "failures": 0,
+    "errors": 0
+  },
+  "gates": {
+    "session2": {
+      "result": "pass",
+      "testsRun": 12,
+      "evidence": "data/session2-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session3": {
+      "result": "pass",
+      "testsRun": 16,
+      "evidence": "data/session3-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session4": {
+      "result": "pass",
+      "testsRun": 19,
+      "evidence": "data/session4-test-report.json",
+      "productionGates": {
+        "productionFactoryGate": "BLOCKED_MISSING_SOURCE_DATA",
+        "productionControlMapGate": "BLOCKED_MISSING_CONFIRMED_MAP"
+      }
+    },
+    "session5": {
+      "result": "pass",
+      "testsRun": 36,
+      "evidence": "data/session5-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session6": {
+      "result": "pass",
+      "testsRun": 26,
+      "evidence": "data/session6-test-report.json",
+      "productionGates": {
+        "productionRxMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+        "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE"
+      }
+    },
+    "session7": {
+      "result": "pass",
+      "testsRun": 30,
+      "evidence": "data/session7-test-report.json",
+      "productionGates": {
+        "productionDncMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+        "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE"
+      }
+    },
+    "session8": {
+      "result": "pass",
+      "testsRun": 21,
+      "evidence": "data/session8-test-report.json",
+      "productionGates": {}
+    },
+    "session9": {
+      "result": "pass",
+      "testsRun": 19,
+      "evidence": "data/session9-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA"
+      }
+    },
+    "session10": {
+      "result": "pass",
+      "testsRun": 22,
+      "evidence": "data/session10-test-report.json",
+      "productionGates": {}
+    },
+    "session11": {
+      "result": "pass",
+      "testsRun": 24,
+      "evidence": "data/session11-test-report.json",
+      "productionGates": {}
+    },
+    "session12": {
+      "result": "pass",
+      "testsRun": 36,
+      "evidence": "data/session12-test-report.json",
+      "productionGates": {
+        "productionCorpusGate": "SOFTWARE_VALIDATED"
+      }
+    },
+    "session14Preflight": {
+      "result": "pass",
+      "testsRun": 12,
+      "evidence": "data/session14-preflight-report.json",
+      "productionGates": {}
+    },
+    "session15PremiumBaseline": {
+      "result": "pass",
+      "testsRun": 20,
+      "evidence": "data/session15-test-report.json",
+      "productionGates": {}
+    },
+    "session18TrackIdentitySoloSafety": {
+      "result": "pass",
+      "testsRun": 28,
+      "evidence": "data/session18-test-report.json",
+      "productionGates": {}
+    },
+    "session17ProductionAdapter": {
+      "result": "pass",
+      "testsRun": 35,
+      "evidence": "data/session17-test-report.json",
+      "productionGates": {
+        "productionDrumPercussion": "ADAPTER_VALIDATED",
+        "productionBassPowerRiff": "ADAPTER_VALIDATED",
+        "productionFactoryGuitar": "ADAPTER_VALIDATED",
+        "productionSolo": "FACTORY_EXPRESSION_ONLY",
+        "productionRx": "DEVICE_BLOCKED_MISSING_CONFIRMED_MAP",
+        "productionDnc": "DEVICE_BLOCKED_MISSING_CONFIRMED_MAP"
+      }
+    },
+    "session19SongUnderstanding": {
+      "result": "pass",
+      "testsRun": 36,
+      "evidence": "data/session19-test-report.json",
+      "productionGates": {}
+    },
+    "session20AiProducerBrief": {
+      "result": "pass",
+      "testsRun": 52,
+      "evidence": "data/session20-test-report.json",
+      "productionGates": {}
+    },
+    "session21ArrangementGraph": {
+      "result": "pass",
+      "testsRun": 62,
+      "evidence": "data/session21-test-report.json",
+      "productionGates": {}
+    },
+    "session22CandidateVariationEngine": {
+      "result": "pass",
+      "testsRun": 68,
+      "evidence": "data/session22-test-report.json",
+      "productionGates": {}
+    },
+    "session23GroovePolyphony": {
+      "result": "pass",
+      "testsRun": 70,
+      "evidence": "data/session23-test-report.json",
+      "productionGates": {}
+    },
+    "session24SoloExpression": {
+      "result": "pass",
+      "testsRun": 80,
+      "evidence": "data/session24-test-report.json",
+      "productionGates": {
+        "productionOrnamentEvidence": "MISSING"
+      }
+    },
+    "session25ArticulationMaps": {
+      "result": "pass",
+      "testsRun": 88,
+      "evidence": "data/session25-test-report.json",
+      "productionGates": {
+        "productionGuitarMap": "MISSING_DEVICE_CAPTURE",
+        "productionRxMap": "MISSING_DEVICE_CAPTURE",
+        "productionDncMap": "MISSING_DEVICE_CAPTURE"
+      }
+    },
+    "session26PremiumPreview": {
+      "result": "pass",
+      "testsRun": 96,
+      "evidence": "data/session26-test-report.json",
+      "productionGates": {
+        "productionAudioRenderer": "OPTIONAL_MANIFEST_ONLY"
+      }
+    },
+    "session27MusicQualityEvaluator": {
+      "result": "pass",
+      "testsRun": 104,
+      "evidence": "data/session27-test-report.json",
+      "productionGates": {}
+    },
+    "session28PremiumProducerWorkflow": {
+      "result": "pass",
+      "testsRun": 112,
+      "evidence": "data/session28-test-report.json",
+      "productionGates": {}
+    },
+    "session29PersonalProducerProfile": {
+      "result": "pass",
+      "testsRun": 120,
+      "evidence": "data/session29-test-report.json",
+      "productionGates": {}
+    },
+    "session30ReleaseReadiness": {
+      "result": "pass",
+      "testsRun": 128,
+      "evidence": "data/session30-test-report.json",
+      "productionGates": {}
+    },
+    "session31AutomaticTrackAnalysis": {
+      "result": "pass",
+      "testsRun": 136,
+      "evidence": "data/session31-test-report.json",
+      "productionGates": {}
+    },
+    "session31BEvidenceAuthority": {
+      "result": "pass",
+      "testsRun": 144,
+      "evidence": "data/session31b-test-report.json",
+      "productionGates": {}
+    },
+    "session32TrackPlanFullOptimizer": {
+      "result": "pass",
+      "testsRun": 152,
+      "evidence": "data/session32-test-report.json",
+      "productionGates": {}
+    },
+    "session33ArrangementRenderer": {
+      "result": "pass",
+      "testsRun": 160,
+      "evidence": "data/session33-test-report.json",
+      "productionGates": {}
+    },
+    "session34GlobalCoherence": {
+      "result": "pass",
+      "testsRun": 168,
+      "evidence": "data/session34-test-report.json",
+      "productionGates": {}
+    },
+    "session35EndToEndArranger": {
+      "result": "pass",
+      "testsRun": 176,
+      "evidence": "data/session35-test-report.json",
+      "productionGates": {}
+    },
+    "session36ZeroSilentFailure": {
+      "result": "pass",
+      "testsRun": 184,
+      "evidence": "data/session36-test-report.json",
+      "productionGates": {}
+    },
+    "session37QualityCalibration": {
+      "result": "pass",
+      "testsRun": 192,
+      "evidence": "data/session37-test-report.json",
+      "productionGates": {
+        "productionExpressionEvidence": "AWAITING_OPERATOR_CAPTURE"
+      }
+    },
+    "session38DeviceCertificationIntake": {
+      "result": "pass",
+      "testsRun": 200,
+      "evidence": "data/session38-test-report.json",
+      "productionGates": {}
+    },
+    "session13": {
+      "result": "pass",
+      "testsRun": 16,
+      "evidence": "data/session13-test-report.json",
+      "productionGates": {}
+    }
+  },
+  "limitations": {
+    "legacySourceTreePresent": true,
+    "productionRegistriesPresent": true,
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

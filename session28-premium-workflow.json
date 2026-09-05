@@ -1,0 +1,1842 @@
+{
+  "schema": "dna-premium-producer-workflow",
+  "version": "2.0",
+  "workflowId": "workflow-4aae08a74e9f8bb027db",
+  "source": {
+    "midiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+    "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+    "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+    "arrangementGraphHash": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8",
+    "candidateSetHash": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+    "groovePlanHash": "904b4ba11b23aadf32dd069a3e983736abb3d37ca20e35b36e0a526f0dcd136d",
+    "expressionPlanHash": "195a3d4eaebe78d7f1c59277924734412c3c036ff600e47d9ef948ea3aa66820",
+    "previewSessionHash": "52f8172d96d4e097c48bcf702d15949094b51f0f7546b44d836dfe7354825545",
+    "evaluationReportHash": "37da1a88fb03aa82c3c9a7273a6990d0fc69b0cd1b6d958867b94151fe98836e",
+    "chainChecks": [
+      "candidate.graph",
+      "candidate.songMap",
+      "evaluation.preview",
+      "evaluation.songMap",
+      "expression.groove",
+      "graph.brief",
+      "graph.songMap",
+      "groove.candidate",
+      "groove.graph",
+      "preview.expression",
+      "preview.songMap"
+    ]
+  },
+  "controls": {
+    "version": "1.0",
+    "selectedVariantId": "C",
+    "seed": 2828,
+    "globalLock": false,
+    "elementLocks": [
+      "v2cv1"
+    ],
+    "palette": "HIGH_CONTRAST",
+    "reducedMotion": false
+  },
+  "stages": [
+    {
+      "stageId": "IMPORT",
+      "index": 0,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "sourceMidiSha256",
+      "artifactHash": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "ANALYZE",
+      "index": 1,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "mapHash",
+      "artifactHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "BRIEF",
+      "index": 2,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "briefHash",
+      "artifactHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "PLAN",
+      "index": 3,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "graphHash",
+      "artifactHash": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "VARIANTS",
+      "index": 4,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "candidateSetHash",
+      "artifactHash": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "EDIT",
+      "index": 5,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "expressionPlanHash",
+      "artifactHash": "195a3d4eaebe78d7f1c59277924734412c3c036ff600e47d9ef948ea3aa66820",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "VERIFY",
+      "index": 6,
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "artifactType": "evaluationReportHash",
+      "artifactHash": "37da1a88fb03aa82c3c9a7273a6990d0fc69b0cd1b6d958867b94151fe98836e",
+      "blockingReasons": [],
+      "canOpen": true
+    },
+    {
+      "stageId": "EXPORT",
+      "index": 7,
+      "status": "BLOCKED",
+      "progressPercent": 0,
+      "artifactType": null,
+      "artifactHash": null,
+      "blockingReasons": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "canOpen": true
+    }
+  ],
+  "timeline": [
+    {
+      "index": 0,
+      "marker": "i1cv1",
+      "elementType": "intro",
+      "bars": 2,
+      "targetEnergy": 35,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "v1cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "cd055346ae14ffd58d4b4a2d2f63738ca667239a915b8b262a2ffacb98c491c5"
+    },
+    {
+      "index": 1,
+      "marker": "i2cv1",
+      "elementType": "intro",
+      "bars": 2,
+      "targetEnergy": 51,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "v1cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "e1eb88a7c6df182ba518146b478da074cbb6fca4866de5bb3f0152c2ee83ed3c"
+    },
+    {
+      "index": 2,
+      "marker": "v1cv1",
+      "elementType": "variation",
+      "bars": 2,
+      "targetEnergy": 45,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "f1cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "e5bccae9bc0c5e812032d424d928b40e24425256fef8dd5edb4561f22e6fbdce"
+    },
+    {
+      "index": 3,
+      "marker": "v2cv1",
+      "elementType": "variation",
+      "bars": 2,
+      "targetEnergy": 60,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": true,
+      "lockSource": "ELEMENT",
+      "transition": {
+        "to": "v3cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": false
+      },
+      "confidence": 0.7786,
+      "timelineItemHash": "2fe5964fa1df31588da9c767a07cce4de85bf0a98dde2475c10e869772c16414"
+    },
+    {
+      "index": 4,
+      "marker": "v3cv1",
+      "elementType": "variation",
+      "bars": 2,
+      "targetEnergy": 80,
+      "targetDensity": "full",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "riff",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "f2cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "55704cfb60214dd9f2b986ab5cff6f88ea4bef0ea161bafdbcc5778eeb89aff7"
+    },
+    {
+      "index": 5,
+      "marker": "v4cv1",
+      "elementType": "variation",
+      "bars": 2,
+      "targetEnergy": 93,
+      "targetDensity": "full",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "riff",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "e2cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach",
+          "ending-cadence"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "be82a4a72bb0a163a86eedbfed969a0407a87f208a6a452dcdbb6661e296955d"
+    },
+    {
+      "index": 6,
+      "marker": "f1cv1",
+      "elementType": "fill",
+      "bars": 1,
+      "targetEnergy": 68,
+      "targetDensity": "full",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "riff"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "v2cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "5ebb06ab62385579a5d79c01da45571bfb9300bb80dc7b19474a0dcc8e70f35a"
+    },
+    {
+      "index": 7,
+      "marker": "f2cv1",
+      "elementType": "fill",
+      "bars": 1,
+      "targetEnergy": 99,
+      "targetDensity": "full",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "riff"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": {
+        "to": "v4cv1",
+        "obligations": [
+          "motif-continuity",
+          "bass-approach"
+        ],
+        "harmonicAdaptation": true
+      },
+      "confidence": 0.9495,
+      "timelineItemHash": "479eaa5fd1debabb3f15f63cadc28a2780ba32d5190df701a80be61214b0968d"
+    },
+    {
+      "index": 8,
+      "marker": "e1cv1",
+      "elementType": "ending",
+      "bars": 2,
+      "targetEnergy": 61,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": null,
+      "confidence": 0.9495,
+      "timelineItemHash": "c4d286ed0c36b49b3ad945e6e73d1c16350a4079fe49edc6dc281d1615ed2537"
+    },
+    {
+      "index": 9,
+      "marker": "e2cv1",
+      "elementType": "ending",
+      "bars": 2,
+      "targetEnergy": 48,
+      "targetDensity": "balanced",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "locked": false,
+      "lockSource": "NONE",
+      "transition": null,
+      "confidence": 0.9495,
+      "timelineItemHash": "e111590515647698a2fcdaad2a46dface28c3aff351d375f192f62b688a7b809"
+    }
+  ],
+  "trackMatrix": [
+    {
+      "trackUid": "trk-c308babeebe409908683",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "channelIndex": 0,
+      "channelNumber": 1,
+      "roles": [
+        "pad"
+      ],
+      "soundBinding": {
+        "bankMsb": null,
+        "bankLsb": null,
+        "program": null,
+        "status": "UNRESOLVED"
+      },
+      "register": {
+        "low": 60,
+        "high": 71
+      },
+      "noteCount": 54,
+      "originalNoteCount": 54,
+      "aiLayerNoteCount": 0,
+      "fullDurationPeak": 4,
+      "articulationStatus": "DEVICE_CAPTURE_BLOCKED",
+      "mappingStatus": "EXACT_TRACK_UID",
+      "trackRowHash": "5c3c115b5bedfe3a30ddcb61a775d129777bb0059e4df536a3912bed10185266"
+    },
+    {
+      "trackUid": "trk-9dc35964a964c146e210",
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "channelIndex": 1,
+      "channelNumber": 2,
+      "roles": [
+        "bass"
+      ],
+      "soundBinding": {
+        "bankMsb": null,
+        "bankLsb": null,
+        "program": null,
+        "status": "UNRESOLVED"
+      },
+      "register": {
+        "low": 36,
+        "high": 45
+      },
+      "noteCount": 16,
+      "originalNoteCount": 16,
+      "aiLayerNoteCount": 0,
+      "fullDurationPeak": 1,
+      "articulationStatus": "DEVICE_CAPTURE_BLOCKED",
+      "mappingStatus": "EXACT_TRACK_UID",
+      "trackRowHash": "1086f2320aec123588265a434d65431aed4ef17884392d7dc52ed30ed137b981"
+    },
+    {
+      "trackUid": "trk-afd2be6e213ec34b8cd2",
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "channelIndex": 2,
+      "channelNumber": 3,
+      "roles": [
+        "solo"
+      ],
+      "soundBinding": {
+        "bankMsb": 120,
+        "bankLsb": 0,
+        "program": 64,
+        "status": "EXACT"
+      },
+      "register": {
+        "low": 70,
+        "high": 85
+      },
+      "noteCount": 77,
+      "originalNoteCount": 16,
+      "aiLayerNoteCount": 61,
+      "fullDurationPeak": 2,
+      "articulationStatus": "DEVICE_CAPTURE_BLOCKED",
+      "mappingStatus": "EXACT_TRACK_UID",
+      "trackRowHash": "28696e11236bfc0b82eac3a2cc0001d0fd12616b9d24560b4d515f52820d5502"
+    },
+    {
+      "trackUid": "trk-3f7d0bfa5161c2b177f8",
+      "trackIndex": 4,
+      "trackNumber": 5,
+      "channelIndex": 9,
+      "channelNumber": 10,
+      "roles": [
+        "drums"
+      ],
+      "soundBinding": {
+        "bankMsb": null,
+        "bankLsb": null,
+        "program": null,
+        "status": "UNRESOLVED"
+      },
+      "register": {
+        "low": 36,
+        "high": 38
+      },
+      "noteCount": 32,
+      "originalNoteCount": 32,
+      "aiLayerNoteCount": 0,
+      "fullDurationPeak": 1,
+      "articulationStatus": "DEVICE_CAPTURE_BLOCKED",
+      "mappingStatus": "EXACT_TRACK_UID",
+      "trackRowHash": "f6c19add34b303a8dd5aac494136a086d77e266e5a8bf49008f83912785bcf21"
+    }
+  ],
+  "explain": [
+    {
+      "requestId": "i1cv1:drums",
+      "marker": "i1cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "162.029.414",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.858775,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_35",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "d9bcd37a69065a5e1d8cc0e65958b275bbf741548d51f4585f06b107c6589ecf"
+    },
+    {
+      "requestId": "i1cv1:bass",
+      "marker": "i1cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "855.530.329",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 1.0,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_35",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "7f0ff9f89509e9dedb0dd4d3556366b80fed2e9a63798a21bcdc597658fbec75"
+    },
+    {
+      "requestId": "i1cv1:guitar",
+      "marker": "i1cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "221.016.188",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.84022,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_35",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "c8f0d36436ca1d06cba450c0e1a771553d770c0467fd1f51ebc64554b3f68461"
+    },
+    {
+      "requestId": "i1cv1:accompaniment",
+      "marker": "i1cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "433.730.033",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.838187,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_35",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "a92d73088f801947e6a48ad8bd99da4c84df8f50aeda2531cde54eb35eabaeee"
+    },
+    {
+      "requestId": "i1cv1:pad",
+      "marker": "i1cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "817.483.113",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.817381,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_35",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "4364a5b703e7944a3dfdb663ddfb104c345231fbe84664603d5b553c1a2ecc13"
+    },
+    {
+      "requestId": "i2cv1:drums",
+      "marker": "i2cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "352.080.660",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.907955,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_51",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "397c362241e7d005b7d973622a28444ee5fa03430d34a2ca6d1e441f9c2bb6d8"
+    },
+    {
+      "requestId": "i2cv1:bass",
+      "marker": "i2cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "325.888.314",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.768112,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_51",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "8667de85ff5d041f83f39c21745ad5ce2eff13e9030945ef5d08d75889863e48"
+    },
+    {
+      "requestId": "i2cv1:guitar",
+      "marker": "i2cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "939.356.320",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.842139,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_51",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "3a13862fd9d9e36ca22a735e4b71479a6e0f09ba1a710b96700fb958c71137ef"
+    },
+    {
+      "requestId": "i2cv1:accompaniment",
+      "marker": "i2cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "710.244.816",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.864512,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_51",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "8d00dc3f1703d9aad17a232f49c0bb5367cfcd5a2a63ba6f4b5f2b69552f4f50"
+    },
+    {
+      "requestId": "i2cv1:pad",
+      "marker": "i2cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "389.122.481",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.843319,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_51",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "7685ec4c8808df5973e93acfcf25912f86b81149f2ef47bb5419577bb8d3750e"
+    },
+    {
+      "requestId": "v1cv1:drums",
+      "marker": "v1cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "316.022.022",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.935756,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_45",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "56ea19e4244dedb2cfdb8fada74f075b9685fa48c9380c0ec1d7c39f7703edc7"
+    },
+    {
+      "requestId": "v1cv1:bass",
+      "marker": "v1cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "882.124.169",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 1.0,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_45",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "a6b8f08274660faff83f639f69023cdd231a8dfaaabf0ea0279a9ce117268006"
+    },
+    {
+      "requestId": "v1cv1:guitar",
+      "marker": "v1cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "287.188.654",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.85303,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_45",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "83baa0fb482d21ac25d4b2cf36d6301c12c8abdf5c5844a53f8e4653691e80b0"
+    },
+    {
+      "requestId": "v1cv1:accompaniment",
+      "marker": "v1cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "640.216.299",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.890886,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_45",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "dfcab8df89fdb2055190bfc89207b98daf7af94b1c1b4ae4ee201f8db681f440"
+    },
+    {
+      "requestId": "v1cv1:pad",
+      "marker": "v1cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "092.805.847",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.857176,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_45",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "02bdc384ab090228515ac272cef08da2dbaa7fc1f8a27ded7931e417dbf0bbab"
+    },
+    {
+      "requestId": "v2cv1:drums",
+      "marker": "v2cv1",
+      "role": "drums",
+      "decision": "KEEP",
+      "patternId": "080.792.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.939713,
+      "locked": true,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_60",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "bedc13dba397f7cc08cb1bcd353e5cd5c7cbbe8504e57f45dc906b8fee4445ae"
+    },
+    {
+      "requestId": "v2cv1:bass",
+      "marker": "v2cv1",
+      "role": "bass",
+      "decision": "KEEP",
+      "patternId": "730.336.141",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 1.0,
+      "locked": true,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_60",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "42824473eacb98280ed4c2ee454aeaa4a317e4bee0a7495634ae8c9839e00639"
+    },
+    {
+      "requestId": "v2cv1:guitar",
+      "marker": "v2cv1",
+      "role": "guitar",
+      "decision": "KEEP",
+      "patternId": "459.412.112",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.876076,
+      "locked": true,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_60",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "773ced2740446a9f36aaea2e28cfdc0f7a513f694eb947ffdc977f4b3f435482"
+    },
+    {
+      "requestId": "v2cv1:accompaniment",
+      "marker": "v2cv1",
+      "role": "accompaniment",
+      "decision": "KEEP",
+      "patternId": "587.243.106",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.906724,
+      "locked": true,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_60",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "718b492d748c0677fa55496d977659881fede81faf275afe1e3796e956d57188"
+    },
+    {
+      "requestId": "v2cv1:pad",
+      "marker": "v2cv1",
+      "role": "pad",
+      "decision": "KEEP",
+      "patternId": "013.887.683",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.881103,
+      "locked": true,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_60",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "1d4153cacb8ec6abb09ff67c8f760b5b4c1f8f58210f3e6749d3fd6ae0e5fd32"
+    },
+    {
+      "requestId": "v3cv1:drums",
+      "marker": "v3cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "327.992.584",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.921417,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "ffacf4ffed2db33e7e09c94e0cc9f0d6df539ce9fde1b83fa0d85f9efd5ea15e"
+    },
+    {
+      "requestId": "v3cv1:percussion",
+      "marker": "v3cv1",
+      "role": "percussion",
+      "decision": "SELECT",
+      "patternId": "347.948.299",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.847977,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "8f27c137ca3fe1767b02496cc262da220dd1938d590807ab9a2471ba945b98d2"
+    },
+    {
+      "requestId": "v3cv1:bass",
+      "marker": "v3cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "474.836.183",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.755529,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "12b75fb71086516f39d58614afa8a6b8a21d175d4b4d748f4ce7e71e98ad48c1"
+    },
+    {
+      "requestId": "v3cv1:guitar",
+      "marker": "v3cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "091.559.876",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.839554,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "2fadc3e3c558348bf1657884dbfebe0be5e124845a4c2608bbbaea0862f74b3b"
+    },
+    {
+      "requestId": "v3cv1:accompaniment",
+      "marker": "v3cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "758.750.547",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.88238,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "0bd8ac97f231e1d2d2e456fd7109ff67190e5b53e62591e2459314926a909f34"
+    },
+    {
+      "requestId": "v3cv1:riff",
+      "marker": "v3cv1",
+      "role": "riff",
+      "decision": "SELECT",
+      "patternId": "972.518.680",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.868909,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "f87d49e436cdbae259fc71750310b574838fafd1d629c851dd0487e1ef8f5935"
+    },
+    {
+      "requestId": "v3cv1:pad",
+      "marker": "v3cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "795.889.617",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.896096,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_80",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "ccbdeac9c016d2912fd0564fd294fd4812e4382cf1bb3b52eaa8c7e1c71d774a"
+    },
+    {
+      "requestId": "v4cv1:drums",
+      "marker": "v4cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "821.875.336",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.912104,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "47499e00401e6de27b336f3bdec9037e94891f1afc104e93e7b7498e557c8737"
+    },
+    {
+      "requestId": "v4cv1:percussion",
+      "marker": "v4cv1",
+      "role": "percussion",
+      "decision": "SELECT",
+      "patternId": "804.335.633",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.848258,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "16e578aa09d912b15e6002f21ce6ac8e753b6e0a99de4f0d5f285f1aefba7f11"
+    },
+    {
+      "requestId": "v4cv1:bass",
+      "marker": "v4cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "329.207.411",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.744918,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "28354954871591f7717ddb5cd246ed3ebad60457c4c59be85dd499e83aa5031c"
+    },
+    {
+      "requestId": "v4cv1:guitar",
+      "marker": "v4cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "811.588.504",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.867492,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "61d8856747b5c35ac34ddb0a6e62b079463d022009f2309d108d3a1bfb954c46"
+    },
+    {
+      "requestId": "v4cv1:accompaniment",
+      "marker": "v4cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "751.578.963",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.904421,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "d2870c1187e64424ad322598a02983cf620a325ae55cb1588673dcf239d8b343"
+    },
+    {
+      "requestId": "v4cv1:riff",
+      "marker": "v4cv1",
+      "role": "riff",
+      "decision": "SELECT",
+      "patternId": "530.980.805",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.905983,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "e9ccf198af43a2a137dbf0743c0e69b6f8a3a8ec783df9cd262ea8aa0ba49c01"
+    },
+    {
+      "requestId": "v4cv1:pad",
+      "marker": "v4cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "488.799.744",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.880018,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_93",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "59c0814849762144b900df39f23a1a0d06520a4e994eef76b7d1dce0795f32ef"
+    },
+    {
+      "requestId": "f1cv1:drums",
+      "marker": "f1cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "609.590.038",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.898478,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_68",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "7ee94365e1ee38e3a75c5c361b4edb7490f4c3622f08b1901e119cf2fa82d64f"
+    },
+    {
+      "requestId": "f1cv1:percussion",
+      "marker": "f1cv1",
+      "role": "percussion",
+      "decision": "SELECT",
+      "patternId": "346.464.973",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.847889,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_68",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "007e235fb5e50f23965bbd723fe7526c3bbeb227533b72e94e7cf30839f72d14"
+    },
+    {
+      "requestId": "f1cv1:bass",
+      "marker": "f1cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "125.929.851",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.695311,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_68",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "a6651cfe8aaa9db8f4aad18e2f51b23a6cceb750ea8885ccc8222d6c4ea2b010"
+    },
+    {
+      "requestId": "f1cv1:riff",
+      "marker": "f1cv1",
+      "role": "riff",
+      "decision": "SELECT",
+      "patternId": "888.061.182",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.889876,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_68",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "fc9535c5cd4423bd5aa4e059d7f73c70381de3f44f14ff69efac0ca67fcc8583"
+    },
+    {
+      "requestId": "f2cv1:drums",
+      "marker": "f2cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "177.819.936",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.875812,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_99",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "348f97eb8af12214ecd61029db8ebb6c38f41c6c1108e25fb5d132f2b76d4126"
+    },
+    {
+      "requestId": "f2cv1:percussion",
+      "marker": "f2cv1",
+      "role": "percussion",
+      "decision": "SELECT",
+      "patternId": "603.961.175",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.871905,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_99",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "b56e6457af552e0d50891cfed362c2b592308286d03a362365745ffdcb989658"
+    },
+    {
+      "requestId": "f2cv1:bass",
+      "marker": "f2cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "543.166.588",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.701356,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_99",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "4bd418e88031576317b98b6a31d3a6794ddb5bebe3ae57705ac0ddb89c403852"
+    },
+    {
+      "requestId": "f2cv1:riff",
+      "marker": "f2cv1",
+      "role": "riff",
+      "decision": "SELECT",
+      "patternId": "319.005.194",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.932489,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_99",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [],
+      "alternativesAvailable": true,
+      "explainHash": "8f59f30770a8af0e1a205f2b42d20b4ef3e771abcf45522726cd308a2dca242d"
+    },
+    {
+      "requestId": "e1cv1:drums",
+      "marker": "e1cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "169.230.091",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.865729,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_61",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "4d0a3ab3bf9dadaeef7bc3de83772c7c8ea895cb39afa3849870f90936fbf43b"
+    },
+    {
+      "requestId": "e1cv1:bass",
+      "marker": "e1cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "001.678.467",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.697104,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_61",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "f14163603471f2e6c1c7eb868d29a67b4a24a301369f9e0fa3e27603d0d7e8eb"
+    },
+    {
+      "requestId": "e1cv1:guitar",
+      "marker": "e1cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "631.972.034",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.80847,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_61",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "472bbcda8229c7240c20d95961f2b5923ee4b4bcb145b7a320ef958dd16e8abd"
+    },
+    {
+      "requestId": "e1cv1:accompaniment",
+      "marker": "e1cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "786.633.171",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.810667,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_61",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "f7310b71678f915fb95e6d5c9cce20c111473f98723642141c6e5544a6d385a1"
+    },
+    {
+      "requestId": "e1cv1:pad",
+      "marker": "e1cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "237.873.880",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.808818,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_61",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "9c55a1f0fd403e01a9823d40f4e0497733c50572ad9e0bd287ddb2185c0c9cea"
+    },
+    {
+      "requestId": "e2cv1:drums",
+      "marker": "e2cv1",
+      "role": "drums",
+      "decision": "SELECT",
+      "patternId": "686.125.928",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.909049,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_48",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "bca418be35f9774ae4264c2f3ce391004fc8bf392b778e13cf415f8ced0e0d62"
+    },
+    {
+      "requestId": "e2cv1:bass",
+      "marker": "e2cv1",
+      "role": "bass",
+      "decision": "SELECT",
+      "patternId": "024.777.862",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.745503,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_48",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "af8786e289bac825adb9e9b68c4b34d5038f865ab7cfc34477e276fe763af262"
+    },
+    {
+      "requestId": "e2cv1:guitar",
+      "marker": "e2cv1",
+      "role": "guitar",
+      "decision": "SELECT",
+      "patternId": "611.187.387",
+      "sourceKind": "FACTORY_STRUMMING",
+      "score": 0.817446,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_48",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "b9d6cbc6ebffbfe21bebde3560b278e3ef8b829dfef89d0afca5f5a3c41d9d58"
+    },
+    {
+      "requestId": "e2cv1:accompaniment",
+      "marker": "e2cv1",
+      "role": "accompaniment",
+      "decision": "SELECT",
+      "patternId": "569.373.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.854633,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_48",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "d49463882aea8e6038fe5ac3612d15d4e90478e4be90061acb5f236c0a124602"
+    },
+    {
+      "requestId": "e2cv1:pad",
+      "marker": "e2cv1",
+      "role": "pad",
+      "decision": "SELECT",
+      "patternId": "569.373.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "score": 0.699413,
+      "locked": false,
+      "reasons": [
+        "HARD_CONSTRAINTS_PASSED",
+        "AUTHORITY_COMPLIANT",
+        "TARGET_ENERGY_48",
+        "DIVERSE_BEST"
+      ],
+      "blockers": [
+        "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+        "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+        "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+        "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+        "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+      ],
+      "alternativesAvailable": true,
+      "explainHash": "0a0bdfd2048c4ec3010a588e864efb24e9f2130b8c7ac97501fb509067d3bcee"
+    }
+  ],
+  "locks": {
+    "global": false,
+    "elements": [
+      "v2cv1"
+    ],
+    "lockedTimelineItems": 1,
+    "partialRegenerationAllowed": true
+  },
+  "diff": {
+    "notes": {
+      "baseline": 118,
+      "premium": 179,
+      "added": 61,
+      "removed": 0,
+      "originalNotesChanged": 0
+    },
+    "controllers": {
+      "cc11Added": 16,
+      "protectedControllersChanged": 0
+    },
+    "soundSetup": {
+      "bankProgramChanges": 0,
+      "soundBindingChanges": 0
+    },
+    "manifest": {
+      "artifactHashes": {
+        "songMap": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBrief": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "arrangementGraph": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8",
+        "candidateSet": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+        "groovePlan": "904b4ba11b23aadf32dd069a3e983736abb3d37ca20e35b36e0a526f0dcd136d",
+        "expressionPlan": "195a3d4eaebe78d7f1c59277924734412c3c036ff600e47d9ef948ea3aa66820",
+        "previewSession": "52f8172d96d4e097c48bcf702d15949094b51f0f7546b44d836dfe7354825545",
+        "evaluationReport": "37da1a88fb03aa82c3c9a7273a6990d0fc69b0cd1b6d958867b94151fe98836e"
+      }
+    },
+    "diffHash": "f00b197123057101874ed5c94d14a485f24a59c2674fd6943289714d88a16b4c"
+  },
+  "verification": {
+    "independentValidatorPassed": true,
+    "technicalQualityPassed": true,
+    "automatedQualityPassed": true,
+    "humanQualityPassed": false,
+    "deviceCertified": false
+  },
+  "exportGate": {
+    "canExportFinalMidi": false,
+    "blockers": [
+      "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+      "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+      "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+      "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+      "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+    ],
+    "previewDownloadAllowed": true,
+    "projectDownloadAllowed": true,
+    "requiresIndependentVerifier": true,
+    "requiresHumanApproval": true,
+    "pa800DeviceCertified": false
+  },
+  "commandPalette": [
+    {
+      "commandId": "IMPORT",
+      "label": "Import MIDI",
+      "shortcut": "Ctrl+I",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "ANALYZE",
+      "label": "Analyze song",
+      "shortcut": "Ctrl+Shift+A",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "BRIEF",
+      "label": "Producer brief",
+      "shortcut": "Ctrl+B",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "PLAN",
+      "label": "Arrangement plan",
+      "shortcut": "Ctrl+P",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "VARIANTS",
+      "label": "Build variants",
+      "shortcut": "Ctrl+Shift+V",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "PREVIEW",
+      "label": "Play preview",
+      "shortcut": "Space",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "EVALUATE",
+      "label": "Evaluate quality",
+      "shortcut": "Ctrl+E",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "SAVE",
+      "label": "Save project",
+      "shortcut": "Ctrl+S",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "RESUME",
+      "label": "Resume job",
+      "shortcut": "Ctrl+R",
+      "enabled": true,
+      "statusText": "Available"
+    },
+    {
+      "commandId": "EXPORT",
+      "label": "Export final MIDI",
+      "shortcut": "Ctrl+Shift+X",
+      "enabled": false,
+      "statusText": "Blocked by quality and device evidence"
+    }
+  ],
+  "accessibility": {
+    "palette": "HIGH_CONTRAST",
+    "reducedMotion": false,
+    "keyboardReachable": true,
+    "colorOnlyStatus": false,
+    "minimumContrastTarget": "WCAG_AA",
+    "focusIndicators": true
+  },
+  "jobs": [
+    {
+      "jobId": "job-01-import",
+      "stageId": "IMPORT",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-02-analyze",
+      "stageId": "ANALYZE",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-03-brief",
+      "stageId": "BRIEF",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-04-plan",
+      "stageId": "PLAN",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-05-variants",
+      "stageId": "VARIANTS",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-06-edit",
+      "stageId": "EDIT",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-07-verify",
+      "stageId": "VERIFY",
+      "status": "COMPLETE",
+      "progressPercent": 100,
+      "cancellable": true,
+      "resumable": true
+    },
+    {
+      "jobId": "job-08-export",
+      "stageId": "EXPORT",
+      "status": "BLOCKED",
+      "progressPercent": 0,
+      "cancellable": false,
+      "resumable": true
+    }
+  ],
+  "producerTask": {
+    "guidedWithoutTerminal": true,
+    "referencePreviewTaskComplete": true,
+    "advancedReproducibleFromSeedAndProject": true,
+    "finalExportComplete": false
+  },
+  "safety": {
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false,
+    "originalMidiOverwritten": false,
+    "goldAffectsDynamics": false,
+    "validatorBypassAllowed": false,
+    "humanGateBypassAllowed": false,
+    "deviceGateBypassAllowed": false
+  },
+  "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911"
+}

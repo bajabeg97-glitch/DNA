@@ -1,0 +1,33 @@
+{
+  "schema": "dna-evidence-coverage-report",
+  "version": "1.0",
+  "selectedVariantId": "C",
+  "totalSubjects": 1657,
+  "explicitAuthoritySubjects": 1657,
+  "coverageRate": 1.0,
+  "decisionCounts": {
+    "ALLOW": 1559,
+    "KEEP": 1,
+    "SKIP": 94,
+    "MANUAL_REVIEW": 3,
+    "BLOCK": 0
+  },
+  "subjectCounts": {
+    "ARTICULATION_EVENT": 11,
+    "CC11_POINT": 16,
+    "EXPRESSION_EVENT": 83,
+    "GROOVE_EVENT": 1490,
+    "PATTERN_SELECTION": 52,
+    "TRACK": 1,
+    "TRACK_SEGMENT": 4
+  },
+  "conflictCounts": {
+    "MANUAL_REVIEW_REQUIRED": 3,
+    "PHYSICAL_DEVICE_EVIDENCE_REQUIRED": 11,
+    "PRODUCTION_EVIDENCE_REQUIRED": 83
+  },
+  "productionEligibleCount": 1559,
+  "manualActionCount": 3,
+  "unusedEvidenceCount": 0,
+  "coverageHash": "04ebf3291fb38d4f44406757870e5824408af77b15eebe99c2c3fea2f300b94f"
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "dna-session24-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "phrase-aware-solo-expression-preview-fingerprint-soundbinding-and-polyphony-safety",
+  "formalSuite": {
+    "testsRun": 80,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session24-benchmark-report.json",
+    "originalNoteCount": 16,
+    "layerCounts": {
+      "grace": 13,
+      "trill": 24,
+      "slide": 0,
+      "turnaround": 24,
+      "third": 14,
+      "echo": 8
+    },
+    "generatedNoteCount": 83,
+    "cc11PointCount": 16,
+    "maximumEstimatedPeak": 20,
+    "aBPreviewCount": 2,
+    "removalEventCount": 83,
+    "referenceEvidenceAuthority": "SOFTWARE_TEST_ONLY",
+    "previewReady": true,
+    "productionRenderReady": false,
+    "benchmarkHash": "f89dc4e4345f291780232f3a445597a311a554b0b5e1b1c56cb9e276ed0ef87a"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session24-reference.mid",
+    "songMap": "artifacts/session24-song-map.json",
+    "groovePlan": "artifacts/session24-groove-plan.json",
+    "controls": "artifacts/session24-expression-controls.json",
+    "evidence": "artifacts/session24-reference-evidence.json",
+    "expressionPlan": "artifacts/session24-expression-plan.json",
+    "removal": "artifacts/session24-remove-ai-layer.json",
+    "schemaCatalog": "data/session24-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session24_expression_plan.py",
+    "api": "/api/premium-expression-plan",
+    "guiCard": "PREMIUM SOLO & EXPRESSION 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "originalSoloFingerprintUnchanged": true,
+    "soundBindingUnchanged": true,
+    "everyGeneratedEventHasSourceNoteUid": true,
+    "everyGeneratedEventHasEvidenceId": true,
+    "everyGeneratedEventHasReasonCode": true,
+    "factoryVelocityAndCc11Only": true,
+    "goldAffectsDynamics": false,
+    "phraseAwareOrnaments": true,
+    "diatonicThird": true,
+    "nonRecursiveSeparateEcho": true,
+    "groovePlanBudgetBeforeAddition": true,
+    "softwareMidiNoteCeiling": 54,
+    "oneClickAiLayerRemoval": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false,
+    "referenceEvidenceProductionEligible": false
+  },
+  "status": {
+    "session24SoloExpression": "SOFTWARE_VALIDATED / PRODUCTION_EVIDENCE_BLOCKED",
+    "activeSoftwareBaseline": "4.2-alpha",
+    "aiArrangerAlpha": "SOFTWARE_VALIDATED / ALPHA",
+    "productionOrnamentEvidence": "MISSING",
+    "listeningGate": "PENDING",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

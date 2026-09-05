@@ -1,0 +1,55 @@
+{
+  "schema": "dna-session7-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session7-dnc-foundation",
+  "limitations": [
+    "The confirmed DNC map is synthetic and requires explicit test opt-in.",
+    "No official or device-captured Pa800 DNC trigger map is present.",
+    "Proprietary DNC messages remain blocked; GUI and physical listening are unavailable."
+  ],
+  "formalSuite": {
+    "testsRun": 30,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session7-before.mid",
+    "output": "artifacts/session7-after.mid",
+    "manifest": "artifacts/session7-manifest.json",
+    "sourceNotes": 6,
+    "generatedKeySwitches": 6,
+    "generatedControllerEvents": 4,
+    "counts": {
+      "legato_switch": 4,
+      "accent_cc": 1,
+      "release_pressure": 3,
+      "phrase_switch": 2
+    },
+    "selectionHash": "cd82108342133194f4e3d82690babcdddcef68b98506427ba50c69d3e5f591d8",
+    "inputHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+    "outputHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6"
+  },
+  "invariants": {
+    "dncTriggersGuessed": false,
+    "proprietaryEventsGenerated": false,
+    "exactSoundMatchRequired": true,
+    "roleAndRangeValidated": true,
+    "unconfirmedMapBlocked": true,
+    "syntheticMapRequiresOptIn": true,
+    "analysisVelocityUsed": false,
+    "goldAffectsVelocity": false,
+    "originalEventsPreserved": true,
+    "targetSoundPreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true
+  },
+  "status": {
+    "session7Foundation": "SOFTWARE_VALIDATED",
+    "productionDncMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "productionGuiApiGate": "BLOCKED_MISSING_LEGACY_SOURCE_TREE",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

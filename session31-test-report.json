@@ -1,0 +1,64 @@
+{
+  "schema": "dna-session31-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "automatic-song-track-instrument-analysis-exact-soundbinding-velocity-blind-and-full-optimization-baseline",
+  "formalSuite": {
+    "testsRun": 136,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session31-benchmark-report.json",
+    "productionFactoryDatabaseVersion": "factory-schema3.3-f91c235f676f9d15",
+    "productionFactoryProfileCount": 1964,
+    "analysisSeconds": 0.010161,
+    "physicalTrackCount": 6,
+    "segmentCount": 6,
+    "exactFactorySegmentCount": 4,
+    "acceptedTrackCount": 3,
+    "manualReviewTrackCount": 2,
+    "midSongProgramSegments": 2,
+    "velocityBlindDecisionHashStable": true,
+    "sharedChannelFailClosed": true,
+    "benchmarkHash": "c5a9e8096b31d6d6dedb886a23669b5a51c5e0c0e3b439addab4fbe957b86448"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session31-reference.mid",
+    "automaticAnalysis": "artifacts/session31-track-instrument-analysis.json",
+    "exactFixtureAnalysis": "artifacts/session31-exact-fixture-analysis.json",
+    "sharedChannelAnalysis": "artifacts/session31-shared-channel-analysis.json",
+    "optimizationBaseline": "artifacts/session31-application-optimization-baseline.json",
+    "schemaCatalog": "data/session31-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session31_track_analysis.py",
+    "api": "/api/automatic-track-analysis",
+    "guiWorkspace": "AUTOMATIC SONG & TRACK ANALYSIS 3.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "goldUsed": false,
+    "approximateSoundBindingAllowed": false,
+    "trackLocalSoundState": true,
+    "midSongProgramChangesSegmented": true,
+    "sharedChannelAutoAcceptAllowed": false,
+    "originalMidiChanged": false,
+    "midiMutationAuthority": false,
+    "validatorAuthority": false,
+    "physicalCertificationClaimed": false,
+    "finalMidiExportAllowed": false
+  },
+  "status": {
+    "session31AutomaticAnalysis": "SOFTWARE_VALIDATED / EVIDENCE_FIRST_FOUNDATION",
+    "activeSoftwareBaseline": "4.9-automatic-analysis-foundation",
+    "fullApplicationOptimization": "ROADMAP_ACTIVE",
+    "evidenceAuthorityResolver": "NEXT",
+    "trackPlanRenderer": "PLANNED",
+    "finalMidiExport": "BLOCKED",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

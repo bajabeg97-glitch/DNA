@@ -1,0 +1,29 @@
+{
+  "schema": "dna-multibar-phrase-training",
+  "version": "1.0",
+  "epochs": 3,
+  "bestValidationLoss": 0.012657911361505588,
+  "holdoutLoss": 0.008770246058702469,
+  "trainSamples": 12930,
+  "validationSamples": 1449,
+  "holdoutSamples": 1720,
+  "velocityInput": false,
+  "velocityOutput": false,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 0.06698243216109964,
+      "validationLoss": 0.017260625027120113
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 0.010400083668243427,
+      "validationLoss": 0.013277119801690182
+    },
+    {
+      "epoch": 3,
+      "trainLoss": 0.008938003331422806,
+      "validationLoss": 0.012657911361505588
+    }
+  ]
+}

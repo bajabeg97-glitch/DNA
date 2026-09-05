@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/optimizer-operation-v1.schema.json",
+  "title": "DNA MIDI Studio OptimizerOperation 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "operationId", "kind", "scope", "status", "authority", "decisionIds", "evidenceHashes", "limits", "predicted", "operationHash"],
+  "properties": {
+    "schema": {"const": "dna-optimizer-operation"},
+    "version": {"const": "1.0"},
+    "operationId": {"type": "string", "pattern": "^op-[0-9a-f]{24}$"},
+    "kind": {"enum": ["CLEANUP_NOTE_PAIRS", "RESOLVE_OVERLAPS", "QUANTIZE_ONSET_GATE", "APPLY_FACTORY_DYNAMICS_MIXER", "REPAIR_REGISTER", "APPLY_FACTORY_CC11", "REPLACE_PATTERN", "APPLY_EVIDENCE_GROOVE", "VERIFY_POLYPHONY"]},
+    "scope": {"type": "string", "minLength": 1},
+    "status": {"const": "PLANNED"},
+    "authority": {"type": "string", "minLength": 1},
+    "decisionIds": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "evidenceHashes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "limits": {"type": "object"},
+    "predicted": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "operationHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

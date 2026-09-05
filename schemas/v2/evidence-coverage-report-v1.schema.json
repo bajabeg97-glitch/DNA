@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/evidence-coverage-report-v1.schema.json",
+  "title": "DNA MIDI Studio EvidenceCoverageReport 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "selectedVariantId", "totalSubjects", "explicitAuthoritySubjects", "coverageRate", "decisionCounts", "subjectCounts", "conflictCounts", "productionEligibleCount", "manualActionCount", "unusedEvidenceCount", "coverageHash"],
+  "properties": {
+    "schema": {"const": "dna-evidence-coverage-report"},
+    "version": {"const": "1.0"},
+    "selectedVariantId": {"type": "string"},
+    "totalSubjects": {"type": "integer", "minimum": 1},
+    "explicitAuthoritySubjects": {"type": "integer", "minimum": 0},
+    "coverageRate": {"type": "number", "minimum": 0, "maximum": 1},
+    "decisionCounts": {"type": "object"},
+    "subjectCounts": {"type": "object"},
+    "conflictCounts": {"type": "object"},
+    "productionEligibleCount": {"type": "integer", "minimum": 0},
+    "manualActionCount": {"type": "integer", "minimum": 0},
+    "unusedEvidenceCount": {"type": "integer", "minimum": 0},
+    "coverageHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

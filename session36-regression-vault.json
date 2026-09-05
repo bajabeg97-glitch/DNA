@@ -1,0 +1,2334 @@
+{
+  "schema": "dna-reliability-regression-vault",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "entries": [
+    {
+      "regressionId": "rel-00ef0038466a7ec3d5fd",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-185",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f0c8c5c953afeb16bd5cfd910ebef02b5b91bc39e3a933f7f2b5969ef940102d"
+    },
+    {
+      "regressionId": "rel-0474ffd71b5cebc90c0b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-012",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b09bd5dddeeed30487a94b889fdd28f18ef4fd0e5733a3ea803355fe22ca9da7"
+    },
+    {
+      "regressionId": "rel-04fb1f5c98ab5c540dc8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-072",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "99a9ef3851939e1f76c880dc6ccfb1fa1cab9b6431dad6d7f45b1764f1d5d195"
+    },
+    {
+      "regressionId": "rel-0579661d86375ef85a05",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-041",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "66c151b5eead51b494aa1702c7f54edaa4e93e98817c72b160e705ca279c2a9f"
+    },
+    {
+      "regressionId": "rel-0588d70f04ca1de0d1fa",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-032",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f3aab14246e798f837d97dc829d18b2a877430c58cb360c3e1d8ec3da8fdad25"
+    },
+    {
+      "regressionId": "rel-05b7afaf7874c04800e2",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-140",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "7777695367995fe5c0c1b09629e8fb241d0ac9b6157b52354de358c1cfd24d0f"
+    },
+    {
+      "regressionId": "rel-069be5b4ad98f3125796",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-015",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b65f5a91ceefd5fa634563f8a1762217c407b1bcb318a35192887cb5a9d2c302"
+    },
+    {
+      "regressionId": "rel-07510038fcb74b7954d0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-037",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4f43de3224e2f215d96db648539140913090737b08ef1b65b8fa97fee6e334b9"
+    },
+    {
+      "regressionId": "rel-08bc2b3263eb8bccb2e2",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-096",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "8261e88e85bd0fb8cab9dbf736168e19bcea025566f0fa125e8f5bacf5253079"
+    },
+    {
+      "regressionId": "rel-090a96034c6408fd7542",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-021",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "8455849921deded905109fd09ccf1cd583e5edc1cd67b8b7d414e6dcfb336aeb"
+    },
+    {
+      "regressionId": "rel-09770271f0bbccb8efde",
+      "category": "MALFORMED_MIDI",
+      "caseId": "event_after_eot",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6bfa1e4c4a9a0c58d23e8e82d8dc9a05b85be0a3b4897a78543cd78184086e66"
+    },
+    {
+      "regressionId": "rel-09b79b889f813b930fbf",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-113",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "64fdda463812ffd01b1031ceb37f0a78aeb5e5cd5f4a2f52f4db84eeea25387f"
+    },
+    {
+      "regressionId": "rel-09d864b4c5a85503a380",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-036",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0ce9ba26f28281448529573e9bb6cb6d4f6a8b7821e295d0e2f21659a35201dc"
+    },
+    {
+      "regressionId": "rel-0a3930655761c7060f72",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-083",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "2117f8b89f6802ce822155fd947c1e38711d113efd6c3d150586f97c70d50344"
+    },
+    {
+      "regressionId": "rel-0a44ec355f5863c4c024",
+      "category": "MALFORMED_MIDI",
+      "caseId": "orphan_note_off",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4a9d62a3f824e430f63ca060de8d80a21e411d894e19fd23cde3a32ff8872399"
+    },
+    {
+      "regressionId": "rel-0ab40064949f76650dd1",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-022",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "90acec2df455863bbfc4cf905ee2dd7166fea2fad90bf53dc9c00d0979026c5d"
+    },
+    {
+      "regressionId": "rel-0b03447f1066529060bf",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-126",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b08a687c5d7024244786f15378e79427c2ca4f2f9ad7f1bc600b01eb26b733de"
+    },
+    {
+      "regressionId": "rel-0c061304bf4f3f797fa8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-119",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "40ca99ac6f6eb30d0a241f891ce7a5f25fffb60e7e51e6c6db2dd5425c5d1a35"
+    },
+    {
+      "regressionId": "rel-0d017364fbe32b15b0b8",
+      "category": "MALFORMED_MIDI",
+      "caseId": "unsupported_system_status",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "a283a28c33da3b043f054daf0b39386a44f7ca3ce348b8c5f04a534b5b3fb594"
+    },
+    {
+      "regressionId": "rel-0d39b07c3c46aadfca3b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-084",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f14516b31f9d7a3b2a8c9f089c4c094e6407667e5cc2a247fa71e747043fb636"
+    },
+    {
+      "regressionId": "rel-0d78854b82e95dd87b61",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-122",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b06ea775747acb773fe3fb2baca7233d885e6ede131fde8b335c83833d43a048"
+    },
+    {
+      "regressionId": "rel-0dd325b7bf47af0fdf0d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-046",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "90bbba1bbdcc685d1e46ac623c3734cef5d3afdeaf9cdd6ef4b0132190809155"
+    },
+    {
+      "regressionId": "rel-0ef768a71d599497c586",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-115",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "930f84ac5d547742173412917b9a557196a9391f6259df0d7d9abb180bdedf7e"
+    },
+    {
+      "regressionId": "rel-0fd9a416f7ae9be7ccbc",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-088",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "655a94759eb1089415cc012797395d5e094b51d7b442885dca95db5e60c365ab"
+    },
+    {
+      "regressionId": "rel-1155e22eef18b69aef9b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-093",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ede28a306c77a09199e62210a87abe3a9a9a3f495901e8fc7063575146c16ff8"
+    },
+    {
+      "regressionId": "rel-11a7bbf54ce572320000",
+      "category": "MALFORMED_MIDI",
+      "caseId": "missing_eot",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "add6837da6d7095b17ccda5e3a7dac38afaf9769966fe2e8a5ea846b5204c268"
+    },
+    {
+      "regressionId": "rel-13e6f94b806dbdf614b3",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-040",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5e0bf0bd53d8efc13b55d07fb3850c8e4586fc28729909e5c11b0c6acb58a118"
+    },
+    {
+      "regressionId": "rel-144818df2e15d90bfdd0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-042",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "93bad7946f815bd9397c39a819c1ad4d84244392a4ee3c74a3f9c90d191ee73c"
+    },
+    {
+      "regressionId": "rel-14f587136c7d5bd7bb60",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-169",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e9bbf03916ddb6d0707501f48cdc0187e1c4bce920dcfe2e80f934f02ba2d0d1"
+    },
+    {
+      "regressionId": "rel-16627dc1c31e0ff17591",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "verifier_exception",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "442279c74a0296dcb184854436f85bda87c91b9844f01348cdf9c85d4ec34224"
+    },
+    {
+      "regressionId": "rel-186c9bc3cbe56bc6ca6f",
+      "category": "MALFORMED_MIDI",
+      "caseId": "missing_track_chunk",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "538022db647e611e623c1a98d6542b0ca89882422f3f6057c86b28844712b377"
+    },
+    {
+      "regressionId": "rel-1932d245ada6e5828219",
+      "category": "MALFORMED_MIDI",
+      "caseId": "zero_tracks_format1",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "95dd927d61fd7e50037a0ed31fc6bfc1596d42a5d1ad1b2b1ac688d96b811082"
+    },
+    {
+      "regressionId": "rel-193c7b9e4c73ce4f7131",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-130",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "46c9e3f82760f2d8d2be7f4a4650d6e48daa57d2bf414af8ac6a13c3888c939b"
+    },
+    {
+      "regressionId": "rel-1a31f26f1c02a2fd4b6a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-183",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e1cdbf7d3075d246e29ad10eb3be38b69e7c67902ec853bd9ddadddef4b51475"
+    },
+    {
+      "regressionId": "rel-1be92ef0239a25a62b1a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-129",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ec340ee898a66b09eda629b30d83eee494e171e83150d4ae4406f515a0a7402d"
+    },
+    {
+      "regressionId": "rel-1c4e61ebd28d98202754",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-057",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "2e72134953a8f9e9d726cf640e4345abaceb8aeaac808c6818fa3be7699a2fcd"
+    },
+    {
+      "regressionId": "rel-1d513b646507ddf813bf",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-167",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d12a3f2578bffca3ead2daa93beccade2e5d40ad386047a8b6d92c76303953af"
+    },
+    {
+      "regressionId": "rel-1de41db37ee8bc6fa689",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-080",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c7696dd6f88f3e01102297a342f93dd413d87c7b8e63fcfcfe2a27f8750c47c2"
+    },
+    {
+      "regressionId": "rel-1fb34440fd3163cd4cc0",
+      "category": "MALFORMED_MIDI",
+      "caseId": "truncated_meta",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "171abec1cde567771016542fa6e4693ddcbf36170e5cb96317d6b40b4d959705"
+    },
+    {
+      "regressionId": "rel-20a4591e73c0e32605a8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-194",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "15c400b7d267e76dfeebcc21be3f2b67ec40eb077f96b2b114b6026bfb89be59"
+    },
+    {
+      "regressionId": "rel-21194bf793179d91cbbe",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-106",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "aee8f970588c0d603074b9a064e5edb6a28a2401617bd562f8f5964789fd6a9d"
+    },
+    {
+      "regressionId": "rel-21bd7fa38160be3de321",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-061",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "7ddb6579590e3ad4a594717801db218f66594abc62a298b2fab67ac2223e86a7"
+    },
+    {
+      "regressionId": "rel-236068db6ab0b409ff24",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-158",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e3ec1f094d5494659f05ce9b7c8a1e2bb92d8227bc6d213e296d86af20405522"
+    },
+    {
+      "regressionId": "rel-25a2dcbf80e8e0a7c7dc",
+      "category": "MALFORMED_MIDI",
+      "caseId": "smf0_two_tracks",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c5e72f49dd889711789df6d7f0630c33e77b4ffd4cdd73d38d9556cd1969489f"
+    },
+    {
+      "regressionId": "rel-25fb9d29e11ef3576ac2",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "cancel_before",
+      "severity": 2,
+      "expectedOutcome": "CANCELLED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ed9f5ffb6ece7eea31c74f456eb738ca4f40267c6aa06eb4267509bb881978d0"
+    },
+    {
+      "regressionId": "rel-271d9bd9744059588f93",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-128",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1ae8b2caa7c01591b826624779448e36dc6b33cc315a7ea7fb613f449c2bb1d7"
+    },
+    {
+      "regressionId": "rel-2891cf15a0f1e1d6611b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-087",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "2ac030476c36db29b47a7ddb211b0e9cfa4bb859671dd8b7b0d4ed6b3ae096c2"
+    },
+    {
+      "regressionId": "rel-28d813e8e4a2a8ed412e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-108",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "a4ead4f4687e7b93e31b96a39fc98d74b28f27fd70a198d0fa1ab4c54666390a"
+    },
+    {
+      "regressionId": "rel-29418b53e7a3ea907d90",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-124",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b9a5052ed56751c3a1e1744cbda97ac4942087394f5879be0bb921fffa6fe59a"
+    },
+    {
+      "regressionId": "rel-2a5d7182df54228a32c6",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-156",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d55044103d1fce55eeff37af63a4415e1cf6d5bc130ccb11fc65946cafcd7962"
+    },
+    {
+      "regressionId": "rel-2ab89595dd23aba1032a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-059",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "67053c93feb5346fe9f27bb7d06c27a5c5f68ca7488d67b220545c9834254cb6"
+    },
+    {
+      "regressionId": "rel-2f208c48d17529bc6400",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-149",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "659112d04293758839b9daedd4b54e33b6df50c26d2ed897f34712408b1bdd65"
+    },
+    {
+      "regressionId": "rel-2f99fc7bfcb9ebe2b864",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-197",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e6db77f6e6dfcd5a97b189f0879d29ade6cc57f6634e91e79bbfb5ff17cac5d4"
+    },
+    {
+      "regressionId": "rel-30b99f0eaa1029672f5f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-082",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0a17f9831dd57215c5e434b6478d6ab100583c06720d1cbda1cad147d3ee8073"
+    },
+    {
+      "regressionId": "rel-30e30bb0b175a770c4d9",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-123",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b22743ff7d0b637d7b7c8a86cc729ed81b8b1d0c16a0c8fabbcfa46df77746de"
+    },
+    {
+      "regressionId": "rel-326196dcb3502ec3815e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-127",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "031cb9b32ef2b14fcaa2cadca9894814ccc7cd4ea54f2a68be761544dfe9e555"
+    },
+    {
+      "regressionId": "rel-337c0b2287f677beaaab",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-111",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "cd135709bf7e7e0c68473e972bab05250ca07620ae3399f31145c6ab64281535"
+    },
+    {
+      "regressionId": "rel-35963e47d0848343fa1c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-016",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f2df89cc375c49f19a3188cc85cd2b52be00da350ef14adeaab644dbc5dec5a8"
+    },
+    {
+      "regressionId": "rel-35db03fa129119164536",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-166",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "33e24670ca454b69581139e52f51a98338186645cc80e6b8b4bb9504e71e27e6"
+    },
+    {
+      "regressionId": "rel-3764c2d1e9823b7e78a5",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-103",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "af9aca126c901f6336ac16b7f2a6d996d251d50cf839fff5f35c8225cbd18dfa"
+    },
+    {
+      "regressionId": "rel-37fc6421ff290fa8829c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-038",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c6fbbf399c9ee763e779b4d6d60a30b4a428b89d0ce033faa726047993e8c5c5"
+    },
+    {
+      "regressionId": "rel-39335302b757be74c281",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-191",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e8697371f59fb3b6828220ced0ef0e3b53e90e2e48757b436f574f3f1d3646fa"
+    },
+    {
+      "regressionId": "rel-3f0221d1aa315e65ef1f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-190",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "44a6b40a5c0479b11c8a838365f1a512b376445725e25ecf8ad0315d9381c645"
+    },
+    {
+      "regressionId": "rel-4298a2ef4236200258fe",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-010",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4824fc288ae484ab982eec6548b5fe6b6f3f927fffb46bbb0c2577e5de968c6a"
+    },
+    {
+      "regressionId": "rel-438ee3251c7ffb61185e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-098",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d1ec0c1f3e9f4ea1eeaa4dd94fab03e0bbd0934fa1ce9cf39e184d7b8c5dd95b"
+    },
+    {
+      "regressionId": "rel-44e86fd6681195ec08be",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-045",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "060bfb0b0a65fa1a76037ebba5cb96c9ba38aca1e859c91cea3d59195206a63f"
+    },
+    {
+      "regressionId": "rel-4553b51123299456ffda",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-159",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "dd6487d307ed80b18bd9766aaa6c1c1f55b732a67cce8bb31fa2cfa9566eb5f5"
+    },
+    {
+      "regressionId": "rel-45a750a156ad24abfe3c",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "crash_after_temp",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "dbda1337d04c2535ae9a39d681c98eeb8542bea452fffd982b712e0550031a47"
+    },
+    {
+      "regressionId": "rel-466eb2d5e29d4813b97f",
+      "category": "MALFORMED_MIDI",
+      "caseId": "wrong_track_chunk",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4c559d1284a7d7f7fb8f051279645f244768bfbdc33f32de35b765d8df37c4ec"
+    },
+    {
+      "regressionId": "rel-4688bc5f327ca68eafab",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-089",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1558cabc43829f0e26b6fd018434de56fbff21380e45c25ed83e084d90e1769e"
+    },
+    {
+      "regressionId": "rel-47eeedd4f0d9a4be45cb",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-138",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "93ffc56b2ce672eb2480b68ca72076364759350ec1fc9d965ee546f071b43e7a"
+    },
+    {
+      "regressionId": "rel-4842e018c9b89515ba6d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-144",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "90d4bce419688cc483c12d66b4ab0ba240c8edfa9fa20cd2697008e5f5e6a37d"
+    },
+    {
+      "regressionId": "rel-489d963151a49fe073c0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-074",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c2433628db169c889b7e13b4059678ed1703a9221a58b080f312dfa6e87f15bf"
+    },
+    {
+      "regressionId": "rel-48cbb2abfa52c10403d9",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-114",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d34b4ce5eb55a1645524b3119cb03e989bc9586e39cdd699f98f8f4238173f70"
+    },
+    {
+      "regressionId": "rel-4b794f06511795d41645",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-131",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "602aa8a2b69ca9c9524fae8b2b00e21f9f7b974c479dbf55ff3e7e2ac71a6426"
+    },
+    {
+      "regressionId": "rel-4bd317c15693d8fa10ca",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-162",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ea08ddd9492120b02786870c2172f7e5a1882d7c73ddb42173ada372e6c49f7c"
+    },
+    {
+      "regressionId": "rel-4bfb225a630ababdbaea",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-051",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5cf2b5fc2ea21f2ff853fd74ca086dc2e062067ae0d915ac1abed2f8148edd52"
+    },
+    {
+      "regressionId": "rel-4d75be328fbabfc2007f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-171",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1b0c4cd0398c2a3403f4f9b424c64d1a7de246822c381dcd5345f291f6ba030d"
+    },
+    {
+      "regressionId": "rel-4edc9b8a2da9516b6ea7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-091",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e7cf902e64291e269ee5a298ce9a91f09f041db0de3c0b92880035de9f5efb87"
+    },
+    {
+      "regressionId": "rel-4f6be75919c3b150412a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-101",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ba58002d2d3bb2bf9757e2821fabd1294c0117e8074c8731a033c6f7df67e477"
+    },
+    {
+      "regressionId": "rel-52d454d3ddae2de5e40b",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "disk_full",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "929c6bcda81ba99d76575fa34d8c967f354a173a9af7de0626b32acd80a438af"
+    },
+    {
+      "regressionId": "rel-52e6ad3c5e7116196a68",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-069",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "17a9a574d6453dec8c336fde82506083157eeeff8b1f50ed3eccbf51696c505d"
+    },
+    {
+      "regressionId": "rel-53a661d88ca3a5db0f97",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-073",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "17dede4a8c4c77bfa67bc4de61d1b75e1dd3f386af42e08e9af06f944d6f8ca3"
+    },
+    {
+      "regressionId": "rel-54a6b3d226ca79ada61d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-020",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f0a8aca5a460d0f18789a7f9a79c70f5218ba55bc9a5837f525363e8c5c64740"
+    },
+    {
+      "regressionId": "rel-54b96e4cba36eb35becc",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-121",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "42f935c84aa54e56e956c78aa4952fede1e49db46c4c76fca76bb7ae13cbeb7b"
+    },
+    {
+      "regressionId": "rel-562a99e511b8b2646e53",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-002",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c19093d82b0cc761fe6af696273ce474408f034510ab72019ceb615c4add4741"
+    },
+    {
+      "regressionId": "rel-567a724af5a3ceb45ffa",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-033",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c71117ca782ec1f97a254e238e3b1db3fa065f407beb76fab6b518341e163073"
+    },
+    {
+      "regressionId": "rel-56c6643f532ca6564bbf",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-081",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "a481af820a41bd5e2074fe8dfd6415955c6acce16dc2f02007154d525b41677b"
+    },
+    {
+      "regressionId": "rel-577d5d24eed29edb406c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-198",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4178486674379f1cdd714abb9ed3ec056af35cb344ebe21901edc5878898095a"
+    },
+    {
+      "regressionId": "rel-58231e1c7217a845743d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-005",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5c8875ad8f7651fd1904526705b1d032411e95195f8bde5b1359700e313937ab"
+    },
+    {
+      "regressionId": "rel-599495be65bd44797f9e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-004",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "87cb378bdf0d58bd49c205fa49219f62628fe6f502eeddc752db1f0bd8352a3a"
+    },
+    {
+      "regressionId": "rel-5bb38e3784c1f752bfc8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-195",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f238f59d730a6610518dc2f64c5ffb5f4713d02122782b842604dde789f3a9a2"
+    },
+    {
+      "regressionId": "rel-5e0141bf7d8fa9340740",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-146",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0f2db9e947c50f063fc04d8f41c63abe87459eab03e5b8d156c92319e2891ee7"
+    },
+    {
+      "regressionId": "rel-5e4ad61588db63c63572",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-092",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "93dc24af3b5253916b927072383b11cb7b0d376e433f8ab68aaef5b4d4009583"
+    },
+    {
+      "regressionId": "rel-5f0b564dddedfa8e3b7b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-177",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c555feba2f7a2d490df0caa99a4e471ebeaa3afa4ed5778882349ca96438650c"
+    },
+    {
+      "regressionId": "rel-5f5cb184b9fcc2333943",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-172",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "898b09a82ccc8c52dbf555f3e2e0e3b24e4e3fc97caeab64ac1861a6704ea594"
+    },
+    {
+      "regressionId": "rel-622a8233982d0640f257",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-024",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "09cb5a2e4325855a5047f8aa7215def4d11c4a4692b697b8ba150c5a27f80c0d"
+    },
+    {
+      "regressionId": "rel-62e373f3c1602e1e2096",
+      "category": "MALFORMED_MIDI",
+      "caseId": "zero_ppq",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b97ad41117a016e706f641f75448b2cc7b4a0a5d12a5169a4d17039318ae9a31"
+    },
+    {
+      "regressionId": "rel-6302daea4ae02230a6fe",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-182",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "065a69c9f770699bf87385d8d54aab9f4f40579bcc3898bb0ece5c7a61a26bb5"
+    },
+    {
+      "regressionId": "rel-63bca6ee5ea84bb3288b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-018",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ab27a77802c75b66d13aaddc346a7061d5c3d57b36a1be2d16afc100ffabdbb2"
+    },
+    {
+      "regressionId": "rel-65a5551f2749a46b73de",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-110",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "fc71aa0a028a697373715534981a9507da7e45c0cf03531a52763947673ae8c9"
+    },
+    {
+      "regressionId": "rel-66a3c6ba4ab6fa3de2cd",
+      "category": "MALFORMED_MIDI",
+      "caseId": "running_status_without_status",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "7daa47a7f26c98aad723be6fb22c1da6f0f24f6ca43d4e93fa2c9f5225e26731"
+    },
+    {
+      "regressionId": "rel-6a8631d90f085618360d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-039",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ebcdcd10e1d7bd329ca5252c3863874339fb4c03c7f9a29d4713df4bee5b940e"
+    },
+    {
+      "regressionId": "rel-6be273874323fc6751d8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-181",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "cd290357faadc4a395ac68324c2fb87ea74833f4decba369192e6beb99be5820"
+    },
+    {
+      "regressionId": "rel-6dfa6504118ad9483112",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-160",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6b667d6dc86f0c4bbe2106f8a33f3f417beb214d703acd2651b07af94954f540"
+    },
+    {
+      "regressionId": "rel-6ee34027ba73074501b6",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-063",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4811aa154abf2cc5aa6a45ae7ad163b31adabd8c300b5cc09fe9aeced171a861"
+    },
+    {
+      "regressionId": "rel-6fde1363501c0e37cc7e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-112",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "65abec20721f0cee5bcb9479d73bcd2a6f8720a3195c85a9119d894de8e1edc4"
+    },
+    {
+      "regressionId": "rel-702f14f84299102b7362",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-154",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "3080a552157e9a2707cc4c9435fc898d3b259af5fbe847b1369b308794b434b9"
+    },
+    {
+      "regressionId": "rel-7080a6d0281917f03c0a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-145",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5f70d0a3e105283b2037f0f8486c990c5b73acd8114e10a4e954546d466e5d9d"
+    },
+    {
+      "regressionId": "rel-72420df0d846e7c86012",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-095",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "119af47929ca5b21f94b383f99ae5e9e5c5ad90df6c18c08709d55c8f698f5b4"
+    },
+    {
+      "regressionId": "rel-7a2de744589a6475795c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-029",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "771aca6cda6a3f44072bae8792200e9e064909248246136faaaee095d6ca4db7"
+    },
+    {
+      "regressionId": "rel-7bc6a569ad0f8892a5df",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-099",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "006bc6fe8c3ac6850de699fdfb737c2dcf5223f494df4159269f4f36a90bbc88"
+    },
+    {
+      "regressionId": "rel-7c77cc5b5792c4de1b4b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-157",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "2b9a042af11f2f6996665493f033e530da4425358133dc85268c713283b6ce98"
+    },
+    {
+      "regressionId": "rel-7db6a55463f8feb5ce78",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-136",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1f632ff4723377e283932541cf25e057ceeb5685cdf308a02c51b539df5d811e"
+    },
+    {
+      "regressionId": "rel-7ec1af6b9d46f6c82d6a",
+      "category": "MALFORMED_MIDI",
+      "caseId": "short_header",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c5c8781fd03a801765c38f905f582fdaf107ada3ecc3bf7800c5669d151faa85"
+    },
+    {
+      "regressionId": "rel-7eec5a5fe389a8a3fb42",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-164",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "861d4da4943de63ebbc32c7c858f458ba83ccca0690393b025609b8e45020cb4"
+    },
+    {
+      "regressionId": "rel-7f15db5e0bcc5b466449",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-153",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b446e7b44b1b3434cca47435650b95f08437f0eddc7700285168053d5e67df3d"
+    },
+    {
+      "regressionId": "rel-7f522fa97c7e095cf344",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-094",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b6e4aabffe4c4c3e20fd272f8aef051f553cf46c4fd9650d91de308b92a44859"
+    },
+    {
+      "regressionId": "rel-800fa03757b9987bf86f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-180",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5459ad92b4cc6e9c56fdc257a13f2e52e71df988b7a5da6b6d51dca69bbf9e45"
+    },
+    {
+      "regressionId": "rel-803bc17bc586201f8627",
+      "category": "MALFORMED_MIDI",
+      "caseId": "missing_header",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "7fab88295ab04d7edf56931397c67b4db41e340819e5db26e9612326f3433bf7"
+    },
+    {
+      "regressionId": "rel-82cc162384a00a84fd16",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-079",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "415897fba49d5d5501d5e5751c0d2cab614727d6d8f45bfe40431ecdecec0b2f"
+    },
+    {
+      "regressionId": "rel-848b9eb30d3427f1c373",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-055",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "8b4a4223bb012a47516b5ef38de4a3a9ac321610477f23ede19dfdc29f2eac8b"
+    },
+    {
+      "regressionId": "rel-851c61495461284f5a09",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-134",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c835537c7eb315f6d3c3bdb35295d3cc21cc67f4fd28b942fa4f1fa896573b50"
+    },
+    {
+      "regressionId": "rel-8603505ba3537d7bafda",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-199",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "89f5bd544294200a8b7d35a3126abacaa695a3e56e7f93b06459ec4651c6fcd6"
+    },
+    {
+      "regressionId": "rel-86ab36c468987d74fc4a",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-078",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "8c1beacf63d04230bc08bb50703832b4e404d112b0df975cff253948be9f206e"
+    },
+    {
+      "regressionId": "rel-87c1179f35a3dd4c6b04",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-054",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5e6bc68f0b8f18a3d6a8e5e9b2210677a6e4df4ef8a6c1bd9a374028b691b6fa"
+    },
+    {
+      "regressionId": "rel-87e382323334b8aa0f16",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-133",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "73f15ff7ee8c18ef691a8142629a6745d98d10a8595a5045ce4d5efd9a494209"
+    },
+    {
+      "regressionId": "rel-896d327ac1273023ca5f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-075",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4e9937c563f4a4b6bc799d593da7548ed92ac7dfd2b76e9e8771ece3769c50c0"
+    },
+    {
+      "regressionId": "rel-89db88bc42f88562310b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-077",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "556e553b75006e33df9d3ac592b5409359e2de470ae93140bb34302a818bb539"
+    },
+    {
+      "regressionId": "rel-89f427c1c7727ae7ce1c",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "validator_block",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "81603f8dc68911895550b3d07d07c29d3afb211732a70857a7bb44bcc15a801a"
+    },
+    {
+      "regressionId": "rel-8aae0cfbf0c424ef8681",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-035",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "3adb0b8210d6d98b71a26efa5be744232d1198480b56db5df90ce1cd1bfb6910"
+    },
+    {
+      "regressionId": "rel-8b11b5c5bc4dc6915db0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-150",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c6cade0258ac2cb507712989a802fd0666a18bf38b39a57e8cb1db7ea75a3d74"
+    },
+    {
+      "regressionId": "rel-8be67232239fb80eda07",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-196",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "33c81b51fe933dd7b41b7d91953f89b20600bbaf0cc40c39ac2cb84c02f0388f"
+    },
+    {
+      "regressionId": "rel-8c113b93514db1aca980",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-086",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "99c59e7a2035375506b051d15e3316ff7a95a825c3c47d438dabf6761e46ed99"
+    },
+    {
+      "regressionId": "rel-8cc870fa7eb9185eb593",
+      "category": "MALFORMED_MIDI",
+      "caseId": "eot_non_empty",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "47fd44bbd293888e8fd0a7e50cbbb39e2d13178621fd800dd9133b05161e890f"
+    },
+    {
+      "regressionId": "rel-8d4991c7a2e49f7e11bb",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-019",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4784eb2871cee757eff0bc47c6dc313e1d86e09c3cdeab66b88fd11ea42ff19e"
+    },
+    {
+      "regressionId": "rel-8f02ba79f267cc54318c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-023",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6ce1d47de698583d4492b624277569e1ec7f0a7c27b0990a19e9fc659adb5cc4"
+    },
+    {
+      "regressionId": "rel-922ea3b564dbc03c343e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-066",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9347fe988dfb4282658e85fe04e86278cde69c0cd87e13957d3adb4698c5b3a6"
+    },
+    {
+      "regressionId": "rel-924d8416e3d90cb19e3e",
+      "category": "MALFORMED_MIDI",
+      "caseId": "dangling_note_on",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0637308f73f333a8076a95586eb8da49785bf9a1dba08b3674cc78386ab2dd0d"
+    },
+    {
+      "regressionId": "rel-932b3874d7d84bfd21f9",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-030",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "03c6bc40fb8bdf7efe2d9d4b54eb7a2f24bdd295a8cd0049eee8c3beebe769aa"
+    },
+    {
+      "regressionId": "rel-9385e9567ceea6b53d77",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-085",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1ee10b632e6ec5854166121d0de96e0c56a8e8b547c8a3fed98008e138b0d0ac"
+    },
+    {
+      "regressionId": "rel-96d3deb37c1632e735f0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-053",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "a46a257be146b7531811d13a668bbb8c9c61e335c560dfb3ea8ce596458c75c5"
+    },
+    {
+      "regressionId": "rel-98083293a122f0c076ee",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-143",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "7f5eeb5109876b9bbc1541296c6d05e6403b767168a5c7d07cdeba1fa4682e3b"
+    },
+    {
+      "regressionId": "rel-98f144f801017344e158",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-200",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "869302cfe889af8ab4fd566c33513dc697a67a37eefd4bc999391be58908b385"
+    },
+    {
+      "regressionId": "rel-9b24e8100f6f56d06a9d",
+      "category": "MALFORMED_MIDI",
+      "caseId": "truncated_sysex",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "63427fa8d66b9d1184860cff2909eb57949002a4f46ca3a03decf96e3bd0b2bb"
+    },
+    {
+      "regressionId": "rel-9d5f6f6bb40efbe9df06",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-137",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "64acf8f18298b921e709352ea0c3fa491cc46b84ab670ba0942178cc73e189c9"
+    },
+    {
+      "regressionId": "rel-9e858b3a3141d5f00a55",
+      "category": "MALFORMED_MIDI",
+      "caseId": "trailing_bytes",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "efaa75a49839273a4cfe49ad5cdb70983bbb4c3cbe7e3f1919b6a6100512ea13"
+    },
+    {
+      "regressionId": "rel-9ee5ed8f66fa0666184a",
+      "category": "CLEAN_EXTRACT",
+      "caseId": "package_version_guard_4_10_2",
+      "severity": 2,
+      "expectedOutcome": "PASS",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "861a0f347a70f9d7eb826b46a7f1dcf9768d768faf52b61425b0b852e752bf6a"
+    },
+    {
+      "regressionId": "rel-9ef3d19cb0ad7784a2c9",
+      "category": "MALFORMED_MIDI",
+      "caseId": "vlq_exceeds_four_bytes",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c826f8c1dbafd726236ac398958f4c9862a5532dc65d35170fe783efa6933183"
+    },
+    {
+      "regressionId": "rel-9fffb441b3617077add7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-109",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ad54984f788a25889d935a0c21e45ee4fc988b67217014d38f0afdfa4b40c16b"
+    },
+    {
+      "regressionId": "rel-a0d364ed19dd09aaf128",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-161",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ddd541a10c40975f5e99c239ba10d8ec6ed1fde338361613f1c6ce04c47c00bc"
+    },
+    {
+      "regressionId": "rel-a18c0d53d654a73bec21",
+      "category": "MALFORMED_MIDI",
+      "caseId": "invalid_header_length",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "a5594973d96b85a4cb4b1b0cd001ccedd52d7906a11ce88110273c6500e687c3"
+    },
+    {
+      "regressionId": "rel-a1fe2dba4f18207b22f1",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-052",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "fafe5b49922ed172f40da0e8b2bbac817476a0710ec7ccffc526f8a4a63f919b"
+    },
+    {
+      "regressionId": "rel-a28ab0812dacb3d114c8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-151",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f79c5602f417de6673d7ff6cc408e0863e2ad6f4672f3c547b8ecdc84d335210"
+    },
+    {
+      "regressionId": "rel-a38ea38e6a4471b391fa",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-067",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "45e69ee688abd0db98800f4958e1f6d89cf10eaa1148d14d6306e9f5573a176e"
+    },
+    {
+      "regressionId": "rel-a40243085b299e52ce70",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-186",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "65758b76976431a256911687e2a6934c345ee07728a8d9f6292f7f6036fcce08"
+    },
+    {
+      "regressionId": "rel-a47fac433f2f513637d7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-043",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c75ec12943932140653e6aae786f14657b1fa0d37825572fde651bf0a5ec8846"
+    },
+    {
+      "regressionId": "rel-a4d739e4f28a76139379",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-014",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c8408938de2de205a979797bbbfdafae0d67b098a58ca0d6d9c17e1710ea0afa"
+    },
+    {
+      "regressionId": "rel-a5585b4080de8e172c65",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-152",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5bd96e28836d9093f45617c763f12d05bb9e77fe4000a6e6c136884eeabe2159"
+    },
+    {
+      "regressionId": "rel-a7113fc79858d1b98f8d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-100",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "eca917fcb7acd09f2a4634442e4c197cc91a4c8745499c5775877188cf84e035"
+    },
+    {
+      "regressionId": "rel-a79c67e5c5d06b5c1c23",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-132",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "039c91fc6940aba5c69c3208e700d214be342e163973ba2b798ebff09024ad66"
+    },
+    {
+      "regressionId": "rel-a8c7ac588688d4f3bfd1",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-148",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0a5035e035989c9099b2273d6a188b8860905fdd5454a3170661374734e42a18"
+    },
+    {
+      "regressionId": "rel-aa4fa94a3329f6ba2209",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-125",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "0e87d69943f73f040d1649d3750cbadef9004952500eafcd71239ea269183d9b"
+    },
+    {
+      "regressionId": "rel-aa55129bcf9fd76e019b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-060",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6b3d4df02979e132a6b10c10291b240c2ab4e13ad6f0716cc16951490f4f7aa1"
+    },
+    {
+      "regressionId": "rel-ae4a26b67b03a2b76b5c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-097",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "200c8f073599370176b615b0e69ccbd93fa6c6d19e351e797907feecfbba1b0f"
+    },
+    {
+      "regressionId": "rel-ae6e7a91f98c22430740",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-062",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "35d8bd83c944a3c330113fa0e0a9ce053ccbda8fc8073c0813dc474db9a77ed8"
+    },
+    {
+      "regressionId": "rel-af0dc486ef633aed6c9d",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-001",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "52ec3eb3e044a33f20ecce29e183010cc1428c155cdf3c1a05c6330a08f3f1e3"
+    },
+    {
+      "regressionId": "rel-af8bb9fc3b6cb9485476",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "output_lock",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6e62e2a94902406979d93b6a5f6ebea473d97325ae0dbcb01e36d3592e003c77"
+    },
+    {
+      "regressionId": "rel-b04cb0ccf45671f04280",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-187",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "060e2bf01535a0ea3cff022eb3b5d07f2de686e49c0355de63267bf3442753d1"
+    },
+    {
+      "regressionId": "rel-b089e8138341f2baa963",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-031",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e24e57d26cfe2e620e674522efb9d145c75e65d4b132ad42b02982c494d43b13"
+    },
+    {
+      "regressionId": "rel-b0dac1e1b14705ba9f23",
+      "category": "MALFORMED_MIDI",
+      "caseId": "declared_track_too_long",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "bbbfbef1d42aaf142e9f1f13debbcfaab0e3399841b48868bef94675b785de69"
+    },
+    {
+      "regressionId": "rel-b24b9d93bbf6e094be72",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-028",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e457d1ba5330e96e28fe86370e8406540611e0eb03e5b1e8fd1b643696c08eec"
+    },
+    {
+      "regressionId": "rel-b2cc0fbf78d1cb59de07",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-107",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b7021ed0d00983eded2201ca4b1b679558c6a06f3aae019f22c9595c7434b90f"
+    },
+    {
+      "regressionId": "rel-b31de38dd1915bb9d6ac",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-174",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c39ffca76e517ba57335de1a688d2158efef629c7114d521de5e3deddfef393a"
+    },
+    {
+      "regressionId": "rel-b3a20978e2b219c6556e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-102",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "14d7b1fe2f30b07c3f899a337ed6e6e73a95e5c798484169907003220b7b33c2"
+    },
+    {
+      "regressionId": "rel-b7b81a2e6f93da0225f3",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-076",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c43caaf95a8f6e57541592d86a8bfb781cdc80ebce97da4ad8c9a78bf3c62c6c"
+    },
+    {
+      "regressionId": "rel-b83b9d2f08d86b275263",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-104",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ea468cf142c590e8776847b99d04a893c73f175f300f688722a9f125a4701fa9"
+    },
+    {
+      "regressionId": "rel-b83cbe21a42726340e67",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-049",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c63a800c991286454e505b44a74a52500f66ca55b5e2f1b8892bb6890cffd485"
+    },
+    {
+      "regressionId": "rel-ba84b1405a03a43e3db6",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-139",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d3bc0015a6011eec65ff0684e3dbe851969a8e63a8651f6e53bacba7b1be26e3"
+    },
+    {
+      "regressionId": "rel-bab007e0ecd1cefe149f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-026",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e31509ff87d7255932783950e73f0499a00123be3df3076ed217ff4bd6b98776"
+    },
+    {
+      "regressionId": "rel-bae88fe5c6b4c7e938d4",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-058",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "2289d7aa7ed5d9278ab3dc363ec7105e80dc04a2582103e9fb0d6c2bade67c41"
+    },
+    {
+      "regressionId": "rel-bb6f98617c8c7b3907ce",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-065",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "dfb72bfb37db764c8196e0c08831a657725aca9b06a3353fa1677162cfcffc1b"
+    },
+    {
+      "regressionId": "rel-be4257c37a5c59661571",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-064",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f0f15a496d0151a71271b03ef3612b0577bbdf5c4160b3d4ec83b4efbbc72e05"
+    },
+    {
+      "regressionId": "rel-c20512be022d2586910c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-047",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "07603ceca6ef208851d526d11c5c828247ec5ec9433af887f5bdd1f2c90f567a"
+    },
+    {
+      "regressionId": "rel-c2563e0c8734bf70d52f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-009",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "af1b3409bdc48acea410db1cb2f21878575aef1d6ace591c56e744bbffe1febe"
+    },
+    {
+      "regressionId": "rel-c2e42e2c61e4b6444819",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-163",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "baf804683dd347eb31bf583a55cc5c76c437e4338da5559b9df90bbf0c90dbca"
+    },
+    {
+      "regressionId": "rel-c2f510439882c440f382",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-170",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c7ada9a9580dce76dd6165005a60c045394ea3a5a83ec3ccfbc3b7eb3851028e"
+    },
+    {
+      "regressionId": "rel-c3196dc7e2a079ec02cf",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-105",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "3aedcf14a098bb0aa0f065fd2969feb799461d0787a05ef5416188deecdfbd58"
+    },
+    {
+      "regressionId": "rel-c8e1bc066963aca273f9",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-008",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "261c5412b82519247fd1803bda5da02b50b95a39734a79e8044f1129b80d8eb4"
+    },
+    {
+      "regressionId": "rel-c9e8e8e524bae36e92e0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-120",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5b34c7f0b7dd6b6610435f630ccb7449ce439e79a3eb82e79f9426f2dfa96589"
+    },
+    {
+      "regressionId": "rel-cac57b494220f346d627",
+      "category": "MALFORMED_MIDI",
+      "caseId": "channel_data_high_bit",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b5578d8566dcc08dbad47b369890e5bc5dbf00fb4a79f7c3ef470ebba4b47d88"
+    },
+    {
+      "regressionId": "rel-caf8a7b48621deb61814",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-017",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "6468ac862d72ffa298864157c0044bfa8a415f1ce8ac09c6faf2f197652b7469"
+    },
+    {
+      "regressionId": "rel-cbf5dcd7e0f5789edd22",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-155",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "df69d53d3ac4b27aca458367970820e85aca7d460f0b5a72226fb6b80c7082fa"
+    },
+    {
+      "regressionId": "rel-cd6eb10ea6d233f61d02",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-007",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ca4ca7cb2c85edc95631ab657852d0709baf998bdfa6acf3a76b57b64126cc79"
+    },
+    {
+      "regressionId": "rel-ce2fe82f67aeb58f3e23",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-178",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "fd6ee7a6349340fe8d60d3dc94fcc85c96cf7caafaa5d99783c501b76184863f"
+    },
+    {
+      "regressionId": "rel-cf011ccb09463d96b80b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-025",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9971ef3220fe42ba3a07628604431a196082e4d9ce33d17167b53fbaec3f65ea"
+    },
+    {
+      "regressionId": "rel-cf04bdcd275c81eb6764",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-027",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "67e621189c4c28d99aedda1fe94f57f14c29fc4c091ab566b4a34725e7fbd908"
+    },
+    {
+      "regressionId": "rel-d344d2ba62c920ab8806",
+      "category": "MALFORMED_MIDI",
+      "caseId": "smpte_division",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "09cab7cef0f717040d7b51773bba2e376c3fe92674aaf3e44709a7756b06ca68"
+    },
+    {
+      "regressionId": "rel-d3aa41e1253e8214fcf7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-193",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9e07617740a3b907d083389a7944a9c88e10a2d6818b15635e0de0a1eb2599aa"
+    },
+    {
+      "regressionId": "rel-d50f9abb54b4fa5e42a8",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-165",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ed159f3390328ee070c94a3c1d73f9039e0dabaf90b67edba2a14e265a188fcd"
+    },
+    {
+      "regressionId": "rel-d62d158e688f4d844467",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-006",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "62dc7fbf2fa2c47b8bc38e25d774670fa2792211e98db4c3b83567f4d95079f1"
+    },
+    {
+      "regressionId": "rel-d680ace5e629885a8184",
+      "category": "ATOMIC_PUBLICATION",
+      "caseId": "permission_denied",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f13b7895b577d2aca7efea1d329e153ae9dcb94f5e6e5cf91d76b7704a3d0089"
+    },
+    {
+      "regressionId": "rel-d967929040e931ec6e17",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-176",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "acd1012df503900b828e8d93e12be5f0679493c85000043e6aab5279227fbf59"
+    },
+    {
+      "regressionId": "rel-dd63aeb4917c655a80a7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-071",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "37cc74662a0fc3fc069c9cb4640e55c0c93f83da93ebe5026af2eab95358dd3f"
+    },
+    {
+      "regressionId": "rel-e1c2e53e1387b60b94b7",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-068",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "527576975cf0d17580298cc9e4faad0bdd11013a272485d80b76456309aa37bc"
+    },
+    {
+      "regressionId": "rel-e1dabedcc881fd19cf1e",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-173",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "194b930793532aed596f7fe29f7f5cab2cac46a711d4b3d5bcb779e730f901ff"
+    },
+    {
+      "regressionId": "rel-e2cac172049b982bb8b2",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-044",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "53f9f954cc8ef1ec7a63ec4083f72fd91cb9317e28386c01e32a54c8798f6f6c"
+    },
+    {
+      "regressionId": "rel-e430a4b9575325115e12",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-118",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "c28f8770658a5eea6b64d63b8a9d4290d910aee9724bc951efef310cc3100fc3"
+    },
+    {
+      "regressionId": "rel-e462d517b36291828cac",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-116",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "b10c71eaf180662db6964a700932b41ab597fb417b7b2994487ce9a60bbeb6ed"
+    },
+    {
+      "regressionId": "rel-e51758c28bc0d2fdb6c3",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-135",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "ee07c12a8b0b673c02fd5558a8fffa6b3a7b489719e8cbf2641c151a18d00870"
+    },
+    {
+      "regressionId": "rel-e5ce0e4bf9726e952491",
+      "category": "MALFORMED_MIDI",
+      "caseId": "truncated_channel_event",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f8b94e659498cd683b0699f0a49c211fd038317853d7a27c8691e677cc916a27"
+    },
+    {
+      "regressionId": "rel-e6396304c49e1e5215f5",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-188",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "373cb96cc2c3c4b358cb88668f05f16c13099aaef02903732674e7ffd757b7c8"
+    },
+    {
+      "regressionId": "rel-e69cc3a96e18485534db",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-179",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "90b51cc6ba35d78cab728fc9e1d11418dd71f67ecd56e5f429d4538633d4c798"
+    },
+    {
+      "regressionId": "rel-e9af60c4c221389d44ff",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-011",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "619a0fea475871bc7980dbedcc1cb9a2749e2f3e174477c44210291df4310c25"
+    },
+    {
+      "regressionId": "rel-eadb304338712ef3b971",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-048",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d66dcc54d5742d16bd8ff1e6bb1a28152d522a7513841a1f142fca9e1e6b243a"
+    },
+    {
+      "regressionId": "rel-ece8662d6372643cdd9f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-147",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e2293cb1d1a22c66ebfb7f8a71c5e16f4050f0ce2fb3aa6b62546aba47e199df"
+    },
+    {
+      "regressionId": "rel-ee732c4eade1c582e821",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-168",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "cddbf0b4f2b98235cf72c594c8450fae5f3b031ad4e7bce6ed6c183ab2b6b0bb"
+    },
+    {
+      "regressionId": "rel-ee7b548a9fe6dbf40ab0",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-184",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "31a91f53da6f331a084959d7690f750590cc98327c6a648b33bcd559955b801c"
+    },
+    {
+      "regressionId": "rel-f402347360641016d62f",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-141",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "aa3db7eb566bbcba8171bceaa38933fe42be782f3d181803849657521c83603c"
+    },
+    {
+      "regressionId": "rel-f5c1b5971ab987068907",
+      "category": "MALFORMED_MIDI",
+      "caseId": "unsupported_format_2",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "1e1959ebace77701a3045418499e74be1d354330fb1f63aa8870114beb478b3e"
+    },
+    {
+      "regressionId": "rel-f60fda8b66b661e21a1c",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-013",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9c64ac08d70c8c8c9ac0bafbf0487533a4e2e2930034e4da2e4d0a6a449662b2"
+    },
+    {
+      "regressionId": "rel-f63c245e82f3a8f48d34",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-056",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "f604c649343e82e098bbdb6a2a9cac0e9904a6b27825d7078728e023afabd65a"
+    },
+    {
+      "regressionId": "rel-f8bb09a5992151d8ff24",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-142",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d5ead4ea3ebec0a44a6c39fe272ee4ed40f5d63d25c99ddcb3fbdcd8e8f201f8"
+    },
+    {
+      "regressionId": "rel-f9d117830690174957ce",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-070",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "4a1602b26749c89d22af5f2b781b41f2093a2101999d3e6c80f6fd5740dde199"
+    },
+    {
+      "regressionId": "rel-fa2b5f983931a2e31616",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-192",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "d7a9880d15772f8a0771a8b61df20772dbd0e6f4a944aee52ff4ba6e54f052a9"
+    },
+    {
+      "regressionId": "rel-fb8dd18a53025dc7f6d1",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-175",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9174b35c8585fb5771491a78e4f8a1d3d9db1a0e0545f7a7361eeee0ccdf5b77"
+    },
+    {
+      "regressionId": "rel-fc95bac2b366f4479536",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-117",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "9abd625fea94b844fdb7bfd4393684803e906a83d98fa21a33640f8301be0880"
+    },
+    {
+      "regressionId": "rel-fd269304a7e835099b2b",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-090",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "fedb0799a0758406e05d19e06e48f0d2ecf768bc7fe338859c85b03edb49191f"
+    },
+    {
+      "regressionId": "rel-fd75e1de01a427e9aeb6",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-189",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5a287f9091324c2c238a4678a11bc9e4399f27f417c0be27e58ffb0c780f88eb"
+    },
+    {
+      "regressionId": "rel-fdbb0e954f8af2796a53",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-050",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "e7b609a2567f096a05d570c0a7074798e92b9c1d855e5e2227d7eb72d0df2c33"
+    },
+    {
+      "regressionId": "rel-fdd9beffdb1a7916b652",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-034",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "5324c0b3474e0c625194bd8e863c112b0abc1cc3026d9572443e12463c64721b"
+    },
+    {
+      "regressionId": "rel-ff85de3fee55a1cb1f56",
+      "category": "SEALED_BYTE_MUTATION",
+      "caseId": "mutation-003",
+      "severity": 2,
+      "expectedOutcome": "BLOCKED",
+      "status": "LOCKED_REGRESSION",
+      "discoveredDate": "2026-09-03",
+      "evidenceHash": "262789827be27b000ce85e9209528f1f5ba4cc9f92878b82a056c23eaa132d15"
+    }
+  ],
+  "summary": {
+    "entryCount": 232,
+    "openSeverity1": 0,
+    "openSeverity2": 0,
+    "lockedRegressions": 232
+  },
+  "vaultHash": "cda60c7fdf113c6d08e1ea823494e2e99449c0b2a84864f9e0ac84da96687b30"
+}

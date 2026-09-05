@@ -1,0 +1,58 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.35.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "performanceDNA": {
+    "version": "4.35.0",
+    "roles": {
+      "rhythm-guitar": {
+        "patterns": 2919,
+        "events": 185850,
+        "sources": [
+          "FACTORY_STRUM"
+        ]
+      },
+      "bass": {
+        "patterns": 2866,
+        "events": 17416,
+        "sources": [
+          "GOLD"
+        ]
+      },
+      "power-riff": {
+        "patterns": 5493,
+        "events": 86110,
+        "sources": [
+          "GOLD"
+        ]
+      }
+    },
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldVelocityUsed": false
+  },
+  "authority": {
+    "velocity": "FACTORY_ONLY",
+    "goldVelocityUsed": false,
+    "neuralVelocityUsed": false,
+    "harmony": "TARGET_CHORD_TIMELINE_PLUS_HARD_VALIDATOR"
+  },
+  "roles": {
+    "power-riff": "GOLD performance DNA -> chord-relative generation -> Factory velocity",
+    "bass": "GOLD performance DNA -> chord-relative generation -> Factory velocity",
+    "rhythm-guitar": "Factory strumming performance DNA -> chord-relative generation -> Factory velocity"
+  },
+  "antiCopy": {
+    "rawMidiCopy": false,
+    "fingerprints": true,
+    "variantDiversification": true
+  },
+  "releaseGates": {
+    "humanListening": "PENDING_USER_TEST",
+    "pa800Hardware": "WAITING_FOR_DEVICE"
+  },
+  "tests": {
+    "targetedObserved": "19 PASS / 0 FAIL",
+    "wrapper": "timeout after pytest summary",
+    "packageSelfcheck": "PASS"
+  }
+}

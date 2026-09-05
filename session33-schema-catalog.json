@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session33-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "rendered-fragment-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/rendered-fragment-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "ad774d4dd96a3ec39d3978cfbe508385aca84ce3a8243ff040367b0ef6c2d634"
+    },
+    {
+      "name": "render-manifest-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/render-manifest-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "4748643861b340a516560d3a00b1d16992129ff6e6c740ce0f46748ab172a7bc"
+    },
+    {
+      "name": "renderer-verification-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/renderer-verification-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "d7fa2f0f33d66c7e43393f92e45d995129467599b0bf79de73dba59ed511459c"
+    }
+  ],
+  "catalogHash": "93918668a3fee6217504c73fc45b0a891aa4e547184914d7ad2e3d9a18673def"
+}

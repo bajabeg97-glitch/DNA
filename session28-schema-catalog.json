@@ -1,0 +1,20 @@
+{
+  "schema": "dna-session28-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "premium-workflow-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/premium-workflow-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "cd0677fa350c48d14538979e5ed030ec6a704c637dc1332cccc409bca50ad038"
+    },
+    {
+      "name": "workflow-recovery-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/workflow-recovery-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "6b478e23afef6cd6544800c476aca5dc727c854149a34f787932c98c76ae9988"
+    }
+  ],
+  "catalogHash": "02b274b68c587dd53db334983111dbdeee24440fe06488b4889b27f4eceda8b2"
+}

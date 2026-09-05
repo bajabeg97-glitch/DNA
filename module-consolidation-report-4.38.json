@@ -1,0 +1,52 @@
+{
+  "schema": "dna-module-consolidation-report",
+  "version": "1.0",
+  "projectVersion": "4.38.0",
+  "releaseLineReviewed": [
+    "4.14",
+    "4.20",
+    "4.27",
+    "4.32",
+    "4.37"
+  ],
+  "releaseLineMetadataObserved": "4.14 through 4.37 plus documented PA800 MIDI Enhancer RX/DNC branch",
+  "representativeZipModuleCounts": {
+    "4.14": 193,
+    "4.20": 214,
+    "4.27": 326,
+    "4.32": 346,
+    "4.37": 360
+  },
+  "currentPackageImportAudit": "data/module-reachability-audit-4.38.json",
+  "reusedProductionModules": [
+    "drum_reconstruction",
+    "harmonic_reconstruction",
+    "guitar_reconstruction",
+    "solo_enhancement",
+    "rx_engine",
+    "dnc_engine",
+    "articulation_mapping",
+    "track_instrument_analysis",
+    "evidence_authority",
+    "factory_calibration",
+    "performance_continuity",
+    "ai_learning"
+  ],
+  "rewiredIn438": [
+    "instrument_behavior",
+    "core_invariants",
+    "unified_pipeline behavior analysis",
+    "track analyzer behavior profiles",
+    "drum/bass-guitar pattern behavior scoring",
+    "solo phrase-diversity behavior scoring"
+  ],
+  "documentedLegacyCapabilities": [
+    "bassist_engine concepts: Finger/Slap/Pick/Acoustic, octave/pocket",
+    "drummer_engine per-element behavior",
+    "strummer_engine down/up/mute/strum",
+    "profile-driven RX/DNC state and preservation concepts"
+  ],
+  "legacySourceCodeCopied": false,
+  "legacyNote": "PA800 MIDI Enhancer 0.29 branch is documented in Library research reports, but its original ZIP/source was not available as a retrievable Library artifact in this consolidation run; capabilities were therefore mapped onto existing DNA modules rather than falsely claimed as literal code copy.",
+  "hardRule": "Behavior brain may guide/rank but cannot override exact device/MIDI invariants."
+}

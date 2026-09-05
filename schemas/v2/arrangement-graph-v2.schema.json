@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/arrangement-graph-v2.schema.json",
+  "title": "DNA Premium ArrangementGraph 2.0",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "nodes", "edges", "globalBudgets", "hardConstraints", "planVariants", "manualReview", "readyForCandidateSearch", "safety", "graphHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-arrangement-graph"},
+    "version": {"const": "2.0"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["songMapHash", "producerBriefHash", "sourceMidiSha256", "seed", "variantCount"],
+      "properties": {
+        "songMapHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "producerBriefHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+        "variantCount": {"type": "integer", "minimum": 2, "maximum": 4}
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["marker", "elementType", "sourceSectionId", "sourceSectionLabel", "bars", "targetEnergy", "targetDensity", "roles", "forbiddenRoles", "registerPlan", "polyphonyBudget", "transformationBudget", "motifFamilyId", "motifTreatment", "harmonicContext", "transitionTarget", "locked", "decision", "confidence", "evidence"],
+        "properties": {
+          "marker": {"enum": ["i1cv1", "i2cv1", "v1cv1", "v2cv1", "v3cv1", "v4cv1", "f1cv1", "f2cv1", "e1cv1", "e2cv1"]},
+          "elementType": {"enum": ["intro", "variation", "fill", "ending"]},
+          "sourceSectionId": {"type": "string", "minLength": 1},
+          "sourceSectionLabel": {"type": "string", "minLength": 1},
+          "bars": {"type": "integer", "minimum": 1, "maximum": 32},
+          "targetEnergy": {"type": "integer", "minimum": 0, "maximum": 100},
+          "targetDensity": {"enum": ["sparse", "balanced", "full"]},
+          "roles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+          "forbiddenRoles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+          "registerPlan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["role", "low", "high", "source"],
+              "properties": {
+                "role": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]},
+                "low": {"type": "integer", "minimum": 0, "maximum": 127},
+                "high": {"type": "integer", "minimum": 0, "maximum": 127},
+                "source": {"const": "software-safe-band"}
+              }
+            }
+          },
+          "polyphonyBudget": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["maximumConcurrentMidiNotes", "estimatedVoiceCostUnits", "voiceCostStatus", "deviceConfirmed"],
+            "properties": {
+              "maximumConcurrentMidiNotes": {"type": "integer", "minimum": 1, "maximum": 54},
+              "estimatedVoiceCostUnits": {"type": "integer", "minimum": 1},
+              "voiceCostStatus": {"const": "SOFTWARE_ESTIMATE_ONLY"},
+              "deviceConfirmed": {"const": false}
+            }
+          },
+          "transformationBudget": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["maximumOperations", "maximumAddedNotes", "tolerance", "locked"],
+            "properties": {
+              "maximumOperations": {"type": "integer", "minimum": 0},
+              "maximumAddedNotes": {"type": "integer", "minimum": 0},
+              "tolerance": {"type": "integer", "minimum": 0, "maximum": 100},
+              "locked": {"type": "boolean"}
+            }
+          },
+          "motifFamilyId": {"type": "string", "pattern": "^motif-[0-9a-f]{16}$"},
+          "motifTreatment": {"enum": ["introduce", "foreshadow", "establish", "develop", "intensify", "peak", "bridge", "launch", "resolve", "final-resolve"]},
+          "harmonicContext": {"type": "array", "minItems": 1, "maxItems": 12, "items": {"type": "string"}},
+          "transitionTarget": {"type": ["string", "null"]},
+          "locked": {"type": "boolean"},
+          "decision": {"enum": ["PLAN", "KEEP", "MANUAL_REVIEW"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["songMapHash", "producerBriefHash", "sectionMapping", "sourceSectionConfidence"],
+            "properties": {
+              "songMapHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "producerBriefHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "sectionMapping": {"type": "string"},
+              "sourceSectionConfidence": {"type": "number", "minimum": 0, "maximum": 1}
+            }
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "from", "to", "transitionType", "obligations", "targetMarker", "harmonicContinuity", "maximumRegisterJumpSemitones", "maximumAddedNotes", "decision"],
+        "properties": {
+          "id": {"type": "string"},
+          "from": {"type": "string"},
+          "to": {"type": "string"},
+          "transitionType": {"enum": ["direct", "fill", "ending"]},
+          "obligations": {"type": "array", "uniqueItems": true, "items": {"enum": ["motif-continuity", "pickup", "crash-accent", "bass-approach", "harmonic-anticipation", "ending-cadence"]}},
+          "targetMarker": {"type": "string"},
+          "harmonicContinuity": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["fromChord", "toChord", "requiresAdaptation", "confidence"],
+            "properties": {
+              "fromChord": {"type": "string"},
+              "toChord": {"type": "string"},
+              "requiresAdaptation": {"type": "boolean"},
+              "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+            }
+          },
+          "maximumRegisterJumpSemitones": {"type": "integer", "minimum": 0, "maximum": 24},
+          "maximumAddedNotes": {"type": "integer", "minimum": 0},
+          "decision": {"enum": ["PLAN", "MANUAL_REVIEW"]}
+        }
+      }
+    },
+    "globalBudgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maximumAddedNotes", "maximumTransformations", "maximumConcurrentMidiNotes", "sourceConcurrentMidiNotes", "plannedConcurrentMidiNotes", "fullDurationPolyphonyRequired", "transformationTolerance", "roleRegisterBands", "deviceVoiceCost"],
+      "properties": {
+        "maximumAddedNotes": {"type": "integer", "minimum": 0},
+        "maximumTransformations": {"type": "integer", "minimum": 0},
+        "maximumConcurrentMidiNotes": {"const": 54},
+        "sourceConcurrentMidiNotes": {"type": "integer", "minimum": 0},
+        "plannedConcurrentMidiNotes": {"type": "integer", "minimum": 1, "maximum": 54},
+        "fullDurationPolyphonyRequired": {"const": true},
+        "transformationTolerance": {"type": "integer", "minimum": 0, "maximum": 100},
+        "roleRegisterBands": {"type": "array", "minItems": 8, "maxItems": 8},
+        "deviceVoiceCost": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "ceiling", "estimateOnly"],
+          "properties": {"status": {"const": "UNCONFIRMED"}, "ceiling": {"type": "null"}, "estimateOnly": {"const": true}}
+        }
+      }
+    },
+    "hardConstraints": {"type": "object", "additionalProperties": false},
+    "planVariants": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["variantId", "strategy", "seedOffset", "energyDelta", "densityDelta", "elementTargets", "readOnly", "variantHash"],
+        "properties": {
+          "variantId": {"type": "string"},
+          "strategy": {"enum": ["coherent-rise", "spacious-rise", "impact-rise", "motif-forward"]},
+          "seedOffset": {"type": "integer", "minimum": 0},
+          "energyDelta": {"type": "integer", "minimum": -100, "maximum": 100},
+          "densityDelta": {"type": "integer", "minimum": -2, "maximum": 2},
+          "elementTargets": {"type": "array", "minItems": 10, "maxItems": 10},
+          "readOnly": {"const": true},
+          "variantHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "manualReview": {"type": "array"},
+    "readyForCandidateSearch": {"type": "boolean"},
+    "safety": {"type": "object", "additionalProperties": false},
+    "graphHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

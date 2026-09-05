@@ -1,0 +1,22 @@
+{
+  "schema": "dna-premium-read-only-plan",
+  "version": "1.0",
+  "status": "PLANNED",
+  "configHash": "127276ead232f5612fa219f7a46df854ccddd98d2e0e8ea8855fafdd599614b3",
+  "targetDevice": "Korg Pa800",
+  "variantIds": [
+    "variant-1",
+    "variant-2",
+    "variant-3"
+  ],
+  "lockedElements": [],
+  "safety": {
+    "midiMutationAllowed": false,
+    "finalMidiWriteAllowed": false,
+    "validatorBypassAllowed": false,
+    "goldAffectsDynamics": false,
+    "originalSoloMutationAllowed": false,
+    "cloudCarriesMidi": false
+  },
+  "planHash": "2d86e1e1f2a72bdb813e0199f21a2fd5f4a53acb1793dd59f564d26e924d0011"
+}

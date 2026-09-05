@@ -1,0 +1,608 @@
+{
+  "schema": "dna-session5-solo-plan",
+  "version": "1.0",
+  "decision": "AUGMENT",
+  "reason": "Evidence-gated solo layers preserve every original note",
+  "inputHash": "e8895ab3f245ab330df087815e84c57d8c04a00b291aa4c5c7ac119091edad90",
+  "structuralHash": "adf79d9a8a500068dab442cce89b1a9eb5d5103882a0dfb82d8e3c38e51a82cc",
+  "selectionHash": "1ed25ff2559d6f49a0f6a36bca8850db951222d168142bd15a10a7127499c01f",
+  "seed": 805,
+  "sourceTrackIndex": 7,
+  "sourceTrackNumber": 8,
+  "channelIndex": 14,
+  "channelNumber": 15,
+  "channel": 15,
+  "window": [
+    1920,
+    5760
+  ],
+  "factoryProfileId": "140.014.001",
+  "generatedNotes": 29,
+  "counts": {
+    "trill": 6,
+    "grace": 3,
+    "slide": 4,
+    "third": 8,
+    "echo": 8,
+    "cc11": 8
+  },
+  "skipped": {
+    "insufficientGap": 0,
+    "unconfirmedHarmony": 0,
+    "unconfirmedEvidence": 0,
+    "unconfirmedRelationship": 0,
+    "register": 0,
+    "overlap": 0
+  },
+  "evidenceIds": [
+    "150.100.001",
+    "150.100.002",
+    "150.100.003",
+    "150.200.001",
+    "150.200.002"
+  ],
+  "manualExpressionPreserved": false,
+  "delayTrackIndex": 8,
+  "delayTrackNumber": 9,
+  "delayTrackUid": "trk-747c151c1f356205d242",
+  "delayOnSourceTrack": false,
+  "originalSoloTimingMutable": false,
+  "analysisVelocityUsed": false,
+  "goldAffectsVelocity": false,
+  "echoRecursive": false,
+  "notes": [
+    {
+      "tick": 1920,
+      "duration": 150,
+      "note": 64,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 4,
+      "sourceNoteIndex": 0,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 2160,
+      "duration": 75,
+      "note": 60,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 0,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 2340,
+      "duration": 50,
+      "note": 63,
+      "velocity": 75,
+      "kind": "grace",
+      "interval": -1,
+      "sourceNoteIndex": 0,
+      "evidenceId": "150.100.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 2390,
+      "duration": 150,
+      "note": 67,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 3,
+      "sourceNoteIndex": 1,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 2630,
+      "duration": 75,
+      "note": 64,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 1,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 2810,
+      "duration": 40,
+      "note": 65,
+      "velocity": 75,
+      "kind": "slide",
+      "interval": -2,
+      "sourceNoteIndex": 1,
+      "evidenceId": "150.100.003",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 2850,
+      "duration": 40,
+      "note": 66,
+      "velocity": 75,
+      "kind": "slide",
+      "interval": -1,
+      "sourceNoteIndex": 1,
+      "evidenceId": "150.100.003",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 2890,
+      "duration": 150,
+      "note": 71,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 4,
+      "sourceNoteIndex": 2,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3040,
+      "duration": 45,
+      "note": 69,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 2,
+      "sourceNoteIndex": 2,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3085,
+      "duration": 45,
+      "note": 67,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 0,
+      "sourceNoteIndex": 2,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3130,
+      "duration": 75,
+      "note": 67,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 2,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 3130,
+      "duration": 45,
+      "note": 69,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 2,
+      "sourceNoteIndex": 2,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3350,
+      "duration": 150,
+      "note": 67,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 3,
+      "sourceNoteIndex": 3,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3590,
+      "duration": 75,
+      "note": 64,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 3,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 3790,
+      "duration": 50,
+      "note": 68,
+      "velocity": 75,
+      "kind": "grace",
+      "interval": -1,
+      "sourceNoteIndex": 3,
+      "evidenceId": "150.100.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 3840,
+      "duration": 150,
+      "note": 72,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 3,
+      "sourceNoteIndex": 4,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4080,
+      "duration": 75,
+      "note": 69,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 4,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 4250,
+      "duration": 40,
+      "note": 70,
+      "velocity": 75,
+      "kind": "slide",
+      "interval": -2,
+      "sourceNoteIndex": 4,
+      "evidenceId": "150.100.003",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4290,
+      "duration": 40,
+      "note": 71,
+      "velocity": 75,
+      "kind": "slide",
+      "interval": -1,
+      "sourceNoteIndex": 4,
+      "evidenceId": "150.100.003",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4330,
+      "duration": 150,
+      "note": 76,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 4,
+      "sourceNoteIndex": 5,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4480,
+      "duration": 45,
+      "note": 74,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 2,
+      "sourceNoteIndex": 5,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4525,
+      "duration": 45,
+      "note": 72,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 0,
+      "sourceNoteIndex": 5,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4570,
+      "duration": 75,
+      "note": 72,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 5,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 4570,
+      "duration": 45,
+      "note": 74,
+      "velocity": 75,
+      "kind": "trill",
+      "interval": 2,
+      "sourceNoteIndex": 5,
+      "evidenceId": "150.100.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 4810,
+      "duration": 150,
+      "note": 79,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 3,
+      "sourceNoteIndex": 6,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 5050,
+      "duration": 75,
+      "note": 76,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 6,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    },
+    {
+      "tick": 5240,
+      "duration": 50,
+      "note": 71,
+      "velocity": 75,
+      "kind": "grace",
+      "interval": -1,
+      "sourceNoteIndex": 6,
+      "evidenceId": "150.100.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 5290,
+      "duration": 150,
+      "note": 76,
+      "velocity": 65,
+      "kind": "third",
+      "interval": 4,
+      "sourceNoteIndex": 7,
+      "evidenceId": "150.200.001",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 7,
+      "trackNumber": 8
+    },
+    {
+      "tick": 5530,
+      "duration": 75,
+      "note": 72,
+      "velocity": 51,
+      "kind": "echo",
+      "interval": 0,
+      "sourceNoteIndex": 7,
+      "evidenceId": "150.200.002",
+      "factoryProfileId": "140.014.001",
+      "trackIndex": 8,
+      "trackNumber": 9
+    }
+  ],
+  "expression": [
+    {
+      "tick": 1920,
+      "cc11": 80,
+      "reason": "phrase-start"
+    },
+    {
+      "tick": 2390,
+      "cc11": 84,
+      "reason": "melodic-tension"
+    },
+    {
+      "tick": 2890,
+      "cc11": 83,
+      "reason": "melodic-tension"
+    },
+    {
+      "tick": 3350,
+      "cc11": 83,
+      "reason": "melodic-tension"
+    },
+    {
+      "tick": 3840,
+      "cc11": 90,
+      "reason": "chord-change"
+    },
+    {
+      "tick": 4330,
+      "cc11": 83,
+      "reason": "melodic-tension"
+    },
+    {
+      "tick": 4810,
+      "cc11": 84,
+      "reason": "melodic-tension"
+    },
+    {
+      "tick": 5290,
+      "cc11": 84,
+      "reason": "melodic-tension"
+    }
+  ],
+  "trackIdentity": {
+    "trackUid": "trk-db52b3826d34baac6ac6",
+    "trackIndex": 7,
+    "trackNumber": 8,
+    "eventCount": 21,
+    "channelIndices": [
+      14
+    ],
+    "channelNumbers": [
+      15
+    ],
+    "smf0Merged": false
+  },
+  "soundBindings": [
+    {
+      "schema": "dna-premium-sound-binding",
+      "version": "2.0",
+      "trackUid": "trk-db52b3826d34baac6ac6",
+      "trackIndex": 7,
+      "trackNumber": 8,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "startTick": 1920,
+      "endTick": 5760,
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 81,
+      "complete": true,
+      "status": "EXACT"
+    }
+  ],
+  "originalSoloFingerprint": {
+    "trackUid": "trk-db52b3826d34baac6ac6",
+    "trackIndex": 7,
+    "trackNumber": 8,
+    "channelIndex": 14,
+    "channelNumber": 15,
+    "window": [
+      1920,
+      5760
+    ],
+    "noteCount": 8,
+    "sha256": "575fb89be760207f493d694907ba1ade401786fb1a504abd43bbc84aea726c56"
+  },
+  "delayAllocation": {
+    "allowed": true,
+    "reason": "Next contiguous SMF1 track selected",
+    "sourceTrackUid": "trk-db52b3826d34baac6ac6",
+    "targetTrackUid": "trk-747c151c1f356205d242",
+    "targetTrackIndex": 8,
+    "targetTrackNumber": 9,
+    "targetCreated": true,
+    "sharedChannelTrackIndices": [
+      7
+    ],
+    "sharedChannelTrackNumbers": [
+      8
+    ],
+    "authorization": "not-required"
+  },
+  "mappingWarning": {
+    "code": "SOLO_TRACK_MAPPING",
+    "severity": "info",
+    "message": "Provjeri izvorni i ciljni track, kanal i vremenski SoundBinding prije Apply.",
+    "source": {
+      "trackUid": "trk-db52b3826d34baac6ac6",
+      "trackIndex": 7,
+      "trackNumber": 8,
+      "eventCount": 21,
+      "channelIndices": [
+        14
+      ],
+      "channelNumbers": [
+        15
+      ],
+      "smf0Merged": false,
+      "channelIndex": 14,
+      "channelNumber": 15,
+      "soundBindings": [
+        {
+          "schema": "dna-premium-sound-binding",
+          "version": "2.0",
+          "trackUid": "trk-db52b3826d34baac6ac6",
+          "trackIndex": 7,
+          "trackNumber": 8,
+          "channelIndex": 14,
+          "channelNumber": 15,
+          "startTick": 1920,
+          "endTick": 5760,
+          "bankMsb": 0,
+          "bankLsb": 0,
+          "program": 81,
+          "complete": true,
+          "status": "EXACT"
+        }
+      ]
+    },
+    "target": {
+      "allowed": true,
+      "reason": "Next contiguous SMF1 track selected",
+      "sourceTrackUid": "trk-db52b3826d34baac6ac6",
+      "targetTrackUid": "trk-747c151c1f356205d242",
+      "targetTrackIndex": 8,
+      "targetTrackNumber": 9,
+      "targetCreated": true,
+      "sharedChannelTrackIndices": [
+        7
+      ],
+      "sharedChannelTrackNumbers": [
+        8
+      ],
+      "authorization": "not-required"
+    }
+  },
+  "sharedChannelApproval": false,
+  "applied": true,
+  "outputHash": "dc2006e2a963aa2213792fcd0578d6baee780e7455cc2bc2e424cda22138413a",
+  "originalSoloPreserved": true,
+  "soloFingerprintVerification": {
+    "passed": true,
+    "trackUid": "trk-db52b3826d34baac6ac6",
+    "trackIndex": 7,
+    "trackNumber": 8,
+    "channelIndex": 14,
+    "channelNumber": 15,
+    "beforeHash": "575fb89be760207f493d694907ba1ade401786fb1a504abd43bbc84aea726c56",
+    "afterProtectedHash": "575fb89be760207f493d694907ba1ade401786fb1a504abd43bbc84aea726c56",
+    "protectedNoteCount": 8,
+    "missingNotes": []
+  },
+  "programChangePreserved": true,
+  "notePairingValid": true,
+  "delayTrackCreated": true,
+  "delaySoundSetupCopied": true
+}

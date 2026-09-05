@@ -1,0 +1,13 @@
+{
+  "schema": "dna-session20-intent-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "corpusHash": "1111414bce0e0fd5e99898043dac2abd14a38e7a051d2eea0e6b77aa413ea332",
+  "caseCount": 30,
+  "expectedFieldCount": 62,
+  "fieldAccuracy": 1.0,
+  "fieldGate": 0.95,
+  "conflictAccuracy": 1.0,
+  "conflictGate": 0.95,
+  "passed": true
+}

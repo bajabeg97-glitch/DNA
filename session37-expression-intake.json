@@ -1,0 +1,35 @@
+{
+  "schema": "dna-premium-production-expression-intake",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "status": "AWAITING_OPERATOR_CAPTURE",
+  "exactSoundBindingRequired": true,
+  "productionEligible": false,
+  "testOnly": false,
+  "soundBinding": null,
+  "sourceMidi": null,
+  "audioEvidence": null,
+  "operatorAttestation": null,
+  "relationships": [],
+  "allowedRelationshipDimensions": [
+    "relativePitch",
+    "relativeOnset",
+    "gate",
+    "phraseRole"
+  ],
+  "forbiddenAuthorities": [
+    "GOLD_VELOCITY",
+    "GOLD_ABSOLUTE_PITCH",
+    "GOLD_BANK_PROGRAM",
+    "SOFTWARE_TEST_ONLY",
+    "DEVICE_UNCONFIRMED"
+  ],
+  "missingEvidence": [
+    "EXACT_SOUND_BINDING",
+    "SOURCE_MIDI",
+    "AUDIO_CAPTURE",
+    "OPERATOR_ATTESTATION",
+    "PRODUCTION_RELATIONSHIPS"
+  ],
+  "intakeHash": "818ce6c594092febd5382f0d10b0dd32ba43c3d45bf7c977f5e93af338a63ed0"
+}

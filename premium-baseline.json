@@ -1,0 +1,156 @@
+{
+  "schema": "dna-premium-baseline",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "softwareBaseline": "3.17",
+  "sourceBaseline": "3.16 + Session 15 contracts",
+  "baselineId": "premium-3.17-98a6d52a09ccc789",
+  "contentHash": "98a6d52a09ccc7899d6a56321c7b9aeb4fc041cd935183d43a90a474f7510ff5",
+  "frozenFiles": [
+    {
+      "path": "data/dna-build-report.json",
+      "bytes": 2947,
+      "sha256": "cfcf388d219ab24bc65fa58ca542d9fa2b8430fec3b3ec97eec6f4e2d9aa21a1"
+    },
+    {
+      "path": "data/factory-strumming.json",
+      "bytes": 16386522,
+      "sha256": "ccc65c0abce165ad460b6ec1d43d327009b90eb8ebc545489df53f1fef367308"
+    },
+    {
+      "path": "data/factory-style-segments.json",
+      "bytes": 39965976,
+      "sha256": "cc46bd686e73e0f3b560b0fe6afb7b96d9bd7e54b4d14e6a36ecb35a50251978"
+    },
+    {
+      "path": "data/factory-velocity-profiles.json",
+      "bytes": 15145620,
+      "sha256": "7a21fc2fefc88de5c9ed34f4d99d9750f40705dc627a7290d562077d54c8cd60"
+    },
+    {
+      "path": "data/gold-patterns.json",
+      "bytes": 5195949,
+      "sha256": "251d42aac5af2f9d78a3afe392655ce4d879aeb0bd9ee0431c5d715e6337107e"
+    },
+    {
+      "path": "data/gold-performance-patterns.json",
+      "bytes": 26635700,
+      "sha256": "b41ad979e0a4a91dd27a40181b0cb94c4ceddbfe2f718e6fdf744b434369d4e7"
+    },
+    {
+      "path": "premium/baseline/premium-feature-matrix.json",
+      "bytes": 2408,
+      "sha256": "05e695eac97c3799f893408a13975f9afb7a8c080589c67bfab6f3f0b9dc31dc"
+    },
+    {
+      "path": "premium/baseline/reference-style.manifest.json",
+      "bytes": 214479,
+      "sha256": "d35886bb9370a19f5835abae34a916d419eb2463ecccad4e0d64705385f59d45"
+    },
+    {
+      "path": "premium/baseline/reference-style.mid",
+      "bytes": 17302,
+      "sha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e"
+    },
+    {
+      "path": "premium/baseline/reports/recovery-release-report.json",
+      "bytes": 3082,
+      "sha256": "7013af351e6db495aaca74e1c9b7c34d571ee5f6eb8c51b55054b025d99de966"
+    },
+    {
+      "path": "premium/baseline/reports/release-check-report.json",
+      "bytes": 3759,
+      "sha256": "db48ec65087730c6aa34d3f2449e9a2d34c3667437f95fb465dac70fd6d3a8e3"
+    },
+    {
+      "path": "premium/baseline/reports/session13-test-report.json",
+      "bytes": 5183,
+      "sha256": "4d052331ae466d3e6d69468431cc37a9c9ff55fbde7d12a300773c695ecb4c79"
+    },
+    {
+      "path": "premium/baseline/reports/session14-preflight-report.json",
+      "bytes": 1252,
+      "sha256": "f6fe0d74f359262428d7ceb01ebba40956817b5059793cb331efffb0e5133fcb"
+    },
+    {
+      "path": "premium/schemas/catalog.json",
+      "bytes": 4656,
+      "sha256": "400bc1188cab73dae3517416a9f89b87e01ae4611d44cb17c6af0a7ae599d9c3"
+    },
+    {
+      "path": "premium/schemas/v1/arrangement-graph-v1.schema.json",
+      "bytes": 1717,
+      "sha256": "e555bd1feb157c7e47000984d7b36b1a2c0d85b1a0f93b3db04487e73f8c627b"
+    },
+    {
+      "path": "premium/schemas/v1/candidate-set-v1.schema.json",
+      "bytes": 1283,
+      "sha256": "533dfdc513f48c16e4f290b331fd0d18cf79b1f4c837449097be4b4e2e845694"
+    },
+    {
+      "path": "premium/schemas/v1/device-profile-v1.schema.json",
+      "bytes": 1635,
+      "sha256": "f08976dc655896b9e7458f0340c4f65217ffba4d4b729857616ecc0627784e5e"
+    },
+    {
+      "path": "premium/schemas/v1/evaluation-report-v1.schema.json",
+      "bytes": 1733,
+      "sha256": "7542697d54d1b9a38d49dea8ca012f0d767552783227dab466d75ac63bc6f884"
+    },
+    {
+      "path": "premium/schemas/v1/producer-brief-v1.schema.json",
+      "bytes": 1493,
+      "sha256": "b62781e5fb1b2763d30ad001da53fbf57181b427ebace79c7b2121bd591d7ce0"
+    },
+    {
+      "path": "premium/schemas/v1/render-manifest-v1.schema.json",
+      "bytes": 1851,
+      "sha256": "c1f1cd266b4086932c7fd120cebf7f4cb24fbbeca32010260fb523a18d0b081d"
+    },
+    {
+      "path": "premium/schemas/v1/song-map-v1.schema.json",
+      "bytes": 2516,
+      "sha256": "07ce0ad710f2f055f5021835dbaa4f13f45ae68873e357abcdce48904ecb0c66"
+    },
+    {
+      "path": "premium/schemas/v1/sound-binding-v1.schema.json",
+      "bytes": 1636,
+      "sha256": "0fb3584c2783a196d00eb0941f26794e5813f0a88dbe42b216c0e2a684c29bf4"
+    },
+    {
+      "path": "premium/schemas/v1/track-plan-v1.schema.json",
+      "bytes": 1252,
+      "sha256": "8aa0c44f21643539cef6692e66c5fd9e379da2a7937bd8bc55b3249bb9b29e78"
+    },
+    {
+      "path": "prism-uploads/DNA.zip",
+      "bytes": 21922630,
+      "sha256": "125f4486625db44f7cdd49bd670aff252a961c88ea14741ec970ec3ae5eec85a"
+    }
+  ],
+  "corpus": {
+    "factoryMidi": 3211,
+    "goldMidi": 182,
+    "factoryProfiles": 1964,
+    "factoryStyleSegments": 26922,
+    "factoryStrummingPatterns": 2919,
+    "goldPerformancePatterns": 12918,
+    "legacyGoldPatterns": 10637
+  },
+  "verifiedSuites": {
+    "legacy": "43/43 PASS",
+    "recoveryPreflight": "289/289 PASS"
+  },
+  "premiumReadiness": {
+    "session15": "SOFTWARE_VALIDATED",
+    "premiumProduct": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  },
+  "invariants": {
+    "goldAffectsDynamics": false,
+    "analysisVelocityUsed": false,
+    "aiWritesFinalMidi": false,
+    "validatorBypassAllowed": false,
+    "originalSoloMutationAllowed": false
+  }
+}

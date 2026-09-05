@@ -1,0 +1,30 @@
+{
+  "schema": "dna-premium-quality-release-gate",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "sources": {
+    "projectHash": "fcaa2eead353a05a2713d8bd566e62135782cb067f7f5399ccda1c117b0dccaa",
+    "corpusHash": "d84320f2cb4d70a4d0228f94016f1555845b1e70bf1dabc9c13627302f62ce95",
+    "calibrationHash": "61160f8edb49a75364889a61ec31f4be29745a66c0b5c6b1827992afbb63a0d1",
+    "holdoutHash": "1125cc747a6f9e029af62d293766b0121b239a86eb41884f82c92d6e70c2b0ac",
+    "expressionIntakeHash": "818ce6c594092febd5382f0d10b0dd32ba43c3d45bf7c977f5e93af338a63ed0",
+    "listeningIntakeHash": "d3967b6367d9070780b5dd99ca722a8692e462cc35308ffbf041d3ccab934549",
+    "evaluationReportHash": "e232880b2fc4aac2731c84e4a30f2195953d97ca4f8d80a3dd376060b3e3ff42",
+    "reliabilityReportHash": "1b14066953745d4dab961ba22e103cee502c3e7caf4c21d53ecdf7e731362375"
+  },
+  "softwareStructuralHoldoutPassed": true,
+  "reliabilityPassed": true,
+  "automatedQualityPassed": true,
+  "humanListeningPassed": false,
+  "productionExpressionPassed": false,
+  "qualityReleaseGatePassed": false,
+  "finalCertifiedMidiExportAllowed": false,
+  "blockers": [
+    "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+    "PRODUCTION_EXPRESSION_EVIDENCE_REQUIRED",
+    "SESSION27_HUMAN_QUALITY_THRESHOLDS_NOT_MET"
+  ],
+  "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+  "physicalPa800": "WAITING_FOR_DEVICE",
+  "gateHash": "9d227c7ea579e4d48f334756e151638683fcabc7643fdb94100ddf87de5c7a64"
+}

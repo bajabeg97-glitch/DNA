@@ -1,0 +1,465 @@
+{
+  "schema": "dna-automatic-track-instrument-analysis",
+  "version": "3.0",
+  "source": {
+    "fileName": "session32-reference.mid",
+    "bytes": 1267,
+    "format": 1,
+    "ppq": 480,
+    "trackCount": 5,
+    "noteCount": 118
+  },
+  "sourceSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+  "endTick": 15350,
+  "factoryRegistry": {
+    "available": true,
+    "schema": "midi-arranger.factory-velocity-profiles",
+    "version": "3.3",
+    "databaseVersion": "factory-schema3.3-f91c235f676f9d15",
+    "profileCount": 1964
+  },
+  "tracks": [
+    {
+      "trackUid": "trk-2a7b7a8ce1f4115a2cfd",
+      "trackIndex": 0,
+      "trackNumber": 1,
+      "eventCount": 8,
+      "channelIndices": [],
+      "channelNumbers": [],
+      "smf0Merged": false,
+      "trackName": "Conductor",
+      "noteCount": 0,
+      "segmentCount": 0,
+      "segments": [],
+      "primaryInstrument": null,
+      "primaryInstrumentFamily": "unknown",
+      "primaryRole": "unknown",
+      "suggestedPa800Track": null,
+      "decision": "IGNORE_METADATA",
+      "optimizationPolicy": "KEEP_METADATA"
+    },
+    {
+      "trackUid": "trk-73d42a90c72bbb77e696",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "eventCount": 113,
+      "channelIndices": [
+        0
+      ],
+      "channelNumbers": [
+        1
+      ],
+      "smf0Merged": false,
+      "trackName": "Harmony",
+      "noteCount": 54,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-73d42a90c72bbb77e696-ch1-0",
+          "trackUid": "trk-73d42a90c72bbb77e696",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 0,
+          "channelNumber": 1,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-73d42a90c72bbb77e696",
+            "trackIndex": 1,
+            "trackNumber": 2,
+            "channelIndex": 0,
+            "channelNumber": 1,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 0,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "piano",
+          "primaryInstrument": "ACC4 CV1",
+          "factoryCandidates": [
+            {
+              "instrument": "ACC4 CV1",
+              "instrumentKey": "melodic:0:0:0",
+              "profileId": "489.081.432",
+              "role": "harmony",
+              "register": {
+                "low": 0,
+                "high": 125
+              },
+              "sampleCount": 1436,
+              "confidence": 0.536,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "harmony",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc1",
+          "noteStatistics": {
+            "noteCount": 54,
+            "pitchLow": 60,
+            "pitchHigh": 71,
+            "medianPitch": 65.0,
+            "medianDurationTicks": 940.0,
+            "polyphonyPeak": 4,
+            "polyphonicOnsetRate": 1.0,
+            "notesPerQuarter": 1.6897
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "ACC4 CV1",
+      "primaryInstrumentFamily": "piano",
+      "primaryRole": "harmony",
+      "suggestedPa800Track": "acc1",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-c033749a0911da758f2a",
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "eventCount": 37,
+      "channelIndices": [
+        1
+      ],
+      "channelNumbers": [
+        2
+      ],
+      "smf0Merged": false,
+      "trackName": "Bass",
+      "noteCount": 16,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-c033749a0911da758f2a-ch2-0",
+          "trackUid": "trk-c033749a0911da758f2a",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 1,
+          "channelNumber": 2,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-c033749a0911da758f2a",
+            "trackIndex": 2,
+            "trackNumber": 3,
+            "channelIndex": 1,
+            "channelNumber": 2,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 32,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "bass",
+          "primaryInstrument": "BASS CV1",
+          "factoryCandidates": [
+            {
+              "instrument": "BASS CV1",
+              "instrumentKey": "melodic:0:0:32",
+              "profileId": "946.773.293",
+              "role": "bass",
+              "register": {
+                "low": 34,
+                "high": 43
+              },
+              "sampleCount": 37,
+              "confidence": 0.491,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "bass",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "bass",
+          "noteStatistics": {
+            "noteCount": 16,
+            "pitchLow": 36,
+            "pitchHigh": 45,
+            "medianPitch": 41.0,
+            "medianDurationTicks": 950.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 0.5003
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "BASS CV1",
+      "primaryInstrumentFamily": "bass",
+      "primaryRole": "bass",
+      "suggestedPa800Track": "bass",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-afd2be6e213ec34b8cd2",
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "eventCount": 37,
+      "channelIndices": [
+        2
+      ],
+      "channelNumbers": [
+        3
+      ],
+      "smf0Merged": false,
+      "trackName": "Lead Solo",
+      "noteCount": 16,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-afd2be6e213ec34b8cd2-ch3-0",
+          "trackUid": "trk-afd2be6e213ec34b8cd2",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-afd2be6e213ec34b8cd2",
+            "trackIndex": 3,
+            "trackNumber": 4,
+            "channelIndex": 2,
+            "channelNumber": 3,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 120,
+            "bankLsb": 0,
+            "program": 64,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "reed",
+          "primaryInstrument": "PERC CV1",
+          "factoryCandidates": [
+            {
+              "instrument": "PERC CV1",
+              "instrumentKey": "melodic:120:0:64",
+              "profileId": "698.771.685",
+              "role": "melody",
+              "register": {
+                "low": 0,
+                "high": 127
+              },
+              "sampleCount": 68914,
+              "confidence": 0.639,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "melody",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc3",
+          "noteStatistics": {
+            "noteCount": 16,
+            "pitchLow": 72,
+            "pitchHigh": 83,
+            "medianPitch": 77.0,
+            "medianDurationTicks": 240.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 0.5246
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "PERC CV1",
+      "primaryInstrumentFamily": "reed",
+      "primaryRole": "melody",
+      "suggestedPa800Track": "acc3",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-009b3050283ebda73248",
+      "trackIndex": 4,
+      "trackNumber": 5,
+      "eventCount": 69,
+      "channelIndices": [
+        9
+      ],
+      "channelNumbers": [
+        10
+      ],
+      "smf0Merged": false,
+      "trackName": "Drums",
+      "noteCount": 32,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-009b3050283ebda73248-ch10-0",
+          "trackUid": "trk-009b3050283ebda73248",
+          "trackIndex": 4,
+          "trackNumber": 5,
+          "channelIndex": 9,
+          "channelNumber": 10,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-009b3050283ebda73248",
+            "trackIndex": 4,
+            "trackNumber": 5,
+            "channelIndex": 9,
+            "channelNumber": 10,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 0,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "drum-kit",
+          "primaryInstrument": "SN: Foxtrot 2",
+          "factoryCandidates": [
+            {
+              "instrument": "SN: Foxtrot 2",
+              "instrumentKey": "drum:0:0:0:38",
+              "profileId": "256.310.893",
+              "role": "drums",
+              "register": {
+                "low": 38,
+                "high": 38
+              },
+              "sampleCount": 39,
+              "confidence": 0.472,
+              "authority": "EXACT_FACTORY_DRUM_NOTE",
+              "drumNote": 38
+            }
+          ],
+          "detectedRole": "drums",
+          "identityConfidence": 0.68,
+          "roleConfidence": 1.0,
+          "identityStatus": "PARTIAL_FACTORY_DRUM_MAP",
+          "decision": "MANUAL_REVIEW",
+          "suggestedPa800Track": "drum",
+          "noteStatistics": {
+            "noteCount": 32,
+            "pitchLow": 36,
+            "pitchHigh": 38,
+            "medianPitch": 37.0,
+            "medianDurationTicks": 60.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 1.0281
+          },
+          "evidenceReasons": [
+            "MIDI_CHANNEL_10",
+            "NO_EXACT_FACTORY_PROFILE"
+          ],
+          "authority": {
+            "instrumentIdentity": "HINT_ONLY",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "SN: Foxtrot 2",
+      "primaryInstrumentFamily": "drum-kit",
+      "primaryRole": "drums",
+      "suggestedPa800Track": "drum",
+      "decision": "MANUAL_REVIEW",
+      "optimizationPolicy": "ANALYSIS_ONLY_MANUAL_REVIEW"
+    }
+  ],
+  "manualReview": [
+    {
+      "code": "PARTIAL_FACTORY_DRUM_MAP",
+      "trackUid": "trk-009b3050283ebda73248",
+      "trackNumber": 5,
+      "channelNumber": 10,
+      "startTick": 0,
+      "endTick": 15351,
+      "reason": "MIDI_CHANNEL_10,NO_EXACT_FACTORY_PROFILE",
+      "recoveryAction": "Confirm exact SoundBinding or assign the track role manually."
+    }
+  ],
+  "summary": {
+    "physicalTrackCount": 5,
+    "noteTrackCount": 4,
+    "segmentCount": 4,
+    "acceptedTrackCount": 3,
+    "manualReviewTrackCount": 1,
+    "metadataTrackCount": 1,
+    "exactFactorySegmentCount": 3
+  },
+  "applicationOptimizationBaseline": {
+    "safeAutomaticTracks": [
+      "trk-73d42a90c72bbb77e696",
+      "trk-c033749a0911da758f2a",
+      "trk-afd2be6e213ec34b8cd2"
+    ],
+    "protectedOrReviewTracks": [
+      "trk-009b3050283ebda73248"
+    ],
+    "downstreamPolicy": "Only ACCEPT tracks may enter automatic TrackPlan; all others stay KEEP/MANUAL_REVIEW.",
+    "fullOptimizationStage": "PLANNED_AFTER_EVIDENCE_RESOLUTION"
+  },
+  "invariants": {
+    "readOnly": true,
+    "analysisVelocityUsed": false,
+    "goldUsed": false,
+    "goldAffectsDynamics": false,
+    "approximateSoundBindingAllowed": false,
+    "trackLocalSoundState": true,
+    "midSongProgramChangesSegmented": true,
+    "sharedChannelAutoAcceptAllowed": false,
+    "originalMidiChanged": false,
+    "midiMutationAuthority": false,
+    "validatorAuthority": false,
+    "deviceCertificationClaimed": false
+  },
+  "decisionHash": "3615cc17defe126eb6d002055362f8654c398e29a4e51dfd306bc456820937bf",
+  "analysisHash": "e58226171083a13fcb52fb096f3a193b5c2a8c91d8f66bd4a8a8f08ba82ebecd"
+}

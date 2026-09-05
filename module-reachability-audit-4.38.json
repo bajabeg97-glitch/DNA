@@ -1,0 +1,433 @@
+{
+  "schema": "dna-module-reachability-audit",
+  "version": "1.0",
+  "moduleCount": 101,
+  "passCount": 101,
+  "failCount": 0,
+  "modules": [
+    {
+      "module": "dna_midi_studio.agent_runtime",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.authority",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.autoregressive_event",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.dataset",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.event_decoder",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.inference",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.inpainting",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.max_orchestrator",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.melodic_relationship",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.model",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.multibar_event",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.performance_dna",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.phrase_planner",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_inference",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_learning",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_model",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_sequence_inference",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_sequence_learning",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_sequence_model",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_sequence_trainer",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.relationship_trainer",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.section_arranger",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.song_context",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.song_context_inference",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.song_context_model",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.song_context_trainer",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.song_inpainting",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.track_replacement",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.trainer",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.ai_learning.transition_fill",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.arrangement_graph",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.arrangement_renderer",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.articulation_mapping",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.candidate_search",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.core_invariants",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.debugging",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.debugging.diagnostics",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.debugging.runner",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.debugging.transaction",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.device_certification",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.device_profile_certification",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.dnc_engine",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.drum_reconstruction",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.end_to_end_arranger",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.evidence_authority",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.factory_calibration",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.global_coherence",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.groove_polyphony",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.guitar_reconstruction",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.harmonic_reconstruction",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.independent_verifier",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.instrument_articulation",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.instrument_behavior",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.instrument_performance_grammar",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.midi",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.music_quality",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.pa800_validator",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.performance_continuity",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.personal_profile",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.premium_expression",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.premium_preview",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.premium_workflow",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.producer_brief",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.production_adapter",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.quality_calibration",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.regression_vault",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.release_readiness",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.reliability_gate",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.rx_engine",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session19_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session20_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session24_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session25_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session26_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session27_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session28_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session29_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session2_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session30_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session31_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session31b_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session32_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session33_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session34_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session35_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session36_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session37_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session38_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session3_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session4_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session5_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session6_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.session7_fixture",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.solo_enhancement",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.song_understanding",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.track_identity",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.track_instrument_analysis",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.track_plan",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.transactional_export",
+      "import": "PASS"
+    },
+    {
+      "module": "dna_midi_studio.unified_pipeline",
+      "import": "PASS"
+    }
+  ],
+  "productionEntryPoints": [
+    "dna_midi_studio.unified_pipeline",
+    "server.py",
+    "session9_pipeline.py"
+  ],
+  "coreEngines": [
+    "drum_reconstruction",
+    "harmonic_reconstruction",
+    "guitar_reconstruction",
+    "solo_enhancement",
+    "rx_engine",
+    "dnc_engine"
+  ],
+  "integratedLayers": [
+    "instrument_behavior",
+    "core_invariants",
+    "performance_continuity",
+    "evidence_authority",
+    "factory_calibration"
+  ]
+}

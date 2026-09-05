@@ -1,0 +1,33 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.37.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "factoryCalibration": {
+    "factoryProfiles": 1964,
+    "profilesWithCalibration": 1713,
+    "heldOutExactProfiles": 1052,
+    "roleFallbacks": 8,
+    "factorySegments": 26922
+  },
+  "policy": {
+    "split": "source-hash deterministic 80/20",
+    "tolerance": "95th percentile absolute held-out deviation",
+    "fallback": "exact profile observed -> role held-out -> MANUAL_REVIEW",
+    "velocityAuthority": "FACTORY_ONLY",
+    "deviceUnknowns": "ABSTAIN_NOT_INFER"
+  },
+  "tests": {
+    "targetedRegression": "24 PASS / 0 FAIL"
+  },
+  "packageSelfcheck": "PASS",
+  "authority": {
+    "factoryVelocityOnly": true,
+    "goldVelocity": false,
+    "neuralVelocity": false,
+    "unknownEvidence": "MANUAL_REVIEW"
+  },
+  "externalGates": {
+    "humanListening": "PENDING",
+    "pa800Hardware": "WAITING_FOR_DEVICE"
+  }
+}

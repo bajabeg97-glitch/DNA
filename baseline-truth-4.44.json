@@ -1,0 +1,10 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.44.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "scope": "Complete Instrument Profile Matrix integrated with behavior, grammar, track analysis and role-aware repair",
+  "profileCoverage": {"canonicalRoles": 19, "allExplicitPolicy": true, "allExplicitGrammar": true},
+  "tests": {"targetedRegression": "320 PASS / 0 FAIL", "moduleImportAudit": "105/105 PASS", "packageSelfcheck": "PASS"},
+  "authorities": {"finalVelocity": "FACTORY_ONLY", "deviceArticulation": "EXACT_SOUND_PROFILE_REQUIRED", "unknownDeviceFields": "KEEP_UNKNOWN_NEVER_GUESS"},
+  "externalGates": {"humanListening": "PENDING_USER_TEST", "pa800Hardware": "WAITING_FOR_DEVICE"}
+}

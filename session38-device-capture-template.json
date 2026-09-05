@@ -1,0 +1,249 @@
+{
+  "schema": "dna-pa800-device-capture",
+  "version": "2.0",
+  "captureAuthority": "PENDING",
+  "kitManifestSha256": "9c1e0b950b7b1556ff8fc8f8b0fd3044ba3fc9952cadf2b30eed195482ec08ac",
+  "sourceArtifactSha256": {
+    "DNA_PA800_FUNCTIONAL_TEST.mid": "498f7f8e4f41abe1c6a6661d3b0a17a530e0d628af01d4280d53aeed092cd41f",
+    "DNA_PA800_FUNCTIONAL_TEST.manifest.json": "f676e44d924ad1d431e45d26c6284bf1b2acbc06b97d28642d75938a1b5ddd70",
+    "DNA_PA800_POLYPHONY_STRESS.mid": "7344805d418d58bb15d2f9276e73574b83d72c849e878704c76456f0686eab5c",
+    "DNA_PA800_POLYPHONY_STRESS.manifest.json": "8dbdc74dd8c656e766a7d565445377577753ad425dd9c60d76c2962790f4da06",
+    "README.md": "c152890d764603cb674859ec0cc35a0735f15c0095ada18a110ddce2429145bd"
+  },
+  "operator": {
+    "name": "",
+    "organization": ""
+  },
+  "device": {
+    "manufacturer": "Korg",
+    "model": "Pa800",
+    "serialNumber": "",
+    "osVersion": ""
+  },
+  "testDate": "",
+  "checks": {
+    "usbMediaReadable": null,
+    "shiftExecuteImportCompleted": null,
+    "allMarkersImported": null,
+    "channelsNineThroughSixteenCorrect": null,
+    "trackTypesConfirmed": null,
+    "nttConfirmed": null,
+    "allStyleTransitionsAudible": null,
+    "noStuckOrMissingNotes": null,
+    "normalStyleNoUnacceptableVoiceStealing": null,
+    "polyphonyStressNoUnacceptableVoiceStealing": null,
+    "soloOriginalPreserved": null,
+    "delayRoutingCorrect": null,
+    "rxDncOnlyOnConfirmedSounds": null,
+    "noDigitalClipping": null,
+    "headroomAcceptable": null,
+    "savedToUserOrFavorite": null,
+    "reloadMatchesSavedStyle": null
+  },
+  "markerResults": {
+    "i1cv1": null,
+    "i2cv1": null,
+    "v1cv1": null,
+    "v2cv1": null,
+    "v3cv1": null,
+    "v4cv1": null,
+    "f1cv1": null,
+    "f2cv1": null,
+    "e1cv1": null,
+    "e2cv1": null
+  },
+  "styleBindings": [
+    {
+      "channel": 9,
+      "role": "bass",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 10,
+      "role": "drums",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 11,
+      "role": "percussion",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 12,
+      "role": "acc1",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 13,
+      "role": "acc2",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 14,
+      "role": "acc3",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 15,
+      "role": "acc4",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    },
+    {
+      "channel": 16,
+      "role": "acc5",
+      "status": "UNKNOWN",
+      "bankMsb": null,
+      "bankLsb": null,
+      "program": null,
+      "soundName": "",
+      "trackType": "",
+      "ntt": "",
+      "evidenceRefs": []
+    }
+  ],
+  "articulationCaptures": [
+    {
+      "engine": "GUITAR",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerMap": [],
+      "evidenceRefs": []
+    },
+    {
+      "engine": "RX",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerMap": [],
+      "evidenceRefs": []
+    },
+    {
+      "engine": "DNC",
+      "status": "UNKNOWN",
+      "soundBinding": null,
+      "triggerMap": [],
+      "evidenceRefs": []
+    }
+  ],
+  "voiceMeasurements": {
+    "midiNoteCeiling": 54,
+    "measuredSafeMidiPeak": null,
+    "unacceptableVoiceStealingObserved": null,
+    "roleVoiceCosts": [
+      {
+        "role": "bass",
+        "channel": 9,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "drums",
+        "channel": 10,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "percussion",
+        "channel": 11,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "acc1",
+        "channel": 12,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "acc2",
+        "channel": 13,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "acc3",
+        "channel": 14,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "acc4",
+        "channel": 15,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      },
+      {
+        "role": "acc5",
+        "channel": 16,
+        "oscillatorVoicesPerNote": null,
+        "acceptableVoiceStealing": null,
+        "evidenceRefs": []
+      }
+    ],
+    "evidenceRefs": []
+  },
+  "evidenceFiles": [],
+  "attestation": {
+    "physicalDeviceUsed": false,
+    "resultTruthful": false,
+    "independentReviewCompleted": false,
+    "signature": "",
+    "operatorApprovedHash": ""
+  },
+  "captureHash": "913f867b0c0074e8313902feaa6ac1031c99c2b855ca48905fec979a0d696939"
+}

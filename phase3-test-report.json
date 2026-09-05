@@ -1,0 +1,24 @@
+{
+  "schema": "dna-pa800-phase3-test-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "testedGoldSongs": 5,
+  "httpIntegrationSample": {
+    "source": "AL PROLECE-SEMSA UZIVO.MID",
+    "detectedTempo": 98.0,
+    "detectedMeter": "4/4",
+    "detectedKey": "Em",
+    "bars": 93,
+    "sections": 13,
+    "generatedPa800Elements": 10,
+    "generatedNotes": 1356,
+    "usedChannels": [9, 10, 11, 12, 13]
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "goldAffectsDynamics": false,
+    "dynamicsSource": "factory-only",
+    "outputMidiFormat": 0
+  }
+}

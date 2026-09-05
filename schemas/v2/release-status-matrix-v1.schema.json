@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/release-status-matrix-v1.schema.json",
+  "title": "DNA MIDI Studio Release Status Matrix 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "releaseDate", "entries", "summary", "matrixHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-release-status-matrix"},
+    "version": {"const": "1.0"},
+    "releaseDate": {"type": "string", "format": "date"},
+    "entries": {"type": "array", "minItems": 17, "maxItems": 17, "items": {"type": "object"}},
+    "summary": {"type": "object"},
+    "matrixHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-authority": "software-external-device-and-marketing-gate-matrix"
+}

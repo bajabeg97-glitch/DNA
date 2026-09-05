@@ -1,0 +1,32 @@
+{
+  "schema": "dna-session27-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "evaluation-report-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/evaluation-report-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "dbc3ef564befc329fa2e872ad7365468f143c02a9be4b21260d9b43ba5e0fb56"
+    },
+    {
+      "name": "blind-listening-package-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/blind-listening-package-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "d03c35b1c987e76ea5b55a794a4676371121c7db6fc77ed60eaa32a4e920d24d"
+    },
+    {
+      "name": "listening-response-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/listening-response-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "147adf7c681ef0ba3fcfae8734db31bc0cb467b976eaced850715081292dbed4"
+    },
+    {
+      "name": "quality-regression-vault-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/quality-regression-vault-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "46eb5caf819f44572cc4ee5ff383c2cd336746884d0adf37cc415dbfc4fe39b5"
+    }
+  ],
+  "catalogHash": "b5af2048ac782c14b13f0bddf67e394af0bab5251f069bea3d9d6839a2c86dd9"
+}

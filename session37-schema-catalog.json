@@ -1,0 +1,38 @@
+{
+  "schema": "dna-session37-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "quality-corpus-v2.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/quality-corpus-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "df0e1c1515affc51fdba8934cb2d18babbca3fdf088d16cd4bb43f1126b78b25"
+    },
+    {
+      "name": "quality-calibration-report-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/quality-calibration-report-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "f7f5d71c1c712a5c8f5a88428d2513122d68bfe69f2bb59c55a53b575782c77f"
+    },
+    {
+      "name": "production-expression-intake-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/production-expression-intake-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "aeecbb30a4999465551a5165ba2e73f5ec4b3465897727571ae3eaf3b31d7d3a"
+    },
+    {
+      "name": "human-listening-intake-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/human-listening-intake-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "6da78b4ea0a650ebfef99c1e2c6e2f34c1e02f1ab3058ee2f98185528d5e3efc"
+    },
+    {
+      "name": "quality-release-gate-v1.schema.json",
+      "$id": "https://dna-midi-studio.local/schemas/v2/quality-release-gate-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "f8c9affd9c26e0025bf3bfd5c1a5c025aad6d8f9fd8989bf9eeba3ba90129f00"
+    }
+  ],
+  "catalogHash": "0e487b72fb2051be3457db2160d29264430fb7e360edf935f2ce75595bc875fb"
+}

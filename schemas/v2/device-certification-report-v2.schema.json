@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/device-certification-report-v2.schema.json",
+  "title": "DNA Pa800 Device Certification Report v2",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "status", "certified", "issues", "captureHash", "operatorApprovedHash", "verifiedEvidence", "exactStyleBindingCount", "confirmedArticulationEngines", "unsupportedArticulationEngines", "unknownArticulationEngines", "machineObservedPhysicalDevice", "humanOperatorAttested", "finalCertifiedMidiExportAllowed", "reportHash"],
+  "properties": {
+    "schema": {"const": "dna-pa800-device-certification-report"}, "version": {"const": "2.0"},
+    "date": {"type": "string", "format": "date"},
+    "status": {"enum": ["WAITING_FOR_DEVICE", "DEVICE_TEST_FAILED", "PA800_DEVICE_CERTIFIED"]},
+    "certified": {"type": "boolean"}, "issues": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "captureHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "operatorApprovedHash": {"type": "string", "pattern": "^$|^[0-9a-f]{64}$"},
+    "verifiedEvidence": {"type": "array", "items": {"type": "object"}},
+    "exactStyleBindingCount": {"type": "integer", "minimum": 0, "maximum": 8},
+    "confirmedArticulationEngines": {"type": "array", "uniqueItems": true, "items": {"enum": ["GUITAR", "RX", "DNC"]}},
+    "unsupportedArticulationEngines": {"type": "array", "uniqueItems": true, "items": {"enum": ["GUITAR", "RX", "DNC"]}},
+    "unknownArticulationEngines": {"type": "array", "uniqueItems": true, "items": {"enum": ["GUITAR", "RX", "DNC"]}},
+    "machineObservedPhysicalDevice": {"const": false}, "humanOperatorAttested": {"type": "boolean"},
+    "finalCertifiedMidiExportAllowed": {"const": false},
+    "reportHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

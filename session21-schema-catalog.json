@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session21-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "arrangement-graph-v2.schema.json",
+      "$id": "https://dna.local/schemas/premium/arrangement-graph-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "f71c73acf313f9e502daa53ec38ad74bb163ee96acf7ca0af17fd62d8f540433"
+    }
+  ],
+  "catalogHash": "9bb9cd86dfea7221c6a33f8d239e04ee76563cc6693c8c2feed37656b1da71e5"
+}

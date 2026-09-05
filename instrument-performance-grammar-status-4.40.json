@@ -1,0 +1,462 @@
+{
+  "schema": "dna-instrument-performance-grammar-status",
+  "version": "4.40.0",
+  "result": "software-pass",
+  "roles": [
+    "accordion",
+    "bass",
+    "brass",
+    "choir",
+    "drums",
+    "echo",
+    "organ",
+    "percussion",
+    "piano",
+    "power-riff",
+    "rhythm-guitar",
+    "sax",
+    "solo",
+    "strings",
+    "terca",
+    "woodwind"
+  ],
+  "roleCount": 16,
+  "phraseStates": [
+    "ENTRY",
+    "BODY",
+    "BUILD",
+    "TRANSITION",
+    "CADENCE"
+  ],
+  "examples": {
+    "bass": [
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "bass",
+        "playerModel": "bassist",
+        "state": "ENTRY",
+        "preferred": [
+          "root",
+          "fifth",
+          "pickup"
+        ],
+        "avoid": [
+          "random-register-jump"
+        ],
+        "energy": 0.555,
+        "densityBias": 0.0,
+        "gateBias": 0.05,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "chord-root",
+          "kick-pocket"
+        ],
+        "dependencies": [
+          "kick",
+          "chord",
+          "next-chord"
+        ],
+        "hardBoundaries": [
+          "NO_UNVERIFIED_SLAP_TRIGGER",
+          "FACTORY_VELOCITY_ONLY"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "bass",
+        "playerModel": "bassist",
+        "state": "BODY",
+        "preferred": [
+          "root",
+          "fifth",
+          "third",
+          "passing",
+          "kick-pocket"
+        ],
+        "avoid": [
+          "constant-octave-jump"
+        ],
+        "energy": 0.62,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "chord-root",
+          "kick-pocket"
+        ],
+        "dependencies": [
+          "kick",
+          "chord",
+          "next-chord"
+        ],
+        "hardBoundaries": [
+          "NO_UNVERIFIED_SLAP_TRIGGER",
+          "FACTORY_VELOCITY_ONLY"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "bass",
+        "playerModel": "bassist",
+        "state": "BUILD",
+        "preferred": [
+          "octave",
+          "approach",
+          "pickup",
+          "slap-candidate"
+        ],
+        "avoid": [
+          "root-only-stasis"
+        ],
+        "energy": 0.75,
+        "densityBias": 0.1,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 1,
+        "anchors": [
+          "chord-root",
+          "kick-pocket"
+        ],
+        "dependencies": [
+          "kick",
+          "chord",
+          "next-chord"
+        ],
+        "hardBoundaries": [
+          "NO_UNVERIFIED_SLAP_TRIGGER",
+          "FACTORY_VELOCITY_ONLY"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "bass",
+        "playerModel": "bassist",
+        "state": "TRANSITION",
+        "preferred": [
+          "chromatic-approach",
+          "pickup",
+          "octave",
+          "slide-candidate"
+        ],
+        "avoid": [
+          "late-target"
+        ],
+        "energy": 0.7955,
+        "densityBias": 0.12,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "chord-root",
+          "kick-pocket"
+        ],
+        "dependencies": [
+          "kick",
+          "chord",
+          "next-chord"
+        ],
+        "hardBoundaries": [
+          "NO_UNVERIFIED_SLAP_TRIGGER",
+          "FACTORY_VELOCITY_ONLY"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      }
+    ],
+    "solo": [
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "solo",
+        "playerModel": "lead instrumentalist",
+        "state": "ENTRY",
+        "preferred": [
+          "pickup",
+          "grace",
+          "clean-anchor"
+        ],
+        "avoid": [
+          "ornament-stack"
+        ],
+        "energy": 0.5395,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "main-melody",
+          "phrase-anchor"
+        ],
+        "dependencies": [
+          "chord",
+          "phrase",
+          "section"
+        ],
+        "hardBoundaries": [
+          "PRESERVE_MAIN_MELODY",
+          "EXACT_SOUND_PROFILE_FOR_DEVICE_ARTICULATION"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "solo",
+        "playerModel": "lead instrumentalist",
+        "state": "BODY",
+        "preferred": [
+          "legato",
+          "neighbor",
+          "passing",
+          "repeat-variation"
+        ],
+        "avoid": [
+          "ornament-every-note"
+        ],
+        "energy": 0.6045,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "main-melody",
+          "phrase-anchor"
+        ],
+        "dependencies": [
+          "chord",
+          "phrase",
+          "section"
+        ],
+        "hardBoundaries": [
+          "PRESERVE_MAIN_MELODY",
+          "EXACT_SOUND_PROFILE_FOR_DEVICE_ARTICULATION"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "solo",
+        "playerModel": "lead instrumentalist",
+        "state": "BUILD",
+        "preferred": [
+          "trill",
+          "slide-candidate",
+          "register-lift",
+          "expression-swell"
+        ],
+        "avoid": [
+          "melody-rewrite"
+        ],
+        "energy": 0.7475,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 1,
+        "anchors": [
+          "main-melody",
+          "phrase-anchor"
+        ],
+        "dependencies": [
+          "chord",
+          "phrase",
+          "section"
+        ],
+        "hardBoundaries": [
+          "PRESERVE_MAIN_MELODY",
+          "EXACT_SOUND_PROFILE_FOR_DEVICE_ARTICULATION"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "solo",
+        "playerModel": "lead instrumentalist",
+        "state": "CADENCE",
+        "preferred": [
+          "cadence",
+          "trill-release",
+          "grace-resolution",
+          "long-tone"
+        ],
+        "avoid": [
+          "post-cadence-run"
+        ],
+        "energy": 0.585,
+        "densityBias": -0.12,
+        "gateBias": 0.12,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "main-melody",
+          "phrase-anchor"
+        ],
+        "dependencies": [
+          "chord",
+          "phrase",
+          "section"
+        ],
+        "hardBoundaries": [
+          "PRESERVE_MAIN_MELODY",
+          "EXACT_SOUND_PROFILE_FOR_DEVICE_ARTICULATION"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      }
+    ],
+    "brass": [
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "brass",
+        "playerModel": "brass arranger",
+        "state": "ENTRY",
+        "preferred": [
+          "stab",
+          "unison-hit",
+          "octave-hit"
+        ],
+        "avoid": [
+          "continuous-block"
+        ],
+        "energy": 0.648,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "attack-space"
+        ],
+        "dependencies": [
+          "chord",
+          "lead",
+          "section"
+        ],
+        "hardBoundaries": [
+          "EXACT_SOUND_PROFILE_FOR_FALL_GROWL"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "brass",
+        "playerModel": "brass arranger",
+        "state": "BODY",
+        "preferred": [
+          "answer",
+          "stab",
+          "sustain-with-space"
+        ],
+        "avoid": [
+          "endless-sustain"
+        ],
+        "energy": 0.622,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "attack-space"
+        ],
+        "dependencies": [
+          "chord",
+          "lead",
+          "section"
+        ],
+        "hardBoundaries": [
+          "EXACT_SOUND_PROFILE_FOR_FALL_GROWL"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "brass",
+        "playerModel": "brass arranger",
+        "state": "BUILD",
+        "preferred": [
+          "rising-answer",
+          "octave-hit",
+          "strong-stab"
+        ],
+        "avoid": [
+          "dense-every-beat"
+        ],
+        "energy": 0.765,
+        "densityBias": 0.05,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 1,
+        "anchors": [
+          "attack-space"
+        ],
+        "dependencies": [
+          "chord",
+          "lead",
+          "section"
+        ],
+        "hardBoundaries": [
+          "EXACT_SOUND_PROFILE_FOR_FALL_GROWL"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      {
+        "schema": "dna-instrument-performance-intent",
+        "version": "2.0",
+        "role": "brass",
+        "playerModel": "brass arranger",
+        "state": "TRANSITION",
+        "preferred": [
+          "accent-hit",
+          "answer",
+          "fall-candidate"
+        ],
+        "avoid": [
+          "fall-every-note"
+        ],
+        "energy": 0.817,
+        "densityBias": 0.0,
+        "gateBias": 0.0,
+        "registerBiasOctaves": 0,
+        "anchors": [
+          "attack-space"
+        ],
+        "dependencies": [
+          "chord",
+          "lead",
+          "section"
+        ],
+        "hardBoundaries": [
+          "EXACT_SOUND_PROFILE_FOR_FALL_GROWL"
+        ],
+        "deviceArticulationPolicy": "SEMANTIC_ONLY_UNTIL_EXACT_SOUND_PROFILE",
+        "velocityAuthority": "FACTORY_ONLY"
+      }
+    ]
+  },
+  "hardBoundaries": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "deviceArticulation": "EXACT_SOUND_PROFILE_REQUIRED",
+    "coreInvariants": "MANDATORY",
+    "densityGateRegister": "SOFT_MUSICAL_EVIDENCE"
+  },
+  "tests": {
+    "grammarBehaviorEvidenceCalibration": "32 PASS",
+    "performanceDNA": "6 PASS",
+    "trackReplacement": "5 PASS",
+    "continuity": "8 PASS",
+    "soloTercaEchoGrammar": "49 PASS",
+    "productionEvidenceSessions": "315 PASS + 4 subtests",
+    "moduleImports": "101/101 PASS"
+  },
+  "deviceValidation": "PENDING_PHYSICAL_PA800"
+}

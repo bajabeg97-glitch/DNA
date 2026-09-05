@@ -1,0 +1,80 @@
+{
+  "schema": "dna-session30-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "preview-release-candidate-manifest-migration-performance-memory-path-rollback-and-honest-external-gates",
+  "formalSuite": {
+    "testsRun": 128,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session30-benchmark-report.json",
+    "softwareContentHash": "6ed3d22093e47996cca8693268b28df016253c05b11f69bcc802e8fe027041ce",
+    "releaseReadinessHash": "34fc428690c3080571b37a13e32492920a5899cf82a945a2708f2af684048fd2",
+    "manifestApplicationFiles": 111,
+    "manifestRegistryFiles": 5,
+    "manifestContractFiles": 63,
+    "analysis25000Seconds": 3.742566,
+    "globalPlanSeconds": 0.001332,
+    "partialRegenerationSeconds": 0.474607,
+    "migrationPeakBytes": 3343577,
+    "statusEntryCount": 17,
+    "openSeverity1Defects": 0,
+    "openSeverity2Defects": 0,
+    "verifiedHumanEvaluators": 0,
+    "requiredHumanEvaluators": 2,
+    "softwareReleaseCandidateReady": true,
+    "finalPremiumReleaseAllowed": false,
+    "finalMidiExportAllowed": false,
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "benchmarkHash": "58adf044ca4e0ef000fd423c83452cc49eb8a042bfe31571ceacacc6eca8e5c2"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session30-reference.mid",
+    "legacyProject": "artifacts/session30-legacy-project.json",
+    "projectMigration": "artifacts/session30-project-migration.json",
+    "migratedProject": "artifacts/session30-migrated-project.dnaproject.json",
+    "softwareManifest": "artifacts/session30-software-manifest.json",
+    "statusMatrix": "artifacts/session30-release-status-matrix.json",
+    "releaseReadiness": "artifacts/session30-release-readiness.json",
+    "hardeningReport": "data/session30-hardening-report.json",
+    "schemaCatalog": "data/session30-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session30_release_readiness.py",
+    "api": "/api/premium-release-readiness",
+    "guiWorkspace": "AI PREMIUM RELEASE READINESS 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "sourceProjectUnchanged": true,
+    "originalProjectOverwriteAllowed": false,
+    "midiEmbeddedInProject": false,
+    "audioEmbeddedInProject": false,
+    "offlineCore": true,
+    "thirdPartyRuntimeDependencies": 0,
+    "contentSealIsIdentitySignature": false,
+    "openSeverity1Defects": 0,
+    "openSeverity2Defects": 0,
+    "finalMidiExportAllowed": false,
+    "finalPremiumProductNameAllowed": false,
+    "previewProductNameAllowed": true,
+    "physicalCertificationClaimed": false,
+    "validatorBypassAllowed": false,
+    "qualityGateBypassAllowed": false,
+    "deviceGateBypassAllowed": false
+  },
+  "status": {
+    "session30ReleaseReadiness": "SOFTWARE_VALIDATED / PREVIEW_RC_EXTERNAL_GATES_BLOCKED",
+    "activeSoftwareBaseline": "4.8-release-candidate-preview",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "aiPremiumArranger": "BLOCKED_EXTERNAL_GATES",
+    "finalMidiExport": "BLOCKED",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "expressionEvidence": "PRODUCTION_EVIDENCE_BLOCKED",
+    "articulationEvidence": "DEVICE_CAPTURE_BLOCKED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

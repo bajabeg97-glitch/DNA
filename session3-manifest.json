@@ -1,0 +1,160 @@
+{
+  "schema": "dna-session3-harmonic-plan",
+  "version": "1.0",
+  "decision": "REPLACE",
+  "reason": "Relative GOLD functions mapped through chords and Factory constraints",
+  "inputHash": "10df26f503fd1f9549c55cfc5af04f13c14cd85887e947bf2ac013e784575291",
+  "selectionHash": "f645a3341fb4aebecf2aebae0887e0b44f6090741b2f7e0ffd8ea0c33e70f49c",
+  "seed": 803,
+  "role": "bass",
+  "channel": 9,
+  "section": "variation",
+  "window": [
+    1920,
+    5760
+  ],
+  "profileId": "120.008.001",
+  "patternId": "220.010.001",
+  "relationshipId": "230.001.001",
+  "selectedDrumPatternId": "210.010.001",
+  "candidateIds": [
+    "220.010.001"
+  ],
+  "removedNotes": 2,
+  "generatedNotes": 12,
+  "collisionShifts": 1,
+  "collisionDrops": 0,
+  "maxVoiceLeadingLeap": 8,
+  "chordCellsUsed": [
+    {
+      "start": 1920,
+      "end": 3840,
+      "rootPc": 0,
+      "quality": "major"
+    },
+    {
+      "start": 3840,
+      "end": 5760,
+      "rootPc": 9,
+      "quality": "minor"
+    }
+  ],
+  "manualBassProtected": false,
+  "goldContainsAbsolutePitch": false,
+  "goldAffectsVelocity": false,
+  "goldAffectsProgramChange": false,
+  "notes": [
+    {
+      "tick": 1920,
+      "duration": 360,
+      "note": 48,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:none"
+    },
+    {
+      "tick": 2400,
+      "duration": 300,
+      "note": 43,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:5:none"
+    },
+    {
+      "tick": 2880,
+      "duration": 360,
+      "note": 48,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:none"
+    },
+    {
+      "tick": 3240,
+      "duration": 100,
+      "note": 52,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:3:none"
+    },
+    {
+      "tick": 3360,
+      "duration": 300,
+      "note": 55,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:5:none"
+    },
+    {
+      "tick": 3720,
+      "duration": 100,
+      "note": 47,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:chromatic-below"
+    },
+    {
+      "tick": 3840,
+      "duration": 360,
+      "note": 45,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:none"
+    },
+    {
+      "tick": 4320,
+      "duration": 300,
+      "note": 40,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:5:none"
+    },
+    {
+      "tick": 4800,
+      "duration": 360,
+      "note": 45,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:none"
+    },
+    {
+      "tick": 5160,
+      "duration": 100,
+      "note": 48,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:3:none"
+    },
+    {
+      "tick": 5280,
+      "duration": 300,
+      "note": 52,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "scale:5:none"
+    },
+    {
+      "tick": 5640,
+      "duration": 100,
+      "note": 44,
+      "velocity": 76,
+      "factoryProfileId": "120.008.001",
+      "goldPatternId": "220.010.001",
+      "function": "root:1:chromatic-below"
+    }
+  ],
+  "applied": true,
+  "outputHash": "ca2aabba480d10fe3beeae4e627f0c5b23a56f555b87b5b8d7a364dafaba8d97",
+  "programChangePreserved": true,
+  "notePairingValid": true
+}

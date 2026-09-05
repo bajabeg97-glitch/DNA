@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session34-coherence-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "variantMidiSha256": {
+    "A": "29531d1cff32088c81ebabd4f4178d8c0aea28a36407681f4d6bba631242c6a7",
+    "B": "8ea031decafdb831272ac2dca42f728da1ebc788b4fdbf4db851f803b28f336e",
+    "C": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241"
+  },
+  "operationCounts": {
+    "A": 2,
+    "B": 13,
+    "C": 17
+  },
+  "noteCounts": {
+    "A": 1400,
+    "B": 1400,
+    "C": 1400
+  },
+  "peaks": {
+    "A": 14,
+    "B": 14,
+    "C": 14
+  },
+  "passed": true
+}

@@ -1,0 +1,31 @@
+{
+  "task_id": "session8.release-demo",
+  "owner": "codex-lead-engineer",
+  "exclusive_files": [
+    "artifacts/session8-manifest.json"
+  ],
+  "input_hashes": {
+    "teamContract": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "offlineCore": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  "dependencies": [
+    "offline-core",
+    "independent-validator"
+  ],
+  "requested_behavior": "Prove bounded local orchestration, approval and validator authority without allowing an agent or cloud service to write MIDI.",
+  "exclusions": [
+    "write-final-midi",
+    "bypass-validator",
+    "send-midi-to-cloud",
+    "store-api-key"
+  ],
+  "acceptance_tests": [
+    "allowed-handoffs-only",
+    "hash-chained-trace",
+    "explicit-human-approval",
+    "independent-validator-pass",
+    "offline-cloud-fallback"
+  ],
+  "acceptance_command": "py session8_release_check.py",
+  "action": "export-to-device"
+}

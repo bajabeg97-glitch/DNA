@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/rendered-fragment-v1.schema.json",
+  "title": "RenderedFragment 1.0",
+  "type": "object",
+  "required": ["schema", "version", "fragmentId", "requestId", "marker", "role", "channelNumber", "input", "noteCount", "outputEventHash", "fragmentRenderHash"],
+  "properties": {
+    "schema": {"const": "dna-rendered-fragment"},
+    "version": {"const": "1.0"},
+    "fragmentId": {"type": "string"},
+    "requestId": {"type": "string"},
+    "marker": {"type": "string", "pattern": "^(i[12]|v[1-4]|f[12]|e[12])cv1$"},
+    "role": {"type": "string"},
+    "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16},
+    "input": {"type": "object"},
+    "noteCount": {"type": "integer", "minimum": 0},
+    "outputEventHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "fragmentRenderHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true,
+  "x-contract-version": "1.0"
+}

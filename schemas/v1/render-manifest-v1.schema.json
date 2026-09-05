@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/render-manifest-v1.schema.json",
+  "title": "DNA Premium RenderManifest v1",
+  "type": "object",
+  "x-contract-version": "1.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "inputSha256", "outputSha256", "configHash", "databaseHashes", "seed", "selectedPatterns", "interventions", "validation", "authority"],
+  "properties": {
+    "schema": {"const": "dna-premium-render-manifest"},
+    "version": {"const": "1.0"},
+    "inputSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "outputSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "configHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "databaseHashes": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+    "selectedPatterns": {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"}},
+    "interventions": {"type": "array", "items": {"type": "object", "required": ["stage", "reason"], "properties": {"stage": {"type": "string"}, "reason": {"type": "string"}}, "additionalProperties": true}},
+    "validation": {"type": "object", "required": ["passed", "verifier"], "properties": {"passed": {"type": "boolean"}, "verifier": {"type": "string", "minLength": 1}}, "additionalProperties": true},
+    "authority": {"type": "object", "additionalProperties": false, "required": ["factoryControlsDynamics", "goldControlsDynamics", "aiWritesFinalMidi", "validatorBypassAllowed"], "properties": {"factoryControlsDynamics": {"const": true}, "goldControlsDynamics": {"const": false}, "aiWritesFinalMidi": {"const": false}, "validatorBypassAllowed": {"const": false}}}
+  }
+}

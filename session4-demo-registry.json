@@ -1,0 +1,121 @@
+{
+  "schema": "dna-session4-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic Factory evidence and control map for software tests only; not a Pa800 trigger claim.",
+  "factoryProfiles": [
+    {
+      "id": "130.011.001",
+      "program": 29,
+      "tuning": [40, 45, 50, 55, 59, 64],
+      "fretMin": 0,
+      "fretMax": 12,
+      "maxFretSpan": 4,
+      "registerMin": 45,
+      "registerMax": 76,
+      "floor": 39,
+      "soft": 50,
+      "lowMid": 62,
+      "optimal": 76,
+      "highMid": 90,
+      "strong": 104,
+      "ceiling": 118,
+      "controlMapId": "130.900.001"
+    }
+  ],
+  "factoryPatterns": [
+    {
+      "id": "130.100.001",
+      "profileId": "130.011.001",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.97,
+      "sourceIds": ["131.001.001", "131.001.002"],
+      "strokes": [
+        {
+          "tick": 0,
+          "direction": "down",
+          "strings": [1, 2, 3, 4],
+          "chordTones": [0, 2, 0, 1],
+          "offsets": [0, 12, 24, 36],
+          "gateTicks": 360
+        },
+        {
+          "tick": 480,
+          "direction": "up",
+          "strings": [1, 2, 3, 4],
+          "chordTones": [0, 2, 0, 1],
+          "offsets": [36, 24, 12, 0],
+          "gateTicks": 300
+        },
+        {
+          "tick": 960,
+          "direction": "mute",
+          "strings": [],
+          "chordTones": [],
+          "offsets": [],
+          "gateTicks": 30,
+          "controlAction": "mute"
+        },
+        {
+          "tick": 1200,
+          "direction": "block",
+          "strings": [1, 2, 3, 4],
+          "chordTones": [0, 2, 0, 1],
+          "offsets": [0, 0, 0, 0],
+          "gateTicks": 300
+        },
+        {
+          "tick": 1440,
+          "direction": "up",
+          "strings": [1, 2, 3, 4],
+          "chordTones": [0, 2, 0, 1],
+          "offsets": [36, 24, 12, 0],
+          "gateTicks": 300
+        },
+        {
+          "tick": 1800,
+          "direction": "stop",
+          "strings": [],
+          "chordTones": [],
+          "offsets": [],
+          "gateTicks": 30,
+          "controlAction": "stop"
+        }
+      ]
+    },
+    {
+      "id": "130.100.002",
+      "profileId": "130.011.001",
+      "section": "generic",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.70,
+      "sourceIds": ["131.002.001"],
+      "strokes": [
+        {
+          "tick": 0,
+          "direction": "block",
+          "strings": [1, 2, 3, 4],
+          "chordTones": [0, 2, 0, 1],
+          "offsets": [0, 0, 0, 0],
+          "gateTicks": 420
+        }
+      ]
+    }
+  ],
+  "controlMaps": [
+    {
+      "id": "130.900.001",
+      "version": "fixture-1",
+      "source": "synthetic-test",
+      "evidence": "Session 4 negative/positive software fixture; not production Korg evidence",
+      "confirmed": true,
+      "program": 29,
+      "actions": {
+        "mute": {"note": 24, "durationTicks": 30},
+        "stop": {"note": 25, "durationTicks": 30}
+      }
+    }
+  ]
+}

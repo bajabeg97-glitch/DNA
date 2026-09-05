@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/project-migration-report-v1.schema.json",
+  "title": "DNA MIDI Studio Project Migration Report 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "migrationDate", "source", "output", "preservation", "safety", "migratedProject", "migrationHash"],
+  "properties": {
+    "schema": {"const": "dna-project-migration-report"},
+    "version": {"const": "1.0"},
+    "migrationDate": {"type": "string", "format": "date"},
+    "source": {"type": "object"},
+    "output": {"type": "object"},
+    "preservation": {"type": "object"},
+    "safety": {"type": "object"},
+    "migratedProject": {"type": "object"},
+    "migrationHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-authority": "non-destructive-local-project-migration"
+}

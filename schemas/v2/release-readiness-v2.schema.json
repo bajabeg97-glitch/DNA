@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/release-readiness-v2.schema.json",
+  "title": "DNA MIDI Studio Release Readiness 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "releaseId", "releaseDate", "targetBaseline", "sources", "evidence", "quality", "defects", "gates", "safety", "readinessHash"],
+  "properties": {
+    "schema": {"const": "dna-ai-premium-release-readiness"},
+    "version": {"const": "2.0"},
+    "releaseId": {"type": "string", "pattern": "^preview-rc-[0-9a-f]{20}$"},
+    "releaseDate": {"type": "string", "format": "date"},
+    "targetBaseline": {"const": "4.8-release-candidate-preview"},
+    "sources": {"type": "array", "minItems": 9, "items": {"type": "object"}},
+    "evidence": {"type": "object"},
+    "quality": {"type": "object"},
+    "defects": {"type": "object"},
+    "gates": {"type": "object"},
+    "safety": {"type": "object"},
+    "readinessHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "2.0",
+  "x-authority": "read-only-software-preview-release-gate"
+}

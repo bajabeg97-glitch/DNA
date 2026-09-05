@@ -1,0 +1,8 @@
+{
+  "schema": "dna-premium-groove-plan",
+  "version": "2.0",
+  "groovePlanHash": "0f437631eb9c1939fddf7f164b108abcd0276fef07ebe55bcced224aa546b3aa",
+  "audit": {
+    "maximumPeakAfterSimplification": 14
+  }
+}

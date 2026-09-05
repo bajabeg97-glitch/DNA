@@ -1,0 +1,45 @@
+{
+  "schema": "dna-neural-learning-dataset",
+  "version": "1.0",
+  "samples": 15837,
+  "train": 12669,
+  "validation": 1584,
+  "holdout": 1584,
+  "feature_names": [
+    "density",
+    "register_span",
+    "register_center",
+    "median_gate",
+    "syncopation",
+    "starts_with_rest",
+    "ends_with_space",
+    "occurrence_log",
+    "confidence",
+    "quality",
+    "event_count_log",
+    "tempo_center",
+    "tempo_span",
+    "length_bars"
+  ],
+  "authority": {
+    "factory_velocity_only": true,
+    "gold_velocity_features_forbidden": true,
+    "ai_may_change_harmony": false,
+    "ai_may_change_form": false,
+    "ai_may_change_tempo_map": false,
+    "ai_may_change_meter": false,
+    "ai_may_change_lyrics": false,
+    "ai_may_rank_patterns": true,
+    "ai_may_predict_defects": true,
+    "ai_may_predict_timing": true,
+    "ai_may_predict_gate": true,
+    "ai_may_predict_articulation": true,
+    "ai_may_infill_masked_regions": true,
+    "ai_requires_hard_validation": true
+  },
+  "source_hashes": {
+    "gold": "b41ad979e0a4a91dd27a40181b0cb94c4ceddbfe2f718e6fdf744b434369d4e7",
+    "factoryStrumming": "ccc65c0abce165ad460b6ec1d43d327009b90eb8ebc545489df53f1fef367308"
+  },
+  "dataset_hash": "084e5e2dc90bd5447a9c5a2d13940cdfa2e4b36e23b7df12423a816c7bd8af4e"
+}

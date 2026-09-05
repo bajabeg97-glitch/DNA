@@ -1,0 +1,89 @@
+{
+  "schema": "dna-session27-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "technical-quality-metrics-blind-listening-protocol-human-evidence-gate-and-regression-vault",
+  "formalSuite": {
+    "testsRun": 104,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session27-benchmark-report.json",
+    "automatedOverallScore": 4.543,
+    "automatedMetrics": {
+      "harmony": 5.0,
+      "groove": 4.781,
+      "registerCollision": 5.0,
+      "densityCurve": 3.55,
+      "transitionContinuity": 4.25,
+      "repetition": 3.929,
+      "endingResolution": 4.8
+    },
+    "technicalGatePassed": true,
+    "automatedGatePassed": true,
+    "blindTrialCount": 2,
+    "verifiedHumanEvaluatorCount": 0,
+    "softwareTestResponseCount": 1,
+    "premiumPreferenceRate": null,
+    "releaseQualityGatePassed": false,
+    "releaseQualityGateBlockers": [
+      "TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED",
+      "HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+      "PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING"
+    ],
+    "regressionVaultClear": true,
+    "benchmarkHash": "21e90f4947eaf3a9169dbba1d723c8cd266b5a3f829e97a52c852a53dc07d362"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session27-reference.mid",
+    "songMap": "artifacts/session27-song-map.json",
+    "previewSession": "artifacts/session27-preview-session.json",
+    "audioManifests": "artifacts/session27-audio-manifests.json",
+    "baselineReference": "artifacts/session27-baseline-reference.json",
+    "blindListeningPackage": "artifacts/session27-blind-listening-package.json",
+    "privateListeningKey": "artifacts/session27-private-listening-key.json",
+    "softwareTestResponse": "artifacts/session27-software-test-response.json",
+    "qualityRegressionVault": "artifacts/session27-quality-regression-vault.json",
+    "blockingRegressionExample": "artifacts/session27-blocking-regression-example.json",
+    "controls": "artifacts/session27-quality-controls.json",
+    "evaluationReport": "artifacts/session27-evaluation-report.json",
+    "variantAProxyWav": "artifacts/session27-variant-a-proxy.wav",
+    "variantBProxyWav": "artifacts/session27-variant-b-proxy.wav",
+    "variantCProxyWav": "artifacts/session27-variant-c-proxy.wav",
+    "schemaCatalog": "data/session27-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session27_quality_evaluator.py",
+    "api": "/api/premium-quality-evaluator",
+    "guiWorkspace": "MUSIC QUALITY EVALUATOR 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "hardTechnicalAndSubjectiveSeparated": true,
+    "sevenAutomatedMetrics": true,
+    "baselineFrozenBeforeResults": true,
+    "blindLabelsHideVariantIdentity": true,
+    "privateKeySeparated": true,
+    "minimumIndependentHumanEvaluators": 2,
+    "minimumHumanOverallMedian": 4.0,
+    "minimumPremiumPreferenceRate": 0.7,
+    "softwareResponseCountsAsHuman": false,
+    "proxyAudioCountsAsHuman": false,
+    "openBaselineBetterRegressionBlocks": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false,
+    "session16CertAuthorityPreserved": true
+  },
+  "status": {
+    "session27MusicQualityEvaluator": "SOFTWARE_VALIDATED / HUMAN_LISTENING_PENDING",
+    "activeSoftwareBaseline": "4.5-quality-alpha",
+    "automatedQuality": "PASS",
+    "releaseQualityGate": "BLOCKED_HUMAN_LISTENING",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

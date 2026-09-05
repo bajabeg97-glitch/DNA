@@ -1,0 +1,273 @@
+{
+  "schema": "dna-session2-reconstruction-plan",
+  "version": "1.0",
+  "decision": "REPLACE",
+  "reason": "Compatible section-aware GOLD pattern with complete Factory dynamics",
+  "inputHash": "91b1dcccd143690414f2d6fe8b2863645392e872995031b2532d7c7582eb7f26",
+  "selectionHash": "4edb27400f331155bbd77f3257e007734eb8d1e18b3d622d99278e21a14add55",
+  "seed": 800,
+  "role": "drums",
+  "channel": 10,
+  "section": "variation",
+  "window": [
+    1920,
+    5760
+  ],
+  "patternId": "210.010.001",
+  "candidateIds": [
+    "210.010.001"
+  ],
+  "removedNotes": 4,
+  "generatedNotes": 26,
+  "rejectedByBudget": 0,
+  "continuityScore": 0.3333333333333333,
+  "factoryProfileIds": [
+    "110.036.001",
+    "110.038.001",
+    "110.042.001",
+    "110.049.001"
+  ],
+  "goldAffectsVelocity": false,
+  "goldAffectsProgramChange": false,
+  "kitProgramExpected": 0,
+  "notes": [
+    {
+      "tick": 1920,
+      "duration": 100,
+      "note": 36,
+      "velocity": 78,
+      "element": "kick",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.036.001"
+    },
+    {
+      "tick": 1920,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 1920,
+      "duration": 180,
+      "note": 49,
+      "velocity": 74,
+      "element": "cymbal",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.049.001"
+    },
+    {
+      "tick": 2160,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 2400,
+      "duration": 100,
+      "note": 38,
+      "velocity": 80,
+      "element": "snare",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.038.001"
+    },
+    {
+      "tick": 2400,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 2640,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 2880,
+      "duration": 100,
+      "note": 36,
+      "velocity": 78,
+      "element": "kick",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.036.001"
+    },
+    {
+      "tick": 2880,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 3120,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 3360,
+      "duration": 100,
+      "note": 38,
+      "velocity": 80,
+      "element": "snare",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.038.001"
+    },
+    {
+      "tick": 3360,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 3600,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 3840,
+      "duration": 100,
+      "note": 36,
+      "velocity": 78,
+      "element": "kick",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.036.001"
+    },
+    {
+      "tick": 3840,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 3840,
+      "duration": 180,
+      "note": 49,
+      "velocity": 74,
+      "element": "cymbal",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.049.001"
+    },
+    {
+      "tick": 4080,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 4320,
+      "duration": 100,
+      "note": 38,
+      "velocity": 80,
+      "element": "snare",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.038.001"
+    },
+    {
+      "tick": 4320,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 4560,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 4800,
+      "duration": 100,
+      "note": 36,
+      "velocity": 78,
+      "element": "kick",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.036.001"
+    },
+    {
+      "tick": 4800,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 5040,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 5280,
+      "duration": 100,
+      "note": 38,
+      "velocity": 80,
+      "element": "snare",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.038.001"
+    },
+    {
+      "tick": 5280,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    },
+    {
+      "tick": 5520,
+      "duration": 80,
+      "note": 42,
+      "velocity": 61,
+      "element": "hat",
+      "goldPatternId": "210.010.001",
+      "factoryProfileId": "110.042.001"
+    }
+  ],
+  "applied": true,
+  "outputHash": "568ccf91b25ea509e43c6d607ddb26039a55a30433f276ec3eb9e89a1de2b180",
+  "programChangePreserved": true,
+  "notePairingValid": true
+}

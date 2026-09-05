@@ -1,0 +1,36 @@
+{
+  "schema": "dna-hybrid-rhythm-guitar-authority",
+  "version": "4.46.0",
+  "factory": {
+    "strumPatterns": 2919,
+    "authority": [
+      "STRUM_SEMANTICS",
+      "DOWN_UP_BLOCK",
+      "DEVICE_SAFE_REFERENCE",
+      "VELOCITY",
+      "SOUND_BINDING"
+    ]
+  },
+  "gold": {
+    "authority": [
+      "PHRASE_ENERGY",
+      "BALKAN_GROOVE",
+      "TIMING",
+      "GATE",
+      "MUTE_OPEN_DISTRIBUTION",
+      "TRANSITION_INTENSITY",
+      "PICKUP_BEHAVIOR"
+    ],
+    "velocityAuthority": false,
+    "bankProgramAuthority": false
+  },
+  "ai": {
+    "authority": [
+      "COMBINE",
+      "RANK",
+      "VARY"
+    ],
+    "hardDeviceAuthority": false
+  },
+  "status": "SOFTWARE_COMPLETE"
+}

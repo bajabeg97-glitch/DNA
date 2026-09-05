@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "profileId": "PA800_PROXY_V1",
+  "variants": [
+    "A",
+    "B",
+    "C"
+  ],
+  "loopSectionId": "sec-001",
+  "soloRoles": [],
+  "mutedRoles": [],
+  "targetRmsDbfs": -20.0,
+  "sampleRate": 12000,
+  "maxAudioSeconds": 4,
+  "masterGainDb": 0.0,
+  "externalAdapter": {
+    "schema": "dna-premium-audio-render-adapter",
+    "version": "1.0",
+    "mode": "DISABLED",
+    "rendererId": "builtin-proxy",
+    "executableSha256": null,
+    "soundfontSha256": null
+  }
+}

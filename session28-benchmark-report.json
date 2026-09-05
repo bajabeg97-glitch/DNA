@@ -1,0 +1,43 @@
+{
+  "schema": "dna-session28-workflow-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+  "workflowId": "workflow-4aae08a74e9f8bb027db",
+  "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+  "selectedVariantId": "C",
+  "stageCount": 8,
+  "completedStageCount": 7,
+  "blockedStageCount": 1,
+  "blockedStageIds": [
+    "EXPORT"
+  ],
+  "timelineItemCount": 10,
+  "trackMatrixRowCount": 4,
+  "explainDecisionCount": 52,
+  "backgroundJobCount": 8,
+  "commandPaletteCount": 10,
+  "baselineNoteCount": 118,
+  "premiumPreviewNoteCount": 179,
+  "addedPreviewNoteCount": 61,
+  "originalNotesChanged": 0,
+  "cc11PointCount": 16,
+  "soundBindingChanges": 0,
+  "automatedQualityScore": 4.088,
+  "verifiedHumanEvaluatorCount": 0,
+  "guidedWithoutTerminal": true,
+  "referencePreviewTaskComplete": true,
+  "advancedWorkflowReproducible": true,
+  "checkpointReadyToResume": true,
+  "finalExportAllowed": false,
+  "exportBlockers": [
+    "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+    "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+    "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+    "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+    "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+  ],
+  "softwareWorkflowPassed": true,
+  "benchmarkHash": "9ac08c8415fa0bfc9bf2b965bb6889482081b3114521571022096e354179a7f1"
+}

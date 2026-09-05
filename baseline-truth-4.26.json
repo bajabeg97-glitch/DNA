@@ -1,0 +1,42 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.26.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "autoregressiveEvent": {
+    "implemented": true,
+    "candidateSource": "FULL_SONG_AUTOREGRESSIVE_EVENT_V2",
+    "training": {
+      "schema": "dna-autoregressive-event-training",
+      "version": "2.0",
+      "epochs": 1,
+      "bestValidationLoss": 9.434279203414917,
+      "holdoutLoss": 10.203112125396729,
+      "history": [
+        {
+          "epoch": 1,
+          "trainLoss": 12.335265617370606,
+          "validationLoss": 9.434279203414917
+        }
+      ],
+      "trainSamples": 12747,
+      "validationSamples": 1766,
+      "holdoutSamples": 1737,
+      "velocityInput": false,
+      "velocityOutput": false
+    },
+    "velocityInput": false,
+    "velocityOutput": false
+  },
+  "tests": {
+    "targetedPassed": 53,
+    "targetedFailed": 0
+  },
+  "windowsSrcPathBootstrap": true,
+  "externalGates": [
+    "HUMAN_LISTENING",
+    "PA800_HARDWARE_CERTIFICATION"
+  ],
+  "notes": [
+    "AR V2 is an advisory candidate source; GOLD/Factory evidence and hard validators remain authoritative."
+  ]
+}

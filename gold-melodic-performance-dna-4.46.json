@@ -1,0 +1,103 @@
+{
+  "schema": "dna-gold-melodic-performance-registry",
+  "version": "4.46.0",
+  "authority": {
+    "sourceMidiOnly": true,
+    "optimizedMidiTrainingTruth": false,
+    "velocityIncluded": false,
+    "factoryVelocityAuthorityPreserved": true
+  },
+  "roles": {
+    "solo": {
+      "authority": "GOLD_SOURCE_SOLO_SEQUENCE",
+      "songs": 97,
+      "sequenceRows": 697,
+      "noteTokens": 61669,
+      "pitchMin": 44,
+      "pitchMax": 93,
+      "medianAbsoluteInterval": 2.0,
+      "velocityIncluded": false,
+      "replacementAuthority": "PRESERVE_MAIN_MELODY_REPAIR_VARIATION_ONLY",
+      "status": "SOFTWARE_COMPLETE"
+    },
+    "terca": {
+      "authority": "GOLD_RELATIONSHIP_DNA",
+      "samples": 31,
+      "train": 22,
+      "validation": 5,
+      "holdout": 4,
+      "medianInterval": 3.0,
+      "medianDelayQN": 0.0,
+      "medianDurationRatio": 1.0158730745315552,
+      "velocityIncluded": false,
+      "factoryVelocityAuthorityPreserved": true,
+      "status": "SOFTWARE_COMPLETE"
+    },
+    "echo": {
+      "authority": "GOLD_RELATIONSHIP_DNA",
+      "samples": 91,
+      "train": 62,
+      "validation": 14,
+      "holdout": 15,
+      "medianInterval": 0.0,
+      "medianDelayQN": 0.75,
+      "medianDurationRatio": 1.0158730745315552,
+      "velocityIncluded": false,
+      "factoryVelocityAuthorityPreserved": true,
+      "status": "SOFTWARE_COMPLETE"
+    }
+  },
+  "sourceManifest": {
+    "schema": "dna-solo-relationship-dataset",
+    "version": "1.0",
+    "samples": 122,
+    "songs": 97,
+    "train": 84,
+    "validation": 19,
+    "holdout": 19,
+    "thirds": 31,
+    "echoes": 91,
+    "feature_names": [
+      "source_note_log",
+      "aux_note_log",
+      "matched_ratio",
+      "source_density",
+      "aux_density",
+      "median_interval",
+      "interval_std",
+      "third_ratio",
+      "unison_ratio",
+      "median_delay_qn",
+      "delay_std_qn",
+      "median_duration_ratio",
+      "duration_ratio_std",
+      "register_delta",
+      "confidence",
+      "preserve_mode",
+      "ppq_log"
+    ],
+    "pair_columns": [
+      "interval_code",
+      "delay_bin",
+      "duration_bin",
+      "present"
+    ],
+    "source_hashes": {
+      "reportsDigest": "819c5e0fcffd22e2395a632512341b0eb727160f475f158081f43f475940d17f",
+      "midiCorpusDigest": "713a02f4202391e85670185ea1309fe1b05c5f64525f9a79ca2179300d240848"
+    },
+    "dataset_hash": "abdc89c30dbf0861fd1227ff4acafe2e475bfaa0adbe68d2bd685765b5dfdad7",
+    "authority": {
+      "sourceMidiOnly": true,
+      "optimizedMidiTrainingTruth": false,
+      "velocityFeature": false,
+      "velocityTarget": false,
+      "factoryVelocityAuthorityPreserved": true,
+      "songDisjointSplit": true
+    }
+  },
+  "sampleKinds": {
+    "echo": 91,
+    "third": 31
+  }
+}

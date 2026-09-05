@@ -1,0 +1,26 @@
+[
+  {
+    "eventId": "decision-accept-c-001",
+    "eventType": "ACCEPT_VARIANT",
+    "source": "USER_EXPLICIT",
+    "accepted": true,
+    "eventDate": "2026-09-03",
+    "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+    "variantId": "C",
+    "marker": null,
+    "role": null,
+    "patternId": null
+  },
+  {
+    "eventId": "decision-lock-v2-001",
+    "eventType": "LOCK_SELECTION",
+    "source": "USER_EXPLICIT",
+    "accepted": true,
+    "eventDate": "2026-09-03",
+    "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+    "variantId": "C",
+    "marker": "v2cv1",
+    "role": "drums",
+    "patternId": "080.792.087"
+  }
+]

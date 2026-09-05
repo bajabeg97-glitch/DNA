@@ -1,0 +1,19 @@
+{
+  "schema": "dna-autoregressive-event-training",
+  "version": "2.0",
+  "epochs": 1,
+  "bestValidationLoss": 9.434279203414917,
+  "holdoutLoss": 10.203112125396729,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 12.335265617370606,
+      "validationLoss": 9.434279203414917
+    }
+  ],
+  "trainSamples": 12747,
+  "validationSamples": 1766,
+  "holdoutSamples": 1737,
+  "velocityInput": false,
+  "velocityOutput": false
+}

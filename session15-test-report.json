@@ -1,0 +1,51 @@
+{
+  "schema": "dna-session15-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "ai-premium-3.17-plan-only-baseline",
+  "formalSuite": {
+    "testsRun": 20,
+    "failures": 0,
+    "errors": 0
+  },
+  "baseline": {
+    "path": "data/premium-baseline.json",
+    "baselineId": "premium-3.17-98a6d52a09ccc789",
+    "contentHash": "98a6d52a09ccc7899d6a56321c7b9aeb4fc041cd935183d43a90a474f7510ff5",
+    "frozenFiles": 24,
+    "referenceMidi": "premium/baseline/reference-style.mid"
+  },
+  "contracts": {
+    "catalog": "premium/schemas/catalog.json",
+    "count": 9,
+    "catalogHash": "4eff2ac2e7901c69dd86fc26bbc10daa001e7388ff4db074f5b999b57faa02ba"
+  },
+  "featureMatrix": {
+    "path": "data/premium-feature-matrix.json",
+    "sessions": [
+      15,
+      30
+    ],
+    "premiumProductStatus": "PLANNED"
+  },
+  "readOnlyPlan": {
+    "path": "artifacts/session15-read-only-plan.json",
+    "configHash": "127276ead232f5612fa219f7a46df854ccddd98d2e0e8ea8855fafdd599614b3",
+    "planHash": "2d86e1e1f2a72bdb813e0199f21a2fd5f4a53acb1793dd59f564d26e924d0011",
+    "midiMutationAllowed": false
+  },
+  "invariants": {
+    "goldAffectsDynamics": false,
+    "analysisVelocityUsed": false,
+    "aiWritesFinalMidi": false,
+    "validatorBypassAllowed": false,
+    "originalSoloMutationAllowed": false,
+    "plannedDoesNotMeanImplemented": true
+  },
+  "status": {
+    "session15PremiumBaseline": "SOFTWARE_VALIDATED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

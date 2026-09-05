@@ -2,6 +2,8 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Also in this repository:** `dna_midi_studio/` — the full **DNA MIDI Studio Pa800 4.47** Python project (AI arrangement, MAX orchestration, PA800 validation, session fixtures and reports) merged in from the `main` branch. See `dna-build-report.json`, `final-software-completion-4.46.json` and `max-orchestration-status-4.32.json` at the repo root.
+
 ## Features
 
 ### Core Functionality
@@ -172,3 +174,6 @@ Baja Beg - DNA Music Optimizer Team
 - Korg PA800 documentation for style format specifications
 - Standard MIDI File specification (RP-001)
 - Music theory algorithms based on established research
+=======
+# DNA
+>>>>>>> origin/main

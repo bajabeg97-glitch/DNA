@@ -1,1 +1,11 @@
-(public/manifest.json is a source/config file, not a build artifact or temporary file)
+# Web app (DNA Music Optimizer)
+node_modules
+dist
+build
+.next
+.env
+*.zip
+# public/manifest.json is a source/config file, not a build artifact or temporary file
+.venv
+__pycache__/
+*.pyc

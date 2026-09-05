@@ -1,0 +1,19 @@
+{
+  "schema": "dna-premium-workflow-resume",
+  "version": "1.0",
+  "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+  "checkpointHash": "4c21a149a17b845ef313b7bd7da72f42fd6576b8efe51ffe24072a47b4d2d053",
+  "resumeStageId": "VERIFY",
+  "restoredLocks": {
+    "global": false,
+    "elements": [
+      "v2cv1"
+    ],
+    "lockedTimelineItems": 1,
+    "partialRegenerationAllowed": true
+  },
+  "status": "READY_TO_RESUME",
+  "sourceVerified": true,
+  "readOnly": true,
+  "resumeHash": "55612873e644803b6504b7ae393c296a390baff1c7873c0956d5859abd3e4826"
+}

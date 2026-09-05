@@ -1,0 +1,20 @@
+{
+  "schema": "dna-song-reconstruction-status",
+  "version": "4.43.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "decisions": [
+    "KEEP",
+    "REPAIR",
+    "REPLACE",
+    "AUGMENT",
+    "MANUAL_REVIEW"
+  ],
+  "globalRepairBudget": true,
+  "replaceBudget": true,
+  "augmentBudget": true,
+  "velocityAuthority": "FACTORY_ONLY",
+  "interactionEvidence": "SOFT_ONLY",
+  "hardAuthority": "CORE_INVARIANTS_AND_DEVICE_EVIDENCE",
+  "humanListening": "PENDING_USER_TEST",
+  "pa800Hardware": "WAITING_FOR_DEVICE"
+}

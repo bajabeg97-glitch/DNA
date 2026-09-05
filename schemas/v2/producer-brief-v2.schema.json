@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/producer-brief-v2.schema.json",
+  "title": "DNA Premium ProducerBrief 2.0",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "sourceText", "sourceTextSha256", "language", "intent", "evidence", "conflicts", "approval", "understanding", "adapter", "readyForPlanning", "safety", "briefHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-producer-brief"},
+    "version": {"const": "2.0"},
+    "sourceText": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "sourceTextSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "language": {"enum": ["hr", "en", "mixed", "unknown"]},
+    "intent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["genre", "energyCurve", "density", "syncopation", "space", "transitions", "soloTreatment", "requiredRoles", "forbiddenRoles", "lockedElements", "transformationTolerance"],
+      "properties": {
+        "genre": {"enum": ["pop-folk", "pop", "folk", "rock", "ballad", "dance", "disco", "waltz", "polka", "latin", "jazz", "acoustic", "electronic", "unspecified"]},
+        "energyCurve": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "object", "additionalProperties": false, "required": ["section", "value"], "properties": {"section": {"enum": ["intro", "verse", "chorus", "bridge", "ending"]}, "value": {"type": "integer", "minimum": 0, "maximum": 100}}}},
+        "density": {"enum": ["sparse", "balanced", "full"]},
+        "syncopation": {"enum": ["low", "medium", "high"]},
+        "space": {"enum": ["dry", "balanced", "open"]},
+        "transitions": {"enum": ["subtle", "balanced", "dramatic"]},
+        "soloTreatment": {"enum": ["preserve", "expression-only", "no-new-layers"]},
+        "requiredRoles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+        "forbiddenRoles": {"type": "array", "uniqueItems": true, "items": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]}},
+        "lockedElements": {"type": "array", "uniqueItems": true, "items": {"enum": ["i1cv1", "i2cv1", "v1cv1", "v2cv1", "v3cv1", "v4cv1", "f1cv1", "f2cv1", "e1cv1", "e2cv1"]}},
+        "transformationTolerance": {"type": "integer", "minimum": 0, "maximum": 100}
+      }
+    },
+    "evidence": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["field", "value", "matchedText", "confidence", "source"], "properties": {"field": {"type": "string"}, "value": {}, "matchedText": {"type": "string"}, "confidence": {"type": "number", "minimum": 0, "maximum": 1}, "source": {"enum": ["local-rule", "optional-ai"]}}}},
+    "conflicts": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "field", "code", "reason", "blocking", "choices", "resolvedChoice"], "properties": {"id": {"type": "string"}, "field": {"type": "string"}, "code": {"type": "string"}, "reason": {"type": "string"}, "blocking": {"type": "boolean"}, "choices": {"type": "array", "minItems": 1}, "resolvedChoice": {}}}},
+    "approval": {"type": "object", "additionalProperties": false, "required": ["required", "status", "approvedBy", "resolutions"], "properties": {"required": {"type": "boolean"}, "status": {"enum": ["NOT_REQUIRED", "REQUIRED", "APPROVED"]}, "approvedBy": {"type": ["string", "null"]}, "resolutions": {"type": "object"}}},
+    "understanding": {"type": "object", "additionalProperties": false, "required": ["title", "summary", "assumptions", "warnings"], "properties": {"title": {"const": "AI je razumio"}, "summary": {"type": "string"}, "assumptions": {"type": "array", "items": {"type": "string"}}, "warnings": {"type": "array", "items": {"type": "string"}}}},
+    "adapter": {"type": "object", "additionalProperties": false, "required": ["mode", "cloudRequested", "explicitConsent", "metadataOnly", "responseAccepted", "fallbackReason"], "properties": {"mode": {"enum": ["local", "cloud", "local-fallback"]}, "cloudRequested": {"type": "boolean"}, "explicitConsent": {"type": "boolean"}, "metadataOnly": {"type": "boolean"}, "responseAccepted": {"type": "boolean"}, "fallbackReason": {"type": ["string", "null"]}}},
+    "readyForPlanning": {"type": "boolean"},
+    "safety": {"type": "object", "additionalProperties": false},
+    "briefHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

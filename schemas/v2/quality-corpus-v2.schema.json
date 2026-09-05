@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/quality-corpus-v2.schema.json",
+  "title": "Locked Production Quality Corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "license", "locked", "selectionPolicy", "caseCount", "splits", "sourceCorpora", "cases", "holdoutPolicy", "corpusHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-quality-corpus"},
+    "version": {"const": "2.0"},
+    "date": {"type": "string", "format": "date"},
+    "license": {"const": "self-authored-test-fixtures"},
+    "locked": {"const": true},
+    "selectionPolicy": {"type": "string"},
+    "caseCount": {"const": 32},
+    "splits": {"type": "object"},
+    "sourceCorpora": {"type": "array", "minItems": 2},
+    "cases": {"type": "array", "minItems": 32, "maxItems": 32},
+    "holdoutPolicy": {"type": "object"},
+    "corpusHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "2.0"
+}

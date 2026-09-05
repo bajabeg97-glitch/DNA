@@ -1,0 +1,30 @@
+{
+  "schema": "dna-transition-fill-training",
+  "version": "1.0",
+  "epochs": 2,
+  "bestValidationLoss": 0.12156255170702934,
+  "holdoutLoss": 0.12324692867696285,
+  "holdoutCandidateAccuracy": 0.983139534883721,
+  "trainSamples": 12930,
+  "validationSamples": 1449,
+  "holdoutSamples": 1720,
+  "velocityInput": false,
+  "velocityOutput": false,
+  "labels": "WEAK_TRANSITION_CANDIDATES",
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 0.22506334432042563,
+      "trainCandidateAccuracy": 0.983139984532096,
+      "validationLoss": 0.14486105864246687,
+      "validationCandidateAccuracy": 0.979296066252588
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 0.10407986148045613,
+      "trainCandidateAccuracy": 0.983139984532096,
+      "validationLoss": 0.12156255170702934,
+      "validationCandidateAccuracy": 0.979296066252588
+    }
+  ]
+}

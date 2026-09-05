@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session18-contract-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "sound-binding-v2.schema.json",
+      "id": "https://dna.local/schemas/premium/sound-binding-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "8730f7afe38bc97bd6aac3f3a3c27346f1476f4e2e8a86db816ddad39d9b68be"
+    },
+    {
+      "name": "track-identity-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/track-identity-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "35eddf3ce3c364a82db128b578c1bbd0496330f50cf51421d505a9fe143aad3a"
+    },
+    {
+      "name": "solo-safety-report-v1.schema.json",
+      "id": "https://dna.local/schemas/premium/solo-safety-report-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "17f95b04730528cdd7f2d5a184dfcad142b8ea5f1a5607fecf5d598571aaa5f0"
+    }
+  ],
+  "catalogHash": "f813039f14e0cc64b94664fab74d1f1c2f2b612d8afc47f27dc8400beac73c4a"
+}

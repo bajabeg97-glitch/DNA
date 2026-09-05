@@ -1,0 +1,59 @@
+{
+  "schema": "dna-relationship-sequence-training",
+  "version": "2.0",
+  "objective": "NOTE_LEVEL_PLAY_SKIP_HOLD_PLUS_INTERVAL_DELAY_GATE",
+  "bestEpoch": 8,
+  "bestValidationLoss": 0.45672908212457386,
+  "holdoutActionAccuracy": 0.7226800976800977,
+  "holdoutIntervalAccuracyOnPlay": 0.7961111111111111,
+  "holdoutNotes": 13104,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 2.520692619784125,
+      "validationLoss": 2.0363620349339078
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 1.7534452882306328,
+      "validationLoss": 1.3326944623674666
+    },
+    {
+      "epoch": 3,
+      "trainLoss": 1.2416497468948364,
+      "validationLoss": 0.9165199313844953
+    },
+    {
+      "epoch": 4,
+      "trainLoss": 0.944045922879515,
+      "validationLoss": 0.6961926008973803
+    },
+    {
+      "epoch": 5,
+      "trainLoss": 0.7827495490682537,
+      "validationLoss": 0.5889841892889568
+    },
+    {
+      "epoch": 6,
+      "trainLoss": 0.6844507630529075,
+      "validationLoss": 0.5258675643375942
+    },
+    {
+      "epoch": 7,
+      "trainLoss": 0.6587348739648687,
+      "validationLoss": 0.46890068479946684
+    },
+    {
+      "epoch": 8,
+      "trainLoss": 0.6399862807372521,
+      "validationLoss": 0.45672908212457386
+    }
+  ],
+  "actionClassWeights": [
+    1.0,
+    3.7444981231247234,
+    8.0
+  ],
+  "velocityUsed": false,
+  "elapsedSeconds": 4.958
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "dna-premium-expression-plan",
+  "version": "2.0",
+  "expressionPlanHash": "06e2c6a4b716efb2821815c72105fac5dd81bbc9d35414ca329eef418ad70879",
+  "audit": {
+    "maximumEstimatedPeak": 18
+  },
+  "layers": []
+}

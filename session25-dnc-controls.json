@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "mapId": "250.030.001",
+  "trackUid": "trk-91223ae1e5498bd7ed27",
+  "trackNumber": 4,
+  "channelNumber": 4,
+  "startTick": 0,
+  "endTick": 2640,
+  "role": "solo",
+  "requestedArticulations": [
+    "legato_switch",
+    "breath",
+    "fall_pressure"
+  ],
+  "seed": 2525,
+  "allowSharedChannel": false,
+  "productionMode": false,
+  "maxGeneratedEvents": 64
+}

@@ -1,0 +1,27 @@
+{
+  "profiles": [
+    {
+      "noteCount": 25000,
+      "parsedNoteCount": 25000,
+      "midiBytes": 200026,
+      "seconds": 1.476284,
+      "secondsLimit": 10.0,
+      "peakBytes": 17646484,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "46aa1a9da1d53d4aabac4e83e3e0529a2f92a76b4c1c3b48d225363971cc963b"
+    },
+    {
+      "noteCount": 100000,
+      "parsedNoteCount": 100000,
+      "midiBytes": 800026,
+      "seconds": 6.062056,
+      "secondsLimit": 35.0,
+      "peakBytes": 70858084,
+      "peakBytesLimit": 536870912,
+      "withinBudget": true,
+      "profileHash": "2144430554ca68ed5cee7ea23ada2d95718eb15f207f0d5a773252bdf49ec3d4"
+    }
+  ],
+  "passed": true
+}

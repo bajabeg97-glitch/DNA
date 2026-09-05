@@ -1,0 +1,14 @@
+{
+  "schema": "dna-session31-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "track-instrument-analysis-v3.schema.json",
+      "$id": "https://dna.local/schemas/premium/track-instrument-analysis-v3.schema.json",
+      "contractVersion": "3.0",
+      "sha256": "e27ce5c9c86ea6cfb4048eb29c5c028a43ed6adf57269d4d1943345bcbac0468"
+    }
+  ],
+  "catalogHash": "a21504d813282793d6b065fb36dba49212ca1e4c87314c8f09b2661583e46243"
+}

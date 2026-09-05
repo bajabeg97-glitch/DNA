@@ -1,0 +1,22 @@
+{
+  "schema": "dna-session31-automatic-analysis-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "92abe628ce607400afbded9b53a7c01e15a57586539af1571447d51f532a144f",
+  "productionFactoryDatabaseVersion": "factory-schema3.3-f91c235f676f9d15",
+  "productionFactoryProfileCount": 1964,
+  "analysisSeconds": 0.010161,
+  "physicalTrackCount": 6,
+  "segmentCount": 6,
+  "exactFactorySegmentCount": 4,
+  "acceptedTrackCount": 3,
+  "manualReviewTrackCount": 2,
+  "midSongProgramSegments": 2,
+  "velocityBlindDecisionHashStable": true,
+  "sharedChannelFailClosed": true,
+  "approximateSoundBindingAllowed": false,
+  "midiMutationAuthority": false,
+  "passed": true,
+  "benchmarkHash": "c5a9e8096b31d6d6dedb886a23669b5a51c5e0c0e3b439addab4fbe957b86448"
+}

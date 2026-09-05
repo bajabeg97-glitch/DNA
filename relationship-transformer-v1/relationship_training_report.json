@@ -1,0 +1,130 @@
+{
+  "schema": "dna-relationship-training-report",
+  "version": "1.0",
+  "objective": "SOURCE_DISJOINT_SOLO_RELATIONSHIP_LEARNING",
+  "modelConfig": {
+    "feature_dim": 17,
+    "d_model": 64,
+    "nhead": 4,
+    "layers": 2,
+    "ff_dim": 128,
+    "max_pairs": 192
+  },
+  "trainingConfig": {
+    "epochs": 24,
+    "batch_size": 16,
+    "learning_rate": 0.0004,
+    "weight_decay": 0.01,
+    "seed": 800,
+    "patience": 5,
+    "device": "auto",
+    "max_train_samples": null,
+    "max_validation_samples": null,
+    "max_holdout_samples": null
+  },
+  "device": "cpu",
+  "trainSamples": 84,
+  "validationSamples": 19,
+  "holdoutSamples": 19,
+  "bestEpoch": 12,
+  "bestValidationLoss": 0.11136359954252839,
+  "holdoutLoss": 0.021531812846660614,
+  "holdoutKindAccuracy": 1.0,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 1.723909358183543,
+      "validationLoss": 1.284483790397644
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 1.005268822113673,
+      "validationLoss": 0.743510365486145
+    },
+    {
+      "epoch": 3,
+      "trainLoss": 0.5687049825986227,
+      "validationLoss": 0.42303118109703064
+    },
+    {
+      "epoch": 4,
+      "trainLoss": 0.29926511893669766,
+      "validationLoss": 0.2639159709215164
+    },
+    {
+      "epoch": 5,
+      "trainLoss": 0.19007767364382744,
+      "validationLoss": 0.1909620277583599
+    },
+    {
+      "epoch": 6,
+      "trainLoss": 0.09905189865579207,
+      "validationLoss": 0.16772789973765612
+    },
+    {
+      "epoch": 7,
+      "trainLoss": 0.07235431407267849,
+      "validationLoss": 0.15829774737358093
+    },
+    {
+      "epoch": 8,
+      "trainLoss": 0.06189042329788208,
+      "validationLoss": 0.13800042518414557
+    },
+    {
+      "epoch": 9,
+      "trainLoss": 0.04681684418270985,
+      "validationLoss": 0.13160212570801377
+    },
+    {
+      "epoch": 10,
+      "trainLoss": 0.039402863631645836,
+      "validationLoss": 0.11707117594778538
+    },
+    {
+      "epoch": 11,
+      "trainLoss": 0.03231127467006445,
+      "validationLoss": 0.11147512961179018
+    },
+    {
+      "epoch": 12,
+      "trainLoss": 0.02720788090179364,
+      "validationLoss": 0.11136359954252839
+    },
+    {
+      "epoch": 13,
+      "trainLoss": 0.025210194134463865,
+      "validationLoss": 0.11248161457479
+    },
+    {
+      "epoch": 14,
+      "trainLoss": 0.022245760386188824,
+      "validationLoss": 0.11713153682649136
+    },
+    {
+      "epoch": 15,
+      "trainLoss": 0.02117893029935658,
+      "validationLoss": 0.12165168998762965
+    },
+    {
+      "epoch": 16,
+      "trainLoss": 0.021221304467568796,
+      "validationLoss": 0.11875606887042522
+    },
+    {
+      "epoch": 17,
+      "trainLoss": 0.018577188641453784,
+      "validationLoss": 0.11641957936808467
+    }
+  ],
+  "elapsedSeconds": 14.696,
+  "checkpoint": "relationship_transformer_v1.npz",
+  "checkpointSha256": "2c3cba82f650616004d7f7f63ee04bfb4ed3398cdb438cdc3cab05e10c9a262c",
+  "authority": {
+    "goldVelocityUsed": false,
+    "velocityFeature": false,
+    "velocityOutputHead": false,
+    "optimizedMidiTrainingTruth": false,
+    "hardValidatorRequired": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "dna-section-context-dataset",
+  "version": "1.1",
+  "songs": 163,
+  "samples": 16099,
+  "train": 12930,
+  "validation": 1449,
+  "holdout": 1720,
+  "sectionTypes": [
+    "intro",
+    "verse",
+    "chorus",
+    "bridge",
+    "ending"
+  ],
+  "sectionLabels": "WEAK_HEURISTIC_CANDIDATES_FROM_VELOCITY_FREE_CONTEXT",
+  "fillBreak": "TRANSITION_ONLY_NOT_CONFIRMED_SECTION",
+  "velocityUsed": false,
+  "sourceHash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+  "contextDatasetHash": "e10ea7d2271d142da052d8afb382aba893ea6f15bfd6dd06d2eb124860605835",
+  "datasetHash": "94a6ff404070af95a30d2687c5a79a4a24cc4c34567125ce9d2169141200e4cc"
+}

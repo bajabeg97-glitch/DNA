@@ -1,0 +1,39 @@
+{
+  "schema": "dna-session35-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "formalSuite": {
+    "testsRun": 176,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "schema": "dna-session35-e2e-benchmark",
+    "version": "1.0",
+    "date": "2026-09-03",
+    "referenceProjects": 50,
+    "completeProjects": 50,
+    "unhandledExceptions": 0,
+    "stageCount": 10,
+    "transportParity": true,
+    "batchStatuses": [
+      "PASS",
+      "BLOCKED"
+    ],
+    "partialOutsideFragmentUnchanged": true,
+    "partialChangedEvents": 2,
+    "checkpointLastConfirmedHashRestored": true,
+    "downstreamInvalidationOnly": true,
+    "undoRedoRestored": true,
+    "finalCertifiedExportAllowed": false,
+    "passed": true
+  },
+  "status": {
+    "session35EndToEndArranger": "SOFTWARE_VALIDATED / WORKFLOW PREVIEW",
+    "activeSoftwareBaseline": "4.10.1-e2e-workflow-foundation",
+    "reliabilityGate": "NEXT",
+    "finalCertifiedMidiExport": "BLOCKED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

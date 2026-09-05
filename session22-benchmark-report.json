@@ -1,0 +1,436 @@
+{
+  "schema": "dna-session22-candidate-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "corpusHash": "7d3da3e3dd460bd628c3d192c0e91719b8a67169c242eafc0d62ad88323b3261",
+  "songCount": 20,
+  "eligibleSongCount": 15,
+  "manualReviewSongCount": 5,
+  "requestCount": 775,
+  "selectionCount": 2325,
+  "hardRejectedCount": 13022,
+  "relationshipSelectionCount": 118,
+  "eligibleReadyRate": 1.0,
+  "deterministicRate": 1.0,
+  "diversityRate": 1.0,
+  "rejectionAuditRate": 1.0,
+  "factoryOnlyGuitarRate": 1.0,
+  "goldAuthoritySafetyRate": 1.0,
+  "lockPreservationRate": 1.0,
+  "manualReviewSafetyBlockRate": 1.0,
+  "passed": true,
+  "cases": [
+    {
+      "caseId": "song19-01",
+      "graphHash": "2d9e43c16827b2a61c0759e4173ff94e6a4e20a8a4d5700efc7d678d607b6200",
+      "candidateSetHash": "acdb11d31af680bb267d5acac02579547bac63d862238016bee9a11fedacb1c0",
+      "ready": true,
+      "requestCount": 52,
+      "variantHashes": [
+        "2cd4448a11193ef339c5808947b02b1cad537f123da1a7ee498e2599e4712fe5",
+        "b410b5bed0223232a2bc5b14ff4f1c95ec677bdaba09b907e12395d8b455cd7e",
+        "8446019a10807c9243e2ccc608c911b0ab141acda65e8e18806ea6220ba3d616"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 878,
+      "relationshipSelections": 7,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-02",
+      "graphHash": "b826771e932939f1e6d0923674519bc111be80983f03c334f3d3ad7d757e9043",
+      "candidateSetHash": "446b9b71dc99243af1e119b2d7174e4ca9ad84fc86fd959f6159ed782c564875",
+      "ready": true,
+      "requestCount": 56,
+      "variantHashes": [
+        "1048e2317566ba9e812eb9a61806e6d2e8a3c74d5c1c62b5e4a9b03f17fbda63",
+        "6220f63d73743c145007ce33f7486e9f302ddb6ae8cc9264c61a0b6009e887cd",
+        "5777a0af23eeae88c30f9d3e4c1cc7dd03889b200bc3c4c24c4da612d684a907"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 1027,
+      "relationshipSelections": 8,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-03",
+      "graphHash": "d65f6eaed7f6c49c7680df35702181517690fd8850645ca0c573ada35ab30f75",
+      "candidateSetHash": "ed01838262513232d5ddf5e6ea39339c192fa8e80b6e99385b0a72c65b6c45cf",
+      "ready": true,
+      "requestCount": 47,
+      "variantHashes": [
+        "2840152ca6dafd53a402b548351d0668be2fc1fc748d37039b9375231df16c11",
+        "2e0687d30b84a13457db5f55769ff71e3083f409dc0219dfcbc294b9427118d8",
+        "15ed8b1a24af1d80ce58c61904627f6dfad4f2f66c116c0b68cc6b16f887f3da"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 681,
+      "relationshipSelections": 9,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-04",
+      "graphHash": "d656ed77d561d0e5b2cb0493b30a372a0e49bf8204d3581d7f3dd4fa6488a11a",
+      "candidateSetHash": null,
+      "ready": false,
+      "expectedSafetyBlock": true,
+      "safetyBlockPassed": true,
+      "manualReviewCodes": [
+        "SONG_MAP_MANUAL_REVIEW",
+        "SONG_MAP_MANUAL_REVIEW"
+      ]
+    },
+    {
+      "caseId": "song19-05",
+      "graphHash": "44857c37ea53c1afaac53d78a90a7f1595a1656cb38e7545514da8ec95fed8ae",
+      "candidateSetHash": "860b4dce370a18bb43525239d0f04b2e35a6f1aa16a248d645118dbdb8df3217",
+      "ready": true,
+      "requestCount": 52,
+      "variantHashes": [
+        "e51f013a1f2ed339289c0ca5de0e3c2700ba3f910d0f50eeeafadd27bbfc3e3d",
+        "a5a83d1bffcb579b29c30e90e3d8e79dba62c3ff586d08341de6945b58578eae",
+        "a831022195aac6a841f65ab1d2d11f60b1eb9f94de290d3d4a20b48fbb5b774b"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 924,
+      "relationshipSelections": 6,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-06",
+      "graphHash": "a29521c4ab9b02fac79408f7d2c4731d6978822acc33c8e4fa986e7914b8bfda",
+      "candidateSetHash": "541f471c9ac644630d472eef66f490e655492b2df2cbc40e0ee7d4f3685e12e9",
+      "ready": true,
+      "requestCount": 56,
+      "variantHashes": [
+        "a7dd9240b4fce96f1571bf92c664d0f0c7dac448a28efb1844910fff32299f33",
+        "972baf66b4bd4bea0a01b5e8ce7be1e8d65377acffdf9d108975bc62fe8cdac8",
+        "6f03dcab788eb2179b4c75c114f513a08ee7246286d9eeaea0cce58dfe0916e7"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        0.980392
+      ],
+      "hardRejectedCount": 981,
+      "relationshipSelections": 7,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-07",
+      "graphHash": "12f8558a1faf009279aeaf77c1bf19f37f4c83517bdb9daa9718ce82f811b161",
+      "candidateSetHash": "63294a2e2f859457ea128f49506aecd7ed57c23e2dba4e8262f94a863bd0464b",
+      "ready": true,
+      "requestCount": 47,
+      "variantHashes": [
+        "384c5d41ced4b909015f072244b9baf32d7659b9978b2d32e6a22c2aa51e85ce",
+        "0d2e2064c9b4a990248f91d77dbac2a954b375bb23b95f314886d49c70d397ec",
+        "e997299f92ec639a90d55203d5e54abc07083a78fa8758088e2b5c8faf1fad81"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 681,
+      "relationshipSelections": 8,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-08",
+      "graphHash": "1ad3ac7d357efee19d603bcd7b27dfd26c3d83a850c8ca11dd005b4cc6dc245f",
+      "candidateSetHash": null,
+      "ready": false,
+      "expectedSafetyBlock": true,
+      "safetyBlockPassed": true,
+      "manualReviewCodes": [
+        "SONG_MAP_MANUAL_REVIEW",
+        "SONG_MAP_MANUAL_REVIEW"
+      ]
+    },
+    {
+      "caseId": "song19-09",
+      "graphHash": "171f8ae2ef842746821f346785df16d2813cbbdd1c7ce3dfeb31c7411371b559",
+      "candidateSetHash": "f9a3f1b9a624da7930ad0d9ad90e4ae73899556c2353fc686898b7fd994e4ef6",
+      "ready": true,
+      "requestCount": 52,
+      "variantHashes": [
+        "50da611fec55110b82d608363f539d1c550bd49fd997729d061acd2aeda4a979",
+        "bd6ef85c6bd330c9c504a30f8800b71f75d2c7a679aebcfab89c99c776750306",
+        "acc27c12da2133cdf97890f10a9fca4f528bcf4b9056a74bf686aa71b3f2dabc"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 924,
+      "relationshipSelections": 5,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-10",
+      "graphHash": "d5cc60ad61f4aee65ee42b208cac4265f4a7810143b21ec26835df937a29b548",
+      "candidateSetHash": "7f3365094882ea26d5aed3c7acc93a9bb62deaa0e0e5d327543910f81c415256",
+      "ready": true,
+      "requestCount": 56,
+      "variantHashes": [
+        "d384ddc1a9cb1cd393642645cd9703f04c45a8be036bd7d17df5011a685240da",
+        "ca44e6bebfa45708498f9b15f9033941ab14a68b40e61c6ef4bf22f53f33bb89",
+        "8e4bdf51287a47f38f96b71bf5338724e1ca069e3c39a0e0b476f132f6aa84fe"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 1027,
+      "relationshipSelections": 7,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-11",
+      "graphHash": "12701313ae4c2c0fdff84be51750b1c4493bd1bf3b868ddbbec8c21c3cd0fc7a",
+      "candidateSetHash": "7a908b146e145f999f8aaa746631ac28728c66c8527808c4fd2ca3daef78d88f",
+      "ready": true,
+      "requestCount": 47,
+      "variantHashes": [
+        "cea7d9d9b3be8c41a346abea995ad8d7e4d6e07e4896db00716e6da490e2a40f",
+        "755f1d5b8ab7f697989a761bacb605f4144601b7c9e9664794907658f65bdd5a",
+        "75a7add5a73292a784ea52e0fda8acd346de28b3f0b9b814360c01dfeac35b4c"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 635,
+      "relationshipSelections": 6,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-12",
+      "graphHash": "4e93d58cc2d12d370517216eb79aa6dde013268458a7ca0f7f73ba89733a92b0",
+      "candidateSetHash": null,
+      "ready": false,
+      "expectedSafetyBlock": true,
+      "safetyBlockPassed": true,
+      "manualReviewCodes": [
+        "SONG_MAP_MANUAL_REVIEW",
+        "SONG_MAP_MANUAL_REVIEW"
+      ]
+    },
+    {
+      "caseId": "song19-13",
+      "graphHash": "3994e75d88f476d1743bdb034e9a2b41904e65445422838311c3061201cf150c",
+      "candidateSetHash": "9e60a1ae1adf45054592432db3ca2242e45adf4552be4b958dd5b904b571d408",
+      "ready": true,
+      "requestCount": 52,
+      "variantHashes": [
+        "0bb1aacf874f88c178443dbfdf5245b35786d3dca80361d54764f8c12081b032",
+        "7c683ecb32d7be77c266091b1f51fed2cae3f4437726c91383ddba0385fa2628",
+        "19f82795043db9aa3c10c73def74176a0bc7f775c4fd976541f44e198920a016"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 924,
+      "relationshipSelections": 9,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-14",
+      "graphHash": "2a322a8b3c5ae51adaa02d527c3427a44e11766239e21a9573c472dce54ee63c",
+      "candidateSetHash": "cd75a78a8b21e309d357bbace2792243f6664ae76e85a3d5c2d716d41d985c46",
+      "ready": true,
+      "requestCount": 56,
+      "variantHashes": [
+        "b6019a2b4db538f54d817c7048544907fbe9b5e24e869c44169d47f6002fd5a8",
+        "a55bfbb4aade88fd81fb83c2b837ecce6e011313ed8c71854628354ae08755af",
+        "abffbd6918848db2518307567671286021e30af317fc8e24fed113d5e2569b7d"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 1027,
+      "relationshipSelections": 13,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-15",
+      "graphHash": "82647133a0f3fed274f3b06e92d8b139f1fd654647ae2358fa63903251442ba2",
+      "candidateSetHash": "0cdc40da56e0a672734bb00f0a104788a35b07d7834437e88dfe10b835754881",
+      "ready": true,
+      "requestCount": 47,
+      "variantHashes": [
+        "da52fdc5eab3bfaa33f995c8b9bd592fc13191fa81ea893f75beb0e6e9db47fc",
+        "ef977be9579983a35566bd7daa515e64f63581cbecd9c705afe8bc00fbacb3cb",
+        "efce0b7a15d38293c283bd654e98f8a7c937e2596dbab6c9549afd102b74c68a"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 681,
+      "relationshipSelections": 12,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-16",
+      "graphHash": "cbbe8e0ec7b6b7dcc3c4c698550eeecdeb3470579b6b0dbaff3e1effbabcf8ed",
+      "candidateSetHash": null,
+      "ready": false,
+      "expectedSafetyBlock": true,
+      "safetyBlockPassed": true,
+      "manualReviewCodes": [
+        "SONG_MAP_MANUAL_REVIEW",
+        "SONG_MAP_MANUAL_REVIEW"
+      ]
+    },
+    {
+      "caseId": "song19-17",
+      "graphHash": "c5f1d6c9e19738752207b75fa876763bb7e0c8bb885c34970270ea129c54bf8d",
+      "candidateSetHash": "6241b5c9b40d7f03189e1eb6cd1e26f699ad40a035abb1aae0eec13e96904f67",
+      "ready": true,
+      "requestCount": 52,
+      "variantHashes": [
+        "aa0f3524d9375bd0091b6a35566fdb47606c477d2d16fdae34ebdaa15fcb2449",
+        "5aa74e36e3fa45970df3b006d89b21b51be6de5fb86a632df8f33402a23a9ad3",
+        "9f83f43e93abfa2111802b842652710540cd586c1f0f7d4bb4f2c1474c3d9476"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 924,
+      "relationshipSelections": 10,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-18",
+      "graphHash": "802a14439ee95e0eb55cccdb6d75a34c826cccb5915e8738af36d1e1f6dc5c91",
+      "candidateSetHash": "1285f1e96304df379ea576e5804830343b0f16d611963ef99529cce1672da61e",
+      "ready": true,
+      "requestCount": 56,
+      "variantHashes": [
+        "c0aade880b9bb4992b0378b08ccc7555ff61af74c050d188be1001f00f6c2774",
+        "8ec191e13f2b8033df5d33f4cb22820847db67d9336d3083bac149e2ae8bf33b",
+        "b1794696b1819dd8404189fa836abe122bbf90fed79652a57a8afcbb70077403"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 1027,
+      "relationshipSelections": 6,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-19",
+      "graphHash": "9315515787444c520abd211fff0bc6d62c21ea9a45ba5f056b42180a8f107842",
+      "candidateSetHash": "50a41e9edc858c5f9befb8c314de1aab152e9d81be5391c9a8d89347eed7884c",
+      "ready": true,
+      "requestCount": 47,
+      "variantHashes": [
+        "676d827a2f5e5d6f71663cfbd1e939d3feba1e9dc1fdfc510593660c5d341bf4",
+        "b3ae10f9f28ff7d4ccaafc2c808293e941081c94d482afcaa8962f4673b1e18a",
+        "a7b4ef7808b8354a68bd86c108c116aa3fe1f817669936d61f595f7d44df20bd"
+      ],
+      "diversityDistances": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "hardRejectedCount": 681,
+      "relationshipSelections": 5,
+      "lockedMarkers": [],
+      "lockedSelectionsPreserved": true,
+      "factoryOnlyGuitar": true,
+      "goldAuthoritySafe": true
+    },
+    {
+      "caseId": "song19-20",
+      "graphHash": "939c06db64676240cc569c06656a55c0a817bea22260d3dfe8f75c21708c83ab",
+      "candidateSetHash": null,
+      "ready": false,
+      "expectedSafetyBlock": true,
+      "safetyBlockPassed": true,
+      "manualReviewCodes": [
+        "SONG_MAP_MANUAL_REVIEW",
+        "SONG_MAP_MANUAL_REVIEW"
+      ]
+    }
+  ]
+}

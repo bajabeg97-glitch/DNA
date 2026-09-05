@@ -1,0 +1,14 @@
+{
+  "schema": "dna-premium-human-listening-intake",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "evaluationReportHash": "e232880b2fc4aac2731c84e4a30f2195953d97ca4f8d80a3dd376060b3e3ff42",
+  "requiredIndependentEvaluators": 2,
+  "verifiedIndependentEvaluators": 0,
+  "softwareTestResponses": 1,
+  "proxyAudioCountsAsHuman": false,
+  "testBundlesCountAsHuman": false,
+  "status": "HUMAN_LISTENING_PENDING",
+  "productionEligibleBundleHashes": [],
+  "intakeHash": "d3967b6367d9070780b5dd99ca722a8692e462cc35308ffbf041d3ccab934549"
+}

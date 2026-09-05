@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/sound-binding-v2.schema.json",
+  "title": "DNA Premium Time-scoped SoundBinding v2",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "trackUid", "trackIndex", "trackNumber", "channelIndex", "channelNumber", "startTick", "endTick", "bankMsb", "bankLsb", "program", "complete", "status"],
+  "properties": {
+    "schema": {"const": "dna-premium-sound-binding"},
+    "version": {"const": "2.0"},
+    "trackUid": {"type": "string", "pattern": "^trk-[0-9a-f]{20}(-[1-9][0-9]*)?$"},
+    "trackIndex": {"type": "integer", "minimum": 0, "maximum": 15},
+    "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+    "channelIndex": {"type": "integer", "minimum": 0, "maximum": 15},
+    "channelNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+    "startTick": {"type": "integer", "minimum": 0},
+    "endTick": {"type": "integer", "minimum": 1},
+    "bankMsb": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+    "bankLsb": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+    "program": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+    "complete": {"type": "boolean"},
+    "status": {"enum": ["EXACT", "UNRESOLVED", "SHARED_CHANNEL_CONFLICT"]}
+  }
+}

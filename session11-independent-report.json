@@ -1,0 +1,25 @@
+{
+  "schema": "dna-independent-verification",
+  "version": "1.0",
+  "passed": true,
+  "issues": [],
+  "checks": {
+    "sourceParsed": true,
+    "candidateParsed": true,
+    "manifestInputHash": true,
+    "manifestOutputHash": true,
+    "finalStageHash": true,
+    "originalNotesPreserved": true,
+    "noteAdditionsAuthorized": true,
+    "protectedEventsPreserved": true,
+    "candidateRoundTripStable": true,
+    "pa800Contract": true,
+    "journalCommitted": true,
+    "journalOutputHash": true,
+    "idempotent": true,
+    "workerDeterminism": true
+  },
+  "sourceHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+  "candidateHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6",
+  "verdictSource": "independent-byte-parser"
+}

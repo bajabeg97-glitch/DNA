@@ -1,0 +1,33 @@
+{
+  "schema": "dna-session32-track-plan-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceMidiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+  "trackPlanHash": "19fefe7d19baf57f124040b17b09d3aa4a6a730b8a2b5ad5bd683f40b851bb17",
+  "sourceTrackPlans": 5,
+  "arrangerFragments": 52,
+  "exactTargetBindings": 52,
+  "replaceFragments": 52,
+  "manualReviewScopes": 1,
+  "plannedOperations": 249,
+  "operationCounts": {
+    "APPLY_EVIDENCE_GROOVE": 52,
+    "APPLY_FACTORY_CC11": 1,
+    "APPLY_FACTORY_DYNAMICS_MIXER": 54,
+    "REPAIR_REGISTER": 38,
+    "REPLACE_PATTERN": 52,
+    "VERIFY_POLYPHONY": 52
+  },
+  "factoryRegistryVerified": true,
+  "evidenceCoverageRate": 1.0,
+  "arrangerFragmentsReady": true,
+  "deterministic": true,
+  "trackPlanBuildSeconds": 0.882573,
+  "midiBytesWritten": 0,
+  "protectedOriginalNoteChanges": 0,
+  "goldVelocityChanges": 0,
+  "finalMidiExportAllowed": false,
+  "passed": true,
+  "benchmarkHash": "002c139776d0c11e78d7caccff396b4c7e05e2793f12f09ee0602574c8d2144b"
+}

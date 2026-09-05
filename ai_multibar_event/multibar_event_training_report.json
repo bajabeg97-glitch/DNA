@@ -1,0 +1,21 @@
+{
+  "schema": "dna-multibar-event-training",
+  "version": "3.0",
+  "epochs": 1,
+  "bestValidationLoss": 11.184378862380981,
+  "holdoutLoss": 11.200726127624511,
+  "trainSamples": 12930,
+  "validationSamples": 1449,
+  "holdoutSamples": 1720,
+  "phraseBars": 4,
+  "sharedHiddenState": true,
+  "velocityInput": false,
+  "velocityOutput": false,
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 13.63939490037806,
+      "validationLoss": 11.184378862380981
+    }
+  ]
+}

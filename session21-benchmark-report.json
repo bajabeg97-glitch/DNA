@@ -1,0 +1,366 @@
+{
+  "schema": "dna-session21-global-plan-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "corpusHash": "a9a6687b07b0056fe0abfe3b6cbe479256b7fcff04eb08c0910b656d9e7711cf",
+  "songCount": 20,
+  "nodeCount": 200,
+  "edgeCount": 180,
+  "planVariantCount": 40,
+  "controlledRiseRate": 1.0,
+  "transitionTargetRate": 1.0,
+  "deterministicRate": 1.0,
+  "lockPreservationRate": 1.0,
+  "passed": true,
+  "cases": [
+    {
+      "caseId": "song19-01",
+      "songMapHash": "a1534c5b34210d15fc0bc6246f7e299cccaa54d4147fb081b4008032cf16deb5",
+      "briefHash": "3e8ef54f1bdd90623d6cd894e14926c7c2999b9016a05507a69f8ed65879ced0",
+      "graphHash": "2d9e43c16827b2a61c0759e4173ff94e6a4e20a8a4d5700efc7d678d607b6200",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-02",
+      "songMapHash": "ec1ae97a59792f9677e730067ae78d65732791b6088a7c0ee8e93cd013cec1b1",
+      "briefHash": "95fb6dac203b5ed3f6874e2a0a402c94fa9ca460cdb02b6a9525e4748346c0de",
+      "graphHash": "b826771e932939f1e6d0923674519bc111be80983f03c334f3d3ad7d757e9043",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        45,
+        60,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-03",
+      "songMapHash": "0726e8a911563f1d6895c5102801c198ee8082da6f1efa85e1176192558782fe",
+      "briefHash": "6b408d1f3ef6409e0f14db41f3cfc0a916f1a4d22190c728b41b86d92b1e5dc6",
+      "graphHash": "d65f6eaed7f6c49c7680df35702181517690fd8850645ca0c573ada35ab30f75",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-04",
+      "songMapHash": "23a210a1814fd2056162136f7d58edeb2d73299a7d31cadeb7b3c4b4f0ad4d04",
+      "briefHash": "4eeff3e3f3a74ede03a8a4ae98621a2f707148d266d3a73fa1c3aafd8cd2f5e1",
+      "graphHash": "d656ed77d561d0e5b2cb0493b30a372a0e49bf8204d3581d7f3dd4fa6488a11a",
+      "readyForCandidateSearch": false,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-05",
+      "songMapHash": "82baae911714efd1697bce7bbe07b410be21b81f923f66d46d2db7d73cfe3d59",
+      "briefHash": "5244f8c053d8c19ef3e51aff9c905054f334ee5cc5e44ddedce702954425bb31",
+      "graphHash": "44857c37ea53c1afaac53d78a90a7f1595a1656cb38e7545514da8ec95fed8ae",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-06",
+      "songMapHash": "f1ec53d99fd8433b35781c37a650435000fbc787ea41434c0889eabb92a007d3",
+      "briefHash": "eaede50e3985bb47a258299ac8b194212b041aa85f24c9fb462b3d40b0afd78d",
+      "graphHash": "a29521c4ab9b02fac79408f7d2c4731d6978822acc33c8e4fa986e7914b8bfda",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        45,
+        60,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-07",
+      "songMapHash": "f81a79d0bd9167b1bec6e464241942df289ae4f3ef2ff82df978941b0ecdb695",
+      "briefHash": "6b408d1f3ef6409e0f14db41f3cfc0a916f1a4d22190c728b41b86d92b1e5dc6",
+      "graphHash": "12f8558a1faf009279aeaf77c1bf19f37f4c83517bdb9daa9718ce82f811b161",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-08",
+      "songMapHash": "6ae08456dcbd595f55d7ee37b60cb9eec3391f29841b91ce7eb1c9d2ceb81210",
+      "briefHash": "4eeff3e3f3a74ede03a8a4ae98621a2f707148d266d3a73fa1c3aafd8cd2f5e1",
+      "graphHash": "1ad3ac7d357efee19d603bcd7b27dfd26c3d83a850c8ca11dd005b4cc6dc245f",
+      "readyForCandidateSearch": false,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-09",
+      "songMapHash": "58c40658329a7c3c9914e4b471a45c91592185ce0cdc691e9497d597f1559176",
+      "briefHash": "5244f8c053d8c19ef3e51aff9c905054f334ee5cc5e44ddedce702954425bb31",
+      "graphHash": "171f8ae2ef842746821f346785df16d2813cbbdd1c7ce3dfeb31c7411371b559",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-10",
+      "songMapHash": "2ee860e9d7eb58bb90fe69524cc3f4286e8ad7612ec06fd6d8e0d9037f28ce8b",
+      "briefHash": "95fb6dac203b5ed3f6874e2a0a402c94fa9ca460cdb02b6a9525e4748346c0de",
+      "graphHash": "d5cc60ad61f4aee65ee42b208cac4265f4a7810143b21ec26835df937a29b548",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        45,
+        60,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-11",
+      "songMapHash": "441a5a65ec0a1bca62256e252ec525348902892eff6b46b982311493cc3f781e",
+      "briefHash": "f4cec1224e3971f5123bc56a537dfa03a4dc0c02145dccbfd4bb761087eef642",
+      "graphHash": "12701313ae4c2c0fdff84be51750b1c4493bd1bf3b868ddbbec8c21c3cd0fc7a",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-12",
+      "songMapHash": "a0bcfcb6a435a5b19f28b9fb4054ac98a2dfb345d2d221c0855ada80bd3b9a22",
+      "briefHash": "4eeff3e3f3a74ede03a8a4ae98621a2f707148d266d3a73fa1c3aafd8cd2f5e1",
+      "graphHash": "4e93d58cc2d12d370517216eb79aa6dde013268458a7ca0f7f73ba89733a92b0",
+      "readyForCandidateSearch": false,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-13",
+      "songMapHash": "a347e55a3bd24acd52c2dd7d9cacc532db7a0fa4559b6e4262692fb38df736ba",
+      "briefHash": "5244f8c053d8c19ef3e51aff9c905054f334ee5cc5e44ddedce702954425bb31",
+      "graphHash": "3994e75d88f476d1743bdb034e9a2b41904e65445422838311c3061201cf150c",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-14",
+      "songMapHash": "c9d27a14c43408d97043cd7124a5d899add975f1e6d97e17bee1d6ca66f1df94",
+      "briefHash": "95fb6dac203b5ed3f6874e2a0a402c94fa9ca460cdb02b6a9525e4748346c0de",
+      "graphHash": "2a322a8b3c5ae51adaa02d527c3427a44e11766239e21a9573c472dce54ee63c",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        45,
+        60,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-15",
+      "songMapHash": "00a3c2fa99667364b013d2f1b7d94ccfd2de44cc4a1e9e280e1bcc94b3be453f",
+      "briefHash": "6b408d1f3ef6409e0f14db41f3cfc0a916f1a4d22190c728b41b86d92b1e5dc6",
+      "graphHash": "82647133a0f3fed274f3b06e92d8b139f1fd654647ae2358fa63903251442ba2",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-16",
+      "songMapHash": "e71df2a756d034a1576962012606d7330cf9ff544f692711e860742fa95df3ea",
+      "briefHash": "d936140d2a85031bbc2d656df083cbea01eca0b4f8b12a485295c80aa175b2ca",
+      "graphHash": "cbbe8e0ec7b6b7dcc3c4c698550eeecdeb3470579b6b0dbaff3e1effbabcf8ed",
+      "readyForCandidateSearch": false,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [
+        "v2cv1"
+      ],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-17",
+      "songMapHash": "078863c0262776b0358c4a34de561e2dbef7b35fb8e6c41861b8e93893142dbe",
+      "briefHash": "5244f8c053d8c19ef3e51aff9c905054f334ee5cc5e44ddedce702954425bb31",
+      "graphHash": "c5f1d6c9e19738752207b75fa876763bb7e0c8bb885c34970270ea129c54bf8d",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-18",
+      "songMapHash": "c6bc286db84e887ca99024d66adaae6bc936873c6f27bec049deeed8417ce328",
+      "briefHash": "95fb6dac203b5ed3f6874e2a0a402c94fa9ca460cdb02b6a9525e4748346c0de",
+      "graphHash": "802a14439ee95e0eb55cccdb6d75a34c826cccb5915e8738af36d1e1f6dc5c91",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        45,
+        60,
+        80,
+        93
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-19",
+      "songMapHash": "8e5f1929b11eb0187431015e2b347b28a5d54699ccd9b133247dc079c2534a9f",
+      "briefHash": "6b408d1f3ef6409e0f14db41f3cfc0a916f1a4d22190c728b41b86d92b1e5dc6",
+      "graphHash": "9315515787444c520abd211fff0bc6d62c21ea9a45ba5f056b42180a8f107842",
+      "readyForCandidateSearch": true,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    },
+    {
+      "caseId": "song19-20",
+      "songMapHash": "4090cea99c0b48ac0eb8f123bd4fe9860936577f440484a0fda1bbd2a64c967c",
+      "briefHash": "4eeff3e3f3a74ede03a8a4ae98621a2f707148d266d3a73fa1c3aafd8cd2f5e1",
+      "graphHash": "939c06db64676240cc569c06656a55c0a817bea22260d3dfe8f75c21708c83ab",
+      "readyForCandidateSearch": false,
+      "variationEnergy": [
+        37,
+        52,
+        70,
+        83
+      ],
+      "controlledRise": true,
+      "fillTargetsDeclared": true,
+      "lockedMarkers": [],
+      "lockedTargetsPreserved": true
+    }
+  ]
+}

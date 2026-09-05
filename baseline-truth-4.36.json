@@ -1,0 +1,23 @@
+{
+  "version": "4.36.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "targetedRegression": {
+    "passed": 19,
+    "failed": 0
+  },
+  "hardAuthority": {
+    "factoryVelocityAuthorityViolations": 0,
+    "sampleLayerCrossingErrorsUnapproved": 0,
+    "confirmedKeyRangeViolations": 0,
+    "pitchClassPreservation": 1.0,
+    "protectedEventDiff": 0,
+    "invalidNotePairs": 0,
+    "selectedPatternHardPassRate": 1.0,
+    "deterministicRepeatRate": 1.0
+  },
+  "factoryVelocityOnly": true,
+  "goldVelocityUsed": false,
+  "mlFinalMidiAuthority": false,
+  "deviceValidation": "WAITING_FOR_DEVICE",
+  "humanListening": "PENDING"
+}

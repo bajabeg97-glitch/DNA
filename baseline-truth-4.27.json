@@ -1,0 +1,45 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.27.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "feature": "SAFE_FAILURE_DEBUGGER",
+  "sourceMutationDefault": false,
+  "debugger": {
+    "mode": "DIAGNOSE_ONLY",
+    "stableErrorSignature": true,
+    "tracebackClassification": true,
+    "commandCapture": true,
+    "sandboxPatchValidation": true,
+    "automaticCommit": false,
+    "protectedDataPaths": true,
+    "timeoutIsPass": false
+  },
+  "userProvidedReference": {
+    "name": "ai-debugger-main.zip",
+    "licenseObserved": "MIT",
+    "adoptedIdeas": ["error-signature retry concept", "diff-oriented debugging", "optional LLM advisor abstraction"],
+    "unsafeBehaviorNotAdopted": ["direct LLM overwrite", "single-file execution as release proof", "dummy test as correctness proof"]
+  },
+  "targetedRegression": {
+    "passed": 49,
+    "failed": 0,
+    "warnings": 16
+  },
+  "liveDiagnosticProbe": {
+    "category": "IMPORT_PATH_OR_DEPENDENCY",
+    "missingModuleExtracted": true,
+    "sourceMutated": false,
+    "report": "data/debug/latest-failure.json"
+  },
+  "carriedForward": {
+    "autoregressiveEventV2CheckpointPresent": true,
+    "factoryVelocityAuthority": true,
+    "goldVelocityAllowed": false,
+    "neuralVelocityAllowed": false
+  },
+  "externalGates": {
+    "fullReleaseSuite": "UNVERIFIED_UNTIL_COMPLETED_WITHOUT_TIMEOUT",
+    "humanListening": "MISSING",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

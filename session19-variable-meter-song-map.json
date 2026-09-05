@@ -1,0 +1,679 @@
+{
+  "schema": "dna-premium-song-map",
+  "version": "2.0",
+  "source": {
+    "fileName": "session19-variable-meter.mid",
+    "bytes": 173,
+    "sha256": "ab783a427c9758a1a26b90ef8d952364b683b80177389c8ca20675ecad9ada8b",
+    "format": 1,
+    "ppq": 480,
+    "trackCount": 2,
+    "noteCount": 6
+  },
+  "sourceSha256": "ab783a427c9758a1a26b90ef8d952364b683b80177389c8ca20675ecad9ada8b",
+  "ppq": 480,
+  "endTick": 6720,
+  "tempoMap": [
+    {
+      "tick": 0,
+      "bpm": 120.0,
+      "microsecondsPerQuarter": 500000,
+      "sourceTrackIndex": 0
+    },
+    {
+      "tick": 3840,
+      "bpm": 150.0,
+      "microsecondsPerQuarter": 400000,
+      "sourceTrackIndex": 0
+    }
+  ],
+  "meterMap": [
+    {
+      "tick": 0,
+      "numerator": 4,
+      "denominator": 4,
+      "sourceTrackIndex": 0
+    },
+    {
+      "tick": 3840,
+      "numerator": 3,
+      "denominator": 4,
+      "sourceTrackIndex": 0
+    }
+  ],
+  "bars": [
+    {
+      "bar": 1,
+      "startTick": 0,
+      "endTick": 1920,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "bar": 2,
+      "startTick": 1920,
+      "endTick": 3840,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "bar": 3,
+      "startTick": 3840,
+      "endTick": 5280,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "bar": 4,
+      "startTick": 5280,
+      "endTick": 6720,
+      "numerator": 3,
+      "denominator": 4
+    }
+  ],
+  "beatGrid": [
+    {
+      "tick": 0,
+      "bar": 1,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 480,
+      "bar": 1,
+      "beat": 2,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 960,
+      "bar": 1,
+      "beat": 3,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 1440,
+      "bar": 1,
+      "beat": 4,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 1920,
+      "bar": 2,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 2400,
+      "bar": 2,
+      "beat": 2,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 2880,
+      "bar": 2,
+      "beat": 3,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 3360,
+      "bar": 2,
+      "beat": 4,
+      "downbeat": false,
+      "numerator": 4,
+      "denominator": 4
+    },
+    {
+      "tick": 3840,
+      "bar": 3,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 4320,
+      "bar": 3,
+      "beat": 2,
+      "downbeat": false,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 4800,
+      "bar": 3,
+      "beat": 3,
+      "downbeat": false,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 5280,
+      "bar": 4,
+      "beat": 1,
+      "downbeat": true,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 5760,
+      "bar": 4,
+      "beat": 2,
+      "downbeat": false,
+      "numerator": 3,
+      "denominator": 4
+    },
+    {
+      "tick": 6240,
+      "bar": 4,
+      "beat": 3,
+      "downbeat": false,
+      "numerator": 3,
+      "denominator": 4
+    }
+  ],
+  "key": {
+    "root": 0,
+    "mode": "major",
+    "name": "C",
+    "confidence": 0.9127,
+    "source": "duration-weighted-pitch-class-profile"
+  },
+  "chordCells": [
+    {
+      "cellIndex": 0,
+      "bar": 1,
+      "part": 1,
+      "startTick": 0,
+      "endTick": 960,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "C",
+      "root": 0,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Cadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Cmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "C6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2880.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 1,
+      "bar": 1,
+      "part": 2,
+      "startTick": 960,
+      "endTick": 1920,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "C",
+      "root": 0,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Cadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Cmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "C6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2880.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 2,
+      "bar": 2,
+      "part": 1,
+      "startTick": 1920,
+      "endTick": 2880,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "C",
+      "root": 0,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Cadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Cmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "C6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2880.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 3,
+      "bar": 2,
+      "part": 2,
+      "startTick": 2880,
+      "endTick": 3840,
+      "numerator": 4,
+      "denominator": 4,
+      "symbol": "C",
+      "root": 0,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Cadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Cmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "C6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2880.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 4,
+      "bar": 3,
+      "part": 1,
+      "startTick": 3840,
+      "endTick": 4560,
+      "numerator": 3,
+      "denominator": 4,
+      "symbol": "F",
+      "root": 5,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Fadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Fmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "F6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2160.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 5,
+      "bar": 3,
+      "part": 2,
+      "startTick": 4560,
+      "endTick": 5280,
+      "numerator": 3,
+      "denominator": 4,
+      "symbol": "F",
+      "root": 5,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Fadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Fmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "F6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2160.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 6,
+      "bar": 4,
+      "part": 1,
+      "startTick": 5280,
+      "endTick": 6000,
+      "numerator": 3,
+      "denominator": 4,
+      "symbol": "F",
+      "root": 5,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Fadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Fmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "F6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2160.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    },
+    {
+      "cellIndex": 7,
+      "bar": 4,
+      "part": 2,
+      "startTick": 6000,
+      "endTick": 6720,
+      "numerator": 3,
+      "denominator": 4,
+      "symbol": "F",
+      "root": 5,
+      "quality": "major",
+      "bass": null,
+      "confidence": 0.9988,
+      "coverage": 1.0,
+      "nonChordToneRatio": 0.0,
+      "modalBorrowing": false,
+      "alternatives": [
+        {
+          "symbol": "Fadd9",
+          "score": 0.77217
+        },
+        {
+          "symbol": "Fmaj7",
+          "score": 0.77217
+        },
+        {
+          "symbol": "F6",
+          "score": 0.77217
+        }
+      ],
+      "uncertainty": [],
+      "noteEvidenceCount": 3,
+      "evidenceWeights": {
+        "harmony": 2160.0
+      },
+      "analysisVelocityUsed": false,
+      "decision": "ACCEPT"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-001",
+      "label": "intro",
+      "startTick": 0,
+      "endTick": 3840,
+      "confidence": 0.99,
+      "evidence": {
+        "kind": "midi-marker",
+        "text": "intro",
+        "trackIndex": 0
+      },
+      "decision": "ACCEPT"
+    },
+    {
+      "id": "sec-002",
+      "label": "verse",
+      "startTick": 3840,
+      "endTick": 6720,
+      "confidence": 0.99,
+      "evidence": {
+        "kind": "midi-marker",
+        "text": "verse",
+        "trackIndex": 0
+      },
+      "decision": "ACCEPT"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-001",
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 3840,
+      "barStart": 1,
+      "barEnd": 2,
+      "density": 1.5,
+      "trend": -3,
+      "cues": [],
+      "confidence": 0.92
+    },
+    {
+      "id": "phrase-002",
+      "sectionId": "sec-002",
+      "startTick": 3840,
+      "endTick": 6720,
+      "barStart": 3,
+      "barEnd": 4,
+      "density": 1.5,
+      "trend": -3,
+      "cues": [],
+      "confidence": 0.92
+    }
+  ],
+  "cadences": [
+    {
+      "sectionId": "sec-001",
+      "tick": 3840,
+      "type": "unresolved",
+      "confidence": 0.9988,
+      "evidenceSymbols": [
+        "C"
+      ],
+      "decision": "MANUAL_REVIEW"
+    },
+    {
+      "sectionId": "sec-002",
+      "tick": 6720,
+      "type": "unresolved",
+      "confidence": 0.9988,
+      "evidenceSymbols": [
+        "F"
+      ],
+      "decision": "MANUAL_REVIEW"
+    }
+  ],
+  "roleSegments": [
+    {
+      "trackUid": "trk-ead8153c87fe2a455793",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "channelIndex": 0,
+      "channelNumber": 1,
+      "sectionId": "sec-001",
+      "startTick": 0,
+      "endTick": 3840,
+      "role": "pad",
+      "confidence": 0.82,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "Harmony",
+        "program": 0,
+        "noteCount": 3,
+        "medianPitch": 64,
+        "averageDuration": 3840,
+        "polyphonyPeak": 3,
+        "reasons": [
+          "sustained-polyphonic-texture"
+        ]
+      }
+    },
+    {
+      "trackUid": "trk-ead8153c87fe2a455793",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "channelIndex": 0,
+      "channelNumber": 1,
+      "sectionId": "sec-002",
+      "startTick": 3840,
+      "endTick": 6720,
+      "role": "pad",
+      "confidence": 0.82,
+      "decision": "ACCEPT",
+      "evidence": {
+        "trackName": "Harmony",
+        "program": 0,
+        "noteCount": 3,
+        "medianPitch": 69,
+        "averageDuration": 2880,
+        "polyphonyPeak": 3,
+        "reasons": [
+          "sustained-polyphonic-texture"
+        ]
+      }
+    }
+  ],
+  "polyphony": {
+    "globalPeak": 3,
+    "sections": [
+      {
+        "sectionId": "sec-001",
+        "peak": 3
+      },
+      {
+        "sectionId": "sec-002",
+        "peak": 3
+      }
+    ],
+    "method": "full-note-duration-sweep"
+  },
+  "manualReview": [
+    {
+      "kind": "cadence",
+      "id": "sec-001",
+      "startTick": 3840,
+      "endTick": 3840,
+      "confidence": 0.9988,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    },
+    {
+      "kind": "cadence",
+      "id": "sec-002",
+      "startTick": 6720,
+      "endTick": 6720,
+      "confidence": 0.9988,
+      "reasons": [
+        "confidence-below-accept-threshold"
+      ]
+    }
+  ],
+  "confidence": 0.9675,
+  "analysisVelocityUsed": false,
+  "correctionAudit": [],
+  "analysis": {
+    "halfBarHarmony": true,
+    "variableTempo": true,
+    "variableMeter": true,
+    "sourceBytesMutated": false
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "sourceMidiMutated": false,
+    "lowConfidenceRequiresManualReview": true,
+    "trackRolesAreTimeScoped": true
+  },
+  "mapHash": "914b530522dd5475423ec93abf92fff2d5b67713032eb2815fe231bac9a20e79"
+}

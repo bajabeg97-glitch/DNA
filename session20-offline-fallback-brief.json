@@ -1,0 +1,100 @@
+{
+  "schema": "dna-premium-producer-brief",
+  "version": "2.0",
+  "sourceText": "Make a rock style with guitar.",
+  "sourceTextSha256": "9245da57b5bba53d2c18ee6c94b501bee59bc679b980db4ab0aea5ef67be514c",
+  "language": "en",
+  "intent": {
+    "genre": "rock",
+    "energyCurve": [
+      {
+        "section": "intro",
+        "value": 35
+      },
+      {
+        "section": "verse",
+        "value": 45
+      },
+      {
+        "section": "chorus",
+        "value": 75
+      },
+      {
+        "section": "bridge",
+        "value": 60
+      },
+      {
+        "section": "ending",
+        "value": 45
+      }
+    ],
+    "density": "balanced",
+    "syncopation": "medium",
+    "space": "balanced",
+    "transitions": "balanced",
+    "soloTreatment": "preserve",
+    "requiredRoles": [
+      "guitar"
+    ],
+    "forbiddenRoles": [],
+    "lockedElements": [],
+    "transformationTolerance": 50
+  },
+  "evidence": [
+    {
+      "field": "genre",
+      "value": "rock",
+      "matchedText": "rock",
+      "confidence": 0.98,
+      "source": "local-rule"
+    },
+    {
+      "field": "requiredRoles",
+      "value": "guitar",
+      "matchedText": "with guitar",
+      "confidence": 0.96,
+      "source": "local-rule"
+    }
+  ],
+  "conflicts": [],
+  "approval": {
+    "required": false,
+    "status": "NOT_REQUIRED",
+    "approvedBy": null,
+    "resolutions": {}
+  },
+  "understanding": {
+    "title": "AI je razumio",
+    "summary": "rock / balanced / medium syncopation; balanced transitions; solo=preserve",
+    "assumptions": [
+      "density defaulted to balanced",
+      "syncopation defaulted to medium",
+      "space defaulted to balanced",
+      "transitions defaulted to balanced",
+      "soloTreatment defaulted to preserve",
+      "Optional AI was unavailable; local parser result retained."
+    ],
+    "warnings": []
+  },
+  "adapter": {
+    "mode": "local",
+    "cloudRequested": true,
+    "explicitConsent": true,
+    "metadataOnly": true,
+    "responseAccepted": false,
+    "fallbackReason": "cloud-unavailable:ConnectionError"
+  },
+  "readyForPlanning": true,
+  "safety": {
+    "readOnly": true,
+    "midiBytesAccepted": false,
+    "midiWriterAvailable": false,
+    "pathWriteAllowed": false,
+    "bankProgramAuthority": false,
+    "validatorBypassAllowed": false,
+    "factoryDynamicsAuthority": true,
+    "goldDynamicsAuthority": false,
+    "originalSoloMutationAllowed": false
+  },
+  "briefHash": "a9c203cce9eb41c11d5a05f9f783bef754a146bb71bcb899f98e6cb83567b0e6"
+}

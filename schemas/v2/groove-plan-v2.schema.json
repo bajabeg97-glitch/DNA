@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/groove-plan-v2.schema.json",
+  "title": "DNA Premium GroovePlan v2",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": [
+    "schema", "version", "source", "registries", "controls",
+    "channelAssignments", "rolePolicies", "grooveTemplates", "variants",
+    "audit", "deviceVoiceCost", "manualReview", "readyForRenderPlanning",
+    "safety", "groovePlanHash"
+  ],
+  "properties": {
+    "schema": {"const": "dna-premium-groove-plan"},
+    "version": {"const": "2.0"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidateSetHash", "graphHash", "songMapHash", "sourceMidiSha256", "seed", "variantCount"],
+      "properties": {
+        "candidateSetHash": {"$ref": "#/$defs/hash"},
+        "graphHash": {"$ref": "#/$defs/hash"},
+        "songMapHash": {"$ref": "#/$defs/hash"},
+        "sourceMidiSha256": {"$ref": "#/$defs/hash"},
+        "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+        "variantCount": {"type": "integer", "minimum": 2, "maximum": 4}
+      }
+    },
+    "registries": {"type": "object"},
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "strength", "gateStrength", "simplificationPolicy", "softwareMidiNoteCeiling"],
+      "properties": {
+        "version": {"const": "1.0"},
+        "strength": {"type": "integer", "minimum": 0, "maximum": 100},
+        "gateStrength": {"type": "integer", "minimum": 0, "maximum": 100},
+        "simplificationPolicy": {"enum": ["AUTO_SAFE", "MANUAL_REVIEW"]},
+        "softwareMidiNoteCeiling": {"const": 54}
+      }
+    },
+    "channelAssignments": {
+      "type": "array", "minItems": 8, "maxItems": 8,
+      "items": {"$ref": "#/$defs/channelAssignment"}
+    },
+    "rolePolicies": {
+      "type": "array", "minItems": 8, "maxItems": 8,
+      "items": {"$ref": "#/$defs/rolePolicy"}
+    },
+    "grooveTemplates": {"type": "array", "items": {"$ref": "#/$defs/template"}},
+    "variants": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"$ref": "#/$defs/variant"}},
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "templateCount", "variantCount", "fragmentCount", "eventCount",
+        "disabledEventCount", "maximumPeakBeforeSimplification",
+        "maximumPeakAfterSimplification", "allVariantsWithinMidiNoteCeiling",
+        "goldTimingOnly", "lockedFragmentsPreserved"
+      ],
+      "properties": {
+        "templateCount": {"type": "integer", "minimum": 0},
+        "variantCount": {"type": "integer", "minimum": 2, "maximum": 4},
+        "fragmentCount": {"type": "integer", "minimum": 0},
+        "eventCount": {"type": "integer", "minimum": 0},
+        "disabledEventCount": {"type": "integer", "minimum": 0},
+        "maximumPeakBeforeSimplification": {"type": "integer", "minimum": 0},
+        "maximumPeakAfterSimplification": {"type": "integer", "minimum": 0},
+        "allVariantsWithinMidiNoteCeiling": {"type": "boolean"},
+        "goldTimingOnly": {"const": true},
+        "lockedFragmentsPreserved": {"const": true}
+      }
+    },
+    "deviceVoiceCost": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "profileHash", "physicalPa800Required"],
+      "properties": {
+        "status": {"enum": ["UNCONFIRMED", "CONFIRMED_MODEL", "MIXED"]},
+        "profileHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "physicalPa800Required": {"type": "boolean"}
+      }
+    },
+    "manualReview": {"type": "array", "items": {"$ref": "#/$defs/review"}},
+    "readyForRenderPlanning": {"type": "boolean"},
+    "safety": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "readOnly", "midiMutationAllowed", "finalMidiGenerated",
+        "factoryDynamicsUnchanged", "goldDynamicsAuthority",
+        "goldBankProgramAuthority", "soundBindingUnchanged",
+        "originalSoloUnchanged", "lockedFragmentsUnchanged",
+        "fullDurationPolyphonyMeasured", "softwareMidiNoteCeiling",
+        "deviceVoiceCostConfirmed"
+      ],
+      "properties": {
+        "readOnly": {"const": true},
+        "midiMutationAllowed": {"const": false},
+        "finalMidiGenerated": {"const": false},
+        "factoryDynamicsUnchanged": {"const": true},
+        "goldDynamicsAuthority": {"const": false},
+        "goldBankProgramAuthority": {"const": false},
+        "soundBindingUnchanged": {"const": true},
+        "originalSoloUnchanged": {"const": true},
+        "lockedFragmentsUnchanged": {"const": true},
+        "fullDurationPolyphonyMeasured": {"const": true},
+        "softwareMidiNoteCeiling": {"const": 54},
+        "deviceVoiceCostConfirmed": {"type": "boolean"}
+      }
+    },
+    "groovePlanHash": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "role": {"enum": ["drums", "percussion", "bass", "guitar", "accompaniment", "riff", "solo", "pad"]},
+    "marker": {"enum": ["i1cv1", "i2cv1", "v1cv1", "v2cv1", "v3cv1", "v4cv1", "f1cv1", "f2cv1", "e1cv1", "e2cv1"]},
+    "channelAssignment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "logicalTrack", "channelNumber"],
+      "properties": {
+        "role": {"$ref": "#/$defs/role"},
+        "logicalTrack": {"type": "string", "minLength": 1},
+        "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16}
+      }
+    },
+    "rolePolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "channelNumber", "logicalTrack", "microtimingLimitTicks", "gateVariationLimitPercent", "priorityTier", "preservePriority"],
+      "properties": {
+        "role": {"$ref": "#/$defs/role"},
+        "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16},
+        "logicalTrack": {"type": "string", "minLength": 1},
+        "microtimingLimitTicks": {"type": "integer", "minimum": 0, "maximum": 24},
+        "gateVariationLimitPercent": {"type": "integer", "minimum": 0, "maximum": 20},
+        "priorityTier": {"enum": ["PROTECTED", "CORE", "SUPPORT", "DECORATIVE"]},
+        "preservePriority": {"type": "integer", "minimum": 0, "maximum": 127}
+      }
+    },
+    "templateStep": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stepIndex", "sampleCount", "medianSourceOffsetTicks", "appliedOffsetTicks"],
+      "properties": {
+        "stepIndex": {"type": "integer", "minimum": 0},
+        "sampleCount": {"type": "integer", "minimum": 1},
+        "medianSourceOffsetTicks": {"type": "integer"},
+        "appliedOffsetTicks": {"type": "integer"}
+      }
+    },
+    "template": {
+      "type": "object", "additionalProperties": false,
+      "required": ["templateId", "patternId", "sourceKind", "role", "sourceTimingResolution", "targetPpq", "gridDivision", "microtimingLimitTicks", "gateVariationLimitPercent", "intentionalFeel", "timingAuthority", "steps", "templateHash"],
+      "properties": {
+        "templateId": {"type": "string", "pattern": "^groove-[0-9a-f]{20}$"},
+        "patternId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"},
+        "sourceKind": {"enum": ["GOLD_PERFORMANCE", "FACTORY_STRUMMING"]},
+        "role": {"$ref": "#/$defs/role"},
+        "sourceTimingResolution": {"type": "integer", "minimum": 1},
+        "targetPpq": {"type": "integer", "minimum": 1},
+        "gridDivision": {"const": "1/16"},
+        "microtimingLimitTicks": {"type": "integer", "minimum": 0},
+        "gateVariationLimitPercent": {"type": "integer", "minimum": 0},
+        "intentionalFeel": {"enum": ["STRAIGHT", "AHEAD", "LAID_BACK", "MIXED"]},
+        "timingAuthority": {"enum": ["TIMING_AND_GATE_ONLY", "FACTORY_PERFORMANCE_TIMING"]},
+        "steps": {"type": "array", "items": {"$ref": "#/$defs/templateStep"}},
+        "templateHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["eventId", "sourceEventIndex", "cycleIndex", "originalOnsetTick", "originalDurationTick", "onsetTick", "durationTick", "timingOffsetTick", "gateDeltaTick", "pitchToken", "enabled", "priorityTier", "preservePriority", "eventHash"],
+      "properties": {
+        "eventId": {"type": "string", "pattern": "^evt-[0-9a-f]{20}$"},
+        "sourceEventIndex": {"type": "integer", "minimum": 0},
+        "cycleIndex": {"type": "integer", "minimum": 0},
+        "originalOnsetTick": {"type": "integer", "minimum": 0},
+        "originalDurationTick": {"type": "integer", "minimum": 1},
+        "onsetTick": {"type": "integer", "minimum": 0},
+        "durationTick": {"type": "integer", "minimum": 1},
+        "timingOffsetTick": {"type": "integer"},
+        "gateDeltaTick": {"type": "integer"},
+        "pitchToken": {"type": "integer"},
+        "enabled": {"type": "boolean"},
+        "priorityTier": {"enum": ["PROTECTED", "CORE", "SUPPORT", "DECORATIVE"]},
+        "preservePriority": {"type": "integer", "minimum": 0, "maximum": 127},
+        "eventHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "fragment": {
+      "type": "object", "additionalProperties": false,
+      "required": ["requestId", "marker", "role", "logicalTrack", "channelNumber", "sourceKind", "patternId", "pitchMode", "sourceSelectionFragmentHash", "sourceTimingHash", "templateId", "locked", "humanizationApplied", "status", "markerLengthTicks", "events", "fragmentHash"],
+      "properties": {
+        "requestId": {"type": "string"},
+        "marker": {"$ref": "#/$defs/marker"},
+        "role": {"$ref": "#/$defs/role"},
+        "logicalTrack": {"type": "string"},
+        "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16},
+        "sourceKind": {"type": ["string", "null"]},
+        "patternId": {"type": ["string", "null"]},
+        "pitchMode": {"type": ["string", "null"]},
+        "sourceSelectionFragmentHash": {"$ref": "#/$defs/hash"},
+        "sourceTimingHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "templateId": {"type": ["string", "null"]},
+        "locked": {"type": "boolean"},
+        "humanizationApplied": {"type": "boolean"},
+        "status": {"enum": ["KEEP_ORIGINAL", "PRESERVED_LOCKED", "GROOVE_PLANNED", "SIMPLIFIED_FOR_POLYPHONY"]},
+        "markerLengthTicks": {"type": "integer", "minimum": 0},
+        "events": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+        "fragmentHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "sectionPeak": {
+      "type": "object", "additionalProperties": false,
+      "required": ["marker", "peak", "peakTick", "noteCount"],
+      "properties": {
+        "marker": {"$ref": "#/$defs/marker"},
+        "peak": {"type": "integer", "minimum": 0},
+        "peakTick": {"type": "integer", "minimum": 0},
+        "noteCount": {"type": "integer", "minimum": 0}
+      }
+    },
+    "trackPeak": {
+      "type": "object", "additionalProperties": false,
+      "required": ["logicalTrack", "role", "channelNumber", "peak", "peakMarker", "noteCount"],
+      "properties": {
+        "logicalTrack": {"type": "string"}, "role": {"$ref": "#/$defs/role"},
+        "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16},
+        "peak": {"type": "integer", "minimum": 0}, "peakMarker": {"$ref": "#/$defs/marker"},
+        "noteCount": {"type": "integer", "minimum": 0}
+      }
+    },
+    "channelPeak": {
+      "type": "object", "additionalProperties": false,
+      "required": ["channelNumber", "logicalTrack", "role", "peak", "peakMarker"],
+      "properties": {
+        "channelNumber": {"type": "integer", "minimum": 9, "maximum": 16},
+        "logicalTrack": {"type": "string"}, "role": {"$ref": "#/$defs/role"},
+        "peak": {"type": "integer", "minimum": 0}, "peakMarker": {"$ref": "#/$defs/marker"}
+      }
+    },
+    "polyphonyReport": {
+      "type": "object", "additionalProperties": false,
+      "required": ["softwareMidiNoteCeiling", "globalPeak", "globalPeakMarker", "withinSoftwareCeiling", "method", "tracks", "channels", "sections", "reportHash"],
+      "properties": {
+        "softwareMidiNoteCeiling": {"const": 54},
+        "globalPeak": {"type": "integer", "minimum": 0},
+        "globalPeakMarker": {"$ref": "#/$defs/marker"},
+        "withinSoftwareCeiling": {"type": "boolean"},
+        "method": {"const": "full-note-duration-per-style-section"},
+        "tracks": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"$ref": "#/$defs/trackPeak"}},
+        "channels": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"$ref": "#/$defs/channelPeak"}},
+        "sections": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"$ref": "#/$defs/sectionPeak"}},
+        "reportHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "operation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation", "marker", "requestId", "eventCount", "reason"],
+      "properties": {
+        "operation": {"enum": ["DROP_DECORATIVE_LAYER", "THIN_SUPPORT_VOICE"]},
+        "marker": {"type": "string"}, "requestId": {"type": "string"},
+        "eventCount": {"type": "integer", "minimum": 1}, "reason": {"const": "MIDI_NOTE_CEILING"}
+      }
+    },
+    "voiceCost": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "profileHash", "estimatedPeakUnits", "ceilingUnits", "overflow", "decision"],
+      "properties": {
+        "status": {"enum": ["UNCONFIRMED", "CONFIRMED_MODEL"]},
+        "profileHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "estimatedPeakUnits": {"type": ["number", "null"], "minimum": 0},
+        "ceilingUnits": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "overflow": {"type": ["boolean", "null"]},
+        "decision": {"enum": ["PHYSICAL_DEVICE_PROFILE_REQUIRED", "SIMPLIFICATION_REQUIRED", "WITHIN_CONFIRMED_DEVICE_BUDGET"]}
+      }
+    },
+    "variant": {
+      "type": "object", "additionalProperties": false,
+      "required": ["variantId", "sourceVariantHash", "fragments", "simplificationOperations", "polyphonyBefore", "polyphonyAfter", "deviceVoiceCost", "renderable", "variantHash"],
+      "properties": {
+        "variantId": {"type": "string", "pattern": "^variant-[A-D]$"},
+        "sourceVariantHash": {"$ref": "#/$defs/hash"},
+        "fragments": {"type": "array", "items": {"$ref": "#/$defs/fragment"}},
+        "simplificationOperations": {"type": "array", "items": {"$ref": "#/$defs/operation"}},
+        "polyphonyBefore": {"$ref": "#/$defs/polyphonyReport"},
+        "polyphonyAfter": {"$ref": "#/$defs/polyphonyReport"},
+        "deviceVoiceCost": {"$ref": "#/$defs/voiceCost"},
+        "renderable": {"type": "boolean"},
+        "variantHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["variantId", "code", "reason", "peak", "ceiling"],
+      "properties": {
+        "variantId": {"type": "string"},
+        "code": {"enum": ["MIDI_NOTE_POLYPHONY_OVERFLOW", "DEVICE_VOICE_COST_OVERFLOW"]},
+        "reason": {"type": "string", "minLength": 1},
+        "peak": {"type": "number", "minimum": 0},
+        "ceiling": {"type": "number", "minimum": 1}
+      }
+    }
+  }
+}

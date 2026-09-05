@@ -1,0 +1,24 @@
+{
+  "schema": "dna-session38-device-lab-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "requiredPhysicalChecks": 17,
+  "requiredMarkers": 10,
+  "requiredStyleBindings": 8,
+  "requiredArticulationEngines": 3,
+  "requiredVoiceCostRows": 8,
+  "captureAuthority": "PENDING",
+  "deviceStatus": "WAITING_FOR_DEVICE",
+  "machineObservedPhysicalDevice": false,
+  "deviceSpecificMapsAllowed": false,
+  "voiceCostModelAllowed": false,
+  "pa800CertifiedLabelAllowed": false,
+  "finalCertifiedMidiExportAllowed": false,
+  "requiredExternalEvidence": [
+    "HASHED_DEVICE_IMAGE",
+    "HASHED_DEVICE_AUDIO",
+    "OPERATOR_APPROVED_HASH",
+    "INDEPENDENT_REVIEW"
+  ],
+  "benchmarkHash": "81336006d9af1073e73506fe2fa5596f8c8a6397af78c51caae40f0072207a6c"
+}

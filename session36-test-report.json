@@ -1,0 +1,90 @@
+{
+  "schema": "dna-session36-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "zero-silent-failure-parser-fuzz-atomic-worker-stress-and-regression-vault",
+  "formalSuite": {
+    "testsRun": 184,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session36-benchmark-report.json",
+    "malformedMidiCases": 24,
+    "sealedByteMutations": 200,
+    "atomicFaults": 7,
+    "workerCounts": [
+      1,
+      2,
+      4
+    ],
+    "byteIdenticalAcrossWorkers": true,
+    "unhandledExceptions": 0,
+    "silentFallbacks": 0,
+    "partialOutputs": 0,
+    "openSeverity1": 0,
+    "openSeverity2": 0,
+    "stressProfiles": [
+      {
+        "noteCount": 25000,
+        "parsedNoteCount": 25000,
+        "midiBytes": 200026,
+        "seconds": 1.476284,
+        "secondsLimit": 10.0,
+        "peakBytes": 17646484,
+        "peakBytesLimit": 536870912,
+        "withinBudget": true,
+        "profileHash": "46aa1a9da1d53d4aabac4e83e3e0529a2f92a76b4c1c3b48d225363971cc963b"
+      },
+      {
+        "noteCount": 100000,
+        "parsedNoteCount": 100000,
+        "midiBytes": 800026,
+        "seconds": 6.062056,
+        "secondsLimit": 35.0,
+        "peakBytes": 70858084,
+        "peakBytesLimit": 536870912,
+        "withinBudget": true,
+        "profileHash": "2144430554ca68ed5cee7ea23ada2d95718eb15f207f0d5a773252bdf49ec3d4"
+      }
+    ],
+    "lockedRegressions": 232,
+    "zeroTrackParserRegressionClosed": true,
+    "benchmarkHash": "185a8f50b5665e481ae0ac78ce3f911f5b9de3d960e0426eb60a0c4544240568"
+  },
+  "artifacts": {
+    "report": "artifacts/session36-reliability-report.json",
+    "vault": "artifacts/session36-regression-vault.json",
+    "atomic": "artifacts/session36-atomic-fault-matrix.json",
+    "workerParity": "artifacts/session36-worker-parity.json",
+    "stress": "artifacts/session36-stress-profiles.json",
+    "schemaCatalog": "data/session36-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session36_reliability_gate.py",
+    "api": "/api/reliability-gate",
+    "guiWorkspace": "RELIABILITY & SAFETY",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "allFailuresFailClosed": true,
+    "silentFallbackAllowed": false,
+    "partialOutputAllowed": false,
+    "sourceOverwriteAllowed": false,
+    "workerOutputDivergence": false,
+    "goldAffectsDynamics": false,
+    "originalSoloMutationAllowed": false,
+    "validatorBypassAllowed": false,
+    "finalCertifiedMidiExportAllowed": false,
+    "physicalCertificationClaimed": false
+  },
+  "status": {
+    "session36Reliability": "SOFTWARE_VALIDATED / RELEASE_HARDENED_PREVIEW",
+    "activeSoftwareBaseline": "4.10.2-zero-silent-failure-reliability-foundation",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW",
+    "qualityEvidence": "HUMAN_LISTENING_PENDING_0_OF_2",
+    "finalCertifiedMidiExport": "BLOCKED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

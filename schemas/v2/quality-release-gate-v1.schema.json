@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/quality-release-gate-v1.schema.json",
+  "title": "Quality Release Gate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "sources", "softwareStructuralHoldoutPassed", "reliabilityPassed", "automatedQualityPassed", "humanListeningPassed", "productionExpressionPassed", "qualityReleaseGatePassed", "finalCertifiedMidiExportAllowed", "blockers", "allowedProductName", "physicalPa800", "gateHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-quality-release-gate"},
+    "version": {"const": "1.0"},
+    "date": {"type": "string", "format": "date"},
+    "sources": {"type": "object"},
+    "softwareStructuralHoldoutPassed": {"type": "boolean"},
+    "reliabilityPassed": {"type": "boolean"},
+    "automatedQualityPassed": {"type": "boolean"},
+    "humanListeningPassed": {"type": "boolean"},
+    "productionExpressionPassed": {"type": "boolean"},
+    "qualityReleaseGatePassed": {"type": "boolean"},
+    "finalCertifiedMidiExportAllowed": {"const": false},
+    "blockers": {"type": "array"},
+    "allowedProductName": {"const": "AI PREMIUM ARRANGER PREVIEW"},
+    "physicalPa800": {"const": "WAITING_FOR_DEVICE"},
+    "gateHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

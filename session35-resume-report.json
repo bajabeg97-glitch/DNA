@@ -1,0 +1,16 @@
+{
+  "schema": "dna-arranger-project-resume",
+  "version": "1.0",
+  "status": "READY_TO_RESUME",
+  "projectHash": "fcaa2eead353a05a2713d8bd566e62135782cb067f7f5399ccda1c117b0dccaa",
+  "checkpointHash": "0198f4f7a664a5e9bf2dc614df6ce92f87c9f2fca57bb3c815885b674cdf1474",
+  "resumeStage": "RENDER",
+  "restoredControls": {
+    "selectedVariantId": "C",
+    "lockedMarkers": [],
+    "projectSeed": 3535,
+    "previewTier": "PREVIEW_ONLY"
+  },
+  "lastConfirmedStageHash": "d9df2f0ab36a5e2e82b1b7eb66d3344168485d675e14da490a32ab4784f41f19",
+  "resumeHash": "c0b4f58dbcf43247907379f9ec7e0c282cc3039411d56e2442622310a02694fa"
+}

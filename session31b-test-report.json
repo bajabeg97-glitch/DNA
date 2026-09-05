@@ -1,0 +1,74 @@
+{
+  "schema": "dna-session31b-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "content-addressed-factory-gold-analysis-expression-articulation-authority-resolution",
+  "formalSuite": {
+    "testsRun": 144,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session31b-benchmark-report.json",
+    "ledgerHash": "db16f833225282cb8c63a64ec2cf52b8d1e4268d81500e989bd51d9aa3b61a05",
+    "totalSubjects": 1657,
+    "explicitAuthoritySubjects": 1657,
+    "coverageRate": 1.0,
+    "decisionCounts": {
+      "ALLOW": 1559,
+      "KEEP": 1,
+      "SKIP": 94,
+      "MANUAL_REVIEW": 3,
+      "BLOCK": 0
+    },
+    "subjectCounts": {
+      "ARTICULATION_EVENT": 11,
+      "CC11_POINT": 16,
+      "EXPRESSION_EVENT": 83,
+      "GROOVE_EVENT": 1490,
+      "PATTERN_SELECTION": 52,
+      "TRACK": 1,
+      "TRACK_SEGMENT": 4
+    },
+    "evidenceCount": 111,
+    "verifiedRegistryCount": 3,
+    "firstBuildSeconds": 1.353717,
+    "cachedBuildSeconds": 0.200262,
+    "benchmarkHash": "5a7a1dab3b229a6bb9e19d0ebf8856f44f4927b1d9b3818134adf1ef76a64ea6"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session31b-reference.mid",
+    "trackAnalysis": "artifacts/session31b-track-analysis.json",
+    "evidenceLedger": "artifacts/session31b-evidence-ledger.json",
+    "coverageReport": "artifacts/session31b-evidence-coverage-report.json",
+    "authorityDecisions": "artifacts/session31b-authority-decisions.json",
+    "schemaCatalog": "data/session31b-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session31b_evidence_resolver.py",
+    "api": "/api/evidence-authority-resolver",
+    "guiWorkspace": "EVIDENCE AUTHORITY LEDGER 3.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "failClosed": true,
+    "goldDynamicsAuthority": false,
+    "approximateSoundBindingAllowed": false,
+    "testOnlyProductionAllowed": false,
+    "deviceClaimed": false,
+    "midiMutationAuthority": false,
+    "rendererAuthority": false,
+    "validatorAuthority": false,
+    "finalMidiExportAllowed": false
+  },
+  "status": {
+    "session31BEvidenceAuthority": "SOFTWARE_VALIDATED / READ_ONLY FOUNDATION",
+    "activeSoftwareBaseline": "4.9.1-evidence-authority-foundation",
+    "trackPlanFullOptimizer": "NEXT",
+    "evidenceDrivenRenderer": "PLANNED",
+    "finalMidiExport": "BLOCKED",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

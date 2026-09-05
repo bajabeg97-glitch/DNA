@@ -1,0 +1,59 @@
+{
+  "schema": "dna-phase-arranger-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "formalSuite": {
+    "testsRun": 43,
+    "failures": 0,
+    "errors": 0,
+    "releaseCheck": "PASS"
+  },
+  "syntheticFixture": {
+    "plan": {
+      "KEEP": 1,
+      "REPAIR": 0,
+      "REPLACE": 1,
+      "MANUAL_REVIEW": 0
+    },
+    "phaseNotesRemoved": 4,
+    "phaseNotesInserted": 1,
+    "phaseReplaceApplied": 1,
+    "soloNotesQuantizeProtected": 5,
+    "programChangePreserved": true,
+    "trackCountPreserved": true,
+    "factoryVelocityOnly": true,
+    "sameSeedSameMidiBytes": true,
+    "transformationBudgetPassed": true
+  },
+  "realGoldSong": {
+    "source": "AKO TE DRUGI PR-SAMIR R UZIVO.MID",
+    "phases": 11,
+    "chordCells": 236,
+    "korgChordEvidenceCandidates": 239,
+    "decisions": 89,
+    "decisionCounts": {
+      "KEEP": 76,
+      "REPAIR": 2,
+      "REPLACE": 0,
+      "MANUAL_REVIEW": 11
+    },
+    "allowReplace": false,
+    "planHash": "98aeac0dc42e35af7c8f667aa3ca33ab727205dc1ce2c1cdeafbcb3cb12872b3",
+    "sameSeedSamePlan": true,
+    "readOnlyPlanning": true
+  },
+  "invariants": {
+    "analysisVelocityUsed": false,
+    "goldAffectsVelocity": false,
+    "goldAffectsProgramChange": false,
+    "goldControlsRhythmGuitar": false,
+    "soloTimingMutable": false,
+    "phasePlanBeforeMutation": true,
+    "invalidMidiExported": false
+  },
+  "certification": {
+    "software": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

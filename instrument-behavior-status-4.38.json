@@ -1,0 +1,545 @@
+{
+  "schema": "dna-instrument-behavior-catalog",
+  "version": "1.0",
+  "profiles": {
+    "drums": {
+      "role": "drums",
+      "musician_model": "drummer",
+      "follows": [
+        "meter",
+        "section",
+        "bass",
+        "phrase-boundary"
+      ],
+      "techniques": [
+        "kick-pocket",
+        "backbeat",
+        "ghost",
+        "hat-subdivision",
+        "fill",
+        "crash-entry",
+        "tom-transition"
+      ],
+      "phrase_rules": [
+        "foundation before decoration",
+        "fills grow from groove",
+        "preserve clear kick/snare hierarchy"
+      ],
+      "optimization_priorities": [
+        "element-specific balance",
+        "drum-bass coupling",
+        "transition logic",
+        "remove implausible clutter"
+      ],
+      "forbidden_without_device_evidence": [
+        "unverified-kit-remap",
+        "unverified-rx-drum-trigger"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "percussion": {
+      "role": "percussion",
+      "musician_model": "percussionist",
+      "follows": [
+        "drums",
+        "meter",
+        "section",
+        "space"
+      ],
+      "techniques": [
+        "interlock",
+        "offbeat-color",
+        "pickup",
+        "sparse-fill"
+      ],
+      "phrase_rules": [
+        "never compete with kick/snare",
+        "leave space for lead"
+      ],
+      "optimization_priorities": [
+        "density balance",
+        "interlock with drum grid",
+        "reduce redundant conga/shaker clutter"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "bass": {
+      "role": "bass",
+      "musician_model": "bassist",
+      "follows": [
+        "kick",
+        "chord-root",
+        "next-chord",
+        "phrase",
+        "section"
+      ],
+      "techniques": [
+        "root",
+        "fifth",
+        "octave",
+        "third",
+        "passing",
+        "chromatic-approach",
+        "pickup",
+        "ghost-candidate",
+        "slap-candidate",
+        "pop-candidate",
+        "slide-candidate"
+      ],
+      "phrase_rules": [
+        "land chord changes clearly",
+        "use approaches into targets",
+        "octaves increase energy",
+        "avoid random register jumps",
+        "keep pocket with kick"
+      ],
+      "optimization_priorities": [
+        "functional-note labeling",
+        "kick-pocket score",
+        "voice-leading",
+        "gate/continuity",
+        "phrase-development"
+      ],
+      "forbidden_without_device_evidence": [
+        "slap-trigger",
+        "pop-trigger",
+        "rx-noise-trigger",
+        "dnc-slide-trigger"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "rhythm-guitar": {
+      "role": "rhythm-guitar",
+      "musician_model": "rhythm guitarist",
+      "follows": [
+        "chords",
+        "meter",
+        "drums",
+        "section",
+        "phrase"
+      ],
+      "techniques": [
+        "down",
+        "up",
+        "block",
+        "mute-candidate",
+        "palm-mute-candidate",
+        "stop",
+        "pickup",
+        "open-strum",
+        "single-string-candidate"
+      ],
+      "phrase_rules": [
+        "stroke direction must form playable strum flow",
+        "short gate may be intentional",
+        "open voicing in higher energy",
+        "do not piano-quantize strums"
+      ],
+      "optimization_priorities": [
+        "Factory strumming evidence",
+        "stroke spacing",
+        "mute/open contrast",
+        "chord change cleanliness"
+      ],
+      "forbidden_without_device_evidence": [
+        "guitar-mode-trigger",
+        "rx-fret-noise",
+        "dnc-controller"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "power-riff": {
+      "role": "power-riff",
+      "musician_model": "power-chord guitarist",
+      "follows": [
+        "chords",
+        "kick",
+        "section",
+        "transition"
+      ],
+      "techniques": [
+        "root-fifth",
+        "root-fifth-octave",
+        "octave",
+        "mute-hit",
+        "sustain-hit",
+        "pickup",
+        "register-lift"
+      ],
+      "phrase_rules": [
+        "chord-relative voicing",
+        "repeat with controlled variation",
+        "buildup before transition",
+        "strong voice-leading"
+      ],
+      "optimization_priorities": [
+        "attack-pattern",
+        "voicing",
+        "gate",
+        "register motion",
+        "phrase development",
+        "transition pickup"
+      ],
+      "forbidden_without_device_evidence": [
+        "unverified-guitar-trigger"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "riff": {
+      "role": "riff",
+      "musician_model": "riff player",
+      "follows": [
+        "chords",
+        "groove",
+        "phrase"
+      ],
+      "techniques": [
+        "motif",
+        "repeat",
+        "variation",
+        "pickup",
+        "answer"
+      ],
+      "phrase_rules": [
+        "preserve recognizable motif",
+        "vary endings more than anchors"
+      ],
+      "optimization_priorities": [
+        "motif continuity",
+        "register",
+        "syncopation",
+        "cadence"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "accompaniment": {
+      "role": "accompaniment",
+      "musician_model": "arranger",
+      "follows": [
+        "chords",
+        "lead-space",
+        "section"
+      ],
+      "techniques": [
+        "stab",
+        "sustain",
+        "voice-lead",
+        "answer",
+        "rest"
+      ],
+      "phrase_rules": [
+        "support not dominate",
+        "common tones preferred",
+        "leave room for solo"
+      ],
+      "optimization_priorities": [
+        "voice-leading",
+        "register separation",
+        "density",
+        "section energy"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "pad": {
+      "role": "pad",
+      "musician_model": "pad/strings player",
+      "follows": [
+        "chords",
+        "section",
+        "lead-space"
+      ],
+      "techniques": [
+        "sustain",
+        "common-tone",
+        "inversion",
+        "slow-move",
+        "swell-candidate"
+      ],
+      "phrase_rules": [
+        "minimal reattack",
+        "smooth common-tone voice-leading",
+        "avoid bass register"
+      ],
+      "optimization_priorities": [
+        "continuity",
+        "register separation",
+        "voice-leading",
+        "sparse reattack"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "brass": {
+      "role": "brass",
+      "musician_model": "brass arranger",
+      "follows": [
+        "chords",
+        "section",
+        "lead",
+        "transition"
+      ],
+      "techniques": [
+        "stab",
+        "unison-hit",
+        "octave-hit",
+        "answer",
+        "sustain",
+        "fall-candidate"
+      ],
+      "phrase_rules": [
+        "breathing space",
+        "strong accents at phrase points",
+        "avoid continuous block chords"
+      ],
+      "optimization_priorities": [
+        "attack placement",
+        "register separation",
+        "answer-phrase logic",
+        "gate"
+      ],
+      "forbidden_without_device_evidence": [
+        "unverified-fall-trigger",
+        "unverified-growl-trigger"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "accordion": {
+      "role": "accordion",
+      "musician_model": "accordionist",
+      "follows": [
+        "melody",
+        "chords",
+        "phrase",
+        "section"
+      ],
+      "techniques": [
+        "legato",
+        "grace",
+        "turn",
+        "trill",
+        "repeat-note",
+        "bellows-expression-candidate"
+      ],
+      "phrase_rules": [
+        "phrase in breaths",
+        "ornaments lead into important notes",
+        "avoid machine-gun gate"
+      ],
+      "optimization_priorities": [
+        "phrase contour",
+        "legato",
+        "ornament placement",
+        "expression continuity"
+      ],
+      "forbidden_without_device_evidence": [
+        "unverified-dnc-controller"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "solo": {
+      "role": "solo",
+      "musician_model": "lead musician",
+      "follows": [
+        "chords",
+        "phrase",
+        "section",
+        "cadence",
+        "available-space"
+      ],
+      "techniques": [
+        "chord-tone",
+        "passing",
+        "neighbor",
+        "approach",
+        "grace",
+        "trill",
+        "slide-candidate",
+        "turnaround",
+        "repeat-variation",
+        "cadence"
+      ],
+      "phrase_rules": [
+        "shape complete phrases, not isolated notes",
+        "ornament only where phrase supports it",
+        "legato by default unless articulation evidence says otherwise",
+        "cadence resolves phrase",
+        "preserve main melodic identity"
+      ],
+      "optimization_priorities": [
+        "phrase segmentation",
+        "continuity",
+        "ornament evidence",
+        "pitch-bend preservation",
+        "expression contour",
+        "cadence",
+        "relationship layers"
+      ],
+      "forbidden_without_device_evidence": [
+        "unverified-rx-dnc-trigger"
+      ],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "terca": {
+      "role": "terca",
+      "musician_model": "harmony singer/player",
+      "follows": [
+        "main-solo",
+        "chords",
+        "phrase"
+      ],
+      "techniques": [
+        "diatonic-third",
+        "contextual-third",
+        "unison-avoidance",
+        "phrase-follow"
+      ],
+      "phrase_rules": [
+        "follow solo rhythm selectively",
+        "never overpower main solo",
+        "harmonic validity before density"
+      ],
+      "optimization_priorities": [
+        "relationship correctness",
+        "level hierarchy",
+        "phrase alignment",
+        "continuity"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    },
+    "echo": {
+      "role": "echo",
+      "musician_model": "delay/answer player",
+      "follows": [
+        "main-solo",
+        "phrase-space",
+        "section"
+      ],
+      "techniques": [
+        "nonrecursive-delay",
+        "answer",
+        "tail"
+      ],
+      "phrase_rules": [
+        "never recursively echo itself",
+        "use available phrase space",
+        "remain below main solo"
+      ],
+      "optimization_priorities": [
+        "delay timing",
+        "density restraint",
+        "level hierarchy",
+        "gate/continuity"
+      ],
+      "forbidden_without_device_evidence": [],
+      "evidence_policy": "evidence-guided-soft-musical-hard-device"
+    }
+  },
+  "drumElements": {
+    "kick": {
+      "element": "kick",
+      "musical_job": "low-end pulse; locks with bass",
+      "timing_priority": "foundation",
+      "density_policy": "groove-dependent",
+      "transition_behavior": "pickup/fill support, never random clutter",
+      "duration_policy": "preserve-hit"
+    },
+    "snare": {
+      "element": "snare",
+      "musical_job": "backbeat/accent and phrase punctuation",
+      "timing_priority": "foundation",
+      "density_policy": "meter-dependent",
+      "transition_behavior": "accent or fill punctuation",
+      "duration_policy": "preserve-hit"
+    },
+    "side-stick": {
+      "element": "side-stick",
+      "musical_job": "soft backbeat/color",
+      "timing_priority": "secondary",
+      "density_policy": "sparse",
+      "transition_behavior": "normally withdraws in strong fills",
+      "duration_policy": "preserve-hit"
+    },
+    "closed-hat": {
+      "element": "closed-hat",
+      "musical_job": "subdivision/timekeeper",
+      "timing_priority": "high",
+      "density_policy": "continuous-but-patterned",
+      "transition_behavior": "may open/simplify approaching fill",
+      "duration_policy": "preserve-hit"
+    },
+    "open-hat": {
+      "element": "open-hat",
+      "musical_job": "lift/release accent",
+      "timing_priority": "accent",
+      "density_policy": "sparse",
+      "transition_behavior": "use as transition lift, not constant",
+      "duration_policy": "preserve-hit"
+    },
+    "ride": {
+      "element": "ride",
+      "musical_job": "alternate timekeeper/open section energy",
+      "timing_priority": "high",
+      "density_policy": "section-dependent",
+      "transition_behavior": "can replace hats in open/chorus sections",
+      "duration_policy": "preserve-hit"
+    },
+    "crash": {
+      "element": "crash",
+      "musical_job": "section/phrase accent",
+      "timing_priority": "punctuation",
+      "density_policy": "very-sparse",
+      "transition_behavior": "strong at boundaries/entries",
+      "duration_policy": "preserve-hit"
+    },
+    "tom": {
+      "element": "tom",
+      "musical_job": "fill/melodic drum movement",
+      "timing_priority": "transition",
+      "density_policy": "sparse-outside-fill",
+      "transition_behavior": "density may rise near transition",
+      "duration_policy": "preserve-hit"
+    },
+    "clap": {
+      "element": "clap",
+      "musical_job": "backbeat reinforcement",
+      "timing_priority": "secondary",
+      "density_policy": "sparse",
+      "transition_behavior": "section-energy dependent",
+      "duration_policy": "preserve-hit"
+    },
+    "ghost-snare": {
+      "element": "ghost-snare",
+      "musical_job": "micro-groove between primary accents",
+      "timing_priority": "micro",
+      "density_policy": "low-density",
+      "transition_behavior": "must not replace main backbeat",
+      "duration_policy": "preserve-hit"
+    },
+    "percussion": {
+      "element": "percussion",
+      "musical_job": "color/interlock",
+      "timing_priority": "secondary",
+      "density_policy": "subordinate",
+      "transition_behavior": "reduce clutter around fills/solo density",
+      "duration_policy": "preserve-hit"
+    },
+    "other": {
+      "element": "other",
+      "musical_job": "unknown kit element",
+      "timing_priority": "preserve",
+      "density_policy": "preserve",
+      "transition_behavior": "no generated behavior without evidence",
+      "duration_policy": "preserve-hit"
+    }
+  },
+  "hardBoundary": {
+    "musicalBehaviorIsSoftEvidence": true,
+    "deviceTriggersRequireExactSoundProfile": true,
+    "velocityAuthority": "FACTORY_ONLY",
+    "noHarmonyOrFormRewriteByBehaviorBrain": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "dna-session33-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "deterministic-evidence-driven-pa800-arrangement-renderer",
+  "formalSuite": {
+    "testsRun": 160,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session33-benchmark-report.json",
+    "outputMidiSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+    "renderedMidiBytes": 12769,
+    "renderedFragments": 52,
+    "renderedNotes": 1400,
+    "markers": 10,
+    "usedChannels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "globalPeakConcurrentMidiNotes": 14,
+    "channelPolyphonyNotesRemoved": 90,
+    "channelPolyphonyTailsTrimmed": 70,
+    "deviceUnconfirmedLayersExcluded": {
+      "ARTICULATION_EVENT": 11,
+      "EXPRESSION_EVENT": 83
+    },
+    "transportHashes": {
+      "direct": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+      "api": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+      "gui": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+      "batch": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27"
+    },
+    "transportParity": true,
+    "renderSeconds": 0.316769,
+    "benchmarkHash": "c8a5f1466561f0a5c2b8606c96a99223c8152c29d393b9c80674bab3742975f5"
+  },
+  "artifacts": {
+    "sourceMidi": "artifacts/session33-source.mid",
+    "trackPlan": "artifacts/session33-track-plan.json",
+    "evidenceLedger": "artifacts/session33-evidence-ledger.json",
+    "renderManifest": "artifacts/session33-render-manifest.json",
+    "verification": "artifacts/session33-render-verification.json",
+    "renderedMidi": "artifacts/session33-publish/session33-arranger-preview_OPT.mid",
+    "publishedManifest": "artifacts/session33-publish/session33-arranger-preview_OPT.render-manifest.json",
+    "atomicJournal": "artifacts/session33-publish/session33-arranger-preview_OPT.mid.journal.json",
+    "schemaCatalog": "data/session33-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session33_arrangement_renderer.py",
+    "api": "/api/arrangement-render",
+    "guiAdapter": "execute_arrangement_renderer_gui",
+    "batchIsolation": true,
+    "byteIdentical": true
+  },
+  "invariants": {
+    "midiBytesGenerated": true,
+    "sourceMidiMutated": false,
+    "sourceMidiOverwritten": false,
+    "originalSoloFingerprintProtected": true,
+    "lockedFragmentsProtected": true,
+    "exactSoundBindingRequired": true,
+    "goldAffectsDynamics": false,
+    "goldAffectsMixer": false,
+    "goldAffectsBankProgram": false,
+    "approximateSoundBindingAllowed": false,
+    "implicitFallbackAllowed": false,
+    "deviceUnconfirmedExpressionRendered": false,
+    "deviceUnconfirmedArticulationRendered": false,
+    "independentVerifierRequired": true,
+    "atomicPublicationRequired": true,
+    "softwarePreviewMidiAllowed": true,
+    "finalCertifiedMidiExportAllowed": false
+  },
+  "status": {
+    "session33ArrangementRenderer": "SOFTWARE_VALIDATED / ARRANGER PREVIEW MIDI",
+    "activeSoftwareBaseline": "4.9.3-renderer-foundation",
+    "softwarePreviewMidi": "ALLOWED_AFTER_INDEPENDENT_VERIFIER",
+    "globalCoherence": "NEXT",
+    "finalCertifiedMidiExport": "BLOCKED",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "schema": "dna-premium-feature-matrix",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "softwareBaseline": "4.11.1-device-certification-intake-foundation",
+  "premiumProductStatus": "DEVICE_LAB_PREVIEW",
+  "features": [
+    {
+      "session": 15,
+      "id": "baseline-freeze",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED"
+    },
+    {
+      "session": 16,
+      "id": "pa800-mapping-lab",
+      "priority": "P0",
+      "status": "DEVICE_BLOCKED",
+      "blocker": "physical Korg Pa800 required"
+    },
+    {
+      "session": 17,
+      "id": "production-adapter",
+      "priority": "P0",
+      "status": "FOUNDATION_VALIDATED / PRODUCTION_PARTIAL",
+      "evidence": "data/session17-test-report.json",
+      "limitations": [
+        "solo production adapter is Factory-expression-only",
+        "RX/DNC and Guitar Mode controls require confirmed Pa800 maps"
+      ]
+    },
+    {
+      "session": 18,
+      "id": "track-identity-solo-safety-2",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED",
+      "evidence": "data/session18-test-report.json"
+    },
+    {
+      "session": 19,
+      "id": "song-understanding-2",
+      "priority": "P0",
+      "status": "FOUNDATION_VALIDATED / PRODUCTION_CALIBRATION_PENDING",
+      "evidence": "data/session19-test-report.json",
+      "limitations": [
+        "quality thresholds are proven on a locked self-authored labeled MIDI corpus",
+        "broader human-labeled production calibration and listening review remain required"
+      ]
+    },
+    {
+      "session": 20,
+      "id": "ai-producer-brief",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED",
+      "evidence": "data/session20-test-report.json",
+      "limitations": [
+        "optional AI enrichment is adapter-only and disabled without explicit consent",
+        "ProducerBrief is read-only and cannot authorize MIDI generation or device mappings"
+      ]
+    },
+    {
+      "session": 21,
+      "id": "arrangement-graph",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED",
+      "evidence": "data/session21-test-report.json",
+      "limitations": [
+        "graph is read-only and does not select Factory or GOLD runtime patterns",
+        "device voice cost remains an unconfirmed software estimate until physical Pa800 testing"
+      ]
+    },
+    {
+      "session": 22,
+      "id": "candidate-variation-engine",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED",
+      "evidence": "data/session22-test-report.json",
+      "limitations": [
+        "CandidateSet 2.0 selects pattern identities but does not render final MIDI",
+        "physical Pa800 voice cost and articulation maps remain device-blocked"
+      ]
+    },
+    {
+      "session": 23,
+      "id": "groove-polyphony-voice-cost",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED",
+      "evidence": "data/session23-test-report.json",
+      "limitations": [
+        "GroovePlan is an event-level read-only timing plan and does not render final MIDI",
+        "Pa800 oscillator/voice cost remains UNCONFIRMED until physical Session 16 evidence exists"
+      ]
+    },
+    {
+      "session": 24,
+      "id": "solo-expression-director",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / PRODUCTION_EVIDENCE_BLOCKED",
+      "evidence": "data/session24-test-report.json",
+      "limitations": [
+        "ExpressionPlan is a removable read-only preview layer and does not render final MIDI",
+        "Built-in ornament/relationship evidence is SOFTWARE_TEST_ONLY; production evidence and listening/device gates remain required"
+      ]
+    },
+    {
+      "session": 25,
+      "id": "confirmed-articulation-maps",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / DEVICE_CAPTURE_BLOCKED",
+      "blocker": "operator-approved physical Pa800 capture required",
+      "evidence": "data/session25-test-report.json",
+      "limitations": [
+        "Reference Guitar/RX/DNC maps are SOFTWARE_TEST_ONLY and cannot authorize production",
+        "Final MIDI rendering remains disabled; Session 25 emits a read-only trigger plan"
+      ]
+    },
+    {
+      "session": 26,
+      "id": "premium-preview",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / DEVICE_AUDIO_COMPARISON_ONLY",
+      "evidence": "data/session26-test-report.json",
+      "blocker": "Session 16 physical evidence remains required for Pa800 certification",
+      "limitations": [
+        "Built-in GM/Pa800 profiles are deterministic proxy audio, not a physical device claim",
+        "External renderer is manifest-only and cannot affect MIDI, ranking or validator verdict"
+      ]
+    },
+    {
+      "session": 27,
+      "id": "music-quality-evaluator",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / HUMAN_LISTENING_PENDING",
+      "evidence": "data/session27-test-report.json",
+      "blocker": "Two independent verified human evaluators and 70% Premium preference are still required",
+      "limitations": [
+        "Automated structural scores are not listening evidence",
+        "Proxy audio and SOFTWARE_TEST_ONLY responses cannot satisfy the release quality gate"
+      ]
+    },
+    {
+      "session": 28,
+      "id": "premium-gui",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / EXPORT_GATES_PENDING",
+      "evidence": "data/session28-test-report.json",
+      "blocker": "Human listening, production expression evidence and physical Pa800 certification are required for final export",
+      "limitations": [
+        "The guided producer workflow is read-only and does not render final MIDI",
+        "Preview/project downloads remain available while final export is blocked"
+      ]
+    },
+    {
+      "session": 29,
+      "id": "personal-producer-profile",
+      "priority": "P1",
+      "status": "SOFTWARE_VALIDATED / LOCAL_EXPLICIT_ONLY",
+      "evidence": "data/session29-test-report.json",
+      "blocker": null,
+      "limitations": [
+        "The profile affects only soft ranking of candidates that already passed hard constraints",
+        "Learning requires explicit accepted variants or explicit manual locks",
+        "The profile stores no MIDI, project, audio or cloud telemetry content"
+      ]
+    },
+    {
+      "session": 30,
+      "id": "ai-premium-release-gate",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / PREVIEW_RC_EXTERNAL_GATES_BLOCKED",
+      "evidence": "data/session30-test-report.json",
+      "blocker": "HUMAN_LISTENING_AND_PA800_DEVICE_EVIDENCE",
+      "limitations": [
+        "Only the AI PREMIUM ARRANGER PREVIEW product name is authorized",
+        "Final MIDI export remains blocked by human, production-evidence and device gates",
+        "The local SHA-256 content seal is not an identity or code-signing certificate"
+      ]
+    },
+    {
+      "session": 31,
+      "id": "automatic-track-instrument-analysis",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / EVIDENCE_FIRST_FOUNDATION",
+      "evidence": "data/session31-test-report.json",
+      "blocker": "Full EvidenceLedger and mutating TrackPlan remain scheduled after this read-only phase",
+      "limitations": [
+        "GM family, register and track-name evidence are hints only",
+        "Shared channels, incomplete SoundBinding and missing Factory profiles require manual review",
+        "The detector has no MIDI mutation, dynamics, validator or device authority"
+      ]
+    },
+    {
+      "session": "31B",
+      "id": "evidence-authority-resolver",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / READ_ONLY AUTHORITY FOUNDATION",
+      "evidence": "data/session31b-test-report.json",
+      "blocker": "Mutating TrackPlan and evidence-driven MIDI renderer remain Session 32/33 work",
+      "limitations": [
+        "SOFTWARE_TEST_ONLY expression and articulation evidence is skipped",
+        "Manual-review Track Instrument evidence cannot authorize automatic mutation",
+        "The resolver cannot write MIDI, override the verifier or certify Pa800 hardware"
+      ]
+    },
+    {
+      "session": "32",
+      "id": "track-plan-full-optimizer",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / READ_ONLY MUTATION CONTRACT",
+      "evidence": "data/session32-test-report.json",
+      "blocker": "Deterministic evidence-driven MIDI renderer remains Session 33 work",
+      "limitations": [
+        "TrackPlan predicts and authorizes operations but writes zero MIDI bytes",
+        "One reference drum source remains MANUAL_REVIEW because exact Factory coverage is incomplete",
+        "Final export, human listening and physical Pa800 certification remain blocked"
+      ]
+    },
+    {
+      "session": "33",
+      "id": "deterministic-arrangement-renderer",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / ARRANGER PREVIEW MIDI",
+      "evidence": "data/session33-test-report.json",
+      "blocker": "Global coherence, human listening and physical Pa800 certification remain open",
+      "limitations": [
+        "Device-unconfirmed expression and articulation events are excluded from production rendering",
+        "CC11=127 remains the Pa800 Style initialization contract; Factory CC7 and velocity remain exact-evidence only",
+        "Software-validated preview MIDI is allowed, but final certified export and the non-Preview product name remain blocked"
+      ]
+    },
+    {
+      "session": 36,
+      "feature": "Zero-Silent-Failure Reliability Gate",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / RELEASE_HARDENED_PREVIEW",
+      "evidence": "data/session36-test-report.json",
+      "blocker": "HUMAN_LISTENING_AND_PA800_DEVICE_EVIDENCE",
+      "limitations": [
+        "Reliability certification covers the locked software corpus, not all possible MIDI files",
+        "Physical Pa800 behavior still requires the signed device procedure",
+        "Final Premium export remains blocked by human, production-evidence and device gates"
+      ]
+    },
+    {
+      "session": 37,
+      "feature": "Production Evidence Expansion and Quality Calibration",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / HUMAN_AND_PRODUCTION_EVIDENCE_PENDING",
+      "evidence": "data/session37-test-report.json",
+      "blocker": "TWO_HUMAN_EVALUATORS_PRODUCTION_EXPRESSION_AND_PA800_DEVICE",
+      "limitations": [
+        "Structural holdout is not a substitute for human listening",
+        "Production expression intake remains empty until operator evidence is imported",
+        "Session 37 cannot certify or unlock final Pa800 MIDI export"
+      ]
+    },
+    {
+      "session": 38,
+      "feature": "Pa800 Mapping Lab and DeviceProfile Certification Intake",
+      "priority": "P0",
+      "status": "SOFTWARE_VALIDATED / WAITING_FOR_DEVICE",
+      "evidence": "data/session38-test-report.json",
+      "blocker": "PHYSICAL_PA800_OPERATOR_CAPTURE_REQUIRED",
+      "limitations": [
+        "The built-in reference is a blank intake template and cannot certify hardware",
+        "Only exact hashed external image/audio evidence can activate device-specific maps",
+        "A DeviceProfile alone never unlocks final certified MIDI export"
+      ]
+    }
+  ],
+  "invariants": {
+    "plannedDoesNotMeanImplemented": true,
+    "physicalPa800": "WAITING_FOR_DEVICE",
+    "goldAffectsDynamics": false,
+    "aiWritesFinalMidi": false
+  }
+}

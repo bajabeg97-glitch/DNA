@@ -1,0 +1,60 @@
+{
+  "schema": "dna-session21-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "global-read-only-arrangement-graph-before-candidate-search",
+  "formalSuite": {
+    "testsRun": 62,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session21-benchmark-report.json",
+    "corpusHash": "a9a6687b07b0056fe0abfe3b6cbe479256b7fcff04eb08c0910b656d9e7711cf",
+    "songCount": 20,
+    "nodeCount": 200,
+    "edgeCount": 180,
+    "planVariantCount": 40,
+    "controlledRiseRate": 1.0,
+    "transitionTargetRate": 1.0,
+    "deterministicRate": 1.0,
+    "lockPreservationRate": 1.0
+  },
+  "artifacts": {
+    "referenceGraph": "artifacts/session21-arrangement-graph.json",
+    "referenceGraphHash": "a083fa2153e8b1dc8737f88c080ee297f3fe7bd90936a55329badca66e5d3bf5",
+    "lockedFourPlanGraph": "artifacts/session21-locked-four-plan-graph.json",
+    "schemaCatalog": "data/session21-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session21_arrangement_graph.py",
+    "songMapApi": "/api/premium-song-map",
+    "graphApi": "/api/premium-arrangement-graph",
+    "guiCard": "ARRANGEMENT GRAPH 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "candidatePatternSelectionAllowed": false,
+    "allPa800ElementsPlanned": true,
+    "fillTransitionTargetsRequired": true,
+    "variationEnergyIsNondecreasing": true,
+    "lockedElementsImmutable": true,
+    "fullDurationPolyphonyRequired": true,
+    "maximumConcurrentMidiNotes": 54,
+    "deviceVoiceCostConfirmed": false,
+    "lowConfidenceRequiresManualReview": true,
+    "factoryDynamicsAuthority": true,
+    "goldAffectsDynamics": false,
+    "originalSoloMutationAllowed": false
+  },
+  "status": {
+    "session21ArrangementGraph": "SOFTWARE_VALIDATED",
+    "session16Pa800MappingLab": "DEVICE_BLOCKED",
+    "session22CandidateVariationEngine": "PLANNED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

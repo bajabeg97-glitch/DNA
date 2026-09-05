@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/human-listening-intake-v1.schema.json",
+  "title": "Independent Human Listening Intake",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "date", "evaluationReportHash", "requiredIndependentEvaluators", "verifiedIndependentEvaluators", "softwareTestResponses", "proxyAudioCountsAsHuman", "testBundlesCountAsHuman", "status", "productionEligibleBundleHashes", "intakeHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-human-listening-intake"},
+    "version": {"const": "1.0"},
+    "date": {"type": "string", "format": "date"},
+    "evaluationReportHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "requiredIndependentEvaluators": {"type": "integer", "minimum": 2},
+    "verifiedIndependentEvaluators": {"type": "integer", "minimum": 0},
+    "softwareTestResponses": {"type": "integer", "minimum": 0},
+    "proxyAudioCountsAsHuman": {"const": false},
+    "testBundlesCountAsHuman": {"const": false},
+    "status": {"enum": ["HUMAN_LISTENING_PENDING", "PASS"]},
+    "productionEligibleBundleHashes": {"type": "array"},
+    "intakeHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "dna-premium-producer-brief",
+  "version": "2.0",
+  "sourceText": "Napravi življi pop-folk Style s punim refrenom, suptilnim prijelazima i očuvanim originalnim solom.",
+  "sourceTextSha256": "d058c841dfdb28c60510774b040da6aefb60628029115cc8965ecc4b812aa7b2",
+  "language": "hr",
+  "intent": {
+    "genre": "pop-folk",
+    "energyCurve": [
+      {
+        "section": "intro",
+        "value": 43
+      },
+      {
+        "section": "verse",
+        "value": 53
+      },
+      {
+        "section": "chorus",
+        "value": 85
+      },
+      {
+        "section": "bridge",
+        "value": 68
+      },
+      {
+        "section": "ending",
+        "value": 53
+      }
+    ],
+    "density": "balanced",
+    "syncopation": "medium",
+    "space": "balanced",
+    "transitions": "subtle",
+    "soloTreatment": "preserve",
+    "requiredRoles": [],
+    "forbiddenRoles": [],
+    "lockedElements": [],
+    "transformationTolerance": 50
+  },
+  "evidence": [
+    {
+      "field": "genre",
+      "value": "pop-folk",
+      "matchedText": "pop-folk",
+      "confidence": 0.98,
+      "source": "local-rule"
+    },
+    {
+      "field": "transitions",
+      "value": "subtle",
+      "matchedText": "suptilnim prijelazima",
+      "confidence": 0.94,
+      "source": "local-rule"
+    },
+    {
+      "field": "energyCurve",
+      "value": "overall:+8",
+      "matchedText": "zivlji",
+      "confidence": 0.88,
+      "source": "local-rule"
+    },
+    {
+      "field": "energyCurve.chorus",
+      "value": 85,
+      "matchedText": "punim refrenom",
+      "confidence": 0.96,
+      "source": "local-rule"
+    }
+  ],
+  "conflicts": [],
+  "approval": {
+    "required": false,
+    "status": "NOT_REQUIRED",
+    "approvedBy": null,
+    "resolutions": {}
+  },
+  "understanding": {
+    "title": "AI je razumio",
+    "summary": "pop-folk / balanced / medium syncopation; subtle transitions; solo=preserve",
+    "assumptions": [
+      "density defaulted to balanced",
+      "syncopation defaulted to medium",
+      "space defaulted to balanced",
+      "soloTreatment defaulted to preserve"
+    ],
+    "warnings": []
+  },
+  "adapter": {
+    "mode": "local",
+    "cloudRequested": false,
+    "explicitConsent": false,
+    "metadataOnly": true,
+    "responseAccepted": false,
+    "fallbackReason": "cloud-disabled"
+  },
+  "readyForPlanning": true,
+  "safety": {
+    "readOnly": true,
+    "midiBytesAccepted": false,
+    "midiWriterAvailable": false,
+    "pathWriteAllowed": false,
+    "bankProgramAuthority": false,
+    "validatorBypassAllowed": false,
+    "factoryDynamicsAuthority": true,
+    "goldDynamicsAuthority": false,
+    "originalSoloMutationAllowed": false
+  },
+  "briefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4"
+}

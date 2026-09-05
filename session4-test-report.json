@@ -1,0 +1,56 @@
+{
+  "schema": "dna-session4-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session4-foundation",
+  "limitations": [
+    "Factory strum evidence and Guitar Mode trigger map are synthetic test fixtures.",
+    "No production Factory registry, official/device-captured control map or GUI/API source is present."
+  ],
+  "formalSuite": {
+    "testsRun": 19,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session4-before.mid",
+    "output": "artifacts/session4-after.mid",
+    "manifest": "artifacts/session4-manifest.json",
+    "inputNotesInWindow": 2,
+    "outputNotesInWindow": 36,
+    "factoryPattern": "130.100.001",
+    "factoryProfile": "130.011.001",
+    "controlMap": "130.900.001",
+    "selectionHash": "9323bfd190ea472871d2b1d63c46b49362ec8d573f24dbc55564708ae5fa9469",
+    "inputHash": "ca2aabba480d10fe3beeae4e627f0c5b23a56f555b87b5b8d7a364dafaba8d97",
+    "outputHash": "d8748287662a394006edbaf6567fa60c463539e248bdd30a65d4b2be18677ef7",
+    "strokeCounts": {
+      "block": 2,
+      "down": 2,
+      "mute": 2,
+      "stop": 2,
+      "up": 4
+    },
+    "maxFretSpan": 2
+  },
+  "invariants": {
+    "goldControlsRhythmGuitar": false,
+    "goldAffectsVelocity": false,
+    "factoryPatternEvidencePresent": true,
+    "factoryProfileForEveryGeneratedNote": true,
+    "stringVoicingsPlayable": true,
+    "confirmedControlNotesOnly": true,
+    "syntheticControlMapExplicitlyOptedIn": true,
+    "programChangePreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true
+  },
+  "status": {
+    "session4Foundation": "SOFTWARE_VALIDATED",
+    "productionFactoryGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "productionControlMapGate": "BLOCKED_MISSING_CONFIRMED_MAP",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

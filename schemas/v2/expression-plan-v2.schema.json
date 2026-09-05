@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/expression-plan-v2.schema.json",
+  "title": "DNA Premium ExpressionPlan v2",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": [
+    "schema", "version", "source", "controls", "factoryProfile", "evidence",
+    "phrases", "originalNotes", "layers", "cc11", "delayAllocation",
+    "variantBudgets", "previews", "removalOperation", "audit", "manualReview",
+    "productionBlocks", "readyForPreview", "readyForProductionRender", "safety",
+    "expressionPlanHash"
+  ],
+  "properties": {
+    "schema": {"const": "dna-premium-expression-plan"},
+    "version": {"const": "2.0"},
+    "source": {"$ref": "#/$defs/source"},
+    "controls": {"$ref": "#/$defs/controls"},
+    "factoryProfile": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/profile"}]},
+    "evidence": {"$ref": "#/$defs/evidenceSummary"},
+    "phrases": {"type": "array", "items": {"$ref": "#/$defs/phrase"}},
+    "originalNotes": {"type": "array", "items": {"$ref": "#/$defs/originalNote"}},
+    "layers": {"type": "array", "items": {"$ref": "#/$defs/layer"}},
+    "cc11": {"$ref": "#/$defs/cc11"},
+    "delayAllocation": {"type": ["object", "null"]},
+    "variantBudgets": {"type": "array", "items": {"$ref": "#/$defs/budget"}},
+    "previews": {"type": "array", "items": {"$ref": "#/$defs/preview"}},
+    "removalOperation": {"$ref": "#/$defs/removal"},
+    "audit": {"$ref": "#/$defs/audit"},
+    "manualReview": {"type": "array", "items": {"$ref": "#/$defs/review"}},
+    "productionBlocks": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "readyForPreview": {"type": "boolean"},
+    "readyForProductionRender": {"type": "boolean"},
+    "safety": {"$ref": "#/$defs/safety"},
+    "expressionPlanHash": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "stableId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"},
+    "trackUid": {"type": "string", "pattern": "^(trk|virtual-third)-[0-9a-f]{20}(-[1-9][0-9]*)?$"},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["inputMidiSha256", "songMapHash", "groovePlanHash", "trackUid", "trackNumber", "channelNumber", "originalSoloFingerprint"],
+      "properties": {
+        "inputMidiSha256": {"$ref": "#/$defs/hash"},
+        "songMapHash": {"$ref": "#/$defs/hash"},
+        "groovePlanHash": {"$ref": "#/$defs/hash"},
+        "trackUid": {"type": "string", "minLength": 1},
+        "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "channelNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "originalSoloFingerprint": {"type": ["object", "null"]}
+      }
+    },
+    "controls": {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "trackUid", "trackNumber", "channelNumber", "startTick", "endTick", "seed", "intensity", "profileId", "enabledLayers", "minEvidenceConfidence", "layerBudgets", "allowSharedChannel"],
+      "properties": {
+        "version": {"const": "1.0"},
+        "trackUid": {"type": "string", "minLength": 1},
+        "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "channelNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "startTick": {"type": "integer", "minimum": 0},
+        "endTick": {"type": "integer", "minimum": 1},
+        "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+        "intensity": {"type": "integer", "minimum": 0, "maximum": 100},
+        "profileId": {"type": ["string", "null"], "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"},
+        "enabledLayers": {"type": "array", "uniqueItems": true, "items": {"enum": ["grace", "trill", "slide", "turnaround", "third", "echo", "cc11"]}},
+        "minEvidenceConfidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "layerBudgets": {
+          "type": "object", "additionalProperties": false,
+          "required": ["ornament", "third", "echo"],
+          "properties": {
+            "ornament": {"type": "integer", "minimum": 0, "maximum": 128},
+            "third": {"type": "integer", "minimum": 0, "maximum": 128},
+            "echo": {"type": "integer", "minimum": 0, "maximum": 128}
+          }
+        },
+        "allowSharedChannel": {"type": "boolean"}
+      }
+    },
+    "profile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["profileId", "databaseVersion", "sourceProfileHash", "soundBinding", "register", "velocityCurve", "cc11Curve", "cc11Bounds", "smoothingMaxStep", "authority", "profileHash"],
+      "properties": {
+        "profileId": {"$ref": "#/$defs/stableId"},
+        "databaseVersion": {"type": "string", "minLength": 1},
+        "sourceProfileHash": {"$ref": "#/$defs/hash"},
+        "soundBinding": {"type": "object"},
+        "register": {"type": "object"},
+        "velocityCurve": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "integer", "minimum": 1, "maximum": 127}},
+        "cc11Curve": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "integer", "minimum": 0, "maximum": 127}},
+        "cc11Bounds": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 0, "maximum": 127}},
+        "smoothingMaxStep": {"type": "integer", "minimum": 1},
+        "authority": {"const": "FACTORY_ONLY"},
+        "profileHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "evidenceSummary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["authority", "evidenceHash", "productionEligible"],
+      "properties": {
+        "authority": {"enum": ["NONE", "SOFTWARE_TEST_ONLY", "PRODUCTION_VERIFIED"]},
+        "evidenceHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "productionEligible": {"type": "boolean"}
+      }
+    },
+    "phrase": {
+      "type": "object", "additionalProperties": false,
+      "required": ["phraseId", "sectionId", "startTick", "endTick", "confidence", "sourceNoteUids"],
+      "properties": {
+        "phraseId": {"type": "string"}, "sectionId": {"type": "string"},
+        "startTick": {"type": "integer"}, "endTick": {"type": "integer"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "sourceNoteUids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "originalNote": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceNoteUid", "onsetTick", "durationTick", "pitch", "velocity", "occurrence", "immutable"],
+      "properties": {
+        "sourceNoteUid": {"type": "string", "pattern": "^src-[0-9a-f]{20}$"},
+        "onsetTick": {"type": "integer", "minimum": 0},
+        "durationTick": {"type": "integer", "minimum": 1},
+        "pitch": {"type": "integer", "minimum": 0, "maximum": 127},
+        "velocity": {"type": "integer", "minimum": 1, "maximum": 127},
+        "occurrence": {"type": "integer", "minimum": 1},
+        "immutable": {"const": true}
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["eventId", "kind", "sourceNoteUid", "evidenceId", "reasonCode", "phraseId", "chordCellIndex", "trackUid", "trackNumber", "channelNumber", "routing", "onsetTick", "durationTick", "pitch", "velocity", "productionEligible", "eventHash"],
+      "properties": {
+        "eventId": {"type": "string", "pattern": "^exp-[0-9a-f]{20}$"},
+        "kind": {"enum": ["grace", "trill", "slide", "turnaround", "third", "echo"]},
+        "sourceNoteUid": {"type": "string"}, "evidenceId": {"$ref": "#/$defs/stableId"},
+        "reasonCode": {"type": "string", "minLength": 1}, "phraseId": {"type": "string"},
+        "chordCellIndex": {"type": "integer", "minimum": 0}, "trackUid": {"type": "string"},
+        "trackNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "channelNumber": {"type": "integer", "minimum": 1, "maximum": 16},
+        "routing": {"enum": ["SOURCE_SOLO_PREVIEW_LAYER", "AI_HARMONY_PREVIEW_LAYER", "SEPARATE_DELAY_PREVIEW_TRACK"]},
+        "onsetTick": {"type": "integer", "minimum": 0}, "durationTick": {"type": "integer", "minimum": 1},
+        "pitch": {"type": "integer", "minimum": 0, "maximum": 127},
+        "velocity": {"type": "integer", "minimum": 1, "maximum": 127},
+        "productionEligible": {"type": "boolean"}, "eventHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "layer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["layerId", "layerType", "subtype", "priorityTier", "removable", "decision", "reason", "budget", "events", "skipped", "layerHash"],
+      "properties": {
+        "layerId": {"type": "string"}, "layerType": {"enum": ["ORNAMENT", "THIRD", "ECHO"]},
+        "subtype": {"enum": ["grace", "trill", "slide", "turnaround", "third", "echo"]},
+        "priorityTier": {"enum": ["SUPPORT", "DECORATIVE"]}, "removable": {"const": true},
+        "decision": {"enum": ["ADD", "KEEP", "MANUAL_REVIEW"]}, "reason": {"type": "string"},
+        "budget": {"type": "integer", "minimum": 0}, "events": {"type": "array", "items": {"$ref": "#/$defs/event"}},
+        "skipped": {"type": "object"}, "layerHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "cc11Point": {
+      "type": "object", "additionalProperties": false,
+      "required": ["pointId", "sourceNoteUid", "evidenceId", "reasonCode", "phraseId", "tick", "controller", "value", "productionEligible", "pointHash"],
+      "properties": {
+        "pointId": {"type": "string"}, "sourceNoteUid": {"type": "string"},
+        "evidenceId": {"$ref": "#/$defs/stableId"}, "reasonCode": {"type": "string"},
+        "phraseId": {"type": "string"}, "tick": {"type": "integer", "minimum": 0},
+        "controller": {"const": 11}, "value": {"type": "integer", "minimum": 0, "maximum": 127},
+        "productionEligible": {"const": true}, "pointHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "cc11": {
+      "type": "object", "additionalProperties": false,
+      "required": ["decision", "manualExisting", "factoryProfileId", "bounds", "maxStep", "points", "planHash"],
+      "properties": {
+        "decision": {"enum": ["ADD", "KEEP", "PRESERVE_MANUAL"]}, "manualExisting": {"type": "boolean"},
+        "factoryProfileId": {"type": ["string", "null"]}, "bounds": {"type": ["array", "null"]},
+        "maxStep": {"type": ["integer", "null"]}, "points": {"type": "array", "items": {"$ref": "#/$defs/cc11Point"}},
+        "planHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "budget": {
+      "type": "object", "additionalProperties": false,
+      "required": ["variantId", "sourceVariantHash", "baselinePeak", "availableHeadroom", "additionalPeak", "estimatedPeak", "enabledEventIds", "suppressedEventIds", "operations", "decision", "withinMidiNoteCeiling", "budgetHash"],
+      "properties": {
+        "variantId": {"type": "string"}, "sourceVariantHash": {"$ref": "#/$defs/hash"},
+        "baselinePeak": {"type": "integer"}, "availableHeadroom": {"type": "integer"},
+        "additionalPeak": {"type": "integer"}, "estimatedPeak": {"type": "integer"},
+        "enabledEventIds": {"type": "array", "items": {"type": "string"}},
+        "suppressedEventIds": {"type": "array", "items": {"type": "string"}},
+        "operations": {"type": "array", "items": {"type": "object"}},
+        "decision": {"enum": ["ADD", "KEEP", "MANUAL_REVIEW"]},
+        "withinMidiNoteCeiling": {"type": "boolean"}, "budgetHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "preview": {
+      "type": "object", "additionalProperties": false,
+      "required": ["previewId", "label", "sourceVariantId", "eventIds", "cc11PointIds", "originalFingerprintHash", "previewHash"],
+      "properties": {
+        "previewId": {"enum": ["A", "B"]}, "label": {"enum": ["ORIGINAL_SOLO", "AI_EXPRESSION_LAYER"]},
+        "sourceVariantId": {"type": ["string", "null"]}, "eventIds": {"type": "array", "items": {"type": "string"}},
+        "cc11PointIds": {"type": "array", "items": {"type": "string"}},
+        "originalFingerprintHash": {"$ref": "#/$defs/hash"}, "previewHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "removal": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation", "removesOnlyAiLayers", "preservesOriginalFingerprint", "eventIds", "operationHash"],
+      "properties": {
+        "operation": {"const": "REMOVE_AI_EXPRESSION_LAYER"}, "removesOnlyAiLayers": {"const": true},
+        "preservesOriginalFingerprint": {"const": true}, "eventIds": {"type": "array", "items": {"type": "string"}},
+        "operationHash": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "audit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["originalNoteCount", "generatedNoteCount", "cc11PointCount", "sourceNoteUidCoverage", "evidenceCoverage", "reasonCodeCoverage", "maximumEstimatedPeak", "allVariantsWithinMidiNoteCeiling"],
+      "properties": {
+        "originalNoteCount": {"type": "integer"}, "generatedNoteCount": {"type": "integer"},
+        "cc11PointCount": {"type": "integer"}, "sourceNoteUidCoverage": {"const": true},
+        "evidenceCoverage": {"const": true}, "reasonCodeCoverage": {"const": true},
+        "maximumEstimatedPeak": {"type": "integer"}, "allVariantsWithinMidiNoteCeiling": {"type": "boolean"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["code", "reason"], "properties": {"code": {"type": "string"}, "reason": {"type": "string"}}
+    },
+    "safety": {
+      "type": "object", "additionalProperties": false,
+      "required": ["readOnly", "midiMutationAllowed", "finalMidiGenerated", "originalSoloUnchanged", "soundBindingUnchanged", "factoryDynamicsOnly", "goldDynamicsAuthority", "nonRecursiveEcho", "aiLayersRemovable", "softwareMidiNoteCeiling"],
+      "properties": {
+        "readOnly": {"const": true}, "midiMutationAllowed": {"const": false},
+        "finalMidiGenerated": {"const": false}, "originalSoloUnchanged": {"const": true},
+        "soundBindingUnchanged": {"const": true}, "factoryDynamicsOnly": {"const": true},
+        "goldDynamicsAuthority": {"const": false}, "nonRecursiveEcho": {"const": true},
+        "aiLayersRemovable": {"const": true}, "softwareMidiNoteCeiling": {"const": 54}
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+input,output,status,protectedEventsPreserved,pairedNoteCountPreserved,noNewPairingErrors,orphan_before,orphan_after,overlap_before,overlap_after,microgate_channels,changes
+07_SCORE_33.73_988 Mitar.MID,07_SCORE_33.73_988 Mitar_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,0,0,444,34,10,"{""microgate_extended"": 1514, ""same_note_overlap_closed"": 444}"
+08_SCORE_36.00_U kafani punoj dima.mid,08_SCORE_36.00_U kafani punoj dima_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,25344,0,14,14,,"{""orphan_noteoff_removed"": 25344, ""same_note_overlap_closed"": 4}"
+09_SCORE_39.50_SVIDJA MI SE TVOJA DEVOJKA.mid,09_SCORE_39.50_SVIDJA MI SE TVOJA DEVOJKA_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,6704,0,2,2,,"{""orphan_noteoff_removed"": 6704, ""same_note_overlap_closed"": 2}"
+10_SCORE_41.50_TVOJOM ULICOM VISE NE PROLAZIM kar.KAR,10_SCORE_41.50_TVOJOM ULICOM VISE NE PROLAZIM kar_SAFE_REPAIRED.mid,REVIEW_REQUIRED_NO_SAFE_AUTOFIX,True,True,True,0,0,0,0,,{}
+"11_SCORE_42.39_ONA,ONA.mid","11_SCORE_42.39_ONA,ONA_SAFE_REPAIRED.mid",REVIEW_REQUIRED_NO_SAFE_AUTOFIX,True,True,True,0,0,0,0,,{}
+12_SCORE_43.00_OVO NECE IZACI NA DOBRO kar Dara Bubamara.mid,12_SCORE_43.00_OVO NECE IZACI NA DOBRO kar Dara Bubamara_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,7696,0,187,184,,"{""orphan_noteoff_removed"": 7696, ""same_note_overlap_closed"": 12}"
+13_SCORE_45.00_DRUGOVI SE MOJI VEC POZENILI.mid,13_SCORE_45.00_DRUGOVI SE MOJI VEC POZENILI_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,0,0,6,0,,"{""same_note_overlap_closed"": 6}"
+14_SCORE_45.00_Bozo_Vorotovic_-_Kafana_mi_sve_.mid,14_SCORE_45.00_Bozo_Vorotovic_-_Kafana_mi_sve__SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,0,0,6,0,,"{""same_note_overlap_closed"": 6}"
+15_SCORE_47.40_SAM PAO SAM SE UBIO.KAR,15_SCORE_47.40_SAM PAO SAM SE UBIO_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,384,384,1296,802,,"{""same_note_overlap_closed"": 494}"
+16_SCORE_47.80_DVADESETCETIRI  SATA.MID,16_SCORE_47.80_DVADESETCETIRI  SATA_SAFE_REPAIRED.mid,SAFE_REPAIR_VALIDATED,True,True,True,0,0,0,0,3,"{""microgate_extended"": 2156}"

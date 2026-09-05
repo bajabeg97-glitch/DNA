@@ -1,0 +1,57 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.31.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "implemented": [
+    "transition_fill_context_dataset",
+    "transition_delta_model",
+    "transition_strength_head",
+    "transition_aware_4bar_candidate_ranking",
+    "factory_only_velocity_preserved",
+    "break_not_inferred"
+  ],
+  "training": {
+    "schema": "dna-transition-fill-context",
+    "version": "1.0",
+    "samples": 16099,
+    "train": 12930,
+    "validation": 1449,
+    "holdout": 1720,
+    "songs": 163,
+    "candidateCount": 277,
+    "labels": "WEAK_TARGET_ROLE_TRANSITION_CANDIDATE_NOT_CONFIRMED_KORG_FILL",
+    "drumFill": "ONLY_AFTER_RUNTIME_DRUM_FILL_CRITERIA",
+    "break": "NOT_INFERRED",
+    "velocityUsed": false,
+    "features": [
+      "density",
+      "registerCenter",
+      "registerSpan",
+      "gate",
+      "onsetMean",
+      "onsetSpread",
+      "presence"
+    ],
+    "phraseHash": "e10ea7d2271d142da052d8afb382aba893ea6f15bfd6dd06d2eb124860605835",
+    "sectionHash": "94a6ff404070af95a30d2687c5a79a4a24cc4c34567125ce9d2169141200e4cc",
+    "datasetHash": "f08d1bb0514595b69d4042203d25202436030dbb7593b4c12ac44db009c2adf4",
+    "bestValidationLoss": 0.12156255170702934,
+    "holdoutLoss": 0.12324692867696285,
+    "holdoutCandidateAccuracy": 0.983139534883721,
+    "claim": "WEAK_IMBALANCED_TRANSITION_INTENT_ADVISORY_NOT_CONFIRMED_FILL_GROUND_TRUTH"
+  },
+  "tests": {
+    "targeted431": "4 PASS / 0 FAIL",
+    "broaderObserved": "23 PASS summary observed; wrapper timeout after summary"
+  },
+  "knownLimitations": [
+    "277 transition candidates among 16099 samples: class imbalance makes raw accuracy misleading",
+    "runtime drum fill remains candidate-only; no confirmed Korg Fill label is inferred",
+    "clean PYTHONPATH=src still exposes legacy root dna_builder coupling in older AI ETL modules; portable Windows launch remains compatible"
+  ],
+  "externalGates": [
+    "human_listening",
+    "physical_pa800_certification",
+    "confirmed_break_marker/device_behavior"
+  ]
+}

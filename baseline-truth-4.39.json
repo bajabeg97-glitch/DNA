@@ -1,0 +1,23 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.39.0",
+  "softwareValidated": true,
+  "hardwareCertified": false,
+  "claims": {
+    "expandedInstrumentBehaviorProfiles": true,
+    "drumKitPerElementPlan": true,
+    "bassFunctionPlan": true,
+    "soloDeepPhrasePlan": true,
+    "articulationContextAnalyzer": true,
+    "semanticToDeviceTriggerRequiresConfirmedExactSoundMap": true,
+    "factoryVelocityOnly": true,
+    "noUnverifiedTriggerInsertion": true
+  },
+  "targetedRegression": {
+    "passed": 338,
+    "failed": 0,
+    "subtestsPassed": 4,
+    "warnings": 3
+  },
+  "externalGate": "Physical Pa800 listening/device validation remains required for sound-specific articulation certification."
+}

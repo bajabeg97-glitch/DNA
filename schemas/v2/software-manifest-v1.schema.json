@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/software-manifest-v1.schema.json",
+  "title": "DNA MIDI Studio Software Manifest 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "releaseDate", "targetBaseline", "platform", "application", "registries", "contracts", "modelPromptVersions", "deviceProfile", "contentHash", "signature", "manifestHash"],
+  "properties": {
+    "schema": {"const": "dna-ai-premium-software-manifest"},
+    "version": {"const": "1.0"},
+    "releaseDate": {"type": "string", "format": "date"},
+    "targetBaseline": {"const": "4.8-release-candidate-preview"},
+    "platform": {"type": "object"},
+    "application": {"type": "array", "minItems": 20, "items": {"$ref": "#/$defs/file"}},
+    "registries": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/file"}},
+    "contracts": {"type": "array", "minItems": 9, "items": {"$ref": "#/$defs/file"}},
+    "modelPromptVersions": {"type": "object"},
+    "deviceProfile": {"type": "object"},
+    "contentHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "signature": {"type": "object"},
+    "manifestHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "bytes", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "bytes": {"type": "integer", "minimum": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  },
+  "x-contract-version": "1.0",
+  "x-authority": "local-content-seal-not-identity-signature"
+}

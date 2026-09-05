@@ -1,0 +1,83 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.23.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "feature": "NOTE_LEVEL_MELODIC_SEQUENCE_GENERATOR",
+  "dataset": {
+    "schema": "dna-relationship-sequence-dataset",
+    "version": "2.0",
+    "rows": 697,
+    "songs": 97,
+    "trainRows": 452,
+    "validationRows": 101,
+    "holdoutRows": 144,
+    "noteActions": {
+      "PLAY": 57361,
+      "SKIP": 4091,
+      "HOLD": 217
+    },
+    "featureNames": [
+      "pitch_norm",
+      "delta_prev",
+      "delta_next",
+      "ioi_prev_qn",
+      "ioi_next_qn",
+      "duration_qn",
+      "beat_pos_qn",
+      "phrase_pos",
+      "local_density",
+      "is_repeat"
+    ],
+    "velocityFeature": false,
+    "velocityTarget": false,
+    "sourceDisjoint": true,
+    "datasetHash": "21b7e6e76f3cea0783abaf292b45caeb7816c7b1f7717891004bcb2776b4432a"
+  },
+  "training": {
+    "schema": "dna-relationship-sequence-training",
+    "version": "2.0",
+    "objective": "NOTE_LEVEL_PLAY_SKIP_HOLD_PLUS_INTERVAL_DELAY_GATE",
+    "bestEpoch": 8,
+    "bestValidationLoss": 0.45672908212457386,
+    "holdoutActionAccuracy": 0.7226800976800977,
+    "holdoutIntervalAccuracyOnPlay": 0.7961111111111111,
+    "holdoutNotes": 13104,
+    "actionClassWeights": [
+      1.0,
+      3.7444981231247234,
+      8.0
+    ],
+    "velocityUsed": false,
+    "elapsedSeconds": 4.958
+  },
+  "tests": {
+    "command": "python -m pytest -q tests/test_ai_melodic_sequence_v423.py tests/test_ai_learning_v416.py tests/test_ai_learning_v417.py tests/test_ai_song_inpainting_v418.py tests/test_ai_track_replacement_v419.py tests/test_ai_melodic_relationship_v420.py tests/test_ai_relationship_learning_v421.py test_reconstruct_v415.py test_performance_engine.py",
+    "passed": 41,
+    "failed": 0
+  },
+  "cliProof": {
+    "relationshipAuthority": "REAL_ORIGINAL_MIDI_SEQUENCE_MODEL_V2",
+    "variants": [
+      "A",
+      "B",
+      "C"
+    ],
+    "velocityAuthority": "FACTORY_ONLY_FOR_NEW_THIRD_ECHO"
+  },
+  "limitations": [
+    "action holdout accuracy is not a music-quality certification",
+    "HOLD class is rare (217 labels)",
+    "full solo pitch generation remains blocked",
+    "physical Pa800 certification pending"
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  },
+  "authority": {
+    "harmony": "SONG_LOCKED",
+    "goldVelocity": false,
+    "neuralVelocity": false,
+    "newNoteVelocity": "FACTORY_ONLY"
+  }
+}

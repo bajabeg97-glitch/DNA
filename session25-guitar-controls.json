@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "mapId": "250.010.001",
+  "trackUid": "trk-91348a7bd43f05141f5f",
+  "trackNumber": 2,
+  "channelNumber": 12,
+  "startTick": 0,
+  "endTick": 2640,
+  "role": "guitar",
+  "requestedArticulations": [
+    "mute",
+    "stop",
+    "body_tap"
+  ],
+  "seed": 2525,
+  "allowSharedChannel": false,
+  "productionMode": false,
+  "maxGeneratedEvents": 64
+}

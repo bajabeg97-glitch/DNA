@@ -1,0 +1,71 @@
+{
+  "schema": "dna-session17-real-corpus-manifest",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "sources": [
+    {
+      "source": "Workspace_Styles/Acoustic Bld/Acoustic Bld_3_4_Var1.mid",
+      "bytes": 1634,
+      "sha256": "a56354a9ab16ebba4587840feb4636a703a3f201c6a7efe6b0306058c4e5fb18",
+      "parse": "pass",
+      "format": 1,
+      "ppq": 192,
+      "tracks": 8,
+      "notes": 121
+    },
+    {
+      "source": "Workspace_Styles/Analog Beat 2/Analog Beat 2_Intro2.mid",
+      "bytes": 2042,
+      "sha256": "bdb5927d01379ad46c7245308e8c78ba6b8e18ae633dd2a641e312da2f64a911",
+      "parse": "pass",
+      "format": 1,
+      "ppq": 192,
+      "tracks": 12,
+      "notes": 150
+    },
+    {
+      "source": "Workspace_Styles/Italian Fox/Italian Fox_Var1.mid",
+      "bytes": 1209,
+      "sha256": "cf5eb8a30994c308f208cc556c54fd6e6b10d465d30de4ca6ab8ee96dbe24cd1",
+      "parse": "source-has-invalid-note-pairing",
+      "error": "Non-positive note duration at track 1, tick 0",
+      "safeUse": "validated Factory registry segment only"
+    },
+    {
+      "source": "Gold DNA/EVO DZEPA-KNINDZA UZIVO.MID",
+      "bytes": 84702,
+      "sha256": "8443d5442a7a72f23aeca2de954a6cb94ecbcb9afeeae77a6f67bd6cddd00548",
+      "parse": "pass",
+      "format": 0,
+      "ppq": 384,
+      "tracks": 1,
+      "notes": 10707
+    },
+    {
+      "source": "Gold DNA/GORA SE DRMALA RODIO SE MIS-KALESISKI DIJ UZIVO.MID",
+      "bytes": 67682,
+      "sha256": "07cc045dd32d4975c201aeb2dba8b6f52ab9255c60d0e6b0ac6fb561df86b64a",
+      "parse": "pass",
+      "format": 0,
+      "ppq": 384,
+      "tracks": 1,
+      "notes": 8108
+    },
+    {
+      "source": "Gold DNA/GRMEC I UNA-GR,DRVAR UZIVO.MID",
+      "bytes": 72075,
+      "sha256": "18b8a42e17cbf2e8614c6f3e83d183aa6808460a245bdb6f83709207b01e07f2",
+      "parse": "pass",
+      "format": 0,
+      "ppq": 384,
+      "tracks": 1,
+      "notes": 7578
+    }
+  ],
+  "rules": {
+    "sourceArchive": "prism-uploads/DNA.zip",
+    "malformedSourceNeverBypassesParser": true,
+    "goldSongRoleGuessing": false,
+    "factoryRegistryEvidenceRequired": true
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "dna-pa800-device-test-kit",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "target": "Korg Pa800 OS 2.0+",
+  "status": "PREPARED_WAITING_FOR_DEVICE",
+  "officialImportContract": {
+    "format": 0,
+    "channels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "markerImport": "Style Record > Import SMF > hold SHIFT > Execute",
+    "newStyleInitialize": true,
+    "requiredCvStartEvents": [
+      "Time Signature",
+      "CC00",
+      "CC32",
+      "Program Change",
+      "CC11"
+    ]
+  },
+  "requiredChecks": [
+    "usbMediaReadable",
+    "shiftExecuteImportCompleted",
+    "allMarkersImported",
+    "channelsNineThroughSixteenCorrect",
+    "trackTypesConfirmed",
+    "nttConfirmed",
+    "allStyleTransitionsAudible",
+    "noStuckOrMissingNotes",
+    "normalStyleNoUnacceptableVoiceStealing",
+    "polyphonyStressNoUnacceptableVoiceStealing",
+    "soloOriginalPreserved",
+    "delayRoutingCorrect",
+    "rxDncOnlyOnConfirmedSounds",
+    "noDigitalClipping",
+    "headroomAcceptable",
+    "savedToUserOrFavorite",
+    "reloadMatchesSavedStyle"
+  ],
+  "requiredEvidence": [
+    "at least one image",
+    "at least one audio recording"
+  ],
+  "artifacts": [
+    {
+      "key": "functionalMidi",
+      "role": "normal-style-import-and-transition-test",
+      "path": "DNA_PA800_FUNCTIONAL_TEST.mid",
+      "bytes": 18397,
+      "sha256": "498f7f8e4f41abe1c6a6661d3b0a17a530e0d628af01d4280d53aeed092cd41f"
+    },
+    {
+      "key": "functionalManifest",
+      "role": "functional-style-machine-evidence",
+      "path": "DNA_PA800_FUNCTIONAL_TEST.manifest.json",
+      "bytes": 213628,
+      "sha256": "f676e44d924ad1d431e45d26c6284bf1b2acbc06b97d28642d75938a1b5ddd70"
+    },
+    {
+      "key": "polyphonyMidi",
+      "role": "project-limit-polyphony-listening-test",
+      "path": "DNA_PA800_POLYPHONY_STRESS.mid",
+      "bytes": 1553,
+      "sha256": "7344805d418d58bb15d2f9276e73574b83d72c849e878704c76456f0686eab5c"
+    },
+    {
+      "key": "polyphonyManifest",
+      "role": "polyphony-stress-machine-evidence",
+      "path": "DNA_PA800_POLYPHONY_STRESS.manifest.json",
+      "bytes": 3490,
+      "sha256": "8dbdc74dd8c656e766a7d565445377577753ad425dd9c60d76c2962790f4da06"
+    },
+    {
+      "key": "instructions",
+      "role": "human-device-procedure",
+      "path": "README.md",
+      "bytes": 1497,
+      "sha256": "c152890d764603cb674859ec0cc35a0735f15c0095ada18a110ddce2429145bd"
+    }
+  ],
+  "certification": {
+    "softwarePreflight": "PASS",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

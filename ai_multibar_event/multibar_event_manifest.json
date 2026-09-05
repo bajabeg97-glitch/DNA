@@ -1,0 +1,15 @@
+{
+  "schema": "dna-multibar-event-dataset",
+  "version": "1.0",
+  "songs": 163,
+  "samples": 16099,
+  "train": 12930,
+  "validation": 1449,
+  "holdout": 1720,
+  "phraseBars": 4,
+  "eventsPerBar": 12,
+  "velocityUsed": false,
+  "sourceHash": "c741ed5c66e341ee8a90e4771c3b94fdfbfe373aed79a5366870c811221f5115",
+  "contextDatasetHash": "e10ea7d2271d142da052d8afb382aba893ea6f15bfd6dd06d2eb124860605835",
+  "datasetHash": "d3c0ef3bbeb323168aaee25f50b7e64a3cc3a1159c22e1c7a356c0f20b9270ed"
+}

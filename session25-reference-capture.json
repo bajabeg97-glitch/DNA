@@ -1,0 +1,247 @@
+{
+  "schema": "dna-premium-articulation-capture",
+  "version": "1.0",
+  "captureId": "250.000.001",
+  "authority": "SOFTWARE_TEST_ONLY",
+  "device": {
+    "manufacturer": "Korg",
+    "model": "Pa800",
+    "osVersion": "SIMULATED-2.0",
+    "serialHash": "2dc81b0788f85a69dfcea93e7726b355aaef538bcfa6b50699a4ec551ec6de1d",
+    "hardwareVerified": false
+  },
+  "capturedAt": "2026-09-03",
+  "operatorId": "session25_fixture",
+  "evidence": {
+    "sourceMidiSha256": "eda42af1d74ddeec792a56b09557a80ddcf8369e5ea3885a4520574e31572975",
+    "audioSha256": null,
+    "imageSha256": null,
+    "notes": "Self-authored deterministic software fixture; never Pa800 production evidence."
+  },
+  "maps": [
+    {
+      "mapId": "250.010.001",
+      "engine": "GUITAR",
+      "status": "CONFIRMED",
+      "exactSound": {
+        "bankMsb": 121,
+        "bankLsb": 0,
+        "program": 24
+      },
+      "roles": [
+        "guitar"
+      ],
+      "playableRange": {
+        "min": 40,
+        "max": 88
+      },
+      "triggerRange": {
+        "min": 0,
+        "max": 11
+      },
+      "entries": [
+        {
+          "articulationId": "250.100.001",
+          "name": "mute",
+          "status": "CONFIRMED",
+          "eventType": "KEYSWITCH",
+          "number": 2,
+          "value": null,
+          "placement": "AT_ONSET",
+          "offsetTicks": 0,
+          "durationTicks": 60,
+          "condition": "PHRASE_END",
+          "requiredNoteOff": true,
+          "sourceEvidenceId": "250.900.001",
+          "entryHash": "480e0eb8327a0d3b1f41adf0d7c3addff6bd593beb2972aef48776aceb706aaa"
+        },
+        {
+          "articulationId": "250.100.002",
+          "name": "stop",
+          "status": "CONFIRMED",
+          "eventType": "KEYSWITCH",
+          "number": 3,
+          "value": null,
+          "placement": "AFTER_RELEASE",
+          "offsetTicks": 0,
+          "durationTicks": 60,
+          "condition": "LONG_NOTE",
+          "requiredNoteOff": true,
+          "sourceEvidenceId": "250.900.002",
+          "entryHash": "86edbff74512320f95b52444ae185fffc7e7401baccdf56be42435f40a5e022a"
+        },
+        {
+          "articulationId": "250.100.003",
+          "name": "body_tap",
+          "status": "UNKNOWN",
+          "eventType": null,
+          "number": null,
+          "value": null,
+          "placement": null,
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": null,
+          "requiredNoteOff": false,
+          "sourceEvidenceId": "250.900.003",
+          "entryHash": "5cc3678c6514d3abf709d850c5bf3be670fb803e8af653a86673acddff05a666"
+        }
+      ],
+      "sourceEvidenceIds": [
+        "250.900.001",
+        "250.900.002",
+        "250.900.003"
+      ],
+      "mapHash": "96136a2acc819b53604f7176083b5b63dfdd35a48b7b647dc6eb300713607ab9"
+    },
+    {
+      "mapId": "250.020.001",
+      "engine": "RX",
+      "status": "CONFIRMED",
+      "exactSound": {
+        "bankMsb": 121,
+        "bankLsb": 1,
+        "program": 40
+      },
+      "roles": [
+        "guitar",
+        "solo"
+      ],
+      "playableRange": {
+        "min": 40,
+        "max": 96
+      },
+      "triggerRange": {
+        "min": 12,
+        "max": 19
+      },
+      "entries": [
+        {
+          "articulationId": "250.200.001",
+          "name": "fret_noise",
+          "status": "CONFIRMED",
+          "eventType": "KEYSWITCH",
+          "number": 12,
+          "value": null,
+          "placement": "AFTER_RELEASE",
+          "offsetTicks": 8,
+          "durationTicks": 48,
+          "condition": "LONG_NOTE",
+          "requiredNoteOff": true,
+          "sourceEvidenceId": "250.900.004",
+          "entryHash": "4f565930e5a16ca2042506bd55aa3c8f8d51dc8dd9bbdec28dfeb032c96fb4ad"
+        },
+        {
+          "articulationId": "250.200.002",
+          "name": "release_noise",
+          "status": "CONFIRMED",
+          "eventType": "KEYSWITCH",
+          "number": 13,
+          "value": null,
+          "placement": "AFTER_RELEASE",
+          "offsetTicks": 0,
+          "durationTicks": 48,
+          "condition": "PHRASE_END",
+          "requiredNoteOff": true,
+          "sourceEvidenceId": "250.900.005",
+          "entryHash": "c5a095382fbab449b75d43036299f2e9e80e603161916a0ed1d3c433935c7daa"
+        },
+        {
+          "articulationId": "250.200.003",
+          "name": "proprietary_noise",
+          "status": "BLOCKED",
+          "eventType": null,
+          "number": null,
+          "value": null,
+          "placement": null,
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": null,
+          "requiredNoteOff": false,
+          "sourceEvidenceId": "250.900.006",
+          "entryHash": "24a17c68f3cd18cfeb588698d3fc68db876bfe38a27a598933b228d20e011ba4"
+        }
+      ],
+      "sourceEvidenceIds": [
+        "250.900.004",
+        "250.900.005",
+        "250.900.006"
+      ],
+      "mapHash": "fe0dac94a5fa3a6711c19a23794baaf194b59964df29cbd5ba2121a49cbdda10"
+    },
+    {
+      "mapId": "250.030.001",
+      "engine": "DNC",
+      "status": "CONFIRMED",
+      "exactSound": {
+        "bankMsb": 121,
+        "bankLsb": 2,
+        "program": 80
+      },
+      "roles": [
+        "solo"
+      ],
+      "playableRange": {
+        "min": 48,
+        "max": 96
+      },
+      "triggerRange": {
+        "min": 20,
+        "max": 35
+      },
+      "entries": [
+        {
+          "articulationId": "250.300.001",
+          "name": "legato_switch",
+          "status": "CONFIRMED",
+          "eventType": "KEYSWITCH",
+          "number": 20,
+          "value": null,
+          "placement": "BEFORE_ONSET",
+          "offsetTicks": 24,
+          "durationTicks": 48,
+          "condition": "LEAP",
+          "requiredNoteOff": true,
+          "sourceEvidenceId": "250.900.007",
+          "entryHash": "4a43d4c3dac6b780276c1e1aa57b7c19394b650d5d69719f454e080f547f0bb2"
+        },
+        {
+          "articulationId": "250.300.002",
+          "name": "breath",
+          "status": "CONFIRMED",
+          "eventType": "CC",
+          "number": 1,
+          "value": 96,
+          "placement": "AT_ONSET",
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": "LONG_NOTE",
+          "requiredNoteOff": false,
+          "sourceEvidenceId": "250.900.008",
+          "entryHash": "228713ce578c21138cc2fe0b88324e2ad0f618ce74063e0254f8b241c84eb690"
+        },
+        {
+          "articulationId": "250.300.003",
+          "name": "fall_pressure",
+          "status": "CONFIRMED",
+          "eventType": "CHANNEL_PRESSURE",
+          "number": null,
+          "value": 80,
+          "placement": "AFTER_RELEASE",
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": "PHRASE_END",
+          "requiredNoteOff": false,
+          "sourceEvidenceId": "250.900.009",
+          "entryHash": "d637165c34ecfef47957f65e12e276975a354dffbc50d9804ccbeaf66921b05c"
+        }
+      ],
+      "sourceEvidenceIds": [
+        "250.900.007",
+        "250.900.008",
+        "250.900.009"
+      ],
+      "mapHash": "409502a1d076dbce8773c97edceb672e9e8c6e0d4cdd384b9a833aa4fb52e485"
+    }
+  ],
+  "captureHash": "5bbfa17959599265f0aa12b6cec0cd84b8cd8d911f4900bbf37b8fa4fef08e32"
+}

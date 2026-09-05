@@ -1,0 +1,17 @@
+{
+  "track_index": 4,
+  "channel": 11,
+  "section": "variation",
+  "start_tick": 1920,
+  "end_tick": 5760,
+  "seed": 804,
+  "intensity": 50,
+  "profile_id": "130.011.001",
+  "meter": "4/4",
+  "enable_controls": true,
+  "allow_synthetic_control_map": true,
+  "chords": [
+    {"start_tick": 1920, "end_tick": 3840, "root_pc": 0, "quality": "major", "confidence": 0.96},
+    {"start_tick": 3840, "end_tick": 5760, "root_pc": 9, "quality": "minor", "confidence": 0.94}
+  ]
+}

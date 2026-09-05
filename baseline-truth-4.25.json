@@ -1,0 +1,22 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.25.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "eventDecoder": {
+    "songs": 163,
+    "samples": 16250,
+    "train": 12747,
+    "validation": 1766,
+    "sealedHoldout": 1737,
+    "velocityUsed": false,
+    "bestValidationLoss": 7.760773181915283,
+    "holdoutLoss": 8.644277095794678,
+    "roles": ["drums", "bass"],
+    "authority": "ADVISORY_NEURAL_CANDIDATE"
+  },
+  "releaseGates": {
+    "targetedRegression": "PASS",
+    "humanListening": "MISSING",
+    "pa800Hardware": "WAITING_FOR_DEVICE"
+  }
+}

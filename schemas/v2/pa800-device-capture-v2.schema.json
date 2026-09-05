@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/pa800-device-capture-v2.schema.json",
+  "title": "DNA Pa800 Device Capture v2",
+  "type": "object",
+  "x-contract-version": "2.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "captureAuthority", "kitManifestSha256", "sourceArtifactSha256", "operator", "device", "testDate", "checks", "markerResults", "styleBindings", "articulationCaptures", "voiceMeasurements", "evidenceFiles", "attestation", "captureHash"],
+  "properties": {
+    "schema": {"const": "dna-pa800-device-capture"},
+    "version": {"const": "2.0"},
+    "captureAuthority": {"enum": ["PENDING", "SOFTWARE_TEST_ONLY", "PHYSICAL_OPERATOR_CAPTURE"]},
+    "kitManifestSha256": {"$ref": "#/$defs/hash"},
+    "sourceArtifactSha256": {"type": "object", "additionalProperties": {"$ref": "#/$defs/hash"}},
+    "operator": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "organization"],
+      "properties": {"name": {"type": "string"}, "organization": {"type": "string"}}
+    },
+    "device": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manufacturer", "model", "serialNumber", "osVersion"],
+      "properties": {
+        "manufacturer": {"const": "Korg"}, "model": {"const": "Pa800"},
+        "serialNumber": {"type": "string"}, "osVersion": {"type": "string"}
+      }
+    },
+    "testDate": {"type": "string"},
+    "checks": {"type": "object", "additionalProperties": {"type": ["boolean", "null"]}, "minProperties": 17, "maxProperties": 17},
+    "markerResults": {"type": "object", "additionalProperties": {"type": ["boolean", "null"]}, "minProperties": 10, "maxProperties": 10},
+    "styleBindings": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"$ref": "#/$defs/styleBinding"}},
+    "articulationCaptures": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"$ref": "#/$defs/articulation"}},
+    "voiceMeasurements": {"$ref": "#/$defs/voiceMeasurements"},
+    "evidenceFiles": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+    "attestation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["physicalDeviceUsed", "resultTruthful", "independentReviewCompleted", "signature", "operatorApprovedHash"],
+      "properties": {
+        "physicalDeviceUsed": {"type": "boolean"}, "resultTruthful": {"type": "boolean"},
+        "independentReviewCompleted": {"type": "boolean"}, "signature": {"type": "string"},
+        "operatorApprovedHash": {"type": "string", "pattern": "^$|^[0-9a-f]{64}$"}
+      }
+    },
+    "captureHash": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "evidenceRefs": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^evidence-[a-z0-9-]+$"}},
+    "styleBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["channel", "role", "status", "bankMsb", "bankLsb", "program", "soundName", "trackType", "ntt", "evidenceRefs"],
+      "properties": {
+        "channel": {"type": "integer", "minimum": 9, "maximum": 16}, "role": {"type": "string"},
+        "status": {"enum": ["CONFIRMED", "UNSUPPORTED", "UNKNOWN"]},
+        "bankMsb": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+        "bankLsb": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+        "program": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+        "soundName": {"type": "string"}, "trackType": {"type": "string"}, "ntt": {"type": "string"},
+        "evidenceRefs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "trigger": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "number", "value", "noteOffTicks"],
+      "properties": {
+        "type": {"enum": ["KEY_SWITCH", "CC", "CHANNEL_PRESSURE"]},
+        "number": {"type": "integer", "minimum": 0, "maximum": 127},
+        "value": {"type": "integer", "minimum": 0, "maximum": 127},
+        "noteOffTicks": {"type": ["integer", "null"], "minimum": 1}
+      }
+    },
+    "articulation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["engine", "status", "soundBinding", "triggerMap", "evidenceRefs"],
+      "properties": {
+        "engine": {"enum": ["GUITAR", "RX", "DNC"]},
+        "status": {"enum": ["CONFIRMED", "UNSUPPORTED", "UNKNOWN"]},
+        "soundBinding": {"type": ["object", "null"]},
+        "triggerMap": {"type": "array", "items": {"$ref": "#/$defs/trigger"}},
+        "evidenceRefs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "roleVoiceCost": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "channel", "oscillatorVoicesPerNote", "acceptableVoiceStealing", "evidenceRefs"],
+      "properties": {
+        "role": {"type": "string"}, "channel": {"type": "integer", "minimum": 9, "maximum": 16},
+        "oscillatorVoicesPerNote": {"type": ["integer", "null"], "minimum": 1, "maximum": 16},
+        "acceptableVoiceStealing": {"type": ["boolean", "null"]},
+        "evidenceRefs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "voiceMeasurements": {
+      "type": "object", "additionalProperties": false,
+      "required": ["midiNoteCeiling", "measuredSafeMidiPeak", "unacceptableVoiceStealingObserved", "roleVoiceCosts", "evidenceRefs"],
+      "properties": {
+        "midiNoteCeiling": {"const": 54},
+        "measuredSafeMidiPeak": {"type": ["integer", "null"], "minimum": 1, "maximum": 54},
+        "unacceptableVoiceStealingObserved": {"type": ["boolean", "null"]},
+        "roleVoiceCosts": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"$ref": "#/$defs/roleVoiceCost"}},
+        "evidenceRefs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "kind", "path", "sha256", "bytes", "capturedOnDevice", "description"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^evidence-[a-z0-9-]+$"}, "kind": {"enum": ["IMAGE", "AUDIO"]},
+        "path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/hash"},
+        "bytes": {"type": "integer", "minimum": 1}, "capturedOnDevice": {"type": "boolean"},
+        "description": {"type": "string"}
+      }
+    }
+  }
+}

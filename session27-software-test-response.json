@@ -1,0 +1,44 @@
+{
+  "schema": "dna-premium-listening-response",
+  "version": "1.0",
+  "responseId": "response-41324dc07744edb07b3e",
+  "packageHash": "42f0ccba8a90a52aaa51e690990ec93e36ba78d5ea83ff8bcbe378ac8de52dcf",
+  "evaluator": {
+    "evaluatorId": "session27-fixture",
+    "authority": "SOFTWARE_TEST_ONLY",
+    "independenceAttested": false,
+    "evidenceHash": null
+  },
+  "submittedAt": "2026-09-03",
+  "trials": [
+    {
+      "trialId": "trial-001",
+      "preferredClipId": "clip-f57a83d7776b199c9b95",
+      "ratings": {
+        "drum": 4,
+        "bass": 4,
+        "guitar": 4,
+        "accompaniment": 4,
+        "solo": 4,
+        "transition": 4,
+        "overall": 4
+      },
+      "comment": ""
+    },
+    {
+      "trialId": "trial-002",
+      "preferredClipId": "clip-f91e61713024d1a221ec",
+      "ratings": {
+        "drum": 4,
+        "bass": 4,
+        "guitar": 4,
+        "accompaniment": 4,
+        "solo": 4,
+        "transition": 4,
+        "overall": 4
+      },
+      "comment": ""
+    }
+  ],
+  "responseHash": "52ed7ab26203091637ebb9568ff3a5828ba69c94f714779b0ebc10aaa5df3891"
+}

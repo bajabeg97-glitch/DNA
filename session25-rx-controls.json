@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "mapId": "250.020.001",
+  "trackUid": "trk-7011fbb5d9807ae262bf",
+  "trackNumber": 3,
+  "channelNumber": 3,
+  "startTick": 0,
+  "endTick": 2640,
+  "role": "solo",
+  "requestedArticulations": [
+    "fret_noise",
+    "release_noise",
+    "proprietary_noise"
+  ],
+  "seed": 2525,
+  "allowSharedChannel": false,
+  "productionMode": false,
+  "maxGeneratedEvents": 64
+}

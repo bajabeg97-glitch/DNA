@@ -1,0 +1,43 @@
+{
+  "schema": "dna-pa800-validator-test-report",
+  "version": "2.1",
+  "date": "2026-09-02",
+  "result": "pass",
+  "positiveTest": {
+    "midiFormat": 0,
+    "trackCount": 1,
+    "ppq": 480,
+    "usedChannels": [9, 10, 11, 12, 13, 14, 15, 16],
+    "noteCount": 2081,
+    "markers": 10,
+    "eventCount": 4505,
+    "endOfTrackCount": 1,
+    "eventOrderValid": true,
+    "duplicatesRemoved": 18,
+    "polyphonyNotesRemoved": 192,
+    "overlapsTrimmed": 2,
+    "compliancePassed": true
+  },
+  "negativeTests": [
+    {"case": "midi-format-1", "blocked": true},
+    {"case": "multiple-tracks", "blocked": true},
+    {"case": "invalid-ppq", "blocked": true},
+    {"case": "invalid-channel", "blocked": true},
+    {"case": "uppercase-marker", "blocked": true},
+    {"case": "unsupported-marker", "blocked": true},
+    {"case": "duplicate-marker-id", "blocked": true},
+    {"case": "missing-end-of-track", "blocked": true},
+    {"case": "invalid-note-pairing", "blocked": true},
+    {"case": "invalid-note-duration", "blocked": true}
+  ],
+  "invariants": {
+    "dynamicsSource": "factory-only",
+    "goldAffectsDynamics": false,
+    "validatorCannotBeBypassed": true,
+    "invalidMidiExported": false
+  },
+  "certification": {
+    "software": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

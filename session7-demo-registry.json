@@ -1,0 +1,83 @@
+{
+  "schema": "dna-session7-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic confirmed DNC map for software validation only.",
+  "dncMaps": [
+    {
+      "id": "170.100.001",
+      "version": "synthetic-test-1",
+      "source": "synthetic-test",
+      "evidence": "Deterministic Session 7 fixture; not a production Pa800 DNC map.",
+      "confirmed": true,
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 48,
+      "roles": ["strings"],
+      "playableMin": 48,
+      "playableMax": 96,
+      "triggerMin": 12,
+      "triggerMax": 35,
+      "sourceIds": ["170.900.001"],
+      "triggers": [
+        {
+          "articulation": "legato_switch",
+          "eventType": "keyswitch",
+          "number": 20,
+          "placement": "before_onset",
+          "offsetTicks": 30,
+          "durationTicks": 36,
+          "condition": "close_entry",
+          "maxGapBefore": 90,
+          "intensityOffset": -15
+        },
+        {
+          "articulation": "accent_cc",
+          "eventType": "cc",
+          "number": 80,
+          "value": 100,
+          "placement": "at_onset",
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": "leap",
+          "minInterval": 5
+        },
+        {
+          "articulation": "release_pressure",
+          "eventType": "channel_pressure",
+          "value": 45,
+          "placement": "after_release",
+          "offsetTicks": 0,
+          "durationTicks": 0,
+          "condition": "long_note",
+          "minSourceDuration": 480
+        },
+        {
+          "articulation": "phrase_switch",
+          "eventType": "keyswitch",
+          "number": 21,
+          "placement": "before_onset",
+          "offsetTicks": 48,
+          "durationTicks": 48,
+          "condition": "phrase_start",
+          "minGapBefore": 300,
+          "intensityOffset": -20
+        }
+      ]
+    }
+  ],
+  "factoryProfiles": [
+    {
+      "id": "170.012.001",
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 48,
+      "floor": 24,
+      "soft": 34,
+      "lowMid": 44,
+      "optimal": 56,
+      "highMid": 68,
+      "strong": 82,
+      "ceiling": 96
+    }
+  ]
+}

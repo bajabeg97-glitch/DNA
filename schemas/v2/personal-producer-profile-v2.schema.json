@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi.local/schemas/personal-producer-profile-v2.schema.json",
+  "title": "DNA MIDI Studio Personal Producer Profile 2.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "identity", "source", "learning", "preferences", "overrides", "audit", "safety", "profileHash"],
+  "properties": {
+    "schema": {"const": "dna-personal-producer-profile"},
+    "version": {"const": "2.0"},
+    "identity": {"type": "object"},
+    "source": {"type": "object"},
+    "learning": {"type": "object"},
+    "preferences": {"type": "object"},
+    "overrides": {"type": "array"},
+    "audit": {"type": "object"},
+    "safety": {"type": "object"},
+    "profileHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "2.0",
+  "x-authority": "local-explicit-user-preferences-soft-ranking-only"
+}

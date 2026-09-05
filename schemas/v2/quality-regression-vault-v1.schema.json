@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/quality-regression-vault-v1.schema.json",
+  "title": "DNA Premium Quality Regression Vault",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "locked", "entries", "openBaselineBetterCases", "releaseBlocked", "vaultHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-quality-regression-vault"},
+    "version": {"const": "1.0"},
+    "locked": {"const": true},
+    "entries": {"type": "array"},
+    "openBaselineBetterCases": {"type": "array", "items": {"type": "string"}},
+    "releaseBlocked": {"type": "boolean"},
+    "vaultHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-open-baseline-better-blocks-release": true
+}

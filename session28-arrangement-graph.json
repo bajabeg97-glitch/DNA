@@ -1,0 +1,1245 @@
+{
+  "schema": "dna-premium-arrangement-graph",
+  "version": "2.0",
+  "source": {
+    "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+    "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+    "sourceMidiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3",
+    "seed": 2124,
+    "variantCount": 2
+  },
+  "nodes": [
+    {
+      "marker": "i1cv1",
+      "elementType": "intro",
+      "sourceSectionId": "sec-001",
+      "sourceSectionLabel": "intro",
+      "bars": 2,
+      "targetEnergy": 35,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 19,
+        "estimatedVoiceCostUnits": 38,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "introduce",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "i2cv1",
+      "elementType": "intro",
+      "sourceSectionId": "sec-001",
+      "sourceSectionLabel": "intro",
+      "bars": 2,
+      "targetEnergy": 51,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 21,
+        "estimatedVoiceCostUnits": 42,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "foreshadow",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "v1cv1",
+      "elementType": "variation",
+      "sourceSectionId": "sec-002",
+      "sourceSectionLabel": "verse",
+      "bars": 2,
+      "targetEnergy": 45,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 20,
+        "estimatedVoiceCostUnits": 40,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "establish",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "v2cv1",
+      "elementType": "variation",
+      "sourceSectionId": "sec-002",
+      "sourceSectionLabel": "verse",
+      "bars": 2,
+      "targetEnergy": 60,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 22,
+        "estimatedVoiceCostUnits": 44,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "develop",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.7786,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "nearest-musical-section-fallback",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "v3cv1",
+      "elementType": "variation",
+      "sourceSectionId": "sec-003",
+      "sourceSectionLabel": "chorus",
+      "bars": 2,
+      "targetEnergy": 80,
+      "targetDensity": "full",
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "riff",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "percussion",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "riff",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 33,
+        "estimatedVoiceCostUnits": 66,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 9,
+        "maximumAddedNotes": 28,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "intensify",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "v4cv1",
+      "elementType": "variation",
+      "sourceSectionId": "sec-003",
+      "sourceSectionLabel": "chorus",
+      "bars": 2,
+      "targetEnergy": 93,
+      "targetDensity": "full",
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "riff",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "percussion",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "riff",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 35,
+        "estimatedVoiceCostUnits": 70,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 9,
+        "maximumAddedNotes": 28,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "peak",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "f1cv1",
+      "elementType": "fill",
+      "sourceSectionId": "sec-002",
+      "sourceSectionLabel": "verse",
+      "bars": 1,
+      "targetEnergy": 68,
+      "targetDensity": "full",
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "riff"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "percussion",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "riff",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 21,
+        "estimatedVoiceCostUnits": 42,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 4,
+        "maximumAddedNotes": 8,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "bridge",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "transitionTarget": "v2cv1",
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "f2cv1",
+      "elementType": "fill",
+      "sourceSectionId": "sec-003",
+      "sourceSectionLabel": "chorus",
+      "bars": 1,
+      "targetEnergy": 99,
+      "targetDensity": "full",
+      "roles": [
+        "drums",
+        "percussion",
+        "bass",
+        "riff"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "percussion",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "riff",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 23,
+        "estimatedVoiceCostUnits": 46,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 4,
+        "maximumAddedNotes": 8,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "launch",
+      "harmonicContext": [
+        "C",
+        "F",
+        "G7",
+        "Cmaj7"
+      ],
+      "transitionTarget": "v4cv1",
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "e1cv1",
+      "elementType": "ending",
+      "sourceSectionId": "sec-004",
+      "sourceSectionLabel": "ending",
+      "bars": 2,
+      "targetEnergy": 61,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 22,
+        "estimatedVoiceCostUnits": 44,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "resolve",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    },
+    {
+      "marker": "e2cv1",
+      "elementType": "ending",
+      "sourceSectionId": "sec-004",
+      "sourceSectionLabel": "ending",
+      "bars": 2,
+      "targetEnergy": 48,
+      "targetDensity": "balanced",
+      "roles": [
+        "drums",
+        "bass",
+        "guitar",
+        "accompaniment",
+        "pad"
+      ],
+      "forbiddenRoles": [],
+      "registerPlan": [
+        {
+          "role": "drums",
+          "low": 35,
+          "high": 81,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "bass",
+          "low": 28,
+          "high": 60,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "guitar",
+          "low": 40,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "accompaniment",
+          "low": 48,
+          "high": 84,
+          "source": "software-safe-band"
+        },
+        {
+          "role": "pad",
+          "low": 48,
+          "high": 88,
+          "source": "software-safe-band"
+        }
+      ],
+      "polyphonyBudget": {
+        "maximumConcurrentMidiNotes": 20,
+        "estimatedVoiceCostUnits": 40,
+        "voiceCostStatus": "SOFTWARE_ESTIMATE_ONLY",
+        "deviceConfirmed": false
+      },
+      "transformationBudget": {
+        "maximumOperations": 7,
+        "maximumAddedNotes": 20,
+        "tolerance": 50,
+        "locked": false
+      },
+      "motifFamilyId": "motif-9a9b10f18fec9f4a",
+      "motifTreatment": "final-resolve",
+      "harmonicContext": [
+        "Am",
+        "Fsus4",
+        "G7",
+        "C"
+      ],
+      "transitionTarget": null,
+      "locked": false,
+      "decision": "PLAN",
+      "confidence": 0.9495,
+      "evidence": {
+        "songMapHash": "02de1496c1b6955d8bc0d0d0c6a6a5e9c44eaa1e5795ace93b7d3cc4e60aba5d",
+        "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+        "sectionMapping": "exact-section-label",
+        "sourceSectionConfidence": 0.99
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-01",
+      "from": "i1cv1",
+      "to": "v1cv1",
+      "transitionType": "direct",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "v1cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 2,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-02",
+      "from": "i2cv1",
+      "to": "v1cv1",
+      "transitionType": "direct",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "v1cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 2,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-03",
+      "from": "v1cv1",
+      "to": "f1cv1",
+      "transitionType": "fill",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "f1cv1",
+      "harmonicContinuity": {
+        "fromChord": "C",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 4,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-04",
+      "from": "f1cv1",
+      "to": "v2cv1",
+      "transitionType": "direct",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "v2cv1",
+      "harmonicContinuity": {
+        "fromChord": "C",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.7786
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 2,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-05",
+      "from": "v2cv1",
+      "to": "v3cv1",
+      "transitionType": "direct",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "v3cv1",
+      "harmonicContinuity": {
+        "fromChord": "C",
+        "toChord": "C",
+        "requiresAdaptation": false,
+        "confidence": 0.7786
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 2,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-06",
+      "from": "v3cv1",
+      "to": "f2cv1",
+      "transitionType": "fill",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "f2cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "C",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 4,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-07",
+      "from": "f2cv1",
+      "to": "v4cv1",
+      "transitionType": "direct",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach"
+      ],
+      "targetMarker": "v4cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "C",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 2,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-08",
+      "from": "v4cv1",
+      "to": "e1cv1",
+      "transitionType": "ending",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach",
+        "ending-cadence"
+      ],
+      "targetMarker": "e1cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 4,
+      "decision": "PLAN"
+    },
+    {
+      "id": "edge-09",
+      "from": "v4cv1",
+      "to": "e2cv1",
+      "transitionType": "ending",
+      "obligations": [
+        "motif-continuity",
+        "bass-approach",
+        "ending-cadence"
+      ],
+      "targetMarker": "e2cv1",
+      "harmonicContinuity": {
+        "fromChord": "Cmaj7",
+        "toChord": "Am",
+        "requiresAdaptation": true,
+        "confidence": 0.9495
+      },
+      "maximumRegisterJumpSemitones": 12,
+      "maximumAddedNotes": 4,
+      "decision": "PLAN"
+    }
+  ],
+  "globalBudgets": {
+    "maximumAddedNotes": 192,
+    "maximumTransformations": 68,
+    "maximumConcurrentMidiNotes": 54,
+    "sourceConcurrentMidiNotes": 6,
+    "plannedConcurrentMidiNotes": 35,
+    "fullDurationPolyphonyRequired": true,
+    "transformationTolerance": 50,
+    "roleRegisterBands": [
+      {
+        "role": "drums",
+        "low": 35,
+        "high": 81
+      },
+      {
+        "role": "percussion",
+        "low": 35,
+        "high": 81
+      },
+      {
+        "role": "bass",
+        "low": 28,
+        "high": 60
+      },
+      {
+        "role": "guitar",
+        "low": 40,
+        "high": 84
+      },
+      {
+        "role": "accompaniment",
+        "low": 48,
+        "high": 84
+      },
+      {
+        "role": "riff",
+        "low": 48,
+        "high": 88
+      },
+      {
+        "role": "solo",
+        "low": 55,
+        "high": 96
+      },
+      {
+        "role": "pad",
+        "low": 48,
+        "high": 88
+      }
+    ],
+    "deviceVoiceCost": {
+      "status": "UNCONFIRMED",
+      "ceiling": null,
+      "estimateOnly": true
+    }
+  },
+  "hardConstraints": {
+    "harmonyCollisionAllowed": false,
+    "registerCollisionAllowed": false,
+    "polyphonyOverflowAllowed": false,
+    "lockedElementMutationAllowed": false,
+    "lowConfidenceAction": "MANUAL_REVIEW",
+    "transitionTargetRequired": true,
+    "originalSoloMutationAllowed": false,
+    "factoryDynamicsOnly": true,
+    "goldDynamicsAllowed": false
+  },
+  "planVariants": [
+    {
+      "variantId": "plan-01",
+      "strategy": "coherent-rise",
+      "seedOffset": 3234679643,
+      "energyDelta": 0,
+      "densityDelta": 0,
+      "elementTargets": [
+        {
+          "marker": "i1cv1",
+          "targetEnergy": 35,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "i2cv1",
+          "targetEnergy": 51,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "v1cv1",
+          "targetEnergy": 45,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "v2cv1",
+          "targetEnergy": 60,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "v3cv1",
+          "targetEnergy": 80,
+          "targetDensity": "full",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "v4cv1",
+          "targetEnergy": 93,
+          "targetDensity": "full",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "f1cv1",
+          "targetEnergy": 68,
+          "targetDensity": "full",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "f2cv1",
+          "targetEnergy": 99,
+          "targetDensity": "full",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "e1cv1",
+          "targetEnergy": 61,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        },
+        {
+          "marker": "e2cv1",
+          "targetEnergy": 48,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "coherence",
+          "locked": false
+        }
+      ],
+      "readOnly": true,
+      "variantHash": "648442edf2baf4b4a5e5b9819d8a3d3c7ea0d731a3fa687dc6d53802031463f2"
+    },
+    {
+      "variantId": "plan-02",
+      "strategy": "spacious-rise",
+      "seedOffset": 833144105,
+      "energyDelta": -6,
+      "densityDelta": -1,
+      "elementTargets": [
+        {
+          "marker": "i1cv1",
+          "targetEnergy": 29,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "i2cv1",
+          "targetEnergy": 45,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "v1cv1",
+          "targetEnergy": 39,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "v2cv1",
+          "targetEnergy": 54,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "v3cv1",
+          "targetEnergy": 74,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "v4cv1",
+          "targetEnergy": 87,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "f1cv1",
+          "targetEnergy": 62,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "f2cv1",
+          "targetEnergy": 93,
+          "targetDensity": "balanced",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "e1cv1",
+          "targetEnergy": 55,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        },
+        {
+          "marker": "e2cv1",
+          "targetEnergy": 42,
+          "targetDensity": "sparse",
+          "transitionEmphasis": "space",
+          "locked": false
+        }
+      ],
+      "readOnly": true,
+      "variantHash": "a62f536091f179801c88b19888da86d1f182c55eef2bf10d313c4cd16895ca10"
+    }
+  ],
+  "manualReview": [],
+  "readyForCandidateSearch": true,
+  "safety": {
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "candidatePatternSelectionAllowed": false,
+    "factoryDynamicsAuthority": true,
+    "goldDynamicsAuthority": false,
+    "originalSoloMutationAllowed": false,
+    "deviceProfileConfirmed": false,
+    "lowConfidenceRequiresManualReview": true
+  },
+  "graphHash": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8"
+}

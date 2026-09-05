@@ -1,0 +1,68 @@
+{
+  "schema": "dna-session22-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "production-candidate-search-and-read-only-abc-variation-engine",
+  "formalSuite": {
+    "testsRun": 68,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session22-benchmark-report.json",
+    "corpusHash": "7d3da3e3dd460bd628c3d192c0e91719b8a67169c242eafc0d62ad88323b3261",
+    "songCount": 20,
+    "eligibleSongCount": 15,
+    "manualReviewSongCount": 5,
+    "requestCount": 775,
+    "selectionCount": 2325,
+    "hardRejectedCount": 13022,
+    "relationshipSelectionCount": 118,
+    "eligibleReadyRate": 1.0,
+    "deterministicRate": 1.0,
+    "diversityRate": 1.0,
+    "rejectionAuditRate": 1.0,
+    "factoryOnlyGuitarRate": 1.0,
+    "goldAuthoritySafetyRate": 1.0,
+    "lockPreservationRate": 1.0,
+    "manualReviewSafetyBlockRate": 1.0
+  },
+  "artifacts": {
+    "referenceCandidateSet": "artifacts/session22-candidate-set.json",
+    "referenceCandidateSetHash": "1bec06938649087ea8e107591508363bfda824c67f04b5239ebfebd0ee95de4a",
+    "partialRegeneration": "artifacts/session22-partial-regeneration.json",
+    "schemaCatalog": "data/session22-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session22_candidate_search.py",
+    "api": "/api/premium-candidate-search",
+    "guiCard": "PREMIUM CANDIDATE SEARCH 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "productionPatternCount": 15837,
+    "criteriaPerCandidate": 14,
+    "hardConstraintsBeforeScoring": true,
+    "allDetailedRejectionsAudited": true,
+    "relationshipAwareDrumBass": true,
+    "factoryOnlyGuitar": true,
+    "stableAbcVariants": true,
+    "lockedSelectionsImmutable": true,
+    "partialRegenerationPreservesOtherFragments": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false,
+    "factoryDynamicsAuthority": true,
+    "goldAffectsDynamics": false,
+    "goldBankProgramAuthority": false,
+    "originalSoloMutationAllowed": false
+  },
+  "status": {
+    "session22CandidateVariationEngine": "SOFTWARE_VALIDATED",
+    "aiArrangerAlpha": "SOFTWARE_VALIDATED / ALPHA",
+    "session16Pa800MappingLab": "DEVICE_BLOCKED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "dna-premium-config",
+  "version": "1.0",
+  "name": "AI Premium Session 15 Baseline",
+  "seed": 150015001,
+  "targetDevice": "Korg Pa800",
+  "producerBrief": {
+    "schema": "dna-premium-producer-brief",
+    "version": "1.0",
+    "prompt": "Povezan Style sa suzdrzanom strofom, rastom energije i punim refrenom.",
+    "genre": "pop-folk",
+    "energyCurve": [30, 48, 70, 92],
+    "density": "balanced",
+    "requiredRoles": ["drums", "bass", "guitar", "accompaniment"],
+    "forbiddenRoles": [],
+    "lockedElements": [],
+    "transformationTolerance": 45,
+    "notes": "Originalni solo, Factory dinamika i validator ostaju nepovredivi."
+  },
+  "variantCount": 3,
+  "cloudEnabled": false,
+  "outputMode": "plan-only"
+}

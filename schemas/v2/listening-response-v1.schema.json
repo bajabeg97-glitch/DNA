@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/listening-response-v1.schema.json",
+  "title": "DNA Premium Listening Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "responseId", "packageHash", "evaluator", "submittedAt", "trials", "responseHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-listening-response"},
+    "version": {"const": "1.0"},
+    "responseId": {"type": "string", "pattern": "^response-[0-9a-f]{20}$"},
+    "packageHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "evaluator": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evaluatorId", "authority", "independenceAttested", "evidenceHash"],
+      "properties": {
+        "evaluatorId": {"type": "string", "pattern": "^[A-Za-z0-9_.-]{3,64}$"},
+        "authority": {"enum": ["HUMAN_VERIFIED", "SOFTWARE_TEST_ONLY"]},
+        "independenceAttested": {"type": "boolean"},
+        "evidenceHash": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "submittedAt": {"type": "string", "format": "date"},
+    "trials": {"type": "array", "minItems": 1},
+    "responseHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0",
+  "x-software-responses-count-as-human": false
+}

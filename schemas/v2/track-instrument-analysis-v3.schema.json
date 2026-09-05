@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna.local/schemas/premium/track-instrument-analysis-v3.schema.json",
+  "title": "DNA Automatic Track Instrument Analysis 3.0",
+  "type": "object",
+  "x-contract-version": "3.0",
+  "additionalProperties": false,
+  "required": ["schema", "version", "source", "sourceSha256", "endTick", "factoryRegistry", "tracks", "manualReview", "summary", "applicationOptimizationBaseline", "invariants", "decisionHash", "analysisHash"],
+  "properties": {
+    "schema": {"const": "dna-automatic-track-instrument-analysis"},
+    "version": {"const": "3.0"},
+    "source": {"type": "object"},
+    "sourceSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "endTick": {"type": "integer", "minimum": 1},
+    "factoryRegistry": {"type": "object"},
+    "tracks": {"type": "array", "minItems": 1},
+    "manualReview": {"type": "array"},
+    "summary": {"type": "object"},
+    "applicationOptimizationBaseline": {"type": "object"},
+    "invariants": {"type": "object"},
+    "decisionHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "analysisHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

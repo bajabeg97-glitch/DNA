@@ -1,0 +1,4891 @@
+{
+  "schema": "dna-arrangement-render-manifest",
+  "version": "2.0",
+  "renderId": "render-f83c4bd6fda6a7940ebf",
+  "target": "Korg Pa800 OS 2.0+ Style Import SMF0",
+  "source": {
+    "sourceMidiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+    "trackPlanHash": "19fefe7d19baf57f124040b17b09d3aa4a6a730b8a2b5ad5bd683f40b851bb17",
+    "evidenceLedgerHash": "075b3cc6dc4eeffa94dffe34f42b30b7d7bc415c6c05291dedaddb689e077b9e",
+    "trackPlanChainHash": "6bec54a1ec7f884d39d7896cad31b06e2ec1671aefc8dc2910901e726a8b6f51",
+    "trackAnalysisHash": "e58226171083a13fcb52fb096f3a193b5c2a8c91d8f66bd4a8a8f08ba82ebecd",
+    "songMapHash": "7da69777a7ab1dd66be922918500c2901b66139473b54a0d043516e4f6cf99b0",
+    "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+    "arrangementGraphHash": "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+    "candidateSetHash": "aaca5445354427a983bff8a4969c1869ebc5b4c3dc657430360730ccb7198629",
+    "groovePlanHash": "facec7fb46c2261283129597ac347f646db93963f581779ede69534e57661983",
+    "expressionPlanHash": "fcc3b5e1916320f3aba1b828659c22202f0e7f0e5d56b9e800656241e383cc9e",
+    "factoryRegistrySha256": "7a21fc2fefc88de5c9ed34f4d99d9750f40705dc627a7290d562077d54c8cd60",
+    "selectedVariantId": "C",
+    "sourceHashChain": "b9775ecc078bbcddd84551d182d0402ac800fdcb8fbc6e4ff56761d161da92ec"
+  },
+  "midi": {
+    "format": 0,
+    "ppq": 480,
+    "trackCount": 1,
+    "markerCount": 10,
+    "markers": [
+      "i1cv1",
+      "i2cv1",
+      "v1cv1",
+      "v2cv1",
+      "v3cv1",
+      "v4cv1",
+      "f1cv1",
+      "f2cv1",
+      "e1cv1",
+      "e2cv1"
+    ],
+    "usedChannels": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "logicalTrackCount": 7,
+    "noteCount": 1400,
+    "eventCount": 3172,
+    "lengthTicks": 34560,
+    "globalPeakConcurrentMidiNotes": 14,
+    "softwareMidiNoteCeiling": 54,
+    "outputSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27"
+  },
+  "channelBindings": [
+    {
+      "channelNumber": 9,
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "targetTrackUid": "trk-ca47e8c9cd33adc248d3",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          121,
+          6,
+          33
+        ]
+      ],
+      "exactSoundStateCount": 1
+    },
+    {
+      "channelNumber": 10,
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "targetTrackUid": "trk-5ca630cd233c88fb5230",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          120,
+          0,
+          5
+        ]
+      ],
+      "exactSoundStateCount": 1
+    },
+    {
+      "channelNumber": 11,
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "targetTrackUid": "trk-70327a19925883cd95e4",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          120,
+          0,
+          5
+        ],
+        [
+          120,
+          0,
+          27
+        ]
+      ],
+      "exactSoundStateCount": 2
+    },
+    {
+      "channelNumber": 12,
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "targetTrackUid": "trk-af5e705b8ce50bb73249",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          121,
+          15,
+          25
+        ]
+      ],
+      "exactSoundStateCount": 1
+    },
+    {
+      "channelNumber": 13,
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "targetTrackUid": "trk-19d3471549b3aaa2a06e",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          121,
+          3,
+          0
+        ]
+      ],
+      "exactSoundStateCount": 1
+    },
+    {
+      "channelNumber": 14,
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "targetTrackUid": "trk-fd9d43c448c6144b2031",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          120,
+          0,
+          64
+        ]
+      ],
+      "exactSoundStateCount": 1
+    },
+    {
+      "channelNumber": 15,
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "targetTrackUid": "trk-3a0668237c65403d34bd",
+      "scope": "MARKER_SCOPED_EXACT_SOUNDBINDING",
+      "exactSoundStates": [
+        [
+          120,
+          0,
+          89
+        ]
+      ],
+      "exactSoundStateCount": 1
+    }
+  ],
+  "markerSetup": [
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        96
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "4ac0bd7eb6f0447c7778f6c65fbf8b75b7cc35659df3ed1475860141381b6a52"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        113,
+        110,
+        114,
+        115
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "07497badc9b2c8b2b2afc619e0b799e7f30f1666e4c49b40e6b790f8362da71e"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        112,
+        113,
+        113,
+        113,
+        116,
+        116,
+        110,
+        115,
+        116
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "77fbb136523fe9005383a3471d51d6fc4eaa32458eb1c6d7b2ac428d6fa03b1f"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "8d27316dec6de3fa7f58aa6013911f530298be2dd61e335eb3a8982b80285f3f"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        99
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "9c4378b544809338d2ed39faed02303a2a94e6cc61eceddc476107036c9421b0"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        107
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "5dcb961a2a769838d6aa43c278a55174a8614c929783c8b722d26075b7a67fd0"
+    },
+    {
+      "marker": "i1cv1",
+      "tick": 0,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        96
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "b776e744c5342760243df4d77295e8493601f1957887dd4400a993475c11523a"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "43a525c8f39d9d4d4ec0a4c4f6f022c4501752f86ce5465ab66e3eed2348f08b"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        115,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "502b3aa0869aeefda8f79d1e58c6317f6a4f520ce856dddc9bcc36755171a24a"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115,
+        120,
+        120,
+        116,
+        116,
+        116,
+        115,
+        120,
+        116
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "5af6bec6fada39567b3bbbf281d1d60e6a61621fdca94bd3c8a4311085c78871"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "e769aded79f438de843e5b61d5ad2f8facc30e66e62e92f631fe1087f669f937"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "253628e3266e4086fa34e91a4be425cfaa1d50a6d618213cacf5cb852c0a188f"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "559d026dc65ef1053718f3dc8b1b49c9c55f251f4d578a6b05d5cded8fd5c1ae"
+    },
+    {
+      "marker": "i2cv1",
+      "tick": 3840,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        97
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "03845a26d6adb1d9fd3c57fda8b59e6d42918812dbbc6fec21d08f42ab570674"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        99
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "4632a7842e01693186b4c0c1dea7cb50e21f9b68bd6ec4e5dc9b7592a6b9b60e"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        114,
+        118,
+        113,
+        118,
+        118
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "a0c0ef56e35b17b36f5a66da8fee4435446e580e61305b42392f25b05a5057fc"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        114,
+        118,
+        118,
+        115,
+        116,
+        116,
+        113,
+        118,
+        116
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "ebab61eebc47718e5fb6636d2d73f933372ddb42b6db292c0972dba4686883d6"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "f770d511e72ffd9cf76dfe998f1561c26cdc3e7af13dce4aa9b8db4893807eef"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "870868745180b72e0a1b918fc572489b0fe9284a019d90c0b25a4e34a76695d8"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        112
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "2d94023a7f588678371a5f705db4adad5c3f1a384a10e25d135b9949f9c246f2"
+    },
+    {
+      "marker": "v1cv1",
+      "tick": 7680,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        96
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "c23841a66c87c68d9919523ca7a5c25fd4f7f06c80175aac7fd3d4aea95a13fa"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        103
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "0629ab00b34b52402aa6fbfaf3aff64b4a15e8eba0c7cfc3fd50a579fd7097ca"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        116,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "de19059b91f07269c7c0eb2e74416ca3701156cf4f582e2836d2002f90f8fa9e"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        117,
+        120,
+        120,
+        116,
+        117,
+        117,
+        116,
+        120,
+        117
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "4c6c5e6d8b3b702fc864ffdf472a46762c642e8a85170ed956c0844de49742a1"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        105
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "30e9520dc51b1e36c6737988b0af913afb251984dd013e9b3f9069690936ca15"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "d44600b4751eb21b607926d75d3ffb20924e5426bf7684fe10861e9cff8b55fd"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "22ec0012aad3888dd205510e01fb2860be789c110340e819a02b3090c606bc41"
+    },
+    {
+      "marker": "v2cv1",
+      "tick": 11520,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        103
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "af50b42b2cba1f1c94e202f197466a18c17e02060fe01e27bd6361d677663a53"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        108
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "a8b00593dd5ed6550e5eabba7e6ab533d2719c39e7c68211ec4f3bb6284147e6"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        118,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "ce52b7e6dc222aaa3a3f534cd7d7277225505c164a983f3a637652917df0b0ef"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 27,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        116,
+        127,
+        114,
+        126
+      ],
+      "factoryProfileIds": [
+        "079.825.782",
+        "305.311.683",
+        "983.751.646",
+        "991.664.210"
+      ],
+      "setupHash": "22e5c2ec6d988e4d54ed2ea1013ba6e6d283e766d0df60da7eed6abbd5dec651"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        114
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "06bcf2539f35b992d328e794c936bfa9176da95303afb74a0f7aa82b1db96a03"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        101
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "701c8bedc388847b1d6dd826f03eb1d89223f9477dd59fbddb16da03df032851"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "26cefd9f36b6fb80b8bcef6da92ef43ba462949525744a6caae3a0725be83cce"
+    },
+    {
+      "marker": "v3cv1",
+      "tick": 15360,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        116
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "4de5efd9588b501c6b7e9f60def814d33d10eab75cf0f5342b806eb8f909ea15"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        112
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "d7cc066c5edb9acd3476866cad897482cb4ce33abbc2c5764b2f151e4b034801"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        119,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "c0976a24d6a24bd0b942adf7da5a9c8b0f9ddbf3164af6fb8e6f3d3ec6d9aa5f"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        120,
+        118,
+        120,
+        120,
+        119,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "6142916aea229090fe98165b6aeef314e3a5be34b0078bb60ee9feece1e7241f"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        116
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "4b891cb0cced5d4a4af69c975d7775591e795fe3c7eecd1f7e97946aef288af8"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        106
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "446741e48c3d5f5b0709774abcf15ab39cff39b7aa53eba2e2abef1dd6aee8bd"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        118
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "cd7ef503e2ed76e2432c9059e0ad4d00e26488f9d4eae3e2c98429a7a376d928"
+    },
+    {
+      "marker": "v4cv1",
+      "tick": 19200,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        122
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "b0a376c34ffc9e8e81346810dd118f69e61790dbef66cc3bc8be02eb91afa8d8"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        105
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "db48e17048af49ef4c85d8a765f7b93f12f6872c574114989dec0fb191fad66c"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        118,
+        120,
+        117,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "7b06629b913a8bafc3c3dcaa8c0bff0f047ff5263eface972fbb4f29ac70990f"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        118,
+        120,
+        120,
+        116,
+        119,
+        119,
+        117,
+        120,
+        119
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "e4f31eebd94da5fb6fd7bf06a56e8210bcc6c8f594de4c570046c7489cd4318c"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        109
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "efea433a0e5fda21852e0455daf97db7e35f0335733fc3be1b99f84b7dc70817"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "030eb33487bb7d48b37c8fcf073a63fcfd83421bddf5bb333ca604cd4e58614d"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "1cc67f11ad32c0dcd65d1ff933770d8d1a79f4afd753e40c21b1c5789cbda983"
+    },
+    {
+      "marker": "f1cv1",
+      "tick": 23040,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        108
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "09715fb23403dbda742b5dc6319d900bd210d47d1462c92cbe6e366a1c7634d4"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        113
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "9c3671237850b477e4f33dd6b2c14e00e92fa2c33966b7f838e6def4e48f8271"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "78ec57bbfa6e079d308fa5e11835df850c86e97c3f82a0912545c008a87479ba"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        120,
+        120,
+        119,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "b2d0336d336ede51a14bf61b4ff4fbe6a36f5fd9f1ded6eeeb97fe2e1e88ec95"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        116
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "9252b795a5debed27dedfa96c8e7ad685baa869023fd27a2d2447849dba62af7"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        108
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "76d96c70857960520b4f55909f85cd629dc7f6fc87e5e404b4567a2d3728c807"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        119
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "e7ba01d7374bb40e1983120a0980185fad8e0ab68295d3c56adc336b654e0bd0"
+    },
+    {
+      "marker": "f2cv1",
+      "tick": 24960,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        124
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "6a161b3ac17c7b0c07966a26f30ce6fb9698b1c37bf25d3af8085a200f2a827d"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        103
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "e29aa3ca1906a68e0954889d23064f00af56b83ac395c9da5d575945ccd6c46c"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        117,
+        120,
+        116,
+        120,
+        120
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "e4e3bef596ea6bb88b96f2d65f32a20ac7a414cd08c86c21418e01f488f63105"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        117,
+        120,
+        120,
+        116,
+        118,
+        118,
+        116,
+        120,
+        118
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "a6f0e994acb1df3987a0e863f6e8a3d42a8395ddbce1ee3ff89b750cf5fc8768"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        105
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "ec95e096118ba05439c590e8dbcb681dbdf9db7b49853a45571245fe13da58f1"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "f89d5a1f9ca15a51b1a7bf85a1facb6bca7ac66806b45f67c82fc8599ad0dde1"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "cb8267e8f6b629b1ec77a242eaa2c30a10ce6c31a41dc6a2e1557cbab99c7f18"
+    },
+    {
+      "marker": "e1cv1",
+      "tick": 26880,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        103
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "c37cfb87a434a94381ce87ce951a995e393eef7477830f0e22a0acdabf87b3fe"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 9,
+      "bankMsb": 121,
+      "bankLsb": 6,
+      "program": 33,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "setupHash": "7c7e2310ea1696f8688cd75779795752fd1133be199cf11838b914a45955cde7"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 10,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        119,
+        114,
+        119,
+        119
+      ],
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "setupHash": "2402f65f7d6b8ffd2b3fc6fe8098fb53b8dbcbd53bfe76e58b42b330418b8a9a"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 11,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 5,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        115,
+        119,
+        119,
+        116,
+        116,
+        116,
+        114,
+        119,
+        116
+      ],
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "setupHash": "5d557ffae93397be7831f33fab5abcaf1c929d306ed8b969a5db97fca66215a6"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 12,
+      "bankMsb": 121,
+      "bankLsb": 15,
+      "program": 25,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "setupHash": "864b518ca7a6091eda4cd9b8fc732d9fb6ce1f0b9576229c55f67b7bff3ae31d"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 13,
+      "bankMsb": 121,
+      "bankLsb": 3,
+      "program": 0,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        100
+      ],
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "setupHash": "596a808e28def8d4ab5d37d7a6a1926915c81656f2ad60d592f780cb7893f484"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 14,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 64,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        114
+      ],
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "setupHash": "55ac5ff2fa2227b16cab339b408d0a76e794fddf6d94e0a7570029d2041fe867"
+    },
+    {
+      "marker": "e2cv1",
+      "tick": 30720,
+      "channelNumber": 15,
+      "bankMsb": 120,
+      "bankLsb": 0,
+      "program": 89,
+      "cc7": 110,
+      "cc11": 127,
+      "cc7Authority": "FACTORY_MIXER_CURVE",
+      "cc11Authority": "PA800_STYLE_INITIALIZATION_CONTRACT",
+      "factoryExpressionReference": [
+        96
+      ],
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "setupHash": "c2bec94c6f412020a2e916b9360bf4c7ab600dd5f10e252cf11c7a94aee0e028"
+    }
+  ],
+  "fragments": [
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-90026577fbe1e5f8447d",
+      "requestId": "i1cv1:bass",
+      "marker": "i1cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "855.530.329",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 0,
+      "endTick": 3840,
+      "input": {
+        "trackPlanFragmentHash": "6c98644bbf3820a0ede582ed2b0b46037c28b5c056feac33e011bfc1ca07961a",
+        "grooveFragmentHash": "84226ecbbce7eaeaf1c6b7236aebcd4e0a1823cd6a8437ad418ac1e742e51eb1",
+        "candidateSelectionHash": "514237b1cc268921b5797d718e0e8b5282a7be73ab8801b94c9e88d3432ae3a7",
+        "bindingHash": "eb7e2deb5ef21e3ace7c1dae757f177b32ca4eea7f5a9e9a7b5d2d7f13246c17"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-3dd11d43937d3839037b3b70",
+        "op-bb5f9c8d02c489f2be4476c2",
+        "op-15c718bef01535f1bef25ba1",
+        "op-a789748348240e1edbf21d96",
+        "op-363eb2c1d7b017acc802841c"
+      ],
+      "noteCount": 8,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        31,
+        43
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        105,
+        105
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "7ad9e68a659ceb680f96aab782bde3a958983ff4f2a614c886297f7070055810",
+      "fragmentRenderHash": "59b9c2c22f96c6e9802dc21cae78c77ecace569ea3f6b08467b230008e97b505"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-7cd7deabd1843c3cc6f3",
+      "requestId": "i1cv1:drums",
+      "marker": "i1cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "162.029.414",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 0,
+      "endTick": 3840,
+      "input": {
+        "trackPlanFragmentHash": "94eb9df4e272e8ea865f2e2b05d282411b8a90f3d4fb1655fa5a6764f4e3e312",
+        "grooveFragmentHash": "4c52ca25c9e1756730360958133d404f0313f26cc173d842d20546f8bc53800c",
+        "candidateSelectionHash": "886b1e90e8b422dfea33906aae078ec12ed37d4113437199efdd86e086906da6",
+        "bindingHash": "8d77629b76c3b77a09db64811233680fbb6fa66c1443cf69d520c25dc5d544df"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-31839136d052e807e7c0766c",
+        "op-cf5bbb1d8b23fe081fb40d6d",
+        "op-25a43f424e1b1fb1a61f4632",
+        "op-96b2c541f04031eddba0e00b"
+      ],
+      "noteCount": 30,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        81,
+        105
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "ef419d2a15fb9124a9315390782405c360a391952a562e0ca9e85bc0a9ad89c1",
+      "fragmentRenderHash": "955f8aa219d3be23d26db3b73117aca924d55921adfdef2425a6ed81fc9af7dc"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-770e1238fadb421445a5",
+      "requestId": "i1cv1:guitar",
+      "marker": "i1cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "221.016.188",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 0,
+      "endTick": 3840,
+      "input": {
+        "trackPlanFragmentHash": "c1d46218814c20ce07da6eb9a3cb0cf2376bc2facb384cac4184dada8ce245af",
+        "grooveFragmentHash": "41d0c497eb5eba1422438651381fd561206f8ea3bb57aff35718abfd1baf2a4a",
+        "candidateSelectionHash": "5fad5f5a59b19dc5a8d5607f4cf581be0706567e7c0de7b0c2cca7cd1e7362eb",
+        "bindingHash": "c3af5d4379f3e7a7268e50deb097ca742e2d13bdac56cace1e46c01c566b34a3"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-b6e22e8e7479d0719984b8be",
+        "op-2d9f4a987dc5a96a6c0d878d",
+        "op-6d0ec04bcf16d78bddc5367c",
+        "op-9a6d5f1be41f6c3dd863d291",
+        "op-1af921d1adf6b19a1c0efe0b"
+      ],
+      "noteCount": 9,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        71
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        53,
+        53
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "042e6f4faf01ec889701fe0fe15135e8b18671a025c8be3a04da279d7ba980d9",
+      "fragmentRenderHash": "bc73bff050264932c6a7c6c071191a2fe36e77bc1786de9b5d31d73f3fb9ad02"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-d5cb4bd80feb6909fb14",
+      "requestId": "i1cv1:accompaniment",
+      "marker": "i1cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "433.730.033",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 0,
+      "endTick": 3840,
+      "input": {
+        "trackPlanFragmentHash": "af67902f281f4c26e93972e6dbf4d80b5b7e8e1071bca42f74ef39b8dfb29173",
+        "grooveFragmentHash": "8f0ea13d66f7c73538509fe0f26f1d59781cd3ebb2b15f22e9a398dd2bff4e93",
+        "candidateSelectionHash": "e83f0d7419f9b1b9e1832f97fca4acabcfecfd7358906ace15d613bbee9af35c",
+        "bindingHash": "e24444247d293acc8bac87e7a7b33c063b2edf603b85b299df640a53375b975c"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-d1b2a2be0810ad2caca8c19b",
+        "op-9e8ef2d02a311150e81c10a4",
+        "op-7d8277104acdbde0a2fdfdad",
+        "op-177f062647cf957ed053f1fa",
+        "op-098326be2a2d724f093def24"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        79,
+        79
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "ce6f37bd1bdb273f0cfe67c3d364d4a9770cdd5b1bfd3cd57405c018c1516589",
+      "fragmentRenderHash": "9dc52da40b9b9df560ab81f939da50637587a871b51b02b93d37eb5962c5e593"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-1390c936d6fa28968c94",
+      "requestId": "i1cv1:pad",
+      "marker": "i1cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "817.483.113",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 0,
+      "endTick": 3840,
+      "input": {
+        "trackPlanFragmentHash": "06d7ff75fa252c991614962dcc2d652fe6164df0ed054a3f8c5e9103cd29ecfe",
+        "grooveFragmentHash": "725a54fc49fd21cbe52e0a1af918878c17a2570c0c8c48b6848674fcd2ab342a",
+        "candidateSelectionHash": "ce6212158c81ca1ef224f415e30f42c845e1f4a73aa719936d2960b9d423129d",
+        "bindingHash": "64636b34fde030a22a2c9922e26207c436a613eafa0e5da79e718d2328d8af18"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-273c6ce288e01deb3ac575e1",
+        "op-b4694f74b7d15c308350a19c",
+        "op-4cafd18fed31693fc4194cb8",
+        "op-586cd523e0007360c87fd591",
+        "op-9d4332cfeb576093b0475393"
+      ],
+      "noteCount": 12,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        67
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        99,
+        99
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 4,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "89fc32c7b0e85049d4fc0f962933ca865b1a4705e97979f1157728998563daef",
+      "fragmentRenderHash": "b15933ec33bb80438fea87d6ac59eb3c702150c9a4f28ec38d1b9f6ab56bb4c1"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-965380d8f2068cdec2f7",
+      "requestId": "i2cv1:bass",
+      "marker": "i2cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "325.888.314",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 3840,
+      "endTick": 7680,
+      "input": {
+        "trackPlanFragmentHash": "513a3052c86f3bfdfaf5914a4d9803ff669aac8796e681b46d5641be71ba5d7d",
+        "grooveFragmentHash": "5ec1bc926e2089a100adcb9e6b29e0499cbbc2cfb03e6c977e5c16ad49113106",
+        "candidateSelectionHash": "d66d4d39e74417f0c83e9a016016df42b8bf4030ae9e4e7c646e84049b2fcc4c",
+        "bindingHash": "2d66616248d95bde21aef3fd1525ec9a08f23e0a44fde1235fbbeed8c03cd874"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-5ee54ab5ac970ee374ca2488",
+        "op-19d616639bfd3df2427cd8ac",
+        "op-2ed5fa83bac37024ad4bb3d9",
+        "op-0c2ee6e7ff7ddde13ad26f3c",
+        "op-e0b663881365def9f481826d"
+      ],
+      "noteCount": 8,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        31,
+        38
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        114,
+        114
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "f4206ef9d3733cabbb525c77efebe186b3111170edac08adcdcf1cf8f372112b",
+      "fragmentRenderHash": "b2ab2048353ef7943dc7d244a782b758a4d67c252a37090374bed23b1068d71d"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-619ce970aee254d1367b",
+      "requestId": "i2cv1:drums",
+      "marker": "i2cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "352.080.660",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 3840,
+      "endTick": 7680,
+      "input": {
+        "trackPlanFragmentHash": "2883998330e77bd8f4c2b9a1157e6a6d0c3d88bdf72b6cf88f09cf92556046f7",
+        "grooveFragmentHash": "17169bf447c01adb6bcae67764168d4a3f907b45e28d538744fc92e34a383e7a",
+        "candidateSelectionHash": "0b646ec286f3db102b5b7861dc13dfe9212d936c5918ec83dc831c1c1b52118c",
+        "bindingHash": "a0a4ab1c9ae35a9afbb98b873b18593c011a072485280b2684e57c5daf0f662c"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-1e65109c371a0c546077aabe",
+        "op-572f22c5b1b1689c64f15a99",
+        "op-9f5efd40147283ba16184d26",
+        "op-5c75e3bc67bd0194184ef070"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        110,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "133e4161747e6f5058e0bd95bf62c3c0e69bc6a0742666af5d9174a5049756c7",
+      "fragmentRenderHash": "7b469a2d7244a44c7bda1230ac1818619ecd1aef5b281a2099eb470907dab191"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-b178e2d0c3fee19bd374",
+      "requestId": "i2cv1:guitar",
+      "marker": "i2cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "939.356.320",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 3840,
+      "endTick": 7680,
+      "input": {
+        "trackPlanFragmentHash": "908f16b78b60139c8ae09f3f47ba9ea26a30384989f9e69b03de020ae87f1bed",
+        "grooveFragmentHash": "cd6ccf7c5104b06083702dcebad16f6cd4094026525ea2871097a03e88022a31",
+        "candidateSelectionHash": "3a085a7d27aebe62544804af44ce84da6c45472c65e328c06ef5abbfe0356b99",
+        "bindingHash": "52e76d5afe9fef9b340092d1d6c5e5fce967612ae1568aeb6edcaebd81247791"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-5cbd60b3a7183f54034c633d",
+        "op-eb0197736c80f1b6f2a29790",
+        "op-ac604aebe7d0ca7229d6ea82",
+        "op-316d23d459726e8b2c52c7f9",
+        "op-6ef411d7b3f3e089f6678d40"
+      ],
+      "noteCount": 7,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        74
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        54,
+        54
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "8049c182ec20dbd35f220d3d850333224839d434f4fde2349d049aa7b86733f8",
+      "fragmentRenderHash": "17c4192e17f44eaab328779af711760ea1246361a54e934be534465b7c42373c"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-bf513e79df13105076ef",
+      "requestId": "i2cv1:accompaniment",
+      "marker": "i2cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "710.244.816",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 3840,
+      "endTick": 7680,
+      "input": {
+        "trackPlanFragmentHash": "9536d77e70469781baa9ddb01a4d6b55aea2777ad62fec579d888bc0d9e2172f",
+        "grooveFragmentHash": "655558d9d8eb1ae7e835089ffbcf3653172c753e46f6e1a9b5ecc859b3251fec",
+        "candidateSelectionHash": "8146545583f34dd15c9c87e97be8f57480440a56824001a75eab2d77c3edaf26",
+        "bindingHash": "892945b5c68f0b54d48e72d70e0f40611a031c96c2a152479c46cc40896c52ce"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-8cad04601efe1f7e3965c75a",
+        "op-9eecf677f91d0ab3c9920a59",
+        "op-7050a9a56f6d0460cd849632",
+        "op-ba4e60140720afc6645c0eae",
+        "op-98812f2678695c325ef70299"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        67
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        83,
+        83
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "80929ac1e96b49bcbea72d63c99923d3b14c1f3194d53b20b768b28a122ca050",
+      "fragmentRenderHash": "561b442152f6ea5e23fd6959a3ca1731820b06b151bac7789e0bd72780ade837"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-de898a477e80d53f948b",
+      "requestId": "i2cv1:pad",
+      "marker": "i2cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "389.122.481",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 3840,
+      "endTick": 7680,
+      "input": {
+        "trackPlanFragmentHash": "2390cebcb74ec4d228c10303bb66e5dbdc22c0c6f4f2a8e08c2db4e7806ebc4e",
+        "grooveFragmentHash": "4a6b9d119bcf3ba1091356bc8dd3f304977ddd797175a9abc3cf357fae9ebdf7",
+        "candidateSelectionHash": "a668737ba6d39f4476d75d58df53762d639be6c19b450529b51e3aeee377ba6f",
+        "bindingHash": "f3c1445d6736f09d10577b380c39137de6bb9a747206b77098d6bd85b499b166"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-ab97c38c7994fd4890505511",
+        "op-dec440d7680ea445b427a845",
+        "op-6b908936582538c505eb954a",
+        "op-0ea5c1f6150f602c767f9248",
+        "op-e6312d1de38e5227167f3189"
+      ],
+      "noteCount": 12,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        67
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        127,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 4,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "3defb032dac256fb10fc154e552f355695ad762894eb5281c0c4756965b1b4ab",
+      "fragmentRenderHash": "120d6cf1e123123e9fae5a2ed462f4f77fc80cff5e61a08e88a2c1b1aaefa12e"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-7c194b9033304fede19c",
+      "requestId": "v1cv1:bass",
+      "marker": "v1cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "882.124.169",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 7680,
+      "endTick": 11520,
+      "input": {
+        "trackPlanFragmentHash": "dfb9c958687125a39ffe6d6eae55f1f54523dd756ab29c22433bd0693eeb6aa8",
+        "grooveFragmentHash": "0d214c2645f3f6139d3f3ea8635eddb38ea50e06e52d87bfc869f99476eb33d2",
+        "candidateSelectionHash": "2a6e2bf9d6f6f87a36cc2b1024da0ff60cc8d950e4756b9cd08b98b5e00bc96c",
+        "bindingHash": "8baecb419113250c5e86c8a15483836b82e91b9b0342703bab29ae8de00696ab"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-0b9376dd1b3047c8be607656",
+        "op-cdd075bd65b5babe673f1151",
+        "op-cf1e16a7ea4e54d8fa1fb926",
+        "op-66d17135434952c2e1697871",
+        "op-9a14ebac35e0292cf34b2ba9"
+      ],
+      "noteCount": 8,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        28,
+        38
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        111,
+        111
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "f85677ea7b5d40d620e5704f38d523784c36d390c8f6e621dfbc58bfa745cf22",
+      "fragmentRenderHash": "135f6d7b48fc1bf9924f200aec8995be92752e07b213ce25e02767c65158dcdd"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-7d954db1084677f0bb64",
+      "requestId": "v1cv1:drums",
+      "marker": "v1cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "316.022.022",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 7680,
+      "endTick": 11520,
+      "input": {
+        "trackPlanFragmentHash": "55d9979c49986bbd8b9562663bb18957a9b166a51a11987712343e0a643fd5fd",
+        "grooveFragmentHash": "2bebe794170e325ea28c4e84c74ce26c46b8e80043c43270b8219a5e7c09a2b6",
+        "candidateSelectionHash": "f6472184f31188beb42d32f631652790cf6ac6f5c8bac7813c1130a44b036f31",
+        "bindingHash": "c0aeb38ffaefc72694bb51bb64e194e5846fa7f1b49ce66d5309f3bbbf24df57"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-1fc1cdf99879cb7d12355c4f",
+        "op-a35a3e50c2de2a1f849546f7",
+        "op-d47d8545c6a68d0f08afd350",
+        "op-2bdd7b5466df2bb00a620d13"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        46
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        103,
+        110
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "2264b1f9578beaab6b2e2a10d40583d2119def9daa10664166a0065dc549e027",
+      "fragmentRenderHash": "4210a3656090d0f2e817f52b3dfcaaa4b7c648e12d879def0aa044d03cd26823"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-2f87b96c069f6972e5b3",
+      "requestId": "v1cv1:guitar",
+      "marker": "v1cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "287.188.654",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 7680,
+      "endTick": 11520,
+      "input": {
+        "trackPlanFragmentHash": "bcea2b89b7ec91e51b1aaf1651485adfe0bb6b167f3b0268c611d0dd23ffc5b2",
+        "grooveFragmentHash": "11f2138cefc2cfb8d965f46329129646b4585837db4ccbc3e90d00d35f778a1b",
+        "candidateSelectionHash": "21e34191baaf030e51b4ba8881a18d9ec0d2168141e545147bb78e240213a7e7",
+        "bindingHash": "b7e14865819f3fc1fd878ace882d543be15d3a10116bb0c5b8f3538873498c50"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-410ff501774c701e816021a1",
+        "op-4157163cd19c006e5972f34b",
+        "op-e7c9bd0550e4bf6c3e71b3fe",
+        "op-ee3cbc03366db2596667f627",
+        "op-537e5084153452a82639df91"
+      ],
+      "noteCount": 19,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        67
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        53,
+        53
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 1,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "a637633e83988b7320d5a20f901f6cbf528687bc32a945ef05667c82db53c55e",
+      "fragmentRenderHash": "6d36ebde603560a7ec62e60f96cb26f4f85d14a5612a97c69c6666676fb9507b"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-4c73a7a570f5c074b1ca",
+      "requestId": "v1cv1:accompaniment",
+      "marker": "v1cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "640.216.299",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 7680,
+      "endTick": 11520,
+      "input": {
+        "trackPlanFragmentHash": "03844d1c903ce00ce00f9617770d0eb2119dc3969e160d2a37c2b519a8bbfff3",
+        "grooveFragmentHash": "0cc9d2f102cf794a55ca9570ade9765d9bb4fbea0e3f81537415cbc933ef73b8",
+        "candidateSelectionHash": "f0eeaeed3b5a75100805471a5b89f4baff602bf98318b0030ec25616431b41ee",
+        "bindingHash": "b4a119e9aafe7f7945ffe6c4bf2c63b3ec3ca4585f1ab0003a63f2c1551153e2"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-6c657a6f87d99daca928d42b",
+        "op-d119250d9740285a85087a3f",
+        "op-f4c7ced52b85887a4dde47a1",
+        "op-4063aa84e176094ebc23770b",
+        "op-65db11b5a3629ba724b31eda"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        67
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        81,
+        81
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "c79464b6e58a748121d8dc7860423a8a9f479ec327262c9358ccfe131f11d7b2",
+      "fragmentRenderHash": "db1356e6054329c42fb06ad63d5e7006ca845d3003ba0ff9d95521a8a172679d"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-1300c90980b31581b2b3",
+      "requestId": "v1cv1:pad",
+      "marker": "v1cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "092.805.847",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 7680,
+      "endTick": 11520,
+      "input": {
+        "trackPlanFragmentHash": "bb16bb60f934afed68ac19c56e47001a9326879d6e4d5e009e816dfc0c00ebda",
+        "grooveFragmentHash": "3c0e8ad52807a456a5364e6fa9e4e007e8dcb39d2bc87f7946205d2c63e66e89",
+        "candidateSelectionHash": "33beb3121659b7898d0624244f46733d691223e5cddb4e0e3cdbd567f3041179",
+        "bindingHash": "86da49f22dd524065215da4c5d21365df8ecb165bef189c5e5f6447c78431bcf"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-7d9ef751a19f758153cd4458",
+        "op-b528744dd773619027a4ed70",
+        "op-a1b8ec64d755807038011ccc",
+        "op-25a255b8d889ca585f02fe0c",
+        "op-74012e5b49f0096eb40b7edc"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        118,
+        118
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "bb9e9b297bf39c838fa652b942c3b20891ff3bcaf3896e05762d5f43d263523e",
+      "fragmentRenderHash": "69d2255013a05c4d8c5e302a218841289ac8290ea43550d4069129153bf73c07"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-2543239f0e5a798d16d7",
+      "requestId": "v2cv1:bass",
+      "marker": "v2cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "730.336.141",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 11520,
+      "endTick": 15360,
+      "input": {
+        "trackPlanFragmentHash": "bd8275c5cb003a4e2face26ba52398d9ab12b73eea04a0a1a2fe77d65a98b368",
+        "grooveFragmentHash": "ec22f77d0c3db7b23462adf764da2fec5d4f972da29036a2f8443e7a192b3c6b",
+        "candidateSelectionHash": "1b52f0b938c44d552094cfd21388891bfa12a60f1074df54e170770638e248a6",
+        "bindingHash": "e0f3ac824fe58d57e8d684318e73ad423d5a0c3281733bac8b3d436d694dd27d"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-62bde597f72e6bf46a31d9c0",
+        "op-fe49c7a02148adabb4a79f6a",
+        "op-86b0d08e404d408888db849f",
+        "op-c0812f000144ff3228f231bf",
+        "op-147a639da8681b470b7aeed5"
+      ],
+      "noteCount": 8,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        29,
+        43
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        116,
+        116
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "6e422144aadb6281a84a22b44193e47aaacd3b2bd3ec87974060844255a9b54b",
+      "fragmentRenderHash": "5b2c5cd20ad9749dc6474525cbfc9bc089bc0af5eca345a6c4f7928e27596412"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-942e61c6496052b9278b",
+      "requestId": "v2cv1:drums",
+      "marker": "v2cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "080.792.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 11520,
+      "endTick": 15360,
+      "input": {
+        "trackPlanFragmentHash": "118f6b6978edd057c4878c064d6864f309afbad8b6708bab899e7a286a3c7d9c",
+        "grooveFragmentHash": "cf0e869bd4f830abb78398db5b1737ca388495ba58c54308f96e090f979cc062",
+        "candidateSelectionHash": "dce65f1403c72d0d8bfe8efeb82f2df74f3365e6033c6203b6c5fcb7feee731d",
+        "bindingHash": "e6b2e4b698712e521222a0ae438a571cc7b1cc0538e5773bd2ae39431761bf07"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-e38f5fb0c05a537339a5425f",
+        "op-b647da39cdcced8810b91bb1",
+        "op-125141d6f8663f0ad5cf558b",
+        "op-20c201fd600236f6c6db9cc6"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        110,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 2,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "eb4a8f2ef54ba4a51e314591a6700208c1d60c6bf00021f6cb796bfec1185e46",
+      "fragmentRenderHash": "8f7db2abe842a593b7ae994ffaa453e164b3ec22aafe1b99f22c30fddcda7b83"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-db719194152e839ae287",
+      "requestId": "v2cv1:guitar",
+      "marker": "v2cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "459.412.112",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 11520,
+      "endTick": 15360,
+      "input": {
+        "trackPlanFragmentHash": "7b824f216a814d477cc202ceb57243cf3760555f6b6dc3490a2d3ce4ec038b58",
+        "grooveFragmentHash": "86254f3f66859505a720b3a8af24486f5895b01ffef8e9db6d50f6ab2bb4514c",
+        "candidateSelectionHash": "50e394742ef25d94ad369f2d8db0e204e691514e3b09a6f42cd0258ccd9a8235",
+        "bindingHash": "5ff93e7035a6e76d638e0024ba5e9b00616a54e5a8bb1b0ff37cffee26bdd50c"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-7e2918065f0903e8d9afd309",
+        "op-9d62b7b72993ac3df85df7fc",
+        "op-0965a4c63ae55da790303b4d",
+        "op-e43f5328e4cb57265faca74a",
+        "op-7e2998a2b5c1f2a3fd6a9709"
+      ],
+      "noteCount": 19,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        67
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        68,
+        68
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 1,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "4bb2ddd9024a9e2578dcb0706552b0e46461865b02576c61b90bc2c1801ea5bf",
+      "fragmentRenderHash": "82e7dade33a06a018105600c8e74f541ef5461b840f236f922b9ce3333bab4c0"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-efc0032d07c776107843",
+      "requestId": "v2cv1:accompaniment",
+      "marker": "v2cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "587.243.106",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 11520,
+      "endTick": 15360,
+      "input": {
+        "trackPlanFragmentHash": "0704e8ef8e06b2d995d8850becd2b22f3142d1754df04a1df0a56c2564c1bdfa",
+        "grooveFragmentHash": "3c389abfb67348fe4e71375524d7f833bc5f4a87500993093a2baec1396e8a63",
+        "candidateSelectionHash": "b343f9afb485c13d98a3382724227ebdcbb0eb5c19bf1a16ab07e66fc66ad742",
+        "bindingHash": "96d6e1a7648d20e6c964566b63c5aef8024ef66eeb9eebddd173b9e3b3216566"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-89a9c0fdda5791f8806b5e3f",
+        "op-973d65b827a9000e2e81263b",
+        "op-1934cd997629c41e41223297",
+        "op-5ac7f69974f4383d7076acf0",
+        "op-9e2190f1513278f9b1c34dbf"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        90,
+        90
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "ec180a3481d82472766fa904c55c0e60fb2085b86df57ebe25bd14afbc5dd1f5",
+      "fragmentRenderHash": "6fc5cdf913a46b02106edffc72483d8c8308795f917878e5862f0a04db1af2a8"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-4d41bafef1b99b980e29",
+      "requestId": "v2cv1:pad",
+      "marker": "v2cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "013.887.683",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 11520,
+      "endTick": 15360,
+      "input": {
+        "trackPlanFragmentHash": "8fd1f2d1433b934836049aad278add4ca15793d3af49ba9d45ef627666c13af9",
+        "grooveFragmentHash": "5e2ad3aeaacd00f49318f1fc5cd38215b4629db218d38ee6789f494314b81ae3",
+        "candidateSelectionHash": "dc6c7cfd4f0e76ff701a97d7c524d913b1b00e0f240e27e2e3512b67161a29ec",
+        "bindingHash": "156c714f309fa5f3275c7a54728e67bc792f9ac281832561f3969aa8ad985510"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-f334425d2661ed76ed523fb1",
+        "op-e7663a4edf6a8885897bbe5f",
+        "op-05e7b7667355c83289646e40",
+        "op-92fd6a7ebdad64720d76cf96",
+        "op-2fb667f1e2d1117cc9e2c909"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        127,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "1630eef1001c80283efcd90cf809b43582f33f9bdbe7a60506a8101c55e8e6e8",
+      "fragmentRenderHash": "4023c56173905edf0423ced67f89bf5d5b0eb9d29bb445efe52936b24719fce9"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-be7b9698036e7853f320",
+      "requestId": "v3cv1:bass",
+      "marker": "v3cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "474.836.183",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "aa512898e0757d8f4cb5cc99af7d9107bf49de1672a875c1b0aefa57518f8423",
+        "grooveFragmentHash": "db64528a0b726c68b9d8e5e0fa46aa3d7d290a86ea7478f06d84a789b3187a5b",
+        "candidateSelectionHash": "a11c120a9c234eb9b3b4f6cdf4048d02dcf9a7835806a17edc15d4bca7fb2ebf",
+        "bindingHash": "0af9d117d1756af6e5d87c42deb10407e4db873e24a3d746feda34eeccf5bd7a"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-dbbc959a2b99436bcd604efe",
+        "op-4cafc99a30185d1783718d17",
+        "op-6804a60c45cfaf634f01a817",
+        "op-4a967c6a6a1be5ef6ac51c08",
+        "op-6ccb68083ea413be29ff6adc"
+      ],
+      "noteCount": 8,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        29,
+        43
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        119,
+        119
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "a43051ef8e39bab1ad6c863fc583d3ab1adfc189e9602fc20d52bdabbcd0a831",
+      "fragmentRenderHash": "474aac3cfbbb3915250a3d7202b062c6ed4e02b8724b3ff84308045c9302bb77"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-b1e60b885d79a634abb4",
+      "requestId": "v3cv1:drums",
+      "marker": "v3cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "327.992.584",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "f5df116ee55132027b582de5f753140acc36ddd84cea0d7f5549ecf2d3e75e04",
+        "grooveFragmentHash": "d3ebae345cf18570b0de88f51a488cb554f3db4e50a2407dde30ca208d06c278",
+        "candidateSelectionHash": "f01ccd23d2b17732018d0d3700ca21b5bad647577ee91e67e89aaf5c1815c068",
+        "bindingHash": "17be585226be1cea64dff1df7990a486fccfe7fe3920abf73f218fc61f3e03db"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-01b39353013c1eb6047005a6",
+        "op-751c7a7468243b0e0db4159d",
+        "op-bbf7311fef39b1d35699cf0e",
+        "op-b1832a3ed9a339b2b6a31e29"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        112,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "6a15aa99a61890d649ddd067f85d4191a01691132c3bf6579739410eee112fa2",
+      "fragmentRenderHash": "194911c69b4b29c33d09cf4ff24b9586e4026bce70a4991cffacf511eb669437"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-822b920c0c12870a515c",
+      "requestId": "v3cv1:percussion",
+      "marker": "v3cv1",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "channelNumber": 11,
+      "patternId": "347.948.299",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "47dabc027c22c9ae83ff6d4399e1116d048021f7a7960b6b6254eb664a1ebe9c",
+        "grooveFragmentHash": "5432d1c2df6045cb2dc4f50101df1b924664687fd525c1f7be5b8034786f40a8",
+        "candidateSelectionHash": "af04fabfbbd4fb056b7add864c9ab6f56cdb398e1e496318065c01784161fe5d",
+        "bindingHash": "60d7c3f682c1356fce05aecdefdc8dbc2bb4b2d11d6c42ffe5b7c88b7b8923ef"
+      },
+      "factoryProfileIds": [
+        "079.825.782",
+        "305.311.683",
+        "983.751.646",
+        "991.664.210"
+      ],
+      "operationIds": [
+        "op-9ac0e8bc97a4d3984d8161f9",
+        "op-1e84785a0b6c18db1570e960",
+        "op-87869252d02fef942978dd4a",
+        "op-adf712ab3bc6a7e28d99ec88"
+      ],
+      "noteCount": 50,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        35,
+        70
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        67,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        3,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "dbca6b757ae18ad2842944560e42981b463dac6b0955c05ea7d18aaddb0705da",
+      "fragmentRenderHash": "6a4927ac11f054749331ab0de9cb9310f5521c1b0295ddc3e0bbc1f609242959"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-d1c1a19c0f84c573171f",
+      "requestId": "v3cv1:guitar",
+      "marker": "v3cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "091.559.876",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "71408895bf0028bfe255cbcbad2e26b836edc9273e527d1692b0a40af550d91d",
+        "grooveFragmentHash": "b7d1220c690512e0176edd9b0c46042e17cad85591346a0066fbfae5e2574b2a",
+        "candidateSelectionHash": "340e586b1b0efbe60712ab5eb27ebdb3b460f2de05e9cfce12b0e8f61dfccfd6",
+        "bindingHash": "ed448bd62f01f6023832e8f090d71b1f4e712c92d5a1178b3c11d9b3041661ff"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-2167a702543b60161a3d544a",
+        "op-a217f334f7d78707db4ed7c4",
+        "op-2573147566fb0ba79e424bed",
+        "op-70fcee88af3f8cc95a84d1a9",
+        "op-ea2bd2b5febb480c7f0fcb75"
+      ],
+      "noteCount": 34,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        71
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        92,
+        92
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 4
+      },
+      "outputEventHash": "1fb6a9ea24d30b73cd889aad592ea722d57fcc805a680a1c9421683a9bb0ce31",
+      "fragmentRenderHash": "59667237265fb244409e7ff59e1c39190d20e503100208011f4ae7d0ef7d676b"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-b427c695cf21675896a4",
+      "requestId": "v3cv1:accompaniment",
+      "marker": "v3cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "758.750.547",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "fa855e746a264b2cfbd2fbc3d5defb4d9241a4d9a314247e845a2cf53e6279df",
+        "grooveFragmentHash": "4cec10fb37aaf109f60b28dfe806d23ebeb5aec6b5f7c061e80a5e6e5aa25a21",
+        "candidateSelectionHash": "a25f43108a975aff1605ece5a3f34e5a9c4757f91685773f9bcbe1a85b7be8d8",
+        "bindingHash": "95dad3e92127b7915ea03d28545ae79cd66d06991a8afbb93aa01cc113bbc9f9"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-91ab448632eccf00cab738f1",
+        "op-6c87adae7ac3ab37db7a6118",
+        "op-37216ee3ce5155671099ca9f",
+        "op-321db5d82103f9f47ce84608",
+        "op-f1c7da6b043329b8c1ad1fdc"
+      ],
+      "noteCount": 66,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        84
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        104,
+        104
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "8d9dc9f1fb4e3c1e4dc896aa9a1a1ac1e5a01513089dfe68f9d1f77fe90ff241",
+      "fragmentRenderHash": "771e995c8ee539e560f4f727ba89ef3c8e268c609d5b5c85b633c4f5faa805c2"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-a7b2ab37e2eb116cbc2c",
+      "requestId": "v3cv1:riff",
+      "marker": "v3cv1",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "channelNumber": 14,
+      "patternId": "972.518.680",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "821cd4c732ed2c30554f4de3f9022b472640141a99ba44a039bb59d0367431cf",
+        "grooveFragmentHash": "1ccb5c53c0ac2f00bf828ff09925229169cdcfa558e3938a991feba031d6febb",
+        "candidateSelectionHash": "45c5518c20261fc935ef2b5715fe469da7b775b385f0058f34eacb9f90d2ac65",
+        "bindingHash": "93d5d439312a41f095dabeb13f1f751606e1cb4cfcf76552fd0fd1224bb1b5a6"
+      },
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "operationIds": [
+        "op-27783fe92490dd68a3399e41",
+        "op-5c3d4131f43e7cba3520ce1d",
+        "op-7a10190c419d336b92e93cca",
+        "op-4ad12a15fdbcbfcb3a88d149",
+        "op-ad0c68c7d7d5644b612e3999"
+      ],
+      "noteCount": 29,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        69
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        102,
+        102
+      ],
+      "factoryAllowedVelocityRange": [
+        2,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 19,
+        "polyphonyTailsTrimmed": 13,
+        "peak": 1
+      },
+      "outputEventHash": "7ad2409cbf0157bdbda8c97ab228959db188f4da3f475767600b10f1c40b3bf2",
+      "fragmentRenderHash": "7eb7c923c9a849c2b25f802786c0d9d1ec89e45a6a54c4a588e8775cbae08359"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-d0dc7aa3605607f427fa",
+      "requestId": "v3cv1:pad",
+      "marker": "v3cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "795.889.617",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 15360,
+      "endTick": 19200,
+      "input": {
+        "trackPlanFragmentHash": "a6979607a227ce36d259ad6d4ecb8af3204d848912625d71a6d0e054f0295dbc",
+        "grooveFragmentHash": "7c18e006e65ee7ef94bdfd5acd2bfc22bf39f8d3bc49690602b7d7efa24a5a3e",
+        "candidateSelectionHash": "76e71c5e79270cb793b4a5ebf315a4065b79e77f01217493bf868713fbb50490",
+        "bindingHash": "2dda0ab0e82b60675fb589387c2a14985e18ed148b5afbc52eab7578a87b299a"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-181d3900686d3a7f312ad982",
+        "op-abf40782186c1a1a352b10c9",
+        "op-fef3cf399ba6dfb9bdd928db",
+        "op-00fbf073cea68f057ae85f2a",
+        "op-f9840f5a67ad8b535abfa94e"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        87
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        127,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 14,
+        "polyphonyTailsTrimmed": 6,
+        "peak": 1
+      },
+      "outputEventHash": "de081133c6ddd0f40e089ff189f82f3ce446b7fa2d443971a494b10b6c7e4d50",
+      "fragmentRenderHash": "1b72e82acd4be19d0697b741d8efd0790e44c6bbdc5d7b9ca918fd734acd5cb6"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-ae28f01a43c8bb2d3060",
+      "requestId": "v4cv1:bass",
+      "marker": "v4cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "329.207.411",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "17c54f2cea9396420680ab1fb8747e79442571c992853d2b388bd334fdef7742",
+        "grooveFragmentHash": "34b94511c2eea67eda28bd32430ef29a900aab0eca5ab399ff17c13e4143b667",
+        "candidateSelectionHash": "b6a72122112a03933bb9080e6d20f7696db9b1f13ac06f78fcd22c5030bc29fa",
+        "bindingHash": "a3c30ebadeff0be602e74af4637e840b3ab1e8c198222f85bb2bfeac780600ef"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-5aa34cd08c05774750cec728",
+        "op-68301177b13921dff14fb0eb",
+        "op-68997459bb0e99e02bf4cf1e",
+        "op-54b9b809b559bf4f2c88b3d6",
+        "op-f16170ef3441b5e5a2ab2eb7"
+      ],
+      "noteCount": 40,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        29,
+        48
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        122,
+        122
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 6,
+        "polyphonyTailsTrimmed": 8,
+        "peak": 1
+      },
+      "outputEventHash": "cea7ece7613a01b3da40bc98f49b8f92212f01fef63b7d0e3f36165bc8498e16",
+      "fragmentRenderHash": "fc1e1b04c2cf0db88dcbc34b13b2a627468bdb2ee88d9a4d4f99ab9cae80f71f"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-07485cbeaa6e4d9e0077",
+      "requestId": "v4cv1:drums",
+      "marker": "v4cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "821.875.336",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "755212510c2bfaace4542da25f7e5e6c07bbffa64205fe90fc84fce34c9d7ead",
+        "grooveFragmentHash": "c1be212852e3fdcb0d94ae541194f5d409440dd69d9ff54427d3e3bf67000ecb",
+        "candidateSelectionHash": "57006ef3a366ee7ef3c1de3cccdc016d0b42a973308d06fb418bcb4a2a194fa9",
+        "bindingHash": "95897c328d8b367f76678596c0bd12e130adcffe7610ae184e6d35e7647b68b3"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-d16e8ed4e63a3dddcbabf9ce",
+        "op-a8094625bb5351ce7f655b1d",
+        "op-713227d556e62ad797091047",
+        "op-1bc377090c8e20b1b7f9ffb0"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        118,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "596ed1aacd2b7fb4c077dcc74edca1ea58d843f46ac61eb9ce4d0d405877833f",
+      "fragmentRenderHash": "de962fe97c2d7845c2ecf293248b304955dfd789102556b5f77526cbf9ac685e"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-fe2625ab2a438b1b32fa",
+      "requestId": "v4cv1:percussion",
+      "marker": "v4cv1",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "channelNumber": 11,
+      "patternId": "804.335.633",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "9da12db3aed04aea26a3c6045cdadb5145933e21bd8e2754fe7618adc8e93002",
+        "grooveFragmentHash": "b3b5ccbb877c51006bc796566f11944bbb15baac0bc030671e790f9c663edb2b",
+        "candidateSelectionHash": "575fd8a4c73f68f8653b5dcf2699aa9779d39d06102dff99ae4c13a5d3c9ed0c",
+        "bindingHash": "ae83d8603454bdd3f23aa8f12345328c04aeda623d4d4af19779f9d6e147aec4"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "operationIds": [
+        "op-85e0cc9e18e019da1c198565",
+        "op-1af2d7bd106b08dd787bea62",
+        "op-d27a11f2e536bc6c2d63c260",
+        "op-a652b644e82597c9582abc46"
+      ],
+      "noteCount": 76,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        35,
+        64
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        86,
+        125
+      ],
+      "factoryAllowedVelocityRange": [
+        7,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 5
+      },
+      "outputEventHash": "2e513555176ff4d36932cd1706444f5a062fc33ae88a68a0ada038d6d3677f5d",
+      "fragmentRenderHash": "a900683b7dad8917f07622cb68cc125d772e222b38f3ffa8f0d9a6ae29ceef1a"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-a951648ca4f93c5f2063",
+      "requestId": "v4cv1:guitar",
+      "marker": "v4cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "811.588.504",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "7c0b9f63b9c642203b98afff4b5f5a44e5414b12a7bcfbb106990957798b6d91",
+        "grooveFragmentHash": "fb1b3768fabc5e026858a7b256bccd7582951260808ac91de2612f0aaae91c57",
+        "candidateSelectionHash": "6d58735c0c708be16e678eaa1162e26707099ff500e2fa0007e6b65412e1fcc5",
+        "bindingHash": "186475146f50d4378e71aeaba11127a58f59117c61637fa007a8cfba51ac7a91"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-609e946f7c24c4f000b4b6e1",
+        "op-daf6ef333a9b0d2bb6ee5ddc",
+        "op-af6c18730880037955bc6da2",
+        "op-7020f0cd8bdc1a92a8898c5f",
+        "op-87d6d9c2a4ec939921b180ff"
+      ],
+      "noteCount": 34,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        71
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        96,
+        96
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 4
+      },
+      "outputEventHash": "258b2ec863096ebafebc9c362a691b62eb22f0b2b79b49713503f07c1ceb82b0",
+      "fragmentRenderHash": "34f74f8bd8ce0ad4bb7e30e9e301b400104572d38f483e4ff1fdb1482a1de935"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-534d969efcac3b171490",
+      "requestId": "v4cv1:accompaniment",
+      "marker": "v4cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "751.578.963",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "bb90d1269cbe65393f7dd683412595c359a801b663b503e50fcebf36ffee3aec",
+        "grooveFragmentHash": "1a57a0ffb1e1335959b2b9f35f370530c778fd2abe35d54f19baecca68b6a3b5",
+        "candidateSelectionHash": "27575beb0d8522ea8357a4a99ed80039405c82e9935543a92d1dfa62fd9f6407",
+        "bindingHash": "5c310b4d33c5d452b20ee5fe0f72685f51bd1a51419efad93d17000d4abea234"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-c44f01b3e13b2fe21d9b35cc",
+        "op-6b806ceeb94c07ea3c2d372e",
+        "op-291234916618ceb6e8e498b6",
+        "op-c4545fa0ad58f3c39b31f1c0",
+        "op-ac080695a6e853826d50849e"
+      ],
+      "noteCount": 66,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        84
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        110,
+        110
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 3
+      },
+      "outputEventHash": "b054e8e4fcf3b42c421fa5a142c841fe76b6f90eb46f851edd40ac235a6eaf0a",
+      "fragmentRenderHash": "a88a35da683129e678ee4577e11c136ee69a0cbf7be06f23cf5c7ff0a83d73cd"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-f127a79660aeba6dbb19",
+      "requestId": "v4cv1:riff",
+      "marker": "v4cv1",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "channelNumber": 14,
+      "patternId": "530.980.805",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "b8f0db6b2e24160781f4d6687a07967b760eacaebdd159cf6ff8f7b31e1062bf",
+        "grooveFragmentHash": "969df9f880fa4f40f3c19a990779d0d66d8d1fbb6c422fb2eeb360db3090eaaa",
+        "candidateSelectionHash": "47a93ac490b978cc796d20ef0b48c1336aa680db3a1098e95ecf888c48cf9e1d",
+        "bindingHash": "facd5f5c8c72201e42852e5f4e86bb628da0429d8026f101ea816f9eca01c69e"
+      },
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "operationIds": [
+        "op-61d8fb2f4000b4df66799c4e",
+        "op-78e821b2ae4e3ac3057c85ac",
+        "op-5f463a451ee8dfdfec299873",
+        "op-a34ab183697781ee38a01c5b",
+        "op-2c02acb892ec11b3cd8b6944"
+      ],
+      "noteCount": 36,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        50,
+        69
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        110,
+        110
+      ],
+      "factoryAllowedVelocityRange": [
+        2,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 1,
+        "polyphonyNotesRemoved": 12,
+        "polyphonyTailsTrimmed": 20,
+        "peak": 1
+      },
+      "outputEventHash": "2010da7151694575a2e53ba8eaa689519b617a57921375feb377fed6c8301739",
+      "fragmentRenderHash": "9140e785379e9e05490fb40a834b00688bcb1be497690f871b29993ed67ee9b6"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-f0c461ffbfec5930d61f",
+      "requestId": "v4cv1:pad",
+      "marker": "v4cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "488.799.744",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 19200,
+      "endTick": 23040,
+      "input": {
+        "trackPlanFragmentHash": "79b6fd890a7e5d21ecd8496c537aea98161b33f32e9b396e35da687e6816ab13",
+        "grooveFragmentHash": "b500eb72e612cbd7c80d92450891eb397722e0cd369ef24f36c8895898182544",
+        "candidateSelectionHash": "1a5d022d591cccdf985f9d9c3301b383577e518b13a25962bbdcc255b8680109",
+        "bindingHash": "916ad9baea45548bfc1fd9d517d881693e660140bd1bc72ec47580140da003a1"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-e6b58490df28801fdbd067be",
+        "op-ce08ccf9b52e3abed998ddbe",
+        "op-abd42e3af6761e2509e0bbbf",
+        "op-f06ef65b8bae2bb76cf4d6dc",
+        "op-d94140b7c32358fd5adc43a0"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        87
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        127,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 14,
+        "polyphonyTailsTrimmed": 8,
+        "peak": 1
+      },
+      "outputEventHash": "0938c1563073e32f2a881b63c9faf6259a23fba2ecca1b489627b0170f276d87",
+      "fragmentRenderHash": "ebe27ea6e5f3d320671c5fd37c629404f98c76b849bf3d47cb88089df5085866"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-05acf574d98d134f7625",
+      "requestId": "f1cv1:bass",
+      "marker": "f1cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "125.929.851",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 23040,
+      "endTick": 24960,
+      "input": {
+        "trackPlanFragmentHash": "edcd360248b79e662753e15d79ec2b0960b0e2f06429100646adb06e95b74cad",
+        "grooveFragmentHash": "b5e266a89efa96739611cd231cc54ea3f3ae51ed53f1f7c701e561f8706532a5",
+        "candidateSelectionHash": "6a3f810c944f65b5e57d9e13b64064a1f02ab7d16de01be5dce16dbef90ef283",
+        "bindingHash": "7a0ce73e4265ddd4cccf572333992405588be92a2a34c9c62682b916a11f95b6"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-50926dc665fefb60385f35d4",
+        "op-0101cd5eb000f0166831e2c6",
+        "op-256964e0cdd1c9e38dc07cea",
+        "op-999eb9f54899d3f07074900e",
+        "op-d3f0415f3ca6f568f755b69e"
+      ],
+      "noteCount": 5,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        29,
+        38
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        117,
+        117
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "bfe981383bdc1f17612027161ab6f7b560cf523c050aa3adf527c117dddf5fac",
+      "fragmentRenderHash": "2c5d058aee200c40d8b1bacd89dfd43b9e2b36108f75d2faddc3260e74d1438c"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-67ed497f3303cd1ad4d0",
+      "requestId": "f1cv1:drums",
+      "marker": "f1cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "609.590.038",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 23040,
+      "endTick": 24960,
+      "input": {
+        "trackPlanFragmentHash": "b0d8cd68e57a101642a92b50f3310474bbdafe27fd7710b17ddd7987828e2470",
+        "grooveFragmentHash": "9ea1e3a1d76f6afc381e0a5293600547a11863b772c72aab845061a73ae91343",
+        "candidateSelectionHash": "cf7676a27bc9929fead81c951a9737d42b5f7074749bd8ff1be2ff170924dea5",
+        "bindingHash": "110355536c347929db8509abaf07ec8aba409ed4847474237c6f013dda9411e9"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-443098c024611722ba787deb",
+        "op-f165c569cfa6e4bc849503f2",
+        "op-a1c6c56bc0cb774a36b1453e",
+        "op-0e944c5cc32512b04577a78c"
+      ],
+      "noteCount": 15,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        46
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        110,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "98dade6bdc5b5dee69419f405594a95d2b672bd2bf67c64b7cdc9f62f6d7d348",
+      "fragmentRenderHash": "3a55ef5cddd4e9bd7181efe3306536ad78b9fbe2965a39492fac6a5f457998e5"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-26f187e4f717fcebbc79",
+      "requestId": "f1cv1:percussion",
+      "marker": "f1cv1",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "channelNumber": 11,
+      "patternId": "346.464.973",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 23040,
+      "endTick": 24960,
+      "input": {
+        "trackPlanFragmentHash": "1e48c7fd84aa6309ddca4e402d2b5677ca38d06da625dab616c24aa3beba5592",
+        "grooveFragmentHash": "193edb0c72873f497a947287dc6f75fd39135eba0f2f3aa3cdf76e84cb2e73a1",
+        "candidateSelectionHash": "86257253ab8ef455636b4a848a0ba505a77f7fb97b4f7ac92a3577bcf44512c0",
+        "bindingHash": "0b1c411cc9d6985b16e48851c2651b11dca2d8b38143c73714e13000a9ef2072"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "080.814.373",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "operationIds": [
+        "op-9cd8d8965b7d7f08b19a757d",
+        "op-e4a64088568b13419138bd4e",
+        "op-0434cd6140523a8b3d86bc81",
+        "op-157ccb6d7eb22d097dabb3fd"
+      ],
+      "noteCount": 39,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        35,
+        64
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        86,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        7,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 5
+      },
+      "outputEventHash": "0ac38259ff3312f76362474c8bc77fc755522584b6f7786d53cb9afae8d59c66",
+      "fragmentRenderHash": "33a46c50e74755751fccf00a56568e4eb4be470badaa3122efd7cc44f65bdac0"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-ddb570d4eeebcbc0abfc",
+      "requestId": "f1cv1:riff",
+      "marker": "f1cv1",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "channelNumber": 14,
+      "patternId": "888.061.182",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 23040,
+      "endTick": 24960,
+      "input": {
+        "trackPlanFragmentHash": "133b898d186c8094503f156cf2dadc72727038f42c4d1feeb6c9b15d7f73f7a2",
+        "grooveFragmentHash": "a33a7d77708967ae182deb385621e61c255443a2eee941c5067a47de02176abc",
+        "candidateSelectionHash": "54329f5ab682438d3f62a4b0d72f1e5e168f5471c7247a8799138931f45d7308",
+        "bindingHash": "5631ddeba84f1e3430ff8f9a4d936c66acce661b11e595f60afeb60eb4cf5431"
+      },
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "operationIds": [
+        "op-f3eba5335408b31c4c4acd12",
+        "op-cc7316ae9a3f54829391b811",
+        "op-15425641144d38fe77d922c6",
+        "op-a4a06c0f2cfd8c73906cdfc3",
+        "op-36396b96d763afc9d0827b58"
+      ],
+      "noteCount": 18,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        77
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        94,
+        94
+      ],
+      "factoryAllowedVelocityRange": [
+        2,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 6,
+        "polyphonyTailsTrimmed": 10,
+        "peak": 1
+      },
+      "outputEventHash": "fda818cc613bd8ca34492b668d71b140f419b29782360ae72da5bf570bd2681b",
+      "fragmentRenderHash": "8adf412ad98fbc332e1b556ee442d57c366d69e1e3595fa8714146bc30365748"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-d14114a977cdf94223b1",
+      "requestId": "f2cv1:bass",
+      "marker": "f2cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "543.166.588",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 24960,
+      "endTick": 26880,
+      "input": {
+        "trackPlanFragmentHash": "855d8d706ca10221b7777751298408ba250cf87c8be6f491c9997fdc9e06d1c4",
+        "grooveFragmentHash": "f4006fcdf0120b65de85fc40d83824d166ee80b1350c34be404d432b5b37aca1",
+        "candidateSelectionHash": "560608c1bba7322bbb9a2792b2ec92bbb8d39671ad4277479a44ff00075dd7c0",
+        "bindingHash": "952c798d01fffc9e1ebdf32e089301b24fb568ce021b368c8ebbb6d29f7a81ab"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-cf8a554693a8dc84be226ebd",
+        "op-342af41b160cb0d4763e4809",
+        "op-0455a4a21bb2f808e1ef4760",
+        "op-543afa3fec6058a695f88e01",
+        "op-bbf353b7d1044d2baffc5da2"
+      ],
+      "noteCount": 5,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        29,
+        36
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        124,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "090beb005a26bd6d1659c2707cb5d8b72a65230e063e80a1bd596bb2b05f1230",
+      "fragmentRenderHash": "b54cbfac9cfaf71ba6dac4b89d75be755602ad3d552fea5219fa7e2ecef445a8"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-20d900c8ce42587ab60a",
+      "requestId": "f2cv1:drums",
+      "marker": "f2cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "177.819.936",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 24960,
+      "endTick": 26880,
+      "input": {
+        "trackPlanFragmentHash": "234b06638a9d743e01b79eb301eff8c56385bb92ab9818044fb842c26c664d22",
+        "grooveFragmentHash": "42fac90d3355cfb4bc7c36fadafb26171c56a47c47524d55492b8cb218caf504",
+        "candidateSelectionHash": "800b1b44e2cac12caa197311d93a11c538a30ec9f5acd78d42e72299a61de2a6",
+        "bindingHash": "d9791859ded04938ab08f0b195556eda972d00d0b8437cb8fae36615e201374a"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-83031ec089e650ce33cdff4d",
+        "op-ba4eb07077a95363a24abd37",
+        "op-b18eefc2796567c4bd3ff333",
+        "op-c146d590d3df52c4ef117b36"
+      ],
+      "noteCount": 40,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        46
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        114,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "88a6eb1dc784884db5d9dc4569b4caf50745029a212f580108348f99307e0a83",
+      "fragmentRenderHash": "f75a2e18ab20faa58e04f3ec0c1793475b940e87be2e38d69c2d5c58ce6526c1"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-cf2445f3d5680a98963d",
+      "requestId": "f2cv1:percussion",
+      "marker": "f2cv1",
+      "role": "percussion",
+      "logicalTrack": "Percussion",
+      "channelNumber": 11,
+      "patternId": "603.961.175",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 24960,
+      "endTick": 26880,
+      "input": {
+        "trackPlanFragmentHash": "78c09c92b8c900ddaff022fea606b2467c87287cac8e9907f1c1686665c2af47",
+        "grooveFragmentHash": "1be39b0ed03cb22110b7dd5cddaeae7f75cc9c5c781300d2a50565e560119ddb",
+        "candidateSelectionHash": "39fbd93009764c11e586947b9aedd625ed810004348e2d4a1de7f0e35d7cf062",
+        "bindingHash": "85d0c9f66ae48e41718db9cab386e6396c52d3529a8eda13ada2aa7f1286b854"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "197.001.360",
+        "274.117.181",
+        "464.483.434",
+        "629.859.393",
+        "642.186.940",
+        "836.642.669",
+        "882.804.888"
+      ],
+      "operationIds": [
+        "op-be1d2c2a6c68f2a2e2efe651",
+        "op-61b05f37152530ea50bbe6d1",
+        "op-558d4dfe1c0b7e3e25115c5d",
+        "op-76dd93cd7ad10afdef601948"
+      ],
+      "noteCount": 38,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        35,
+        64
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        86,
+        125
+      ],
+      "factoryAllowedVelocityRange": [
+        7,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 4
+      },
+      "outputEventHash": "9a0a80e8cc36b7ba778a3bafff174988a1aa42f3d1f62e21c1ee5a756ef8189a",
+      "fragmentRenderHash": "3648330d5e7e4fb6cd83e9a09d352e1db436fb3ce634792415888460e5ee6d79"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-2bdfabec48c5caa737b0",
+      "requestId": "f2cv1:riff",
+      "marker": "f2cv1",
+      "role": "riff",
+      "logicalTrack": "Acc3",
+      "channelNumber": 14,
+      "patternId": "319.005.194",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 24960,
+      "endTick": 26880,
+      "input": {
+        "trackPlanFragmentHash": "94a52a1e92149ff13cd13b9f86790c334d317c55d393ad0159d056f007fb3763",
+        "grooveFragmentHash": "f39cdc46a3c973454d8c481be6d07110ccb7aa312f81aaa5162bfb3cb5852a38",
+        "candidateSelectionHash": "95ec6aa526caeb4d4af07f9613b64159361f81cd08f1ede9831f1cb428abe860",
+        "bindingHash": "78ae1eb20348009f55028fd03b4ddb15704f2dbb3bb6e83c49211171060f3047"
+      },
+      "factoryProfileIds": [
+        "698.771.685"
+      ],
+      "operationIds": [
+        "op-48c4ec2411380f79e65007a0",
+        "op-7d942f460b14017de28506a9",
+        "op-be298e775b5e1433a168f087",
+        "op-02abeeba31eecd4864f0e9a9",
+        "op-9987ff41b13573e57db27553"
+      ],
+      "noteCount": 13,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        65,
+        77
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        113,
+        113
+      ],
+      "factoryAllowedVelocityRange": [
+        2,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 11,
+        "polyphonyTailsTrimmed": 5,
+        "peak": 1
+      },
+      "outputEventHash": "7387a8df5ac1ccfe5e7a40583396c53efd8cf0acab41108aabe069cb74dd763c",
+      "fragmentRenderHash": "454d01ba4ad6d08ea164242df96db8a3e331f073564d19697bc664c3c0b1fb1a"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-382bc198371bbe7236f7",
+      "requestId": "e1cv1:bass",
+      "marker": "e1cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "001.678.467",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 26880,
+      "endTick": 30720,
+      "input": {
+        "trackPlanFragmentHash": "6d674139f56619f4c2efb7108cce29751a669bf148ad804ab61214359ac45927",
+        "grooveFragmentHash": "f59aa6591c8330b53ccd3d2dea7e7e5a54244250043f06e8a98ce1bceecc5e3e",
+        "candidateSelectionHash": "50e0b4a303cc6426e6b542a564bee7ab2850aa60b6b1de1871c7ebe4c1abb092",
+        "bindingHash": "835fdb1f830f7227e540b50fbbf543dc2afa5155501f54a30bf4f4f2db5c6d47"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-ae763af95152b45043201573",
+        "op-aec704bc6ffaa834747536f6",
+        "op-fd7bd4e1d8665c47b87bd726",
+        "op-ce925aab7579746aa7a482db",
+        "op-4a3d9da5b2d2d5d207d43b48"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        28,
+        38
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        116,
+        116
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "57775adce4f6f9e21f133be413315fad4a08fd31050f8ca835d6d80abbf50871",
+      "fragmentRenderHash": "0762bde4ec554c09b4afe50143fc4cf55242217397c5ef6c8e0427d0d3b56b0e"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-bcb43357bb452f9f832b",
+      "requestId": "e1cv1:drums",
+      "marker": "e1cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "169.230.091",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 26880,
+      "endTick": 30720,
+      "input": {
+        "trackPlanFragmentHash": "c251aec7ffdde49ca4ddc3e91ec63169fedeccd40d130b6591c59f795f800400",
+        "grooveFragmentHash": "9d39fe409eb849bc0d3af4a7dc3763f98c2c4d4c775a049e74579dcaa73e84e2",
+        "candidateSelectionHash": "c70d56eb094187dd4b6930633ce70e138d8dd14878ab340f17c69e3cc7c65192",
+        "bindingHash": "5587480f86e3b57779e694aa330e7f860264a6e5f6c822f26ef57659840eb1b1"
+      },
+      "factoryProfileIds": [
+        "049.493.898",
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-6bd3fc153dfb3f2d7f698c93",
+        "op-a94bba568e6f29dc78eb8eac",
+        "op-7e8a90e2014fbf75a1129d2a",
+        "op-e4c11d3b457da1c416aee12b"
+      ],
+      "noteCount": 31,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        46
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        110,
+        124
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "247c9f905b8a44915f61f3a000eb7183a82b89fb88e9f2a36b5f986c7db7bc21",
+      "fragmentRenderHash": "4846e6a501789afc2c713f2665ce3bb1dab73c1b0688a3bd26b358cd78c613af"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-6a63576d90b8e3cf7863",
+      "requestId": "e1cv1:guitar",
+      "marker": "e1cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "631.972.034",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 26880,
+      "endTick": 30720,
+      "input": {
+        "trackPlanFragmentHash": "938d94b2e7c6558fbc4d608214c1b83758b8a55c660fd237e32f4dff2ff74092",
+        "grooveFragmentHash": "df0af3ecf8dba82262a421f0fc6b4881f330f2886a6b68f5347e2901ec3f61ef",
+        "candidateSelectionHash": "aa99bf218c6790fd58dbecb14d56e5658c3eeef8964a3b85a2915f53c28e1d78",
+        "bindingHash": "099836e71f1f5be9d787d6e417d06c0a672e082c77301adfa8e33997bbf2daee"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-dfcaad76aeb9722eda401232",
+        "op-a721def0ac9195afa58e4220",
+        "op-74018deeb1b4a15011b4dd9c",
+        "op-b5fc26f4e2489418292f190b",
+        "op-b6f83722c2a1df3f8090d607"
+      ],
+      "noteCount": 39,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        69
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        69,
+        69
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 4
+      },
+      "outputEventHash": "6559a3b4a2f0536fe7e12e30b29438781aa68f600b5f918820465bbc0cef6d46",
+      "fragmentRenderHash": "cd6d008887852877416d3b7ddcf9bd11d254a9e6f4e8e67f66c777524e3ba6fc"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-e38dcf342347248bd68e",
+      "requestId": "e1cv1:accompaniment",
+      "marker": "e1cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "786.633.171",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 26880,
+      "endTick": 30720,
+      "input": {
+        "trackPlanFragmentHash": "efe139fc08e1b66e811e4ee5b2f4c99f61467d8d772c3c9d941dd564d2c4944b",
+        "grooveFragmentHash": "fcb8cb031b660b73951ea6264e1eabc007b89d0cff4066e5728934d2b96dfcaa",
+        "candidateSelectionHash": "b8ddcc83a9322ee7f078077886271b204bf3ccfcfb361565397af35383819df0",
+        "bindingHash": "5f31d6ad2f1a61fcfe61ae6b6328fcfed93613a30fbeaf3be6d44d25c491a1b4"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-9ed08be4f626f23aa3ccf12d",
+        "op-dd71f3fba52af84c32879cc8",
+        "op-3ce2875e0e0fa33109163d60",
+        "op-7b88bb00f9aba5b85732e609",
+        "op-d8801d8055ffdc8e9407a831"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        50,
+        72
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        90,
+        90
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "e34970cf11e0996523264aee2e90b6ed9d3a72e56a306c77b40d7fdcedf1f37b",
+      "fragmentRenderHash": "c46cc6baf7cccdee1a5b7fd6d251ea49055a5f4fc52af48fd7fada3a6f7360de"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-8f1dd36e7986c65b4438",
+      "requestId": "e1cv1:pad",
+      "marker": "e1cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "237.873.880",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 26880,
+      "endTick": 30720,
+      "input": {
+        "trackPlanFragmentHash": "893473358dd610b063b1bfedd27ad6b626fec894717b379f7d5067b5657ed1e3",
+        "grooveFragmentHash": "a66a8884fb71cd5799b70c640898427850d2c64238541db479484bd28acc82a4",
+        "candidateSelectionHash": "e07465ed336192fda7b308b4f60bbfff072729e98c435fb02bf85f63768ce1e0",
+        "bindingHash": "d5abf1f1016faa496f51557ec1822d4b11ecfbb2e9df1b8410cc581120bbea6c"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-cb9ffae958fa1743fb0687ed",
+        "op-57bded6375ae6fc3d3fbcf47",
+        "op-edcc12e96b13edae025f0ca7",
+        "op-b14a6840997fd9308d23bf40",
+        "op-9105565eb8668a5608781bda"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        127,
+        127
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "1630eef1001c80283efcd90cf809b43582f33f9bdbe7a60506a8101c55e8e6e8",
+      "fragmentRenderHash": "adc60e65ad81159a50bc1cb7872bc0af536dfe820f2c5d7593cfa411d90e717a"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-f4520a71aae84fa24e04",
+      "requestId": "e2cv1:bass",
+      "marker": "e2cv1",
+      "role": "bass",
+      "logicalTrack": "Bass",
+      "channelNumber": 9,
+      "patternId": "024.777.862",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 30720,
+      "endTick": 34560,
+      "input": {
+        "trackPlanFragmentHash": "b92235441f573c2a5883f46663216f92b3d7e6588b40814eb41d3ac5d4d822d7",
+        "grooveFragmentHash": "1fa4c8dc292efc0ef29ef93066eec41bd405fea6413bf088c56412c7e5f71922",
+        "candidateSelectionHash": "092469410b6ee1f1134d4d274037dd1d51dfb5f7c02ec5dfb62184d5120dbf15",
+        "bindingHash": "7c71d4ba095cf7195a4146572e3685954ddd8880ceda55581fa52049cf6f5e6c"
+      },
+      "factoryProfileIds": [
+        "942.805.908"
+      ],
+      "operationIds": [
+        "op-1e9b546b9ec667cbcf4efc73",
+        "op-fe54f34313e247542f387535",
+        "op-9ff4888c855a2ee69827112c",
+        "op-0eed045d2397f5a83ca14716",
+        "op-836de9142aa7ac906442fd58"
+      ],
+      "noteCount": 16,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        28,
+        38
+      ],
+      "authorizedRegister": [
+        28,
+        60
+      ],
+      "velocityRange": [
+        113,
+        113
+      ],
+      "factoryAllowedVelocityRange": [
+        22,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "a7b9741af8d6fa3b61fc28f57978425face1218ccb803f202e837cbde8e0aae3",
+      "fragmentRenderHash": "fed1a8ed8d591372b80aea25d47da2a6afa438e0d741cacac25d6ace8f19e657"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-6edb80d82d279e3ca1a2",
+      "requestId": "e2cv1:drums",
+      "marker": "e2cv1",
+      "role": "drums",
+      "logicalTrack": "Drum",
+      "channelNumber": 10,
+      "patternId": "686.125.928",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 30720,
+      "endTick": 34560,
+      "input": {
+        "trackPlanFragmentHash": "b839e267977b31847df2dc2774815ad7434a70478b69f6d425f92a76df2ab672",
+        "grooveFragmentHash": "89e1f2c93885c721564060a24a070d9d077ebaab1015227d822b47aa753594cb",
+        "candidateSelectionHash": "0935f4aadfc861fdca6b7def127fe746248597fa5a5ebdbad79e256afe207224",
+        "bindingHash": "7a0529b07ab641cbfb385beb7fd229d460b5280a14ffaca09bd36632bf44ecd9"
+      },
+      "factoryProfileIds": [
+        "556.010.179",
+        "642.186.940",
+        "772.966.637",
+        "991.912.204"
+      ],
+      "operationIds": [
+        "op-73ae26bffa15148d0475f7ec",
+        "op-3cd76d4f2e1afab3e62b0534",
+        "op-4b2e8c703c447ad6a49c7c11",
+        "op-27d59233c6a72f6c927a5053"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        36,
+        44
+      ],
+      "authorizedRegister": [
+        35,
+        81
+      ],
+      "velocityRange": [
+        108,
+        118
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 1,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 2
+      },
+      "outputEventHash": "288e7928827b723e2b2a46897bfef4de3e0f3f1332ae44b2a4f39fd1066b4d92",
+      "fragmentRenderHash": "8728a0a56bbae26f520c8009c33e992556eb7c28976166f949fb1e12b40b3e51"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-93be6520228582e8918d",
+      "requestId": "e2cv1:guitar",
+      "marker": "e2cv1",
+      "role": "guitar",
+      "logicalTrack": "Acc1",
+      "channelNumber": 12,
+      "patternId": "611.187.387",
+      "sourceKind": "FACTORY_STRUMMING",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 30720,
+      "endTick": 34560,
+      "input": {
+        "trackPlanFragmentHash": "fe8c8030a122c63090ea43b448d50b7e02ec50cf6495315dae29c6d75b9dd5bd",
+        "grooveFragmentHash": "b22dc9f4d19378ae325f4d29337841457192c81a9afb77bd3d8692e4bad11af7",
+        "candidateSelectionHash": "e67aa4bf3d8ebf58c109d2d83e0beca73789424fd57f8ce839db1a615d839527",
+        "bindingHash": "f5052b2c421b41d0d46495b10693fa740e4ea0ac5a212879417d4c66c572bae8"
+      },
+      "factoryProfileIds": [
+        "628.417.299"
+      ],
+      "operationIds": [
+        "op-84ea7bc12e7867e3eb5804b2",
+        "op-0c930b61d90978e86eb20826",
+        "op-8b5231bedfd3f6332e88f9cc",
+        "op-a7b500bdef965dc8663e9a94",
+        "op-010a7ddead9791b8760814d4"
+      ],
+      "noteCount": 34,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        48,
+        82
+      ],
+      "authorizedRegister": [
+        40,
+        84
+      ],
+      "velocityRange": [
+        53,
+        53
+      ],
+      "factoryAllowedVelocityRange": [
+        8,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 4
+      },
+      "outputEventHash": "cf81e16040ba6a548cfdb6144ec1dc896dbfdf75dfb6abbc8794f57b1bf9c2a0",
+      "fragmentRenderHash": "82a74d1cfe6d0741725d4a7559e167cd1fef12f273287cc45ef0d133343b27df"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-8d1ccff3d8a2342bd487",
+      "requestId": "e2cv1:accompaniment",
+      "marker": "e2cv1",
+      "role": "accompaniment",
+      "logicalTrack": "Acc2",
+      "channelNumber": 13,
+      "patternId": "569.373.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 30720,
+      "endTick": 34560,
+      "input": {
+        "trackPlanFragmentHash": "d4f32044205e8849b4abec26f50f7c21241ed819a0702bac01b9a5aba512be5d",
+        "grooveFragmentHash": "c7f325607395a985bc7dd1f53e1f69e0778e6b5d27ec7f5a0eac27b4878a389e",
+        "candidateSelectionHash": "68c616faf9d40efc6116cdc151b0c62cb77839793658c41b3df58811b6185dc2",
+        "bindingHash": "23c01fd50e5712b7713448fc74191da35bca5027cefb9f51b6327122fcdb714a"
+      },
+      "factoryProfileIds": [
+        "752.839.508"
+      ],
+      "operationIds": [
+        "op-bce8b32af32827c7348c1d4a",
+        "op-4614b5db72b26bbb5bc71a12",
+        "op-395a2c331ca578626faca52a",
+        "op-6e6b2f81b66cfe570ff9fe94",
+        "op-2b74770b28a01658fd6de633"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        84
+      ],
+      "velocityRange": [
+        82,
+        82
+      ],
+      "factoryAllowedVelocityRange": [
+        1,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "d69315b07f8cf18f8334f67d9650ed92d3bc4c060c3c3c1dbcb2ee02a145f29f",
+      "fragmentRenderHash": "33daf33bb678fbee711ab7a2d4eca0cfefdf997430eb43e98e35cf5428d4ae7f"
+    },
+    {
+      "schema": "dna-rendered-fragment",
+      "version": "1.0",
+      "fragmentId": "fragment-41aecee78d5cbf383c01",
+      "requestId": "e2cv1:pad",
+      "marker": "e2cv1",
+      "role": "pad",
+      "logicalTrack": "Acc4",
+      "channelNumber": 15,
+      "patternId": "569.373.087",
+      "sourceKind": "GOLD_PERFORMANCE",
+      "decision": "REPLACE",
+      "status": "RENDERED",
+      "startTick": 30720,
+      "endTick": 34560,
+      "input": {
+        "trackPlanFragmentHash": "91249cbc0b28a3553796655f454ab31cb8d3c95fc06893dd12841412e45197fe",
+        "grooveFragmentHash": "f1f620b8d4596345226511bf276fbd7a325ce76ef4c1b05b0997b47074dc27a7",
+        "candidateSelectionHash": "a2f3562e92c0ffaedad0dbe39d0f48c1d545901fe033f7153fe1d3281022315c",
+        "bindingHash": "2c4e46e8706eecbf7ce0e442f009cfc88880abbd9958e79c345f077df75e2aef"
+      },
+      "factoryProfileIds": [
+        "631.304.062"
+      ],
+      "operationIds": [
+        "op-40e7ed6a5ed46fe8baf6fc57",
+        "op-3343dd5fae06dba2942f0f9a",
+        "op-805eefb92a9e7092b578a2db",
+        "op-216214d154746b370c7efffb",
+        "op-3bf99c3cc7840357e2bd622e"
+      ],
+      "noteCount": 32,
+      "disabledEventCount": 0,
+      "pitchRange": [
+        55,
+        65
+      ],
+      "authorizedRegister": [
+        48,
+        88
+      ],
+      "velocityRange": [
+        123,
+        123
+      ],
+      "factoryAllowedVelocityRange": [
+        27,
+        127
+      ],
+      "cleanup": {
+        "duplicatesCollapsed": 0,
+        "overlapsTrimmed": 0,
+        "polyphonyNotesRemoved": 0,
+        "polyphonyTailsTrimmed": 0,
+        "peak": 1
+      },
+      "outputEventHash": "560781db98ee8f10ca5bcb41f8dfed4759f94b88c9a075f83eb3e102e320511f",
+      "fragmentRenderHash": "4e1b29b9f528de21b8b2e1ded9e282c269ff9de1c0603ba5b872791c86f0054a"
+    }
+  ],
+  "audit": {
+    "renderedFragments": 52,
+    "renderedNotes": 1400,
+    "disabledGrooveEvents": 0,
+    "duplicatesCollapsed": 0,
+    "overlapsTrimmed": 6,
+    "channelPolyphonyNotesRemoved": 90,
+    "channelPolyphonyTailsTrimmed": 70,
+    "fragmentHashChain": "fb00cc3da803584d6781411f5b47f62d4c2adff4353fbf72bcb9001bf5c1aadd",
+    "goldTimingRelativePitchOnly": true,
+    "factoryVelocityOnly": true,
+    "factoryCc7Only": true,
+    "pa800Cc11Initialization": 127,
+    "deviceUnconfirmedLayersExcluded": {
+      "ARTICULATION_EVENT": 11,
+      "EXPRESSION_EVENT": 83
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "verifier": "independent-pa800-byte-parser",
+    "reportHash": "bce3b22b9de8a70c410c18f474be5ffe84ce9a9a9b24f8ac5c6c3c5ade64ea7b",
+    "checks": {
+      "pa800HardValidator": true,
+      "globalPolyphony": true,
+      "independentParse": true,
+      "byteRoundTrip": true,
+      "manifestOutputHash": true,
+      "manifestNoteCount": true,
+      "controllerWhitelist": true,
+      "fragmentEventHashes": true,
+      "registerBounds": true,
+      "factoryVelocityBounds": true,
+      "markerScopedSoundBinding": true
+    }
+  },
+  "safety": {
+    "midiBytesGenerated": true,
+    "sourceMidiMutated": false,
+    "sourceMidiOverwritten": false,
+    "originalSoloFingerprintProtected": true,
+    "lockedFragmentsProtected": true,
+    "exactSoundBindingRequired": true,
+    "goldAffectsDynamics": false,
+    "goldAffectsMixer": false,
+    "goldAffectsBankProgram": false,
+    "approximateSoundBindingAllowed": false,
+    "implicitFallbackAllowed": false,
+    "deviceUnconfirmedExpressionRendered": false,
+    "deviceUnconfirmedArticulationRendered": false,
+    "independentVerifierRequired": true,
+    "atomicPublicationRequired": true,
+    "softwarePreviewMidiAllowed": true,
+    "finalCertifiedMidiExportAllowed": false
+  },
+  "certification": {
+    "software": "SOFTWARE_VALIDATED_ARRANGER_PREVIEW",
+    "humanListening": "PENDING_0_OF_2",
+    "physicalPa800": "WAITING_FOR_DEVICE",
+    "allowedProductName": "AI PREMIUM ARRANGER PREVIEW"
+  },
+  "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+}

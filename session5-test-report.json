@@ -1,0 +1,68 @@
+{
+  "schema": "dna-session5-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "synthetic-byte-real-session5-foundation",
+  "limitations": [
+    "GOLD ornament and relationship evidence is synthetic and not a production corpus claim.",
+    "Historical GUI/API integration and physical Pa800 listening are unavailable."
+  ],
+  "formalSuite": {
+    "testsRun": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "fixture": {
+    "input": "artifacts/session5-before.mid",
+    "output": "artifacts/session5-after.mid",
+    "manifest": "artifacts/session5-manifest.json",
+    "originalSoloNotes": 8,
+    "generatedNotes": 29,
+    "expressionEvents": 8,
+    "delayTrackIndex": 8,
+    "delayTrackNumber": 9,
+    "delayTrackCreated": true,
+    "counts": {
+      "trill": 6,
+      "grace": 3,
+      "slide": 4,
+      "third": 8,
+      "echo": 8,
+      "cc11": 8
+    },
+    "selectionHash": "1ed25ff2559d6f49a0f6a36bca8850db951222d168142bd15a10a7127499c01f",
+    "inputHash": "e8895ab3f245ab330df087815e84c57d8c04a00b291aa4c5c7ac119091edad90",
+    "outputHash": "dc2006e2a963aa2213792fcd0578d6baee780e7455cc2bc2e424cda22138413a"
+  },
+  "invariants": {
+    "originalSoloTimingMutable": false,
+    "originalSoloPreserved": true,
+    "analysisVelocityUsed": false,
+    "goldAffectsVelocity": false,
+    "ornamentsEvidenceGated": true,
+    "thirdRelationshipTested": true,
+    "echoRelationshipTested": true,
+    "echoRecursive": false,
+    "delayUsesFirstFreeTrack": true,
+    "delayLimitedToSixteenTracks": true,
+    "delayOnSourceTrack": false,
+    "delaySoundSetupCopied": true,
+    "sourceTrackProgramLookupScoped": true,
+    "exactBankProgramMappingRequired": true,
+    "sharedSoloChannelBlocked": true,
+    "externalTrackChannelMappingIsExplicitlyOneBased": true,
+    "echoTargetBelowFactoryMain": true,
+    "expressionFactoryBounded": true,
+    "expressionSmoothed": true,
+    "programChangePreserved": true,
+    "sameSeedSameMidiBytes": true,
+    "roundTripByteStable": true,
+    "notePairingValid": true
+  },
+  "status": {
+    "session5Foundation": "SOFTWARE_VALIDATED",
+    "productionCorpusGate": "BLOCKED_MISSING_SOURCE_DATA",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "4.36.0",
+  "hardGates": {
+    "factoryVelocityAuthorityViolations": 0,
+    "sampleLayerCrossingErrorsUnapproved": 0,
+    "confirmedKeyRangeViolations": 0,
+    "pitchClassPreservation": 1.0,
+    "protectedEventDiff": 0,
+    "invalidNotePairs": 0,
+    "selectedPatternHardPassRate": 1.0,
+    "deterministicRepeatRate": 1.0
+  },
+  "policy": {
+    "mlFinalMidiAuthority": false,
+    "goldVelocityAuthority": false,
+    "factoryVelocityAuthority": true,
+    "unknownEvidenceAction": "MANUAL_REVIEW"
+  },
+  "canonicalVersion": "4.36.0",
+  "evidenceSource": "USER_SUPPLIED_RESEARCH_SPEC",
+  "integration": {
+    "performanceDNA": "PRESERVED",
+    "continuity": "PRESERVED",
+    "legacyEvidenceLedger": "BACKWARD_COMPATIBLE"
+  },
+  "knownLimitations": [
+    "sample-layer boundaries incomplete for some Factory profiles",
+    "trigger/articulation ranges require exact Factory/device evidence",
+    "physical Pa800 certification pending"
+  ]
+}

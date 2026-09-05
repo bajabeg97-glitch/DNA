@@ -1,0 +1,29 @@
+{
+  "schema": "dna-session23-groove-benchmark",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "sourceCandidateSetHash": "39896cd7d826246c7ffbb422eea039c947bb033bd750f24c38bd6b815b602f77",
+  "groovePlanHash": "0f0783b9612482146af13ca42b58d1fe3227657822fe295f9be8e1b78115704a",
+  "deterministic": true,
+  "variantCount": 3,
+  "templateCount": 107,
+  "fragmentCount": 168,
+  "eventCount": 4497,
+  "microtimingAdjustedEventCount": 2734,
+  "gateAdjustedEventCount": 2865,
+  "variantPeaks": [
+    17,
+    17,
+    18
+  ],
+  "maximumPeak": 18,
+  "softwareMidiNoteCeiling": 54,
+  "allProductionVariantsSafe": true,
+  "goldTimingOnly": true,
+  "lockedFragmentsPreserved": true,
+  "deviceVoiceCostStatus": "UNCONFIRMED",
+  "stressSuitePassed": true,
+  "passed": true,
+  "benchmarkHash": "3f1bfa72ac7da71f74915342ec42ba861a73931f123e8e9a7b02bf163d426975"
+}

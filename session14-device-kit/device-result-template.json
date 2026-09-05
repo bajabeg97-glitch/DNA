@@ -1,0 +1,49 @@
+{
+  "schema": "dna-pa800-device-test-result",
+  "version": "1.0",
+  "kitManifestSha256": "9c1e0b950b7b1556ff8fc8f8b0fd3044ba3fc9952cadf2b30eed195482ec08ac",
+  "artifactSha256": {
+    "DNA_PA800_FUNCTIONAL_TEST.mid": "498f7f8e4f41abe1c6a6661d3b0a17a530e0d628af01d4280d53aeed092cd41f",
+    "DNA_PA800_FUNCTIONAL_TEST.manifest.json": "f676e44d924ad1d431e45d26c6284bf1b2acbc06b97d28642d75938a1b5ddd70",
+    "DNA_PA800_POLYPHONY_STRESS.mid": "7344805d418d58bb15d2f9276e73574b83d72c849e878704c76456f0686eab5c",
+    "DNA_PA800_POLYPHONY_STRESS.manifest.json": "8dbdc74dd8c656e766a7d565445377577753ad425dd9c60d76c2962790f4da06",
+    "README.md": "c152890d764603cb674859ec0cc35a0735f15c0095ada18a110ddce2429145bd"
+  },
+  "operator": "",
+  "testDate": "",
+  "device": {
+    "model": "Korg Pa800",
+    "serialNumber": "",
+    "osVersion": ""
+  },
+  "checks": {
+    "usbMediaReadable": null,
+    "shiftExecuteImportCompleted": null,
+    "allMarkersImported": null,
+    "channelsNineThroughSixteenCorrect": null,
+    "trackTypesConfirmed": null,
+    "nttConfirmed": null,
+    "allStyleTransitionsAudible": null,
+    "noStuckOrMissingNotes": null,
+    "normalStyleNoUnacceptableVoiceStealing": null,
+    "polyphonyStressNoUnacceptableVoiceStealing": null,
+    "soloOriginalPreserved": null,
+    "delayRoutingCorrect": null,
+    "rxDncOnlyOnConfirmedSounds": null,
+    "noDigitalClipping": null,
+    "headroomAcceptable": null,
+    "savedToUserOrFavorite": null,
+    "reloadMatchesSavedStyle": null
+  },
+  "observations": {
+    "normalStyle": "",
+    "polyphonyStress": "",
+    "rxDncSolo": ""
+  },
+  "evidenceFiles": [],
+  "attestation": {
+    "physicalDeviceUsed": false,
+    "resultTruthful": false,
+    "signature": ""
+  }
+}

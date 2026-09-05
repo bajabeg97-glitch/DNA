@@ -1,0 +1,794 @@
+{
+  "schema": "dna-session20-intent-corpus",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "immutableCorpusHash": "1111414bce0e0fd5e99898043dac2abd14a38e7a051d2eea0e6b77aa413ea332",
+  "caseCount": 30,
+  "cases": [
+    {
+      "caseId": "hr-popfolk-energy",
+      "text": "Napravi življi pop-folk Style, sa suzdržanom strofom i punim refrenom.",
+      "expected": {
+        "genre": "pop-folk",
+        "energy.verse": 35,
+        "energy.chorus": 85
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "pop-folk",
+          "actual": "pop-folk",
+          "passed": true
+        },
+        {
+          "field": "energy.verse",
+          "expected": 35,
+          "actual": 35,
+          "passed": true
+        },
+        {
+          "field": "energy.chorus",
+          "expected": 85,
+          "actual": 85,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "4ad0333b28759b9e9bf2801e586dcc7c16f10c4c911988ad5aaa812f4b05f873",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-popfolk-energy",
+      "text": "Make a lively pop-folk style with a restrained verse and full chorus.",
+      "expected": {
+        "genre": "pop-folk",
+        "energy.verse": 35,
+        "energy.chorus": 85
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "pop-folk",
+          "actual": "pop-folk",
+          "passed": true
+        },
+        {
+          "field": "energy.verse",
+          "expected": 35,
+          "actual": 35,
+          "passed": true
+        },
+        {
+          "field": "energy.chorus",
+          "expected": 85,
+          "actual": 85,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "2607b197dba791523273268db5d78fa93ab11b599da860ae67feac8a44070d8b",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-rock-roles",
+      "text": "Napravi rock stil sa gitarom i bez perkusija.",
+      "expected": {
+        "genre": "rock",
+        "required:guitar": true,
+        "forbidden:percussion": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "rock",
+          "actual": "rock",
+          "passed": true
+        },
+        {
+          "field": "required:guitar",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "forbidden:percussion",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "85042dbb76bcf938fa5549410d9bb7e4bce6cae58809cb5d063bae2318d0af14",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-ballad",
+      "text": "Make a ballad with bass and pad, subtle transitions.",
+      "expected": {
+        "genre": "ballad",
+        "required:bass": true,
+        "required:pad": true,
+        "transitions": "subtle"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "ballad",
+          "actual": "ballad",
+          "passed": true
+        },
+        {
+          "field": "required:bass",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "required:pad",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "transitions",
+          "expected": "subtle",
+          "actual": "subtle",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "4a519c0be23c643c47b1148d038ac45a1c929218593ac7e9635bcc3a29926bfb",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-folk-open",
+      "text": "Narodni stil, suptilni prijelazi i prozračan miks.",
+      "expected": {
+        "genre": "folk",
+        "transitions": "subtle",
+        "space": "open"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "folk",
+          "actual": "folk",
+          "passed": true
+        },
+        {
+          "field": "transitions",
+          "expected": "subtle",
+          "actual": "subtle",
+          "passed": true
+        },
+        {
+          "field": "space",
+          "expected": "open",
+          "actual": "open",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "0d7d5805f60285baeb59eb320b747cbc322ccbd771c5f374fb5df658986e6cf5",
+      "language": "unknown"
+    },
+    {
+      "caseId": "en-dance-sync",
+      "text": "Dance arrangement with strong syncopation and dramatic transitions.",
+      "expected": {
+        "genre": "dance",
+        "syncopation": "high",
+        "transitions": "dramatic"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "dance",
+          "actual": "dance",
+          "passed": true
+        },
+        {
+          "field": "syncopation",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "transitions",
+          "expected": "dramatic",
+          "actual": "dramatic",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "6ec5c4fbf02f8734d8ff6e1163b00f0224cf7c2bcce2acf53e302bd278a6b7ab",
+      "language": "en"
+    },
+    {
+      "caseId": "en-disco-full",
+      "text": "Disco, straight groove and full arrangement.",
+      "expected": {
+        "genre": "disco",
+        "syncopation": "low",
+        "density": "full"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "disco",
+          "actual": "disco",
+          "passed": true
+        },
+        {
+          "field": "syncopation",
+          "expected": "low",
+          "actual": "low",
+          "passed": true
+        },
+        {
+          "field": "density",
+          "expected": "full",
+          "actual": "full",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "188f492d9e050523bef433de5db11f945d437146f830c7b0bf5ac976fdcdb6e0",
+      "language": "unknown"
+    },
+    {
+      "caseId": "hr-waltz",
+      "text": "Valcer sa uravnoteženim aranžmanom.",
+      "expected": {
+        "genre": "waltz",
+        "density": "balanced"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "waltz",
+          "actual": "waltz",
+          "passed": true
+        },
+        {
+          "field": "density",
+          "expected": "balanced",
+          "actual": "balanced",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "b64513b88385f299630341c8a53e6975d84edd7003c7a297be90ca18740b19ef",
+      "language": "hr"
+    },
+    {
+      "caseId": "hr-polka-dry",
+      "text": "Polka sa suhim miksom.",
+      "expected": {
+        "genre": "polka",
+        "space": "dry"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "polka",
+          "actual": "polka",
+          "passed": true
+        },
+        {
+          "field": "space",
+          "expected": "dry",
+          "actual": "dry",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "9dc99d1cbea7e483e6b1d858228028d2649cb2dd1298d89bca94612ae9820d73",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-latin-open",
+      "text": "Latin style with an open mix.",
+      "expected": {
+        "genre": "latin",
+        "space": "open"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "latin",
+          "actual": "latin",
+          "passed": true
+        },
+        {
+          "field": "space",
+          "expected": "open",
+          "actual": "open",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "821650eaa3ab521d9f13eda6261748501c8db60bcf0789b97185b30cb7a0fc81",
+      "language": "en"
+    },
+    {
+      "caseId": "en-jazz-sparse",
+      "text": "Jazz style, sparse arrangement.",
+      "expected": {
+        "genre": "jazz",
+        "density": "sparse"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "jazz",
+          "actual": "jazz",
+          "passed": true
+        },
+        {
+          "field": "density",
+          "expected": "sparse",
+          "actual": "sparse",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "1fc5898b2ccad18bb87ae1aed74cbcac12efa7d9a0a799a68bceada7b4a7f796",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-acoustic-no-solo",
+      "text": "Akustični stil bez dodatnog sola.",
+      "expected": {
+        "genre": "acoustic",
+        "soloTreatment": "no-new-layers"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "acoustic",
+          "actual": "acoustic",
+          "passed": true
+        },
+        {
+          "field": "soloTreatment",
+          "expected": "no-new-layers",
+          "actual": "no-new-layers",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "c2771cd1c7822284f3be4ab4d793a93495cdb4be5218c2b5c21570a5b63ba388",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-electronic-solo",
+      "text": "Electronic style, expressive solo.",
+      "expected": {
+        "genre": "electronic",
+        "soloTreatment": "expression-only"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "electronic",
+          "actual": "electronic",
+          "passed": true
+        },
+        {
+          "field": "soloTreatment",
+          "expected": "expression-only",
+          "actual": "expression-only",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "83e666c81e96455aabd922008ccf67076a127c6370488390ed2407fffbfa3b71",
+      "language": "unknown"
+    },
+    {
+      "caseId": "en-pop-lock",
+      "text": "Pop style, lock v2cv1.",
+      "expected": {
+        "genre": "pop",
+        "locked:v2cv1": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "genre",
+          "expected": "pop",
+          "actual": "pop",
+          "passed": true
+        },
+        {
+          "field": "locked:v2cv1",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "170d335c8017564525658ab570d18906d8339d304c7554662d99e1a5bd2665f7",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-lock-no-change",
+      "text": "Zaključaj f1cv1 i ne mijenjaj ostatak.",
+      "expected": {
+        "locked:f1cv1": true,
+        "transformationTolerance": 0
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "locked:f1cv1",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "transformationTolerance",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "8c8b78eb181c58154a9bce0a188f4ca1234ec6be5efe69d23649c573fd356823",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-heavy-transform",
+      "text": "Transform heavily, use drums and bass.",
+      "expected": {
+        "transformationTolerance": 90,
+        "required:drums": true,
+        "required:bass": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "transformationTolerance",
+          "expected": 90,
+          "actual": 90,
+          "passed": true
+        },
+        {
+          "field": "required:drums",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "required:bass",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "3602915ae9fec960cdfccec1be935e1606a99aac823c22e8dd1df6d66d72bd3d",
+      "language": "unknown"
+    },
+    {
+      "caseId": "hr-straight-fill",
+      "text": "Ravan groove i nježni fillovi.",
+      "expected": {
+        "syncopation": "low",
+        "transitions": "subtle"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "syncopation",
+          "expected": "low",
+          "actual": "low",
+          "passed": true
+        },
+        {
+          "field": "transitions",
+          "expected": "subtle",
+          "actual": "subtle",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "765dfe2430787f6175b093e5cf219461ec62d07dab7eb476377698dec65866c7",
+      "language": "unknown"
+    },
+    {
+      "caseId": "hr-sync-fill",
+      "text": "Sinkopirani groove i snažni fillovi.",
+      "expected": {
+        "syncopation": "high",
+        "transitions": "dramatic"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "syncopation",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "transitions",
+          "expected": "dramatic",
+          "actual": "dramatic",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "98aa6b0ef80d84a647e28f9965c4581714819f24d5714e65bde3aea1be634a7d",
+      "language": "unknown"
+    },
+    {
+      "caseId": "hr-medium-space",
+      "text": "Umjereno sinkopiranje i uravnotežen prostor.",
+      "expected": {
+        "syncopation": "medium",
+        "space": "balanced"
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "syncopation",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "field": "space",
+          "expected": "balanced",
+          "actual": "balanced",
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "f0902a8f135032b965841c773cf14e852dd729a964e1cf2ff2623bae77e2d23b",
+      "language": "unknown"
+    },
+    {
+      "caseId": "en-minimal",
+      "text": "Minimal arrangement, dry mix, no percussion.",
+      "expected": {
+        "density": "sparse",
+        "space": "dry",
+        "forbidden:percussion": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "density",
+          "expected": "sparse",
+          "actual": "sparse",
+          "passed": true
+        },
+        {
+          "field": "space",
+          "expected": "dry",
+          "actual": "dry",
+          "passed": true
+        },
+        {
+          "field": "forbidden:percussion",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "9641fe08a32ac3922f87c416e22befa4651d96f944a3c0c61636e44fa0fcdfd9",
+      "language": "unknown"
+    },
+    {
+      "caseId": "en-dense-roles",
+      "text": "Dense arrangement with guitar and riff.",
+      "expected": {
+        "density": "full",
+        "required:guitar": true,
+        "required:riff": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "density",
+          "expected": "full",
+          "actual": "full",
+          "passed": true
+        },
+        {
+          "field": "required:guitar",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "required:riff",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "5716afae2041398c3339fd595fd9bc33daa540a2b606305450f027c5fe12e3d9",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-accompaniment",
+      "text": "Sa pratnjom i podlogom, bez riffa.",
+      "expected": {
+        "required:accompaniment": true,
+        "required:pad": true,
+        "forbidden:riff": true
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "required:accompaniment",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "required:pad",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        {
+          "field": "forbidden:riff",
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "61b605735a3d84d1a33b46c766b729f038fd75c5ae1e28435e9c869355377ccd",
+      "language": "hr"
+    },
+    {
+      "caseId": "en-section-energy",
+      "text": "Make a calm verse and powerful chorus.",
+      "expected": {
+        "energy.verse": 35,
+        "energy.chorus": 85
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "energy.verse",
+          "expected": 35,
+          "actual": 35,
+          "passed": true
+        },
+        {
+          "field": "energy.chorus",
+          "expected": 85,
+          "actual": 85,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "e1e9f00ffa32ceb88e8d83c2ffae6fe122107c337fbf1ccf39ef9ce203d78df1",
+      "language": "en"
+    },
+    {
+      "caseId": "hr-edge-energy",
+      "text": "Mirni uvod i snažan kraj.",
+      "expected": {
+        "energy.intro": 35,
+        "energy.ending": 85
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "energy.intro",
+          "expected": 35,
+          "actual": 35,
+          "passed": true
+        },
+        {
+          "field": "energy.ending",
+          "expected": 85,
+          "actual": 85,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "3c10775d32f0e1d85108bc295345f14710107e485aa93899a16682b0cc186931",
+      "language": "unknown"
+    },
+    {
+      "caseId": "en-bridge-ending",
+      "text": "Soft bridge and full ending.",
+      "expected": {
+        "energy.bridge": 35,
+        "energy.ending": 85
+      },
+      "expectedConflict": false,
+      "fieldResults": [
+        {
+          "field": "energy.bridge",
+          "expected": 35,
+          "actual": 35,
+          "passed": true
+        },
+        {
+          "field": "energy.ending",
+          "expected": 85,
+          "actual": 85,
+          "passed": true
+        }
+      ],
+      "conflictPassed": true,
+      "briefHash": "7deb2186e2be3195a34581ad65bc888fb0ef176297a4c86c2229fb5d61550e48",
+      "language": "unknown"
+    },
+    {
+      "caseId": "genre-conflict",
+      "text": "Make a pop and rock primary style.",
+      "expected": {},
+      "expectedConflict": true,
+      "fieldResults": [],
+      "conflictPassed": true,
+      "briefHash": "41a3eabe08385fc41c84184b24e586518be572a88dd76c30c6aa36fc017c3847",
+      "language": "en"
+    },
+    {
+      "caseId": "density-conflict",
+      "text": "Use a sparse arrangement and a full arrangement.",
+      "expected": {},
+      "expectedConflict": true,
+      "fieldResults": [],
+      "conflictPassed": true,
+      "briefHash": "f22957bd6889ffe05a236e991fdf40f6b47d566a129a2572d50505f540b4e05a",
+      "language": "en"
+    },
+    {
+      "caseId": "role-conflict",
+      "text": "Use drums but make it without drums.",
+      "expected": {},
+      "expectedConflict": true,
+      "fieldResults": [],
+      "conflictPassed": true,
+      "briefHash": "d694f6bd9fd7c01101bdb3f341d82684163106b9e17b3a3c2259a61717cbc176",
+      "language": "en"
+    },
+    {
+      "caseId": "transition-conflict",
+      "text": "Use subtle transitions and dramatic transitions.",
+      "expected": {},
+      "expectedConflict": true,
+      "fieldResults": [],
+      "conflictPassed": true,
+      "briefHash": "80d61df4cd375881d3db5ff0e7ae679f29523ce1a90c54935acb8379502ed5ee",
+      "language": "unknown"
+    },
+    {
+      "caseId": "solo-safety-conflict",
+      "text": "Delete the original solo and add a new lead.",
+      "expected": {},
+      "expectedConflict": true,
+      "fieldResults": [],
+      "conflictPassed": true,
+      "briefHash": "84f1126cbf47a4a0f3210a3556358c144a14ed1f9e7d6774d21eba861988da16",
+      "language": "unknown"
+    }
+  ]
+}

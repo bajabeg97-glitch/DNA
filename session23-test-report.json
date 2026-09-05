@@ -1,0 +1,71 @@
+{
+  "schema": "dna-session23-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "groove-humanization-full-duration-polyphony-and-device-voice-cost-boundary",
+  "formalSuite": {
+    "testsRun": 70,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session23-benchmark-report.json",
+    "variantCount": 3,
+    "templateCount": 107,
+    "fragmentCount": 168,
+    "eventCount": 4497,
+    "microtimingAdjustedEventCount": 2734,
+    "gateAdjustedEventCount": 2865,
+    "variantPeaks": [
+      17,
+      17,
+      18
+    ],
+    "maximumPeak": 18,
+    "softwareMidiNoteCeiling": 54,
+    "allProductionVariantsSafe": true,
+    "stressSuitePassed": true,
+    "benchmarkHash": "3f1bfa72ac7da71f74915342ec42ba861a73931f123e8e9a7b02bf163d426975"
+  },
+  "artifacts": {
+    "songMap": "artifacts/session23-song-map.json",
+    "arrangementGraph": "artifacts/session23-arrangement-graph.json",
+    "candidateSet": "artifacts/session23-candidate-set.json",
+    "groovePlan": "artifacts/session23-groove-plan.json",
+    "polyphonyStress": "artifacts/session23-polyphony-stress.json",
+    "schemaCatalog": "data/session23-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session23_groove_plan.py",
+    "api": "/api/premium-groove-plan",
+    "guiCard": "GROOVE & POLYPHONY 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "goldTimingGateOnly": true,
+    "goldAffectsDynamics": false,
+    "factoryDynamicsUnchanged": true,
+    "soundBindingUnchanged": true,
+    "originalSoloUnchanged": true,
+    "lockedFragmentsUnchanged": true,
+    "roleSpecificMicrotiming": true,
+    "fullDurationPolyphony": true,
+    "sustainAwareStress": true,
+    "softwareMidiNoteCeiling": 54,
+    "decorativeLayersSimplifiedBeforeCore": true,
+    "coreOverflowRequiresManualReview": true,
+    "deviceVoiceCostRequiresCertifiedProfile": true,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false
+  },
+  "status": {
+    "session23GroovePolyphony": "SOFTWARE_VALIDATED",
+    "activeSoftwareBaseline": "4.1-alpha",
+    "aiArrangerAlpha": "SOFTWARE_VALIDATED / ALPHA",
+    "deviceVoiceCost": "UNCONFIRMED / SESSION16_DEVICE_BLOCKED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

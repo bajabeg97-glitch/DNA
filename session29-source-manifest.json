@@ -1,0 +1,10 @@
+{
+  "schema": "dna-session29-profile-source-manifest",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+  "producerBriefHash": "c5c39c3a11d062ae6d516a1efe8abb18911178091b8bbffa38c1d5733b4a7ed4",
+  "arrangementGraphHash": "5f76d65fd878c33aa19bd788e65727bc74d6739c163198f95b65fc18c553bae8",
+  "candidateSetHash": "3f77e080bf4a6016e23787b5e5777646cf7136826ffba3f222f3d9797b0f2b72",
+  "midiSha256": "4428e453d50cc6409922e47899abc06d2be49a0782e7b6f9f0334a979d0dcec3"
+}

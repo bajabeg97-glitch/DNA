@@ -1,0 +1,132 @@
+{
+  "schema": "pa800-dna-build-report",
+  "version": "3.1",
+  "database": {
+    "factory": "factory-schema3.3-f91c235f676f9d15",
+    "gold": "gold-schema3.2-83cb5288a724dd03",
+    "factoryStyle": "factory-style-b27e30a67f43c553",
+    "factoryStrumming": "factory-strum-a2b0a022e8fbc99f",
+    "goldPerformance": "gold-performance-2facc0a181563909"
+  },
+  "factory": {
+    "inputFiles": 3211,
+    "failedFiles": 0,
+    "profileCount": 1964,
+    "velocitySamples": 1432867,
+    "profilesWithVolume": 1892,
+    "profilesWithExpression": 1894
+  },
+  "gold": {
+    "inputFiles": 182,
+    "failedFiles": 0,
+    "patternCount": 10637,
+    "rejected": {
+      "quantization": 27434,
+      "note-count": 70931,
+      "micro-note": 175222,
+      "single-position": 6201,
+      "non-recurring-pattern": 46721
+    }
+  },
+  "factoryStyle": {
+    "inputFiles": 3211,
+    "segments": 26922,
+    "notes": 1283645,
+    "elements": {
+      "break": 1391,
+      "ending 1": 2397,
+      "ending 2": 1746,
+      "ending 3": 420,
+      "fill 1": 1839,
+      "fill 2": 2122,
+      "intro 1": 3025,
+      "intro 2": 1630,
+      "intro 3": 454,
+      "variation 1": 2469,
+      "variation 2": 2778,
+      "variation 3": 3204,
+      "variation 4": 3447
+    },
+    "roles": {
+      "ACC1": 3701,
+      "ACC2": 3707,
+      "ACC3": 3380,
+      "ACC4": 2427,
+      "ACC5": 1913,
+      "BASS": 4200,
+      "DRUMS": 4165,
+      "PERC": 3429
+    },
+    "chordVariations": {
+      "CV1": 16400,
+      "CV2": 8182,
+      "CV3": 1794,
+      "CV4": 404,
+      "CV5": 107,
+      "CV6": 35
+    },
+    "rejected": {
+      "missing-element-or-cv": 26511,
+      "empty-track": 11588
+    },
+    "errors": 0
+  },
+  "factoryStrumming": {
+    "patterns": 2919,
+    "events": 185850,
+    "strokes": 46995,
+    "directions": {
+      "down": 24488,
+      "up": 10676,
+      "block": 10881,
+      "mixed": 950
+    },
+    "elements": {
+      "intro 1": 320,
+      "ending 1": 226,
+      "variation 4": 426,
+      "variation 2": 355,
+      "ending 2": 184,
+      "variation 1": 326,
+      "fill 1": 200,
+      "fill 2": 213,
+      "intro 2": 158,
+      "variation 3": 392,
+      "ending 3": 55,
+      "intro 3": 9,
+      "break": 55
+    },
+    "rejected": {
+      "insufficient-strokes": 2694
+    }
+  },
+  "goldPerformance": {
+    "inputFiles": 182,
+    "patterns": 12918,
+    "events": 197053,
+    "roles": {
+      "power-riff": 4927,
+      "drums": 1442,
+      "accompaniment": 3039,
+      "percussion": 78,
+      "bass": 2866,
+      "riff": 566
+    },
+    "relationships": 4373,
+    "rejected": {
+      "note-count": 20741,
+      "micro-note": 40825,
+      "protected-or-unsupported-role": 217,
+      "single-position": 4146,
+      "non-recurring-pattern": 152052
+    },
+    "errors": 0
+  },
+  "guarantees": {
+    "dynamicsSource": "factory-only",
+    "goldAffectsDynamics": false,
+    "goldAffectsMixer": false,
+    "goldAffectsProgramChange": false,
+    "goldRuntimeSchemaValidated": true
+  }
+}

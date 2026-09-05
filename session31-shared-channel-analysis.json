@@ -1,0 +1,747 @@
+{
+  "schema": "dna-automatic-track-instrument-analysis",
+  "version": "3.0",
+  "source": {
+    "fileName": "session31-shared-channel.mid",
+    "bytes": 1778,
+    "format": 1,
+    "ppq": 480,
+    "trackCount": 7,
+    "noteCount": 167
+  },
+  "sourceSha256": "f29a8b402f4cc3cc0a18015f10ef18ba81e8f09ba8475a89cd768842c1ccca04",
+  "endTick": 15350,
+  "factoryRegistry": {
+    "available": true,
+    "schema": "midi-arranger.factory-velocity-profiles",
+    "version": "3.3",
+    "databaseVersion": "session31-self-authored-catalog",
+    "profileCount": 7
+  },
+  "tracks": [
+    {
+      "trackUid": "trk-2a7b7a8ce1f4115a2cfd",
+      "trackIndex": 0,
+      "trackNumber": 1,
+      "eventCount": 8,
+      "channelIndices": [],
+      "channelNumbers": [],
+      "smf0Merged": false,
+      "trackName": "Conductor",
+      "noteCount": 0,
+      "segmentCount": 0,
+      "segments": [],
+      "primaryInstrument": null,
+      "primaryInstrumentFamily": "unknown",
+      "primaryRole": "unknown",
+      "suggestedPa800Track": null,
+      "decision": "IGNORE_METADATA",
+      "optimizationPolicy": "KEEP_METADATA"
+    },
+    {
+      "trackUid": "trk-73d42a90c72bbb77e696",
+      "trackIndex": 1,
+      "trackNumber": 2,
+      "eventCount": 113,
+      "channelIndices": [
+        0
+      ],
+      "channelNumbers": [
+        1
+      ],
+      "smf0Merged": false,
+      "trackName": "Harmony",
+      "noteCount": 54,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-73d42a90c72bbb77e696-ch1-0",
+          "trackUid": "trk-73d42a90c72bbb77e696",
+          "trackIndex": 1,
+          "trackNumber": 2,
+          "channelIndex": 0,
+          "channelNumber": 1,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-73d42a90c72bbb77e696",
+            "trackIndex": 1,
+            "trackNumber": 2,
+            "channelIndex": 0,
+            "channelNumber": 1,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 0,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "piano",
+          "primaryInstrument": "Factory Grand Piano",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Grand Piano",
+              "instrumentKey": "melodic:0:0:0",
+              "profileId": "131.000.001",
+              "role": "harmony",
+              "register": {
+                "low": 36,
+                "high": 96
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "harmony",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc1",
+          "noteStatistics": {
+            "noteCount": 54,
+            "pitchLow": 60,
+            "pitchHigh": 71,
+            "medianPitch": 65.0,
+            "medianDurationTicks": 940.0,
+            "polyphonyPeak": 4,
+            "polyphonicOnsetRate": 1.0,
+            "notesPerQuarter": 1.6897
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Grand Piano",
+      "primaryInstrumentFamily": "piano",
+      "primaryRole": "harmony",
+      "suggestedPa800Track": "acc1",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-c033749a0911da758f2a",
+      "trackIndex": 2,
+      "trackNumber": 3,
+      "eventCount": 37,
+      "channelIndices": [
+        1
+      ],
+      "channelNumbers": [
+        2
+      ],
+      "smf0Merged": false,
+      "trackName": "Bass",
+      "noteCount": 16,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-c033749a0911da758f2a-ch2-0",
+          "trackUid": "trk-c033749a0911da758f2a",
+          "trackIndex": 2,
+          "trackNumber": 3,
+          "channelIndex": 1,
+          "channelNumber": 2,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-c033749a0911da758f2a",
+            "trackIndex": 2,
+            "trackNumber": 3,
+            "channelIndex": 1,
+            "channelNumber": 2,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 32,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "bass",
+          "primaryInstrument": "Factory Finger Bass",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Finger Bass",
+              "instrumentKey": "melodic:0:0:32",
+              "profileId": "131.032.001",
+              "role": "bass",
+              "register": {
+                "low": 28,
+                "high": 58
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "bass",
+          "identityConfidence": 0.49,
+          "roleConfidence": 0.97,
+          "identityStatus": "SHARED_CHANNEL_REVIEW",
+          "decision": "MANUAL_REVIEW",
+          "suggestedPa800Track": "bass",
+          "noteStatistics": {
+            "noteCount": 16,
+            "pitchLow": 36,
+            "pitchHigh": 45,
+            "medianPitch": 41.0,
+            "medianDurationTicks": 950.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 0.5003
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE",
+            "SHARED_CHANNEL_CONFLICT"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Finger Bass",
+      "primaryInstrumentFamily": "bass",
+      "primaryRole": "bass",
+      "suggestedPa800Track": "bass",
+      "decision": "MANUAL_REVIEW",
+      "optimizationPolicy": "ANALYSIS_ONLY_MANUAL_REVIEW"
+    },
+    {
+      "trackUid": "trk-b2584cc98e960cb6a2a1",
+      "trackIndex": 3,
+      "trackNumber": 4,
+      "eventCount": 37,
+      "channelIndices": [
+        2
+      ],
+      "channelNumbers": [
+        3
+      ],
+      "smf0Merged": false,
+      "trackName": "Lead Solo",
+      "noteCount": 16,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-b2584cc98e960cb6a2a1-ch3-0",
+          "trackUid": "trk-b2584cc98e960cb6a2a1",
+          "trackIndex": 3,
+          "trackNumber": 4,
+          "channelIndex": 2,
+          "channelNumber": 3,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-b2584cc98e960cb6a2a1",
+            "trackIndex": 3,
+            "trackNumber": 4,
+            "channelIndex": 2,
+            "channelNumber": 3,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 64,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "reed",
+          "primaryInstrument": "Factory Soprano Sax",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Soprano Sax",
+              "instrumentKey": "melodic:0:0:64",
+              "profileId": "131.064.001",
+              "role": "solo",
+              "register": {
+                "low": 55,
+                "high": 94
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "solo",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc4",
+          "noteStatistics": {
+            "noteCount": 16,
+            "pitchLow": 72,
+            "pitchHigh": 83,
+            "medianPitch": 77.0,
+            "medianDurationTicks": 240.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 0.5246
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Soprano Sax",
+      "primaryInstrumentFamily": "reed",
+      "primaryRole": "solo",
+      "suggestedPa800Track": "acc4",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-009b3050283ebda73248",
+      "trackIndex": 4,
+      "trackNumber": 5,
+      "eventCount": 69,
+      "channelIndices": [
+        9
+      ],
+      "channelNumbers": [
+        10
+      ],
+      "smf0Merged": false,
+      "trackName": "Drums",
+      "noteCount": 32,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-009b3050283ebda73248-ch10-0",
+          "trackUid": "trk-009b3050283ebda73248",
+          "trackIndex": 4,
+          "trackNumber": 5,
+          "channelIndex": 9,
+          "channelNumber": 10,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-009b3050283ebda73248",
+            "trackIndex": 4,
+            "trackNumber": 5,
+            "channelIndex": 9,
+            "channelNumber": 10,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 0,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "drum-kit",
+          "primaryInstrument": "Factory Kick",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Kick",
+              "instrumentKey": "drum:0:0:0:36",
+              "profileId": "131.036.001",
+              "role": "drums",
+              "register": {
+                "low": 36,
+                "high": 36
+              },
+              "sampleCount": 240,
+              "confidence": 0.98,
+              "authority": "EXACT_FACTORY_DRUM_NOTE",
+              "drumNote": 36
+            },
+            {
+              "instrument": "Factory Snare",
+              "instrumentKey": "drum:0:0:0:38",
+              "profileId": "131.038.001",
+              "role": "drums",
+              "register": {
+                "low": 38,
+                "high": 38
+              },
+              "sampleCount": 240,
+              "confidence": 0.98,
+              "authority": "EXACT_FACTORY_DRUM_NOTE",
+              "drumNote": 38
+            }
+          ],
+          "detectedRole": "drums",
+          "identityConfidence": 0.99,
+          "roleConfidence": 1.0,
+          "identityStatus": "EXACT_FACTORY_DRUM_NOTES",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "drum",
+          "noteStatistics": {
+            "noteCount": 32,
+            "pitchLow": 36,
+            "pitchHigh": 38,
+            "medianPitch": 37.0,
+            "medianDurationTicks": 60.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 1.0281
+          },
+          "evidenceReasons": [
+            "MIDI_CHANNEL_10"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Kick",
+      "primaryInstrumentFamily": "drum-kit",
+      "primaryRole": "drums",
+      "suggestedPa800Track": "drum",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-6794732adc19e812d520",
+      "trackIndex": 5,
+      "trackNumber": 6,
+      "eventCount": 102,
+      "channelIndices": [
+        3
+      ],
+      "channelNumbers": [
+        4
+      ],
+      "smf0Merged": false,
+      "trackName": "Rhythm Guitar",
+      "noteCount": 48,
+      "segmentCount": 2,
+      "segments": [
+        {
+          "segmentId": "trk-6794732adc19e812d520-ch4-0",
+          "trackUid": "trk-6794732adc19e812d520",
+          "trackIndex": 5,
+          "trackNumber": 6,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "startTick": 0,
+          "endTick": 3840,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-6794732adc19e812d520",
+            "trackIndex": 5,
+            "trackNumber": 6,
+            "channelIndex": 3,
+            "channelNumber": 4,
+            "startTick": 0,
+            "endTick": 3840,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 24,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "guitar",
+          "primaryInstrument": "Factory Nylon Guitar",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Nylon Guitar",
+              "instrumentKey": "melodic:0:0:24",
+              "profileId": "131.024.001",
+              "role": "guitar",
+              "register": {
+                "low": 40,
+                "high": 84
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "guitar",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc1",
+          "noteStatistics": {
+            "noteCount": 24,
+            "pitchLow": 52,
+            "pitchHigh": 60,
+            "medianPitch": 55.0,
+            "medianDurationTicks": 240.0,
+            "polyphonyPeak": 3,
+            "polyphonicOnsetRate": 1.0,
+            "notesPerQuarter": 3.2
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        },
+        {
+          "segmentId": "trk-6794732adc19e812d520-ch4-3840",
+          "trackUid": "trk-6794732adc19e812d520",
+          "trackIndex": 5,
+          "trackNumber": 6,
+          "channelIndex": 3,
+          "channelNumber": 4,
+          "startTick": 3840,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-6794732adc19e812d520",
+            "trackIndex": 5,
+            "trackNumber": 6,
+            "channelIndex": 3,
+            "channelNumber": 4,
+            "startTick": 3840,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 29,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "guitar",
+          "primaryInstrument": "Factory Overdrive Guitar",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Overdrive Guitar",
+              "instrumentKey": "melodic:0:0:29",
+              "profileId": "131.029.001",
+              "role": "guitar",
+              "register": {
+                "low": 40,
+                "high": 88
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "guitar",
+          "identityConfidence": 0.99,
+          "roleConfidence": 0.97,
+          "identityStatus": "EXACT_FACTORY_SOUND",
+          "decision": "ACCEPT",
+          "suggestedPa800Track": "acc1",
+          "noteStatistics": {
+            "noteCount": 24,
+            "pitchLow": 52,
+            "pitchHigh": 60,
+            "medianPitch": 55.0,
+            "medianDurationTicks": 240.0,
+            "polyphonyPeak": 3,
+            "polyphonicOnsetRate": 1.0,
+            "notesPerQuarter": 3.2
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Nylon Guitar",
+      "primaryInstrumentFamily": "guitar",
+      "primaryRole": "guitar",
+      "suggestedPa800Track": "acc1",
+      "decision": "ACCEPT",
+      "optimizationPolicy": "FACTORY_BOUNDED_SAFE"
+    },
+    {
+      "trackUid": "trk-0e8bb9e2fdc8e9b5351a",
+      "trackIndex": 6,
+      "trackNumber": 7,
+      "eventCount": 7,
+      "channelIndices": [
+        1
+      ],
+      "channelNumbers": [
+        2
+      ],
+      "smf0Merged": false,
+      "trackName": "Shared Bass Layer",
+      "noteCount": 1,
+      "segmentCount": 1,
+      "segments": [
+        {
+          "segmentId": "trk-0e8bb9e2fdc8e9b5351a-ch2-0",
+          "trackUid": "trk-0e8bb9e2fdc8e9b5351a",
+          "trackIndex": 6,
+          "trackNumber": 7,
+          "channelIndex": 1,
+          "channelNumber": 2,
+          "startTick": 0,
+          "endTick": 15351,
+          "soundBinding": {
+            "schema": "dna-premium-sound-binding",
+            "version": "2.0",
+            "trackUid": "trk-0e8bb9e2fdc8e9b5351a",
+            "trackIndex": 6,
+            "trackNumber": 7,
+            "channelIndex": 1,
+            "channelNumber": 2,
+            "startTick": 0,
+            "endTick": 15351,
+            "bankMsb": 0,
+            "bankLsb": 0,
+            "program": 32,
+            "complete": true,
+            "status": "EXACT"
+          },
+          "instrumentFamily": "bass",
+          "primaryInstrument": "Factory Finger Bass",
+          "factoryCandidates": [
+            {
+              "instrument": "Factory Finger Bass",
+              "instrumentKey": "melodic:0:0:32",
+              "profileId": "131.032.001",
+              "role": "bass",
+              "register": {
+                "low": 28,
+                "high": 58
+              },
+              "sampleCount": 120,
+              "confidence": 0.94,
+              "authority": "EXACT_FACTORY_SOUND"
+            }
+          ],
+          "detectedRole": "bass",
+          "identityConfidence": 0.49,
+          "roleConfidence": 0.97,
+          "identityStatus": "SHARED_CHANNEL_REVIEW",
+          "decision": "MANUAL_REVIEW",
+          "suggestedPa800Track": "bass",
+          "noteStatistics": {
+            "noteCount": 1,
+            "pitchLow": 40,
+            "pitchHigh": 40,
+            "medianPitch": 40.0,
+            "medianDurationTicks": 480.0,
+            "polyphonyPeak": 1,
+            "polyphonicOnsetRate": 0.0,
+            "notesPerQuarter": 1.0
+          },
+          "evidenceReasons": [
+            "EXACT_FACTORY_ROLE",
+            "SHARED_CHANNEL_CONFLICT"
+          ],
+          "authority": {
+            "instrumentIdentity": "FACTORY_EXACT",
+            "role": "FACTORY_EXACT",
+            "midiMutation": "NONE",
+            "dynamics": "NONE",
+            "device": "NONE"
+          }
+        }
+      ],
+      "primaryInstrument": "Factory Finger Bass",
+      "primaryInstrumentFamily": "bass",
+      "primaryRole": "bass",
+      "suggestedPa800Track": "bass",
+      "decision": "MANUAL_REVIEW",
+      "optimizationPolicy": "ANALYSIS_ONLY_MANUAL_REVIEW"
+    }
+  ],
+  "manualReview": [
+    {
+      "code": "SHARED_CHANNEL_REVIEW",
+      "trackUid": "trk-c033749a0911da758f2a",
+      "trackNumber": 3,
+      "channelNumber": 2,
+      "startTick": 0,
+      "endTick": 15351,
+      "reason": "EXACT_FACTORY_ROLE,SHARED_CHANNEL_CONFLICT",
+      "recoveryAction": "Confirm exact SoundBinding or assign the track role manually."
+    },
+    {
+      "code": "SHARED_CHANNEL_REVIEW",
+      "trackUid": "trk-0e8bb9e2fdc8e9b5351a",
+      "trackNumber": 7,
+      "channelNumber": 2,
+      "startTick": 0,
+      "endTick": 15351,
+      "reason": "EXACT_FACTORY_ROLE,SHARED_CHANNEL_CONFLICT",
+      "recoveryAction": "Confirm exact SoundBinding or assign the track role manually."
+    }
+  ],
+  "summary": {
+    "physicalTrackCount": 7,
+    "noteTrackCount": 6,
+    "segmentCount": 7,
+    "acceptedTrackCount": 4,
+    "manualReviewTrackCount": 2,
+    "metadataTrackCount": 1,
+    "exactFactorySegmentCount": 7
+  },
+  "applicationOptimizationBaseline": {
+    "safeAutomaticTracks": [
+      "trk-73d42a90c72bbb77e696",
+      "trk-b2584cc98e960cb6a2a1",
+      "trk-009b3050283ebda73248",
+      "trk-6794732adc19e812d520"
+    ],
+    "protectedOrReviewTracks": [
+      "trk-c033749a0911da758f2a",
+      "trk-0e8bb9e2fdc8e9b5351a"
+    ],
+    "downstreamPolicy": "Only ACCEPT tracks may enter automatic TrackPlan; all others stay KEEP/MANUAL_REVIEW.",
+    "fullOptimizationStage": "PLANNED_AFTER_EVIDENCE_RESOLUTION"
+  },
+  "invariants": {
+    "readOnly": true,
+    "analysisVelocityUsed": false,
+    "goldUsed": false,
+    "goldAffectsDynamics": false,
+    "approximateSoundBindingAllowed": false,
+    "trackLocalSoundState": true,
+    "midSongProgramChangesSegmented": true,
+    "sharedChannelAutoAcceptAllowed": false,
+    "originalMidiChanged": false,
+    "midiMutationAuthority": false,
+    "validatorAuthority": false,
+    "deviceCertificationClaimed": false
+  },
+  "decisionHash": "42ee82c52ccb6f937ab0718119003a990addeb09fd92db2d385021ac0f03614b",
+  "analysisHash": "13ed2b3b6b082e0d8e28bc5466d0811d3c21bbeac813a3566338ef665f8f8b53"
+}

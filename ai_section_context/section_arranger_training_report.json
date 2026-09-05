@@ -1,0 +1,30 @@
+{
+  "schema": "dna-section-arranger-training",
+  "version": "1.0",
+  "epochs": 2,
+  "bestValidationLoss": 0.7922494014104208,
+  "holdoutLoss": 0.848552867770195,
+  "holdoutSectionAccuracy": 0.6994186046511628,
+  "trainSamples": 12930,
+  "validationSamples": 1449,
+  "holdoutSamples": 1720,
+  "velocityInput": false,
+  "velocityOutput": false,
+  "sectionLabels": "HEURISTIC_CANDIDATES",
+  "history": [
+    {
+      "epoch": 1,
+      "trainLoss": 1.041894440467541,
+      "trainSectionAccuracy": 0.6018561484918794,
+      "validationLoss": 0.8513532280921936,
+      "validationSectionAccuracy": 0.6811594202898551
+    },
+    {
+      "epoch": 2,
+      "trainLoss": 0.8382687201866736,
+      "trainSectionAccuracy": 0.6954369682907966,
+      "validationLoss": 0.7922494014104208,
+      "validationSectionAccuracy": 0.7260179434092477
+    }
+  ]
+}

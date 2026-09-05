@@ -1,0 +1,55 @@
+{
+  "schema": "dna-midi-optimizer-test-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "syntheticBrokenMidi": {
+    "qualityBefore": 0,
+    "qualityAfter": 100,
+    "duplicateNotesRemoved": 1,
+    "overlapsFixed": 1,
+    "danglingNotesFixed": 1,
+    "orphanNoteOffsRemoved": 1,
+    "redundantControllersRemoved": 1,
+    "offGridNotesAfter": 0
+  },
+  "realGoldMidi": {
+    "source": "A JA VOLIM ONO T-KORIJENI UZIVO.MID",
+    "qualityBefore": 65.5,
+    "qualityAfter": 94.9,
+    "invalidDurationsFixed": 25,
+    "overlapsFixed": 3293,
+    "duplicateNotesRemoved": 67,
+    "notesQuantized": 14636,
+    "velocityProfilesMatched": 14708,
+    "velocitiesAdjusted": 14605,
+    "redundantControllersRemoved": 86,
+    "formatPreserved": 0,
+    "tracksPreserved": 1,
+    "ppqPreserved": 384,
+    "tempoPreserved": 174.0,
+    "meterPreserved": "4/4",
+    "inputBytes": 141774,
+    "outputBytes": 141303,
+    "bytesSaved": 471,
+    "inputHash": "4acb3ceaa6855ec72302ed28d3dcff10ef78ec6a5c9f2f7970af864c74479dfd",
+    "outputHash": "83059d0f52ed465adf62419caf704110a00a1c5097a6c23c7c02c17759aab4ab",
+    "databaseVersion": "factory-ea93e4fcde620e42",
+    "interventionCount": 47420,
+    "validationResult": "PASS"
+  },
+  "downloadFlow": {
+    "tokenLength": 24,
+    "validTokenDownload": true,
+    "invalidTokenStatus": 404,
+    "cacheLimit": 10,
+    "cacheMaxBytes": 128000000,
+    "tokenTtlSeconds": 3600
+  },
+  "invariants": {
+    "originalOverwritten": false,
+    "goldAffectsDynamics": false,
+    "factoryProfilesOnly": true,
+    "invalidMidiExported": false
+  }
+}

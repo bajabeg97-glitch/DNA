@@ -1,0 +1,38 @@
+{
+  "schema": "dna-optimizer-dry-run",
+  "version": "1.0",
+  "sourceMidiSha256": "fed28674999e3c822d23737f82492e7e6d33e689b292e4400833b90617a93425",
+  "candidateMidiGenerated": false,
+  "midiBytesWritten": 0,
+  "operationCounts": {
+    "APPLY_EVIDENCE_GROOVE": 52,
+    "APPLY_FACTORY_CC11": 1,
+    "APPLY_FACTORY_DYNAMICS_MIXER": 54,
+    "REPAIR_REGISTER": 38,
+    "REPLACE_PATTERN": 52,
+    "VERIFY_POLYPHONY": 52
+  },
+  "sourceDecisionCounts": {
+    "KEEP": 1,
+    "MANUAL_REVIEW": 1,
+    "REPAIR": 3
+  },
+  "fragmentDecisionCounts": {
+    "REPLACE": 52
+  },
+  "predictedMaximumChanges": {
+    "controllerChangesMaximum": 124,
+    "gateEventsMaximum": 1490,
+    "patternEventsMaximum": 1274,
+    "polyphonyChecks": 52,
+    "registerChecks": 38,
+    "timingEventsMaximum": 1490,
+    "velocityNotesMaximum": 1344
+  },
+  "protectedOriginalNoteChanges": 0,
+  "soundBindingChanges": 0,
+  "goldVelocityChanges": 0,
+  "goldBankProgramChanges": 0,
+  "blockedOperationCount": 1,
+  "dryRunHash": "7bdb1c87f05ebbb103fe9b14c92c297fac745081fabe226d351f730065b90455"
+}

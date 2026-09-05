@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/workflow-recovery-v1.schema.json",
+  "title": "DNA Premium Workflow Recovery 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "version", "checkpointId", "workflowHash", "sourceMidiSha256", "cancelledStageId", "reason", "completedStageIds", "resumeStageId", "selectedVariantId", "locks", "midiEmbedded", "audioEmbedded", "readOnly", "checkpointHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-workflow-recovery"},
+    "version": {"const": "1.0"},
+    "checkpointId": {"type": "string", "pattern": "^checkpoint-[0-9a-f]{20}$"},
+    "workflowHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sourceMidiSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "cancelledStageId": {"enum": ["IMPORT", "ANALYZE", "BRIEF", "PLAN", "VARIANTS", "EDIT", "VERIFY", "EXPORT"]},
+    "reason": {"type": "string", "minLength": 1},
+    "completedStageIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "resumeStageId": {"type": "string"},
+    "selectedVariantId": {"enum": ["A", "B", "C", "D"]},
+    "locks": {"type": "object"},
+    "midiEmbedded": {"const": false},
+    "audioEmbedded": {"const": false},
+    "readOnly": {"const": true},
+    "checkpointHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "x-contract-version": "1.0"
+}

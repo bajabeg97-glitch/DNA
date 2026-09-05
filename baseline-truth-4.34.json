@@ -1,0 +1,108 @@
+{
+  "schema": "dna-baseline-truth",
+  "version": "4.34.0",
+  "status": "SOFTWARE_VALIDATED_SCOPE",
+  "feature": "EVIDENCE_ADAPTIVE_CONTINUITY",
+  "userListeningSignal": "Residual chopping strongest on solo tracks; smaller percentage on rhythm parts.",
+  "evidenceProfiles": {
+    "solo": {
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_SEQUENCE_SOURCE_SOLO",
+      "count": 61669,
+      "confidence": 0.92,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.325
+      }
+    },
+    "third": {
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_THIRD",
+      "count": 12051,
+      "confidence": 0.88,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.375
+      }
+    },
+    "echo": {
+      "source": "REAL_ORIGINAL_MIDI_RELATIONSHIP_ECHO",
+      "count": 45527,
+      "confidence": 0.88,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.05,
+        "releaseGapQn": 0.01,
+        "phraseLegatoMaxIoiQn": 0.31979
+      }
+    },
+    "bass": {
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "count": 6281,
+      "confidence": 0.86,
+      "policy": {
+        "minGateQn": 0.15625,
+        "bridgeGapQn": 0.22,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      }
+    },
+    "accompaniment": {
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "count": 4334,
+      "confidence": 0.86,
+      "policy": {
+        "minGateQn": 0.0625,
+        "bridgeGapQn": 0.14,
+        "releaseGapQn": 0.005,
+        "phraseLegatoMaxIoiQn": 0.0
+      }
+    },
+    "power_riff": {
+      "source": "GOLD_NON_VELOCITY_PERFORMANCE_PATTERNS",
+      "count": 33616,
+      "confidence": 0.86,
+      "policy": {
+        "minGateQn": 0.08333,
+        "bridgeGapQn": 0.14,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      }
+    },
+    "rhythm_guitar": {
+      "source": "FACTORY_STRUMMING_STROKE_EVIDENCE",
+      "count": 46995,
+      "confidence": 0.96,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.07,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      }
+    },
+    "guitar": {
+      "source": "FACTORY_STRUMMING_STROKE_EVIDENCE",
+      "count": 46995,
+      "confidence": 0.96,
+      "policy": {
+        "minGateQn": 0.12,
+        "bridgeGapQn": 0.07,
+        "releaseGapQn": 0.04,
+        "phraseLegatoMaxIoiQn": 0.0
+      }
+    }
+  },
+  "authority": {
+    "factoryVelocityOnly": true,
+    "goldVelocityUsed": false,
+    "neuralVelocityUsed": false,
+    "drumsSmoothed": false
+  },
+  "tests": {
+    "targetedObservedPass": 23,
+    "targetedFail": 0
+  },
+  "externalGate": "USER_LISTENING_AND_PA800_DEVICE_CHECK_PENDING"
+}

@@ -1,0 +1,139 @@
+{
+  "schema": "dna-expanded-relationship-evidence",
+  "version": "4.46.0",
+  "sharedSourceRelationships": 4373,
+  "roleCombinations": [
+    {
+      "roles": [
+        "bass",
+        "drums",
+        "power-riff"
+      ],
+      "count": 1408
+    },
+    {
+      "roles": [
+        "bass",
+        "drums"
+      ],
+      "count": 1374
+    },
+    {
+      "roles": [
+        "bass",
+        "drums",
+        "power-riff",
+        "riff"
+      ],
+      "count": 555
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "drums",
+        "power-riff"
+      ],
+      "count": 322
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "drums",
+        "power-riff",
+        "riff"
+      ],
+      "count": 233
+    },
+    {
+      "roles": [
+        "bass",
+        "drums",
+        "riff"
+      ],
+      "count": 184
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "drums"
+      ],
+      "count": 94
+    },
+    {
+      "roles": [
+        "bass",
+        "percussion"
+      ],
+      "count": 69
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "drums",
+        "riff"
+      ],
+      "count": 36
+    },
+    {
+      "roles": [
+        "bass",
+        "percussion",
+        "riff"
+      ],
+      "count": 35
+    },
+    {
+      "roles": [
+        "bass",
+        "percussion",
+        "power-riff"
+      ],
+      "count": 18
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "percussion",
+        "power-riff"
+      ],
+      "count": 18
+    },
+    {
+      "roles": [
+        "bass",
+        "percussion",
+        "power-riff",
+        "riff"
+      ],
+      "count": 17
+    },
+    {
+      "roles": [
+        "accompaniment",
+        "bass",
+        "percussion"
+      ],
+      "count": 10
+    }
+  ],
+  "kickBassEvidence": {
+    "count": 2408,
+    "authority": "GOLD_SHARED_SOURCE_WITH_KICK_ELEMENT",
+    "status": "SOFTWARE_COMPLETE"
+  },
+  "fillSectionEvidence": {
+    "count": 48,
+    "authority": "GOLD_DRUM_PATTERN_SECTION_CONTEXT",
+    "status": "SOFTWARE_COMPLETE"
+  },
+  "soloTercaEchoEvidence": {
+    "authority": "GOLD_RELATIONSHIP_DATASET",
+    "status": "SOFTWARE_COMPLETE"
+  },
+  "rule": "RELATIONSHIP_EVIDENCE_IS_SOFT_MUSICAL_EVIDENCE_NOT_DEVICE_AUTHORITY"
+}

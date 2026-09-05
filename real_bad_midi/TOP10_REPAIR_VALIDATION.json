@@ -1,0 +1,532 @@
+[
+  {
+    "input": "07_SCORE_33.73_988 Mitar.MID",
+    "output": "07_SCORE_33.73_988 Mitar_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [
+      10
+    ],
+    "changes": {
+      "microgate_extended": 1514,
+      "same_note_overlap_closed": 444
+    },
+    "before": {
+      "notes": 11846,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 444,
+      "microgateRatio": {
+        "10": 1.0,
+        "13": 0.443,
+        "15": 0.028,
+        "9": 1.0,
+        "8": 0.045,
+        "3": 0.007,
+        "4": 0.075,
+        "5": 0.075,
+        "14": 0.042,
+        "2": 0.012,
+        "0": 0.003,
+        "1": 0.022,
+        "6": 0.0
+      }
+    },
+    "after": {
+      "notes": 11846,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 34,
+      "microgateRatio": {
+        "13": 0.561,
+        "10": 0.0,
+        "15": 0.028,
+        "9": 1.0,
+        "8": 0.045,
+        "3": 0.007,
+        "4": 0.075,
+        "5": 0.075,
+        "14": 0.042,
+        "2": 0.012,
+        "0": 0.003,
+        "1": 0.022,
+        "6": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "08_SCORE_36.00_U kafani punoj dima.mid",
+    "output": "08_SCORE_36.00_U kafani punoj dima_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 4,
+      "orphan_noteoff_removed": 25344
+    },
+    "before": {
+      "notes": 14213,
+      "orphanOff": 25344,
+      "stuck": 0,
+      "sameNoteOverlap": 14,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "14": 0.0
+      }
+    },
+    "after": {
+      "notes": 14213,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 14,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0,
+        "14": 0.01
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "09_SCORE_39.50_SVIDJA MI SE TVOJA DEVOJKA.mid",
+    "output": "09_SCORE_39.50_SVIDJA MI SE TVOJA DEVOJKA_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 2,
+      "orphan_noteoff_removed": 6704
+    },
+    "before": {
+      "notes": 14696,
+      "orphanOff": 6704,
+      "stuck": 0,
+      "sameNoteOverlap": 2,
+      "microgateRatio": {
+        "9": 0.0,
+        "10": 0.0,
+        "0": 0.0,
+        "2": 0.013,
+        "12": 0.013,
+        "1": 0.0,
+        "7": 0.0,
+        "11": 0.0,
+        "4": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "5": 0.0,
+        "8": 0.0,
+        "13": 0.0,
+        "14": 0.0
+      }
+    },
+    "after": {
+      "notes": 14696,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 2,
+      "microgateRatio": {
+        "9": 0.0,
+        "10": 0.0,
+        "0": 0.0,
+        "2": 0.013,
+        "12": 0.013,
+        "1": 0.0,
+        "7": 0.0,
+        "11": 0.0,
+        "4": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "5": 0.002,
+        "8": 0.0,
+        "13": 0.0,
+        "14": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "10_SCORE_41.50_TVOJOM ULICOM VISE NE PROLAZIM kar.KAR",
+    "output": "10_SCORE_41.50_TVOJOM ULICOM VISE NE PROLAZIM kar_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {},
+    "before": {
+      "notes": 8154,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "1": 0.0,
+        "0": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.074,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.999,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0
+      }
+    },
+    "after": {
+      "notes": 8154,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "1": 0.0,
+        "0": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.074,
+        "6": 0.0,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.999,
+        "10": 0.0,
+        "11": 0.0,
+        "12": 0.0,
+        "13": 0.0,
+        "14": 0.0,
+        "15": 0.0
+      }
+    },
+    "status": "REVIEW_REQUIRED_NO_SAFE_AUTOFIX",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "11_SCORE_42.39_ONA,ONA.mid",
+    "output": "11_SCORE_42.39_ONA,ONA_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {},
+    "before": {
+      "notes": 6519,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    "after": {
+      "notes": 6519,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 0.0
+      }
+    },
+    "status": "REVIEW_REQUIRED_NO_SAFE_AUTOFIX",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "12_SCORE_43.00_OVO NECE IZACI NA DOBRO kar Dara Bubamara.mid",
+    "output": "12_SCORE_43.00_OVO NECE IZACI NA DOBRO kar Dara Bubamara_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 12,
+      "orphan_noteoff_removed": 7696
+    },
+    "before": {
+      "notes": 19205,
+      "orphanOff": 7696,
+      "stuck": 0,
+      "sameNoteOverlap": 187,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "7": 0.196,
+        "9": 0.0,
+        "10": 0.0,
+        "13": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "14": 0.0,
+        "8": 0.0
+      }
+    },
+    "after": {
+      "notes": 19205,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 184,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.01,
+        "4": 0.0,
+        "7": 0.196,
+        "9": 0.0,
+        "10": 0.0,
+        "13": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "14": 0.0,
+        "8": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "13_SCORE_45.00_DRUGOVI SE MOJI VEC POZENILI.mid",
+    "output": "13_SCORE_45.00_DRUGOVI SE MOJI VEC POZENILI_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 6
+    },
+    "before": {
+      "notes": 8560,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 6,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "13": 0.0,
+        "9": 1.0
+      }
+    },
+    "after": {
+      "notes": 8560,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "11": 0.0,
+        "13": 0.0,
+        "9": 1.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "14_SCORE_45.00_Bozo_Vorotovic_-_Kafana_mi_sve_.mid",
+    "output": "14_SCORE_45.00_Bozo_Vorotovic_-_Kafana_mi_sve__SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 6
+    },
+    "before": {
+      "notes": 8560,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 6,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 0.0,
+        "13": 0.0
+      }
+    },
+    "after": {
+      "notes": 8560,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "9": 1.0,
+        "10": 0.0,
+        "11": 0.0,
+        "13": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "15_SCORE_47.40_SAM PAO SAM SE UBIO.KAR",
+    "output": "15_SCORE_47.40_SAM PAO SAM SE UBIO_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [],
+    "changes": {
+      "same_note_overlap_closed": 494
+    },
+    "before": {
+      "notes": 8444,
+      "orphanOff": 384,
+      "stuck": 0,
+      "sameNoteOverlap": 1296,
+      "microgateRatio": {
+        "0": 0.068,
+        "1": 0.017,
+        "2": 0.039,
+        "3": 0.033,
+        "4": 0.029,
+        "5": 0.033,
+        "6": 0.0,
+        "9": 0.491,
+        "10": 0.0
+      }
+    },
+    "after": {
+      "notes": 8444,
+      "orphanOff": 384,
+      "stuck": 0,
+      "sameNoteOverlap": 802,
+      "microgateRatio": {
+        "0": 0.068,
+        "1": 0.019,
+        "2": 0.039,
+        "3": 0.033,
+        "4": 0.029,
+        "5": 0.033,
+        "6": 0.0,
+        "9": 0.491,
+        "10": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  },
+  {
+    "input": "16_SCORE_47.80_DVADESETCETIRI  SATA.MID",
+    "output": "16_SCORE_47.80_DVADESETCETIRI  SATA_SAFE_REPAIRED.mid",
+    "dominantMicrogateChannels": [
+      3
+    ],
+    "changes": {
+      "microgate_extended": 2156
+    },
+    "before": {
+      "notes": 13473,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "9": 0.0,
+        "12": 0.0,
+        "8": 0.0,
+        "3": 0.607,
+        "6": 0.0,
+        "7": 0.0,
+        "4": 0.0,
+        "1": 0.0,
+        "0": 0.0,
+        "2": 0.0,
+        "5": 0.0,
+        "11": 0.0
+      }
+    },
+    "after": {
+      "notes": 13473,
+      "orphanOff": 0,
+      "stuck": 0,
+      "sameNoteOverlap": 0,
+      "microgateRatio": {
+        "9": 0.0,
+        "12": 0.0,
+        "8": 0.0,
+        "3": 0.0,
+        "6": 0.0,
+        "7": 0.0,
+        "4": 0.0,
+        "1": 0.0,
+        "0": 0.0,
+        "2": 0.0,
+        "5": 0.0,
+        "11": 0.0
+      }
+    },
+    "status": "SAFE_REPAIR_VALIDATED",
+    "protectedEventsPreserved": true,
+    "pairedNoteCountPreserved": true,
+    "noNewPairingErrors": true
+  }
+]

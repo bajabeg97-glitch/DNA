@@ -1,0 +1,34 @@
+{
+  "schema": "dna-session14-preflight-report",
+  "version": "1.0",
+  "date": "2026-09-02",
+  "result": "pass",
+  "scope": "physical-pa800-test-kit-preflight-only",
+  "formalSuite": {
+    "testsRun": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "kit": {
+    "manifest": "artifacts/session14-device-kit/kit-manifest.json",
+    "manifestSha256": "ac96dbdc8be1dcef46e5d302bcf28c2fd1672eee42d9af7bba6ecf68302a0f45",
+    "resultTemplate": "artifacts/session14-device-kit/device-result-template.json",
+    "functionalMidi": "artifacts/session14-device-kit/DNA_PA800_FUNCTIONAL_TEST.mid",
+    "polyphonyMidi": "artifacts/session14-device-kit/DNA_PA800_POLYPHONY_STRESS.mid",
+    "downloadZip": "artifacts/session14-device-kit/DNA-PA800-Session14-Device-Test-Kit.zip",
+    "downloadZipSha256": "12a70c0c870fc45f82e6206cfc9bfad840d3a53bfe8fe97caeb3752df111af18",
+    "artifactCount": 5
+  },
+  "invariants": {
+    "officialSmf0MarkerContract": true,
+    "allEightStyleChannels": true,
+    "projectPolyphonyPeak": 54,
+    "physicalObservationFabricated": false,
+    "humanAttestationRequired": true,
+    "imageAndAudioEvidenceRequired": true
+  },
+  "status": {
+    "session14DevicePreflight": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

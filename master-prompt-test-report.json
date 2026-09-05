@@ -1,0 +1,24 @@
+{
+  "schema": "dna-master-prompt-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "testsRun": 43,
+  "failures": 0,
+  "errors": 0,
+  "invariants": {
+    "goldAffectsDynamics": false,
+    "analysisVelocityUsed": false,
+    "goldAffectsProgramChange": false,
+    "goldAffectsMixer": false,
+    "goldControlsRhythmGuitar": false,
+    "soloTimingQuantized": false,
+    "phasePlanBeforeMutation": true,
+    "sameSeedSameOutput": true,
+    "invalidMidiExported": false
+  },
+  "certification": {
+    "software": "SOFTWARE_VALIDATED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

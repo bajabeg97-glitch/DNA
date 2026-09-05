@@ -1,0 +1,17 @@
+{
+  "schema": "dna-premium-audio-comparison",
+  "version": "1.0",
+  "previewSessionHash": "d8177a2aef460a4b1fbabf9ab4c46825751f7aa03ad8488ae22ba40df6f0c97f",
+  "variantId": "C",
+  "proxyAudioSha256": "b03afac3d522e31cdd09d60d19f977c452e5e9089d97bb9a64df88c77f5f81fe",
+  "deviceCaptureHash": "e7779eb9f1cbd44c9a86fa3ca942ab142eaa69020c2e8311e7184732a173b484",
+  "durationDeltaSeconds": 0.0,
+  "rmsDeltaDb": -0.001,
+  "sameSourceMidi": true,
+  "comparisonOnly": true,
+  "session16EvidencePresent": false,
+  "certificationAllowed": false,
+  "pa800DeviceCertified": false,
+  "warning": "Audio comparison is not a Pa800 certification; Session 16 evidence gate remains authoritative.",
+  "comparisonHash": "849868f072295107e9e8b8388d862749f6ae0556ef1961209fd3d379266ba54d"
+}

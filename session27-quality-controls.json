@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "premiumVariantId": "C",
+  "minimumMetricScore": 2.5,
+  "minimumAutomatedOverall": 3.5,
+  "minimumHumanOverallMedian": 4.0,
+  "minimumPremiumPreferenceRate": 0.7,
+  "minimumHumanEvaluators": 2,
+  "maximumHarmonyViolationRate": 0.45,
+  "maximumRegisterCollisionRate": 0.12
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "dna-session32-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "evidence-driven-track-plan-and-full-optimizer-dry-run-contract",
+  "formalSuite": {
+    "testsRun": 152,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session32-benchmark-report.json",
+    "trackPlanHash": "19fefe7d19baf57f124040b17b09d3aa4a6a730b8a2b5ad5bd683f40b851bb17",
+    "sourceTrackPlans": 5,
+    "arrangerFragments": 52,
+    "exactTargetBindings": 52,
+    "replaceFragments": 52,
+    "manualReviewScopes": 1,
+    "plannedOperations": 249,
+    "operationCounts": {
+      "APPLY_EVIDENCE_GROOVE": 52,
+      "APPLY_FACTORY_CC11": 1,
+      "APPLY_FACTORY_DYNAMICS_MIXER": 54,
+      "REPAIR_REGISTER": 38,
+      "REPLACE_PATTERN": 52,
+      "VERIFY_POLYPHONY": 52
+    },
+    "evidenceCoverageRate": 1.0,
+    "trackPlanBuildSeconds": 0.882573,
+    "benchmarkHash": "002c139776d0c11e78d7caccff396b4c7e05e2793f12f09ee0602574c8d2144b"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session32-reference.mid",
+    "trackAnalysis": "artifacts/session32-track-analysis.json",
+    "evidenceLedger": "artifacts/session32-evidence-ledger.json",
+    "targetBindings": "artifacts/session32-target-bindings.json",
+    "trackPlan": "artifacts/session32-track-plan.json",
+    "dryRun": "artifacts/session32-optimizer-dry-run.json",
+    "schemaCatalog": "data/session32-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session32_track_plan.py",
+    "api": "/api/track-plan",
+    "guiWorkspace": "TRACK PLAN / FULL OPTIMIZER DRY RUN 3.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "midiBytesWritten": 0,
+    "originalMidiOverwritten": false,
+    "originalSoloFingerprintProtected": true,
+    "lockedFragmentsProtected": true,
+    "exactSoundBindingRequired": true,
+    "goldAffectsDynamics": false,
+    "goldAffectsMixer": false,
+    "approximateSoundBindingAllowed": false,
+    "implicitFallbackAllowed": false,
+    "rendererAuthority": false,
+    "validatorAuthority": false,
+    "finalMidiExportAllowed": false
+  },
+  "status": {
+    "session32TrackPlanFullOptimizer": "SOFTWARE_VALIDATED / READ_ONLY MUTATION CONTRACT",
+    "activeSoftwareBaseline": "4.9.2-track-plan-foundation",
+    "evidenceDrivenRenderer": "NEXT",
+    "finalMidiExport": "BLOCKED",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

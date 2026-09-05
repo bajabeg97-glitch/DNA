@@ -1,0 +1,35 @@
+{
+  "schema": "dna-role-aware-auto-repair-status",
+  "version": "4.42.0",
+  "decisions": [
+    "KEEP",
+    "REPAIR",
+    "REPLACE",
+    "AUGMENT",
+    "MANUAL_REVIEW"
+  ],
+  "roles": [
+    "accompaniment",
+    "accordion",
+    "bass",
+    "brass",
+    "choir",
+    "drums",
+    "echo",
+    "organ",
+    "pad",
+    "percussion",
+    "piano",
+    "power-riff",
+    "rhythm-guitar",
+    "sax",
+    "solo",
+    "strings",
+    "third",
+    "woodwind"
+  ],
+  "velocityAuthority": "FACTORY_ONLY",
+  "replaceRequiresEvidence": true,
+  "soloGenericReplace": false,
+  "preserveGoodRegions": true
+}

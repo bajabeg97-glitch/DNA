@@ -1,0 +1,140 @@
+{
+  "schema": "dna-session7-dnc-plan",
+  "version": "1.0",
+  "decision": "AUGMENT",
+  "reason": "Confirmed DNC articulation events are available",
+  "inputHash": "a8fb280b0b0fc7600b4066f38b45210bbb8d7322cb143a8c266a875f4e738e45",
+  "structuralHash": "815e28a594d9ae48be316d7037d21c860085993c8a1eef72f1254c125c741be9",
+  "selectionHash": "cd82108342133194f4e3d82690babcdddcef68b98506427ba50c69d3e5f591d8",
+  "seed": 807,
+  "track": 10,
+  "channel": 13,
+  "window": [
+    1800,
+    5760
+  ],
+  "role": "strings",
+  "dncMapId": "170.100.001",
+  "factoryProfileId": "170.012.001",
+  "mapSource": "synthetic-test",
+  "mapVersion": "synthetic-test-1",
+  "mapEvidence": "Deterministic Session 7 fixture; not a production Pa800 DNC map.",
+  "exactSound": [
+    0,
+    0,
+    48
+  ],
+  "requestedArticulations": [
+    "legato_switch",
+    "accent_cc",
+    "release_pressure",
+    "phrase_switch"
+  ],
+  "generatedNotes": 6,
+  "generatedEvents": 4,
+  "counts": {
+    "legato_switch": 4,
+    "accent_cc": 1,
+    "release_pressure": 3,
+    "phrase_switch": 2
+  },
+  "skipped": {
+    "condition": 14,
+    "boundary": 0,
+    "existing": 0,
+    "collision": 0
+  },
+  "sourceIds": [
+    "170.900.001"
+  ],
+  "dncTriggersGuessed": false,
+  "proprietaryEventsGenerated": false,
+  "analysisVelocityUsed": false,
+  "goldAffectsVelocity": false,
+  "events": [
+    {
+      "articulation": "phrase_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 0,
+      "sourceId": "170.900.001",
+      "condition": "phrase_start",
+      "tick": 1872
+    },
+    {
+      "articulation": "release_pressure",
+      "eventType": "channel_pressure",
+      "sourceNoteIndex": 0,
+      "sourceId": "170.900.001",
+      "condition": "long_note",
+      "tick": 2520
+    },
+    {
+      "articulation": "legato_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 1,
+      "sourceId": "170.900.001",
+      "condition": "close_entry",
+      "tick": 2550
+    },
+    {
+      "articulation": "legato_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 2,
+      "sourceId": "170.900.001",
+      "condition": "close_entry",
+      "tick": 2850
+    },
+    {
+      "articulation": "phrase_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 3,
+      "sourceId": "170.900.001",
+      "condition": "phrase_start",
+      "tick": 3792
+    },
+    {
+      "articulation": "release_pressure",
+      "eventType": "channel_pressure",
+      "sourceNoteIndex": 3,
+      "sourceId": "170.900.001",
+      "condition": "long_note",
+      "tick": 4440
+    },
+    {
+      "articulation": "legato_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 4,
+      "sourceId": "170.900.001",
+      "condition": "close_entry",
+      "tick": 4470
+    },
+    {
+      "articulation": "accent_cc",
+      "eventType": "cc",
+      "sourceNoteIndex": 4,
+      "sourceId": "170.900.001",
+      "condition": "leap",
+      "tick": 4500
+    },
+    {
+      "articulation": "legato_switch",
+      "eventType": "keyswitch",
+      "sourceNoteIndex": 5,
+      "sourceId": "170.900.001",
+      "condition": "close_entry",
+      "tick": 4770
+    },
+    {
+      "articulation": "release_pressure",
+      "eventType": "channel_pressure",
+      "sourceNoteIndex": 5,
+      "sourceId": "170.900.001",
+      "condition": "long_note",
+      "tick": 5520
+    }
+  ],
+  "outputHash": "438b3a57e6478b2f6452e3bec5e8c432161a62f71b2c47ed1750872ec1aed8b6",
+  "originalEventsPreserved": true,
+  "targetSoundPreserved": true,
+  "notePairingValid": true
+}

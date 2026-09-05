@@ -1,0 +1,26 @@
+{
+  "schema": "dna-session29-schema-catalog",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "contracts": [
+    {
+      "name": "personal-producer-profile-v2.schema.json",
+      "$id": "https://dna-midi.local/schemas/personal-producer-profile-v2.schema.json",
+      "contractVersion": "2.0",
+      "sha256": "9f51e82f7eaa02af366814c60c68d77a46b8d56c5ee0977ff685184ddbc6897b"
+    },
+    {
+      "name": "personal-ranking-overlay-v1.schema.json",
+      "$id": "https://dna-midi.local/schemas/personal-ranking-overlay-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "946b3e4eb9b8ad2d8c4b0aaa333e28ff20a7f50c0403416ab018104b87330619"
+    },
+    {
+      "name": "personal-profile-deletion-v1.schema.json",
+      "$id": "https://dna-midi.local/schemas/personal-profile-deletion-v1.schema.json",
+      "contractVersion": "1.0",
+      "sha256": "6124aae52592e16320141b2fa87d599765f0d9ced6e51cddc99b091a952474cc"
+    }
+  ],
+  "catalogHash": "347f60d80696c2ebe48a65e3fc5cdbc0f753d0cb8e2a9dfdec42a06a81c68b21"
+}

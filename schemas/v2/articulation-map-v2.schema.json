@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dna-midi-studio.local/schemas/v2/articulation-map-v2.schema.json",
+  "title": "ArticulationMap 2.0 Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "x-contract-version": "2.0",
+  "required": ["schema", "version", "capture", "maps", "audit", "invariants", "productionStatus", "catalogHash"],
+  "properties": {
+    "schema": {"const": "dna-premium-articulation-map"},
+    "version": {"const": "2.0"},
+    "capture": {"type": "object"},
+    "maps": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/catalogMap"}},
+    "audit": {"type": "object"},
+    "invariants": {"type": "object"},
+    "productionStatus": {"enum": ["PRODUCTION_ELIGIBLE", "DEVICE_BLOCKED"]},
+    "catalogHash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "stableId": {"type": "string", "pattern": "^[0-9]{3}\\.[0-9]{3}\\.[0-9]{3}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "exactSound": {
+      "type": "object", "additionalProperties": false,
+      "required": ["bankMsb", "bankLsb", "program"],
+      "properties": {
+        "bankMsb": {"type": "integer", "minimum": 0, "maximum": 127},
+        "bankLsb": {"type": "integer", "minimum": 0, "maximum": 127},
+        "program": {"type": "integer", "minimum": 0, "maximum": 127}
+      }
+    },
+    "range": {
+      "type": "object", "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": {"type": "integer", "minimum": 0, "maximum": 127},
+        "max": {"type": "integer", "minimum": 0, "maximum": 127}
+      }
+    },
+    "entry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["articulationId", "name", "status", "eventType", "number", "value", "placement", "offsetTicks", "durationTicks", "condition", "requiredNoteOff", "sourceEvidenceId", "entryHash"],
+      "properties": {
+        "articulationId": {"$ref": "#/$defs/stableId"},
+        "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "status": {"enum": ["CONFIRMED", "UNKNOWN", "BLOCKED"]},
+        "eventType": {"type": ["string", "null"], "enum": ["KEYSWITCH", "CC", "CHANNEL_PRESSURE", null]},
+        "number": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+        "value": {"type": ["integer", "null"], "minimum": 0, "maximum": 127},
+        "placement": {"type": ["string", "null"], "enum": ["BEFORE_ONSET", "AT_ONSET", "AFTER_RELEASE", null]},
+        "offsetTicks": {"type": "integer", "minimum": 0},
+        "durationTicks": {"type": "integer", "minimum": 0},
+        "condition": {"type": ["string", "null"], "enum": ["EVERY_NOTE", "LONG_NOTE", "LEAP", "PHRASE_START", "PHRASE_END", null]},
+        "requiredNoteOff": {"type": "boolean"},
+        "sourceEvidenceId": {"$ref": "#/$defs/stableId"},
+        "entryHash": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "captureMap": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mapId", "engine", "status", "exactSound", "roles", "playableRange", "triggerRange", "entries", "sourceEvidenceIds", "mapHash"],
+      "properties": {
+        "mapId": {"$ref": "#/$defs/stableId"},
+        "engine": {"enum": ["GUITAR", "RX", "DNC"]},
+        "status": {"enum": ["CONFIRMED", "UNKNOWN", "BLOCKED"]},
+        "exactSound": {"$ref": "#/$defs/exactSound"},
+        "roles": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}},
+        "playableRange": {"$ref": "#/$defs/range"},
+        "triggerRange": {"$ref": "#/$defs/range"},
+        "entries": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/entry"}},
+        "sourceEvidenceIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/stableId"}},
+        "mapHash": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "catalogMap": {
+      "allOf": [
+        {"$ref": "#/$defs/captureMap"},
+        {
+          "type": "object",
+          "required": ["captureHash", "authority", "deviceVerified", "productionEligible", "productionBlock", "catalogEntryHash"],
+          "properties": {
+            "captureHash": {"$ref": "#/$defs/sha256"},
+            "authority": {"enum": ["SOFTWARE_TEST_ONLY", "DEVICE_CAPTURED"]},
+            "deviceVerified": {"type": "boolean"},
+            "productionEligible": {"type": "boolean"},
+            "productionBlock": {"type": ["string", "null"]},
+            "catalogEntryHash": {"$ref": "#/$defs/sha256"}
+          }
+        }
+      ]
+    }
+  }
+}

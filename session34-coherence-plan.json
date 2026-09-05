@@ -1,0 +1,924 @@
+{
+  "schema": "dna-global-coherence-plan",
+  "version": "2.0",
+  "coherenceId": "coherence-7fcd0cc62e142274f02e",
+  "source": {
+    "renderManifestHash": "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1",
+    "baselineMidiSha256": "80462ef34beebb69f048c9de187586ba954b0ded2b69ed0f131922d9278dac27",
+    "arrangementGraphHash": "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b"
+  },
+  "variants": [
+    {
+      "variantId": "A",
+      "operations": [
+        {
+          "variantId": "A",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 24479,
+          "endTick": 24655,
+          "velocity": 117,
+          "beforePitch": 31,
+          "afterPitch": 32,
+          "onOrder": 2236,
+          "offOrder": 2252,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-9502907bf87950ef5b91f74f"
+        },
+        {
+          "variantId": "A",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 26401,
+          "endTick": 26577,
+          "velocity": 124,
+          "beforePitch": 36,
+          "afterPitch": 35,
+          "onOrder": 2456,
+          "offOrder": 2476,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-b2f311b751508bd9a3e8b67f"
+        }
+      ],
+      "metrics": {
+        "midiSha256": "29531d1cff32088c81ebabd4f4178d8c0aea28a36407681f4d6bba631242c6a7",
+        "noteCount": 1400,
+        "operationCount": 2,
+        "globalPeakConcurrentMidiNotes": 14,
+        "variationCurve": [
+          {
+            "marker": "v1cv1",
+            "targetEnergy": 45,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.5421
+          },
+          {
+            "marker": "v2cv1",
+            "targetEnergy": 60,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.3551
+          },
+          {
+            "marker": "v3cv1",
+            "targetEnergy": 80,
+            "noteCount": 251,
+            "densityPerQuarter": 31.375,
+            "meanRegister": 59.1793
+          },
+          {
+            "marker": "v4cv1",
+            "targetEnergy": 93,
+            "noteCount": 316,
+            "densityPerQuarter": 39.5,
+            "meanRegister": 56.0981
+          }
+        ],
+        "fillTargets": [
+          {
+            "marker": "f1cv1",
+            "targetMarker": "v2cv1",
+            "lastBassPitch": 32,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          },
+          {
+            "marker": "f2cv1",
+            "targetMarker": "v4cv1",
+            "lastBassPitch": 35,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          }
+        ],
+        "endingResolutions": [
+          {
+            "marker": "e1cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          },
+          {
+            "marker": "e2cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          }
+        ],
+        "checks": {
+          "pa800HardValidator": true,
+          "nonNoteEventsUnchanged": true,
+          "timingDurationVelocityUnchanged": true,
+          "noAddedOrRemovedNotes": true,
+          "allFillTargetsRealized": true,
+          "allEndingsResolved": true,
+          "softwarePolyphonyCeiling": true
+        }
+      },
+      "variantHash": "93dc4ffbb17464af8fb6e325983a132b45412bd8ed832361526d86b8340164d1"
+    },
+    {
+      "variantId": "B",
+      "operations": [
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "v1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 7680,
+          "endTick": 7837,
+          "velocity": 111,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 412,
+          "offOrder": 424,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-01",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-c1f7679b12148a30e6aa8c98"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "v3cv1",
+          "role": "pad",
+          "channelNumber": 15,
+          "startTick": 15360,
+          "endTick": 15385,
+          "velocity": 127,
+          "beforePitch": 87,
+          "afterPitch": 63,
+          "onOrder": 922,
+          "offOrder": 929,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-05",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-c38d7c3919045a6a7e3c81c8"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "v3cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 15361,
+          "endTick": 15521,
+          "velocity": 119,
+          "beforePitch": 36,
+          "afterPitch": 48,
+          "onOrder": 924,
+          "offOrder": 942,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-05",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-a44920755709c51b2b6b1266"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "v4cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 19200,
+          "endTick": 19205,
+          "velocity": 122,
+          "beforePitch": 48,
+          "afterPitch": 36,
+          "onOrder": 1453,
+          "offOrder": 1469,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-07",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-bd344dda47e0d2773559e68a"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "v4cv1",
+          "role": "riff",
+          "channelNumber": 14,
+          "startTick": 19200,
+          "endTick": 19201,
+          "velocity": 110,
+          "beforePitch": 55,
+          "afterPitch": 67,
+          "onOrder": 1460,
+          "offOrder": 1462,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-07",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-e907f446eb87fff5c5e071dc"
+        },
+        {
+          "variantId": "B",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 24479,
+          "endTick": 24655,
+          "velocity": 117,
+          "beforePitch": 31,
+          "afterPitch": 32,
+          "onOrder": 2236,
+          "offOrder": 2252,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-37a16a01f20c27f3f2c63d39"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "f2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 24960,
+          "endTick": 25490,
+          "velocity": 124,
+          "beforePitch": 36,
+          "afterPitch": 48,
+          "onOrder": 2313,
+          "offOrder": 2366,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-06",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-faf5ecbec5dd09eb8117f501"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "f2cv1",
+          "role": "riff",
+          "channelNumber": 14,
+          "startTick": 25319,
+          "endTick": 25320,
+          "velocity": 113,
+          "beforePitch": 72,
+          "afterPitch": 60,
+          "onOrder": 2345,
+          "offOrder": 2346,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-06",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-36808584151c1ab93f2da8f5"
+        },
+        {
+          "variantId": "B",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 26401,
+          "endTick": 26577,
+          "velocity": 124,
+          "beforePitch": 36,
+          "afterPitch": 35,
+          "onOrder": 2456,
+          "offOrder": 2476,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-bcde81ba8a4409880267d3b9"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "e1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 26880,
+          "endTick": 27113,
+          "velocity": 116,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 2542,
+          "offOrder": 2560,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-08",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-c36c4fff7fe05f463fa544a6"
+        },
+        {
+          "variantId": "B",
+          "kind": "ENDING_RESOLUTION",
+          "marker": "e1cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 30485,
+          "endTick": 30603,
+          "velocity": 69,
+          "beforePitch": 56,
+          "afterPitch": 55,
+          "onOrder": 2829,
+          "offOrder": 2838,
+          "reason": "Existing ending voice resolves inside final chord",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-b5e0c7f5b105f4c64f5ce759"
+        },
+        {
+          "variantId": "B",
+          "kind": "VOICE_LEADING",
+          "marker": "e2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 30720,
+          "endTick": 30957,
+          "velocity": 113,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 2879,
+          "offOrder": 2892,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-09",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-7f88c41be2dfe9b3b935baf7"
+        },
+        {
+          "variantId": "B",
+          "kind": "ENDING_RESOLUTION",
+          "marker": "e2cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 34229,
+          "endTick": 34315,
+          "velocity": 53,
+          "beforePitch": 51,
+          "afterPitch": 52,
+          "onOrder": 3150,
+          "offOrder": 3151,
+          "reason": "Existing ending voice resolves inside final chord",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-8093733617c5058588df846d"
+        }
+      ],
+      "metrics": {
+        "midiSha256": "8ea031decafdb831272ac2dca42f728da1ebc788b4fdbf4db851f803b28f336e",
+        "noteCount": 1400,
+        "operationCount": 13,
+        "globalPeakConcurrentMidiNotes": 14,
+        "variationCurve": [
+          {
+            "marker": "v1cv1",
+            "targetEnergy": 45,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.6542
+          },
+          {
+            "marker": "v2cv1",
+            "targetEnergy": 60,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.3551
+          },
+          {
+            "marker": "v3cv1",
+            "targetEnergy": 80,
+            "noteCount": 251,
+            "densityPerQuarter": 31.375,
+            "meanRegister": 59.1315
+          },
+          {
+            "marker": "v4cv1",
+            "targetEnergy": 93,
+            "noteCount": 316,
+            "densityPerQuarter": 39.5,
+            "meanRegister": 56.0981
+          }
+        ],
+        "fillTargets": [
+          {
+            "marker": "f1cv1",
+            "targetMarker": "v2cv1",
+            "lastBassPitch": 32,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          },
+          {
+            "marker": "f2cv1",
+            "targetMarker": "v4cv1",
+            "lastBassPitch": 35,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          }
+        ],
+        "endingResolutions": [
+          {
+            "marker": "e1cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          },
+          {
+            "marker": "e2cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          }
+        ],
+        "checks": {
+          "pa800HardValidator": true,
+          "nonNoteEventsUnchanged": true,
+          "timingDurationVelocityUnchanged": true,
+          "noAddedOrRemovedNotes": true,
+          "allFillTargetsRealized": true,
+          "allEndingsResolved": true,
+          "softwarePolyphonyCeiling": true
+        }
+      },
+      "variantHash": "58edc3399cff11719d94ff75e1d7bfb61bb476a8316d8cc780e9148a20875ce3"
+    },
+    {
+      "variantId": "C",
+      "operations": [
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "v1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 7680,
+          "endTick": 7837,
+          "velocity": 111,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 412,
+          "offOrder": 424,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-01",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-531f774a1fd1ea426921fdde"
+        },
+        {
+          "variantId": "C",
+          "kind": "MOTIF_CONTOUR",
+          "marker": "v1cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 8521,
+          "endTick": 8531,
+          "velocity": 53,
+          "beforePitch": 63,
+          "afterPitch": 73,
+          "onOrder": 457,
+          "offOrder": 459,
+          "reason": "Reuse Intro contour inside target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-ea37702761dbc5a0ad1fdbc0"
+        },
+        {
+          "variantId": "C",
+          "kind": "MOTIF_CONTOUR",
+          "marker": "v2cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 12359,
+          "endTick": 12369,
+          "velocity": 68,
+          "beforePitch": 63,
+          "afterPitch": 73,
+          "onOrder": 706,
+          "offOrder": 710,
+          "reason": "Reuse Intro contour inside target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-3c915ebf5ed36f0dfe64daa2"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "v3cv1",
+          "role": "pad",
+          "channelNumber": 15,
+          "startTick": 15360,
+          "endTick": 15385,
+          "velocity": 127,
+          "beforePitch": 87,
+          "afterPitch": 63,
+          "onOrder": 922,
+          "offOrder": 929,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-05",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-d2aeecd6c3e01377357cfbe3"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "v3cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 15361,
+          "endTick": 15521,
+          "velocity": 119,
+          "beforePitch": 36,
+          "afterPitch": 48,
+          "onOrder": 924,
+          "offOrder": 942,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-05",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-e782ea37c446f77ac362e55a"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "v4cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 19200,
+          "endTick": 19205,
+          "velocity": 122,
+          "beforePitch": 48,
+          "afterPitch": 36,
+          "onOrder": 1453,
+          "offOrder": 1469,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-07",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-c2659bad341dcefb8ade914f"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "v4cv1",
+          "role": "riff",
+          "channelNumber": 14,
+          "startTick": 19200,
+          "endTick": 19201,
+          "velocity": 110,
+          "beforePitch": 55,
+          "afterPitch": 67,
+          "onOrder": 1460,
+          "offOrder": 1462,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-07",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-c4ca143ae814e5d6790844e7"
+        },
+        {
+          "variantId": "C",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 24479,
+          "endTick": 24655,
+          "velocity": 117,
+          "beforePitch": 31,
+          "afterPitch": 32,
+          "onOrder": 2236,
+          "offOrder": 2252,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-19541df3fb722511d845caf4"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "f2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 24960,
+          "endTick": 25490,
+          "velocity": 124,
+          "beforePitch": 36,
+          "afterPitch": 48,
+          "onOrder": 2313,
+          "offOrder": 2366,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-06",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-200552fbae91ac9908c6cf15"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "f2cv1",
+          "role": "riff",
+          "channelNumber": 14,
+          "startTick": 25319,
+          "endTick": 25320,
+          "velocity": 113,
+          "beforePitch": 72,
+          "afterPitch": 60,
+          "onOrder": 2345,
+          "offOrder": 2346,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-06",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-14706a6a3bd410d1f3079156"
+        },
+        {
+          "variantId": "C",
+          "kind": "FILL_BASS_APPROACH",
+          "marker": "f2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 26401,
+          "endTick": 26577,
+          "velocity": 124,
+          "beforePitch": 36,
+          "afterPitch": 35,
+          "onOrder": 2456,
+          "offOrder": 2476,
+          "reason": "Existing bass note approaches target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-ccbe2404ff0c753529da7483"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "e1cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 26880,
+          "endTick": 27113,
+          "velocity": 116,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 2542,
+          "offOrder": 2560,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-08",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-4117524933c3501464b7a46e"
+        },
+        {
+          "variantId": "C",
+          "kind": "MOTIF_CONTOUR",
+          "marker": "e1cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 26881,
+          "endTick": 27266,
+          "velocity": 69,
+          "beforePitch": 60,
+          "afterPitch": 73,
+          "onOrder": 2548,
+          "offOrder": 2574,
+          "reason": "Reuse Intro contour inside target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-f8d6be3d8ed0b1c3b401a5d4"
+        },
+        {
+          "variantId": "C",
+          "kind": "ENDING_RESOLUTION",
+          "marker": "e1cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 30485,
+          "endTick": 30603,
+          "velocity": 69,
+          "beforePitch": 56,
+          "afterPitch": 55,
+          "onOrder": 2829,
+          "offOrder": 2838,
+          "reason": "Existing ending voice resolves inside final chord",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-cd9afc8d8660086d6b01078f"
+        },
+        {
+          "variantId": "C",
+          "kind": "VOICE_LEADING",
+          "marker": "e2cv1",
+          "role": "bass",
+          "channelNumber": 9,
+          "startTick": 30720,
+          "endTick": 30957,
+          "velocity": 113,
+          "beforePitch": 33,
+          "afterPitch": 45,
+          "onOrder": 2879,
+          "offOrder": 2892,
+          "reason": "Reduce marker-boundary leap while preserving pitch class",
+          "evidenceHashes": [
+            "edge-09",
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-6155b09e72a00cc608066b20"
+        },
+        {
+          "variantId": "C",
+          "kind": "MOTIF_CONTOUR",
+          "marker": "e2cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 31178,
+          "endTick": 31527,
+          "velocity": 53,
+          "beforePitch": 60,
+          "afterPitch": 64,
+          "onOrder": 2906,
+          "offOrder": 2932,
+          "reason": "Reuse Intro contour inside target harmony",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-47be587beda30f6e9fa7f334"
+        },
+        {
+          "variantId": "C",
+          "kind": "ENDING_RESOLUTION",
+          "marker": "e2cv1",
+          "role": "guitar",
+          "channelNumber": 12,
+          "startTick": 34229,
+          "endTick": 34315,
+          "velocity": 53,
+          "beforePitch": 51,
+          "afterPitch": 52,
+          "onOrder": 3150,
+          "offOrder": 3151,
+          "reason": "Existing ending voice resolves inside final chord",
+          "evidenceHashes": [
+            "3a91b73943d26cb753a762f78e35534c3f77b0fd81a28e15777005528ee6142b",
+            "7c1f78b9bf790b22d3be8ce0fb34023044b41b1233692c1dad1c13aaf38231c1"
+          ],
+          "operationId": "coh-2be8d9de29ad20dfcc24476c"
+        }
+      ],
+      "metrics": {
+        "midiSha256": "6207944fa97c2d2eb9f92ebe354d38e4f7e5956f23274def4c7cf2e55b104241",
+        "noteCount": 1400,
+        "operationCount": 17,
+        "globalPeakConcurrentMidiNotes": 14,
+        "variationCurve": [
+          {
+            "marker": "v1cv1",
+            "targetEnergy": 45,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.7477
+          },
+          {
+            "marker": "v2cv1",
+            "targetEnergy": 60,
+            "noteCount": 107,
+            "densityPerQuarter": 13.375,
+            "meanRegister": 51.4486
+          },
+          {
+            "marker": "v3cv1",
+            "targetEnergy": 80,
+            "noteCount": 251,
+            "densityPerQuarter": 31.375,
+            "meanRegister": 59.1315
+          },
+          {
+            "marker": "v4cv1",
+            "targetEnergy": 93,
+            "noteCount": 316,
+            "densityPerQuarter": 39.5,
+            "meanRegister": 56.0981
+          }
+        ],
+        "fillTargets": [
+          {
+            "marker": "f1cv1",
+            "targetMarker": "v2cv1",
+            "lastBassPitch": 32,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          },
+          {
+            "marker": "f2cv1",
+            "targetMarker": "v4cv1",
+            "lastBassPitch": 35,
+            "bassApproachRealized": true,
+            "addedNotes": 0
+          }
+        ],
+        "endingResolutions": [
+          {
+            "marker": "e1cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          },
+          {
+            "marker": "e2cv1",
+            "lastBassPitch": 36,
+            "rootResolutionConfirmed": true
+          }
+        ],
+        "checks": {
+          "pa800HardValidator": true,
+          "nonNoteEventsUnchanged": true,
+          "timingDurationVelocityUnchanged": true,
+          "noAddedOrRemovedNotes": true,
+          "allFillTargetsRealized": true,
+          "allEndingsResolved": true,
+          "softwarePolyphonyCeiling": true
+        }
+      },
+      "variantHash": "adc50801502ca9b4f76daaeb8d069cd63fcf16e9cf561e12245bf5142945bcd6"
+    }
+  ],
+  "audit": {
+    "variantCount": 3,
+    "baselineNoteCount": 1400,
+    "addedNotes": 0,
+    "removedNotes": 0,
+    "timingDurationVelocityMutations": 0,
+    "controllerProgramMarkerMutations": 0,
+    "goldDynamicsAuthority": false,
+    "approximateSoundBinding": false
+  },
+  "safety": {
+    "softwarePreviewOnly": true,
+    "finalCertifiedMidiExportAllowed": false,
+    "humanListening": "PENDING_0_OF_2",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  },
+  "coherencePlanHash": "e135f1ca1faff7f7bed7d395373c13011cab293be61ed348f3c0d87712b3e87d"
+}

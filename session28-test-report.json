@@ -1,0 +1,103 @@
+{
+  "schema": "dna-session28-test-report",
+  "version": "1.0",
+  "date": "2026-09-03",
+  "result": "pass",
+  "scope": "guided-premium-producer-workflow-track-matrix-explain-diff-locks-accessibility-jobs-cancel-resume-and-export-gates",
+  "formalSuite": {
+    "testsRun": 112,
+    "failures": 0,
+    "errors": 0
+  },
+  "benchmark": {
+    "report": "data/session28-benchmark-report.json",
+    "workflowId": "workflow-4aae08a74e9f8bb027db",
+    "workflowHash": "dd2c98395797c1ce5f08a6fe9f65d02c6f62de51b97bc50bda39024417eca911",
+    "stageCount": 8,
+    "completedStageCount": 7,
+    "blockedStageCount": 1,
+    "blockedStageIds": [
+      "EXPORT"
+    ],
+    "timelineItemCount": 10,
+    "trackMatrixRowCount": 4,
+    "explainDecisionCount": 52,
+    "backgroundJobCount": 8,
+    "commandPaletteCount": 10,
+    "baselineNoteCount": 118,
+    "premiumPreviewNoteCount": 179,
+    "addedPreviewNoteCount": 61,
+    "originalNotesChanged": 0,
+    "cc11PointCount": 16,
+    "soundBindingChanges": 0,
+    "automatedQualityScore": 4.088,
+    "verifiedHumanEvaluatorCount": 0,
+    "checkpointReadyToResume": true,
+    "finalExportAllowed": false,
+    "exportBlockers": [
+      "EXPRESSION_PRODUCTION_EVIDENCE_BLOCKED",
+      "PA800_DEVICE_PROFILE_NOT_CERTIFIED",
+      "QUALITY_HUMAN_OVERALL_MEDIAN_BELOW_FOUR_OR_MISSING",
+      "QUALITY_PREMIUM_PREFERENCE_BELOW_SEVENTY_PERCENT_OR_MISSING",
+      "QUALITY_TWO_INDEPENDENT_HUMAN_EVALUATORS_REQUIRED"
+    ],
+    "benchmarkHash": "9ac08c8415fa0bfc9bf2b965bb6889482081b3114521571022096e354179a7f1"
+  },
+  "artifacts": {
+    "referenceMidi": "artifacts/session28-reference.mid",
+    "songMap": "artifacts/session28-song-map.json",
+    "producerBrief": "artifacts/session28-producer-brief.json",
+    "arrangementGraph": "artifacts/session28-arrangement-graph.json",
+    "candidateSet": "artifacts/session28-candidate-set.json",
+    "groovePlan": "artifacts/session28-groove-plan.json",
+    "expressionPlan": "artifacts/session28-expression-plan.json",
+    "previewSession": "artifacts/session28-preview-session.json",
+    "evaluationReport": "artifacts/session28-evaluation-report.json",
+    "workflowControls": "artifacts/session28-workflow-controls.json",
+    "premiumWorkflow": "artifacts/session28-premium-workflow.json",
+    "workflowDiff": "artifacts/session28-workflow-diff.json",
+    "recoveryCheckpoint": "artifacts/session28-recovery-checkpoint.json",
+    "resumeReport": "artifacts/session28-resume-report.json",
+    "blindListeningPackage": "artifacts/session28-blind-listening-package.json",
+    "audioManifests": "artifacts/session28-audio-manifests.json",
+    "baselineReference": "artifacts/session28-baseline-reference.json",
+    "validatorVerdict": "artifacts/session28-validator-verdict.json",
+    "schemaCatalog": "data/session28-schema-catalog.json"
+  },
+  "transports": {
+    "cli": "session28_premium_workflow.py",
+    "api": "/api/premium-producer-workflow",
+    "guiWorkspace": "PREMIUM PRODUCER WORKFLOW 2.0",
+    "apiGuiParity": true
+  },
+  "invariants": {
+    "oneGuidedWorkflow": true,
+    "eightOrderedStages": true,
+    "allTenPa800ElementsVisible": true,
+    "trackMatrixVisible": true,
+    "explainAndDiffVisible": true,
+    "globalAndElementLocks": true,
+    "partialRegenerationControl": true,
+    "commandPaletteAndShortcuts": true,
+    "keyboardReachableHighContrast": true,
+    "backgroundJobs": true,
+    "safeCancelResumeRecovery": true,
+    "originalNotesChanged": 0,
+    "soundBindingChanges": 0,
+    "goldAffectsDynamics": false,
+    "readOnly": true,
+    "midiMutationAllowed": false,
+    "finalMidiGenerated": false,
+    "qualityGateBypassAllowed": false,
+    "deviceGateBypassAllowed": false
+  },
+  "status": {
+    "session28PremiumProducerWorkflow": "SOFTWARE_VALIDATED / EXPORT_GATES_PENDING",
+    "activeSoftwareBaseline": "4.6-workflow-alpha",
+    "guidedProducerWorkflow": "REFERENCE_TASK_COMPLETE",
+    "finalMidiExport": "BLOCKED_QUALITY_DEVICE_AND_EVIDENCE",
+    "humanListeningEvidence": "0/2 VERIFIED",
+    "aiPremiumArranger": "PLANNED",
+    "physicalPa800": "WAITING_FOR_DEVICE"
+  }
+}

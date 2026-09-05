@@ -1,0 +1,26 @@
+{
+  "schema": "dna-premium-blind-listening-key",
+  "version": "1.0",
+  "benchmarkId": "blind-392726dc2c8d0f5c203c",
+  "mappings": [
+    {
+      "trialId": "trial-001",
+      "baselineVariantId": "A",
+      "premiumVariantId": "B",
+      "clipRoles": {
+        "clip-d90518ae4e636b95bf73": "BASELINE",
+        "clip-f57a83d7776b199c9b95": "PREMIUM"
+      }
+    },
+    {
+      "trialId": "trial-002",
+      "baselineVariantId": "A",
+      "premiumVariantId": "C",
+      "clipRoles": {
+        "clip-f91e61713024d1a221ec": "PREMIUM",
+        "clip-6136841dfc48e1ca4f78": "BASELINE"
+      }
+    }
+  ],
+  "keyHash": "5466c2f5f872eefa989c24cedc76fd251fd58c9d5377b612fccc6624e0a38476"
+}

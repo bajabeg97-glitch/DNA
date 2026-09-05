@@ -1,0 +1,705 @@
+{
+  "schema": "dna-premium-quality-corpus",
+  "version": "2.0",
+  "date": "2026-09-03",
+  "license": "self-authored-test-fixtures",
+  "locked": true,
+  "selectionPolicy": "STRATIFIED_BEFORE_SCORING_EVERY_FOURTH_CASE_HOLDOUT",
+  "caseCount": 32,
+  "splits": {
+    "train": 24,
+    "holdout": 8
+  },
+  "sourceCorpora": [
+    {
+      "id": "session19",
+      "caseCount": 20,
+      "contentHash": "ee6ed6fae429959b42a92c258969e1ac8a1c25cbe7b9afc3291074c64e201bae"
+    },
+    {
+      "id": "session37-expansion",
+      "caseCount": 12,
+      "contentHash": "2a664f61396a4a22e514a4b106bb18776848c664f934393aec068ab15d13ec79"
+    }
+  ],
+  "cases": [
+    {
+      "caseId": "song19-01",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-01.mid",
+      "midiSha256": "c992893d6ab4ceb8ec0851212ab6212e734794c9b048887534b24dd2638e1833",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop-folk",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-02",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-02.mid",
+      "midiSha256": "978cb8c9d0bd418c0a672e126ab1d3851e337faa593aa7a9fb2e6e6732f815a4",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-03",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-03.mid",
+      "midiSha256": "8d2f5ed73da74b801429442a8660d636fc40d6b684c4ceab19ba80bd74ca76da",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "ballad",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-04",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-04.mid",
+      "midiSha256": "4ddd19404e86a7fb213ad5d1d8b5f31fc8ef6a65fe1634042838180d4e6a1735",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "dance",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-05",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-05.mid",
+      "midiSha256": "988fb63407d3bb7af9e5318e76057606091545a24da379a3a4451bc21aa9815c",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "waltz",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 44,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-06",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-06.mid",
+      "midiSha256": "57b03ea44f83b2c5a8e6cfe03af60f41f160ff539eee26a895b09601f6c754eb",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "rock",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 44,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-07",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-07.mid",
+      "midiSha256": "2b5a1abc1c564f3c12e54aa82e210ea35b0f32879577cbdbcf3e08485a1a014e",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "acoustic",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-08",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-08.mid",
+      "midiSha256": "370c38dd6eb1a1eb4d2ce93f181ad82484e43763d756a711e8422150eec10a76",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop-folk",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-09",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-09.mid",
+      "midiSha256": "c313b8b51ea7a07e11695daa7d21b972edee65b635682f82f3e35d58dfe298ff",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "1de73472d23826f9132e3f901031ac7a691f207605cd2de4c51b69c9c86df13f",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-10",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-10.mid",
+      "midiSha256": "4254113ede8c6e78a8a51121c063102f7c5f9ab4154dcdf11953699a48810ded",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "ballad",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 45,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "074aae0d6aae9a92f513fd4d6d00d43db813a122c65771fb3a661df8b99b2577",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-11",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-11.mid",
+      "midiSha256": "4c54bb247432d9145b8fb2d24a52eb04e1247570ac6257ef829abaf0ba03cb2f",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "dance",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 45,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "ff4abe4055fa40c524c0bd519e90efd46071b40d9a908db79733849e749038eb",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-12",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-12.mid",
+      "midiSha256": "5767fb11d0a8a1793ad4b204f1a5e07017642e62f0b0b44ffda38ed6b8bc3f36",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "waltz",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-13",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-13.mid",
+      "midiSha256": "b38c7b7b37f76fc2dc97d130620e4ee9ad60f77f5d0257b6720da5151916a746",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "rock",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-14",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-14.mid",
+      "midiSha256": "53ad5edd21be5676966653f5f3f38f0acb7e72b5d85dd6470fd8f2e30ce74c94",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "acoustic",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-15",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-15.mid",
+      "midiSha256": "9f1267e37e3247cacbf6379f5ab308917bdeb09fa29c2cc48e5c2aa22f4dc228",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop-folk",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-16",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-16.mid",
+      "midiSha256": "7e83ff2ff96da2f815a11de9319f095a107df680e4ff99d03956c88772aa2a31",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-17",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-17.mid",
+      "midiSha256": "0f4ced483c5c778dd38513df6d0f1093f64fa2c4a4cddfc29f8cc03ca383f60a",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "ballad",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 44,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-18",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-18.mid",
+      "midiSha256": "4677d242b5d9b947e479dbbdc61d488cbc33662d2b2d17b4142c0fb547c41d39",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "dance",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 44,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-19",
+      "split": "TRAIN",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-19.mid",
+      "midiSha256": "3f6d8c0144ea941eeaf7daeb23f5b50424c9ee9360ed868d317c69ed696b2db4",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "waltz",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "song19-20",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION19_LOCKED",
+      "midiPath": "artifacts/session19-benchmark/song19-20.mid",
+      "midiSha256": "67423b95cdfa19f6e0e26e61f0ddedd9452518f888164cd0697aac8b5143418c",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "rock",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "quality37-21",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-21.mid",
+      "midiSha256": "ed7d1b58a1c913a2018279088c1418c7c24d65530789150286c4dee612211e74",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "acoustic",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 102,
+        "pitchSpan": 35,
+        "durationTicks": 15350,
+        "meter": "3/4"
+      },
+      "annotationHash": "1de73472d23826f9132e3f901031ac7a691f207605cd2de4c51b69c9c86df13f",
+      "densityClass": "LOW"
+    },
+    {
+      "caseId": "quality37-22",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-22.mid",
+      "midiSha256": "f64b4adea79c635f6e4586b0f8054f86f1b9f4291cc00eb8dbfc68d74e03788a",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop-folk",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 45,
+        "durationTicks": 15350,
+        "meter": "6/8"
+      },
+      "annotationHash": "074aae0d6aae9a92f513fd4d6d00d43db813a122c65771fb3a661df8b99b2577",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "quality37-23",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-23.mid",
+      "midiSha256": "6ee3fa8d7c98cc1d0d2b261441701d9fe951d3b178ab1ec5a0f3122781a07dec",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 134,
+        "pitchSpan": 57,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "ff4abe4055fa40c524c0bd519e90efd46071b40d9a908db79733849e749038eb",
+      "densityClass": "HIGH"
+    },
+    {
+      "caseId": "quality37-24",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-24.mid",
+      "midiSha256": "8d22c7f5df85e75b196eab65bd7ad141b231f10e9323765c408e75ea9b86382d",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "ballad",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 102,
+        "pitchSpan": 35,
+        "durationTicks": 15350,
+        "meter": "3/4"
+      },
+      "annotationHash": "85ed8c9642956a1c5dbaf977d0c594cf2c2408b28fc940b9fb1f21e96f637b32",
+      "densityClass": "LOW"
+    },
+    {
+      "caseId": "quality37-25",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-25.mid",
+      "midiSha256": "761ae309fcda3ca200806803fc04ba66ce430ae26f8a6773de721ddaec8c7134",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "dance",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "6/8"
+      },
+      "annotationHash": "12fc0d41af440d2417541f34cb3eff3544707524807ef2a5cd25043a48cf1826",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "quality37-26",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-26.mid",
+      "midiSha256": "7d54484da6b5f9261f6945109213ecfd1f474863f57475022a5cdbeae961f2a1",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "waltz",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 134,
+        "pitchSpan": 58,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "ea038205403811e4bbd43e19ea5fd66f7a8565a0607f67512af01cc5caa65a83",
+      "densityClass": "HIGH"
+    },
+    {
+      "caseId": "quality37-27",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-27.mid",
+      "midiSha256": "4b082c09cf196d1797e4e7b7fd31ef3fb68f2a28ed6c19020c6dba1c5001912a",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "rock",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 102,
+        "pitchSpan": 34,
+        "durationTicks": 15350,
+        "meter": "3/4"
+      },
+      "annotationHash": "45e8887af8f853e47b9d9e9ead331250e9cd7d58975b5e596fb9c9c112bd7a3a",
+      "densityClass": "LOW"
+    },
+    {
+      "caseId": "quality37-28",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-28.mid",
+      "midiSha256": "04c039696fd37ca2a63bb2962bab229b65175095b9b46775ae01a31a747556e3",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "acoustic",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 46,
+        "durationTicks": 15350,
+        "meter": "6/8"
+      },
+      "annotationHash": "e15fb6f1b356406e80132b9d9ce90ff317bc3ed49f122a7ace99764f7f4a2354",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "quality37-29",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-29.mid",
+      "midiSha256": "ab2b3b17098a85c02d4948cfcf2d27f112e5eba3ef88406b9f53b97853afb39c",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop-folk",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 134,
+        "pitchSpan": 56,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "312b7318e47e2429e615e3a8b752bcb6e592e428fcf8ff90abb340a2947f8c88",
+      "densityClass": "HIGH"
+    },
+    {
+      "caseId": "quality37-30",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-30.mid",
+      "midiSha256": "6ea8051c1fb5a27bea1cc7b83fed5fede71d3a79a69f744d5ed0257a2cc0550e",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "pop",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 102,
+        "pitchSpan": 35,
+        "durationTicks": 15350,
+        "meter": "3/4"
+      },
+      "annotationHash": "f4ead2575515a910ec3d85f9c94320b87f11f0c1b288ed49ecd18a05fbbef14b",
+      "densityClass": "LOW"
+    },
+    {
+      "caseId": "quality37-31",
+      "split": "TRAIN",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-31.mid",
+      "midiSha256": "fad90fd1e5943b42194b63251d6c34fe9669d52c5e5e768aee367ef82a595b41",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "ballad",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 118,
+        "pitchSpan": 47,
+        "durationTicks": 15350,
+        "meter": "6/8"
+      },
+      "annotationHash": "645088e62aea206cd21e62bce7f67131503c21df4394ab58fa6812e67ebb606c",
+      "densityClass": "MEDIUM"
+    },
+    {
+      "caseId": "quality37-32",
+      "split": "HOLDOUT",
+      "sourceKind": "SESSION37_SELF_AUTHORED",
+      "midiPath": "artifacts/session37-corpus/quality37-32.mid",
+      "midiSha256": "c4d6206579de087021fc6a4d0f1c6384cb7ce890cc5e89d4ae556f3de41567d4",
+      "license": "SELF_AUTHORED_FIXTURE",
+      "genre": "dance",
+      "formClass": "INTRO_VERSE_CHORUS_ENDING",
+      "features": {
+        "format": 1,
+        "ppq": 480,
+        "trackCount": 5,
+        "noteCount": 134,
+        "pitchSpan": 59,
+        "durationTicks": 15350,
+        "meter": "4/4"
+      },
+      "annotationHash": "96fad146cda063d0f686995227500eefb7299c1d39ae9a232ace576d689a111b",
+      "densityClass": "HIGH"
+    }
+  ],
+  "holdoutPolicy": {
+    "labelsVisibleToCalibration": false,
+    "thresholdChangesAfterHoldout": false,
+    "hardSafetyThresholdWeakening": false
+  },
+  "corpusHash": "d84320f2cb4d70a4d0228f94016f1555845b1e70bf1dabc9c13627302f62ce95"
+}
