@@ -189,11 +189,11 @@ pre{font-size:10.6px;max-height:300px;overflow:auto;color:#9db8dc;white-space:pr
    <div id="filetag"><span class="chipf"><span id="ftName"></span><button class="x" onclick="clearFile()">✕</button></span></div>
    <div class="ci">
     <button class="ib" id="clip" title="Priloži MIDI fajl">📎<input id="file" type="file" accept=".mid,.midi,.kar" onchange="pickedFile()" style="position:absolute;inset:0;opacity:0;cursor:pointer"></button>
-    <textarea id="inp" rows="1" placeholder="Npr. „analiziraj reference-style” ili „primeni sve” — ili priloži fajl…"></textarea>
+    <textarea id="inp" rows="1" placeholder="Npr. „analiziraj reference-style” / „primeni sve” · prazan Enter = primeni sve READY · ili priloži fajl…"></textarea>
     <button class="ib send" id="send" onclick="onSend()">➤</button>
    </div>
    <div style="max-width:880px;margin:6px auto 0;display:flex;gap:8px;align-items:center">
-    <span class="hint" id="hint" style="margin:0;flex:1">Prikači MIDI (drag &amp; drop ili 📎) pa Enter — Session Pass analiza sa kapijama i akcijama.</span>
+    <span class="hint" id="hint" style="margin:0;flex:1">Prikači MIDI (drag &amp; drop ili 📎) pa Enter — Session Pass analiza sa kapijama i akcijama. Prazan Enter posle analize = primeni sve READY.</span>
     <button class="btn ghost" onclick="newSession()" style="padding:4px 10px;font-size:11px">＋ nova sesija</button>
    </div>
   </div>
@@ -446,7 +446,7 @@ function askBrain(text) {
 function greeting() {
   addBot('<h4 style="margin:0 0 6px">Dobar dan! 👋</h4>' +
     '<p style="margin:0 0 4px">Ja sam <b>DNA Studio</b> — analiziram tvoj MIDI, merim šta fabrika svira po ulogama i nudim <b>optimizacije sa kapijama</b> za Korg Pa800. Od 4.71 mogu i da <b>komponujem u ćaskanju</b>: reci „napravi rock pesmu”.</p>' +
-    '<p style="margin:4px 0 0;color:var(--muted)">Prikači fajl ili klikni demo. Možeš i da kucaš: „analiziraj reference-style”, „primeni sve”.</p>' +
+    '<p style="margin:4px 0 0;color:var(--muted)">Prikači fajl ili klikni demo. Možeš i da kucaš: „analiziraj reference-style”, „primeni sve” — ili ništa ne upišeš pa Enter (primenjuje sve READY akcije).</p>' +
     '<div class="sugg"><button onclick="demo(\'reference-style\')">▶ demo: reference-style</button>' +
     '<button onclick="demo(\'fixture\')">▶ demo: fixture</button>' +
     '<button onclick="demo(\'session35\')">▶ demo: session35</button>' +
@@ -456,14 +456,14 @@ function help() {
   addUser('šta sve možeš?');
   addBot('<h4 style="margin:0 0 8px">Šta mogu da uradim?</h4>' +
     card('<p>• <b>Analiza</b>: priloži <code>.mid/.midi/.kar</code> — prepoznajem Pa800 markere (i1cv1…e2cv1), uloge kanala, groove naspram pravih bubnjara (4.54), tehnike (4.55), prepoznavanje obrazaca (4.65).</p>' +
-    '<p>• <b>Plan</b>: akcije sa statusima — <span class="badge READY">READY</span>, <span class="badge NEEDS_DECISION">ODLUKA</span>, <span class="badge LOCKED">ZAKLJUČANO</span>; primena u <i>novim</i> fajlovima.</p>' +
+    '<p>• <b>Plan</b>: akcije sa statusima — <span class="badge READY">READY</span>, <span class="badge NEEDS_DECISION">ODLUKA</span>, <span class="badge LOCKED">ZAKLJUČANO</span>; primena u <i>novim</i> fajlovima. Napiši „primeni sve” — ili samo pritisni <b>Enter sa praznim poljem</b>.</p>' +
     '<p>• <b>Generisanje</b>: levi meni → <b>Kompozitor</b> — nove pesme kao .mid za Pa800 sa scorecard dokazima. U ćaskanju: „napravi rock pesmu”, „komponuj ballad sa seed 7”.</p>' +
     '<p style="margin-bottom:0">• <b>Model trening</b>: levi meni → opcije S3 (n-gram / mikro-GPT nad korpusom od 843.545 tokena).</p>'));
 }
 function pickedFile() {
   const f = $('file').files[0];
   if (!f) return;
-  state.file = f; state.kind = 'upload'; state.payload = null;
+  state.file = f; state.kind = 'upload'; state.payload = null; state.lastPlan = null;
   $('ftName').textContent = '📄 ' + f.name + ' (' + fmtBytes(f.size) + ')';
   $('filetag').style.display = 'block';
   $('hint').textContent = 'Enter = analiziraj „' + f.name + '”';
@@ -471,7 +471,7 @@ function pickedFile() {
 function clearFile() {
   $('file').value = ''; state.file = null; state.kind = null;
   $('filetag').style.display = 'none';
-  $('hint').textContent = 'Prikači MIDI (drag &amp; drop ili 📎) pa Enter.';
+  $('hint').textContent = 'Prikači MIDI (drag & drop ili 📎) pa Enter. Prazan Enter posle analize = primeni sve READY.';
 }
 function newSession() {
   state = { kind: null, payload: null, roles: '', file: null, lastPlan: null, thinking: false };
@@ -503,11 +503,11 @@ function demo(id) {
 }
 function onSend() {
   const t = $('inp').value.trim();
-  if (!t && !state.file) return;
   if (state.thinking) return;
   $('inp').value = ''; autosize();
   const cmd = t.toLowerCase();
   if (t) addUser(esc(t));
+  if (!t) { emptyEnter(); return; }
   if (/pomoć|help|sta sve|šta sve/.test(cmd)) { help(); return; }
   if (/pravila|licenc|invarijant/.test(cmd)) { go('rules'); return; }
   if (/analiziraj|obradi|analize/.test(cmd)) {
@@ -517,7 +517,7 @@ function onSend() {
     addBot(card('<p>Za analizu: <b>priloži fajl</b> (📎 ili drag&amp;drop) ili napiši npr. <i>„analiziraj reference-style”</i>.</p>'));
     return;
   }
-  if (/^primeni/.test(cmd)) {
+  if (/^prim(e|je|ije)ni/.test(cmd)) {
     let ids = [];
     const mm = cmd.match(/A0\d/g);
     if (mm) ids = mm;
@@ -528,6 +528,18 @@ function onSend() {
     return;
   }
   askBrain(t);
+}
+function emptyEnter() {
+  // prazan Enter = „primeni sve”: sve READY akcije iz poslednjeg plana
+  const plan = state.lastPlan;
+  if (plan) {
+    const ready = ((plan.actions) || []).filter((a) => a.status === 'READY');
+    if (ready.length) { analyze(true, ready.map((a) => a.id).join(',')); return; }
+    addBot(card('<p>Plan postoji, ali nema <span class="badge READY">READY</span> akcija za primenu — kapija primenjuje samo spremne (LOCKED / akcije koje traže odluku se preskaču).</p>'));
+    return;
+  }
+  if (state.file || state.kind === 'preset') { analyze(false, ''); return; }
+  addBot(card('<p>Ništa nije spremno za primenu. Priloži <b>MIDI</b> (📎 ili drag &amp; drop), klikni <b>demo</b> iz menija ili ukucaj npr. <i>„analiziraj reference-style”</i>.<br><span style="color:var(--muted)">Posle analize — prazan Enter = „primeni sve” (sve READY).</span></p>'));
 }
 function analyze(apply, actions) {
   if (state.thinking) return;

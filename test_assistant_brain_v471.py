@@ -45,6 +45,9 @@ class NluV471Test(unittest.TestCase):
             ("odlično, bravo", "thanks", None, None),
             ("napravi analizu reference-style", "analyze", None, None),
             ("primeni A01 A02", "apply", None, None),
+            ("primjeni sve", "apply", None, None),
+            ("primjeni A01 A02", "apply", None, None),
+            ("primijeni sve", "apply", None, None),
             ("šta znači LOCKED", "explain", None, None),
         ]
 

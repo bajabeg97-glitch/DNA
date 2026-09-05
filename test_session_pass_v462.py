@@ -59,6 +59,28 @@ class PerActionApplyTests(unittest.TestCase):
             self.assertTrue(any("session-sty-" in f for f in files))
             self.assertTrue(any("session-mixed-" in f for f in files))
 
+    # ---- 4.71: kratki ID-jevi iz teksta (GUI/„primeni A01”, asistent) ----
+    def test_short_ids_select_full_actions_471(self):
+        with tempfile.TemporaryDirectory() as td:
+            r = run({"A01", "A02"}, td)
+            st = {a["id"]: a["status"] for a in r["actions"]}
+            self.assertEqual(st["A01_STY_EXPORT"], "APPLIED")
+            self.assertEqual(st["A02_PERCUSSION_CC11_GAIN"], "APPLIED")
+
+    def test_short_unknown_id_applies_nothing_471(self):
+        with tempfile.TemporaryDirectory() as td:
+            r = run({"A99"}, td)
+            st = {a["id"]: a["status"] for a in r["actions"]}
+            self.assertEqual(st["A01_STY_EXPORT"], "READY")
+            self.assertEqual(st["A02_PERCUSSION_CC11_GAIN"], "READY")
+
+    def test_mixed_short_and_full_ids_471(self):
+        with tempfile.TemporaryDirectory() as td:
+            r = run({"A01", "A02_PERCUSSION_CC11_GAIN"}, td)
+            st = {a["id"]: a["status"] for a in r["actions"]}
+            self.assertEqual(st["A01_STY_EXPORT"], "APPLIED")
+            self.assertEqual(st["A02_PERCUSSION_CC11_GAIN"], "APPLIED")
+
     def test_source_bytes_never_modified_by_apply(self):
         before = RAW
         with tempfile.TemporaryDirectory() as td:

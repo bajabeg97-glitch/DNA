@@ -134,6 +134,19 @@ def _trim_melody(block: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+def wants_action(apply_actions: set[str] | None, action_id: str) -> bool:
+    """Da li se akcija sme primeniti: bez filtera, pun ID, ili kratki prefiks.
+
+    4.71: GUI i asistent šalju kratke ID-jeve iz teksta („primeni A01”) —
+    „A01” selektuje „A01_STY_EXPORT”; puni ID-jevi i dalje rade kao u 4.62.
+    """
+    if apply_actions is None:
+        return True
+    if action_id in apply_actions:
+        return True
+    return any(a and action_id.startswith(a) for a in apply_actions)
+
+
 def session_pass(raw: bytes, *, source_name: str,
                  role_map: dict[int, str] | None = None,
                  melody_channels: list[int] | None = None,
@@ -223,8 +236,7 @@ def session_pass(raw: bytes, *, source_name: str,
                 "effect": "Pa800-importable SMF0 with per-element setup",
                 "gates": sty_gates,
             })
-            if apply_safe and export_ok and out_dir and (
-                    apply_actions is None or "A01_STY_EXPORT" in apply_actions):
+            if apply_safe and export_ok and out_dir and wants_action(apply_actions, "A01_STY_EXPORT"):
                 p = Path(out_dir)
                 p.mkdir(parents=True, exist_ok=True)
                 stem = Path(source_name).stem
@@ -255,8 +267,7 @@ def session_pass(raw: bytes, *, source_name: str,
             "effect": "per-channel CC11 expression scaled -45% on percussion",
             "gates": gates,
         })
-        if apply_safe and ok and out_dir and (
-                apply_actions is None or "A02_PERCUSSION_CC11_GAIN" in apply_actions):
+        if apply_safe and ok and out_dir and wants_action(apply_actions, "A02_PERCUSSION_CC11_GAIN"):
             p = Path(out_dir)
             p.mkdir(parents=True, exist_ok=True)
             stem = Path(source_name).stem

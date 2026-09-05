@@ -53,7 +53,7 @@ EXPLAIN_WORDS = ["objasni", "zasto", "zašto", "kako to", "sto je", "što je", "
 SUMMARIZE_WORDS = ["sažmi", "sazmi", "ukratko", "rezime", "sta si izmerio", "šta si izmerio",
                    "sta si nasao", "šta si našao", "sta si uradio", "šta si uradio"]
 ANALYZE_WORDS = ["analiziraj", "obradi", "analize", "analizu", "analizirati"]
-APPLY_WORDS = ["primeni", "apply"]
+APPLY_WORDS = ["primeni", "primjeni", "primijeni", "primenj", "primjenj", "primijenj", "apply"]
 # 4.71: zahtevi za komponovanje (kompozitor postoji od 4.70) — vode u
 # compose_request intent; tool {type:"composeSong"} kad znamo stil.
 COMPOSE_WORDS = ["napravi", "napis", "napiši", "napiš", "skladaj", "skladi", "komponuj",
