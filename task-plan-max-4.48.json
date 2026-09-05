@@ -1,0 +1,148 @@
+{
+  "schema": "dna-max-4.48-task-plan",
+  "version": "1.0",
+  "milestone": "MAX full reactivation plan (4.48)",
+  "date": "2026-09-05",
+  "decisionChain": [
+    "B-archive (4.47)",
+    "user override: execute the whole MAX plan",
+    "A-execute with 13-agent team (4.48)"
+  ],
+  "agents": [
+    "orchestrator-max",
+    "registry-engineer",
+    "layout-architect",
+    "data-inspector",
+    "replacement-engineer",
+    "evidence-guard",
+    "pa800-validator",
+    "max-rank-auditor",
+    "test-engineer",
+    "regression-auditor",
+    "docs-agent",
+    "release-agent",
+    "web-integration-scout"
+  ],
+  "tasks": [
+    {
+      "taskId": "T1",
+      "agent": "orchestrator-max",
+      "task": "Define 13-agent team + distribute deliverables",
+      "acceptance": "agent-team-max-4.48.json + task-plan-max-4.48.json",
+      "deliverable": "team files",
+      "state": "done"
+    },
+    {
+      "taskId": "T2",
+      "agent": "registry-engineer",
+      "task": "Fix MaxModelRegistry layout resolution",
+      "acceptance": "registry scan shows present 10/10",
+      "deliverable": "reports-max-4.48/01-registry-scan.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T3",
+      "agent": "layout-architect",
+      "task": "Author max_layout.py resolver",
+      "acceptance": "flat+classic detection",
+      "deliverable": "reports-max-4.48/02-layout-map.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T4",
+      "agent": "data-inspector",
+      "task": "Inventory models + sha256 vs 4.32",
+      "acceptance": "all 10 present, sha stable",
+      "deliverable": "reports-max-4.48/03-model-inventory.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T5",
+      "agent": "replacement-engineer",
+      "task": "Build max_activation.py executor/CLI",
+      "acceptance": "module imports clean; CLI registered",
+      "deliverable": "dna_midi_studio/max_activation.py",
+      "state": "queued"
+    },
+    {
+      "taskId": "T6",
+      "agent": "replacement-engineer",
+      "task": "Run end-to-end REPLACE (bass bars 6-9) on session35 fixture",
+      "acceptance": "A/B/C mids + run report",
+      "deliverable": "reports-max-4.48/04-replacement-run.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T7",
+      "agent": "evidence-guard",
+      "task": "Gate checks on outputs",
+      "acceptance": "gate table all pass",
+      "deliverable": "reports-max-4.48/05-evidence-gates.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T8",
+      "agent": "pa800-validator",
+      "task": "SMF/PA800 validation on outputs",
+      "acceptance": "honest classification",
+      "deliverable": "reports-max-4.48/06-pa800-gate.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T9",
+      "agent": "max-rank-auditor",
+      "task": "Recompute MAX scores independently",
+      "acceptance": "math matches run",
+      "deliverable": "reports-max-4.48/07-rank-audit.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T10",
+      "agent": "test-engineer",
+      "task": "New v448 tests + execute",
+      "acceptance": "suite green",
+      "deliverable": "reports-max-4.48/08-test-results.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T11",
+      "agent": "regression-auditor",
+      "task": "Legacy v432 tests + untouched scope proof",
+      "acceptance": "legacy green + scope proof",
+      "deliverable": "reports-max-4.48/09-regression-scope.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T12",
+      "agent": "docs-agent",
+      "task": "README/review/usage guide",
+      "acceptance": "docs merged",
+      "deliverable": "docs/max-activation-4.48.md",
+      "state": "queued"
+    },
+    {
+      "taskId": "T13",
+      "agent": "web-integration-scout",
+      "task": "Web mapping notes",
+      "acceptance": "advisory note",
+      "deliverable": "reports-max-4.48/10-web-integration-notes.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T14",
+      "agent": "release-agent",
+      "task": "4.48 status + completion reports",
+      "acceptance": "json valid",
+      "deliverable": "max-orchestration-status-4.48.json",
+      "state": "queued"
+    },
+    {
+      "taskId": "T15",
+      "agent": "orchestrator-max",
+      "task": "Final review + push",
+      "acceptance": "branch pushed",
+      "deliverable": "git history",
+      "state": "queued"
+    }
+  ]
+}

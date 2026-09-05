@@ -1,0 +1,186 @@
+{
+  "schema": "dna-max-4.48-agent-team",
+  "version": "1.0",
+  "manager": "orchestrator-max",
+  "invariants": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldAffectsDynamics": false,
+    "agentCannotExportMidi": true,
+    "finalValidatorRequired": true,
+    "defaultProductionFlowUntouched": true
+  },
+  "agents": [
+    {
+      "id": "orchestrator-max",
+      "role": "manager",
+      "platform": "arena-agent",
+      "responsibilities": [
+        "sequence the 4.48 MAX reactivation plan",
+        "assign deliverables to specialists",
+        "record decisions and final status"
+      ],
+      "deliverables": [
+        "task-plan-max-4.48.json",
+        "max-orchestration-status-4.48.json"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "registry-engineer",
+      "role": "implementation",
+      "responsibilities": [
+        "make MaxModelRegistry resolve both classic (data/models) and flattened repo layout",
+        "keep registry dependency-free",
+        "prove 10/10 models present"
+      ],
+      "deliverables": [
+        "dna_midi_studio/ai_learning/max_orchestrator.py",
+        "reports-max-4.48/01-registry-scan.json"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "layout-architect",
+      "role": "implementation",
+      "responsibilities": [
+        "author layout resolver for flat vs classic workspace",
+        "document logical dir mapping used by engine and registry"
+      ],
+      "deliverables": [
+        "dna_midi_studio/max_layout.py",
+        "reports-max-4.48/02-layout-map.json"
+      ],
+      "status": "done"
+    },
+    {
+      "id": "data-inspector",
+      "role": "data-quality",
+      "responsibilities": [
+        "inventory all 10 MAX models",
+        "verify weights/key consistency and sha256 stability vs 4.32 status"
+      ],
+      "deliverables": [
+        "reports-max-4.48/03-model-inventory.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "replacement-engineer",
+      "role": "implementation",
+      "responsibilities": [
+        "build opt-in MAX activation executor + CLI",
+        "run real REPLACE on repo fixture through TrackReplacementEngine",
+        "emit A/B/C midi artifacts with maxOrchestration report"
+      ],
+      "deliverables": [
+        "dna_midi_studio/max_activation.py",
+        "artifacts-max-4.48/*.mid",
+        "reports-max-4.48/04-replacement-run.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "evidence-guard",
+      "role": "hard-validator",
+      "responsibilities": [
+        "verify post-run invariants: velocity FACTORY_ONLY, no gold/neural velocity, protected events preserved, midi reparses",
+        "report gate table"
+      ],
+      "deliverables": [
+        "reports-max-4.48/05-evidence-gates.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "pa800-validator",
+      "role": "device-validator",
+      "responsibilities": [
+        "run SMF/PA800 validation on produced midis",
+        "classify song-midi vs style compliance honestly"
+      ],
+      "deliverables": [
+        "reports-max-4.48/06-pa800-gate.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "max-rank-auditor",
+      "role": "independent-verifier",
+      "responsibilities": [
+        "independently recompute MAX ranking math on real run snapshot",
+        "confirm rankingOnly semantics and breakdowns"
+      ],
+      "deliverables": [
+        "reports-max-4.48/07-rank-audit.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "test-engineer",
+      "role": "implementation",
+      "responsibilities": [
+        "author registry + activation tests",
+        "execute full max test suite and record results"
+      ],
+      "deliverables": [
+        "test_max_registry_v448.py",
+        "test_max_activation_v448.py",
+        "reports-max-4.48/08-test-results.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "regression-auditor",
+      "role": "data-quality",
+      "responsibilities": [
+        "keep legacy 4.32 max tests runnable",
+        "prove production pipeline modules untouched (unified_pipeline/role_aware/song_understanding)"
+      ],
+      "deliverables": [
+        "test_max_orchestrator_v432.py",
+        "test_max_transition_application_v432.py",
+        "reports-max-4.48/09-regression-scope.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "docs-agent",
+      "role": "documentation",
+      "responsibilities": [
+        "update README + review document",
+        "write activation usage guide"
+      ],
+      "deliverables": [
+        "README.md",
+        "max-orchestration-review-4.47.md",
+        "docs/max-activation-4.48.md"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "release-agent",
+      "role": "release",
+      "responsibilities": [
+        "author 4.48 status + completion reports",
+        "record decision B->A reactivation chain"
+      ],
+      "deliverables": [
+        "max-orchestration-status-4.48.json",
+        "final-software-completion-4.48.json"
+      ],
+      "status": "queued"
+    },
+    {
+      "id": "web-integration-scout",
+      "role": "advisory",
+      "responsibilities": [
+        "map MAX python executor to future web/API surface",
+        "recommend opt-in gated endpoint; no code change now"
+      ],
+      "deliverables": [
+        "reports-max-4.48/10-web-integration-notes.json"
+      ],
+      "status": "queued"
+    }
+  ]
+}
