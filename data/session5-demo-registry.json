@@ -1,0 +1,73 @@
+{
+  "schema": "dna-session5-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic interval and relationship evidence for software validation only.",
+  "goldOrnaments": [
+    {
+      "id": "150.100.001",
+      "kind": "trill",
+      "intervals": [2, 0, 2],
+      "allowedQualities": ["major", "minor"],
+      "minGapTicks": 150,
+      "noteDurationTicks": 45,
+      "confidence": 0.94
+    },
+    {
+      "id": "150.100.002",
+      "kind": "grace",
+      "intervals": [-1],
+      "allowedQualities": ["major", "minor"],
+      "minGapTicks": 70,
+      "noteDurationTicks": 50,
+      "confidence": 0.92
+    },
+    {
+      "id": "150.100.003",
+      "kind": "slide",
+      "intervals": [-2, -1],
+      "allowedQualities": ["major", "minor"],
+      "minGapTicks": 100,
+      "noteDurationTicks": 40,
+      "confidence": 0.91
+    }
+  ],
+  "goldRelationships": [
+    {
+      "id": "150.200.001",
+      "kind": "third",
+      "allowedQualities": ["major", "minor"],
+      "acceptedIntervals": [3, 4],
+      "confidence": 0.96
+    },
+    {
+      "id": "150.200.002",
+      "kind": "echo",
+      "allowedQualities": ["major", "minor"],
+      "delayTicks": 240,
+      "durationRatio": 0.5,
+      "confidence": 0.95
+    }
+  ],
+  "factoryProfiles": [
+    {
+      "id": "140.014.001",
+      "bankMsb": 0,
+      "bankLsb": 0,
+      "program": 81,
+      "registerMin": 60,
+      "registerMax": 88,
+      "floor": 38,
+      "soft": 49,
+      "lowMid": 61,
+      "optimal": 75,
+      "highMid": 89,
+      "strong": 103,
+      "ceiling": 117,
+      "expressionMin": 52,
+      "expressionMax": 108,
+      "expressionMaxStep": 7,
+      "echoIntensityDrop": 30,
+      "thirdIntensityDrop": 12
+    }
+  ]
+}

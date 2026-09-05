@@ -1,0 +1,87 @@
+{
+  "schema": "dna-session2-demo-registry",
+  "version": "1.0",
+  "notice": "Synthetic verification registry; replace with the production Factory/GOLD registry for corpus validation.",
+  "goldPatterns": [
+    {
+      "id": "210.010.001",
+      "role": "drums",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.96,
+      "transitionGroup": "steady",
+      "events": [
+        {"tick": 0, "duration": 100, "note": 36, "element": "kick"},
+        {"tick": 0, "duration": 180, "note": 49, "element": "cymbal"},
+        {"tick": 0, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 240, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 480, "duration": 100, "note": 38, "element": "snare"},
+        {"tick": 480, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 720, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 960, "duration": 100, "note": 36, "element": "kick"},
+        {"tick": 960, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 1200, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 1440, "duration": 100, "note": 38, "element": "snare"},
+        {"tick": 1440, "duration": 80, "note": 42, "element": "hat"},
+        {"tick": 1680, "duration": 80, "note": 42, "element": "hat"}
+      ]
+    },
+    {
+      "id": "210.010.002",
+      "role": "drums",
+      "section": "generic",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.75,
+      "transitionGroup": "sparse",
+      "events": [
+        {"tick": 0, "duration": 100, "note": 36, "element": "kick"},
+        {"tick": 480, "duration": 100, "note": 38, "element": "snare"},
+        {"tick": 960, "duration": 100, "note": 36, "element": "kick"},
+        {"tick": 1440, "duration": 100, "note": 38, "element": "snare"}
+      ]
+    },
+    {
+      "id": "210.020.001",
+      "role": "drums",
+      "section": "fill",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.94,
+      "transitionGroup": "fill-to-downbeat",
+      "events": [
+        {"tick": 0, "duration": 100, "note": 36, "element": "kick"},
+        {"tick": 960, "duration": 100, "note": 38, "element": "fill"},
+        {"tick": 1200, "duration": 100, "note": 45, "element": "fill"},
+        {"tick": 1440, "duration": 100, "note": 47, "element": "fill"},
+        {"tick": 1680, "duration": 180, "note": 50, "element": "fill"}
+      ]
+    },
+    {
+      "id": "210.030.001",
+      "role": "percussion",
+      "section": "variation",
+      "meter": "4/4",
+      "lengthTicks": 1920,
+      "evidenceQuality": 0.91,
+      "transitionGroup": "steady",
+      "events": [
+        {"tick": 240, "duration": 70, "note": 54, "element": "percussion"},
+        {"tick": 720, "duration": 70, "note": 54, "element": "percussion"},
+        {"tick": 1200, "duration": 70, "note": 54, "element": "percussion"},
+        {"tick": 1680, "duration": 70, "note": 54, "element": "percussion"}
+      ]
+    }
+  ],
+  "factoryProfiles": [
+    {"id": "110.036.001", "note": 36, "floor": 45, "soft": 55, "lowMid": 66, "optimal": 78, "highMid": 90, "strong": 103, "ceiling": 116},
+    {"id": "110.038.001", "note": 38, "floor": 42, "soft": 53, "lowMid": 65, "optimal": 80, "highMid": 94, "strong": 108, "ceiling": 121},
+    {"id": "110.042.001", "note": 42, "floor": 28, "soft": 38, "lowMid": 49, "optimal": 61, "highMid": 73, "strong": 86, "ceiling": 99},
+    {"id": "110.045.001", "note": 45, "floor": 40, "soft": 51, "lowMid": 63, "optimal": 76, "highMid": 89, "strong": 102, "ceiling": 115},
+    {"id": "110.047.001", "note": 47, "floor": 41, "soft": 52, "lowMid": 64, "optimal": 77, "highMid": 90, "strong": 103, "ceiling": 116},
+    {"id": "110.049.001", "note": 49, "floor": 38, "soft": 49, "lowMid": 61, "optimal": 74, "highMid": 88, "strong": 102, "ceiling": 118},
+    {"id": "110.050.001", "note": 50, "floor": 42, "soft": 53, "lowMid": 65, "optimal": 78, "highMid": 91, "strong": 104, "ceiling": 117},
+    {"id": "110.054.001", "note": 54, "floor": 25, "soft": 35, "lowMid": 46, "optimal": 58, "highMid": 70, "strong": 83, "ceiling": 96}
+  ]
+}

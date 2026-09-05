@@ -1,12 +1,43 @@
-# Web app (DNA Music Optimizer)
-node_modules
-dist
-build
-.next
-.env
-*.zip
-# public/manifest.json is a source/config file, not a build artifact or temporary file
-.venv
+```
+# Build artifacts and generated content
+artifacts/
+data/*.json
+
+# Dependencies and virtual environments
+.venv/
+venv/
 __pycache__/
 *.pyc
-artifacts-max-4.61/uploads/
+*.pyo
+*.pyd
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+
+# Distribution and build directories
+dist/
+build/
+target/
+```
