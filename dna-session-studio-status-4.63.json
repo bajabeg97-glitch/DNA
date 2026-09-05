@@ -1,0 +1,33 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.63",
+  "status": "complete",
+  "date": "2026-09-05",
+  "phase": "C UI skin: AI-model-style studio GUI (assistant chat + sidebar menu) over the confirmed Session Flow — React skin + persistence still open, WebAudio A/B audition (D) still open",
+  "summary": "INDEX_HTML u dna_bridge.mjs zamenjen novim AI-studio GUI-jem (izgled 'kao AI model'): levi sidebar sa brendom, 'Nova sesija', 'Sta mogu da uradim?', demo korpus (reference-style / fixture / session35 / song19-01), 'Licence i invarijante'; glavni deo je chat asistent (avatar D) sa kompozitorom, dugme za prilaganje MIDI fajla, drag&drop, sugestije (chips) ispod poruka, indikator kucanja ('typing dots'), plan kartice sa checkbox-ovima (samo READY se mogu oznaciti), gates/JSON detalji u <details>, i linkovi za download artefakata. Tekst komande: 'analiziraj X', 'primeni A01 A02', 'primeni sve', 'pomoc', 'pravila'. Endpoint-i su ostali isti (GET /, /api/health, /api/presets, /api/sample-analyze?p=&apply=&actions=, POST /api/analyze, GET /api/artifacts/<name>). Verzija bridge-a podignuta na 4.63 (test azuriran). HTTP e2e u artifacts-max-4.63/bridge-run.json: 5 poziva primene (A01 solo -> sty; A02 solo -> mixed; par -> 2; session35 -> 2; song19-01 -> 0) + 9 UI statickih provera + download 2 artefakta (bytes zabelezeni). Invarijante nepromenjene: izvor se nikad ne menja, samo READY akcije su primenljive u UI-ju, ne-READY se ne mogu označiti, sve radi preko istog Session Pass 4.60 engine-a. npm 14/14; Python 102 + legacy 5 OK.",
+  "deliverables": {
+    "dna_bridge.mjs": "novi AI-studio INDEX_HTML (sidebar + chat + plan/apply/download), version 4.63",
+    "tests/bridge-session.test.mjs": "version assert azuriran na 4.63",
+    "artifacts-max-4.63/bridge-run.json": "HTTP e2e: 9 UI checkova, health, presets, 5 apply poziva sa actionStatuses + artifactNames, download bajtovi",
+    "reports-max-4.63/01-ui-studio-e2e.json": "sažetak UI karakteristika -> dokazano stanje",
+    "reports-max-4.63/02-tests.json": "test run report (npm 14/14, python 102 + 5 legacy)",
+    "docs/session-studio-4.63.md": "vodič kroz novi AI studio GUI",
+    "README.md": "bullet za 4.63"
+  },
+  "httpProven": [
+    "GET / -> AI studio HTML: #side (Nova sesija, Demo korpus, Pravila), #chat, #inp kompozitor, drag&drop handler, sugestije, plan checkbox (data-id), /api/artifacts/ download linkovi",
+    "GET /api/health -> { ok: true, version: '4.63' }",
+    "GET /api/presets -> 4 preseta",
+    "GET /api/sample-analyze?p=reference-style&apply=1&actions=A01_STY_EXPORT -> A01=APPLIED, samo session-sty-reference-style.mid",
+    "GET /api/sample-analyze?p=reference-style&apply=1&actions=A02_PERCUSSION_CC11_GAIN -> A02=APPLIED, samo session-mixed-reference-style.mid",
+    "GET /api/sample-analyze?p=fixture&apply=1&actions=A01,A02 -> 2 artefakta",
+    "GET /api/sample-analyze?p=session35&apply=1 -> oba READY primenjena",
+    "GET /api/sample-analyze?p=song19-01&apply=1 -> 0 artefakata (A03 skip, A04 NEEDS_DECISION, A05 LOCKED)",
+    "GET /api/artifacts/session-sty-reference-style.mid + session-mixed-reference-style.mid -> 200, bajtovi zabelezeni"
+  ],
+  "tests": {
+    "npm": { "command": "npm test (node --test)", "result": "OK", "tests": 14, "note": "12 pre + 2 action-selection; version assert azuriran na 4.63" },
+    "pythonCore": { "command": "python3.11 -m unittest test_arranger_pro_v449 ... test_session_pass_v462 test_mido_independent_v452", "result": "OK", "tests": 102, "note": "ista lista kao 4.62 (skipped=3 kao i ranije)" },
+    "pythonLegacy": { "command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5 }
+  }
+}

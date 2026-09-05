@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Session Studio 4.63 (Faza C: AI studio GUI):** novi izgled „kao AI model” —
+> levi meni (Nova sesija / demo korpus / pravila) + chat asistent sa plan
+> karticama, checkbox-ovima (samo READY), gates detaljima i download linkovima;
+> drag & drop upload, tekst komande („analiziraj X”, „primeni sve”), sugestije.
+> I dalje stdlib bridge, isti endpoint-i; UI drži invarijante (izvor se ne menja,
+> ne-READY se ne može primeniti). HTTP e2e: 5 poziva + 9 UI checkova.
+> npm 14/14; Python 102 + 5. Evidence: `artifacts-max-4.63/bridge-run.json`;
+> vodič `docs/session-studio-4.63.md`.
 > **Session Flow 4.62 (Faza C jezgro):** plan → korisnik potvrdi → primeni —
 > `--apply-actions A01,A02` u Session Pass-u, HTTP `x-actions`/`?actions=` u
 > bridge-u, dvokoračni UI (Analiziraj → označi READY akcije → Primeni izabrane

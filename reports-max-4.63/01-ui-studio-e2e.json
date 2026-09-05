@@ -1,0 +1,39 @@
+{
+  "schema": "dna-ui-studio-e2e-report",
+  "milestone": "4.63",
+  "date": "2026-09-05",
+  "evidence": "artifacts-max-4.63/bridge-run.json (svi HTTP pozivi + statusi + bajtovi)",
+  "uiFeaturesImplemented": [
+    "Levi sidebar (AI-model look): logo 'D', Nova sesija, Sta mogu da uradim?, Demo korpus (4 pchips), Pravila/Licence, footer sa live indikatorom + health",
+    "Chat asistent: poruke korisnika desno (avatar), asistent levo (avatar 'D', 'DNA Optimizer'), typing-dots indikator dok Python radi",
+    "Kompozitor dole: prilaganje fajla (📎 + input[type=file]), drag & drop na ceo prozor, textarea sa Enter-om, dugme ➤",
+    "Tekst komande: 'analiziraj reference-style' -> preset demo, 'analiziraj' + prilozen fajl -> POST /api/analyze, 'primeni A01 A02', 'primeni sve' -> sve READY iz plana, 'pomoc', 'pravila'",
+    "Sugestije (chips) ispod poruka: demo dugmici, 'Sta sve mogu?', 'Nova sesija', 'Licence i pravila'",
+    "Plan kartice: fileFacts cifre (markeri/kanali/ppq/format/prvi marker), tabela role patterna (uloga/kanal/note/registar/gustina/vel q50/melodija), groove vs ljudska referenca, tabela akcija sa badge statusima",
+    "Svaka READY akcija = checkbox (oznacen); SKIPPED/NEEDS_DECISION/LOCKED = disabled checkbox; LOCKED badge crven",
+    "Dugmici 'Primeni izabrane (N)' i 'Primeni sve READY'; gates u <details>; sirovi JSON izvestaj u <details><pre>",
+    "Posle primene: okline + linkovi za download (/api/artifacts/<name>) + napomena da je izvor nepromenjen",
+    "Responsive: ispod 860px sidebar se otvara hamburgerom"
+  ],
+  "invariantsHeldByUi": [
+    "Original fajl se nikad ne salje nazad ni ne menja (POST /api/analyze kopira upload u artifacts-max-4.61/uploads/)",
+    "Samo READY akcije imaju checkbox; korisnik ne moze da primeni LOCKED / NEEDS_DECISION preko UI-ja",
+    "Ne postoje kontrole za 'generisi od nule' — samo optimizacija postojeceg fajla sa planom+kapijama",
+    "Svi endpoint-i nepromenjeni (compat sa 4.61/4.62); server version 4.63"
+  ],
+  "e2e": {
+    "health": true,
+    "presetCount": 4,
+    "applyCalls": [
+      { "label": "A01-only reference-style", "artifactCount": 1, "artifact": "session-sty-reference-style.mid", "note": "A02 ostao READY (neAPPLIED)" },
+      { "label": "A02-only reference-style", "artifactCount": 1, "artifact": "session-mixed-reference-style.mid", "note": "A01 ostao READY" },
+      { "label": "pair A01+A02 fixture", "artifactCount": 2, "artifacts": ["session-sty-arranged-4.51-fixture.mid", "session-mixed-arranged-4.51-fixture.mid"] },
+      { "label": "all-READY session35", "artifactCount": 2 },
+      { "label": "all-READY song19-01", "artifactCount": 0, "note": "nema READY akcija — 0 artefakata, nista nije forsirano" }
+    ],
+    "artifactDownloadsBytes": {
+      "session-sty-reference-style.mid": 18085,
+      "session-mixed-reference-style.mid": 18085
+    }
+  }
+}
