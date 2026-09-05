@@ -45,18 +45,36 @@ ROLE_SR = {
 HELP_WORDS = ["pomoć", "pomoc", "help", "sta mozes", "šta možeš", "sta radis", "šta radiš",
               "sta sve", "šta sve", "sta mogu", "šta mogu"]
 RULES_WORDS = ["pravila", "licenc", "invarijant", "pravil"]
-GREET_WORDS = ["zdravo", "cao", "ćao", "cao", "hej", "dobro jutro", "dobar dan", "ej"]
+GREET_WORDS = ["zdravo", "cao", "ćao", "hej", "dobro jutro", "dobar dan", "ej"]
 WHAT_NEXT_WORDS = ["sta dalje", "šta dalje", "sta sad", "šta sad", "sta mi preporucujes",
                    "šta mi preporučuješ", "sta preporucujes", "sugestij"]
 EXPLAIN_WORDS = ["objasni", "zasto", "zašto", "kako to", "sto je", "što je", "sta znaci",
                  "šta znači", "obrazlozi", "obrazloži", "razlog"]
 SUMMARIZE_WORDS = ["sažmi", "sazmi", "ukratko", "rezime", "sta si izmerio", "šta si izmerio",
                    "sta si nasao", "šta si našao", "sta si uradio", "šta si uradio"]
-ANALYZE_WORDS = ["analiziraj", "obradi", "analize", "analizu"]
-APPLY_WORDS = ["primeni", "primeni", "apply"]
+ANALYZE_WORDS = ["analiziraj", "obradi", "analize", "analizu", "analizirati"]
+APPLY_WORDS = ["primeni", "apply"]
+# 4.71: zahtevi za komponovanje (kompozitor postoji od 4.70) — vode u
+# compose_request intent; tool {type:"composeSong"} kad znamo stil.
+COMPOSE_WORDS = ["napravi", "napis", "napiši", "napiš", "skladaj", "skladi", "komponuj",
+                 "generisi", "generiši", "generise", "generiše", "kreiraj", "sastavi",
+                 "smisli", "pravi", "daj mi", "napravices", "napravićeš"]
+MUSIC_OBJECT_WORDS = ["pesmu", "pesma", "pjesmu", "pjesma", "pesmicu", "pjesmicu", "numu",
+                      "numa", "melodiju", "melodija", "muziku", "muzika", "aranžman",
+                      "aranzman", "stil", "stila", "song", "track", "nešto novo",
+                      "nesto novo", "primer", "komad"]
+COMPOSE_STYLES = ["rock", "funk", "pop", "ballad", "folk", "waltz", "disco",
+                  "dance90", "dance 90", "latin12", "latin 12", "latin", "ballad12",
+                  "ballad 12", "12/8"]
+STYLE_CANON = {"dance": "dance90", "dance 90": "dance90", "latin": "latin12",
+               "latin 12": "latin12", "latin12": "latin12", "ballad 12": "ballad12",
+               "ballad12": "ballad12", "12/8": "ballad12"}
+# samo subjektivno-slušne tvrdnje ostaju odbijene (nema slušnog modela)
 MUSIC_CLAIM_WORDS = ["kako zvuc", "kako zvuč", "da li je bolje", "jel bolje", "je li bolje",
-                     "zvuči li", "zvuc", "zvuči", "generisi", "generiši", "napravi pesmu",
-                     "komponuj", "sastavi pesmu", "kvalitet zvuka", "svidja", "sviđa"]
+                     "zvuči li", "zvuc", "zvuči", "kvalitet zvuka", "svidja", "sviđa",
+                     "da li je lepše", "da li zvuci"]
+THANKS_WORDS = ["hvala", "thanks", "tenks", "odlično", "odlicno", "super", "bravo", "top",
+                "savršeno", "savrseno", "pomoglo", "kul"]
 MEMORY_WORDS = ["zapamti", "seti se", "sjeti se", "sta sam ti rekao", "šta sam ti rekao",
                 "koji fajl", "sta smo radili", "šta smo radili"]
 SESS_WORDS = ["nova sesija", "pocni novo", "počni novo", "obrisi sesiju", "obriši sesiju"]
@@ -67,6 +85,20 @@ STATUS_RE = re.compile(r"READY|LOCKED|SKIPPED|NEEDS_DECISION|APPLIED", re.I)
 
 def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", text.strip().lower())
+
+
+def _compose_params(t: str) -> dict[str, Any]:
+    """Iz teksta tipa „napravi rock pesmu sa seed 7” izvuci stil + seed."""
+    params: dict[str, Any] = {"style": None, "seed": None}
+    for token in COMPOSE_STYLES:
+        if re.search(r"(^|[\s,./\-])" + re.escape(token) + r"($|[\s,./\-])", t):
+            params["style"] = STYLE_CANON.get(token, token)
+            break
+    m = re.search(r"(?:\b(?:seed|seme|sjeme|semena|semenom)|#)\s*[:=\s]*(\d{1,4})\b", t)
+    if m:
+        seed = int(m.group(1))
+        params["seed"] = seed if 1 <= seed <= 9999 else None
+    return params
 
 
 def understand(text: str) -> dict[str, Any]:
@@ -80,6 +112,15 @@ def understand(text: str) -> dict[str, Any]:
         return {"intent": "rules", "params": {}, "confidence": "high"}
     if any(w in t for w in GREET_WORDS) and len(t) < 30:
         return {"intent": "greet", "params": {}, "confidence": "high"}
+    # 4.71: komponovanje — traži se uz muzički objekat ili poznati stil
+    want_compose = any(w in t for w in COMPOSE_WORDS) and (
+        any(w in t for w in MUSIC_OBJECT_WORDS)
+        or _compose_params(t)["style"] is not None
+        or ("pesm" in t) or ("pjesm" in t) or ("num" in t))
+    if want_compose and not any(w in t for w in ANALYZE_WORDS + APPLY_WORDS):
+        params = _compose_params(t)
+        return {"intent": "compose_request", "params": params,
+                "confidence": "high" if params["style"] else "medium"}
     if any(w in t for w in MUSIC_CLAIM_WORDS):
         return {"intent": "refuse_music_claim", "params": {}, "confidence": "high"}
     if any(w in t for w in SESS_WORDS):
@@ -106,6 +147,8 @@ def understand(text: str) -> dict[str, Any]:
         return {"intent": "explain", "params": params, "confidence": "high"}
     if any(w in t for w in WHAT_NEXT_WORDS):
         return {"intent": "what_next", "params": {}, "confidence": "high"}
+    if any(w in t for w in THANKS_WORDS) and len(t) < 60:
+        return {"intent": "thanks", "params": {}, "confidence": "high"}
     if any(w in t for w in MEMORY_WORDS):
         return {"intent": "memory", "params": {}, "confidence": "high"}
     return {"intent": "unknown", "params": {}, "confidence": "low"}
@@ -227,14 +270,17 @@ def answer(text: str, report: dict[str, Any] | None,
         return {"intent": intent, "reply": "Kako mogu da pomognem?", "claims": [], "tool": None}
     if intent == "greet":
         return {"intent": intent,
-                "reply": "Zdravo! Ja sam DNA Optimizer asistent. Analiziram tvoj MIDI, objašnjavam plan "
-                         "i primenjujem samo ono što potvrdiš — ništa ne izmišljam.",
+                "reply": "Zdravo! Ja sam DNA Studio asistent. Analiziram tvoj MIDI, objašnjavam plan, "
+                         "primenjujem samo ono što potvrdiš — i od 4.70 znam da komponujem: reci "
+                         "npr. „napravi rock pesmu”.",
                 "claims": [], "tool": None}
     if intent == "help":
         return {"intent": intent,
                 "reply": "Mogu: (1) „analiziraj X” — X je demo ili priložen fajl; (2) „objasni A01/A05” — "
                          "zašto je akcija u nekom statusu; (3) „šta dalje” — predlog sledećeg koraka; "
-                         "(4) „sažmi” — rezime izveštaja; (5) „koja su pravila” — invarijante.",
+                         "(4) „sažmi” — rezime izveštaja; (5) „koja su pravila” — invarijante; "
+                         "(6) „napravi rock pesmu” / „komponuj ballad12 sa seed 7” — komponovanje. "
+                         "[tab:compose]",
                 "claims": [], "tool": None}
     if intent == "rules":
         return {"intent": intent,
@@ -242,11 +288,30 @@ def answer(text: str, report: dict[str, Any] | None,
                          "READY akcije; LOCKED/NEEDS_DECISION ne mogu da se primene; FACTORY velocity je "
                          "autoritet; DNC/slap/pop trigeri su zaključani do device snimka.",
                 "claims": [], "tool": None}
+    if intent == "compose_request":
+        style = params.get("style")
+        seed = params.get("seed")
+        if style:
+            return {"intent": intent, "reply": "",
+                    "claims": [],
+                    "tool": {"type": "composeSong", "style": style, "seed": seed}}
+        return {"intent": intent,
+                "reply": "Mogu da komponujem! Reci npr. „napravi rock pesmu”, „generiši ballad sa seed 7” "
+                         "ili „komponuj latin12”. Stilovi: rock, funk, pop, ballad, folk, waltz, disco, "
+                         "dance90, ballad12, latin12. Izlaz: .mid + scorecard u workspace-4.71. "
+                         "[tab:compose]",
+                "claims": [], "tool": None}
+    if intent == "thanks":
+        return {"intent": intent,
+                "reply": "Nema na čemu! Ako zatreba: „analiziraj X”, „objasni A05”, „šta dalje”, "
+                         "„napravi rock pesmu”.",
+                "claims": [], "tool": None}
     if intent == "refuse_music_claim":
         return {"intent": intent,
-                "reply": "To ne mogu da tvrdim — nemam slušni model ni pravo da procenjujem „kako zvuči” ili da "
-                         "generišem muziku. Mogu samo da izmerim (analiza) i primenim dokazane optimizacije "
-                         "(READY akcije) koje ti onda čuješ na klavijaturi.",
+                "reply": "To ne mogu da tvrdim — nemam slušni model ni pravo da procenjujem „kako zvuči” "
+                         "ili da li je nešto „bolje” na uvo. Mogu da izmerim (analiza), da primenim "
+                         "dokazane optimizacije (READY akcije) i da komponujem nove pesme "
+                         "(„napravi rock pesmu”) — kvalitet onda čuješ na klavijaturi.",
                 "claims": [], "tool": None}
     if intent == "session_new":
         return {"intent": intent, "reply": "__NEW_SESSION__", "claims": [], "tool": None}
@@ -312,8 +377,13 @@ def answer(text: str, report: dict[str, Any] | None,
         return {"intent": intent, "reply": _reply_for(report, [], suggest=True),
                 "claims": [], "tool": None}
     return {"intent": intent,
-            "reply": "Ne razumem najbolje. Mogu: „analiziraj X”, „objasni A05”, „šta dalje”, „sažmi”, "
-                     "„koja su pravila”, „pomoć”.",
+            "reply": "Ne razumem najbolje — ali evo šta tačno mogu:\n"
+                     "• analiza: „analiziraj reference-style” ili priloži fajl\n"
+                     "• komponovanje: „napravi rock pesmu” ili „komponuj latin12 sa seed 7” "
+                     "[tab:compose]\n"
+                     "• plan: „objasni A05”, „šta dalje”, „sažmi”\n"
+                     "• ostalo: „koja su pravila”, „pomoć”\n"
+                     "Probaj jednu od tih rečenica — ili mi napiši svojim rečima šta hoćeš da uradim.",
             "claims": [], "tool": None}
 
 

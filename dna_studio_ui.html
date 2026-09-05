@@ -390,13 +390,25 @@ function addThink() {
   scroll();
 }
 function rmThink() { const t = $('think'); if (t) t.remove(); }
+/* [tab:xxx] u brain odgovoru postaje kliktan otvarač panela */
+function rich(reply) {
+  const parts = String(reply == null ? '' : reply).split(/\[tab:(\w+)\]/g);
+  let out = '';
+  for (let i = 0; i < parts.length; i++) {
+    if (i % 2) {
+      const name = parts[i];
+      out += ' <button class="btn ghost" style="padding:2px 10px;font-size:11px" onclick="go(\'' + name + '\')">⚡ otvori: ' + esc(CRUMBS[name] || name) + '</button> ';
+    } else out += esc(parts[i]);
+  }
+  return out;
+}
 function botText(reply, claims) {
   let ch = '';
   if (claims && claims.length) {
     ch = '<details style="margin-top:6px"><summary>izvori ('+claims.length+')</summary>' +
       claims.map((c) => '<div style="padding:2px 0;border-bottom:1px solid var(--line)"><div>'+esc(c.text)+'</div><div style="color:#5b6a7e;font-size:10.5px">'+esc(c.source)+'</div></div>').join('') + '</details>';
   }
-  addBot(card('<div style="white-space:pre-line">'+esc(reply || '')+'</div>' + ch));
+  addBot(card('<div style="white-space:pre-line">' + rich(reply) + '</div>' + ch));
 }
 let lastAsked = '';
 function retryLast() { if (lastAsked) askBrain(lastAsked); }
@@ -411,20 +423,29 @@ function askBrain(text) {
       if (j.newSession) { __sid = j.newSession; localStorage.setItem('dna.sid', __sid); }
       if (j.intent === 'error') {
         const tail = j.error || j._err || '';
-        botText('Asistent: ' + j.reply +
-          (tail ? '<details style="margin-top:6px"><summary>python detalj (za dijagnozu)</summary><pre>' + esc(tail) + '</pre></details>' : '') +
-          '<div class="sugg"><button onclick="retryLast()">↻ Pokušaj ponovo</button></div>', 'DNA Studio');
+        let html = '<div style="white-space:pre-line">' + rich(j.reply) + '</div>';
+        if (tail) html += '<details style="margin-top:6px"><summary>python detalj (za dijagnozu)</summary><pre>' + esc(tail) + '</pre></details>';
+        html += '<div class="sugg"><button onclick="retryLast()">↻ Pokušaj ponovo</button></div>';
+        addBot(card(html), 'DNA Studio');
         return;
       }
       if (j.plan) { state.lastPlan = j.plan; renderPlan({ ok: true, report: j.plan }); }
       if (j.applied && j.applied.report) { state.lastPlan = j.applied.report; renderApplied(j.applied); }
+      if (j.composed && j.composed.ok) {
+        const c = j.composed;
+        addBot('<h4 style="margin:0 0 6px">🎵 Komponovano (DNA Composer 4.70)</h4>' +
+          card('<span class="okline">✔ ' + esc((c.summary && c.summary.styles || []).join(',')) + ' · seed ' + esc((c.summary && c.summary.seeds || []).join(',')) + '</span>' +
+            '<span class="mini" style="display:block;margin:6px 0">' + esc(c.summary.totalBars) + ' taktova · ' + esc(c.summary.valid) + ' validnih · humanize ' + esc(c.summary.humanization) + '</span>' +
+            c.filesHtml +
+            '<div style="margin-top:8px"><button class="btn ghost" onclick="go(\'files\')">📦 Fajlovi</button></div>'), 'DNA Studio · Kompozitor');
+      }
       botText(j.reply, j.claims || []);
     })
     .catch((e) => { rmThink(); botText('Greška: ' + (e && e.message || e), []); });
 }
 function greeting() {
   addBot('<h4 style="margin:0 0 6px">Dobar dan! 👋</h4>' +
-    '<p style="margin:0 0 4px">Ja sam <b>DNA Studio</b> — analiziram tvoj MIDI, merim šta fabrika svira po ulogama i nudim <b>optimizacije sa kapijama</b> za Korg Pa800. Ne generišem muziku od nule u ćaskanju — zato je levo <b>🎹 Kompozitor</b> sa svojim dugmetom.</p>' +
+    '<p style="margin:0 0 4px">Ja sam <b>DNA Studio</b> — analiziram tvoj MIDI, merim šta fabrika svira po ulogama i nudim <b>optimizacije sa kapijama</b> za Korg Pa800. Od 4.71 mogu i da <b>komponujem u ćaskanju</b>: reci „napravi rock pesmu”.</p>' +
     '<p style="margin:4px 0 0;color:var(--muted)">Prikači fajl ili klikni demo. Možeš i da kucaš: „analiziraj reference-style”, „primeni sve”.</p>' +
     '<div class="sugg"><button onclick="demo(\'reference-style\')">▶ demo: reference-style</button>' +
     '<button onclick="demo(\'fixture\')">▶ demo: fixture</button>' +
@@ -436,7 +457,7 @@ function help() {
   addBot('<h4 style="margin:0 0 8px">Šta mogu da uradim?</h4>' +
     card('<p>• <b>Analiza</b>: priloži <code>.mid/.midi/.kar</code> — prepoznajem Pa800 markere (i1cv1…e2cv1), uloge kanala, groove naspram pravih bubnjara (4.54), tehnike (4.55), prepoznavanje obrazaca (4.65).</p>' +
     '<p>• <b>Plan</b>: akcije sa statusima — <span class="badge READY">READY</span>, <span class="badge NEEDS_DECISION">ODLUKA</span>, <span class="badge LOCKED">ZAKLJUČANO</span>; primena u <i>novim</i> fajlovima.</p>' +
-    '<p>• <b>Generisanje</b>: levi meni → <b>Kompozitor</b> — nove pesme kao .mid za Pa800 sa scorecard dokazima.</p>' +
+    '<p>• <b>Generisanje</b>: levi meni → <b>Kompozitor</b> — nove pesme kao .mid za Pa800 sa scorecard dokazima. U ćaskanju: „napravi rock pesmu”, „komponuj ballad sa seed 7”.</p>' +
     '<p style="margin-bottom:0">• <b>Model trening</b>: levi meni → opcije S3 (n-gram / mikro-GPT nad korpusom od 843.545 tokena).</p>'));
 }
 function pickedFile() {

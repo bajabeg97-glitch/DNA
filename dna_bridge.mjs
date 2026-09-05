@@ -256,6 +256,50 @@ async function assistantTurn(text, sid) {
       return { sessionId: sid2, intent: final.intent || 'summarize', reply: final.reply, claims: final.claims || [], plan: report };
     }
   }
+  if (brain.tool && brain.tool.type === 'composeSong') {
+    // 4.71: „napravi rock pesmu” — brain je prepoznao stil (+ opc. seed);
+    // kompozitor 4.70 pravi .mid + scorecard u workspace-4.71.
+    const style = String(brain.tool.style || '');
+    const info = await composeInfo();
+    const known = (info && Array.isArray(info)) ? info.map((s) => s.id) : [];
+    const fallback = ['rock', 'funk', 'pop', 'ballad', 'folk', 'ballad12', 'waltz', 'latin12', 'disco', 'dance90'];
+    const allowed = known.length ? known : fallback;
+    if (!allowed.includes(style)) {
+      const no = { intent: 'compose_request', sessionId: sid2,
+        reply: 'Ne poznajem stil „' + style + '”. Stilovi: rock, funk, pop, ballad, folk, waltz, disco, dance90, ballad12, latin12. Npr. „napravi rock pesmu”.', claims: [] };
+      sessionAppend(sid2, { role: 'assistant', kind: 'text', text: no.reply });
+      return no;
+    }
+    let seed = parseInt(brain.tool.seed, 10);
+    if (!Number.isInteger(seed) || seed < 1 || seed > 9999) {
+      // deterministički seed po sesiji (ista sesija -> ista pesma)
+      let h = 0;
+      for (const ch of String(sid2)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+      seed = (h % 9973) + 1;
+    }
+    const r = await composeSongs({ styles: [style], seeds: [seed], humanize: true });
+    if (!r.ok || !r.summary || !r.summary.valid) {
+      const bad = { intent: 'error', sessionId: sid2,
+        reply: 'Komponovanje nije uspelo: ' + (r.error || r.pythonErrorTail || 'nepoznata greška'), claims: [], error: r.pythonErrorTail || r.error };
+      sessionAppend(sid2, { role: 'assistant', kind: 'text', text: bad.reply });
+      return bad;
+    }
+    const fname = 'song-' + style + '-s' + seed + '.mid';
+    const replyText = 'Evo! 🎵 Komponovao sam „' + style + '” (seed ' + seed +
+      '): ' + r.summary.totalBars + ' taktova, humanize on (σ ≈ 27.96 ms), validacija prošla. ' +
+      'Fajl: workspace-4.71/' + r.outRel + '/' + fname + ' — preuzmi ispod ili u kartici Fajlovi. ' +
+      'Drugi seed = druga pesma; isti seed = ista pesma (npr. „napravi ' + style +
+      ' pesmu sa seed 42”).';
+    const claims = [{ text: 'Generisana pesma: ' + style + ', seed ' + seed + ' — ' +
+                      r.summary.totalBars + ' taktova, valid ' + r.summary.valid +
+                      ', bubanj iz evidencije vendor-max-4.64/dmp-midi (MIT).',
+                      source: 'workspace-4.71/' + r.outRel + '/song-' + style + '-s' + seed + '.scorecard.json' }];
+    sessionAppend(sid2, { role: 'assistant', kind: 'compose', text: replyText,
+                          sourceName: fname, claims });
+    return { sessionId: sid2, intent: 'composed', reply: replyText, claims,
+             composed: { ok: true, summary: r.summary, outRel: r.outRel,
+                         filesHtml: filesHtmlFor(r.files, r.outRel), files: r.files } };
+  }
   if (brain.tool && brain.tool.type === 'applyActions' && report) {
     const srcAbs = metaSourceOf(sid2, report);
     if (srcAbs && fs.existsSync(srcAbs)) {

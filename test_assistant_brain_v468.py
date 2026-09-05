@@ -8,7 +8,8 @@ Verifies:
 - NLU: intents + parameters (sr/bs tolerant);
 - NLG grounding: every claim carries a json-path source and numbers match the
   report exactly (no invention);
-- refusals: music-quality/generation questions are refused;
+- refusals: subjective listening questions are refused; generation requests
+  route to the composer (4.70) since 4.71 — see test_assistant_brain_v471;
 - no state mutation, determinism, stdlib-only;
 - the whole answer() pipeline stays deterministic across runs.
 """
@@ -45,7 +46,7 @@ class NluTest(unittest.TestCase):
             ("primeni A01 A02", "apply"),
             ("analiziraj reference-style", "analyze"),
             ("kako zvuči bolje posle primene?", "refuse_music_claim"),
-            ("generiši mi pesmu", "refuse_music_claim"),
+            ("generiši mi pesmu", "compose_request"),   # 4.71: kompozitor postoji
             ("šta sam ti rekao ranije", "memory"),
             ("bla bla nešto nasumično", "unknown"),
         ]
