@@ -7,6 +7,22 @@ const REPAIR_PROFILES = {
   'more-expression': { targetVelocity: 96, preservation: 0.95 },
 };
 
+// Key signature detection constants
+const KEY_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+const MAJOR_PATTERNS = [2, 2, 1, 2, 2, 2, 1];
+const MINOR_PATTERNS = [2, 1, 2, 2, 1, 2, 2];
+
+// Chord detection
+const CHORD_TYPES = {
+  major: [0, 4, 7],
+  minor: [0, 3, 7],
+  diminished: [0, 3, 6],
+  augmented: [0, 4, 8],
+  seventh: [0, 4, 7, 10],
+  minorSeventh: [0, 3, 7, 10],
+  majorSeventh: [0, 4, 7, 11],
+};
+
 function textBytes(value) {
   return [...value].map((character) => character.charCodeAt(0));
 }
@@ -390,6 +406,53 @@ function analyzeMidi(buffer, fileName) {
   const expressionScore = Math.min(99, Math.max(64, 62 + Math.round(velocitySpread * 0.28)));
   const score = Math.round((timingScore + expressionScore + Math.min(99, 72 + channels.size * 7)) / 3);
 
+  // Detect key signature from pitch class distribution
+  let detectedKey = null;
+  let keyConfidence = 0;
+  for (let root = 0; root < 12; root++) {
+    let majorFit = 0;
+    let minorFit = 0;
+    for (let i = 0; i < 7; i++) {
+      const majorIndex = (root + MAJOR_PATTERNS.slice(0, i).reduce((a, b) => a + b, 0)) % 12;
+      const minorIndex = (root + MINOR_PATTERNS.slice(0, i).reduce((a, b) => a + b, 0)) % 12;
+      majorFit += pitchClasses[majorIndex];
+      minorFit += pitchClasses[minorIndex];
+    }
+    if (majorFit > keyConfidence) {
+      keyConfidence = majorFit;
+      detectedKey = `${KEY_NAMES[root]} major`;
+    }
+    if (minorFit > keyConfidence) {
+      keyConfidence = minorFit;
+      detectedKey = `${KEY_NAMES[root]} minor`;
+    }
+  }
+
+  // Detect chord progressions
+  const chordProgression = [];
+  const windowSize = division * 4; // One beat window
+  for (let tick = 0; tick < maxTick; tick += windowSize) {
+    const activePitches = new Set();
+    for (const [noteKey, notes] of openNotes.entries()) {
+      const [, pitch] = noteKey.split(':').map(Number);
+      const noteStart = notes.find(n => n.tick <= tick && n.tick + (durations[notes.indexOf(n)] || 0) > tick);
+      if (noteStart) activePitches.add(pitch % 12);
+    }
+    if (activePitches.size >= 3) {
+      const pitches = Array.from(activePitches).sort((a, b) => a - b);
+      for (let root = 0; root < 12; root++) {
+        for (const [chordName, intervals] of Object.entries(CHORD_TYPES)) {
+          const transposedIntervals = intervals.map(i => (root + i) % 12);
+          if (transposedIntervals.every(i => pitches.includes(i))) {
+            chordProgression.push({ tick, chord: `${KEY_NAMES[root]} ${chordName.replace(/([A-Z])/g, ' $1').trim()}` });
+            break;
+          }
+        }
+        if (chordProgression[chordProgression.length - 1]?.tick === tick) break;
+      }
+    }
+  }
+
   return {
     fileName,
     format: 'MIDI',
@@ -406,6 +469,9 @@ function analyzeMidi(buffer, fileName) {
     totalControllers,
     trackNames,
     topPitchClass,
+    detectedKey,
+    keyConfidence,
+    chordProgression: chordProgression.slice(0, 50), // Limit to first 50 chords
     timingScore,
     timingGrid,
     timingDrift,

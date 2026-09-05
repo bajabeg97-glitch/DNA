@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Activity,
   ArrowRight,
@@ -24,6 +24,32 @@ import {
   Upload,
   X,
   Zap,
+  Download,
+  Share2,
+  Save,
+  Trash2,
+  Copy,
+  BarChart3,
+  GitCompare,
+  Clock,
+  Layers,
+  Volume2,
+  Repeat,
+  Shuffle,
+  SkipBack,
+  SkipForward,
+  Pause,
+  ListMusic,
+  Radio,
+  Mic2,
+  Guitar,
+  Piano,
+  Drumstick,
+  Award,
+  TrendingUp,
+  Info,
+  AlertCircle,
+  CheckCircle,
 } from 'lucide-react';
 import './styles.css';
 import { analyzeUploadedFile, createOptimizedMidi, getRepairPreview } from './musicAnalysis';
@@ -32,12 +58,15 @@ const navItems = [
   { label: 'Overview', icon: LayoutDashboard, active: true },
   { label: 'My projects', icon: Library, count: '12' },
   { label: 'Sound library', icon: Headphones },
+  { label: 'Analytics', icon: BarChart3 },
+  { label: 'Batch processor', icon: Layers },
 ];
 
 const recentProjects = [
   { title: 'Lepa Brena — Čik pogodi', type: 'PA800 Style', time: 'Edited 18 min ago', score: 96, color: 'coral', icon: '♫' },
   { title: 'Live set / 2024', type: 'MIDI Collection', time: 'Edited yesterday', score: 88, color: 'violet', icon: '◒' },
   { title: 'Balkan Groove Vol. 2', type: 'Style Pack', time: 'Edited 3 days ago', score: 74, color: 'amber', icon: '♬' },
+  { title: 'Wedding Session 2024', type: 'Multi-track MIDI', time: 'Edited 1 week ago', score: 92, color: 'mint', icon: '♩' },
 ];
 
 const REPAIR_PRESETS = [
@@ -45,11 +74,14 @@ const REPAIR_PRESETS = [
   { key: 'stage-ready', name: 'Stage Ready', detail: 'Balanced dynamics', tone: 'mint' },
   { key: 'cleaner-groove', name: 'Cleaner Groove', detail: 'Tighter velocity', tone: 'amber' },
   { key: 'more-expression', name: 'More Expression', detail: 'Keep the feel', tone: 'coral' },
+  { key: 'radio-ready', name: 'Radio Ready', detail: 'Commercial polish', tone: 'blue' },
+  { key: 'live-performance', name: 'Live Performance', detail: 'Human feel preserved', tone: 'green' },
 ];
 
 const REPAIR_ACTIONS = [
   { key: 'timing', label: 'Timing map', detail: 'Snap notes to detected grid', locked: false },
   { key: 'dynamics', label: 'Dynamics balance', detail: 'Velocity smoothing', locked: false },
+  { key: 'articulation', label: 'Articulation fix', detail: 'Note length optimization', locked: false },
   { key: 'structure', label: 'PA800 structure', detail: 'Markers and CV slots protected', locked: true },
 ];
 
@@ -58,6 +90,8 @@ const checks = [
   { label: 'Velocity consistency', detail: '3 expressive peaks found', status: 'Review', tone: 'warning' },
   { label: 'Style structure', detail: 'Intro, fills and endings', status: 'Passed', tone: 'success' },
   { label: 'MIDI compatibility', detail: 'PA800 profile detected', status: 'Passed', tone: 'success' },
+  { label: 'Key detection', detail: 'C major confirmed', status: 'Passed', tone: 'success' },
+  { label: 'Tempo stability', detail: '±2 BPM variance', status: 'Passed', tone: 'success' },
 ];
 
 function App() {
@@ -211,6 +245,40 @@ function OptimizerModal({ onClose, onToast }) {
   const [previewMode, setPreviewMode] = useState('optimized');
   const [applyDynamics, setApplyDynamics] = useState(true);
   const [applyTiming, setApplyTiming] = useState(true);
+  const [applyArticulation, setApplyArticulation] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [playbackProgress, setPlaybackProgress] = useState(0);
+  const audioContextRef = useRef(null);
+  const playbackIntervalRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (playbackIntervalRef.current) clearInterval(playbackIntervalRef.current);
+      if (audioContextRef.current) audioContextRef.current.close();
+    };
+  }, []);
+
+  const startPlayback = useCallback(() => {
+    setIsPlaying(true);
+    setPlaybackProgress(0);
+    playbackIntervalRef.current = setInterval(() => {
+      setPlaybackProgress(prev => {
+        if (prev >= 100) {
+          setIsPlaying(false);
+          return 0;
+        }
+        return prev + 2;
+      });
+    }, 100);
+  }, []);
+
+  const stopPlayback = useCallback(() => {
+    setIsPlaying(false);
+    if (playbackIntervalRef.current) {
+      clearInterval(playbackIntervalRef.current);
+      playbackIntervalRef.current = null;
+    }
+  }, []);
 
   const chooseFile = (file) => {
     if (!file) return;
@@ -247,6 +315,10 @@ function OptimizerModal({ onClose, onToast }) {
     setAnalysis((currentAnalysis) => currentAnalysis ? { ...currentAnalysis, preview: getRepairPreview(currentAnalysis, presetKey, { applyDynamics, applyTiming: nextValue }) } : currentAnalysis);
   };
 
+  const toggleArticulation = () => {
+    setApplyArticulation(prev => !prev);
+  };
+
   const exportRepair = async () => {
     const { blob, repairedNotes, repairedTimingEvents } = await createOptimizedMidi(selectedFile, presetKey, { applyDynamics, applyTiming });
     const downloadUrl = URL.createObjectURL(blob);
@@ -259,6 +331,41 @@ function OptimizerModal({ onClose, onToast }) {
     URL.revokeObjectURL(downloadUrl);
     onToast(`${repairedNotes} notes normalized · ${repairedTimingEvents} timing events aligned`);
     onClose();
+  };
+
+  const shareProject = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'DNA Music Optimizer',
+          text: `Check out my optimized MIDI: ${analysis?.fileName}`,
+          url: window.location.href,
+        });
+        onToast('Project shared successfully');
+      } catch (err) {
+        onToast('Share cancelled');
+      }
+    } else {
+      await navigator.clipboard.writeText(window.location.href);
+      onToast('Link copied to clipboard');
+    }
+  };
+
+  const savePreset = () => {
+    const presetData = { presetKey, applyDynamics, applyTiming, applyArticulation };
+    localStorage.setItem(`dna-preset-${Date.now()}`, JSON.stringify(presetData));
+    onToast('Preset saved');
+  };
+
+  const loadSavedPresets = () => {
+    const presets = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key?.startsWith('dna-preset-')) {
+        presets.push(JSON.parse(localStorage.getItem(key)));
+      }
+    }
+    return presets;
   };
 
   return <div className="modal-backdrop" onClick={stage === 'analyzing' ? undefined : onClose}>
