@@ -1,0 +1,131 @@
+{
+  "schema": "dna-max-4.48-model-inventory",
+  "agent": "data-inspector",
+  "task": "T4",
+  "models": [
+    {
+      "key": "pattern_reconstructor",
+      "path": "dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+      "sha256": "20a3441fd574b0605f80d88d2468cad0a1dcd9bb16aa8cfa08a1dedb63fc7e0b",
+      "bytes": 185721,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums",
+        "percussion",
+        "rhythm-guitar",
+        "power-riff",
+        "accompaniment"
+      ],
+      "authority": "ADVISORY"
+    },
+    {
+      "key": "song_context",
+      "path": "ai_song_context/model/song_context_model_v1.pt",
+      "sha256": "30cd865d0e4130d73410ec48d0d6d86c2c1fa365c3eacb41e53cce2381df4019",
+      "bytes": 41440,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "SCORER"
+    },
+    {
+      "key": "event_v1",
+      "path": "ai_event_decoder/event_decoder_model_v1.npz",
+      "sha256": "0b4c8eca161beba196b7d198e86ae521c59db95080a67f63598d384d6f22fcef",
+      "bytes": 201339,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "CANDIDATE_SOURCE"
+    },
+    {
+      "key": "event_ar_v2",
+      "path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+      "sha256": "6dcb96aa664209c664c72d78dd18dcd9a6cc21c51879c70bda91c8fcab1d2052",
+      "bytes": 288017,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "CANDIDATE_SOURCE"
+    },
+    {
+      "key": "phrase_planner",
+      "path": "ai_phrase_context/phrase_planner_model_v1.npz",
+      "sha256": "e17c7170da4969e34f91ce098a2fc314f9bc82324f798585fdf007bef8c09bca",
+      "bytes": 102116,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "SCORER"
+    },
+    {
+      "key": "multibar_v3",
+      "path": "ai_multibar_event/multibar_event_model_v3.npz",
+      "sha256": "a94fc9dc7e4497591241220a6a543c87820d45db397589f7b154a90d0bc3756e",
+      "bytes": 202905,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "CANDIDATE_SOURCE"
+    },
+    {
+      "key": "section_arranger",
+      "path": "ai_section_context/section_arranger_model_v1.npz",
+      "sha256": "95344a364bf88aa03d523c3c8999282e6ce6a39c657a0e50383f5c01c9277ffb",
+      "bytes": 77300,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "SCORER"
+    },
+    {
+      "key": "transition_fill",
+      "path": "ai_transition_fill/transition_fill_model_v1.npz",
+      "sha256": "d0c44c5d688dbe2086f4c6243f1c7d515a92fe41665b427ba8c999c2ad77d4c5",
+      "bytes": 59477,
+      "shaStableVs432": true,
+      "roleScope": [
+        "bass",
+        "drums"
+      ],
+      "authority": "SCORER"
+    },
+    {
+      "key": "relationship_ranker",
+      "path": "relationship-transformer-v1/relationship_transformer_v1.npz",
+      "sha256": "2c3cba82f650616004d7f7f63ee04bfb4ed3398cdb438cdc3cab05e10c9a262c",
+      "bytes": 332454,
+      "shaStableVs432": true,
+      "roleScope": [
+        "third",
+        "echo"
+      ],
+      "authority": "SCORER"
+    },
+    {
+      "key": "relationship_sequence",
+      "path": "relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+      "sha256": "ab99c0e3045818bd45cbb99258c801c8ce5a67063eed26a494ded135b8906842",
+      "bytes": 73052,
+      "shaStableVs432": true,
+      "roleScope": [
+        "third",
+        "echo"
+      ],
+      "authority": "CANDIDATE_SOURCE"
+    }
+  ]
+}

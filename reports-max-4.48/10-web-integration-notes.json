@@ -1,0 +1,14 @@
+{
+  "schema": "dna-max-4.48-web-integration-notes",
+  "agent": "web-integration-scout",
+  "task": "T13",
+  "status": "advisory-no-code-change",
+  "recommendations": [
+    "Expose MAX as opt-in engine id 'max-neural' alongside evidence engines in execute_pipeline stage config",
+    "Keep default routing APPLY_EXISTING_EVIDENCE_PLAN; gate MAX behind user flag + REPLACE/AUGMENT warrant (see max_activation.py decision gate)",
+    "Validate outputs with pa800_validator before web export; surface maxOrchestration report fields in UI",
+    "Do not enable in batch mode until hardware profiles (HARDWARE_PENDING) are completed"
+  ],
+  "entryPoint": "dna_midi_studio.max_activation.execute_max_replace",
+  "webHook": "unified_pipeline.execute_web (unchanged)"
+}

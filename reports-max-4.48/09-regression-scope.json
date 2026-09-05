@@ -1,0 +1,19 @@
+{
+  "schema": "dna-max-4.48-regression-scope",
+  "agent": "regression-auditor",
+  "task": "T11",
+  "productionModulesDiff": "(empty diff — production pipeline untouched)",
+  "legacyMaxTestsDiff": "(empty)",
+  "untouchedProductionModules": [
+    "unified_pipeline.py",
+    "role_aware_repair.py",
+    "song_understanding.py",
+    "role_disambiguation.py",
+    "song_reconstruction_planner.py",
+    "structural_recovery.py",
+    "overlap_recovery.py",
+    "evidence_authority.py",
+    "pa800_validator.py"
+  ],
+  "note": "legacy v432 engine test was repointed to layout resolver + fixture path; orchestration semantics unchanged"
+}

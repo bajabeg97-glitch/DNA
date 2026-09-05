@@ -1,0 +1,77 @@
+{
+  "schema": "dna-max-4.48-replacement-run",
+  "agent": "replacement-engineer",
+  "task": "T6",
+  "canonicalRun": {
+    "request": {
+      "track_index": 0,
+      "channel": 15,
+      "start_bar": 6,
+      "end_bar": 9,
+      "role": "accompaniment"
+    },
+    "gate": "REPLACE",
+    "allowed": true,
+    "engineStatus": "RENDERED_REPLACE_A_B_C_REQUIRES_FINAL_PRODUCTION_VALIDATOR",
+    "outputs": {
+      "A": {
+        "file": "session35-partial-preview.REPLACE.A.max-4.48.mid",
+        "sha256": "34f579491f1a08227182b1fb1973e6db5e55f3d7099a468797866fa0809048ba",
+        "notes": 132
+      },
+      "B": {
+        "file": "session35-partial-preview.REPLACE.B.max-4.48.mid",
+        "sha256": "ccfd6250a8a1597ab3c5d80169f18d8b911138399ceec01ec9c58da339edbf05",
+        "notes": 264
+      },
+      "C": {
+        "file": "session35-partial-preview.REPLACE.C.max-4.48.mid",
+        "sha256": "cccc6cab71a305777c5e7f195fc464c3a2f3d3427eca7cf9010eb850365900d8",
+        "notes": 144
+      }
+    }
+  },
+  "forcedNeuralRun": {
+    "request": {
+      "track_index": 0,
+      "channel": 8,
+      "start_bar": 6,
+      "end_bar": 9,
+      "role": "bass"
+    },
+    "gate": "KEEP",
+    "allowed": false,
+    "force": true,
+    "outputs": {
+      "A": {
+        "file": "session35-partial-preview.REPLACE.A.max-4.48.mid",
+        "sha256": "11b88b53c7e538eeee4eb7e1357b59fcae81fbc86a9bf515997fab1427eec939",
+        "notes": 48
+      },
+      "B": {
+        "file": "session35-partial-preview.REPLACE.B.max-4.48.mid",
+        "sha256": "5e95c0356ff9a850853b4fe3f7f27f5995cb4ae3d5e816d943592408edef8021",
+        "notes": 48
+      },
+      "C": {
+        "file": "session35-partial-preview.REPLACE.C.max-4.48.mid",
+        "sha256": "fd528230570f18c1b988802ea36521065902cf4037af70c815b019d7a6b3b756",
+        "notes": 48
+      }
+    }
+  },
+  "evidenceSourcesSeen": [
+    "FULL_SONG_MULTIBAR_EVENT_V3",
+    "GOLD"
+  ],
+  "authority": {
+    "pattern": "GOLD_OR_FACTORY_STRUM_PLUS_NEURAL_CANDIDATES",
+    "velocity": "FACTORY_ONLY",
+    "neuralVelocityOutput": false
+  },
+  "maxOrchestration": {
+    "version": "1.0",
+    "rankingOnly": true,
+    "finalValidatorRequired": true
+  }
+}

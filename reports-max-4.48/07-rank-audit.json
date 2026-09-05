@@ -1,0 +1,32 @@
+{
+  "schema": "dna-max-4.48-rank-audit",
+  "agent": "max-rank-auditor",
+  "task": "T9",
+  "method": "independent recomputation: total = sum(weight_i * component_i) over scoreBreakdown for every candidate step",
+  "canonical": {
+    "recomputedTotalMatchesStored": true,
+    "stepsAudited": 12,
+    "mismatches": [],
+    "weights": {
+      "evidence": 1.25,
+      "neural": 0.55,
+      "context": 1.1,
+      "phrase": 1.2,
+      "transition": 1.1,
+      "diversity": 0.35
+    }
+  },
+  "forcedNeuralRun": {
+    "recomputedTotalMatchesStored": true,
+    "stepsAudited": 12,
+    "mismatches": [],
+    "weights": {
+      "evidence": 1.25,
+      "neural": 0.55,
+      "context": 1.1,
+      "phrase": 1.2,
+      "transition": 1.1,
+      "diversity": 0.35
+    }
+  }
+}

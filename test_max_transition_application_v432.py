@@ -3,13 +3,24 @@ from pathlib import Path
 from dna_midi_studio.ai_learning.track_replacement import TrackReplacementEngine, ReplacementRequest
 from dna_midi_studio.song_understanding import analyze_song_map
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 
+try:
+    import torch  # noqa: F401
+    TORCH_OK=True
+except Exception:
+    TORCH_OK=False
+
+from dna_midi_studio.max_layout import engine_dirs
+
+@unittest.skipUnless(TORCH_OK and (ROOT/'session35-partial-preview.mid').is_file(),
+                     "torch or fixture unavailable")
 class MaxTransitionApplicationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.raw=(ROOT/'artifacts/session35-partial-preview.mid').read_bytes()
-        cls.engine=TrackReplacementEngine(ROOT/'models/dna-reconstructor-v2',ROOT/'learning_data',ROOT/'data')
+        dirs=engine_dirs(ROOT)
+        cls.raw=(ROOT/'session35-partial-preview.mid').read_bytes()
+        cls.engine=TrackReplacementEngine(dirs["model_dir"],dirs["learning_data_dir"],dirs["data_dir"])
     def test_transition_source_is_gated(self):
         song=analyze_song_map(self.raw,'t.mid'); bar=song['bars'][5]
         req=ReplacementRequest(0,8,6,9,'bass')

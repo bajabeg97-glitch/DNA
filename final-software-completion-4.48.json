@@ -1,0 +1,37 @@
+{
+  "schema": "dna-final-evidence-completion",
+  "version": "4.48.0",
+  "extends": "final-software-completion-4.46.json",
+  "components": {
+    "maxNeuralOrchestration": {
+      "schema": "dna-max-orchestration-status",
+      "version": "1.0",
+      "status": "ACTIVE_OPT_IN",
+      "registryModelsPresent": 10,
+      "registryModelsMissing": 0,
+      "executor": "dna_midi_studio/max_activation.py (decision gate + full gates)",
+      "e2eArtifacts": "artifacts-max-4.48/ (6 midi renders + 2 execution reports)",
+      "tests": "test_max_registry_v448.py + test_max_activation_v448.py + legacy v432 (15/15 green)",
+      "reports": "reports-max-4.48/01..10",
+      "constraints": {
+        "defaultPipelineUntouched": true,
+        "velocityAuthority": "FACTORY_ONLY",
+        "finalValidatorRequired": true
+      }
+    }
+  },
+  "reportLinks": [
+    "reports-max-4.48/01-registry-scan.json",
+    "reports-max-4.48/04-replacement-run.json",
+    "reports-max-4.48/05-evidence-gates.json",
+    "reports-max-4.48/06-pa800-gate.json",
+    "reports-max-4.48/07-rank-audit.json",
+    "reports-max-4.48/08-test-results.json"
+  ],
+  "guarantees": {
+    "dynamicsSource": "factory-only",
+    "goldAffectsDynamics": false,
+    "neuralAffectsDynamics": false,
+    "midiValidatorCannotBeBypassed": true
+  }
+}

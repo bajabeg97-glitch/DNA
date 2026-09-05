@@ -1,0 +1,63 @@
+{
+  "schema": "dna-max-4.48-test-results",
+  "agent": "test-engineer",
+  "task": "T10",
+  "suite": "python3.11 -m unittest test_max_registry_v448 test_max_activation_v448 test_max_orchestrator_v432 test_max_transition_application_v432",
+  "summary": {
+    "ran": 15,
+    "passed": 15,
+    "failed": 0,
+    "skipped": 0
+  },
+  "tests": [
+    {
+      "file": "test_max_registry_v448.py",
+      "count": 5,
+      "result": "ok",
+      "covers": [
+        "flat registry 10/10",
+        "classic symlink layout 10/10",
+        "hard-invalid never ranks",
+        "contract gates",
+        "FACTORY_ONLY authority"
+      ]
+    },
+    {
+      "file": "test_max_activation_v448.py",
+      "count": 5,
+      "result": "ok",
+      "covers": [
+        "report schema/authority",
+        "A/B/C distinct renders",
+        "reparse+sha roundtrip",
+        "factory profile ids subset",
+        "executor warrant + outputs"
+      ]
+    },
+    {
+      "file": "test_max_orchestrator_v432.py",
+      "count": 3,
+      "result": "ok",
+      "covers": [
+        "legacy registry+authority",
+        "legacy ranking",
+        "score breakdown"
+      ]
+    },
+    {
+      "file": "test_max_transition_application_v432.py",
+      "count": 2,
+      "result": "ok",
+      "covers": [
+        "transition gating",
+        "max contract in replace report"
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.11",
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "layout": "flat"
+  }
+}

@@ -23,7 +23,8 @@
         "task-plan-max-4.48.json",
         "max-orchestration-status-4.48.json"
       ],
-      "status": "done"
+      "status": "done",
+      "evidence": "max-orchestration-status-4.48.json, task-plan-max-4.48.json"
     },
     {
       "id": "registry-engineer",
@@ -37,7 +38,8 @@
         "dna_midi_studio/ai_learning/max_orchestrator.py",
         "reports-max-4.48/01-registry-scan.json"
       ],
-      "status": "done"
+      "status": "done",
+      "evidence": "reports-max-4.48/01-registry-scan.json (+ test_max_registry_v448)"
     },
     {
       "id": "layout-architect",
@@ -50,7 +52,8 @@
         "dna_midi_studio/max_layout.py",
         "reports-max-4.48/02-layout-map.json"
       ],
-      "status": "done"
+      "status": "done",
+      "evidence": "dna_midi_studio/max_layout.py, reports-max-4.48/02-layout-map.json"
     },
     {
       "id": "data-inspector",
@@ -62,7 +65,8 @@
       "deliverables": [
         "reports-max-4.48/03-model-inventory.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/03-model-inventory.json (10/10 sha-stable)"
     },
     {
       "id": "replacement-engineer",
@@ -77,7 +81,8 @@
         "artifacts-max-4.48/*.mid",
         "reports-max-4.48/04-replacement-run.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "dna_midi_studio/max_activation.py, artifacts-max-4.48/*.mid, reports-max-4.48/04-replacement-run.json"
     },
     {
       "id": "evidence-guard",
@@ -89,7 +94,8 @@
       "deliverables": [
         "reports-max-4.48/05-evidence-gates.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/05-evidence-gates.json"
     },
     {
       "id": "pa800-validator",
@@ -101,7 +107,8 @@
       "deliverables": [
         "reports-max-4.48/06-pa800-gate.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/06-pa800-gate.json"
     },
     {
       "id": "max-rank-auditor",
@@ -113,7 +120,8 @@
       "deliverables": [
         "reports-max-4.48/07-rank-audit.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/07-rank-audit.json (24/24 steps exact)"
     },
     {
       "id": "test-engineer",
@@ -127,7 +135,8 @@
         "test_max_activation_v448.py",
         "reports-max-4.48/08-test-results.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "test_max_registry_v448.py, test_max_activation_v448.py, reports-max-4.48/08-test-results.json"
     },
     {
       "id": "regression-auditor",
@@ -141,7 +150,8 @@
         "test_max_transition_application_v432.py",
         "reports-max-4.48/09-regression-scope.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/09-regression-scope.json (production diff empty)"
     },
     {
       "id": "docs-agent",
@@ -155,7 +165,8 @@
         "max-orchestration-review-4.47.md",
         "docs/max-activation-4.48.md"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "docs/max-activation-4.48.md, README.md, max-orchestration-review-4.47.md"
     },
     {
       "id": "release-agent",
@@ -168,7 +179,8 @@
         "max-orchestration-status-4.48.json",
         "final-software-completion-4.48.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "max-orchestration-status-4.48.json, final-software-completion-4.48.json"
     },
     {
       "id": "web-integration-scout",
@@ -180,7 +192,14 @@
       "deliverables": [
         "reports-max-4.48/10-web-integration-notes.json"
       ],
-      "status": "queued"
+      "status": "done",
+      "evidence": "reports-max-4.48/10-web-integration-notes.json"
     }
-  ]
+  ],
+  "completion": {
+    "allDone": true,
+    "date": "2026-09-05",
+    "suite": "15/15 tests green",
+    "commitNote": "see git log on arena branch"
+  }
 }

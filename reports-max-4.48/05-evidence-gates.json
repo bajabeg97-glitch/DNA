@@ -1,0 +1,68 @@
+{
+  "schema": "dna-max-4.48-evidence-gates",
+  "agent": "evidence-guard",
+  "task": "T7",
+  "invariants": {
+    "velocityAuthority": "FACTORY_ONLY confirmed",
+    "goldVelocityUsed": false,
+    "neuralVelocityUsed": false
+  },
+  "canonicalRunGates": {
+    "A": {
+      "reparse": true,
+      "notes": 1532,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    },
+    "B": {
+      "reparse": true,
+      "notes": 1664,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    },
+    "C": {
+      "reparse": true,
+      "notes": 1544,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    }
+  },
+  "forcedNeuralRunGates": {
+    "A": {
+      "reparse": true,
+      "notes": 1432,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    },
+    "B": {
+      "reparse": true,
+      "notes": 1432,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    },
+    "C": {
+      "reparse": true,
+      "notes": 1432,
+      "shaMatch": true,
+      "factoryVelocityProfileIds": null,
+      "goldVelocityUsed": null,
+      "neuralVelocityUsed": null,
+      "protectedEventsPreserved": null
+    }
+  }
+}

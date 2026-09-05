@@ -54,7 +54,7 @@
       "task": "Inventory models + sha256 vs 4.32",
       "acceptance": "all 10 present, sha stable",
       "deliverable": "reports-max-4.48/03-model-inventory.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T5",
@@ -62,7 +62,7 @@
       "task": "Build max_activation.py executor/CLI",
       "acceptance": "module imports clean; CLI registered",
       "deliverable": "dna_midi_studio/max_activation.py",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T6",
@@ -70,7 +70,7 @@
       "task": "Run end-to-end REPLACE (bass bars 6-9) on session35 fixture",
       "acceptance": "A/B/C mids + run report",
       "deliverable": "reports-max-4.48/04-replacement-run.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T7",
@@ -78,7 +78,7 @@
       "task": "Gate checks on outputs",
       "acceptance": "gate table all pass",
       "deliverable": "reports-max-4.48/05-evidence-gates.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T8",
@@ -86,7 +86,7 @@
       "task": "SMF/PA800 validation on outputs",
       "acceptance": "honest classification",
       "deliverable": "reports-max-4.48/06-pa800-gate.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T9",
@@ -94,7 +94,7 @@
       "task": "Recompute MAX scores independently",
       "acceptance": "math matches run",
       "deliverable": "reports-max-4.48/07-rank-audit.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T10",
@@ -102,7 +102,7 @@
       "task": "New v448 tests + execute",
       "acceptance": "suite green",
       "deliverable": "reports-max-4.48/08-test-results.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T11",
@@ -110,7 +110,7 @@
       "task": "Legacy v432 tests + untouched scope proof",
       "acceptance": "legacy green + scope proof",
       "deliverable": "reports-max-4.48/09-regression-scope.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T12",
@@ -118,7 +118,7 @@
       "task": "README/review/usage guide",
       "acceptance": "docs merged",
       "deliverable": "docs/max-activation-4.48.md",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T13",
@@ -126,7 +126,7 @@
       "task": "Web mapping notes",
       "acceptance": "advisory note",
       "deliverable": "reports-max-4.48/10-web-integration-notes.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T14",
@@ -134,7 +134,7 @@
       "task": "4.48 status + completion reports",
       "acceptance": "json valid",
       "deliverable": "max-orchestration-status-4.48.json",
-      "state": "queued"
+      "state": "done"
     },
     {
       "taskId": "T15",
@@ -142,7 +142,7 @@
       "task": "Final review + push",
       "acceptance": "branch pushed",
       "deliverable": "git history",
-      "state": "queued"
+      "state": "done"
     }
   ]
 }

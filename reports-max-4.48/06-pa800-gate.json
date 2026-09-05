@@ -1,0 +1,41 @@
+{
+  "schema": "dna-max-4.48-pa800-gate",
+  "agent": "pa800-validator",
+  "task": "T8",
+  "note": "outputs are song-format MIDI (source fixture is not a PA800 style with v*/i*/f*/e* CV markers). PA800 style validator correctly reports format!=0/multi-track for song files. Style-format REPLACE validation stays enforced by engine gates (protected events + reparse) and remains mandatory before style export.",
+  "canonical": {
+    "A": {
+      "class": "STYLE_INVALID_SONG_MIDI",
+      "format": 0,
+      "trackCount": 1,
+      "ppq": 480,
+      "issues": [
+        "Preklopljena nota CH16 pitch 57",
+        "Preklopljena nota CH16 pitch 57",
+        "Preklopljena nota CH16 pitch 57"
+      ]
+    },
+    "B": {
+      "class": "STYLE_INVALID_SONG_MIDI",
+      "format": 0,
+      "trackCount": 1,
+      "ppq": 480,
+      "issues": [
+        "Preklopljena nota CH16 pitch 57",
+        "Preklopljena nota CH16 pitch 57",
+        "Preklopljena nota CH16 pitch 57"
+      ]
+    },
+    "C": {
+      "class": "STYLE_INVALID_SONG_MIDI",
+      "format": 0,
+      "trackCount": 1,
+      "ppq": 480,
+      "issues": [
+        "Preklopljena nota CH16 pitch 52",
+        "Preklopljena nota CH16 pitch 52",
+        "Polifonija CH16 prelazi limit: 4 > 3"
+      ]
+    }
+  }
+}

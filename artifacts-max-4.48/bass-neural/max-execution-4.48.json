@@ -1,0 +1,768 @@
+{
+  "schema": "dna-max-4.48-execution",
+  "version": "1.0",
+  "input": {
+    "file": "session35-partial-preview.mid",
+    "bytes": 12769,
+    "sha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+  },
+  "request": {
+    "track_index": 0,
+    "channel": 8,
+    "start_bar": 6,
+    "end_bar": 9,
+    "role": "bass"
+  },
+  "decisionGate": {
+    "allowed": false,
+    "decision": "KEEP",
+    "severity": 0.0,
+    "metrics": {
+      "noteCount": 16,
+      "densityPerQuarter": 1.0,
+      "medianGateToNextOnset": 0.3382,
+      "duplicatePressure": 0,
+      "largeLeapRate": 0.0,
+      "evidenceStrength": 0.82
+    }
+  },
+  "registry": {
+    "schema": "dna-max-model-registry",
+    "version": "1.0",
+    "models": [
+      {
+        "key": "pattern_reconstructor",
+        "provenance": "GOLD_OR_FACTORY_PATTERN_NEURAL",
+        "relative_path": "../models/dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+        "roles": [
+          "bass",
+          "drums",
+          "percussion",
+          "rhythm-guitar",
+          "power-riff",
+          "accompaniment"
+        ],
+        "scope": "BAR",
+        "authority": "ADVISORY",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "20a3441fd574b0605f80d88d2468cad0a1dcd9bb16aa8cfa08a1dedb63fc7e0b",
+        "bytes": 185721,
+        "path": "dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "song_context",
+        "provenance": "FULL_SONG_CONTEXT_V1",
+        "relative_path": "ai_song_context/model/song_context_model_v1.pt",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR_CONTEXT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "30cd865d0e4130d73410ec48d0d6d86c2c1fa365c3eacb41e53cce2381df4019",
+        "bytes": 41440,
+        "path": "ai_song_context/model/song_context_model_v1.pt",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "event_v1",
+        "provenance": "FULL_SONG_EVENT_DECODER_V1",
+        "relative_path": "ai_event_decoder/event_decoder_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "0b4c8eca161beba196b7d198e86ae521c59db95080a67f63598d384d6f22fcef",
+        "bytes": 201339,
+        "path": "ai_event_decoder/event_decoder_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "event_ar_v2",
+        "provenance": "FULL_SONG_AUTOREGRESSIVE_EVENT_V2",
+        "relative_path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "6dcb96aa664209c664c72d78dd18dcd9a6cc21c51879c70bda91c8fcab1d2052",
+        "bytes": 288017,
+        "path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "phrase_planner",
+        "provenance": "FULL_SONG_PHRASE_PLANNER_V1",
+        "relative_path": "ai_phrase_context/phrase_planner_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "4_BAR",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "e17c7170da4969e34f91ce098a2fc314f9bc82324f798585fdf007bef8c09bca",
+        "bytes": 102116,
+        "path": "ai_phrase_context/phrase_planner_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "multibar_v3",
+        "provenance": "FULL_SONG_MULTIBAR_EVENT_V3",
+        "relative_path": "ai_multibar_event/multibar_event_model_v3.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "4_BAR_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "a94fc9dc7e4497591241220a6a543c87820d45db397589f7b154a90d0bc3756e",
+        "bytes": 202905,
+        "path": "ai_multibar_event/multibar_event_model_v3.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "section_arranger",
+        "provenance": "SECTION_ARRANGER_V1",
+        "relative_path": "ai_section_context/section_arranger_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "SECTION_INTENT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "95344a364bf88aa03d523c3c8999282e6ce6a39c657a0e50383f5c01c9277ffb",
+        "bytes": 77300,
+        "path": "ai_section_context/section_arranger_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "transition_fill",
+        "provenance": "TRANSITION_FILL_INTENT_V1",
+        "relative_path": "ai_transition_fill/transition_fill_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "TRANSITION_INTENT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "d0c44c5d688dbe2086f4c6243f1c7d515a92fe41665b427ba8c999c2ad77d4c5",
+        "bytes": 59477,
+        "path": "ai_transition_fill/transition_fill_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "relationship_ranker",
+        "provenance": "RELATIONSHIP_MODEL_V1",
+        "relative_path": "../models/relationship-transformer-v1/relationship_transformer_v1.npz",
+        "roles": [
+          "third",
+          "echo"
+        ],
+        "scope": "MELODIC_RELATION",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "2c3cba82f650616004d7f7f63ee04bfb4ed3398cdb438cdc3cab05e10c9a262c",
+        "bytes": 332454,
+        "path": "relationship-transformer-v1/relationship_transformer_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "relationship_sequence",
+        "provenance": "RELATIONSHIP_SEQUENCE_V2",
+        "relative_path": "../models/relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+        "roles": [
+          "third",
+          "echo"
+        ],
+        "scope": "MELODIC_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "ab99c0e3045818bd45cbb99258c801c8ce5a67063eed26a494ded135b8906842",
+        "bytes": 73052,
+        "path": "relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      }
+    ],
+    "present": 10,
+    "missing": 0,
+    "authority": {
+      "velocity": "FACTORY_ONLY",
+      "goldVelocity": false,
+      "neuralVelocity": false,
+      "hardValidatorRequired": true,
+      "originalProtectedOutsideTarget": true
+    }
+  },
+  "engineDirs": {
+    "model_dir": "/home/user/DNA/dna-reconstructor-v2",
+    "learning_data_dir": "/home/user/DNA",
+    "data_dir": "/home/user/DNA"
+  },
+  "authority": {
+    "pattern": "GOLD_OR_FACTORY_STRUM_PLUS_NEURAL_CANDIDATES",
+    "velocity": "FACTORY_ONLY",
+    "neuralVelocityOutput": false
+  },
+  "maxOrchestration": {
+    "version": "1.0",
+    "application": {
+      "KEEP": "preserve original target events",
+      "REPAIR": "bounded target-region edit; preserve velocity unless Factory reapplies it",
+      "REPLACE": "new target-region notes require Factory velocity + hard validation",
+      "TRANSITION_ONLY": "modify only confirmed/selected transition window",
+      "AUTO_COMMIT": false,
+      "requiredGates": [
+        "SYMBOLIC_HARD_CHECK",
+        "FACTORY_VELOCITY_AUTHORITY",
+        "PROTECTED_EVENT_CHECK",
+        "MIDI_REPARSE",
+        "FINAL_PRODUCTION_VALIDATOR"
+      ]
+    },
+    "rankingOnly": true,
+    "finalValidatorRequired": true
+  },
+  "phrasePlanner": {
+    "used": true,
+    "phraseBars": 4,
+    "velocityUsed": false
+  },
+  "multibarEventDecoder": {
+    "used": true,
+    "phraseBars": 4,
+    "sharedHiddenState": true,
+    "velocityUsed": false
+  },
+  "sectionArranger": {
+    "used": true,
+    "intent": {
+      "section": "verse",
+      "sectionConfidence": 0.4818304181098938,
+      "transitionProximity": 0.15144820511341095,
+      "energyIntent": 0.6414765119552612,
+      "velocityUsed": false
+    },
+    "labels": "HEURISTIC_CANDIDATES",
+    "fillBreak": "TRANSITION_ONLY_NOT_CONFIRMED_SECTION",
+    "velocityUsed": false
+  },
+  "transitionFill": {
+    "used": true,
+    "intent": {
+      "transitionCandidateProbability": 0.025242388248443604,
+      "transitionStrength": 0.04366854205727577,
+      "targetDelta": [
+        -0.003953777253627777,
+        0.0006716549396514893,
+        0.007240574806928635,
+        0.016354205086827278,
+        -0.0068774037063121796,
+        0.019189491868019104,
+        0.010771289467811584
+      ],
+      "velocityUsed": false,
+      "labelAuthority": "WEAK_LEARNED_INTENT"
+    },
+    "labels": "WEAK_LEARNED_TRANSITION_INTENT",
+    "drumFill": "RUNTIME_TRANSITION_EVENT_CANDIDATE_WHEN_GATED_NOT_KORG_CONFIRMED",
+    "break": "NOT_INFERRED",
+    "velocityUsed": false,
+    "activationThreshold": 0.18
+  },
+  "performanceDNA": {
+    "version": "4.42.0",
+    "roles": [
+      "power-riff",
+      "bass",
+      "rhythm-guitar"
+    ],
+    "velocity": "FACTORY_ONLY",
+    "antiCopy": true
+  },
+  "outputs": {
+    "A": {
+      "file": "session35-partial-preview.REPLACE.A.max-4.48.mid",
+      "sha256": "11b88b53c7e538eeee4eb7e1357b59fcae81fbc86a9bf515997fab1427eec939",
+      "noteCount": 48,
+      "maxScore": 3.3228631565007167,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 302,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.7327251378813937,
+          "phraseScore": 0.7529635721815878,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.322053938287439,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.7327251378813937,
+            "phrase": 0.7529635721815878,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.322053938287439,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 302,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.6717248541197066,
+          "phraseScore": 0.6874074769699104,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.1762863118955704,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.6717248541197066,
+            "phrase": 0.6874074769699104,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.1762863118955704,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 302,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.713541607827417,
+          "phraseScore": 0.729225176495637,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.2724659804049234,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.713541607827417,
+            "phrase": 0.729225176495637,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.2724659804049234,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 302,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.7372788313518525,
+          "phraseScore": 0.7494637016780654,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.3228631565007167,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.7372788313518525,
+            "phrase": 0.7494637016780654,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.3228631565007167,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    },
+    "B": {
+      "file": "session35-partial-preview.REPLACE.B.max-4.48.mid",
+      "sha256": "5e95c0356ff9a850853b4fe3f7f27f5995cb4ae3d5e816d943592408edef8021",
+      "noteCount": 48,
+      "maxScore": 3.0861667633667014,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 300,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.6277609760605225,
+          "phraseScore": 0.6526080747501054,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.0861667633667014,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.6277609760605225,
+            "phrase": 0.6526080747501054,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.0861667633667014,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 300,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.5651923193114586,
+          "phraseScore": 0.5762540549381288,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 2.9257164171683594,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.5651923193114586,
+            "phrase": 0.5762540549381288,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 2.9257164171683594,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 300,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.56944900289964,
+          "phraseScore": 0.5793937353051679,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 2.934166385555806,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.56944900289964,
+            "phrase": 0.5793937353051679,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 2.934166385555806,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 300,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.5752052890228796,
+          "phraseScore": 0.5825950249536072,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 2.944339847869496,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.5752052890228796,
+            "phrase": 0.5825950249536072,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 2.944339847869496,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    },
+    "C": {
+      "file": "session35-partial-preview.REPLACE.C.max-4.48.mid",
+      "sha256": "fd528230570f18c1b988802ea36521065902cf4037af70c815b019d7a6b3b756",
+      "noteCount": 48,
+      "maxScore": 3.473156499393077,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 301,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.7526456289362387,
+          "phraseScore": 0.7736903453036675,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.3688386061942635,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.7526456289362387,
+            "phrase": 0.7736903453036675,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.3688386061942635,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 301,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.6944751496964144,
+          "phraseScore": 0.7112513010814605,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.2299242259638086,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.6944751496964144,
+            "phrase": 0.7112513010814605,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.2299242259638086,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 301,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.7936845694579053,
+          "phraseScore": 0.8131370665991493,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.461317506322675,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.7936845694579053,
+            "phrase": 0.8131370665991493,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.461317506322675,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 301,
+          "evidenceSource": "FULL_SONG_MULTIBAR_EVENT_V3",
+          "notes": 12,
+          "contextScore": 0.8014579807656442,
+          "phraseScore": 0.8158772671257236,
+          "sectionEnergy": 0.6493527293205261,
+          "maxScore": 3.473156499393077,
+          "scoreBreakdown": {
+            "sourceClass": "NEURAL",
+            "evidence": 0.35,
+            "neural": 0.5,
+            "context": 0.8014579807656442,
+            "phrase": 0.8158772671257236,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.473156499393077,
+            "role": "bass",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    }
+  },
+  "engineStatus": "RENDERED_REPLACE_A_B_C_REQUIRES_FINAL_PRODUCTION_VALIDATOR",
+  "outDir": "artifacts-max-4.48/bass-neural"
+}

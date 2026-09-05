@@ -1,0 +1,46 @@
+{
+  "schema": "dna-max-orchestration-status",
+  "version": "1.0",
+  "reviewVersion": "4.48",
+  "reviewedAt": "2026-09-05",
+  "status": "ACTIVE_OPT_IN",
+  "decisionChain": [
+    "4.47: option B archive (code untouched, reversible)",
+    "2026-09-05 user override: 'odradi max citav plan' + add agents and distribute work",
+    "4.48: option A executed — full MAX plan with 13-agent team (see agent-team-max-4.48.json, task-plan-max-4.48.json)"
+  ],
+  "whatChangedIn448": [
+    "MaxModelRegistry is layout-aware: resolves all 10 models in the flattened git repo (10/10 present) and in the classic data/ models/ layout (proven by symlink simulation test)",
+    "New dna_midi_studio/max_layout.py resolver (flat vs classic workspace)",
+    "New opt-in executor dna_midi_studio/max_activation.py with role-aware decision gate (REPLACE/AUGMENT warrant or explicit --force), full gates and CLI",
+    "Real end-to-end REPLACE runs on session35-partial-preview.mid: accompaniment ch15 bars 6-9 (warranted, no force) and bass ch8 bars 6-9 (neural multibar path, forced+logged)",
+    "New tests test_max_registry_v448.py and test_max_activation_v448.py; legacy v432 tests repointed to layout resolver",
+    "15/15 python tests green; production pipeline modules untouched (regression scope report 09)"
+  ],
+  "executionEvidence": {
+    "registryPresent": 10,
+    "registryMissing": 0,
+    "midiArtifacts": [
+      "artifacts-max-4.48/session35-partial-preview.REPLACE.{A,B,C}.max-4.48.mid",
+      "artifacts-max-4.48/bass-neural/session35-partial-preview.REPLACE.{A,B,C}.max-4.48.mid"
+    ],
+    "canonicalRun": "artifacts-max-4.48/max-execution-4.48.json",
+    "neuralBassRun": "artifacts-max-4.48/bass-neural/max-execution-4.48.json",
+    "chosenSources": {
+      "canonicalRun": ["GOLD"],
+      "neuralBassRun": ["FULL_SONG_MULTIBAR_EVENT_V3"]
+    },
+    "rankAudit": "all 24 candidate steps recomputed exactly (report 07)"
+  },
+  "principlesCarriedForward": [
+    "velocity authority FACTORY_ONLY (no GOLD/neural velocity)",
+    "hard symbolic checks before any application",
+    "MAX ranking is never validation; final PA800/SMF validator mandatory",
+    "original (protected) material outside the target region is never touched",
+    "production default pipeline unchanged: MAX is opt-in"
+  ],
+  "reviewReport": "max-orchestration-review-4.47.md",
+  "agentTeam": "agent-team-max-4.48.json",
+  "taskPlan": "task-plan-max-4.48.json",
+  "reports": "reports-max-4.48/"
+}

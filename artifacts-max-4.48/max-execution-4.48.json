@@ -1,0 +1,748 @@
+{
+  "schema": "dna-max-4.48-execution",
+  "version": "1.0",
+  "input": {
+    "file": "session35-partial-preview.mid",
+    "bytes": 12769,
+    "sha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10"
+  },
+  "request": {
+    "track_index": 0,
+    "channel": 15,
+    "start_bar": 6,
+    "end_bar": 9,
+    "role": "accompaniment"
+  },
+  "decisionGate": {
+    "allowed": true,
+    "decision": "REPLACE",
+    "severity": 0.65,
+    "metrics": {
+      "noteCount": 0,
+      "densityPerQuarter": 0.0,
+      "medianGateToNextOnset": null,
+      "duplicatePressure": 0,
+      "largeLeapRate": 0.0,
+      "evidenceStrength": 0.82
+    }
+  },
+  "registry": {
+    "schema": "dna-max-model-registry",
+    "version": "1.0",
+    "models": [
+      {
+        "key": "pattern_reconstructor",
+        "provenance": "GOLD_OR_FACTORY_PATTERN_NEURAL",
+        "relative_path": "../models/dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+        "roles": [
+          "bass",
+          "drums",
+          "percussion",
+          "rhythm-guitar",
+          "power-riff",
+          "accompaniment"
+        ],
+        "scope": "BAR",
+        "authority": "ADVISORY",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "20a3441fd574b0605f80d88d2468cad0a1dcd9bb16aa8cfa08a1dedb63fc7e0b",
+        "bytes": 185721,
+        "path": "dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "song_context",
+        "provenance": "FULL_SONG_CONTEXT_V1",
+        "relative_path": "ai_song_context/model/song_context_model_v1.pt",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR_CONTEXT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "30cd865d0e4130d73410ec48d0d6d86c2c1fa365c3eacb41e53cce2381df4019",
+        "bytes": 41440,
+        "path": "ai_song_context/model/song_context_model_v1.pt",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "event_v1",
+        "provenance": "FULL_SONG_EVENT_DECODER_V1",
+        "relative_path": "ai_event_decoder/event_decoder_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "0b4c8eca161beba196b7d198e86ae521c59db95080a67f63598d384d6f22fcef",
+        "bytes": 201339,
+        "path": "ai_event_decoder/event_decoder_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "event_ar_v2",
+        "provenance": "FULL_SONG_AUTOREGRESSIVE_EVENT_V2",
+        "relative_path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "BAR_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "6dcb96aa664209c664c72d78dd18dcd9a6cc21c51879c70bda91c8fcab1d2052",
+        "bytes": 288017,
+        "path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "phrase_planner",
+        "provenance": "FULL_SONG_PHRASE_PLANNER_V1",
+        "relative_path": "ai_phrase_context/phrase_planner_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "4_BAR",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "e17c7170da4969e34f91ce098a2fc314f9bc82324f798585fdf007bef8c09bca",
+        "bytes": 102116,
+        "path": "ai_phrase_context/phrase_planner_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "multibar_v3",
+        "provenance": "FULL_SONG_MULTIBAR_EVENT_V3",
+        "relative_path": "ai_multibar_event/multibar_event_model_v3.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "4_BAR_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "a94fc9dc7e4497591241220a6a543c87820d45db397589f7b154a90d0bc3756e",
+        "bytes": 202905,
+        "path": "ai_multibar_event/multibar_event_model_v3.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "section_arranger",
+        "provenance": "SECTION_ARRANGER_V1",
+        "relative_path": "ai_section_context/section_arranger_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "SECTION_INTENT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "95344a364bf88aa03d523c3c8999282e6ce6a39c657a0e50383f5c01c9277ffb",
+        "bytes": 77300,
+        "path": "ai_section_context/section_arranger_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "transition_fill",
+        "provenance": "TRANSITION_FILL_INTENT_V1",
+        "relative_path": "ai_transition_fill/transition_fill_model_v1.npz",
+        "roles": [
+          "bass",
+          "drums"
+        ],
+        "scope": "TRANSITION_INTENT",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "d0c44c5d688dbe2086f4c6243f1c7d515a92fe41665b427ba8c999c2ad77d4c5",
+        "bytes": 59477,
+        "path": "ai_transition_fill/transition_fill_model_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "relationship_ranker",
+        "provenance": "RELATIONSHIP_MODEL_V1",
+        "relative_path": "../models/relationship-transformer-v1/relationship_transformer_v1.npz",
+        "roles": [
+          "third",
+          "echo"
+        ],
+        "scope": "MELODIC_RELATION",
+        "authority": "SCORER",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "2c3cba82f650616004d7f7f63ee04bfb4ed3398cdb438cdc3cab05e10c9a262c",
+        "bytes": 332454,
+        "path": "relationship-transformer-v1/relationship_transformer_v1.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      },
+      {
+        "key": "relationship_sequence",
+        "provenance": "RELATIONSHIP_SEQUENCE_V2",
+        "relative_path": "../models/relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+        "roles": [
+          "third",
+          "echo"
+        ],
+        "scope": "MELODIC_SEQUENCE",
+        "authority": "CANDIDATE_SOURCE",
+        "velocity_allowed": false,
+        "present": true,
+        "sha256": "ab99c0e3045818bd45cbb99258c801c8ce5a67063eed26a494ded135b8906842",
+        "bytes": 73052,
+        "path": "relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+        "layoutProbeBases": [
+          "/home/user/DNA",
+          "/home/user/DNA/data",
+          "/home/user/DNA/models"
+        ]
+      }
+    ],
+    "present": 10,
+    "missing": 0,
+    "authority": {
+      "velocity": "FACTORY_ONLY",
+      "goldVelocity": false,
+      "neuralVelocity": false,
+      "hardValidatorRequired": true,
+      "originalProtectedOutsideTarget": true
+    }
+  },
+  "engineDirs": {
+    "model_dir": "/home/user/DNA/dna-reconstructor-v2",
+    "learning_data_dir": "/home/user/DNA",
+    "data_dir": "/home/user/DNA"
+  },
+  "authority": {
+    "pattern": "GOLD_OR_FACTORY_STRUM_PLUS_NEURAL_CANDIDATES",
+    "velocity": "FACTORY_ONLY",
+    "neuralVelocityOutput": false
+  },
+  "maxOrchestration": {
+    "version": "1.0",
+    "application": {
+      "KEEP": "preserve original target events",
+      "REPAIR": "bounded target-region edit; preserve velocity unless Factory reapplies it",
+      "REPLACE": "new target-region notes require Factory velocity + hard validation",
+      "TRANSITION_ONLY": "modify only confirmed/selected transition window",
+      "AUTO_COMMIT": false,
+      "requiredGates": [
+        "SYMBOLIC_HARD_CHECK",
+        "FACTORY_VELOCITY_AUTHORITY",
+        "PROTECTED_EVENT_CHECK",
+        "MIDI_REPARSE",
+        "FINAL_PRODUCTION_VALIDATOR"
+      ]
+    },
+    "rankingOnly": true,
+    "finalValidatorRequired": true
+  },
+  "phrasePlanner": {
+    "used": false,
+    "phraseBars": 0,
+    "velocityUsed": false
+  },
+  "multibarEventDecoder": {
+    "used": false,
+    "phraseBars": 0,
+    "sharedHiddenState": false,
+    "velocityUsed": false
+  },
+  "sectionArranger": {
+    "used": false,
+    "intent": null,
+    "labels": "HEURISTIC_CANDIDATES",
+    "fillBreak": "TRANSITION_ONLY_NOT_CONFIRMED_SECTION",
+    "velocityUsed": false
+  },
+  "transitionFill": {
+    "used": false,
+    "intent": null,
+    "labels": "WEAK_LEARNED_TRANSITION_INTENT",
+    "drumFill": "RUNTIME_TRANSITION_EVENT_CANDIDATE_WHEN_GATED_NOT_KORG_CONFIRMED",
+    "break": "NOT_INFERRED",
+    "velocityUsed": false,
+    "activationThreshold": 0.18
+  },
+  "performanceDNA": {
+    "version": "4.42.0",
+    "roles": [
+      "power-riff",
+      "bass",
+      "rhythm-guitar"
+    ],
+    "velocity": "FACTORY_ONLY",
+    "antiCopy": true
+  },
+  "outputs": {
+    "A": {
+      "file": "session35-partial-preview.REPLACE.A.max-4.48.mid",
+      "sha256": "34f579491f1a08227182b1fb1973e6db5e55f3d7099a468797866fa0809048ba",
+      "noteCount": 132,
+      "maxScore": 3.538463030428644,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 0,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.538463030428644,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9707704243429152,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.538463030428644,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 0,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.538463030428644,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9707704243429152,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.538463030428644,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 0,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.538463030428644,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9707704243429152,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.538463030428644,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 0,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.538463030428644,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9707704243429152,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.538463030428644,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    },
+    "B": {
+      "file": "session35-partial-preview.REPLACE.B.max-4.48.mid",
+      "sha256": "ccfd6250a8a1597ab3c5d80169f18d8b911138399ceec01ec9c58da339edbf05",
+      "noteCount": 264,
+      "maxScore": 3.5034535870221775,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 1,
+          "evidenceSource": "GOLD",
+          "notes": 66,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.5034535870221775,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9427628696177419,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.5034535870221775,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 1,
+          "evidenceSource": "GOLD",
+          "notes": 66,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.5034535870221775,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9427628696177419,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.5034535870221775,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 1,
+          "evidenceSource": "GOLD",
+          "notes": 66,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.5034535870221775,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9427628696177419,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.5034535870221775,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 1,
+          "evidenceSource": "GOLD",
+          "notes": 66,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.5034535870221775,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9427628696177419,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.5034535870221775,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    },
+    "C": {
+      "file": "session35-partial-preview.REPLACE.C.max-4.48.mid",
+      "sha256": "cccc6cab71a305777c5e7f195fc464c3a2f3d3427eca7cf9010eb850365900d8",
+      "noteCount": 144,
+      "maxScore": 3.486245843010465,
+      "path": [
+        {
+          "bar": 6,
+          "retrievalRank": 2,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.486245843010465,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9289966744083716,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.486245843010465,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 7,
+          "retrievalRank": 2,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.486245843010465,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9289966744083716,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.486245843010465,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 8,
+          "retrievalRank": 2,
+          "evidenceSource": "GOLD",
+          "notes": 33,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.486245843010465,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9289966744083716,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.486245843010465,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        },
+        {
+          "bar": 9,
+          "retrievalRank": 2,
+          "evidenceSource": "GOLD",
+          "notes": 45,
+          "contextScore": null,
+          "phraseScore": null,
+          "sectionEnergy": null,
+          "maxScore": 3.461202315619189,
+          "scoreBreakdown": {
+            "sourceClass": "EVIDENCE",
+            "evidence": 0.9089618524953516,
+            "neural": 0.5,
+            "context": 0.5,
+            "phrase": 0.5,
+            "transition": 0.5,
+            "diversity": 1.0,
+            "weights": {
+              "evidence": 1.25,
+              "neural": 0.55,
+              "context": 1.1,
+              "phrase": 1.2,
+              "transition": 1.1,
+              "diversity": 0.35
+            },
+            "total": 3.461202315619189,
+            "role": "accompaniment",
+            "hardValidatedBeforeRanking": true
+          },
+          "performanceDNAId": null,
+          "performanceSource": null,
+          "antiCopy": null
+        }
+      ]
+    }
+  },
+  "engineStatus": "RENDERED_REPLACE_A_B_C_REQUIRES_FINAL_PRODUCTION_VALIDATOR",
+  "outDir": "artifacts-max-4.48"
+}

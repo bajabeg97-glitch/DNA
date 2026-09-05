@@ -90,3 +90,16 @@ Ako se ikad zatraži „creative mode" (neuralna generacija uz eksplicitni prist
 - Pokrenuta provera `MaxModelRegistry.scan()` → **0/10 modela prisutno** (dokaz nalaza 2.1).
 - Ovaj izvještaj.
 - Odluka B + `max-orchestration-status-4.47.json` (status: ARCHIVED).
+
+---
+
+## 6. Revizija odluke (2026-09-05): B → A — izvršen ceo MAX plan (4.48)
+
+Korisnik je zatražio: „Možeš sve to riješit, dodaj još agenata koliko može, rasporedi posao i odradi max citav plan."
+
+Urađeno (detalji: `max-orchestration-status-4.48.json`, `docs/max-activation-4.48.md`):
+1. **13 agenata / 15 zadataka** raspoređeno (`agent-team-max-4.48.json`, `task-plan-max-4.48.json`) — sve isporuke `done`, dokazi u `reports-max-4.48/01..10`.
+2. **Registry 10/10** u spljoštenom repou + klasični layout (test sa symlink simulacijom).
+3. **Opt-in executor** `dna_midi_studio/max_activation.py` sa decision-gate kapijom, svim produkcijskim kapijama i CLI.
+4. **E2E dokaz** na `session35-partial-preview.mid`: accompaniment (warrant, bez force) + bass neural (multibar, `--force` evidentiran) → 6 MIDI render-a.
+5. **15/15 testova zeleno**; rank audit 24/24 koraka tačan; produkcijski moduli netaknuti (diff prazan).

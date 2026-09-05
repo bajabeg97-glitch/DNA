@@ -2,6 +2,10 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **MAX 4.48:** full MAX plan executed — layout-aware model registry (10/10),
+> opt-in executor `dna_midi_studio/max_activation.py`, 13-agent team
+> (`agent-team-max-4.48.json`), e2e A/B/C MIDI renders in `artifacts-max-4.48/`,
+> evidence in `reports-max-4.48/`. Status: `max-orchestration-status-4.48.json`.
 > **Also in this repository:** `dna_midi_studio/` — the full **DNA MIDI Studio Pa800 4.47** Python project (AI arrangement, MAX orchestration, PA800 validation, session fixtures and reports) merged in from the `main` branch. See `dna-build-report.json`, `final-software-completion-4.46.json` and `max-orchestration-status-4.32.json` at the repo root.
 
 ## Features

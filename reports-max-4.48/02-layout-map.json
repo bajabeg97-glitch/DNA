@@ -1,0 +1,20 @@
+{
+  "schema": "dna-max-4.48-layout-map",
+  "agent": "layout-architect",
+  "task": "T3",
+  "layout": {
+    "layout": "flat",
+    "projectRoot": "/home/user/DNA",
+    "data_dir": "/home/user/DNA",
+    "models_dir": "/home/user/DNA/dna-reconstructor-v2",
+    "learning_data_dir": "/home/user/DNA",
+    "artifacts_dir": "/home/user/DNA",
+    "corpus_dir": "/home/user/DNA"
+  },
+  "engineDirs": {
+    "model_dir": "/home/user/DNA/dna-reconstructor-v2",
+    "learning_data_dir": "/home/user/DNA",
+    "data_dir": "/home/user/DNA"
+  },
+  "note": "flat export detected: data_dir/models_dir/learning_data_dir all resolve to repo root; classic layout auto-detected when data/ exists"
+}
