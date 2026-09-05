@@ -1,0 +1,39 @@
+{
+  "schema": "dna-max-4.49-agent-team",
+  "version": "1.0",
+  "milestone": "Arranger Pro 4.49 — a real arranger that knows how each instrument plays",
+  "date": "2026-09-05",
+  "manager": "orchestrator-max",
+  "core13From448": "agent-team-max-4.48.json (all done)",
+  "invariants": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldAffectsDynamics": false,
+    "agentCannotExportMidi": true,
+    "noUnverifiedBankProgramChange": true,
+    "finalValidatorRequired": true,
+    "defaultProductionFlowUntouched": true
+  },
+  "agents": [
+    {"id": "orchestrator-max", "role": "manager", "rounds": ["4.48", "4.49"], "status": "done",
+     "evidence": "max-orchestration-status-4.48.json, max-orchestration-status-4.49.json"},
+    {"id": "arranger-lead", "role": "arrangement", "responsibilities": ["coordinate brief -> strum -> verify","own arrange() orchestrator","feature matrix"], "status": "done",
+     "evidence": "dna_midi_studio/arranger_pro.py, reports-max-4.49/05-arrange-run.json, reports-max-4.49/08-features-matrix.json"},
+    {"id": "instrument-knowledge-curator", "role": "music-analysis", "responsibilities": ["make the arranger know how every instrument plays (player model, techniques, phrase rules)","compare observed vs policy per channel"], "status": "done",
+     "evidence": "reports-max-4.49/01-arranger-brief.json"},
+    {"id": "strumming-agent", "role": "implementation", "responsibilities": ["Factory-strum rhythm-guitar generation, chord-voiced, register 48-72, anti-copy variant fallback"], "status": "done",
+     "evidence": "reports-max-4.49/03-strumming.json"},
+    {"id": "sound-designer-best-instruments", "role": "sound-selection", "responsibilities": ["advisory best factory sound per channel role ranked by sample evidence"], "status": "done",
+     "evidence": "reports-max-4.49/02-best-instruments.json"},
+    {"id": "mix-engineer-headroom", "role": "mixing", "responsibilities": ["PA800 polyphony budget audit","dynamic headroom to 127","trim only arranger's own part"], "status": "done",
+     "evidence": "reports-max-4.49/04-headroom.json"},
+    {"id": "arranger-test-agent", "role": "implementation", "responsibilities": ["6-test suite test_arranger_pro_v449 (torch-free)"], "status": "done",
+     "evidence": "test_arranger_pro_v449.py, reports-max-4.49/06-tests.json"},
+    {"id": "scope-auditor", "role": "data-quality", "responsibilities": ["prove pre-existing engines untouched","guard rails (refuse non-empty channel, protected diff)"], "status": "done",
+     "evidence": "reports-max-4.49/07-scope.json"},
+    {"id": "docs-agent", "role": "documentation", "responsibilities": ["usage guide arranger-pro-4.49"], "status": "done",
+     "evidence": "docs/arranger-pro-4.49.md"},
+    {"id": "release-agent", "role": "release", "responsibilities": ["4.49 status report"], "status": "done",
+     "evidence": "max-orchestration-status-4.49.json"}
+  ],
+  "completion": {"allDone": true, "date": "2026-09-05", "tests": "6/6 arranger green (+ 15/15 max green from 4.48)"}
+}

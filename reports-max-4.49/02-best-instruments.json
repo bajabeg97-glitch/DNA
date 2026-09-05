@@ -1,0 +1,316 @@
+{
+  "schema": "dna-4.49-best-instruments",
+  "agent": "sound-designer-best-instruments",
+  "deliverable": "advisory factory sounds per role",
+  "note": "ADVISORY ONLY — applying Bank/Program change requires exact sound confirmation (global rule NO_UNVERIFIED_BANK_PROGRAM_CHANGE).",
+  "recommendations": {
+    "8": [
+      {
+        "instrument": "BASS CV1",
+        "bank": 121,
+        "lsb": 6,
+        "program": 33,
+        "sampleCount": 18016,
+        "confidence": 0.748,
+        "register": {
+          "low": 0,
+          "high": 125
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "BASS CV1",
+        "bank": 121,
+        "lsb": 0,
+        "program": 33,
+        "sampleCount": 10824,
+        "confidence": 0.742,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "BASS CV1",
+        "bank": 121,
+        "lsb": 3,
+        "program": 34,
+        "sampleCount": 7202,
+        "confidence": 0.76,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "9": [
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 5,
+        "sampleCount": 10426,
+        "confidence": 0.566,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 34,
+        "sampleCount": 9652,
+        "confidence": 0.634,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 33,
+        "sampleCount": 7048,
+        "confidence": 0.647,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "10": [
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 5,
+        "sampleCount": 10426,
+        "confidence": 0.566,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 34,
+        "sampleCount": 9652,
+        "confidence": 0.634,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "DRUMS CV1",
+        "bank": 120,
+        "lsb": 0,
+        "program": 33,
+        "sampleCount": 7048,
+        "confidence": 0.647,
+        "register": {
+          "low": 42,
+          "high": 42
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "11": [
+      {
+        "instrument": "ACC1 CV1",
+        "bank": 121,
+        "lsb": 3,
+        "program": 0,
+        "sampleCount": 56130,
+        "confidence": 0.692,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 15,
+        "program": 25,
+        "sampleCount": 31668,
+        "confidence": 0.702,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 19,
+        "program": 25,
+        "sampleCount": 27911,
+        "confidence": 0.682,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "12": [
+      {
+        "instrument": "ACC1 CV1",
+        "bank": 121,
+        "lsb": 3,
+        "program": 0,
+        "sampleCount": 56130,
+        "confidence": 0.692,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 15,
+        "program": 25,
+        "sampleCount": 31668,
+        "confidence": 0.702,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 19,
+        "program": 25,
+        "sampleCount": 27911,
+        "confidence": 0.682,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "13": [
+      {
+        "instrument": "ACC1 CV1",
+        "bank": 121,
+        "lsb": 3,
+        "program": 0,
+        "sampleCount": 56130,
+        "confidence": 0.692,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 15,
+        "program": 25,
+        "sampleCount": 31668,
+        "confidence": 0.702,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 19,
+        "program": 25,
+        "sampleCount": 27911,
+        "confidence": 0.682,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ],
+    "14": [
+      {
+        "instrument": "ACC1 CV1",
+        "bank": 121,
+        "lsb": 3,
+        "program": 0,
+        "sampleCount": 56130,
+        "confidence": 0.692,
+        "register": {
+          "low": 0,
+          "high": 124
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 15,
+        "program": 25,
+        "sampleCount": 31668,
+        "confidence": 0.702,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      },
+      {
+        "instrument": "ACC2 CV1",
+        "bank": 121,
+        "lsb": 19,
+        "program": 25,
+        "sampleCount": 27911,
+        "confidence": 0.682,
+        "register": {
+          "low": 0,
+          "high": 127
+        },
+        "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+        "advisoryOnly": true
+      }
+    ]
+  }
+}

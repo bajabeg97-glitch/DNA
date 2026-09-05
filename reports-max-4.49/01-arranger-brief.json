@@ -1,0 +1,275 @@
+{
+  "schema": "dna-4.49-arranger-brief",
+  "agent": "instrument-knowledge-curator",
+  "deliverable": "how each instrument plays",
+  "catalogVersion": "complete-instrument-profiles-4.44.json",
+  "channels": {
+    "8": {
+      "channel": 8,
+      "styleRole": "bass",
+      "observed": {
+        "present": true,
+        "noteCount": 122,
+        "register": [
+          28,
+          48
+        ],
+        "avgVelocity": 117.0,
+        "velocityMin": 105,
+        "velocityMax": 124,
+        "avgGateRatio": 0.399,
+        "polyphonyPeak": 1
+      },
+      "playerModel": "bassist",
+      "techniques": [
+        "root",
+        "fifth",
+        "octave",
+        "third",
+        "passing",
+        "chromatic-approach",
+        "pickup",
+        "ghost-candidate",
+        "slap-candidate",
+        "pop-candidate",
+        "slide-candidate"
+      ],
+      "phraseRules": [
+        "land chord changes clearly",
+        "use approaches into targets",
+        "octaves increase energy",
+        "avoid random register jumps",
+        "keep pocket with kick"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "9": {
+      "channel": 9,
+      "styleRole": "drums",
+      "observed": {
+        "present": true,
+        "noteCount": 308,
+        "register": [
+          36,
+          46
+        ],
+        "avgVelocity": 113.2,
+        "velocityMin": 81,
+        "velocityMax": 124,
+        "avgGateRatio": 0.495,
+        "polyphonyPeak": 2
+      },
+      "playerModel": "drummer",
+      "techniques": [
+        "kick-pocket",
+        "backbeat",
+        "ghost",
+        "hat-subdivision",
+        "fill",
+        "crash-entry",
+        "tom-transition"
+      ],
+      "phraseRules": [
+        "foundation before decoration",
+        "fills grow from groove",
+        "preserve clear kick/snare hierarchy"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "10": {
+      "channel": 10,
+      "styleRole": "percussion",
+      "observed": {
+        "present": true,
+        "noteCount": 203,
+        "register": [
+          35,
+          70
+        ],
+        "avgVelocity": 108.8,
+        "velocityMin": 67,
+        "velocityMax": 127,
+        "avgGateRatio": 0.749,
+        "polyphonyPeak": 4
+      },
+      "playerModel": "percussionist",
+      "techniques": [
+        "interlock",
+        "offbeat-color",
+        "pickup",
+        "sparse-fill"
+      ],
+      "phraseRules": [
+        "never compete with kick/snare",
+        "leave space for lead"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "11": {
+      "channel": 11,
+      "styleRole": "accompaniment",
+      "observed": {
+        "present": true,
+        "noteCount": 195,
+        "register": [
+          48,
+          82
+        ],
+        "avgVelocity": 72.0,
+        "velocityMin": 53,
+        "velocityMax": 96,
+        "avgGateRatio": 0.823,
+        "polyphonyPeak": 2
+      },
+      "playerModel": "arranger",
+      "techniques": [
+        "stab",
+        "sustain",
+        "voice-lead",
+        "answer",
+        "rest"
+      ],
+      "phraseRules": [
+        "support not dominate",
+        "common tones preferred",
+        "leave room for solo"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "12": {
+      "channel": 12,
+      "styleRole": "accompaniment",
+      "observed": {
+        "present": true,
+        "noteCount": 260,
+        "register": [
+          50,
+          84
+        ],
+        "avgVelocity": 96.0,
+        "velocityMin": 79,
+        "velocityMax": 110,
+        "avgGateRatio": 0.73,
+        "polyphonyPeak": 2
+      },
+      "playerModel": "arranger",
+      "techniques": [
+        "stab",
+        "sustain",
+        "voice-lead",
+        "answer",
+        "rest"
+      ],
+      "phraseRules": [
+        "support not dominate",
+        "common tones preferred",
+        "leave room for solo"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "13": {
+      "channel": 13,
+      "styleRole": "accompaniment",
+      "observed": {
+        "present": true,
+        "noteCount": 96,
+        "register": [
+          50,
+          77
+        ],
+        "avgVelocity": 105.0,
+        "velocityMin": 94,
+        "velocityMax": 113,
+        "avgGateRatio": 0.625,
+        "polyphonyPeak": 1
+      },
+      "playerModel": "arranger",
+      "techniques": [
+        "stab",
+        "sustain",
+        "voice-lead",
+        "answer",
+        "rest"
+      ],
+      "phraseRules": [
+        "support not dominate",
+        "common tones preferred",
+        "leave room for solo"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    },
+    "14": {
+      "channel": 14,
+      "styleRole": "accompaniment",
+      "observed": {
+        "present": true,
+        "noteCount": 216,
+        "register": [
+          55,
+          87
+        ],
+        "avgVelocity": 123.5,
+        "velocityMin": 99,
+        "velocityMax": 127,
+        "avgGateRatio": 0.48,
+        "polyphonyPeak": 1
+      },
+      "playerModel": "arranger",
+      "techniques": [
+        "stab",
+        "sustain",
+        "voice-lead",
+        "answer",
+        "rest"
+      ],
+      "phraseRules": [
+        "support not dominate",
+        "common tones preferred",
+        "leave room for solo"
+      ],
+      "registerPolicy": [],
+      "gatePolicy": [],
+      "densityPolicy": [],
+      "articulationPolicy": [],
+      "generationPolicy": [],
+      "hardRules": [],
+      "velocityAuthority": "FACTORY_ONLY"
+    }
+  }
+}

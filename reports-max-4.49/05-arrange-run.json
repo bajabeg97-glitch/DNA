@@ -1,0 +1,22 @@
+{
+  "schema": "dna-4.49-arrange-run",
+  "agent": "arranger-lead",
+  "deliverable": "arranged MIDI + gates",
+  "request": {
+    "targetChannel": 15,
+    "startBar": 1,
+    "endBar": 18,
+    "role": "rhythm-guitar (strum fill)",
+    "barsInSong": 18
+  },
+  "strumNoteCount": 410,
+  "gates": {
+    "reparsed": true,
+    "protectedChannelsUnchanged": true,
+    "factoryVelocityOnly": true,
+    "targetChannelWithinPolyphonyLimit": true
+  },
+  "status": "RENDERED_ARRANGEMENT_PASSES_ARRANGER_GATES",
+  "midi": "arranged.15.bar1-18.mid",
+  "outDir": "artifacts-max-4.49"
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "dna-4.49-strumming",
+  "agent": "strumming-agent",
+  "deliverable": "factory-strum rhythm-guitar fill",
+  "strumPart": {
+    "schema": "dna-arranger-strum-part",
+    "version": "4.49",
+    "role": "rhythm-guitar",
+    "channel": 15,
+    "track": 0,
+    "bars": [
+      1,
+      18
+    ],
+    "noteCount": 410,
+    "factoryStrumSourceIds": [],
+    "register": [
+      48,
+      72
+    ],
+    "maxSimultaneous": 3,
+    "velocityAuthority": "FACTORY_ONLY"
+  },
+  "register": [
+    48,
+    72
+  ],
+  "velocityAuthority": "FACTORY_ONLY",
+  "evidence": "factory-strumming.json via PerformanceDNAEngine (role rhythm-guitar)"
+}

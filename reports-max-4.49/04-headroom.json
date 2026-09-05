@@ -1,0 +1,97 @@
+{
+  "schema": "dna-4.49-headroom",
+  "agent": "mix-engineer-headroom",
+  "deliverable": "polyphony + dynamic headroom audit",
+  "limitsSource": "pa800_validator.PA800_CHANNEL_POLYPHONY_LIMITS",
+  "before": {
+    "schema": "dna-arranger-headroom-audit",
+    "version": "4.49",
+    "limitsSource": "pa800_validator.PA800_CHANNEL_POLYPHONY_LIMITS",
+    "channels": {
+      "8": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 122,
+        "velocityMax": 124,
+        "availableHeadroomTo127": 3
+      },
+      "9": {
+        "limit": 24,
+        "peakPolyphony": 2,
+        "pass": true,
+        "noteCount": 308,
+        "velocityMax": 124,
+        "availableHeadroomTo127": 3
+      },
+      "10": {
+        "limit": 16,
+        "peakPolyphony": 5,
+        "pass": true,
+        "noteCount": 203,
+        "velocityMax": 127,
+        "availableHeadroomTo127": 0
+      },
+      "11": {
+        "limit": 4,
+        "peakPolyphony": 4,
+        "pass": true,
+        "noteCount": 195,
+        "velocityMax": 96,
+        "availableHeadroomTo127": 31
+      },
+      "12": {
+        "limit": 4,
+        "peakPolyphony": 3,
+        "pass": true,
+        "noteCount": 260,
+        "velocityMax": 110,
+        "availableHeadroomTo127": 17
+      },
+      "13": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 96,
+        "velocityMax": 113,
+        "availableHeadroomTo127": 14
+      },
+      "14": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 216,
+        "velocityMax": 127,
+        "availableHeadroomTo127": 0
+      }
+    },
+    "violations": [],
+    "warnings": [
+      "channel 10 peaks at velocity 127 — zero dynamic headroom to the MIDI ceiling",
+      "channel 14 peaks at velocity 127 — zero dynamic headroom to the MIDI ceiling"
+    ],
+    "mixNoteCount": 1400,
+    "mixPeakPolyphony": 14,
+    "policy": "pre-existing material is reported only; arranger trims only its own new part"
+  },
+  "afterTargetChannel": {
+    "schema": "dna-arranger-headroom-audit",
+    "version": "4.49",
+    "limitsSource": "pa800_validator.PA800_CHANNEL_POLYPHONY_LIMITS",
+    "channels": {
+      "15": {
+        "limit": 3,
+        "peakPolyphony": 3,
+        "pass": true,
+        "noteCount": 410,
+        "velocityMax": 114,
+        "availableHeadroomTo127": 13
+      }
+    },
+    "violations": [],
+    "warnings": [],
+    "mixNoteCount": 1810,
+    "mixPeakPolyphony": 17,
+    "policy": "pre-existing material is reported only; arranger trims only its own new part"
+  }
+}

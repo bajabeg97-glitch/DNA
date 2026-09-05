@@ -1,0 +1,44 @@
+{
+  "schema": "dna-4.49-arranger-features",
+  "agent": "arranger-lead",
+  "implemented": [
+    {
+      "feature": "Instrument intelligence",
+      "desc": "brief per channel: role, player model, techniques, phrase rules + observed register/gate/dynamics"
+    },
+    {
+      "feature": "Strumming",
+      "desc": "rhythm-guitar strum from Factory strum evidence, chord-voiced from song chords, register 48-72"
+    },
+    {
+      "feature": "Best Instruments",
+      "desc": "advisory factory sound ranking per role by sample evidence (no unverified program change)"
+    },
+    {
+      "feature": "Headroom",
+      "desc": "PA800 per-channel polyphony audit + dynamic headroom; arranger trims its own part to budget; existing mix reported only"
+    },
+    {
+      "feature": "Register fit",
+      "desc": "generated voices clamped into the instrument's playable window"
+    },
+    {
+      "feature": "Factory-only dynamics",
+      "desc": "every new note velocity chosen from the Factory curve (strong/highMid/optimal)"
+    }
+  ],
+  "futureCandidates": [
+    "section-aware comping variants (intro sparse -> chorus full)",
+    "call-response fills between acc channels",
+    "voice-leading continuity across chord changes",
+    "bass/chord register separation checks",
+    "per-section density targets from producer brief",
+    "style-format (marker CV) arrangement export"
+  ],
+  "guards": [
+    "refuse non-empty channel",
+    "protected channels diff",
+    "midi reparse",
+    "PA800 polyphony budget"
+  ]
+}

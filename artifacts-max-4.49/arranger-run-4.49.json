@@ -1,0 +1,721 @@
+{
+  "schema": "dna-arranger-pro-run",
+  "version": "4.49",
+  "sourceSha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+  "request": {
+    "targetChannel": 15,
+    "startBar": 1,
+    "endBar": 18,
+    "role": "rhythm-guitar (strum fill)",
+    "barsInSong": 18
+  },
+  "intelligence": {
+    "schema": "dna-arranger-intelligence-brief",
+    "version": "4.49",
+    "instrumentCatalogVersion": "4.44.0",
+    "channels": {
+      "8": {
+        "channel": 8,
+        "styleRole": "bass",
+        "observed": {
+          "present": true,
+          "noteCount": 122,
+          "register": [
+            28,
+            48
+          ],
+          "avgVelocity": 117.0,
+          "velocityMin": 105,
+          "velocityMax": 124,
+          "avgGateRatio": 0.399,
+          "polyphonyPeak": 1
+        },
+        "playerModel": "bassist",
+        "techniques": [
+          "root",
+          "fifth",
+          "octave",
+          "third",
+          "passing",
+          "chromatic-approach",
+          "pickup",
+          "ghost-candidate",
+          "slap-candidate",
+          "pop-candidate",
+          "slide-candidate"
+        ],
+        "phraseRules": [
+          "land chord changes clearly",
+          "use approaches into targets",
+          "octaves increase energy",
+          "avoid random register jumps",
+          "keep pocket with kick"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "9": {
+        "channel": 9,
+        "styleRole": "drums",
+        "observed": {
+          "present": true,
+          "noteCount": 308,
+          "register": [
+            36,
+            46
+          ],
+          "avgVelocity": 113.2,
+          "velocityMin": 81,
+          "velocityMax": 124,
+          "avgGateRatio": 0.495,
+          "polyphonyPeak": 2
+        },
+        "playerModel": "drummer",
+        "techniques": [
+          "kick-pocket",
+          "backbeat",
+          "ghost",
+          "hat-subdivision",
+          "fill",
+          "crash-entry",
+          "tom-transition"
+        ],
+        "phraseRules": [
+          "foundation before decoration",
+          "fills grow from groove",
+          "preserve clear kick/snare hierarchy"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "10": {
+        "channel": 10,
+        "styleRole": "percussion",
+        "observed": {
+          "present": true,
+          "noteCount": 203,
+          "register": [
+            35,
+            70
+          ],
+          "avgVelocity": 108.8,
+          "velocityMin": 67,
+          "velocityMax": 127,
+          "avgGateRatio": 0.749,
+          "polyphonyPeak": 4
+        },
+        "playerModel": "percussionist",
+        "techniques": [
+          "interlock",
+          "offbeat-color",
+          "pickup",
+          "sparse-fill"
+        ],
+        "phraseRules": [
+          "never compete with kick/snare",
+          "leave space for lead"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "11": {
+        "channel": 11,
+        "styleRole": "accompaniment",
+        "observed": {
+          "present": true,
+          "noteCount": 195,
+          "register": [
+            48,
+            82
+          ],
+          "avgVelocity": 72.0,
+          "velocityMin": 53,
+          "velocityMax": 96,
+          "avgGateRatio": 0.823,
+          "polyphonyPeak": 2
+        },
+        "playerModel": "arranger",
+        "techniques": [
+          "stab",
+          "sustain",
+          "voice-lead",
+          "answer",
+          "rest"
+        ],
+        "phraseRules": [
+          "support not dominate",
+          "common tones preferred",
+          "leave room for solo"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "12": {
+        "channel": 12,
+        "styleRole": "accompaniment",
+        "observed": {
+          "present": true,
+          "noteCount": 260,
+          "register": [
+            50,
+            84
+          ],
+          "avgVelocity": 96.0,
+          "velocityMin": 79,
+          "velocityMax": 110,
+          "avgGateRatio": 0.73,
+          "polyphonyPeak": 2
+        },
+        "playerModel": "arranger",
+        "techniques": [
+          "stab",
+          "sustain",
+          "voice-lead",
+          "answer",
+          "rest"
+        ],
+        "phraseRules": [
+          "support not dominate",
+          "common tones preferred",
+          "leave room for solo"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "13": {
+        "channel": 13,
+        "styleRole": "accompaniment",
+        "observed": {
+          "present": true,
+          "noteCount": 96,
+          "register": [
+            50,
+            77
+          ],
+          "avgVelocity": 105.0,
+          "velocityMin": 94,
+          "velocityMax": 113,
+          "avgGateRatio": 0.625,
+          "polyphonyPeak": 1
+        },
+        "playerModel": "arranger",
+        "techniques": [
+          "stab",
+          "sustain",
+          "voice-lead",
+          "answer",
+          "rest"
+        ],
+        "phraseRules": [
+          "support not dominate",
+          "common tones preferred",
+          "leave room for solo"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      },
+      "14": {
+        "channel": 14,
+        "styleRole": "accompaniment",
+        "observed": {
+          "present": true,
+          "noteCount": 216,
+          "register": [
+            55,
+            87
+          ],
+          "avgVelocity": 123.5,
+          "velocityMin": 99,
+          "velocityMax": 127,
+          "avgGateRatio": 0.48,
+          "polyphonyPeak": 1
+        },
+        "playerModel": "arranger",
+        "techniques": [
+          "stab",
+          "sustain",
+          "voice-lead",
+          "answer",
+          "rest"
+        ],
+        "phraseRules": [
+          "support not dominate",
+          "common tones preferred",
+          "leave room for solo"
+        ],
+        "registerPolicy": [],
+        "gatePolicy": [],
+        "densityPolicy": [],
+        "articulationPolicy": [],
+        "generationPolicy": [],
+        "hardRules": [],
+        "velocityAuthority": "FACTORY_ONLY"
+      }
+    }
+  },
+  "bestInstruments": {
+    "schema": "dna-arranger-best-instruments",
+    "version": "4.49",
+    "note": "ADVISORY ONLY — applying Bank/Program change requires exact sound confirmation (global rule NO_UNVERIFIED_BANK_PROGRAM_CHANGE).",
+    "recommendations": {
+      "8": [
+        {
+          "instrument": "BASS CV1",
+          "bank": 121,
+          "lsb": 6,
+          "program": 33,
+          "sampleCount": 18016,
+          "confidence": 0.748,
+          "register": {
+            "low": 0,
+            "high": 125
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "BASS CV1",
+          "bank": 121,
+          "lsb": 0,
+          "program": 33,
+          "sampleCount": 10824,
+          "confidence": 0.742,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "BASS CV1",
+          "bank": 121,
+          "lsb": 3,
+          "program": 34,
+          "sampleCount": 7202,
+          "confidence": 0.76,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "9": [
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 5,
+          "sampleCount": 10426,
+          "confidence": 0.566,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 34,
+          "sampleCount": 9652,
+          "confidence": 0.634,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 33,
+          "sampleCount": 7048,
+          "confidence": 0.647,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "10": [
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 5,
+          "sampleCount": 10426,
+          "confidence": 0.566,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 34,
+          "sampleCount": 9652,
+          "confidence": 0.634,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "DRUMS CV1",
+          "bank": 120,
+          "lsb": 0,
+          "program": 33,
+          "sampleCount": 7048,
+          "confidence": 0.647,
+          "register": {
+            "low": 42,
+            "high": 42
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "11": [
+        {
+          "instrument": "ACC1 CV1",
+          "bank": 121,
+          "lsb": 3,
+          "program": 0,
+          "sampleCount": 56130,
+          "confidence": 0.692,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 15,
+          "program": 25,
+          "sampleCount": 31668,
+          "confidence": 0.702,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 19,
+          "program": 25,
+          "sampleCount": 27911,
+          "confidence": 0.682,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "12": [
+        {
+          "instrument": "ACC1 CV1",
+          "bank": 121,
+          "lsb": 3,
+          "program": 0,
+          "sampleCount": 56130,
+          "confidence": 0.692,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 15,
+          "program": 25,
+          "sampleCount": 31668,
+          "confidence": 0.702,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 19,
+          "program": 25,
+          "sampleCount": 27911,
+          "confidence": 0.682,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "13": [
+        {
+          "instrument": "ACC1 CV1",
+          "bank": 121,
+          "lsb": 3,
+          "program": 0,
+          "sampleCount": 56130,
+          "confidence": 0.692,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 15,
+          "program": 25,
+          "sampleCount": 31668,
+          "confidence": 0.702,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 19,
+          "program": 25,
+          "sampleCount": 27911,
+          "confidence": 0.682,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ],
+      "14": [
+        {
+          "instrument": "ACC1 CV1",
+          "bank": 121,
+          "lsb": 3,
+          "program": 0,
+          "sampleCount": 56130,
+          "confidence": 0.692,
+          "register": {
+            "low": 0,
+            "high": 124
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 15,
+          "program": 25,
+          "sampleCount": 31668,
+          "confidence": 0.702,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        },
+        {
+          "instrument": "ACC2 CV1",
+          "bank": 121,
+          "lsb": 19,
+          "program": 25,
+          "sampleCount": 27911,
+          "confidence": 0.682,
+          "register": {
+            "low": 0,
+            "high": 127
+          },
+          "velocityCurve": "factory-quantiles-plus-mode-monotone-v1",
+          "advisoryOnly": true
+        }
+      ]
+    }
+  },
+  "headroomBefore": {
+    "schema": "dna-arranger-headroom-audit",
+    "version": "4.49",
+    "limitsSource": "pa800_validator.PA800_CHANNEL_POLYPHONY_LIMITS",
+    "channels": {
+      "8": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 122,
+        "velocityMax": 124,
+        "availableHeadroomTo127": 3
+      },
+      "9": {
+        "limit": 24,
+        "peakPolyphony": 2,
+        "pass": true,
+        "noteCount": 308,
+        "velocityMax": 124,
+        "availableHeadroomTo127": 3
+      },
+      "10": {
+        "limit": 16,
+        "peakPolyphony": 5,
+        "pass": true,
+        "noteCount": 203,
+        "velocityMax": 127,
+        "availableHeadroomTo127": 0
+      },
+      "11": {
+        "limit": 4,
+        "peakPolyphony": 4,
+        "pass": true,
+        "noteCount": 195,
+        "velocityMax": 96,
+        "availableHeadroomTo127": 31
+      },
+      "12": {
+        "limit": 4,
+        "peakPolyphony": 3,
+        "pass": true,
+        "noteCount": 260,
+        "velocityMax": 110,
+        "availableHeadroomTo127": 17
+      },
+      "13": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 96,
+        "velocityMax": 113,
+        "availableHeadroomTo127": 14
+      },
+      "14": {
+        "limit": 1,
+        "peakPolyphony": 1,
+        "pass": true,
+        "noteCount": 216,
+        "velocityMax": 127,
+        "availableHeadroomTo127": 0
+      }
+    },
+    "violations": [],
+    "warnings": [
+      "channel 10 peaks at velocity 127 — zero dynamic headroom to the MIDI ceiling",
+      "channel 14 peaks at velocity 127 — zero dynamic headroom to the MIDI ceiling"
+    ],
+    "mixNoteCount": 1400,
+    "mixPeakPolyphony": 14,
+    "policy": "pre-existing material is reported only; arranger trims only its own new part"
+  },
+  "headroomAfterTargetChannel": {
+    "schema": "dna-arranger-headroom-audit",
+    "version": "4.49",
+    "limitsSource": "pa800_validator.PA800_CHANNEL_POLYPHONY_LIMITS",
+    "channels": {
+      "15": {
+        "limit": 3,
+        "peakPolyphony": 3,
+        "pass": true,
+        "noteCount": 410,
+        "velocityMax": 114,
+        "availableHeadroomTo127": 13
+      }
+    },
+    "violations": [],
+    "warnings": [],
+    "mixNoteCount": 1810,
+    "mixPeakPolyphony": 17,
+    "policy": "pre-existing material is reported only; arranger trims only its own new part"
+  },
+  "strumPart": {
+    "schema": "dna-arranger-strum-part",
+    "version": "4.49",
+    "role": "rhythm-guitar",
+    "channel": 15,
+    "track": 0,
+    "bars": [
+      1,
+      18
+    ],
+    "noteCount": 410,
+    "factoryStrumSourceIds": [],
+    "register": [
+      48,
+      72
+    ],
+    "maxSimultaneous": 3,
+    "velocityAuthority": "FACTORY_ONLY"
+  },
+  "strumNoteCount": 410,
+  "gates": {
+    "reparsed": true,
+    "protectedChannelsUnchanged": true,
+    "factoryVelocityOnly": true,
+    "targetChannelWithinPolyphonyLimit": true
+  },
+  "outDir": "artifacts-max-4.49",
+  "arrangedMidi": "arranged.15.bar1-18.mid",
+  "status": "RENDERED_ARRANGEMENT_PASSES_ARRANGER_GATES"
+}

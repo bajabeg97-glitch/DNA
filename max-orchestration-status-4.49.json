@@ -1,0 +1,40 @@
+{
+  "schema": "dna-max-orchestration-status",
+  "version": "1.0",
+  "reviewVersion": "4.49",
+  "reviewedAt": "2026-09-05",
+  "status": "ACTIVE_OPT_IN",
+  "milestone": "Arranger Pro 4.49 — arranger that knows how each instrument plays",
+  "decisionChain": [
+    "4.47 archive (B)",
+    "4.48 full MAX reactivation (A) with 13-agent team",
+    "4.49 user request: arranger must really know instruments + strumming, best instruments, headroom and more working items"
+  ],
+  "deliveredIn449": [
+    "dna_midi_studio/arranger_pro.py — orchestrator arrange() + layers",
+    "Instrument intelligence brief per channel (player model, techniques, phrase rules, observed stats) from complete-instrument-profiles-4.44.json",
+    "Strumming: Factory-strum rhythm-guitar (register 48-72, anti-copy variant fallback, chord-voiced)",
+    "Best Instruments: advisory factory sound ranking per role (no unverified program change)",
+    "Headroom: PA800 per-channel polyphony budget + dynamic headroom to 127; arranger trims only its own part",
+    "Extras working: register fit, factory-only dynamics, refuse occupied channel, protected-channel diff, midi reparse",
+    "E2E on session35-partial-preview.mid ch15 bars 1-18: 410 strum notes, peak polyphony 3/3, all gates pass",
+    "Tests: test_arranger_pro_v449.py 6/6 green (torch-free)",
+    "Agent team 4.49 (10 agents) + task plan T16-T25 all done; reports-max-4.49/01..08"
+  ],
+  "constraints": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldAffectsDynamics": false,
+    "noUnverifiedBankProgramChange": true,
+    "defaultProductionFlowUntouched": true,
+    "preExistingMaterialOnlyReportedNeverEdited": true,
+    "finalValidatorRequired": true
+  },
+  "artifacts": {
+    "arrangedMidi": "artifacts-max-4.49/arranged.15.bar1-18.mid",
+    "runReport": "artifacts-max-4.49/arranger-run-4.49.json",
+    "evidence": "reports-max-4.49/",
+    "team": "agent-team-max-4.49.json",
+    "tasks": "task-plan-max-4.49.json",
+    "guide": "docs/arranger-pro-4.49.md"
+  }
+}

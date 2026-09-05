@@ -1,0 +1,16 @@
+{
+  "schema": "dna-4.49-tests",
+  "agent": "arranger-test-agent",
+  "suite": "python3.11 -m unittest test_arranger_pro_v449",
+  "ran": 6,
+  "passed": 6,
+  "failed": 0,
+  "coverage": [
+    "brief player-models",
+    "best instruments advisory+evidence-ranked",
+    "strum register/velocity/headroom",
+    "headroom truthful audit",
+    "arrange e2e gates",
+    "refuse non-empty channel"
+  ]
+}

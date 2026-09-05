@@ -1,0 +1,79 @@
+{
+  "schema": "dna-max-4.49-task-plan",
+  "version": "1.0",
+  "milestone": "Arranger Pro 4.49",
+  "date": "2026-09-05",
+  "agents": 10,
+  "tasks": [
+    {
+      "taskId": "T16",
+      "agent": "arranger-lead",
+      "task": "Define Arranger Pro scope + feature matrix",
+      "deliverable": "reports-max-4.49/08-features-matrix.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T17",
+      "agent": "instrument-knowledge-curator",
+      "task": "Per-channel instrument brief from 4.44 catalog",
+      "deliverable": "reports-max-4.49/01-arranger-brief.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T18",
+      "agent": "strumming-agent",
+      "task": "Factory-strum rhythm-guitar fill",
+      "deliverable": "reports-max-4.49/03-strumming.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T19",
+      "agent": "sound-designer-best-instruments",
+      "task": "Advisory best-sound ranking per role",
+      "deliverable": "reports-max-4.49/02-best-instruments.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T20",
+      "agent": "mix-engineer-headroom",
+      "task": "Polyphony/headroom audit + self-trim",
+      "deliverable": "reports-max-4.49/04-headroom.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T21",
+      "agent": "arranger-lead",
+      "task": "arrange() e2e on session35 fixture",
+      "deliverable": "artifacts-max-4.49/",
+      "state": "done"
+    },
+    {
+      "taskId": "T22",
+      "agent": "arranger-test-agent",
+      "task": "6-test suite green",
+      "deliverable": "reports-max-4.49/06-tests.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T23",
+      "agent": "scope-auditor",
+      "task": "Pre-existing engines untouched",
+      "deliverable": "reports-max-4.49/07-scope.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T24",
+      "agent": "docs-agent",
+      "task": "Usage guide",
+      "deliverable": "docs/arranger-pro-4.49.md",
+      "state": "done"
+    },
+    {
+      "taskId": "T25",
+      "agent": "release-agent",
+      "task": "4.49 status + completion",
+      "deliverable": "max-orchestration-status-4.49.json",
+      "state": "done"
+    }
+  ]
+}

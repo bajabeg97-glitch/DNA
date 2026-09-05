@@ -1,0 +1,9 @@
+{
+  "schema": "dna-4.49-scope",
+  "agent": "scope-auditor",
+  "productionModulesTouchedSinceArchive": [],
+  "addedModules": [
+    "dna_midi_studio/arranger_pro.py"
+  ],
+  "note": "4.48 added max activation files; 4.49 adds arranger_pro only; pre-existing engines untouched"
+}

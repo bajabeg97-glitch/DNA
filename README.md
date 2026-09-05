@@ -2,6 +2,11 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Arranger Pro 4.49:** a real arranger that knows how each instrument plays —
+> instrument briefs per channel, Factory-strum **Strumming**, advisory **Best
+> Instruments**, **Headroom** (PA800 polyphony budget + dynamics), register fit,
+> factory-only dynamics. Module `dna_midi_studio/arranger_pro.py`; e2e artifacts
+> in `artifacts-max-4.49/`, evidence `reports-max-4.49/`, guide `docs/arranger-pro-4.49.md`.
 > **MAX 4.48:** full MAX plan executed — layout-aware model registry (10/10),
 > opt-in executor `dna_midi_studio/max_activation.py`, 13-agent team
 > (`agent-team-max-4.48.json`), e2e A/B/C MIDI renders in `artifacts-max-4.48/`,
