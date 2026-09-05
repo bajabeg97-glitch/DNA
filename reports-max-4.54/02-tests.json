@@ -1,0 +1,36 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.54",
+  "date": "2026-09-05",
+  "python": "python3.11 (stdlib only, no runtime deps)",
+  "suites": [
+    {
+      "command": "PYTHONPATH=<mido-checkout> python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_mido_independent_v452",
+      "note": "mido is only used as an independent cross-check; engine suites are stdlib-only",
+      "result": "OK",
+      "tests": 59
+    },
+    {
+      "command": "python3.11 -m unittest test_max_registry_v448",
+      "result": "OK",
+      "tests": 5
+    },
+    {
+      "command": "python3.11 -m unittest test_groove_engine_v454",
+      "result": "OK",
+      "tests": 9,
+      "newForMilestone": true,
+      "covered": [
+        "human summary provenance (schema, sha256)",
+        "human timing spread std ~28 ms, p5/p95 bounds",
+        "global instruments present with n>1000",
+        "kick/snare 16-position mean tables (16 entries)",
+        "fixture ch9: 308 notes, 120 ppq grid, bpm 120, per-pitch counts/velocities",
+        "reference ch9: >90% exact-on-grid (factory quantized)",
+        "reference ch10: std > 15 ms (human-scale spread)",
+        "factory std < human reference std comparison",
+        "evidence artifact parses and matches measurement"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Groove Engine 4.54:** meri groove činjenice naših bubanj/percussion
+> kanala (16-tinski grid-offseti u ms, gustina, dinamika po pitch-u) i poredi
+> ih sa ljudskom referencom izvedenom iz wobblemidi rock profila (MIT, autor:
+> naučeno sa Magenta Groove MIDI korpusa — pravih bubnjara; 110.313 uzoraka,
+> std 27,96 ms; izvorni GCS/HF/archive.org hostovi nedostupni iz sandboxa,
+> provenijencija: sha256 u baseline fajlu). Engine meri, ne menja note.
+> Evidence: `artifacts-max-4.54/` + `reports-max-4.54/`; guide
+> `docs/human-groove-evidence-4.54.md`; status `dna-groove-engine-status-4.54.json`.
 > **Korg STY Mapper 4.53:** map + export of Pa800-importable style SMF0 —
 > reads Korg markers (`i1cv1`…), maps where each part goes (ch8 bass, 9 drums,
 > 10 perc, 11–15 acc; section/CV layout), completes missing per-element

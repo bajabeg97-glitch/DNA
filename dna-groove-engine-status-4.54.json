@@ -1,0 +1,40 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.54",
+  "status": "complete",
+  "date": "2026-09-05",
+  "summary": "Groove/pattern evidence engine: measures factory drum+percussion channels vs derived human reference (wobblemidi rock profile, MIT, learned from Magenta Groove MIDI). 9 new tests; full suite 59+5 OK.",
+  "deliverables": {
+    "engine": "dna_midi_studio/groove_engine.py",
+    "humanReferenceDerived": "baseline/human-groove-rock-derived.json",
+    "tests": "test_groove_engine_v454.py (9)",
+    "artifacts": "artifacts-max-4.54/groove-ch*.json (4 files)",
+    "reports": [
+      "reports-max-4.54/01-groove-summary.json",
+      "reports-max-4.54/02-tests.json"
+    ],
+    "guide": "docs/human-groove-evidence-4.54.md"
+  },
+  "keyFacts": {
+    "humanSamples": 110313,
+    "humanTimingStdMs": 27.96,
+    "referenceCh9StdMs": 6.64,
+    "referenceCh9ExactOnGrid": 0.9886,
+    "referenceCh10StdMs": 22.24,
+    "fixtureCh9StdMs": 7.37,
+    "fixtureCh10StdMs": 12.62
+  },
+  "caveats": [
+    "Raw Groove MIDI zips + HF/archive.org mirrors unreachable from this sandbox (2026-09-05); human reference is derived statistics from wobblemidi rock profile with provenance sha256 recorded.",
+    "wobblemidi profile author's own claim (distributions learned from Magenta Groove MIDI) is stated, not independently re-derived here.",
+    "No note/velocity/timing edits: measurement only, policy-consistent (FACTORY_ONLY)."
+  ],
+  "hashes": {
+    "baseline/human-groove-rock-derived.json": "ac183824ba2afcbd0fa2035dc4eb191c39dafa478fa57fc8d152657697be14e9",
+    "dna_midi_studio/groove_engine.py": "42f0cd3db640d64b126e40f9761f8a53ccf7ed053224c706026cb326b183d92b",
+    "test_groove_engine_v454.py": "154c7301dc3227fa92ade4c7a3baa486e3b1f1b16f772565951538da9ca291f6",
+    "docs/human-groove-evidence-4.54.md": "2edfde99bb0a3b979601b36b97f8ede309d9f47b90fd4be3bd4e897805d40d39",
+    "reports-max-4.54/01-groove-summary.json": "fb8b55e0fd40c94e81fe5214efa54a3ae3160bf5f9aa635509d076e64ae9f3c4",
+    "reports-max-4.54/02-tests.json": "d9c1913d20887b857af33d85b2c98b016016e8ed7b993dae19fd393e8f06ab65"
+  }
+}

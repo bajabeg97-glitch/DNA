@@ -1,0 +1,113 @@
+{
+  "schema": "dna-4.54-groove-evidence-summary",
+  "humanReference": {
+    "n": 110313,
+    "meanMs": -2.53,
+    "stdMs": 27.96,
+    "p5Ms": -48.08,
+    "p50Ms": -3.95,
+    "p95Ms": 46.87
+  },
+  "measuredChannels": [
+    {
+      "source": "arranged-4.51-fixture.mid",
+      "channel": 10,
+      "notes": 203,
+      "densityPerBar": 14.5,
+      "timing": {
+        "n": 203,
+        "meanMs": 0.19,
+        "stdMs": 12.62,
+        "p5Ms": -31.25,
+        "p50Ms": 0.0,
+        "p95Ms": 27.08,
+        "exactOnGridShare": 0.2266
+      },
+      "comparison": {
+        "factoryTimingStdMs": 12.62,
+        "humanReferenceTimingStdMs": 27.96,
+        "factoryExactOnGridShare": 0.2266,
+        "humanExactOnGridShare": null,
+        "factoryMeanMs": 0.19,
+        "humanMeanMs": -2.53,
+        "humanSamples": 110313,
+        "meaning": "factory patterns are quantized by design; the human reference quantifies how much real drummers deviate"
+      }
+    },
+    {
+      "source": "reference-style.mid",
+      "channel": 10,
+      "notes": 589,
+      "densityPerBar": 26.77,
+      "timing": {
+        "n": 589,
+        "meanMs": 4.49,
+        "stdMs": 22.24,
+        "p5Ms": -36.46,
+        "p50Ms": 5.21,
+        "p95Ms": 46.88,
+        "exactOnGridShare": 0.2818
+      },
+      "comparison": {
+        "factoryTimingStdMs": 22.24,
+        "humanReferenceTimingStdMs": 27.96,
+        "factoryExactOnGridShare": 0.2818,
+        "humanExactOnGridShare": null,
+        "factoryMeanMs": 4.49,
+        "humanMeanMs": -2.53,
+        "humanSamples": 110313,
+        "meaning": "factory patterns are quantized by design; the human reference quantifies how much real drummers deviate"
+      }
+    },
+    {
+      "source": "arranged-4.51-fixture.mid",
+      "channel": 9,
+      "notes": 308,
+      "densityPerBar": 17.11,
+      "timing": {
+        "n": 308,
+        "meanMs": 1.14,
+        "stdMs": 7.37,
+        "p5Ms": -1.04,
+        "p50Ms": 0.0,
+        "p95Ms": 8.33,
+        "exactOnGridShare": 0.289
+      },
+      "comparison": {
+        "factoryTimingStdMs": 7.37,
+        "humanReferenceTimingStdMs": 27.96,
+        "factoryExactOnGridShare": 0.289,
+        "humanExactOnGridShare": null,
+        "factoryMeanMs": 1.14,
+        "humanMeanMs": -2.53,
+        "humanSamples": 110313,
+        "meaning": "factory patterns are quantized by design; the human reference quantifies how much real drummers deviate"
+      }
+    },
+    {
+      "source": "reference-style.mid",
+      "channel": 9,
+      "notes": 263,
+      "densityPerBar": 11.95,
+      "timing": {
+        "n": 263,
+        "meanMs": -0.71,
+        "stdMs": 6.64,
+        "p5Ms": 0.0,
+        "p50Ms": 0.0,
+        "p95Ms": 0.0,
+        "exactOnGridShare": 0.9886
+      },
+      "comparison": {
+        "factoryTimingStdMs": 6.64,
+        "humanReferenceTimingStdMs": 27.96,
+        "factoryExactOnGridShare": 0.9886,
+        "humanExactOnGridShare": null,
+        "factoryMeanMs": -0.71,
+        "humanMeanMs": -2.53,
+        "humanSamples": 110313,
+        "meaning": "factory patterns are quantized by design; the human reference quantifies how much real drummers deviate"
+      }
+    }
+  ]
+}

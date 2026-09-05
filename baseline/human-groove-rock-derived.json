@@ -1,0 +1,217 @@
+{
+ "schema": "dna-human-groove-derived-summary-v2",
+ "sourceRepo": "JakebGutierrez/wobblemidi (MIT)",
+ "sourceFile": "wobblemidi/profiles/rock.json",
+ "sourceSha256": "6ab0cf5471555bbb819805346eea790d88e14a95ecd73caf7f430cf1ad723bc7",
+ "sourceRetrieved": "2026-09-05 via codeload.github.com (storage.googleapis.com/huggingface.co/archive.org unreachable from this sandbox)",
+ "basis": "sample rows (offset_ms, velocity-residual) per instrument / beat|fill slot / tier / 16th-position; author states distributions learned from Magenta Groove MIDI Dataset (real drummers); see wobblemidi README + _meta",
+ "units": "offset_ms signed from grid (negative=early), vel_delta on 0-127 scale",
+ "overallTimingMs": {
+  "n": 110313,
+  "meanMs": -2.53,
+  "stdMs": 27.96,
+  "p5Ms": -48.08,
+  "p50Ms": -3.95,
+  "p95Ms": 46.87
+ },
+ "perInstrumentGlobal": {
+  "hihat_closed": {
+   "n": 29139,
+   "timing": {
+    "n": 29139,
+    "meanMs": -6.59,
+    "stdMs": 27.58,
+    "p5Ms": -51.14,
+    "p50Ms": -7.61,
+    "p95Ms": 43.18
+   },
+   "velDelta": {
+    "n": 29139,
+    "mean": -0.0,
+    "std": 20.78,
+    "min": -109.97,
+    "max": 96.86
+   }
+  },
+  "kick": {
+   "n": 21540,
+   "timing": {
+    "n": 21540,
+    "meanMs": -5.07,
+    "stdMs": 26.6,
+    "p5Ms": -47.92,
+    "p50Ms": -6.7,
+    "p95Ms": 43.75
+   },
+   "velDelta": {
+    "n": 21540,
+    "mean": 0.0,
+    "std": 14.13,
+    "min": -102.84,
+    "max": 69.27
+   }
+  },
+  "snare": {
+   "n": 25437,
+   "timing": {
+    "n": 25437,
+    "meanMs": -1.95,
+    "stdMs": 27.78,
+    "p5Ms": -47.12,
+    "p50Ms": -3.57,
+    "p95Ms": 47.22
+   },
+   "velDelta": {
+    "n": 25437,
+    "mean": -0.0,
+    "std": 9.9,
+    "min": -72.4,
+    "max": 64.67
+   }
+  },
+  "hihat_open": {
+   "n": 4825,
+   "timing": {
+    "n": 4825,
+    "meanMs": -2.9,
+    "stdMs": 29.25,
+    "p5Ms": -50.96,
+    "p50Ms": -3.68,
+    "p95Ms": 48.75
+   },
+   "velDelta": {
+    "n": 4825,
+    "mean": 0.0,
+    "std": 17.74,
+    "min": -83.69,
+    "max": 67.35
+   }
+  },
+  "tom_low": {
+   "n": 3496,
+   "timing": {
+    "n": 3496,
+    "meanMs": -9.52,
+    "stdMs": 23.82,
+    "p5Ms": -49.11,
+    "p50Ms": -9.19,
+    "p95Ms": 31.25
+   },
+   "velDelta": {
+    "n": 3496,
+    "mean": -0.0,
+    "std": 17.78,
+    "min": -87.81,
+    "max": 69.23
+   }
+  },
+  "crash": {
+   "n": 3289,
+   "timing": {
+    "n": 3289,
+    "meanMs": 3.55,
+    "stdMs": 29.5,
+    "p5Ms": -48.39,
+    "p50Ms": 4.86,
+    "p95Ms": 51.14
+   },
+   "velDelta": {
+    "n": 3289,
+    "mean": -0.0,
+    "std": 22.92,
+    "min": -88.58,
+    "max": 89.78
+   }
+  },
+  "ride": {
+   "n": 15333,
+   "timing": {
+    "n": 15333,
+    "meanMs": 5.84,
+    "stdMs": 27.95,
+    "p5Ms": -40.87,
+    "p50Ms": 5.36,
+    "p95Ms": 51.47
+   },
+   "velDelta": {
+    "n": 15333,
+    "mean": 0.0,
+    "std": 17.54,
+    "min": -97.11,
+    "max": 93.5
+   }
+  },
+  "tom_high": {
+   "n": 6007,
+   "timing": {
+    "n": 6007,
+    "meanMs": 4.75,
+    "stdMs": 28.61,
+    "p5Ms": -42.39,
+    "p50Ms": 4.35,
+    "p95Ms": 50.25
+   },
+   "velDelta": {
+    "n": 6007,
+    "mean": -0.0,
+    "std": 15.31,
+    "min": -81.38,
+    "max": 66.51
+   }
+  },
+  "tom_mid": {
+   "n": 1247,
+   "timing": {
+    "n": 1247,
+    "meanMs": -8.54,
+    "stdMs": 27.64,
+    "p5Ms": -53.75,
+    "p50Ms": -9.26,
+    "p95Ms": 41.67
+   },
+   "velDelta": {
+    "n": 1247,
+    "mean": 0.0,
+    "std": 17.4,
+    "min": -60.2,
+    "max": 62.86
+   }
+  }
+ },
+ "kickMeanOffsetMsBy16thPosition": {
+  "0": -11.09,
+  "1": 24.25,
+  "10": -3.1,
+  "11": -20.28,
+  "12": 1.66,
+  "13": 9.18,
+  "14": -9.57,
+  "15": 5.62,
+  "2": -2.27,
+  "3": -14.33,
+  "4": 8.04,
+  "5": 3.0,
+  "6": -10.43,
+  "7": 0.89,
+  "8": -11.36,
+  "9": 11.8
+ },
+ "snareMeanOffsetMsBy16thPosition": {
+  "0": -3.18,
+  "1": 1.58,
+  "10": 8.09,
+  "11": -6.08,
+  "12": -4.07,
+  "13": 2.38,
+  "14": 1.64,
+  "15": -4.32,
+  "2": -2.6,
+  "3": -3.82,
+  "4": -4.39,
+  "5": -1.15,
+  "6": 1.59,
+  "7": -1.04,
+  "8": -3.98,
+  "9": 0.91
+ }
+}
