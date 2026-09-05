@@ -1,0 +1,155 @@
+{
+  "fileName": "reference-style.mid",
+  "format": "MIDI",
+  "formatLabel": "Format 0 · 1 trackova",
+  "score": 93,
+  "notes": 2081,
+  "tracks": 1,
+  "channels": 8,
+  "tempo": 120,
+  "resolution": 480,
+  "averageVelocity": 103,
+  "velocitySpread": 91,
+  "averageDuration": 125,
+  "totalControllers": 240,
+  "trackNames": 1,
+  "topPitchClass": 0,
+  "detectedKey": "E minor",
+  "keyConfidence": 1812,
+  "chordProgression": [],
+  "timingScore": 94,
+  "timingGrid": 120,
+  "timingDrift": 7,
+  "timingOutliers": 132,
+  "expressionScore": 87,
+  "styleMarkers": [
+    "i1cv1",
+    "i2cv1",
+    "v1cv1",
+    "v2cv1",
+    "v3cv1",
+    "v4cv1",
+    "f1cv1",
+    "f2cv1",
+    "e1cv1",
+    "e2cv1"
+  ],
+  "styleCoverage": {
+    "elements": [
+      {
+        "key": "v1",
+        "label": "Variation 1",
+        "chordVariations": 6,
+        "found": 1,
+        "markers": [
+          "v1cv1"
+        ]
+      },
+      {
+        "key": "v2",
+        "label": "Variation 2",
+        "chordVariations": 6,
+        "found": 1,
+        "markers": [
+          "v2cv1"
+        ]
+      },
+      {
+        "key": "v3",
+        "label": "Variation 3",
+        "chordVariations": 6,
+        "found": 1,
+        "markers": [
+          "v3cv1"
+        ]
+      },
+      {
+        "key": "v4",
+        "label": "Variation 4",
+        "chordVariations": 6,
+        "found": 1,
+        "markers": [
+          "v4cv1"
+        ]
+      },
+      {
+        "key": "i1",
+        "label": "Intro 1",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "i1cv1"
+        ]
+      },
+      {
+        "key": "f1",
+        "label": "Fill 1",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "f1cv1"
+        ]
+      },
+      {
+        "key": "e1",
+        "label": "Ending 1",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "e1cv1"
+        ]
+      },
+      {
+        "key": "i2",
+        "label": "Intro 2",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "i2cv1"
+        ]
+      },
+      {
+        "key": "f2",
+        "label": "Fill 2",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "f2cv1"
+        ]
+      },
+      {
+        "key": "e2",
+        "label": "Ending 2",
+        "chordVariations": 2,
+        "found": 1,
+        "markers": [
+          "e2cv1"
+        ]
+      },
+      {
+        "key": "i3",
+        "label": "Intro 3",
+        "chordVariations": 2,
+        "found": 0,
+        "markers": []
+      },
+      {
+        "key": "f3",
+        "label": "Fill 3",
+        "chordVariations": 2,
+        "found": 0,
+        "markers": []
+      },
+      {
+        "key": "e3",
+        "label": "Ending 3",
+        "chordVariations": 2,
+        "found": 0,
+        "markers": []
+      }
+    ],
+    "totalSlots": 42,
+    "coveredSlots": 10
+  },
+  "analysisDurationMs": 6
+}

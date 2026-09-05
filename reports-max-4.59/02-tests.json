@@ -1,0 +1,28 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.59",
+  "date": "2026-09-05",
+  "python": "python3.11",
+  "node": "v22.22.3",
+  "suites": [
+    {"command": "PYTHONPATH=<mido> python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_mido_independent_v452",
+     "result": "OK", "tests": 87, "note": "87 = 80 pre-4.59 + 7 new"},
+    {"command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5},
+    {"command": "npm test (node --test tests/midi-stress.test.mjs) — GUI stress suite",
+     "result": "OK", "tests": 7, "note": "GUI analysis/preview/export/undo/timing-repair invariants on 12k-note synthetic PA800-style file"},
+    {"command": "node gui_chain_4.59.mjs", "result": "OK", "files": 5,
+     "note": "real files analyzed through the actual GUI entry point analyzeUploadedFile: reference-style (2081 notes, 10 markers, E minor), arranged-4.51-fixture, song19-01/02 (118 notes, Lead Solo ch2), session35-partial-preview"},
+    {"command": "python3.11 role_patterns.py + corpus runner", "result": "OK",
+     "note": "per-role pattern evidence on style files (8 roles: bass/drums/percussion/accompaniment ch11-15) + song19 corpus 20 files (accompaniment/bass/drums/solo with melody contour)"},
+    {"command": "python3.11 -m unittest test_role_patterns_v459", "result": "OK", "tests": 7,
+     "newForMilestone": true,
+     "covered": [
+       "GUI run covered 5 real files with guiOk and expected note/marker counts",
+       "GUI analysis artifacts written for every file",
+       "reference-style role channels measured (bass 107, drums 263, perc 589)",
+       "fixture role channels measured (drums 308, bass 122)",
+       "solo melody pattern measured per song (16 notes, contour + phrases)",
+       "corpus aggregate: solo 20 files/320 notes, melody upShare > downShare",
+       "deterministic recompute matches artifact"]}
+  ]
+}

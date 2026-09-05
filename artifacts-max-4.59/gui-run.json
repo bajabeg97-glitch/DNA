@@ -1,0 +1,82 @@
+{
+  "schema": "dna-gui-chain-run",
+  "version": "4.59",
+  "date": "2026-09-05",
+  "analyses": [
+    {
+      "file": "baseline/reference-style.mid",
+      "artifact": "artifacts-max-4.59/gui-analysis-reference-style.json",
+      "notes": 2081,
+      "tracks": 1,
+      "channels": 8,
+      "tempo": 120,
+      "resolution": 480,
+      "detectedKey": "E minor",
+      "keyConfidence": 1812,
+      "styleMarkers": 10,
+      "trackNames": 1,
+      "score": 93,
+      "guiOk": true
+    },
+    {
+      "file": "artifacts-max-4.51/arranged-4.51-fixture.mid",
+      "artifact": "artifacts-max-4.59/gui-analysis-arranged-4.51-fixture.json",
+      "notes": 1772,
+      "tracks": 1,
+      "channels": 8,
+      "tempo": 120,
+      "resolution": 480,
+      "detectedKey": "C minor",
+      "keyConfidence": 1290,
+      "styleMarkers": 10,
+      "trackNames": 1,
+      "score": 93,
+      "guiOk": true
+    },
+    {
+      "file": "session19-benchmark/song19-01.mid",
+      "artifact": "artifacts-max-4.59/gui-analysis-song19-01.json",
+      "notes": 118,
+      "tracks": 5,
+      "channels": 4,
+      "tempo": 84,
+      "resolution": 480,
+      "detectedKey": "C major",
+      "keyConfidence": 116,
+      "styleMarkers": 0,
+      "trackNames": 5,
+      "score": 94,
+      "guiOk": true
+    },
+    {
+      "file": "session19-benchmark/song19-02.mid",
+      "artifact": "artifacts-max-4.59/gui-analysis-song19-02.json",
+      "notes": 118,
+      "tracks": 5,
+      "channels": 4,
+      "tempo": 87,
+      "resolution": 480,
+      "detectedKey": "D minor",
+      "keyConfidence": 116,
+      "styleMarkers": 0,
+      "trackNames": 5,
+      "score": 93,
+      "guiOk": true
+    },
+    {
+      "file": "session35-partial-preview.mid",
+      "artifact": "artifacts-max-4.59/gui-analysis-session35-partial-preview.json",
+      "notes": 1400,
+      "tracks": 1,
+      "channels": 7,
+      "tempo": 120,
+      "resolution": 480,
+      "detectedKey": "C minor",
+      "keyConfidence": 1010,
+      "styleMarkers": 10,
+      "trackNames": 1,
+      "score": 93,
+      "guiOk": true
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schema": "dna-role-pattern-corpus",
+  "version": "4.59",
+  "styleFiles": {
+    "accompaniment": {
+      "files": 14,
+      "totalNotes": 3028,
+      "register": [
+        43,
+        96
+      ],
+      "densityNotesPerBar": {
+        "min": 5.33,
+        "median": 11.28,
+        "max": 20.67
+      },
+      "velocityMean": {
+        "min": 72.0,
+        "median": 101.0,
+        "max": 123.5
+      }
+    },
+    "bass": {
+      "files": 3,
+      "totalNotes": 351,
+      "register": [
+        28,
+        55
+      ],
+      "densityNotesPerBar": {
+        "min": 4.86,
+        "median": 6.78,
+        "max": 6.78
+      },
+      "velocityMean": {
+        "min": 116.3,
+        "median": 117.0,
+        "max": 117.0
+      }
+    },
+    "drums": {
+      "files": 3,
+      "totalNotes": 879,
+      "register": [
+        16,
+        79
+      ],
+      "densityNotesPerBar": {
+        "min": 11.95,
+        "median": 17.11,
+        "max": 17.11
+      },
+      "velocityMean": {
+        "min": 108.2,
+        "median": 113.2,
+        "max": 113.2
+      }
+    },
+    "percussion": {
+      "files": 3,
+      "totalNotes": 995,
+      "register": [
+        17,
+        70
+      ],
+      "densityNotesPerBar": {
+        "min": 11.28,
+        "median": 11.28,
+        "max": 26.77
+      },
+      "velocityMean": {
+        "min": 101.1,
+        "median": 108.8,
+        "max": 108.8
+      }
+    }
+  },
+  "song19BenchmarkSoloCorpus": {
+    "accompaniment": {
+      "files": 20,
+      "totalNotes": 1080,
+      "register": [
+        60,
+        71
+      ],
+      "densityNotesPerBar": {
+        "min": 6.75,
+        "median": 6.75,
+        "max": 6.75
+      },
+      "velocityMean": {
+        "min": 38.0,
+        "median": 47.5,
+        "max": 57.0
+      }
+    },
+    "bass": {
+      "files": 20,
+      "totalNotes": 320,
+      "register": [
+        36,
+        47
+      ],
+      "densityNotesPerBar": {
+        "min": 2.0,
+        "median": 2.0,
+        "max": 2.0
+      },
+      "velocityMean": {
+        "min": 81.0,
+        "median": 90.5,
+        "max": 100.0
+      }
+    },
+    "drums": {
+      "files": 20,
+      "totalNotes": 640,
+      "register": [
+        36,
+        38
+      ],
+      "densityNotesPerBar": {
+        "min": 4.0,
+        "median": 4.0,
+        "max": 4.0
+      },
+      "velocityMean": {
+        "min": 64.0,
+        "median": 64.0,
+        "max": 64.0
+      }
+    },
+    "solo": {
+      "files": 20,
+      "totalNotes": 320,
+      "register": [
+        72,
+        83
+      ],
+      "densityNotesPerBar": {
+        "min": 2.0,
+        "median": 2.0,
+        "max": 2.0
+      },
+      "velocityMean": {
+        "min": 25.0,
+        "median": 34.5,
+        "max": 44.0
+      },
+      "melody": {
+        "meanAbsSemisMedian": 5.33,
+        "upShareMedian": 0.533,
+        "downShareMedian": 0.4,
+        "chromaticShareMedian": 0.0,
+        "thirdShareMedian": 0.133,
+        "leapShareMedian": 0.2,
+        "files": 20
+      }
+    }
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "schema": "dna-role-pattern-evidence",
+  "version": "4.59",
+  "sourceName": "session35-partial-preview.mid",
+  "sourceSha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+  "ppq": 480,
+  "bars": 18,
+  "tempoBpm": 120.0,
+  "roleMap": {
+    "8": "bass",
+    "9": "drums",
+    "10": "percussion",
+    "11": "accompaniment",
+    "12": "accompaniment",
+    "13": "accompaniment",
+    "14": "accompaniment",
+    "15": "accompaniment"
+  },
+  "channels": {
+    "8": {
+      "role": "bass",
+      "channel": 8,
+      "noteCount": 122,
+      "register": [
+        28,
+        48
+      ],
+      "densityNotesPerBar": 6.78,
+      "velocity": {
+        "n": 122,
+        "min": 105.0,
+        "max": 124.0,
+        "mean": 117.0,
+        "q20": 113.0,
+        "q50": 116.0,
+        "q80": 122.0,
+        "std": 5.0
+      },
+      "durationTicks": {
+        "n": 122,
+        "min": 1.0,
+        "max": 530.0,
+        "mean": 113.1,
+        "q20": 5.0,
+        "q50": 157.0,
+        "q80": 176.0,
+        "std": 98.8
+      },
+      "gateRatio": {
+        "n": 122,
+        "min": 0.041,
+        "max": 1.0,
+        "mean": 0.391,
+        "q20": 0.042,
+        "q50": 0.344,
+        "q80": 0.647,
+        "std": 0.278
+      },
+      "onsetGapTicks": {
+        "n": 121,
+        "min": 1.0,
+        "max": 720.0,
+        "mean": 284.6,
+        "q20": 119.0,
+        "q50": 242.0,
+        "q80": 480.0,
+        "std": 181.9
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.344,
+      "shortGateShare": 0.516
+    },
+    "9": {
+      "role": "drums",
+      "channel": 9,
+      "noteCount": 308,
+      "register": [
+        36,
+        46
+      ],
+      "densityNotesPerBar": 17.11,
+      "velocity": {
+        "n": 308,
+        "min": 81.0,
+        "max": 124.0,
+        "mean": 113.2,
+        "q20": 109.0,
+        "q50": 114.0,
+        "q80": 124.0,
+        "std": 9.5
+      },
+      "durationTicks": {
+        "n": 308,
+        "min": 10.0,
+        "max": 241.0,
+        "mean": 57.4,
+        "q20": 20.0,
+        "q50": 64.0,
+        "q80": 76.0,
+        "std": 33.8
+      },
+      "gateRatio": {
+        "n": 308,
+        "min": 0.062,
+        "max": 1.0,
+        "mean": 0.489,
+        "q20": 0.244,
+        "q50": 0.297,
+        "q80": 1.0,
+        "std": 0.363
+      },
+      "onsetGapTicks": {
+        "n": 306,
+        "min": 1.0,
+        "max": 248.0,
+        "mean": 147.5,
+        "q20": 1.0,
+        "q50": 238.0,
+        "q80": 239.0,
+        "std": 110.5
+      },
+      "polyphonyPeak": 2,
+      "graceShortNoteShare": 0.406,
+      "shortGateShare": 0.643
+    },
+    "10": {
+      "role": "percussion",
+      "channel": 10,
+      "noteCount": 203,
+      "register": [
+        35,
+        70
+      ],
+      "densityNotesPerBar": 11.28,
+      "velocity": {
+        "n": 203,
+        "min": 67.0,
+        "max": 127.0,
+        "mean": 108.8,
+        "q20": 101.0,
+        "q50": 106.0,
+        "q80": 125.0,
+        "std": 11.4
+      },
+      "durationTicks": {
+        "n": 203,
+        "min": 10.0,
+        "max": 124.0,
+        "mean": 63.1,
+        "q20": 58.0,
+        "q50": 60.0,
+        "q80": 61.0,
+        "std": 18.0
+      },
+      "gateRatio": {
+        "n": 203,
+        "min": 0.03,
+        "max": 1.0,
+        "mean": 0.744,
+        "q20": 0.504,
+        "q50": 0.689,
+        "q80": 1.0,
+        "std": 0.242
+      },
+      "onsetGapTicks": {
+        "n": 202,
+        "min": 1.0,
+        "max": 156.0,
+        "mean": 67.7,
+        "q20": 2.0,
+        "q50": 89.0,
+        "q80": 119.0,
+        "std": 55.4
+      },
+      "polyphonyPeak": 4,
+      "graceShortNoteShare": 0.557,
+      "shortGateShare": 0.034
+    },
+    "11": {
+      "role": "accompaniment",
+      "channel": 11,
+      "noteCount": 195,
+      "register": [
+        48,
+        82
+      ],
+      "densityNotesPerBar": 10.83,
+      "velocity": {
+        "n": 195,
+        "min": 53.0,
+        "max": 96.0,
+        "mean": 72.0,
+        "q20": 53.0,
+        "q50": 69.0,
+        "q80": 92.0,
+        "std": 17.3
+      },
+      "durationTicks": {
+        "n": 195,
+        "min": 5.0,
+        "max": 948.0,
+        "mean": 191.1,
+        "q20": 10.0,
+        "q50": 120.0,
+        "q80": 348.0,
+        "std": 193.2
+      },
+      "gateRatio": {
+        "n": 195,
+        "min": 0.001,
+        "max": 1.0,
+        "mean": 0.814,
+        "q20": 0.625,
+        "q50": 1.0,
+        "q80": 1.0,
+        "std": 0.33
+      },
+      "onsetGapTicks": {
+        "n": 193,
+        "min": 1.0,
+        "max": 4087.0,
+        "mean": 189.5,
+        "q20": 4.0,
+        "q50": 10.0,
+        "q80": 341.0,
+        "std": 420.6
+      },
+      "polyphonyPeak": 2,
+      "graceShortNoteShare": 0.287,
+      "shortGateShare": 0.154
+    },
+    "12": {
+      "role": "accompaniment",
+      "channel": 12,
+      "noteCount": 260,
+      "register": [
+        50,
+        84
+      ],
+      "densityNotesPerBar": 14.44,
+      "velocity": {
+        "n": 260,
+        "min": 79.0,
+        "max": 110.0,
+        "mean": 96.0,
+        "q20": 82.0,
+        "q50": 104.0,
+        "q80": 110.0,
+        "std": 11.8
+      },
+      "durationTicks": {
+        "n": 260,
+        "min": 19.0,
+        "max": 211.0,
+        "mean": 88.9,
+        "q20": 41.0,
+        "q50": 113.0,
+        "q80": 116.0,
+        "std": 37.8
+      },
+      "gateRatio": {
+        "n": 260,
+        "min": 0.029,
+        "max": 1.0,
+        "mean": 0.727,
+        "q20": 0.171,
+        "q50": 0.95,
+        "q80": 1.0,
+        "std": 0.366
+      },
+      "onsetGapTicks": {
+        "n": 259,
+        "min": 1.0,
+        "max": 3959.0,
+        "mean": 169.1,
+        "q20": 59.0,
+        "q50": 120.0,
+        "q80": 239.0,
+        "std": 351.7
+      },
+      "polyphonyPeak": 2,
+      "graceShortNoteShare": 0.3,
+      "shortGateShare": 0.223
+    },
+    "13": {
+      "role": "accompaniment",
+      "channel": 13,
+      "noteCount": 96,
+      "register": [
+        50,
+        77
+      ],
+      "densityNotesPerBar": 5.33,
+      "velocity": {
+        "n": 96,
+        "min": 94.0,
+        "max": 113.0,
+        "mean": 105.0,
+        "q20": 102.0,
+        "q50": 110.0,
+        "q80": 110.0,
+        "std": 6.6
+      },
+      "durationTicks": {
+        "n": 96,
+        "min": 1.0,
+        "max": 237.0,
+        "mean": 29.4,
+        "q20": 1.0,
+        "q50": 10.0,
+        "q80": 41.0,
+        "std": 50.1
+      },
+      "gateRatio": {
+        "n": 96,
+        "min": 0.06,
+        "max": 1.0,
+        "mean": 0.617,
+        "q20": 0.167,
+        "q50": 1.0,
+        "q80": 1.0,
+        "std": 0.417
+      },
+      "onsetGapTicks": {
+        "n": 95,
+        "min": 1.0,
+        "max": 599.0,
+        "mean": 118.7,
+        "q20": 1.0,
+        "q50": 2.0,
+        "q80": 239.0,
+        "std": 146.2
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.917,
+      "shortGateShare": 0.427
+    },
+    "14": {
+      "role": "accompaniment",
+      "channel": 14,
+      "noteCount": 216,
+      "register": [
+        55,
+        87
+      ],
+      "densityNotesPerBar": 12.0,
+      "velocity": {
+        "n": 216,
+        "min": 99.0,
+        "max": 127.0,
+        "mean": 123.5,
+        "q20": 118.0,
+        "q50": 127.0,
+        "q80": 127.0,
+        "std": 6.8
+      },
+      "durationTicks": {
+        "n": 216,
+        "min": 5.0,
+        "max": 207.0,
+        "mean": 62.9,
+        "q20": 5.0,
+        "q50": 50.0,
+        "q80": 116.0,
+        "std": 51.8
+      },
+      "gateRatio": {
+        "n": 216,
+        "min": 0.03,
+        "max": 1.0,
+        "mean": 0.476,
+        "q20": 0.042,
+        "q50": 0.208,
+        "q80": 0.967,
+        "std": 0.424
+      },
+      "onsetGapTicks": {
+        "n": 215,
+        "min": 120.0,
+        "max": 3960.0,
+        "mean": 160.2,
+        "q20": 120.0,
+        "q50": 120.0,
+        "q80": 120.0,
+        "std": 267.9
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.537,
+      "shortGateShare": 0.574
+    },
+    "15": {
+      "role": "accompaniment",
+      "noteCount": 0
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.59",
+  "status": "complete",
+  "date": "2026-09-05",
+  "summary": "Dokazan lanac od GUI-ja pa nadalje: React GUI analyzeUploadedFile na 5 realnih fajlova (artifacts gui-analysis), pa Role Pattern Evidence Engine (role_patterns.py) izmerio pattern-e svih uloga \u2014 bass/drums/percussion/accompaniment na style fajlovima i solo (melody contour, fraze) na korpusu od 20 song19 pesama (320 solo nota). Sve read-only, role mape iz evidencije, sha256 u artefaktima. Python suita 87 + legacy 5, GUI stress npm 7/7.",
+  "deliverables": {
+    "guiRunner": "gui_chain_4.59.mjs",
+    "engine": "dna_midi_studio/role_patterns.py",
+    "tests": "test_role_patterns_v459.py (7)",
+    "guiStressTests": "npm test 7/7",
+    "guiAnalyses": "artifacts-max-4.59/gui-analysis-*.json (5) + gui-run.json",
+    "rolePatterns": "artifacts-max-4.59/role-patterns-*.json (23 fajla) + role-patterns-corpus.json",
+    "reports": [
+      "reports-max-4.59/01-gui-chain-summary.json",
+      "reports-max-4.59/02-tests.json"
+    ],
+    "guide": "docs/gui-to-role-patterns-4.59.md"
+  },
+  "keyFacts": {
+    "guiFiles": 5,
+    "guiMarkersReferenceStyle": 10,
+    "guiNotesReferenceStyle": 2081,
+    "styleBass": {
+      "channels": 3,
+      "notes": 351,
+      "register": [
+        28,
+        55
+      ]
+    },
+    "styleDrums": {
+      "channels": 3,
+      "notes": 879,
+      "densityPerBar": [
+        12,
+        17
+      ]
+    },
+    "stylePercussion": {
+      "channels": 3,
+      "notes": 995,
+      "densityPerBarMax": 26.77
+    },
+    "styleAccompaniment": {
+      "channels": 14,
+      "notes": 3028,
+      "register": [
+        43,
+        96
+      ]
+    },
+    "soloCorpus": {
+      "files": 20,
+      "notes": 320
+    },
+    "soloMelodyProfile": {
+      "meanAbsSemisMedian": 5.33,
+      "upShareMedian": 0.533,
+      "downShareMedian": 0.4,
+      "chromaticShareMedian": 0.0,
+      "thirdShareMedian": 0.133,
+      "leapShareMedian": 0.2
+    },
+    "testsPython": 87,
+    "testsLegacy": 5,
+    "testsGuiStress": 7
+  },
+  "caveats": [
+    "Solo korpus su fabri\u010dki benchmark lead kanali (16 nota/pesma) \u2014 mera postoje\u0107e fabrike, ne ljudskih sola.",
+    "Role mape su eksplicitno prosle\u0111ene iz evidencije (ne naga\u0111ane); GUI ne dodeljuje uloge."
+  ],
+  "hashes": {
+    "dna_midi_studio/role_patterns.py": "fc7cecd259fad38e95358f04f0f640414ee2aeedbcb5748615dcc11f5e55d3f3",
+    "gui_chain_4.59.mjs": "a1eecdf81bbca7620232766b10a92f4f6589a44cab7e166445b42f6197867cc9",
+    "test_role_patterns_v459.py": "9729295f42199936f1661a2eb1c079be2d94c57afc3eaab294254f14b0f869b3",
+    "docs/gui-to-role-patterns-4.59.md": "f4c193efc1699134ea06dbf7da54bfc2e3cb1355e019f0fde9a110487ac76808",
+    "reports-max-4.59/01-gui-chain-summary.json": "d6c607603f551246c50c154593a9986957cd4985e0e6984351c03acaede87ecd",
+    "reports-max-4.59/02-tests.json": "6ff99bba7aa48873c35393463a960e9c75fe00ec3e5a679f2ab9688522db61f3",
+    "artifacts-max-4.59/role-patterns-corpus.json": "c2ba8be121ac153492770778eb20b163e1b2ed9faea6ce76e00742f3a92ca523"
+  }
+}

@@ -2,6 +2,16 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **GUI → role patterns 4.59:** dokazan lanac od GUI-ja nadalje — React GUI
+> `analyzeUploadedFile` (src/musicAnalysis.js) analizira realne fajlove
+> (`artifacts-max-4.59/gui-analysis-*.json`), pa `role_patterns.py` meri
+> pattern-e svih uloga: bass/drums/percussion/accompaniment (style fajlovi,
+> 6.253 nota) i **solo** sa melodijskim profilom (korpus 20 song19 pesama,
+> 320 solo nota: up 53 %, sr. interval 5,3 semisa, terce 13 %). Read-only,
+> role mape iz evidencije; Python 87 + legacy 5, GUI stress 7/7.
+> Evidence: `artifacts-max-4.59/` + `reports-max-4.59/`; guide
+> `docs/gui-to-role-patterns-4.59.md`.
+> **Special Track Engine 4.57:** echo/terca optimizacija implementirana iz
 > **Special Track Engine 4.57:** echo/terca optimizacija implementirana iz
 > v413 spec (ranije: spec bez modula). Echo REPAIR: snap na half-beat grid,
 > tiši i kraći od main dela; REBUILD: nesličan echo se uklanja i generiše od
