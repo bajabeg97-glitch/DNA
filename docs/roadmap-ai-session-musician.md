@@ -38,6 +38,12 @@ main tajmingu uz harmony dokaz, inferencija neimenovanih aux treka; main se
 nikada ne menja, 0 trigera. Dokazi: `artifacts-max-4.57/`, guide
 `docs/studio-special-track-4.57.md`.
 
+## 4.61 Session Bridge — DONE (Faza B)
+`dna_bridge.mjs` — node:http server bez npm zavisnosti: UI na /, upload
+`POST /api/analyze` -> Session Pass -> izveštaj + artefakti, demo preseti,
+download. HTTP izvršeno na 4 uzorka (2 artefakta po stil fajlu). Dokazi:
+`artifacts-max-4.61/bridge-run.json`, vodič `docs/session-bridge-4.61.md`.
+
 ## 4.60 Session Pass — DONE (Faza A)
 `session_pass.py` — jedan CLI poziv kroz sve engine-e (4.52–4.59) → jedan
 izveštaj: per-role patterni, groove vs ljudska referenca, tehnike, echo/terca

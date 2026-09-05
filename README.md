@@ -2,6 +2,13 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Session Bridge 4.61 (Faza B):** `dna_bridge.mjs` — node:http server bez
+> npm zavisnosti: dark UI na / (upload → analiza → plan → download), POST
+> /api/analyze pokreće Session Pass preko Python-a i vraća izveštaj +
+> artefakte; demo preseti (reference-style/fixture/session35/song19-01);
+> HTTP izvršeno na 4 uzorka (npm test 12/12; Python 98 + 5). Evidence:
+> `artifacts-max-4.61/bridge-run.json`; vodič `docs/session-bridge-4.61.md`.
+> **Session Pass 4.60 (Faza A):** jedan CLI poziv protera fajl kroz sve
 > **Session Pass 4.60 (Faza A):** jedan CLI poziv protera fajl kroz sve
 > engine-e (4.52 miks, 4.53 STY, 4.54 groove, 4.55 tehnike, 4.57 echo/terca,
 > 4.59 role patterni) i vrati jedan izveštaj sa 5 akcija: STY_EXPORT,

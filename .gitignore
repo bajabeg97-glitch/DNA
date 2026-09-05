@@ -9,3 +9,4 @@ build
 .venv
 __pycache__/
 *.pyc
+artifacts-max-4.61/uploads/

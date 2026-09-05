@@ -1,0 +1,26 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.61",
+  "status": "complete",
+  "date": "2026-09-05",
+  "phase": "B (node stdlib bridge) — DONE",
+  "summary": "Node bridge (dna_bridge.mjs, node:http + child_process, nula npm zavisnosti): sluzi UI na /, POST /api/analyze (upload -> Session Pass 4.60 -> izvestaj + artefakti), GET /api/sample-analyze (4 preseta), GET /api/artifacts, /api/presets, /api/health. Izvrseno kroz HTTP: reference-style/fixture/session35 APPLIED po 2 artefakta, song19-01 korektno SKIPPED gde nije primenljivo. npm test 12/12 (7 GUI + 5 bridge), Python 98 + legacy 5 OK.",
+  "deliverables": {
+    "bridge": "dna_bridge.mjs",
+    "tests": "tests/bridge-session.test.mjs (5)",
+    "evidence": "artifacts-max-4.61/bridge-run.json",
+    "reports": ["reports-max-4.61/02-tests.json"],
+    "guide": "docs/session-bridge-4.61.md"
+  },
+  "endpointsProven": [
+    "GET / (UI 200, sadrzi DNA Optimizer)",
+    "GET /api/health (ok, engines)",
+    "GET /api/presets (4 preseta)",
+    "GET /api/sample-analyze (4/4 HTTP prolaza, 2 artefakta po stil fajlu)",
+    "POST /api/analyze (upload reference-style, A01+A02 APPLIED, download audio/midi 200)",
+    "GET /api/artifacts/<name> (path-traversal zasticen, 404 na nepoznato)",
+    "ne-midi ekstenzija -> 400"
+  ],
+  "tests": { "npm": 12, "python": 98, "legacy": 5 },
+  "next": "Faza C — React tok (upload -> analiza -> plan -> potvrdjene akcije -> izvoz) koristi iste endpoint-e; Faza D — WebAudio A/B audicija."
+}

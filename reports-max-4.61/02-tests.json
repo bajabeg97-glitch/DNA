@@ -1,0 +1,25 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.61",
+  "date": "2026-09-05",
+  "python": "python3.11 (engines stdlib-only)",
+  "node": "v22.22.3",
+  "suites": [
+    {"command": "PYTHONPATH=<mido> python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_mido_independent_v452",
+     "result": "OK", "tests": 98},
+    {"command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5},
+    {"command": "npm test (node --test tests/**/*.test.mjs)",
+     "result": "OK", "tests": 12,
+     "note": "7 pre-existing GUI stress tests + 5 new bridge tests (4.61)"},
+    {"command": "node --test tests/bridge-session.test.mjs", "result": "OK", "tests": 5,
+     "newForMilestone": true,
+     "covered": [
+       "bridge health reports engines + python",
+       "bridge serves optimizer UI at /",
+       "presets list 4 corpus samples",
+       "POST /api/analyze on reference-style applies safe actions (A01+A02 APPLIED, A05 LOCKED) and serves artifact download (audio/midi, >1000 bytes)",
+       "upload rejects non-midi extension with 400"]},
+    {"command": "node - <<EOF e2e (startBridge + fetch)", "result": "OK",
+     "note": "artifacts-max-4.61/bridge-run.json: 4 sample-analyze HTTP runs — reference-style/fixture/session35 APPLIED 2 artifacts each; song19-01 SKIPPED where inapplicable"}
+  ]
+}
