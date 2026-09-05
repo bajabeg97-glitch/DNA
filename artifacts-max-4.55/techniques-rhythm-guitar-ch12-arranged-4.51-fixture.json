@@ -1,0 +1,594 @@
+{
+  "schema": "dna-instrument-technique-evidence",
+  "version": "4.55",
+  "sourceName": "arranged-4.51-fixture.mid",
+  "sourceSha256": "ba040970a648fcd06fcbf9c87f18919a87757faf4433638210dbc29b847b2b10",
+  "role": "rhythm-guitar",
+  "channel": 12,
+  "ppq": 480,
+  "thresholdsApplied": {
+    "shortGateRatio": 0.45,
+    "longGateRatio": 0.6,
+    "accentQuantile": 0.8,
+    "ghostQuantile": 0.2,
+    "midVelCapQuantile": 0.6,
+    "lowZoneQuantile": 0.33,
+    "highZoneQuantile": 0.66,
+    "lastNoteFallbackGapTicksFactor": 2
+  },
+  "profileVocabulary": [
+    "block",
+    "down",
+    "mute-candidate",
+    "open-strum",
+    "palm-mute-candidate",
+    "pickup",
+    "single-string-candidate",
+    "stop",
+    "up"
+  ],
+  "channelSoundEvidence": [
+    {
+      "cc0": 121,
+      "cc32": null,
+      "program": null
+    },
+    {
+      "cc0": 121,
+      "cc32": 3,
+      "program": null
+    },
+    {
+      "cc0": 121,
+      "cc32": 3,
+      "program": 0
+    }
+  ],
+  "noteOrStrokeCount": 228,
+  "counts": {
+    "total": 228,
+    "perLabel": {
+      "sustain": 143,
+      "single-string-candidate": 53,
+      "open-strum": 24,
+      "palm-mute-candidate": 7,
+      "accent-stroke": 1
+    }
+  },
+  "examplesPerLabel": {
+    "sustain": [
+      {
+        "start": 0,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 25,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 2879,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 30,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 4799,
+        "size": 1,
+        "velMean": 83.0,
+        "durMax": 20,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 6719,
+        "size": 1,
+        "velMean": 83.0,
+        "durMax": 21,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 7680,
+        "size": 1,
+        "velMean": 81.0,
+        "durMax": 49,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 10560,
+        "size": 1,
+        "velMean": 81.0,
+        "durMax": 20,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 11520,
+        "size": 1,
+        "velMean": 90.0,
+        "durMax": 29,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 12479,
+        "size": 1,
+        "velMean": 90.0,
+        "durMax": 30,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 13439,
+        "size": 1,
+        "velMean": 90.0,
+        "durMax": 39,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 13440,
+        "size": 1,
+        "velMean": 90.0,
+        "durMax": 211,
+        "gateRatio": 0.588,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 15600,
+        "size": 1,
+        "velMean": 104.0,
+        "durMax": 112,
+        "gateRatio": 1.0,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      },
+      {
+        "start": 15601,
+        "size": 1,
+        "velMean": 104.0,
+        "durMax": 112,
+        "gateRatio": 0.933,
+        "pitchSpan": 0,
+        "label": "sustain",
+        "inProfileVocabulary": false
+      }
+    ],
+    "single-string-candidate": [
+      {
+        "start": 1,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 41,
+        "gateRatio": 0.114,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 360,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 35,
+        "gateRatio": 0.097,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 720,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 20,
+        "gateRatio": 0.084,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 1319,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 25,
+        "gateRatio": 0.069,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 1680,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 26,
+        "gateRatio": 0.108,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 2280,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 35,
+        "gateRatio": 0.097,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 2640,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 20,
+        "gateRatio": 0.084,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 2880,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 21,
+        "gateRatio": 0.058,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 3239,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 26,
+        "gateRatio": 0.072,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 3599,
+        "size": 1,
+        "velMean": 79.0,
+        "durMax": 25,
+        "gateRatio": 0.103,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 4201,
+        "size": 1,
+        "velMean": 83.0,
+        "durMax": 31,
+        "gateRatio": 0.086,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 4560,
+        "size": 1,
+        "velMean": 83.0,
+        "durMax": 19,
+        "gateRatio": 0.079,
+        "pitchSpan": 0,
+        "label": "single-string-candidate",
+        "inProfileVocabulary": true
+      }
+    ],
+    "palm-mute-candidate": [
+      {
+        "start": 959,
+        "size": 2,
+        "velMean": 79.0,
+        "durMax": 30,
+        "gateRatio": 0.083,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 1920,
+        "size": 2,
+        "velMean": 79.0,
+        "durMax": 39,
+        "gateRatio": 0.108,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 3841,
+        "size": 2,
+        "velMean": 83.0,
+        "durMax": 30,
+        "gateRatio": 0.083,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 5760,
+        "size": 2,
+        "velMean": 83.0,
+        "durMax": 31,
+        "gateRatio": 0.086,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 8641,
+        "size": 2,
+        "velMean": 81.0,
+        "durMax": 50,
+        "gateRatio": 0.139,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 9599,
+        "size": 2,
+        "velMean": 81.0,
+        "durMax": 39,
+        "gateRatio": 0.108,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 14399,
+        "size": 2,
+        "velMean": 90.0,
+        "durMax": 64,
+        "gateRatio": 0.177,
+        "pitchSpan": 2,
+        "label": "palm-mute-candidate",
+        "inProfileVocabulary": true
+      }
+    ],
+    "open-strum": [
+      {
+        "start": 15360,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.983,
+        "pitchSpan": 11,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 15479,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 118,
+        "gateRatio": 0.975,
+        "pitchSpan": 24,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 15721,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 118,
+        "gateRatio": 1.0,
+        "pitchSpan": 13,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 16080,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.975,
+        "pitchSpan": 24,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 16200,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 118,
+        "gateRatio": 0.992,
+        "pitchSpan": 13,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 16319,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.975,
+        "pitchSpan": 15,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 17039,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 118,
+        "gateRatio": 0.967,
+        "pitchSpan": 13,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 17161,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.975,
+        "pitchSpan": 15,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 17281,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.983,
+        "pitchSpan": 11,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 17400,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 114,
+        "gateRatio": 0.95,
+        "pitchSpan": 24,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 17759,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 117,
+        "gateRatio": 0.975,
+        "pitchSpan": 15,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      },
+      {
+        "start": 18359,
+        "size": 2,
+        "velMean": 104.0,
+        "durMax": 116,
+        "gateRatio": 0.967,
+        "pitchSpan": 15,
+        "label": "open-strum",
+        "inProfileVocabulary": true
+      }
+    ],
+    "accent-stroke": [
+      {
+        "start": 22921,
+        "size": 2,
+        "velMean": 110.0,
+        "durMax": 115,
+        "gateRatio": 0.029,
+        "pitchSpan": 15,
+        "label": "accent-stroke",
+        "inProfileVocabulary": false
+      }
+    ]
+  },
+  "warrantLedger": [
+    {
+      "technique": "block",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "down",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "mute-candidate",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "open-strum",
+      "observedCount": 24,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "palm-mute-candidate",
+      "observedCount": 7,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "pickup",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "single-string-candidate",
+      "observedCount": 53,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "stop",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    },
+    {
+      "technique": "up",
+      "observedCount": 0,
+      "requiresDeviceEvidenceBeforeTrigger": false,
+      "deviceEvidenceCaptured": false,
+      "emissionState": "SEMANTIC_ONLY",
+      "hardRule": "EXACT_SOUND_PROFILE_REQUIRED"
+    }
+  ],
+  "gates": {
+    "readOnlyNoInputBytesWritten": true,
+    "emittedTriggers": 0,
+    "emittedBankProgramChanges": 0,
+    "emittedControllerEvents": 0,
+    "emittedKeyswitches": 0,
+    "emittedNoteOnOff": 0,
+    "profileVocabularyLoaded": true,
+    "roleKnown": true
+  }
+}

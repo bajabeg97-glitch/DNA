@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Instrument Techniques 4.55:** evidence engine za slap/pop/ghost/palm-mute —
+> klasifikuje fabričke note (bas) i udare (ritam gitara) isključivo u postojeći
+> rečnik tehnika `complete-instrument-profiles-4.44.json`, koristeći relativne
+> pragove samog kanala (accent ≥ Q80, ghost ≤ Q20, gate pragovi); read-only —
+> 0 trigera/CC/promena nota (warrant ledger: slap/pop/guitar trigeri ostaju
+> SEMANTIC_ONLY dok ne postoji device snimak). Evidence: `artifacts-max-4.55/`
+> + `reports-max-4.55/`; guide `docs/instrument-techniques-4.55.md`; roadmap
+> `docs/roadmap-ai-session-musician.md`.
 > **Groove Engine 4.54:** meri groove činjenice naših bubanj/percussion
 > kanala (16-tinski grid-offseti u ms, gustina, dinamika po pitch-u) i poredi
 > ih sa ljudskom referencom izvedenom iz wobblemidi rock profila (MIT, autor:

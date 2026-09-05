@@ -1,0 +1,38 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.55",
+  "date": "2026-09-05",
+  "python": "python3.11 (engine stdlib-only)",
+  "suites": [
+    {
+      "command": "PYTHONPATH=<mido-checkout> python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_mido_independent_v452",
+      "result": "OK",
+      "tests": 71,
+      "note": "mido used only as independent cross-check (dev-only)"
+    },
+    {
+      "command": "python3.11 -m unittest test_max_registry_v448",
+      "result": "OK",
+      "tests": 5
+    },
+    {
+      "command": "python3.11 -m unittest test_instrument_techniques_v455",
+      "result": "OK",
+      "tests": 12,
+      "newForMilestone": true,
+      "covered": [
+        "bass vocabulary contains ghost/slap/pop/slide candidates, no palm-mute",
+        "rhythm-guitar vocabulary contains palm-mute/mute/open-strum/single-string",
+        "forbidden triggers policy (slap-trigger/pop-trigger/rx-noise-trigger)",
+        "fixture bass ch8 counts (122 total: slap 3, pop 25, ghost 24)",
+        "read-only gates (0 triggers/bank/CC/keyswitch/note events)",
+        "warrant ledger: every technique SEMANTIC_ONLY; slap-trigger requires device evidence",
+        "fixture chordal ch12 counts (228 strokes: open-strum 24, palm-mute 7, single-string 53)",
+        "channel sound evidence recorded on ch12",
+        "reference bass ch8 counts (107: sustain 49, slap 5, pop 2, ghost 16)",
+        "reference chordal ch12 counts (222 strokes: single-string 100, open-strum 25, palm-mute 9)",
+        "sourceSha256 present"
+      ]
+    }
+  ]
+}

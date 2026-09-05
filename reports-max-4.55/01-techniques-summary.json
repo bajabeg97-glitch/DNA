@@ -1,0 +1,74 @@
+{
+  "schema": "dna-4.55-technique-evidence-summary",
+  "date": "2026-09-05",
+  "engine": "dna_midi_studio/instrument_techniques.py",
+  "policy": "read-only candidate classification into complete-instrument-profiles-4.44 vocabulary; triggers never emitted (SEMANTIC_ONLY until device capture)",
+  "runs": [
+    {
+      "artifact": "techniques-bass-ch8-arranged-4.51-fixture.json",
+      "source": "arranged-4.51-fixture.mid",
+      "role": "bass",
+      "channel": 8,
+      "counts": {
+        "total": 122,
+        "perLabel": {
+          "short-mid": 34,
+          "sustain": 30,
+          "pop-candidate": 25,
+          "ghost-candidate": 24,
+          "short-accent-mid": 6,
+          "slap-candidate": 3
+        }
+      }
+    },
+    {
+      "artifact": "techniques-bass-ch8-reference-style.json",
+      "source": "reference-style.mid",
+      "role": "bass",
+      "channel": 8,
+      "counts": {
+        "total": 107,
+        "perLabel": {
+          "sustain": 49,
+          "short-mid": 29,
+          "ghost-candidate": 16,
+          "short-accent-mid": 6,
+          "slap-candidate": 5,
+          "pop-candidate": 2
+        }
+      }
+    },
+    {
+      "artifact": "techniques-rhythm-guitar-ch12-arranged-4.51-fixture.json",
+      "source": "arranged-4.51-fixture.mid",
+      "role": "rhythm-guitar",
+      "channel": 12,
+      "counts": {
+        "total": 228,
+        "perLabel": {
+          "sustain": 143,
+          "single-string-candidate": 53,
+          "open-strum": 24,
+          "palm-mute-candidate": 7,
+          "accent-stroke": 1
+        }
+      }
+    },
+    {
+      "artifact": "techniques-rhythm-guitar-ch12-reference-style.json",
+      "source": "reference-style.mid",
+      "role": "rhythm-guitar",
+      "channel": 12,
+      "counts": {
+        "total": 222,
+        "perLabel": {
+          "single-string-candidate": 100,
+          "sustain": 84,
+          "open-strum": 25,
+          "palm-mute-candidate": 9,
+          "accent-stroke": 4
+        }
+      }
+    }
+  ]
+}
