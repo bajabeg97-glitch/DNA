@@ -1,0 +1,13 @@
+{
+  "schema": "dna-sty-mapper-status-4.53",
+  "version": "4.53",
+  "date": "2026-09-05",
+  "milestone": "Korg STY Mapper 4.53 — map + export SMF0 style (Pa800 import layout)",
+  "engineFiles": ["dna_midi_studio/sty_mapper.py", "test_sty_mapper_v453.py"],
+  "runs": "reports-max-4.53/01-sty-runs.json",
+  "tests": "reports-max-4.53/02-tests.json (50/50 + legacy 5/5, executed)",
+  "artifacts": "artifacts-max-4.53/",
+  "guide": "docs/studio-sty-mapper-4.53.md",
+  "research": "docs/korg-sty-research-4.53.md",
+  "roadmapNext": ["4.54 groove/patterns from corpora (Groove MIDI + MetaMIDI sample)", "4.55 instrument techniques (slap/pop/palm-mute)", "5.0 AI Session Musician"]
+}

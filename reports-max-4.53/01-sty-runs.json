@@ -1,0 +1,319 @@
+{
+  "reference-style": {
+    "status": "STY_EXPORT_OK",
+    "gates": {
+      "smf0": true,
+      "singleTrack": true,
+      "markersRecognized": true,
+      "markersStrictlyIncreasing": true,
+      "markersOnBarGrid": true,
+      "markersMatchLayout": true,
+      "noteGeometryUnchanged": true,
+      "reparsed": true
+    },
+    "markers": [
+      "i1cv1",
+      "i2cv1",
+      "v1cv1",
+      "v2cv1",
+      "v3cv1",
+      "v4cv1",
+      "f1cv1",
+      "f2cv1",
+      "e1cv1",
+      "e2cv1"
+    ],
+    "elements": [
+      {
+        "text": "i1cv1",
+        "bars": 2,
+        "startTick": 0
+      },
+      {
+        "text": "i2cv1",
+        "bars": 4,
+        "startTick": 3840
+      },
+      {
+        "text": "v1cv1",
+        "bars": 2,
+        "startTick": 11520
+      },
+      {
+        "text": "v2cv1",
+        "bars": 2,
+        "startTick": 15360
+      },
+      {
+        "text": "v3cv1",
+        "bars": 2,
+        "startTick": 19200
+      },
+      {
+        "text": "v4cv1",
+        "bars": 2,
+        "startTick": 23040
+      },
+      {
+        "text": "f1cv1",
+        "bars": 1,
+        "startTick": 26880
+      },
+      {
+        "text": "f2cv1",
+        "bars": 1,
+        "startTick": 28800
+      },
+      {
+        "text": "e1cv1",
+        "bars": 2,
+        "startTick": 30720
+      },
+      {
+        "text": "e2cv1",
+        "bars": 4,
+        "startTick": 34560
+      }
+    ],
+    "exportAdded": 0,
+    "cc11Added": 0,
+    "setupsAdded": 0,
+    "channelsWithoutSetup": [],
+    "roles": [
+      {
+        "ch": 8,
+        "role": "bass",
+        "sound": [
+          121,
+          6,
+          33
+        ]
+      },
+      {
+        "ch": 9,
+        "role": "drums",
+        "sound": [
+          120,
+          0,
+          5
+        ]
+      },
+      {
+        "ch": 10,
+        "role": "percussion",
+        "sound": [
+          120,
+          0,
+          5
+        ]
+      },
+      {
+        "ch": 11,
+        "role": "accompaniment",
+        "sound": [
+          121,
+          3,
+          0
+        ]
+      },
+      {
+        "ch": 12,
+        "role": "accompaniment",
+        "sound": [
+          121,
+          3,
+          0
+        ]
+      },
+      {
+        "ch": 13,
+        "role": "accompaniment",
+        "sound": [
+          120,
+          0,
+          64
+        ]
+      },
+      {
+        "ch": 14,
+        "role": "accompaniment",
+        "sound": [
+          120,
+          0,
+          64
+        ]
+      },
+      {
+        "ch": 15,
+        "role": "accompaniment",
+        "sound": [
+          121,
+          3,
+          0
+        ]
+      }
+    ]
+  },
+  "arranged-4.51-fixture": {
+    "status": "STY_EXPORT_OK",
+    "gates": {
+      "smf0": true,
+      "singleTrack": true,
+      "markersRecognized": true,
+      "markersStrictlyIncreasing": true,
+      "markersOnBarGrid": true,
+      "markersMatchLayout": true,
+      "noteGeometryUnchanged": true,
+      "reparsed": true
+    },
+    "markers": [
+      "i1cv1",
+      "i2cv1",
+      "v1cv1",
+      "v2cv1",
+      "v3cv1",
+      "v4cv1",
+      "f1cv1",
+      "f2cv1",
+      "e1cv1",
+      "e2cv1"
+    ],
+    "elements": [
+      {
+        "text": "i1cv1",
+        "bars": 2,
+        "startTick": 0
+      },
+      {
+        "text": "i2cv1",
+        "bars": 2,
+        "startTick": 3840
+      },
+      {
+        "text": "v1cv1",
+        "bars": 2,
+        "startTick": 7680
+      },
+      {
+        "text": "v2cv1",
+        "bars": 2,
+        "startTick": 11520
+      },
+      {
+        "text": "v3cv1",
+        "bars": 2,
+        "startTick": 15360
+      },
+      {
+        "text": "v4cv1",
+        "bars": 2,
+        "startTick": 19200
+      },
+      {
+        "text": "f1cv1",
+        "bars": 1,
+        "startTick": 23040
+      },
+      {
+        "text": "f2cv1",
+        "bars": 1,
+        "startTick": 24960
+      },
+      {
+        "text": "e1cv1",
+        "bars": 2,
+        "startTick": 26880
+      },
+      {
+        "text": "e2cv1",
+        "bars": 2,
+        "startTick": 30720
+      }
+    ],
+    "exportAdded": 10,
+    "cc11Added": 10,
+    "setupsAdded": 0,
+    "channelsWithoutSetup": [
+      {
+        "tick": 0,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 3840,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      }
+    ],
+    "roles": [
+      {
+        "ch": 8,
+        "role": "bass",
+        "sound": [
+          121,
+          6,
+          33
+        ]
+      },
+      {
+        "ch": 9,
+        "role": "drums",
+        "sound": [
+          120,
+          0,
+          5
+        ]
+      },
+      {
+        "ch": 10,
+        "role": "percussion",
+        "sound": [
+          120,
+          0,
+          27
+        ]
+      },
+      {
+        "ch": 11,
+        "role": "accompaniment",
+        "sound": [
+          121,
+          15,
+          25
+        ]
+      },
+      {
+        "ch": 12,
+        "role": "accompaniment",
+        "sound": [
+          121,
+          3,
+          0
+        ]
+      },
+      {
+        "ch": 13,
+        "role": "accompaniment",
+        "sound": [
+          120,
+          0,
+          64
+        ]
+      },
+      {
+        "ch": 14,
+        "role": "accompaniment",
+        "sound": [
+          120,
+          0,
+          89
+        ]
+      },
+      {
+        "ch": 15,
+        "role": "accompaniment",
+        "sound": null
+      }
+    ]
+  }
+}

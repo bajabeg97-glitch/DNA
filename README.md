@@ -2,6 +2,12 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Korg STY Mapper 4.53:** map + export of Pa800-importable style SMF0 —
+> reads Korg markers (`i1cv1`…), maps where each part goes (ch8 bass, 9 drums,
+> 10 perc, 11–15 acc; section/CV layout), completes missing per-element
+> setup (CC0/32/PC, CC11) only from existing sound evidence — never guessed.
+> Evidence: `artifacts-max-4.53/` + `reports-max-4.53/`; research notes
+> `docs/korg-sty-research-4.53.md`; guide `docs/studio-sty-mapper-4.53.md`.
 > **Mix Engineer 4.52:** gain staging dodan u postojeći projekat —
 > CC11 expression automatics scaled x0.55 (-45%) on detected pad layers and the
 > percussion channel (notes, velocities and CC7 untouched; gates prove it).

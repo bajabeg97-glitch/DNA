@@ -1,0 +1,985 @@
+{
+  "schema": "dna-sty-mapper-run",
+  "version": "4.53",
+  "sourceName": "arranged-4.51-fixture.mid",
+  "sourceSha256": "ba040970a648fcd06fcbf9c87f18919a87757faf4433638210dbc29b847b2b10",
+  "styleMap": {
+    "schema": "dna-sty-map",
+    "ppq": 480,
+    "ticksPerBar": 1920,
+    "markerCount": 10,
+    "unrecognizedMarkers": [],
+    "elements": [
+      {
+        "text": "i1cv1",
+        "kind": "intro",
+        "number": 1,
+        "cv": 1,
+        "startTick": 0,
+        "endTick": 3840,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 8,
+            "register": [
+              31,
+              43
+            ],
+            "avgVel": 105.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 30,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 92.1
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 9,
+            "register": [
+              48,
+              71
+            ],
+            "avgVel": 53.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 16,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 79.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 12,
+            "register": [
+              55,
+              67
+            ],
+            "avgVel": 99.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 33,
+            "register": [
+              48,
+              72
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "i2cv1",
+        "kind": "intro",
+        "number": 2,
+        "cv": 1,
+        "startTick": 3840,
+        "endTick": 7680,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 8,
+            "register": [
+              31,
+              38
+            ],
+            "avgVel": 114.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 114.5
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 7,
+            "register": [
+              55,
+              74
+            ],
+            "avgVel": 54.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 16,
+            "register": [
+              55,
+              67
+            ],
+            "avgVel": 83.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 12,
+            "register": [
+              55,
+              67
+            ],
+            "avgVel": 127.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 33,
+            "register": [
+              48,
+              72
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "v1cv1",
+        "kind": "variation",
+        "number": 1,
+        "cv": 1,
+        "startTick": 7680,
+        "endTick": 11520,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 8,
+            "register": [
+              28,
+              45
+            ],
+            "avgVel": 111.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              46
+            ],
+            "avgVel": 106.9
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 19,
+            "register": [
+              48,
+              67
+            ],
+            "avgVel": 53.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 16,
+            "register": [
+              55,
+              67
+            ],
+            "avgVel": 81.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 118.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 34,
+            "register": [
+              52,
+              72
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "v2cv1",
+        "kind": "variation",
+        "number": 2,
+        "cv": 1,
+        "startTick": 11520,
+        "endTick": 15360,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 8,
+            "register": [
+              29,
+              43
+            ],
+            "avgVel": 116.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 115.5
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 19,
+            "register": [
+              48,
+              73
+            ],
+            "avgVel": 68.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 16,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 90.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 127.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 31,
+            "register": [
+              55,
+              72
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "v3cv1",
+        "kind": "variation",
+        "number": 3,
+        "cv": 1,
+        "startTick": 15360,
+        "endTick": 19200,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 8,
+            "register": [
+              29,
+              48
+            ],
+            "avgVel": 119.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 117.2
+          },
+          {
+            "channel": 10,
+            "role": "percussion",
+            "noteCount": 50,
+            "register": [
+              35,
+              70
+            ],
+            "avgVel": 105.1
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 34,
+            "register": [
+              48,
+              71
+            ],
+            "avgVel": 92.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 66,
+            "register": [
+              55,
+              84
+            ],
+            "avgVel": 104.0
+          },
+          {
+            "channel": 13,
+            "role": "accompaniment",
+            "noteCount": 29,
+            "register": [
+              55,
+              69
+            ],
+            "avgVel": 102.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              87
+            ],
+            "avgVel": 127.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 72,
+            "register": [
+              48,
+              62
+            ],
+            "avgVel": 86.3
+          }
+        ]
+      },
+      {
+        "text": "v4cv1",
+        "kind": "variation",
+        "number": 4,
+        "cv": 1,
+        "startTick": 19200,
+        "endTick": 23040,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 40,
+            "register": [
+              29,
+              48
+            ],
+            "avgVel": 122.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 119.8
+          },
+          {
+            "channel": 10,
+            "role": "percussion",
+            "noteCount": 76,
+            "register": [
+              35,
+              64
+            ],
+            "avgVel": 111.4
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 34,
+            "register": [
+              48,
+              71
+            ],
+            "avgVel": 96.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 66,
+            "register": [
+              55,
+              84
+            ],
+            "avgVel": 110.0
+          },
+          {
+            "channel": 13,
+            "role": "accompaniment",
+            "noteCount": 36,
+            "register": [
+              50,
+              69
+            ],
+            "avgVel": 110.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              87
+            ],
+            "avgVel": 127.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 72,
+            "register": [
+              48,
+              62
+            ],
+            "avgVel": 86.3
+          }
+        ]
+      },
+      {
+        "text": "f1cv1",
+        "kind": "fill",
+        "number": 1,
+        "cv": 1,
+        "startTick": 23040,
+        "endTick": 24960,
+        "lengthBars": 1,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 5,
+            "register": [
+              29,
+              38
+            ],
+            "avgVel": 117.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 15,
+            "register": [
+              36,
+              46
+            ],
+            "avgVel": 116.1
+          },
+          {
+            "channel": 10,
+            "role": "percussion",
+            "noteCount": 39,
+            "register": [
+              35,
+              64
+            ],
+            "avgVel": 105.2
+          },
+          {
+            "channel": 13,
+            "role": "accompaniment",
+            "noteCount": 18,
+            "register": [
+              55,
+              77
+            ],
+            "avgVel": 94.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 13,
+            "register": [
+              56,
+              66
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "f2cv1",
+        "kind": "fill",
+        "number": 2,
+        "cv": 1,
+        "startTick": 24960,
+        "endTick": 26880,
+        "lengthBars": 1,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 5,
+            "register": [
+              29,
+              48
+            ],
+            "avgVel": 124.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 40,
+            "register": [
+              36,
+              46
+            ],
+            "avgVel": 121.8
+          },
+          {
+            "channel": 10,
+            "role": "percussion",
+            "noteCount": 38,
+            "register": [
+              35,
+              64
+            ],
+            "avgVel": 112.2
+          },
+          {
+            "channel": 13,
+            "role": "accompaniment",
+            "noteCount": 13,
+            "register": [
+              60,
+              77
+            ],
+            "avgVel": 113.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 19,
+            "register": [
+              48,
+              70
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "e1cv1",
+        "kind": "ending",
+        "number": 1,
+        "cv": 1,
+        "startTick": 26880,
+        "endTick": 30720,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 16,
+            "register": [
+              28,
+              45
+            ],
+            "avgVel": 116.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 31,
+            "register": [
+              36,
+              46
+            ],
+            "avgVel": 115.3
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 39,
+            "register": [
+              48,
+              73
+            ],
+            "avgVel": 69.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              50,
+              72
+            ],
+            "avgVel": 90.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 127.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 33,
+            "register": [
+              51,
+              68
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      },
+      {
+        "text": "e2cv1",
+        "kind": "ending",
+        "number": 2,
+        "cv": 1,
+        "startTick": 30720,
+        "endTick": 34555,
+        "lengthBars": 2,
+        "channels": [
+          {
+            "channel": 8,
+            "role": "bass",
+            "noteCount": 16,
+            "register": [
+              28,
+              45
+            ],
+            "avgVel": 113.0
+          },
+          {
+            "channel": 9,
+            "role": "drums",
+            "noteCount": 32,
+            "register": [
+              36,
+              44
+            ],
+            "avgVel": 111.3
+          },
+          {
+            "channel": 11,
+            "role": "accompaniment",
+            "noteCount": 34,
+            "register": [
+              48,
+              82
+            ],
+            "avgVel": 53.0
+          },
+          {
+            "channel": 12,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 82.0
+          },
+          {
+            "channel": 14,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              65
+            ],
+            "avgVel": 123.0
+          },
+          {
+            "channel": 15,
+            "role": "accompaniment",
+            "noteCount": 32,
+            "register": [
+              55,
+              72
+            ],
+            "avgVel": 82.0
+          }
+        ]
+      }
+    ],
+    "totalBars": 18
+  },
+  "roleMap": [
+    {
+      "channel": 8,
+      "sound": [
+        121,
+        6,
+        33
+      ],
+      "role": "bass",
+      "suggestedKorgChannel": 8,
+      "evidence": "Korg convention: channel 8 = bass",
+      "noteCount": 122,
+      "register": [
+        28,
+        48
+      ]
+    },
+    {
+      "channel": 9,
+      "sound": [
+        120,
+        0,
+        5
+      ],
+      "role": "drums",
+      "suggestedKorgChannel": 9,
+      "evidence": "Korg convention: channel 9 = drums",
+      "noteCount": 308,
+      "register": [
+        36,
+        46
+      ]
+    },
+    {
+      "channel": 10,
+      "sound": [
+        120,
+        0,
+        27
+      ],
+      "role": "percussion",
+      "suggestedKorgChannel": 10,
+      "evidence": "Korg convention: channel 10 = percussion",
+      "noteCount": 203,
+      "register": [
+        35,
+        70
+      ]
+    },
+    {
+      "channel": 11,
+      "sound": [
+        121,
+        15,
+        25
+      ],
+      "role": "accompaniment",
+      "suggestedKorgChannel": 11,
+      "evidence": "Korg convention: channel 11 = accompaniment",
+      "noteCount": 195,
+      "register": [
+        48,
+        82
+      ]
+    },
+    {
+      "channel": 12,
+      "sound": [
+        121,
+        3,
+        0
+      ],
+      "role": "accompaniment",
+      "suggestedKorgChannel": 12,
+      "evidence": "Korg convention: channel 12 = accompaniment",
+      "noteCount": 260,
+      "register": [
+        50,
+        84
+      ]
+    },
+    {
+      "channel": 13,
+      "sound": [
+        120,
+        0,
+        64
+      ],
+      "role": "accompaniment",
+      "suggestedKorgChannel": 13,
+      "evidence": "Korg convention: channel 13 = accompaniment",
+      "noteCount": 96,
+      "register": [
+        50,
+        77
+      ]
+    },
+    {
+      "channel": 14,
+      "sound": [
+        120,
+        0,
+        89
+      ],
+      "role": "accompaniment",
+      "suggestedKorgChannel": 14,
+      "evidence": "Korg convention: channel 14 = accompaniment",
+      "noteCount": 216,
+      "register": [
+        55,
+        87
+      ]
+    },
+    {
+      "channel": 15,
+      "sound": null,
+      "role": "accompaniment",
+      "suggestedKorgChannel": 15,
+      "evidence": "Korg convention: channel 15 = accompaniment",
+      "noteCount": 372,
+      "register": [
+        48,
+        72
+      ]
+    }
+  ],
+  "exportReport": {
+    "markersExisting": 10,
+    "markersAdded": [],
+    "setupsAdded": [],
+    "cc11Added": [
+      {
+        "tick": 0,
+        "channel": 15
+      },
+      {
+        "tick": 3840,
+        "channel": 15
+      },
+      {
+        "tick": 7680,
+        "channel": 15
+      },
+      {
+        "tick": 11520,
+        "channel": 15
+      },
+      {
+        "tick": 15360,
+        "channel": 15
+      },
+      {
+        "tick": 19200,
+        "channel": 15
+      },
+      {
+        "tick": 23040,
+        "channel": 15
+      },
+      {
+        "tick": 24960,
+        "channel": 15
+      },
+      {
+        "tick": 26880,
+        "channel": 15
+      },
+      {
+        "tick": 30720,
+        "channel": 15
+      }
+    ],
+    "skippedNoSoundEvidence": [],
+    "channelsWithoutSetup": [
+      {
+        "tick": 0,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 3840,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 7680,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 11520,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 15360,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 19200,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 23040,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 24960,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 26880,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      },
+      {
+        "tick": 30720,
+        "channel": 15,
+        "reason": "no bank/program evidence inside element; nothing guessed"
+      }
+    ],
+    "elementCount": 10,
+    "addedTotal": 10
+  },
+  "gates": {
+    "smf0": true,
+    "singleTrack": true,
+    "markersRecognized": true,
+    "markersStrictlyIncreasing": true,
+    "markersOnBarGrid": true,
+    "markersMatchLayout": true,
+    "noteGeometryUnchanged": true,
+    "reparsed": true
+  },
+  "status": "STY_EXPORT_OK"
+}
