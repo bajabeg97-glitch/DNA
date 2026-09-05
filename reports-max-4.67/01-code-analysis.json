@@ -4,12 +4,12 @@
  "date": "2026-09-05",
  "totals": {
   "pythonFiles": 291,
-  "engineModulesTop": 95,
+  "engineModulesTop": 96,
   "engineSubmodules": 110,
   "testFilesRoot": 89,
   "rootScripts": 1,
   "pythonLocTotal": 77152,
-  "engineLocTotal": 33839,
+  "engineLocTotal": 34252,
   "engineLocByModule": {
    "dna_midi_studio/__init__.py": 974,
    "dna_midi_studio/agent_runtime.py": 278,
@@ -123,7 +123,7 @@
   ]
  },
  "orphans": {
-  "notInChain": 83,
+  "notInChain": 84,
   "modules": [
    "__init__",
    "agent_runtime",
@@ -136,6 +136,7 @@
    "assistant_brain",
    "candidate_search",
    "composer_corpus",
+   "composer_engine",
    "composer_tokens",
    "composer_validator",
    "core_invariants",
@@ -351,5 +352,6 @@
   ]
  ],
  "note468": "azurirano na 4.68: dodati assistant_brain.py (+session store je u bridge-u); lanac nepromenjen",
- "note469": "4.69 (S1 korpus): dodati composer_corpus.py, composer_tokens.py, composer_validator.py (korpus/token/Pa800-gate sloj; lanac i dalje 12 modula)"
+ "note469": "4.69 (S1 korpus): dodati composer_corpus.py, composer_tokens.py, composer_validator.py (korpus/token/Pa800-gate sloj; lanac i dalje 12 modula)",
+ "note470": "4.70 (S2 kompozitor): dodati composer_engine.py; humanizacija/export u composer_corpus.py; lanac i dalje 12 modula"
 }

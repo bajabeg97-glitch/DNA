@@ -1,0 +1,259 @@
+{
+ "schema": "dna-composer-scorecard",
+ "version": "4.70",
+ "songId": "song-rock-s2",
+ "template": "rock",
+ "seed": 2,
+ "bpm": 118,
+ "signature": [
+  4,
+  4
+ ],
+ "structure": [
+  {
+   "section": "Intro",
+   "bars": 2
+  },
+  {
+   "section": "Verse",
+   "bars": 8
+  },
+  {
+   "section": "Chorus",
+   "bars": 12
+  },
+  {
+   "section": "Bridge",
+   "bars": 2
+  },
+  {
+   "section": "Outro",
+   "bars": 2
+  }
+ ],
+ "chordsPerBar": [
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G",
+  "Am",
+  "F",
+  "C",
+  "G"
+ ],
+ "drums": {
+  "evidence": "vendor-max-4.64/dmp-midi (MIT) fabrički patterni",
+  "choices": [
+   {
+    "bar": 0,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 1,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 2,
+    "title": "Funk13MeasureA",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 3,
+    "title": "Ballad5Break",
+    "source": "Patterns_200",
+    "role": "fill"
+   },
+   {
+    "bar": 4,
+    "title": "Bossa3",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 5,
+    "title": "Afro-Cuban5MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 6,
+    "title": "Disco3MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 7,
+    "title": "SlowBreak6",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 8,
+    "title": "Pop3MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 9,
+    "title": "Pop9",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 10,
+    "title": "FunkBreak14",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 11,
+    "title": "Rnb2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 12,
+    "title": "Funk11",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 13,
+    "title": "SkaBreak2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 14,
+    "title": "Reggae4",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 15,
+    "title": "Funk2Break",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 16,
+    "title": "Funk1MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 17,
+    "title": "Funk7",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 18,
+    "title": "ReggaeBreak6",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 19,
+    "title": "Funk15",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 20,
+    "title": "Pop4",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 21,
+    "title": "Rnb12",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 22,
+    "title": "Pop4MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 23,
+    "title": "Afro-Cuban2MeasureB",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 24,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 25,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   }
+  ]
+ },
+ "humanization": {
+  "sigmaMs": 27.96,
+  "evidence": "ljudska referenca 4.54: std ~27.96 ms iz 110.313 uzoraka (Magenta Groove preko wobblemidi profila; groove_engine)"
+ },
+ "roles": [
+  {
+   "role": "bass",
+   "channel": 2,
+   "notes": 78
+  },
+  {
+   "role": "acc",
+   "channel": 4,
+   "notes": 78
+  },
+  {
+   "role": "drums",
+   "channel": 9,
+   "notes": 424
+  }
+ ],
+ "ccSections": {
+  "Intro": 7,
+  "Verse": 7,
+  "Chorus": 7,
+  "Bridge": 7,
+  "Outro": 7
+ },
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "digest": "d3bb531e9caa8596",
+ "files": {
+  "mid": "song-rock-s2.mid"
+ }
+}

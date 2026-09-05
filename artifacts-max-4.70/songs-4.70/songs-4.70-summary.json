@@ -1,0 +1,27 @@
+{
+ "schema": "dna-composer-songs-summary",
+ "version": "4.70",
+ "songs": 30,
+ "valid": 30,
+ "humanization": "on (sigma 27.96 ms)",
+ "styles": [
+  "ballad",
+  "ballad12",
+  "dance90",
+  "disco",
+  "folk",
+  "funk",
+  "latin12",
+  "pop",
+  "rock",
+  "waltz"
+ ],
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "totalBars": 606,
+ "patternChoices": 112,
+ "failures": []
+}

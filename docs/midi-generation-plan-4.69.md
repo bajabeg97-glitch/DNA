@@ -48,7 +48,7 @@ Pa800-valjanosti i stila iz fabričke evidencije koju Suno nema. Kvalitet mere r
   UI bridge (node, bez npm zavisnosti).
 - **Kontrolni sloj:** BrainV1 deterministički (NLU/NLG, grounding, sesije); BrainLLM adapter projektovan
   (Ollama/OpenAI-compatible, IZA istog interfejsa) — **ne koristi se dok ne dozvoliš ključeve**.
-- **Ograničenja sandboxa:** 2 vCPU, ~4 GB RAM → veličine modela i korpusa se planiraju za CPU.
+- **Ograničenja sandboxa:** 2 vCPU, ~4 GB RAM; **ciljni korisnikov hardver: Intel i5-4460 (4C/4T) / 16 GB RAM** → veličine modela/korpusa za CPU, trening se kasnije može pogoniti lokalno (S7 launcher-i).
 
 ## 3. Arhitektura cilja
 

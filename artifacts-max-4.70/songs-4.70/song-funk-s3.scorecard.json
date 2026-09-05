@@ -1,0 +1,212 @@
+{
+ "schema": "dna-composer-scorecard",
+ "version": "4.70",
+ "songId": "song-funk-s3",
+ "template": "funk",
+ "seed": 3,
+ "bpm": 105,
+ "signature": [
+  4,
+  4
+ ],
+ "structure": [
+  {
+   "section": "Intro",
+   "bars": 2
+  },
+  {
+   "section": "Verse",
+   "bars": 8
+  },
+  {
+   "section": "Chorus",
+   "bars": 8
+  },
+  {
+   "section": "Outro",
+   "bars": 2
+  }
+ ],
+ "chordsPerBar": [
+  "C",
+  "F",
+  "G",
+  "C",
+  "C",
+  "F",
+  "G",
+  "C",
+  "C",
+  "F",
+  "G",
+  "C",
+  "C",
+  "F",
+  "G",
+  "C",
+  "C",
+  "F",
+  "G",
+  "C"
+ ],
+ "drums": {
+  "evidence": "vendor-max-4.64/dmp-midi (MIT) fabrički patterni",
+  "choices": [
+   {
+    "bar": 0,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 1,
+    "title": "EndingsMeasureB",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 2,
+    "title": "SkaBreak2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 3,
+    "title": "Rock7",
+    "source": "Patterns_260",
+    "role": "fill"
+   },
+   {
+    "bar": 4,
+    "title": "Rock4",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 5,
+    "title": "SlowBreak6",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 6,
+    "title": "Funk9MeasureA",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 7,
+    "title": "Rock2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 8,
+    "title": "Samba3MeasureA",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 9,
+    "title": "Slow3",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 10,
+    "title": "Afro-Cuban2MeasureA",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 11,
+    "title": "Slow6",
+    "source": "Patterns_260",
+    "role": "fill"
+   },
+   {
+    "bar": 12,
+    "title": "Rock2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 13,
+    "title": "Ska2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 14,
+    "title": "Slow2",
+    "source": "Patterns_260",
+    "role": "main"
+   },
+   {
+    "bar": 15,
+    "title": "RockBreak10",
+    "source": "Patterns_260",
+    "role": "fill"
+   },
+   {
+    "bar": 16,
+    "title": "Pop1Break",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 17,
+    "title": "Afro-Cuban1Break",
+    "source": "Patterns_200",
+    "role": "main"
+   },
+   {
+    "bar": 18,
+    "title": "EndingsMeasureB",
+    "source": "Patterns_200",
+    "role": "light"
+   },
+   {
+    "bar": 19,
+    "title": "Funk3MeasureA",
+    "source": "Patterns_200",
+    "role": "light"
+   }
+  ]
+ },
+ "humanization": {
+  "sigmaMs": 27.96,
+  "evidence": "ljudska referenca 4.54: std ~27.96 ms iz 110.313 uzoraka (Magenta Groove preko wobblemidi profila; groove_engine)"
+ },
+ "roles": [
+  {
+   "role": "bass",
+   "channel": 2,
+   "notes": 80
+  },
+  {
+   "role": "acc",
+   "channel": 4,
+   "notes": 160
+  },
+  {
+   "role": "drums",
+   "channel": 9,
+   "notes": 291
+  }
+ ],
+ "ccSections": {
+  "Intro": 7,
+  "Verse": 7,
+  "Chorus": 7,
+  "Outro": 7
+ },
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "digest": "286586d928b356e2",
+ "files": {
+  "mid": "song-funk-s3.mid"
+ }
+}

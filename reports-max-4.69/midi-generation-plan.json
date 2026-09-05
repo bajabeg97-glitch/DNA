@@ -26,7 +26,12 @@
     "cpus": 2,
     "ramGb": 4,
     "python": "3.11+numpy",
-    "node": 22
+    "node": 22,
+    "targetUserMachine": {
+      "cpu": "Intel i5-4460 3.20 GHz (4C/4T, AVX2)",
+      "ramGb": 16,
+      "note": "sandbox je 2 vCPU/4GB; lokalni trening (S3/S6) se moze pogoniti na korisnikovoj masini kroz Windows launcere (S7)"
+    }
   },
   "constraints": [
     "no-api-keys",

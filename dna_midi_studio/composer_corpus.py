@@ -287,7 +287,9 @@ def _tempo_and_sig(f: "object") -> tuple[int, list[int]]:
 
 
 def real_items(limit: int = 24,
-               exclude_dirs: tuple[str, ...] = ("probes-4.69", "corpus-4.69")) -> list[dict]:
+               exclude_dirs: tuple[str, ...] = ()) -> list[dict]:
+    # generisani direktorijumi (probe/korpus/pesme) se nikad ne ukljucuju
+    exclude_dirs = exclude_dirs + ("probes-", "corpus-", "songs-")
     import dna_midi_studio.midi as m
     dirs = sorted(ROOT.glob("artifacts-max-4.4*")) + sorted(ROOT.glob("artifacts-max-4.5*")) + \
         sorted(ROOT.glob("artifacts-max-4.6*"))
@@ -298,7 +300,8 @@ def real_items(limit: int = 24,
         for p in sorted(d.rglob("*.mid")):
             if "REPLACE" in p.name or p.name.startswith("."):
                 continue
-            if any(part in exclude_dirs for part in p.parts):
+            if any(part.startswith(ex) if not part.isdigit() else False
+                   for part in p.parts for ex in exclude_dirs):
                 continue
             digest = hashlib.sha256(p.read_bytes()).hexdigest()
             files.setdefault(digest, p)
@@ -395,8 +398,31 @@ def real_items(limit: int = 24,
 _VEL_TABLE = {v: max(0, min(127, int(round(127 * v / 7)))) for v in range(8)}
 
 
-def export_smf(item: dict, path: Path) -> Path:
-    """Write a canonical score item as SMF0 (ppq 480) — byte-level proof."""
+def _jitter_ticks(rng, sigma_ticks: float, step_ticks: int, cap: float = 0.35,
+                 max_early: float | None = None) -> int:
+    """Ljudski tajming (4.54 dokaz: std ~27.96 ms) — ogranicen da ne predje
+    polovinu koraka (kvantizacija ostaje stabilna). max_early (u tick-ovima)
+    zabranjuje da nota krene pre sopstvenog takta (st0 ostaje >= bar start)."""
+    j = rng.gauss(0.0, sigma_ticks)
+    bound = cap * step_ticks
+    if j > bound:
+        j = bound
+    elif j < -bound:
+        j = -bound
+    if max_early is not None and j < -max_early:
+        j = -max_early
+    return int(round(j))
+
+
+def export_smf(item: dict, path: Path, *, humanize: bool = False, seed: int = 0,
+               sigma_ms: float = 27.96, cap: float = 0.35) -> Path:
+    """Write a canonical score item as SMF0 (ppq 480) — byte-level proof.
+
+    humanize=True: deterministički mikrotajming džiter (ljudska referenca
+    4.54, std ~27.96 ms iz 110.313 uzoraka Magenta Groove preko wobblemidi
+    profila); cap ograničava džiter da ne promeni kvantizovani korak.
+    """
+    import random as _random
     import dna_midi_studio.midi as m
     it = canonical_item(item)
     num, den = it["signature"]
@@ -406,21 +432,21 @@ def export_smf(item: dict, path: Path) -> Path:
     ppq = 480
     bpm = max(40, min(220, int(it.get("bpm", 120))))
     tempo_us = int(60_000_000 / bpm)
+    sigma_ticks = sigma_ms * ppq * bpm / 60_000.0
+    rng = _random.Random(seed) if humanize else None
     events: list[m.MidiEvent] = []
     order = 0
     events.append(m.meta_event(0, order, 0x51, tempo_us.to_bytes(3, "big"))); order += 1
-    if num == 12:
-        den_pow = 3
-    elif num == 3:
-        den_pow = 2
-    else:
-        den_pow = 2
+    den_pow = 3 if num == 12 else 2
     events.append(m.meta_event(0, order, 0x58,
                                bytes([num, den_pow, 24, 8]))); order += 1
     for tr in it["tracks"]:
         ch = int(tr["channel"])
         for e in sorted(tr["events"], key=lambda e: (e["b"], e["st"], e["n"])):
             t_on = e["b"] * bar_ticks + e["st"] * t_step
+            if rng is not None:
+                t_on += _jitter_ticks(rng, sigma_ticks, t_step, cap,
+                                      max_early=e["st"] * t_step)
             t_off = t_on + max(1, e["d"]) * t_step
             vel = _VEL_TABLE.get(int(e["v"]), 100)
             events.append(m.channel_event(t_on, order, 0x90 | ch,

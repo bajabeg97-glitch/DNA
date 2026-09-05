@@ -4,9 +4,24 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { startBridge } from '../dna_bridge.mjs';
+
+// bridge reads DNA_OUT_DIR at import time → env + dynamic import u before()
+let startBridge;
+let outDir;
+test.before(async () => {
+  const prev = process.env.DNA_OUT_DIR;
+  outDir = fs.mkdtempSync(path.join(os.tmpdir(), 'dna-bridge-sess-'));
+  process.env.DNA_OUT_DIR = outDir;
+  const mod = await import('../dna_bridge.mjs');
+  startBridge = mod.startBridge;
+  if (prev !== undefined) process.env.DNA_OUT_DIR = prev;
+});
+test.after(() => {
+  try { fs.rmSync(outDir, { recursive: true, force: true }); } catch {}
+});
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const STYLE_ROLES = '8:bass,9:drums,10:percussion,11:accompaniment,12:accompaniment,13:accompaniment,14:accompaniment,15:accompaniment';
