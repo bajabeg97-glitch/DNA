@@ -1,0 +1,32 @@
+{
+  "schema": "dna-repo-gap-scan-evidence",
+  "date": "2026-09-05",
+  "executed": [
+    {"command": "python3.11 - <<EOF import-scan of all root test_*.py EOF",
+     "result": "75 test modules import OK; 7 fail at import",
+     "failures": [
+      {"test": "test_echo_terca_engine_v413", "error": "ModuleNotFoundError: No module named 'special_track_engine'",
+       "note": "v413 test definiše optimize_existing_echo_terca(groups,...): echo se poravnava na glavni tajming i tiši je od main sloja; terca koristi dijatonsku tercu + main tajming. Modul NE POSTOJI nigde (ni lib/ ogledalo, ni git istorija) — specifikacija bez implementacije."},
+      {"test": "test_premium_baseline", "error": "ModuleNotFoundError: No module named 'pa800_validator'",
+       "note": "import-uje ravne module (pa800_validator, premium_config) koji su u današnjem layoutu u paketu dna_midi_studio/ ili ne postoje"},
+      {"test": "test_session12", "error": "ModuleNotFoundError: No module named 'gold_schema'"},
+      {"test": "test_session13", "error": "ModuleNotFoundError: No module named 'release_packager'"},
+      {"test": "test_session17", "error": "ModuleNotFoundError: No module named 'dna_builder'"},
+      {"test": "test_session20", "error": "ModuleNotFoundError: No module named 'premium_config'"},
+      {"test": "test_session37", "error": "FileNotFoundError: /home/user/data/session19-labeled-benchmark.json (apsolutna putanja iz starog layouta)"}
+     ]},
+    {"command": "git log --all -- <module>.py za special_track_engine/gold_schema/release_packager/dna_builder/premium_config",
+     "result": "nijedan od tih modula nikada nije bio u git istoriji; jedino pa800_validator.py postoji (dna_midi_studio/ + lib/dna_midi_studio/)"},
+    {"command": "python3.11 -m unittest test_echo_terca_engine_v413 test_ai_melodic_relationship_v420 test_instrument_behavior_v439 test_premium_baseline",
+     "result": "test_echo_terca_engine_v413: ERROR import; test_premium_baseline: ERROR import; test_ai_melodic_relationship_v420: setUpClass ERROR — engine očekuje <root>/data/factory-velocity-profiles.json, fajl je na <root>/factory-velocity-profiles.json (data/ ne postoji); test_instrument_behavior_v439: OK ali 0 prikupljenih testova"},
+    {"command": "ls lib/dna_midi_studio/", "result": "63 fajla — delimično starije ogledalo paketa (drift rizik: premium_expression.py, release_readiness.py itd. postoje u oba)"},
+    {"command": "full modern suite (4.49-4.55 + mido + legacy registry)", "result": "71 test OK + 5 legacy OK (prethodni miljokazi)"}
+  ],
+  "conclusions": [
+    "Echo/terca 'optimizacija' postoji kao SPEC u v413 testu, ali nikada nije imala modul — to je glavni unutrašnji gap i najbolji kandidat za sledeći leg (4.56).",
+    "Legacy (session 12-37 era) testovi su ostaci drugog (ravnog) layouta; ili ih treba portovati u paket ili ukloniti — konsolidacioni dug.",
+    "ai_learning MelodicRelationshipEngine (third/echo generacija, FACTORY_ONLY autoritet) ima pokvaren data path i nije povezan sa 4.x flow-om.",
+    "lib/dna_midi_studio (63 fajla) je ogledalo koje može da driftuje — kandidat za sinhronizaciju/uklanjanje.",
+    "4.55 evidence engine ne mapira slide-candidate na basu (postoji u rečniku profila i u instrument_behavior legato/slide detekciji) — finese 'slide/legato' su delom već detektovane u starijim modulima, ali ne kroz 4.x verifikaciju."
+  ]
+}

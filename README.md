@@ -2,6 +2,12 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Special-tracks research 4.56:** istražene bass-slide finese (MIDI 1.0
+> mehanizmi: pitch-bend rampa, portamento CC84/65, overlap-legato, keyswitch),
+> svetska potraga za echo/terca optimizacijom (`optimize_existing_echo_terca`:
+> **0 javnih rešenja**) i unutrašnji gapovi (v413 spec bez modula
+> `special_track_engine`; 7 legacy import failova; ai_learning data path).
+> Evidence: `reports-max-4.56/`; vodič `docs/finesse-special-tracks-research.md`.
 > **Instrument Techniques 4.55:** evidence engine za slap/pop/ghost/palm-mute —
 > klasifikuje fabričke note (bas) i udare (ritam gitara) isključivo u postojeći
 > rečnik tehnika `complete-instrument-profiles-4.44.json`, koristeći relativne

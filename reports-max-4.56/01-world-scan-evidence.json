@@ -1,0 +1,39 @@
+{
+  "schema": "dna-world-scan-evidence",
+  "date": "2026-09-05",
+  "method": "GitHub REST API (gh api search/repositories, search/code) and targeted web research from the sandbox; raw.githubusercontent/storage.googleapis were unreachable, gh api + web_search worked",
+  "queries": [
+    {"target": "repositories", "query": "midi third voice", "totalCount": 1, "topHits": [
+      {"fullName": "NachinBombin/Midi-Manipulator", "stars": 0, "language": "HTML", "license": null,
+       "description": "MIDI router capable of generating musical-theory guided second and third voices; adds pitch shift, portamento, mod via UI wheels; live-performance tool, no tests/no structure",
+       "url": "https://github.com/NachinBombin/Midi-Manipulator"}]},
+    {"target": "repositories", "query": "korg style arranger", "totalCount": 1, "topHits": [
+      {"fullName": "mlgorithm/oriental-korg", "stars": 0,
+       "description": "Korg Pa5X Oriental web arranger tribute — Web Audio chord-follow engine; no style-track optimization",
+       "url": "https://github.com/mlgorithm/oriental-korg"}]},
+    {"target": "repositories", "query": "korg dnc", "totalCount": 0, "topHits": []},
+    {"target": "repositories", "query": "melody harmonization thirds midi", "totalCount": 0, "topHits": []},
+    {"target": "repositories", "query": "\"pitch_bend\" slide bass midi", "totalCount": 0, "topHits": []},
+    {"target": "repositories", "query": "\"pitch-bend\" portamento generator", "totalCount": 0, "topHits": []},
+    {"target": "code", "query": "optimize_existing_echo_terca", "totalCount": 0, "topHits": [],
+     "meaning": "niko javno nema echo/terca optimizaciju — ni kao funkciju ni kao koncept"},
+    {"target": "code", "query": "special_track_engine", "totalCount": 0, "topHits": []},
+    {"target": "code", "query": "dnc-slide-trigger", "totalCount": 0, "topHits": [],
+     "meaning": "naš rečnik DNC trigera je jedinstven (0 javnih pogodaka)"},
+    {"target": "code", "query": "\"echo_track\"", "totalCount": 503, "topHits": [],
+     "meaning": "generički token — nijedan rezultat nije echo-track optimizacija aranžera"}
+  ],
+  "webSources": [
+    {"title": "PG Music forum — realistic MIDI guitar slide", "url": "https://www.pgmusic.com/forums/ubbthreads.php?ubb=showflat&Number=240616",
+     "takeaway": "slide/hammer/pull u MIDI 1.0: pitch bend ramp (uz CC kontrolu bend range-a), legato mod sinteze, keyswitch artikulacije po patch-u; GM set ne može da odsvira artikulacije"},
+    {"title": "MuseScore — Suggestions for Glissando/Slur/Hammer-On/Pull-Off", "url": "https://musescore.org/sites/musescore.org/files/2020-09/Suggestions%20for%20Improving%20Guitar%20Articulations.pdf",
+     "takeaway": "pitch bend za glissando: pivot pitch za duge glisande, linearni portamento (CC) nije pogodan za fretted instrumente; preporuka spajanja nota + serije bend poruka"},
+    {"title": "Korg Stage Echo SE-300/500 (soundgas)", "url": "https://soundgas.com/blogs/blog/down-to-earth-korg-stage-echo-se-300-se-500",
+     "takeaway": "termin 'Korg echo' javno najčešće znači hardware delay efekat, NE echo track aranžera — echo/terca kao track uloge nisu potvrđene kao javno standardizovane u ovim izvorima; u našem repou su unutrašnje aranžerske uloge (terca/echo)"}
+  ],
+  "conclusions": [
+    "Niko javno nije napravio rešenje za echo-track/terca optimizaciju aranžerskih stilova (0 pogodaka na jedinstvene pojmove).",
+    "Jedini javni 'third voice' projekat je HTML demo bez licence i testova — nije oslonac.",
+    "Slide/bass finese u MIDI 1.0 su rešive isključivo kroz: pitch bend rampu, portamento CC84/CC65 + overlap nota (legato patch), ili keyswitch po tačnom zvuku; DNC trigeri (Korg) nemaju javnu dokumentaciju/implementaciju."
+  ]
+}
