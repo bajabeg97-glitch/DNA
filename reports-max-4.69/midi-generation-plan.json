@@ -43,11 +43,11 @@
       "id": "S1",
       "milestone": "4.69",
       "title": "Korpus + tokenski jezik + Pa800 validator",
-      "goal": "score language, tokenizer v1 (vocab<=1024), roundtrip test, pa800_validator, korpus sa manifestom (originKind+sha256+licenca)",
+      "goal": "score language, tokenizer v1 (vocab<=1024), roundtrip test, composer_validator (Pa800 gate za score jezik; legacy pa800_validator.py ostaje za SMF0/markere), korpus sa manifestom (originKind+sha256+licenca)",
       "acceptance": [
         "roundtrip tokeni->dogadjaji identican",
         "midi->tokeni->midi ~= fajl",
-        "100% korpusa prolazi pa800_validator",
+        "100% korpusa prolazi composer_validator (Pa800 gate)",
         ">=300 kompletnih aranzmana / >=2000 song-momenata",
         "corpus-stats-4.69.json + testovi + commit"
       ],

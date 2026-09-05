@@ -1,0 +1,40 @@
+{
+ "items": 779,
+ "bars": 6562,
+ "notes": 145421,
+ "tokens": 843545,
+ "arrangements": 300,
+ "moments": 7041,
+ "perOrigin": {
+  "vendor": {
+   "items": 468,
+   "bars": 468,
+   "notes": 7030,
+   "tokens": 38426,
+   "arrangements": 0
+  },
+  "synthetic": {
+   "items": 300,
+   "bars": 5880,
+   "notes": 118604,
+   "tokens": 703000,
+   "arrangements": 300
+  },
+  "engine": {
+   "items": 11,
+   "bars": 214,
+   "notes": 19787,
+   "tokens": 102119,
+   "arrangements": 0
+  }
+ },
+ "vocab": {
+  "size": 380,
+  "cap": 1024
+ },
+ "validator": {
+  "ok": true,
+  "total": 779,
+  "failed": []
+ }
+}

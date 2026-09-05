@@ -94,8 +94,8 @@ i tretirati kao svaki drugi materijal (READY akcije, optimizacija, izvoz STY).
 Legenda: `[commit]` = dokazi obavezni (testovi + JSON artefakti + docs, pravilo „.md nije dokaz”); `▶ kapija` = tačka odluke.
 
 ### S1 — Korpus + tokenski jezik + Pa800 validator (4.69)
-- `composer_corpus.py` (stdlib): kanonski „score language” (JSONL događaji: sekcija/uloga/korak/tick/velocity/CC11/izvor) + `tokenizer_v1` (vocab ≤ 1024) sa **roundtrip testom** (tokeni→događaji==ulaz; MIDI→tokeni→MIDI≈fajl).
-- `pa800_validator.py`: provera strukture/kanala/GM/CC11/zabranjenih trigera; **100% korpusa mora proći**.
+- `composer_corpus.py` (stdlib): kanonski „score language” (JSONL događaji: sekcija/uloga/korak/tick/velocity/CC11/izvor) + `composer_tokens.py` `tokenizer_v1` (vocab ≤ 1024) sa **roundtrip testom** (tokeni→događaji==ulaz; MIDI→tokeni→MIDI≈fajl).
+- `composer_validator.py`: provera strukture/kanala/GM/CC11/zabranjenih trigera; **100% korpusa mora proći** (legacy `pa800_validator.py` iz 4.47 ostaje netaknut za SMF0/marker validaciju).
 - Korpus (manifest sa sha256 + licencom + `originKind`): (a) izlazi engine-a i reference korisnika u `artifacts-*`, (b) dmp-midi 460 patterna, (c) sintetički curriculum generisan kompozitorom-v0, (d) opciono permissive korpusi sa neta (Magenta Groove CC-BY i sl., provera licence pri preuzimanju, ≤ 200 MB), (e) korisnikovi Pa800 stilovi (opt-in folder, gitignorisan).
 - Cilj: ≥ 300 kompletnih aranžmana / ≥ 2.000 „song-momenata”, sve validirano; `corpus-stats-4.69.json`.
 - ▶ **D1**: korpus + validator + roundtrip zeleni; korisnik čuje 3 sintetičke probe (S1 kraj) i potvrđuje smer.
