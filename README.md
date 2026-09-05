@@ -2,6 +2,17 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **AI Model analiza 4.67 (razvoj zatvoren):** merena analiza koda + dizajn
+> rešenja preostalih problema. Lanac = **12 modula** od 91 (79 legacy van
+> lanca, 14 potpuno neadresiranih, 0 TODO, jedina zavisnost = numpy).
+> Plan AI modela: Assistant Core + Session store + **Grounding API** nad
+> determinističkim engine-om; model tvrdi samo činjenice iz izveštaja (json-
+> path izvor), ne menja statuse, priznaje neznanje; **BrainV1** (stdlib NLU/
+> NLG) + **BrainLLM** adapter (Ollama/OpenAI) iza istog interfejsa, eval od
+> ~20 golden Q&A. Redosled: P0 AI Brain v1 + memorija, P1 nearest-row+CI,
+> P2 WebAudio, P3 device capture. Evidence:
+> `reports-max-4.67/01-code-analysis.json` + `02-remaining-problems-design.json`;
+> plan `docs/ai-model-plan-4.67.md`.
 > **Windows .bat 4.66:** prvi .bat fajlovi u repou — `start-bridge.bat`
 > (UI na http://localhost:8123), `session-pass.bat` (CLI wrapper sa `%*`),
 > `run-tests.bat` (puna baterija: python 145 + legacy 5 + npm 14),

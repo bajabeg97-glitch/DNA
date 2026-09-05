@@ -1,0 +1,30 @@
+{
+  "schema": "dna-remaining-problems-design",
+  "milestone": "4.67",
+  "date": "2026-09-05",
+  "basis": {
+    "honestReport": "docs/honest-report-4.65.md + dna-honest-report-4.65.json (29 stavki)",
+    "codeAnalysis": "reports-max-4.67/01-code-analysis.json (12 modula u proizvodnom lancu, 79 van lanca, 14 potpuno neadresiranih, 0 TODO/FIXME, jedina eksterna zavisnost engine-a: numpy)"
+  },
+  "effortScale": { "S": "do pola dana", "M": "1-3 dana", "L": "nedelju+", "XL": "mesec+ (namerno odlozeno)" },
+  "aiModelRelevance": { "core": "gradi AI model sloj", "support": "podrzava AI model sloj", "none": "van AI modela" },
+  "problems": [
+    { "id": "P01", "links": ["3.1", "2.7"], "problem": "UI je imitacija AI-ja (regex + sabloni); nema pravog razumevanja ni objasnjenja", "approach": "AI Brain v1: deterministicki NLU (intent + parametri) i NLG iz izvestaja (grounded objasnjenja sa json-path provenance tagovima); isti interfejs kasnije za LLM adapter", "effort": "M", "aiRelevance": "core", "risks": ["očekivanja > stvarnog modela — obeshrabriti 'magic' narativ", "jezik: sr/bs varijante"] },
+    { "id": "P02", "links": ["3.2"], "problem": "Sesija se gubi na refresh; nema pamcenja projekata", "approach": "Session store: JSONL po sesiji u artifacts-max-*/sessions/ (gitignored), bridge REST /api/session (GET/PUT/DELETE), UI restore posle refresh-a; prvo korak ka memoriji modela", "effort": "S", "aiRelevance": "support", "risks": ["velicina/privremeni fajlovi — cap + cleanup"] },
+    { "id": "P03", "links": ["3.3", "3.4", "2.1"], "problem": "Device capture ne postoji -> A05/DNC/slap/pop trajno LOCKED; FACTORY autoritet nije sa uredjaja; A01 nije testiran na fizickoj Pa800", "approach": "Device capture protokol (dokument + warrant ledger JSON): korisnik snimi nekoliko fiksnih proba sa Pa800 (skala, akord, 4 bubanj zvuka, slap/pop/DNC ako postoje), mi izmerimo velocity/mapiranje i otkljucamo samo ono sto je dokazano; A01 import test je korisnicki checklist korak u UI", "effort": "M", "aiRelevance": "none", "risks": ["zavisi od korisnikovog hardvera/vremena", "ne moze se uraditi u sandbox-u"] },
+    { "id": "P04", "links": ["2.5", "3.9", "2.6"], "problem": "Prepoznavanje: samo tacno 16-step/4-4/GM; swing perc bez pogodaka; banka samo 3 fajla", "approach": "Nearest-row matching (hamming na 16-step linijama, prag) + tolerancija na step-shift; banka se prosiri na song19-02..20; perc kanal dobija sopstvenu 'ljudsku' klasu umesto korpus-match-a", "effort": "S", "aiRelevance": "support", "risks": ["lazni pogodci — prikazivati samo iznad praga + oznaciti confidence"] },
+    { "id": "P05", "links": ["3.1"], "problem": "Nema zvucnog preslusavanja (WebAudio A/B)", "approach": "Faza D: WebAudio sampler (GM drum map + synth za bass/acc) svira original vs primenjeno; nema MIDI zvuk fajlova u repou — koristiti WebAudio sintezu + korisnicke SF2 kasnije", "effort": "M", "aiRelevance": "support", "risks": ["kvalitet sinteze nije reprezentativan za Pa800 — jasno oznaciti 'priblizno'"] },
+    { "id": "P06", "links": ["3.8"], "problem": "Nema CI/CD; provere su lokalne", "approach": "GitHub Actions: python setup (numpy) + kurirana lista + legacy + npm na push/PR; artefakti izvestaja", "effort": "S", "aiRelevance": "none", "risks": ["vreme na GitHub runner-ima (~2 min/test)"] },
+    { "id": "P07", "links": ["3.7"], "problem": "Drevna test arhiva ne radi u cistom checkout-u (fali /home/user/data); 79 modula van lanca", "approach": "Troslojna strategija: (1) kurirana lista = jedini 'gate'; (2) legacy moduli se ne diraju dok se ne ukljuce u lanac; (3) arhivski testovi dobiju 'legacy' oznaku i preskacu se ako fixture ne postoji (skipWithReason umesto error)", "effort": "L", "aiRelevance": "none", "risks": ["gubi se istorijska pokrivenost — cuvati listu sta je preskoceno"] },
+    { "id": "P08", "links": ["2.2", "2.3", "2.4"], "problem": "A03 nikad APPLIED na pravim fajlovima; A02/A04 slabo iskorisceni", "approach": "Ne radi se na engine-u nego na AI sloju: asistent uci iz istorije sesija (P02) i predlaze korisniku STA da proba (npr. 'dodaj fajl sa potvrdjenim echom za A03'); A04 dobija formu za odluku u UI", "effort": "S", "aiRelevance": "core", "risks": [] },
+    { "id": "P09", "links": ["2.8"], "problem": "Upload ogranicenja (MIDI, 50MB, SMF 0/1) i numpy zavisnost okruzenja", "approach": "Dokumentovano kao dizajn; provera: prosiriti poruke gresaka u UI na srpskom sa razlogom; numpy ostaje (samo u legacy/evidence modulima? — proveriti mogucnost izbacivanja iz lanca)", "effort": "S", "aiRelevance": "none", "risks": [] },
+    { "id": "P10", "links": ["3.6"], "problem": "Veliki dataset-i nisu integrisani (licence/velicina)", "approach": "Ostaje study-only; AI sloj moze da koristi samo nas korpus 468 + banku (4.64/4.65) — dokumentovana granica", "effort": "S", "aiRelevance": "none", "risks": [] }
+  ],
+  "order": {
+    "P0": ["P01 (AI Brain v1: NLU + grounded NLG)", "P02 (session store)", "P08 (predlozi iz istorije)"],
+    "P1": ["P04 (nearest-row + banka 20)", "P06 (CI)", "P09 (poruke)"],
+    "P2": ["P05 (WebAudio A/B)"],
+    "P3": ["P03 (device capture protokol + warrant ledger)", "P10"],
+    "deferred": ["P07 (legacy arhiva) XL"]
+  }
+}
