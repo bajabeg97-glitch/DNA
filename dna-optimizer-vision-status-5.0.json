@@ -32,5 +32,7 @@
     "DNC/slap/pop triggers locked until device capture (warrant ledger)",
     "every applied action carries reason + gate; reports are the proof",
     "no network/no extra installs at runtime (stdlib + built-in JS)"
-  ]
+  ],
+  "round2Scan": "reports-max-4.58/03-korg-pa-round2-scan.json",
+  "round2Conclusion": "GitHub nema projekat koji je 'Suno za Pa800 optimizaciju'. Najblize: KORG-Tools (GPL, C++, format dok. + parser/writer Pa SET/style), ostinato (MIT, live arranger \u2014 vec nasa import-side referenca), sonotron (GPL, C++). Sve GPL -> studija; SMF0+markeri putanja ostaje nasa jedina izvozna (bez kontaminacije)."
 }

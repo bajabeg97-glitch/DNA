@@ -1,0 +1,58 @@
+{
+ "schema": "dna-korg-pa-round2-scan",
+ "date": "2026-09-05",
+ "method": "gh api search/repositories + search/code (11 repo queries + 6 code queries) + git/trees file-level; rate limits respected",
+ "newProjectsFound": [
+  {
+   "repo": "aczwink/KORG-Tools",
+   "license": "GPL-3.0",
+   "language": "C++",
+   "stars": 4,
+   "what": "kompletna dokumentacija + C++ parser/writer Korg Pa SET/bank/performance/style formata (StyleFormat/Format0.0, ChordVariation, CV1-6, DRUM/PERC/BASS/ACC1-5 track mapping)",
+   "reuse": "GPL-3.0 -> studija dokumentacije format fakata; nije vendor-ovan (naša 4.53 istraga: Pa800 import putanja = SMF0 + markeri, što je validno i za Pa)"
+  },
+  {
+   "repo": "mahfouzalsheikh/ostinato",
+   "license": "MIT",
+   "language": "Python",
+   "stars": 0,
+   "what": "Live Music Arranger (MIT) — već identifikovan u 4.53 kao import-side MIT referenca; njegovi evidence w42 dokumenti pokrivaju Korg library groups/dedup",
+   "reuse": "MIT import-side referenca (kako je već zapisano u 4.53 istrazi)"
+  },
+  {
+   "repo": "damn-fine-pizza/sonotron",
+   "license": "GPL-3.0",
+   "language": "C++",
+   "stars": 1,
+   "what": "arrstyle-converter + canon/casm/chordpro/genre, style corpus agenti, GUI; C++ aranžer alat",
+   "reuse": "GPL-3.0 -> studija"
+  },
+  {
+   "repo": "jpzank/korg-pa-700",
+   "license": "MIT",
+   "language": "Swift?",
+   "stars": 0,
+   "what": "Safe macOS MIDI laboratory i live-performance pratioc za aranžer klavijature (pa-700)",
+   "reuse": "MIT kandidat za proučavanje UX (Suno-like lab), ali nije obrađen do kraja"
+  },
+  {
+   "repo": "oliv7971/dev-workspace (pa4x-midi2styles, set_file.py)",
+   "license": "?",
+   "language": "Python",
+   "what": "sty_analyzer.py + PA4x-setmerger set_file.py — Korg Pa4X style/set alati",
+   "reuse": "pogodak iz code search-a; workspace (ne repozitorijum) — samo studija"
+  }
+ ],
+ "codeSearchNotable": [
+  "aczwink/KORG-Tools: src/Models/pa4x.hpp — Korg Pa4X modeli",
+  "oliv7971: korg-pa4x/PA4x-setmerger/src/models/set_file.py + PA4x-midi2styles/sty_analyzer.py",
+  "mahfouzalsheikh/ostinato: docs/evidence/w42-korg-library-groups-and-deduplication.md"
+ ],
+ "noPublicProjectFor": [
+  "Suno-like UX (upload -> understand -> propose -> confirm -> Pa800 export) za Korg Pa",
+  "evidence-gated optimization postojeceg fajla",
+  "factory-velocity/DNC-warrant/autoritet politike",
+  "terca/echo special-track optimizacija (4.57)"
+ ],
+ "conclusion": "Nijedan javni projekat nije 'DNA Optimizer' — najblize stvari su KORG-Tools (GPL, format dokumentacija+alati), ostinato (MIT, live arranger, import-side) i sonotron (GPL, C++ aranžer). Korg Pa format dokumentacija postoji u KORG-Tools (GPL) — moze se studirati, a nasa SMF0+marker putanja ostaje jedina koja izvozno pokriva Pa800 bez GPL kontaminacije."
+}
