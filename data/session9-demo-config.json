@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "stages": [
+    {
+      "engine": "harmonic",
+      "registry": "data/styles/balkan-pop.json"
+    }
+  ],
+  "previewNoteLimit": 1000
+}
