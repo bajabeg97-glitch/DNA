@@ -38,6 +38,13 @@ main tajmingu uz harmony dokaz, inferencija neimenovanih aux treka; main se
 nikada ne menja, 0 trigera. Dokazi: `artifacts-max-4.57/`, guide
 `docs/studio-special-track-4.57.md`.
 
+## 4.62 Session Flow — DONE (Faza C jezgro)
+Per-akcija primena: `--apply-actions A01,A02` (Session Pass), HTTP
+`x-actions`/`?actions=` (bridge), UI dvokoračni tok: Analiziraj (plan sa
+checkbox-ovima) → Primeni izabrane → download. Izvor se nikad ne menja;
+ne-READY akcije se ne mogu označiti. Dokazi: `artifacts-max-4.62/bridge-run.json`,
+vodič `docs/session-flow-4.62.md`.
+
 ## 4.61 Session Bridge — DONE (Faza B)
 `dna_bridge.mjs` — node:http server bez npm zavisnosti: UI na /, upload
 `POST /api/analyze` -> Session Pass -> izveštaj + artefakti, demo preseti,

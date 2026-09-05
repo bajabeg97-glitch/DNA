@@ -69,12 +69,13 @@ function stemOf(name) {
   return name.replace(/\.[^.]+$/, '');
 }
 
-async function analyze(absFile, { roles = '', melody = '', apply = false }) {
+async function analyze(absFile, { roles = '', melody = '', apply = false, actions = '' }) {
   const stem = stemOf(path.basename(absFile));
   const args = ['dna_midi_studio/session_pass.py', '--input', absFile, '--out-dir', OUT_DIR];
   if (roles) args.push('--roles', roles);
   if (melody) args.push('--melody-channels', melody);
   if (apply) args.push('--apply-safe');
+  if (actions) args.push('--apply-actions', actions);
   const startedMs = Date.now();
   const py = await runPython(args);
   const reportPath = path.join(OUT_DIR, `session-pass-${stem}.json`);
@@ -111,88 +112,110 @@ function contentType(name) {
 
 const INDEX_HTML = `<!doctype html><html lang="sr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DNA Optimizer — Session Pass (4.61)</title>
+<title>DNA Optimizer — Session Flow (4.62)</title>
 <style>
 :root{color-scheme:dark}
 body{margin:0;font:14px/1.45 system-ui,sans-serif;background:#0d1117;color:#e6edf3}
-header{padding:14px 22px;background:#161b22;border-bottom:1px solid #30363d;display:flex;align-items:baseline;gap:14px}
+header{padding:14px 22px;background:#161b22;border-bottom:1px solid #30363d;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 header h1{font-size:16px;margin:0}
 header span{color:#8b949e}
-main{padding:18px 22px;max-width:1100px}
+main{padding:18px 22px;max-width:1120px}
 .card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px 16px;margin:14px 0}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 button{background:#238636;border:0;color:#fff;border-radius:8px;padding:8px 14px;cursor:pointer;font-size:13px}
+button.sec{background:#1f6feb}
+button:disabled{opacity:.45;cursor:default}
 button.small{background:#1f6feb;padding:4px 10px;margin:2px}
-button:hover{filter:brightness(1.1)}
 input[type=file]{color:#c9d1d9}
 label{color:#8b949e;font-size:12px}
 table{border-collapse:collapse;width:100%;font-size:12.5px}
-td,th{border:1px solid #30363d;padding:4px 8px;text-align:left}
+td,th{border:1px solid #30363d;padding:4px 8px;text-align:left;vertical-align:top}
 th{background:#21262d}
-.badge{padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+.badge{padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;color:#fff}
 .APPLIED{background:#1a7f37}.READY{background:#1f6feb}.SKIPPED{background:#484f58}
 .NEEDS_DECISION{background:#9e6a03}.LOCKED{background:#b62324}.GATE_FAILED{background:#b62324}
+.step{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;
+ background:#238636;color:#fff;font-weight:700;font-size:12px;margin-right:6px}
 a{color:#58a6ff;text-decoration:none}
 #status{margin-left:auto;color:#8b949e}
 #err{color:#f85149;white-space:pre-wrap}
 details{margin-top:6px}summary{cursor:pointer;color:#8b949e}
-code,pre{font-size:11px}
+pre{font-size:11px;max-height:340px;overflow:auto}
+.chip{display:inline-block;background:#21262d;border:1px solid #30363d;border-radius:20px;padding:4px 12px;margin:3px;font-size:12px}
+.actrow input{transform:scale(1.25);margin-right:8px}
 </style></head><body>
-<header><h1>DNA Optimizer — Session Pass</h1><span>faza B: bridge 4.61 · optimizacija na Pa800 temelju · bez generisanja</span><div id="status">…</div></header>
+<header><h1>DNA Optimizer — Session Flow</h1><span>faza C jezgro · 4.62 · plan → potvrdi → primeni · Pa800 temelj</span><div id="status">…</div></header>
 <main>
-<div class="card"><div class="row">
-<label>1. MIDI fajl (.mid/.midi/.kar)</label>
+<div class="card"><div class="row"><span class="step">1</span>
+<label>MIDI fajl (.mid/.midi/.kar)</label>
 <input id="file" type="file" accept=".mid,.midi,.kar">
-<label>uloge (opciono, evidencija):</label>
-<input id="roles" size="44" placeholder="8:bass,9:drums,10:percussion,…">
+<label>uloge (evidencija, opciono):</label>
+<input id="roles" size="40" placeholder="8:bass,9:drums,10:percussion,…">
+<button id="bAnalyze" class="sec" onclick="stepAnalyze()">Analiziraj (plan)</button>
 </div>
-<div class="row" style="margin-top:8px">
-<label><input id="apply" type="checkbox"> primeni bezbedne akcije (--apply-safe, piše NOVE fajlove)</label>
-<button onclick="doUpload()">2. Analiziraj / Optimizuj</button>
+<div class="row" style="margin-top:8px"><span class="step" style="background:#1f6feb">2</span>
+<label>Demo uzorci (korpus):</label><span id="samples"></span>
+<button id="bApply" disabled onclick="applySelected()">Primeni izabrane (0)</button>
 </div>
-<div id="samples" class="row" style="margin-top:10px"></div>
+<div id="note" style="margin-top:6px;color:#8b949e;font-size:12px">Izvorni fajl se nikad ne menja — primena piše nove artefakte; DNC/slap/pop trigeri ostaju zaključani.</div>
 <div id="err"></div></div>
 <div id="out"></div>
 </main>
 <script>
-const $=(id)=>document.getElementById(id);
-function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+var $=function(id){return document.getElementById(id)};
+var state={kind:null,payload:null,roles:''};
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function badge(s){return '<span class="badge '+esc(s)+'">'+esc(s)+'</span>';}
-async function call(url,opt){const r=await fetch(url,opt);const t=await r.text();let j;try{j=JSON.parse(t)}catch{j={raw:t}}if(!r.ok)throw new Error((j.error||t||('HTTP '+r.status)));return j;}
-async function init(){try{
- $('status').textContent='bridge OK';
- const p=await call('/api/presets');
- $('samples').innerHTML='<label>Demo (uzorci iz korpusa):</label>'+p.presets.map(pr=>
-   '<button class="small" onclick="sample(\''+pr.id+'\')">'+esc(pr.label)+'</button>').join('');
-}catch(e){$('status').textContent='bridge nedostupan';$('err').textContent=String(e);}}
-async function sample(id){$('err').textContent='';const pr=(await call('/api/presets')).presets.find(p=>p.id===id);
- const j=await call('/api/sample-analyze?p='+encodeURIComponent(id)+'&apply='+($('apply').checked?1:0));render(j);
- if(pr&&pr.roles)$('roles').value=pr.roles;}
-async function doUpload(){const f=$('file').files[0];if(!f){$('err').textContent='Izaberi fajl prvo.';return}$('err').textContent='';
- const buf=new Uint8Array(await f.arrayBuffer());
- const j=await call('/api/analyze',{method:'POST',headers:{'x-filename':f.name,'x-roles':$('roles').value,'x-apply':$('apply').checked?'1':'0'},body:buf});render(j);}
-function render(j){
- const r=j.report;if(!r){$('out').innerHTML='<div class="card"><b>Nema izveštaja</b><pre>'+esc(j.pythonErrorTail||JSON.stringify(j,null,1))+'</pre></div>';return}
- let h='';
- h+='<div class="card"><b>'+esc(r.sourceName)+'</b> · markera: '+esc(r.fileFacts.markerCount)+
-    ' · ppq '+esc(r.fileFacts.ppq)+' · format '+esc(r.fileFacts.format)+' · kanali '+esc(r.fileFacts.channels.length)+
-    ' · trajanje: '+esc(j.durationMs)+' ms'+(j.actionStatuses||[]).map(a=>badge(a.status)).join(' ')+'</div>';
- const acts=r.actions||[];
- if(acts.length){h+='<div class="card"><b>Akcije</b><table><tr><th>ID</th><th>Engine</th><th>Status</th><th>Dokaz / efekat</th></tr>';
- for(const a of acts){const art=(a.artifact?'<br><a href="/api/artifacts/'+esc(a.artifact.split('/').pop())+'">⬇ '+esc(a.artifact.split('/').pop())+'</a>':'');
-  h+='<tr><td>'+esc(a.id)+'</td><td>'+esc(a.engine)+'</td><td>'+badge(a.status)+'</td><td>'+esc(a.effect||a.reason||'')+' '+art+
-     (a.gates?'<details><summary>gates</summary><pre>'+esc(JSON.stringify(a.gates,null,1))+'</pre></details>':'')+'</td></tr>';}
- h+='</table></div>';}
- const ch=r.perRolePatterns||{};
- const rows=Object.entries(ch).map(([c,b])=>{const v=b.velocity||{};const mp=b.melodyPattern?' · mel '+esc(JSON.stringify({up:mp?mp.upShare:null,int:mp?mp.meanAbsSemis:null})):'';
-  return '<tr><td>'+esc(b.role)+'</td><td>ch'+esc(c)+'</td><td>'+esc(b.noteCount)+'</td><td>'+esc((b.register||[]).join('–'))+'</td><td>'+esc(b.densityNotesPerBar)+'</td><td>'+esc(v.q50)+'</td><td>'+esc(b.polyphonyPeak)+'</td></tr>';});
- if(rows.length){h+='<div class="card"><b>Role patterni</b><table><tr><th>uloga</th><th>kanal</th><th>note</th><th>registar</th><th>gustina/takt</th><th>vel q50</th><th>poly</th></tr>'+rows.join('')+'</table></div>';}
- if((r.grooveVsHuman||[]).length){h+='<div class="card"><b>Groove vs ljudska referenca</b><table><tr><th>kanal</th><th>note</th><th>std ms</th><th>na gridu</th></tr>'+
-   r.grooveVsHuman.map(g=>'<tr><td>ch'+esc(g.channel)+' '+esc(g.role)+'</td><td>'+esc(g.noteCount)+'</td><td>'+esc(g.stdMs)+'</td><td>'+esc(g.exactOnGridShare)+'</td></tr>').join('')+'</table></div>';}
- h+='<div class="card"><details open><summary>sirovi izveštaj (JSON)</summary><pre>'+esc(JSON.stringify(r,null,1))+'</pre></details></div>';
- $('out').innerHTML=h;
- window.scrollTo({top:0,behavior:'smooth'});
-}
+function selIds(){var c=[].slice.call(document.querySelectorAll('.actrow input:checked'));return c.map(function(i){return i.getAttribute('data-id');});}
+function updApplyBtn(){var n=selIds().length;var b=$('bApply');b.disabled=n===0;b.textContent='Primeni izabrane ('+n+')';}
+function call(url,opt){return fetch(url,opt).then(function(r){return r.text().then(function(t){var j;try{j=JSON.parse(t)}catch(e){j={raw:t}}
+ if(!r.ok){throw new Error(j.error||t||('HTTP '+r.status));}return j;});});}
+function errShow(e){$('err').textContent='Greška: '+(e&&e.message||e);}
+function init(){call('/api/presets').then(function(p){
+ $('samples').innerHTML=p.presets.map(function(pr){return '<button class="small" onclick="preset(\''+pr.id+'\')">'+esc(pr.label)+'</button>';}).join('');
+ $('status').textContent='bridge OK · '+p.presets.length+' preseta';}).catch(errShow);}
+function preset(id){call('/api/presets').then(function(p){var pr=p.presets.filter(function(x){return x.id===id;})[0];
+ state={kind:'preset',payload:id,roles:pr.roles||''};$('roles').value=pr.roles||'';
+ $('status').textContent='uzorak: '+pr.file;stepAnalyze();}).catch(errShow);}
+function stepAnalyze(){var apply=arguments.length?arguments[0]:false;var actions=arguments.length>1?arguments[1]:'';
+ $('err').textContent='';$('out').innerHTML='<div class="card">Analiza u toku… (Session Pass 4.60/4.61)</div>';
+ var f=$('file').files[0];
+ var go=function(){var url,opt;
+  if(state.kind==='preset'){url='/api/sample-analyze?p='+encodeURIComponent(state.payload)+'&apply='+(apply?1:0)+(actions?'&actions='+encodeURIComponent(actions):'');
+    return call(url);}
+  if(f){var buf=new Uint8Array(0);
+    return f.arrayBuffer().then(function(b){var u=new Uint8Array(b);
+      return call('/api/analyze',{method:'POST',headers:{'x-filename':f.name,'x-roles':$('roles').value.trim(),
+        'x-apply':apply?'1':'0','x-actions':actions},body:u});});}
+  return Promise.reject(new Error('Izaberi fajl ili demo uzorak.'));};
+ if(!apply&&!state.kind&&!f){$('err').textContent='Izaberi fajl ili demo uzorak prvo.';$('out').innerHTML='';return;}
+ go().then(function(j){if(!j.ok||!j.report){throw new Error(j.pythonErrorTail||'python nije vratio izveštaj');}
+  if(apply)renderResult(j);else renderPlan(j);}).catch(errShow);}
+function renderPlan(j){var r=j.report;state.kind=state.kind||'upload';
+ var applyable=(r.actions||[]).filter(function(a){return a.status==='READY';});
+ var rows=(r.actions||[]).map(function(a){
+  var cb=(a.status==='READY')?'<input type="checkbox" class="actbox" data-id="'+esc(a.id)+'" checked>':'';
+  var art=a.artifact?'<br><a href="/api/artifacts/'+esc(a.artifact.split('/').pop())+'">⬇ '+esc(a.artifact.split('/').pop())+'</a>':'';
+  var gates=a.gates?'<details><summary>gates</summary><pre>'+esc(JSON.stringify(a.gates,null,1))+'</pre></details>':'';
+  return '<tr class="actrow"><td>'+cb+'<b>'+esc(a.id)+'</b></td><td>'+esc(a.engine)+'</td><td>'+badge(a.status)+'</td><td>'+esc(a.effect||a.reason||'')+' '+art+gates+'</td></tr>';}).join('');
+ var h='<div class="card"><b>Plan ('+esc(r.sourceName)+')</b> · markera: '+esc(r.fileFacts.markerCount)+
+  ' · format '+esc(r.fileFacts.format)+' · kanali: '+esc(r.fileFacts.channels.length)+' · '+esc(j.durationMs)+' ms</div>';
+ h+='<div class="card"><b>Akcije — označi koje da se primene</b><table><tr><th>izbor</th><th>engine</th><th>status</th><th>efekat / dokaz</th></tr>'+rows+'</table></div>';
+ h+='<div class="card"><b>Role patterni</b><table><tr><th>uloga</th><th>kanal</th><th>note</th><th>registar</th><th>gustina/takt</th><th>vel q50</th><th>poly</th></tr>'+Object.entries(r.perRolePatterns||{}).map(function(e){var b=e[1],v=b.velocity||{},mp=b.melodyPattern||{};
+  var mel=mp.meanAbsSemis!=null?'<br><span style="color:#8b949e">mel: up '+esc(mp.upShare)+' · sr.int '+esc(mp.meanAbsSemis)+'</span>':'';
+  return '<tr><td>'+esc(b.role)+'</td><td>ch'+esc(e[0])+'</td><td>'+esc(b.noteCount)+'</td><td>'+esc((b.register||[]).join('–'))+'</td><td>'+esc(b.densityNotesPerBar)+'</td><td>'+esc(v.q50)+'</td><td>'+esc(b.polyphonyPeak)+mel+'</td></tr>';}).join('')+'</table></div>';
+ if((r.grooveVsHuman||[]).length){h+='<div class="card"><b>Groove vs ljudska referenca</b><table><tr><th>kanal</th><th>note</th><th>std ms</th><th>na gridu</th></tr>'+r.grooveVsHuman.map(function(g){
+  return '<tr><td>ch'+esc(g.channel)+' '+esc(g.role)+'</td><td>'+esc(g.noteCount)+'</td><td>'+esc(g.stdMs)+'</td><td>'+esc(g.exactOnGridShare)+'</td></tr>';}).join('')+'</table></div>';}
+ h+='<div class="card"><details><summary>sirovi izveštaj (JSON)</summary><pre>'+esc(JSON.stringify(r,null,1))+'</pre></details></div>';
+ $('out').innerHTML=h;updApplyBtn();}
+function applySelected(){var ids=selIds();if(!ids.length)return;stepAnalyze(true,ids.join(','));}
+function renderResult(j){var r=j.report;
+ var arts=(r.actions||[]).filter(function(a){return a.artifact;}).map(function(a){return '<span class="chip"><a href="/api/artifacts/'+esc(a.artifact.split('/').pop())+'">⬇ '+esc(a.artifact.split('/').pop())+'</a></span>';});
+ var h='<div class="card"><b>Primenjeno</b> · '+esc(r.sourceName)+'<br><div style="margin-top:8px">'+(arts.length?arts.join(''):'<span style="color:#8b949e">nema primenjenih artefakata</span>')+'</div></div>';
+ h+='<div class="card"><b>Statusi posle primene</b><table><tr><th>akcija</th><th>status</th></tr>'+(r.actions||[]).map(function(a){
+  return '<tr><td>'+esc(a.id)+'</td><td>'+badge(a.status)+'</td></tr>';}).join('')+'</table></div>';
+ h+='<div class="card"><button class="sec" onclick="location.reload()">Novi fajl</button></div>';
+ $('out').innerHTML=h;updApplyBtn();}
 init();
 </script></body></html>`;
 
@@ -220,7 +243,8 @@ async function route(req, res) {
     const abs = path.join(ROOT, pr.file);
     if (!fs.existsSync(abs)) return json(res, 404, { error: 'sample file missing' });
     const apply = u.searchParams.get('apply') === '1';
-    const r = await analyze(abs, { roles: pr.roles, melody: pr.melody || '', apply });
+    const actions = u.searchParams.get('actions') || '';
+    const r = await analyze(abs, { roles: pr.roles, melody: pr.melody || '', apply, actions });
     return json(res, r.ok ? 200 : 500, r);
   }
   if (req.method === 'POST' && p === '/api/analyze') {
@@ -242,6 +266,7 @@ async function route(req, res) {
       roles: String(req.headers['x-roles'] || '').trim(),
       melody: String(req.headers['x-melody'] || '').trim(),
       apply: String(req.headers['x-apply']) === '1',
+      actions: String(req.headers['x-actions'] || '').trim(),
     });
     return json(res, r.ok ? 200 : 500, r);
   }

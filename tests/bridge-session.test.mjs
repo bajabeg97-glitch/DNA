@@ -88,3 +88,33 @@ test('bridge upload rejects non-midi extension', async () => {
     assert.equal(res.status, 400);
   });
 });
+
+test('bridge applies only user-selected action A01 (STY export)', async () => {
+  await withServer(async (base) => {
+    const j = await (await fetch(
+      base + '/api/sample-analyze?p=reference-style&apply=1&actions=A01_STY_EXPORT'
+    )).json();
+    assert.equal(j.ok, true);
+    const names = j.artifactNames.map((a) => a.name);
+    assert.ok(names.some((n) => n.includes('session-sty-')));
+    assert.ok(!names.some((n) => n.includes('session-mixed-')));
+    const st = new Map(j.actionStatuses.map((a) => [a.id, a.status]));
+    assert.equal(st.get('A01_STY_EXPORT'), 'APPLIED');
+    assert.equal(st.get('A02_PERCUSSION_CC11_GAIN'), 'READY');
+  });
+});
+
+test('bridge applies only user-selected action A02 (CC11 gain)', async () => {
+  await withServer(async (base) => {
+    const j = await (await fetch(
+      base + '/api/sample-analyze?p=reference-style&apply=1&actions=A02_PERCUSSION_CC11_GAIN'
+    )).json();
+    assert.equal(j.ok, true);
+    const names = j.artifactNames.map((a) => a.name);
+    assert.ok(names.some((n) => n.includes('session-mixed-')));
+    assert.ok(!names.some((n) => n.includes('session-sty-')));
+    const st = new Map(j.actionStatuses.map((a) => [a.id, a.status]));
+    assert.equal(st.get('A01_STY_EXPORT'), 'READY');
+    assert.equal(st.get('A02_PERCUSSION_CC11_GAIN'), 'APPLIED');
+  });
+});

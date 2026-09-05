@@ -1,0 +1,156 @@
+{
+  "schema": "dna-bridge-flow-e2e",
+  "version": "4.62",
+  "date": "2026-09-05",
+  "calls": [
+    {
+      "url": "/api/sample-analyze?p=reference-style&apply=1&actions=A01_STY_EXPORT",
+      "ok": true,
+      "actions": [
+        {
+          "id": "A01_STY_EXPORT",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A02_PERCUSSION_CC11_GAIN",
+          "status": "READY"
+        },
+        {
+          "id": "A03_ECHO_TERCA",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A04_STUDIO_FILLS",
+          "status": "NEEDS_DECISION"
+        },
+        {
+          "id": "A05_DEVICE_LOCKED_TRIGGERS",
+          "status": "LOCKED"
+        }
+      ],
+      "artifacts": [
+        "session-sty-reference-style.mid"
+      ]
+    },
+    {
+      "url": "/api/sample-analyze?p=reference-style&apply=1&actions=A02_PERCUSSION_CC11_GAIN",
+      "ok": true,
+      "actions": [
+        {
+          "id": "A01_STY_EXPORT",
+          "status": "READY"
+        },
+        {
+          "id": "A02_PERCUSSION_CC11_GAIN",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A03_ECHO_TERCA",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A04_STUDIO_FILLS",
+          "status": "NEEDS_DECISION"
+        },
+        {
+          "id": "A05_DEVICE_LOCKED_TRIGGERS",
+          "status": "LOCKED"
+        }
+      ],
+      "artifacts": [
+        "session-mixed-reference-style.mid"
+      ]
+    },
+    {
+      "url": "/api/sample-analyze?p=fixture&apply=1&actions=A01_STY_EXPORT,A02_PERCUSSION_CC11_GAIN",
+      "ok": true,
+      "actions": [
+        {
+          "id": "A01_STY_EXPORT",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A02_PERCUSSION_CC11_GAIN",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A03_ECHO_TERCA",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A04_STUDIO_FILLS",
+          "status": "NEEDS_DECISION"
+        },
+        {
+          "id": "A05_DEVICE_LOCKED_TRIGGERS",
+          "status": "LOCKED"
+        }
+      ],
+      "artifacts": [
+        "session-sty-arranged-4.51-fixture.mid",
+        "session-mixed-arranged-4.51-fixture.mid"
+      ]
+    },
+    {
+      "url": "/api/sample-analyze?p=session35&apply=1",
+      "ok": true,
+      "actions": [
+        {
+          "id": "A01_STY_EXPORT",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A02_PERCUSSION_CC11_GAIN",
+          "status": "APPLIED"
+        },
+        {
+          "id": "A03_ECHO_TERCA",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A04_STUDIO_FILLS",
+          "status": "NEEDS_DECISION"
+        },
+        {
+          "id": "A05_DEVICE_LOCKED_TRIGGERS",
+          "status": "LOCKED"
+        }
+      ],
+      "artifacts": [
+        "session-sty-session35-partial-preview.mid",
+        "session-mixed-session35-partial-preview.mid"
+      ]
+    },
+    {
+      "url": "/api/sample-analyze?p=song19-01&apply=1",
+      "ok": true,
+      "actions": [
+        {
+          "id": "A01_STY_EXPORT",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A02_PERCUSSION_CC11_GAIN",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A03_ECHO_TERCA",
+          "status": "SKIPPED"
+        },
+        {
+          "id": "A04_STUDIO_FILLS",
+          "status": "NEEDS_DECISION"
+        },
+        {
+          "id": "A05_DEVICE_LOCKED_TRIGGERS",
+          "status": "LOCKED"
+        }
+      ],
+      "artifacts": []
+    }
+  ],
+  "ui": {
+    "hasTwoStep": true,
+    "title": true
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema": "dna-session-pass",
   "version": "4.60",
-  "sourceName": "reference-style.mid",
+  "sourceName": "5304b2b0-reference-style.mid",
   "sourceSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
   "fileFacts": {
     "format": 0,
@@ -530,7 +530,7 @@
     {
       "id": "A01_STY_EXPORT",
       "engine": "sty_mapper 4.53",
-      "status": "READY",
+      "status": "APPLIED",
       "evidence": {
         "markers": 10,
         "addedTotal": 0,
@@ -547,7 +547,8 @@
         "markersMatchLayout": true,
         "noteGeometryUnchanged": true,
         "reparsed": true
-      }
+      },
+      "artifact": "/home/user/DNA/artifacts-max-4.61/session-sty-5304b2b0-reference-style.mid"
     },
     {
       "id": "A02_PERCUSSION_CC11_GAIN",
@@ -570,7 +571,7 @@
         "exactScaleApplied": true,
         "maskingWindowsUnchanged": true
       },
-      "artifact": "/home/user/DNA/artifacts-max-4.61/session-mixed-reference-style.mid"
+      "artifact": "/home/user/DNA/artifacts-max-4.61/session-mixed-5304b2b0-reference-style.mid"
     },
     {
       "id": "A03_ECHO_TERCA",

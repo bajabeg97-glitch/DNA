@@ -138,6 +138,7 @@ def session_pass(raw: bytes, *, source_name: str,
                  melody_channels: list[int] | None = None,
                  percussion_gain: float = 0.55,
                  apply_safe: bool = False,
+                 apply_actions: set[str] | None = None,
                  out_dir: str | Path | None = None) -> dict[str, Any]:
     midi = MidiFile.from_bytes(raw)
     # 1. identity & markers
@@ -221,7 +222,8 @@ def session_pass(raw: bytes, *, source_name: str,
                 "effect": "Pa800-importable SMF0 with per-element setup",
                 "gates": sty_gates,
             })
-            if apply_safe and export_ok and out_dir:
+            if apply_safe and export_ok and out_dir and (
+                    apply_actions is None or "A01_STY_EXPORT" in apply_actions):
                 p = Path(out_dir)
                 p.mkdir(parents=True, exist_ok=True)
                 stem = Path(source_name).stem
@@ -252,7 +254,8 @@ def session_pass(raw: bytes, *, source_name: str,
             "effect": "per-channel CC11 expression scaled -45% on percussion",
             "gates": gates,
         })
-        if apply_safe and ok and out_dir:
+        if apply_safe and ok and out_dir and (
+                apply_actions is None or "A02_PERCUSSION_CC11_GAIN" in apply_actions):
             p = Path(out_dir)
             p.mkdir(parents=True, exist_ok=True)
             stem = Path(source_name).stem
@@ -347,6 +350,10 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--percussion-gain", type=float, default=0.55)
     ap.add_argument("--apply-safe", action="store_true",
                     help="apply READY actions (new artifacts; source never edited)")
+    ap.add_argument("--apply-actions", default="",
+                    help="comma list of action ids to apply with --apply-safe "
+                         "(e.g. A01_STY_EXPORT,A02_PERCUSSION_CC11_GAIN); "
+                         "empty = apply all READY actions")
     ap.add_argument("--out-dir", default="artifacts-max-4.60")
     args = ap.parse_args(argv)
     role_map: dict[int, str] = {}
@@ -356,10 +363,12 @@ def _main(argv: list[str] | None = None) -> int:
             role_map[int(ch)] = role
     melody = [int(x) for x in args.melody_channels.split(",") if x.strip()]
     raw = Path(args.input).read_bytes()
+    apply_actions = {x.strip() for x in args.apply_actions.split(",") if x.strip()} or None
     res = session_pass(raw, source_name=Path(args.input).name,
                        role_map=role_map or None, melody_channels=melody,
                        percussion_gain=args.percussion_gain,
-                       apply_safe=args.apply_safe, out_dir=args.out_dir)
+                       apply_safe=args.apply_safe,
+                       apply_actions=apply_actions, out_dir=args.out_dir)
     acts = [{"id": a["id"], "status": a["status"]} for a in res["actions"]]
     print(json.dumps({"source": res["sourceName"],
                       "markers": res["fileFacts"]["markerCount"],

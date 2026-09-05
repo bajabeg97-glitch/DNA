@@ -1,0 +1,27 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.62",
+  "date": "2026-09-05",
+  "python": "python3.11",
+  "node": "v22.22.3",
+  "suites": [
+    {"command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_session_pass_v462 test_mido_independent_v452",
+     "result": "OK", "tests": 102, "note": "102 = 98 pre-4.62 + 4 new"},
+    {"command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5},
+    {"command": "npm test (node --test tests/**/*.test.mjs)",
+     "result": "OK", "tests": 14, "note": "12 pre-4.62 + 2 new action-selection tests"},
+    {"command": "python3.11 -m unittest test_session_pass_v462", "result": "OK", "tests": 4,
+     "newForMilestone": true,
+     "covered": [
+       "apply A01_STY_EXPORT only -> APPLIED, A02 stays READY, only session-sty-* artifact exists",
+       "apply A02_PERCUSSION_CC11_GAIN only -> APPLIED, A01 stays READY, only session-mixed-* artifact exists",
+       "apply_actions=None -> both READY actions APPLIED (backwards compatible)",
+       "source bytes never modified by apply"]},
+    {"command": "node --test tests/bridge-session.test.mjs (2 new)", "result": "OK", "tests": 2,
+     "covered": [
+       "HTTP sample-analyze actions=A01_STY_EXPORT yields exactly the sty artifact",
+       "HTTP sample-analyze actions=A02_PERCUSSION_CC11_GAIN yields exactly the mixed artifact"]},
+    {"command": "node e2e -> artifacts-max-4.62/bridge-run.json", "result": "OK",
+     "note": "5 HTTP calls: single-action A01/A02, pair on fixture, all on session35, song19-01 (0 artifacts); UI has two-step 'Primeni izabrane'"}
+  ]
+}
