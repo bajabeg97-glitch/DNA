@@ -4,10 +4,11 @@
   "status": "complete",
   "date": "2026-09-05",
   "kind": "research",
-  "summary": "Analiza 20 najjacih MIDI projekata (gh api + README signal sken): pokrivenost generisanja (magenta 19800★, muzic 4951★, NotaGen, MidiTok, muspy, midi-model, sym-diffusion, MIDI-GPT), aranzera (JJazzLab LGPL, Cadenza/BandInMuseScore/Favorites-with-Style GPL, autoaccompany/fleet-midi-bass MIT) i analize (music21, pretty-midi, mido, musicaiz, mgeval). Zakljucak: niko ne pokriva evidencijsku optimizaciju postojecg fajla, Korg uloge, terca/echo trackove ni factory velocity autoritet; MIT projekti se mogu ugraditi uz atribuciju, GPL/AGPL/LGPL samo studija.",
+  "summary": "Analiza 20 najjacih MIDI projekata (gh api + README signal sken): pokrivenost generisanja (magenta 19800\u2605, muzic 4951\u2605, NotaGen, MidiTok, muspy, midi-model, sym-diffusion, MIDI-GPT), aranzera (JJazzLab LGPL, Cadenza/BandInMuseScore/Favorites-with-Style GPL, autoaccompany/fleet-midi-bass MIT) i analize (music21, pretty-midi, mido, musicaiz, mgeval). Zakljucak: niko ne pokriva evidencijsku optimizaciju postojecg fajla, Korg uloge, terca/echo trackove ni factory velocity autoritet; MIT projekti se mogu ugraditi uz atribuciju, GPL/AGPL/LGPL samo studija. Dubinski file-level sken (git/trees) dodat: reports-max-4.58/02-project-file-inventory.json.",
   "deliverables": {
     "analysis": "reports-max-4.58/01-github-projects.json",
-    "guide": "docs/github-midi-projects-analysis.md"
+    "guide": "docs/github-midi-projects-analysis.md",
+    "fileInventory": "reports-max-4.58/02-project-file-inventory.json"
   },
   "projectsAnalyzed": 20,
   "topByStars": [

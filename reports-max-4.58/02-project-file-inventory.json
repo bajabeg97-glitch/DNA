@@ -1,0 +1,749 @@
+{
+ "schema": "dna-github-file-inventory",
+ "date": "2026-09-05",
+ "method": "gh api repos/{r}/git/trees/{default_branch}?recursive=1 — 20 projekata, keyword filter + size evidence (executed)",
+ "repos": {
+  "jjazzboss_JJazzLab": {
+   "relevantBlobs": 981,
+   "top": [
+    [
+     "app/RhythmDatabaseImpl/src/main/resources/org/jjazz/rhythmdatabaseimpl/resources/Rhythms.zip",
+     1849152
+    ],
+    [
+     "plugins/YamJJazz/src/main/resources/org/jjazz/yamjjazz/rhythm/api/resources/YamahaDefaultFiles.zip",
+     739244
+    ],
+    [
+     "misc/StyleFileDescription_v21.pdf",
+     303467
+    ],
+    [
+     "model/SongImpl/src/test/resources/org/jjazz/song/PhaseDance - 2020-spVersion1.sng",
+     156935
+    ],
+    [
+     "plugins/JJSwing/src/main/resources/org/jjazz/jjswing/api/psBase.yjz",
+     151679
+    ],
+    [
+     "model/SongImpl/src/test/resources/org/jjazz/song/Maxine_new - 2024 - spVersion4.sng",
+     149009
+    ],
+    [
+     "model/Midi/src/main/resources/org/jjazz/midi/api/keymap/resources/MidiStandardJJazzLab-DATA.xlsx",
+     117952
+    ],
+    [
+     "core/EmbeddedSynth/src/main/java/org/jjazz/embeddedsynth/lame/mp3/PsyModel.java",
+     98250
+    ],
+    [
+     "plugins/YamJJazz/src/main/resources/org/jjazz/yamjjazz/rhythm/api/resources/YamJJazzDefaultFiles.zip",
+     93173
+    ],
+    [
+     "model/SongImpl/src/main/java/org/jjazz/midimix/MidiMixImpl.java",
+     79033
+    ]
+   ]
+  },
+  "Piskocis_Cadenza": {
+   "relevantBlobs": 105,
+   "top": [
+    [
+     "screenshots/cadenza-style.png",
+     139907
+    ],
+    [
+     "Source/Arranger/StyParser.cpp",
+     77020
+    ],
+    [
+     "Source/Arranger/MidiStyleConverter.cpp",
+     64454
+    ],
+    [
+     "Source/UI/StylePartPianoRoll.cpp",
+     44597
+    ],
+    [
+     "Source/UI/StylePartEditor.cpp",
+     39936
+    ],
+    [
+     "tests/MidiStyleConverterTests.cpp",
+     38773
+    ],
+    [
+     "tests/StyleLoaderTests.cpp",
+     32158
+    ],
+    [
+     "tests/PatternTransposerTests.cpp",
+     25762
+    ],
+    [
+     "Source/Arranger/StyleEngine.cpp",
+     25250
+    ],
+    [
+     "tests/ArrangerMidiRouterTests.cpp",
+     24840
+    ]
+   ]
+  },
+  "AidFTech_Favorites-with-Style": {
+   "relevantBlobs": 185,
+   "top": [
+    [
+     "Favorites with Style Editor/rust-bin/lib/Windows_x86_64/midirust.dll",
+     26578457
+    ],
+    [
+     "Favorites with Style Editor/rust-bin/lib/Linux_x86_64/libmidirust.so",
+     19161136
+    ],
+    [
+     "Common/midirust/src/fws_style.rs",
+     54001
+    ],
+    [
+     "Favorites with Style Editor/windows/main_window/FWSEditorMainWindow.java",
+     48504
+    ],
+    [
+     "Favorites with Style Editor/graphics/infobox/InfoBox.java",
+     45843
+    ],
+    [
+     "Favorites with Style Editor/graphics/canvas/SongViewPort.java",
+     35290
+    ],
+    [
+     "Favorites with Style Editor/windows/settings_dialogs/CasmEditor.java",
+     30362
+    ],
+    [
+     "Favorites with Style Editor/windows/event_dialogs/ChordEventDialog.java",
+     23608
+    ],
+    [
+     "Favorites with Style Editor/windows/tools/MIDIExportWindow.java",
+     19801
+    ],
+    [
+     "Favorites with Style Editor/windows/settings_dialogs/SongSubstitutionsWindow.java",
+     18747
+    ]
+   ]
+  },
+  "berteh_BandInMuseScore": {
+   "relevantBlobs": 1,
+   "top": [
+    [
+     "MMA-Styles.md",
+     114809
+    ]
+   ]
+  },
+  "magenta_magenta": {
+   "relevantBlobs": 376,
+   "top": [
+    [
+     "magenta/models/image_stylization/sample_images/benchmark.png",
+     3852348
+    ],
+    [
+     "magenta/reviews/assets/generation.gif",
+     2730342
+    ],
+    [
+     "magenta/reviews/assets/pixelrnn_figure6.png",
+     1495634
+    ],
+    [
+     "magenta/reviews/assets/pixelrnn_masks_highlevel.png",
+     665046
+    ],
+    [
+     "magenta/models/sketch_rnn/assets/sketch_rnn_schematic.svg",
+     579009
+    ],
+    [
+     "magenta/models/sketch_rnn/assets/sketch_rnn_examples.svg",
+     513757
+    ],
+    [
+     "magenta/reviews/assets/svhn_generation.png",
+     244338
+    ],
+    [
+     "magenta/reviews/assets/mnist_generation.png",
+     190451
+    ],
+    [
+     "magenta/models/image_stylization/evaluation_images/picabo_lava.jpg",
+     150933
+    ],
+    [
+     "magenta/models/image_stylization/evaluation_images/benjamin_harrison.jpg",
+     136988
+    ]
+   ]
+  },
+  "microsoft_muzic": {
+   "relevantBlobs": 389,
+   "top": [
+    [
+     "musecoco/2-attribute2music_model/data/infer_input/infer_test.bin",
+     16652718
+    ],
+    [
+     "musecoco/1-text2attribute_dataprepare/midiprocessor/legacy_tools/tools/midi_model/melody_model_new",
+     5834833
+    ],
+    [
+     "musecoco/2-attribute2music_dataprepare/midiprocessor/legacy_tools/tools/midi_model/melody_model_new",
+     5834833
+    ],
+    [
+     "musecoco/2-attribute2music_model/midiprocessor/legacy_tools/tools/midi_model/melody_model_new",
+     5834833
+    ],
+    [
+     "musecoco/evaluation/midiprocessor/legacy_tools/tools/midi_model/melody_model_new",
+     5834833
+    ],
+    [
+     "pdaugment/midi_preprocess/model/melody_model_new",
+     5834833
+    ],
+    [
+     "musecoco/1-text2attribute_model/data/test.json",
+     5785249
+    ],
+    [
+     "musecoco/1-text2attribute_model/data/predict.json",
+     1840249
+    ],
+    [
+     "musecoco/2-attribute2music_model/data/truncated_2560/train.txt",
+     729156
+    ],
+    [
+     "musecoco/2-attribute2music_model/data/truncated_2560/valid.txt",
+     696024
+    ]
+   ]
+  },
+  "cuthbertLab_music21": {
+   "relevantBlobs": 4077,
+   "top": [
+    [
+     "documentation/source/usersGuide/usersGuide_09_chordify.ipynb",
+     1250997
+    ],
+    [
+     "music21/corpus/trecento/PMFC_24_17-Doctorum principem-Melodia suavissima-Vir mitis.xml",
+     420321
+    ],
+    [
+     "documentation/source/testsAndInProgress/usersGuide_41_figuredBass.ipynb",
+     251858
+    ],
+    [
+     "music21/chord/__init__.py",
+     196060
+    ],
+    [
+     "documentation/source/usersGuide/usersGuide_07_chords.ipynb",
+     144397
+    ],
+    [
+     "music21/humdrum/spineParser.py",
+     129621
+    ],
+    [
+     "music21/scale/__init__.py",
+     126748
+    ],
+    [
+     "music21/scale/intervalNetwork.py",
+     122483
+    ],
+    [
+     "music21/harmony.py",
+     119493
+    ],
+    [
+     "documentation/source/moduleReference/images/medren_convertHouseStyle_1.jpg",
+     100110
+    ]
+   ]
+  },
+  "carlosholivan_musicaiz": {
+   "relevantBlobs": 52,
+   "top": [
+    [
+     "docs/images/mmm_tokens.png",
+     89446
+    ],
+    [
+     "musicaiz/harmony/keys.py",
+     43313
+    ],
+    [
+     "musicaiz/rhythm/timing.py",
+     19992
+    ],
+    [
+     "musicaiz/harmony/intervals.py",
+     18058
+    ],
+    [
+     "musicaiz/models/transformer_composers/train.py",
+     17924
+    ],
+    [
+     "musicaiz/tokenizers/mmm.py",
+     17777
+    ],
+    [
+     "musicaiz/tokenizers/remi.py",
+     16189
+    ],
+    [
+     "musicaiz/algorithms/harmonic_shift.py",
+     15818
+    ],
+    [
+     "musicaiz/tokenizers/cpword.py",
+     15203
+    ],
+    [
+     "musicaiz/harmony/chords.py",
+     14868
+    ]
+   ]
+  },
+  "Natooz_MidiTok": {
+   "relevantBlobs": 36,
+   "top": [
+    [
+     "docs/assets/transformer.png",
+     497204
+    ],
+    [
+     "docs/assets/Octuple_TS_Rest/tokenized.png",
+     359994
+    ],
+    [
+     "src/miditok/midi_tokenizer.py",
+     168741
+    ],
+    [
+     "src/miditok/tokenizations/remi.py",
+     39886
+    ],
+    [
+     "src/miditok/tokenizations/midi_like.py",
+     37804
+    ],
+    [
+     "src/miditok/tokenizations/cp_word.py",
+     37424
+    ],
+    [
+     "src/miditok/tokenizations/tsd.py",
+     26277
+    ],
+    [
+     "src/miditok/tokenizations/pertok.py",
+     26138
+    ],
+    [
+     "src/miditok/tokenizations/octuple.py",
+     24865
+    ],
+    [
+     "src/miditok/tokenizations/mumidi.py",
+     22295
+    ]
+   ]
+  },
+  "salu133445_muspy": {
+   "relevantBlobs": 35,
+   "top": [
+    [
+     "doc/source/pdf/muspy_marg2022_slides.pdf",
+     1667646
+    ],
+    [
+     "docs/pdf/muspy_marg2022_slides.pdf",
+     1667646
+    ],
+    [
+     "doc/source/pdf/muspy_ismir2020_slides.pdf",
+     960019
+    ],
+    [
+     "docs/pdf/muspy_ismir2020_slides.pdf",
+     960019
+    ],
+    [
+     "docs/_modules/muspy/metrics/metrics.html",
+     68443
+    ],
+    [
+     "docs/doc/metrics.html",
+     40976
+    ],
+    [
+     "docs/metrics.html",
+     38402
+    ],
+    [
+     "docs/classes/chord.html",
+     34522
+    ],
+    [
+     "muspy/metrics/metrics.py",
+     19442
+    ],
+    [
+     "tests/data/musescore-lilypond/03a-Rhythm-Durations.mscx",
+     10493
+    ]
+   ]
+  },
+  "dave4mpls_autoaccompany": {
+   "relevantBlobs": 6,
+   "top": [
+    [
+     "src/react-multiple-checkbox-select/lib/assets/style.css",
+     5290
+    ],
+    [
+     "src/Music/AutoAccompany.js",
+     4663
+    ],
+    [
+     "src/FillRemainderPanel/FillRemainderPanel.js",
+     2235
+    ],
+    [
+     "src/TrackView/TrackStyles.css",
+     1025
+    ],
+    [
+     "src/FillRemainderPanel/FillRemainderPanel.css",
+     740
+    ],
+    [
+     "src/PopupStyles.css",
+     302
+    ]
+   ]
+  },
+  "SuperInstance_fleet-midi-bass": {
+   "relevantBlobs": 0,
+   "top": []
+  },
+  "shimpe_expremigen": {
+   "relevantBlobs": 35,
+   "top": [
+    [
+     "tests/testphrase.py",
+     4356
+    ],
+    [
+     "expremigen/io/phrase.py",
+     4277
+    ],
+    [
+     "examples/twovoicewithchords.py",
+     2485
+    ],
+    [
+     "examples/dualphrase.py",
+     2290
+    ],
+    [
+     "examples/output/pitchbendanimation.mid",
+     2098
+    ],
+    [
+     "examples/pitchbendanimation.py",
+     1867
+    ],
+    [
+     "examples/bwv784_2voice_invention_13.py",
+     1820
+    ],
+    [
+     "examples/singlephrase.py",
+     1692
+    ],
+    [
+     "expremigen/patterns/utils.py",
+     1602
+    ],
+    [
+     "expremigen/patterns/pshuf.py",
+     1275
+    ]
+   ]
+  },
+  "jakebgutierrez_wobblemidi": {
+   "relevantBlobs": 3,
+   "top": [
+    [
+     "wobblemidi_gui/web/style.css",
+     15961
+    ],
+    [
+     "tests/golden/outputs/f2_fill.mid",
+     1443
+    ],
+    [
+     "tests/golden/outputs/f2_velocity_only.mid",
+     1443
+    ]
+   ]
+  },
+  "Metacreation-Lab_MIDI-GPT": {
+   "relevantBlobs": 75,
+   "top": [
+    [
+     "docs/assets/video/track_sampling_drums_calif_density3.mp4",
+     822144
+    ],
+    [
+     "docs/assets/video/track_sampling_drums_calif_density8.mp4",
+     820221
+    ],
+    [
+     "docs/assets/video/track_sampling_drums_dense.mp4",
+     815549
+    ],
+    [
+     "docs/assets/video/track_sampling_drums_sparse.mp4",
+     780258
+    ],
+    [
+     "docs/assets/video/bar_infill_sparse.mp4",
+     763977
+    ],
+    [
+     "docs/assets/video/bar_infill_chordal.mp4",
+     763384
+    ],
+    [
+     "docs/assets/video/track_sampling_drums_calif_density1.mp4",
+     752400
+    ],
+    [
+     "docs/assets/video/infill_allstar_dur_16th.mp4",
+     669366
+    ],
+    [
+     "docs/assets/video/harp_chordal.mp4",
+     665459
+    ],
+    [
+     "docs/assets/video/ar_chordal.mp4",
+     659762
+    ]
+   ]
+  },
+  "ElectricAlexis_NotaGen": {
+   "relevantBlobs": 0,
+   "top": []
+  },
+  "SkyTNT_midi-model": {
+   "relevantBlobs": 2,
+   "top": [
+    [
+     "midi_tokenizer.py",
+     52865
+    ],
+    [
+     "midi_model.py",
+     11551
+    ]
+   ]
+  },
+  "magenta_symbolic-music-diffusion": {
+   "relevantBlobs": 6,
+   "top": [
+    [
+     "utils/metrics.py",
+     7804
+    ],
+    [
+     "models/ncsn.py",
+     5652
+    ],
+    [
+     "scripts/generate_compressed_transform.py",
+     4956
+    ],
+    [
+     "scripts/generate_song_data_beam.py",
+     4050
+    ],
+    [
+     "models/shared.py",
+     2927
+    ],
+    [
+     "models/autoregressive.py",
+     2445
+    ]
+   ]
+  },
+  "mido_mido": {
+   "relevantBlobs": 2,
+   "top": [
+    [
+     "mido/tokenizer.py",
+     2880
+    ],
+    [
+     "tests/test_tokenizer.py",
+     1638
+    ]
+   ]
+  },
+  "craffel_pretty-midi": {
+   "relevantBlobs": 1,
+   "top": [
+    [
+     "examples/chord_catalog.py",
+     1401
+    ]
+   ]
+  }
+ },
+ "nuggets": [
+  {
+   "repo": "jjazzboss/JJazzLab",
+   "license": "LGPL-2.1",
+   "evidenceFiles": [
+    "Rhythms.zip 1.85MB (ritam pattern biblioteka)",
+    "YamahaDefaultFiles.zip 739KB+93KB (Yamaha style fajlovi)",
+    "StyleFileDescription_v21.pdf 303KB (spec)"
+   ],
+   "meaning": "najbogatija stvarna pattern/style baza u OSS aranžeru — studija samo (LGPL)"
+  },
+  {
+   "repo": "AidFTech/Favorites-with-Style",
+   "license": "GPL-3.0",
+   "evidenceFiles": [
+    "fws_style.rs 54KB",
+    "Casm.java 15.8KB"
+   ],
+   "meaning": "Yamaha CASM/style parser (Java+Rust) — dokaz da style-aranžeri postoje samo pod GPL"
+  },
+  {
+   "repo": "Piskocis/Cadenza",
+   "license": "GPL-3.0",
+   "evidenceFiles": [
+    "StyleParser.cpp 77KB",
+    "MidiStyleConverter.cpp 64KB",
+    "StyleEngine.cpp 25KB",
+    "Ai/StyleGenerator.cpp 24KB"
+   ],
+   "meaning": "kompletna aranžer arhitektura (loader/engine/generator) — studija samo (GPL)"
+  },
+  {
+   "repo": "berteh/BandInMuseScore",
+   "license": "GPL-3.0",
+   "evidenceFiles": [
+    "MMA-Styles.md 115KB"
+   ],
+   "meaning": "MMA open-source akompanjman style imenik (GPL engine) — studija samo"
+  },
+  {
+   "repo": "magenta/magenta",
+   "license": "Apache-2.0",
+   "evidenceFiles": [
+    "models/: drums_rnn, melody_rnn, performance_rnn, improv_rnn, music_vae, polyphony_rnn (376 relevant blobs)"
+   ],
+   "meaning": "svi glavni neuralni generatori postoje (TF) — studija modela; nema evidencijskih pravila"
+  },
+  {
+   "repo": "microsoft/muzic",
+   "license": "MIT",
+   "evidenceFiles": [
+    "musecoco/2-attribute2music_model/",
+    "telemelody/",
+    "pdaugment/"
+   ],
+   "meaning": "MIT ali LLM/PyTorch infrastruktura — studija koncepata"
+  },
+  {
+   "repo": "cuthbertLab/music21",
+   "license": "BSD-3-Clause",
+   "evidenceFiles": [
+    "chord/__init__.py 196KB",
+    "scale/__init__.py 127KB",
+    "harmony.py 119KB",
+    "voiceLeading.py 93KB"
+   ],
+   "meaning": "najdublja teorijska baza (akordi/skale/harmonija/voice-leading) — jedini ozbiljan BSD kandidat za studiju uz atribuciju; ne ugrađujemo (velika zavisnost)"
+  },
+  {
+   "repo": "carlosholivan/musicaiz",
+   "license": "AGPL-3.0",
+   "evidenceFiles": [
+    "harmony/keys.py 43KB",
+    "harmony/chords.py 15KB",
+    "algorithms/harmonic_shift.py 16KB",
+    "rhythm/timing.py 18KB"
+   ],
+   "meaning": "AGPL — studija; harmonic_shift je blizak nasoj tercnoj transpoziciji"
+  },
+  {
+   "repo": "dave4mpls/autoaccompany",
+   "license": "MIT",
+   "evidenceFiles": [
+    "src/Music/AutoAccompany.js 4.7KB"
+   ],
+   "meaning": "MIT, mali JS akompanjman — samo ideja"
+  },
+  {
+   "repo": "SuperInstance/fleet-midi-bass",
+   "license": "MIT",
+   "evidenceFiles": [
+    "7 blobs, mali Python bas generator"
+   ],
+   "meaning": "MIT bas-agent — prouciti uz atribuciju ako budemo sirili bas gramatiku"
+  },
+  {
+   "repo": "shimpe/expremigen",
+   "license": "GPL-3.0",
+   "evidenceFiles": [
+    "examples/pitchbendanimation.py",
+    "examples/twovoicewithchords.py",
+    "patterns/prand.py",
+    "patterns/pshuf.py"
+   ],
+   "meaning": "GPL — studija; pitch-bend animacija = primer za slide finese"
+  },
+  {
+   "repo": "jakebgutierrez/wobblemidi",
+   "license": "MIT",
+   "evidenceFiles": [
+    "wobblemidi/profiles/rock.json 16MB"
+   ],
+   "meaning": "VEC ISKORISCEN u 4.54 (baseline/human-groove-rock-derived.json, sha256) — jedini stvarni reuse iz ove liste"
+  }
+ ],
+ "decisions": [
+  "MIT/Apache/BSD: proucavanje i ugradnja uz atribuciju su dozvoljeni; wobblemidi (MIT) vec ugrađen u 4.54; ostali nisu ugrađeni jer nasi moduli (4.52-4.57) pokrivaju potrebu bez zavisnosti.",
+  "GPL/AGPL/LGPL (Cadenza, Favorites-with-Style, BandInMuseScore/MMA, expremigen, musicaiz, JJazzLab): studija samo; file-level nalazi potvrdjuju da aranzer-pattern logika u OSS postoji, ali nijedna nije Korg Pa + evidencijski pristup.",
+  "music21 (BSD) ostaje referenca za teoriju; ne ugrađujemo zbog velicine/zavisnosti."
+ ]
+}

@@ -53,6 +53,34 @@ musicaiz (AGPL, 192★), mgeval, MusPy — nota/harmonija/metrike/IO.
 - Nijedan projekat ne donosi algoritam koji već nemamo: sve što nam treba za
   aranžersku optimizaciju je unutra, testirano i push-ovano.
 
+
+## File-level nalazi (iz samih projekata) — 02-project-file-inventory.json
+
+Dubinski sken stabala 20 repoa (`gh api git/trees`) — šta stvarno leži u
+fajlovima, ne samo u README-u:
+
+- **JJazzLab (LGPL)**: `Rhythms.zip` (1,85 MB ritam-pattern biblioteka),
+  `YamahaDefaultFiles.zip` (stvarni Yamaha style fajlovi), spec PDF. Najbogatija
+  stvarna pattern baza u OSS aranžeru — studija samo.
+- **Cadenza (GPL)** i **Favorites-with-Style (GPL)**: kompletne aranžer
+  arhitekture (`StyleLoader/StyleEngine/StyleGenerator`, `Casm.java` — Yamaha
+  CASM parser). Dokaz da style-aranžeri u OSS postoje, ali pod GPL i bez
+  Korg Pa + evidencijskog pristupa.
+- **BandInMuseScore (GPL)**: `MMA-Styles.md` — imenik MMA akompanjman stilova.
+- **music21 (BSD)**: `chord/` (196 KB), `scale/` (127 KB), `harmony.py`,
+  `voiceLeading.py` — najdublja teorijska baza; kandidat za studiju uz
+  atribuciju, ne za ugradnju (zavisnost).
+- **musicaiz (AGPL)**: `keys.py`, `chords.py`, `harmonic_shift.py` — studija.
+- **magenta / muzic / NotaGen / MIDI-GPT / midi-model**: modeli + tokenizeri
+  (drums_rnn, melody_rnn, performance_rnn, music_vae, musecoco, telemelody...).
+- **wobblemidi (MIT)**: jedini projekat iz ove liste koji smo STVARNO ugradili
+  (4.54: `baseline/human-groove-rock-derived.json`, sha256 provenance).
+
+Reuse odluka je ista kao u tabeli iznad: MIT/Apache/BSD uz atribuciju;
+GPL/AGPL/LGPL studija samo. Nijedan fajl iz GPL/LGPL projekata nije ušao u
+repo; ništa od MIT liste nije potrebno jer naši moduli (4.52–4.57) pokrivaju
+isti posao bez zavisnosti.
+
 ## Zaključak
 
 Ako bi se išlo na „generisanje od nule", studija ide ka magenta/muzic/NotaGen
