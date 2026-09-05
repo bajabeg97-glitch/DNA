@@ -398,7 +398,10 @@ function botText(reply, claims) {
   }
   addBot(card('<div style="white-space:pre-line">'+esc(reply || '')+'</div>' + ch));
 }
+let lastAsked = '';
+function retryLast() { if (lastAsked) askBrain(lastAsked); }
 function askBrain(text) {
+  lastAsked = text;
   addThink();
   sidEnsure()
     .then(() => call('/api/assistant', { method:'POST', headers:{'content-type':'application/json'},
@@ -406,7 +409,13 @@ function askBrain(text) {
     .then((j) => {
       rmThink();
       if (j.newSession) { __sid = j.newSession; localStorage.setItem('dna.sid', __sid); }
-      if (j.error) { botText('Asistent: ' + j.reply, []); return; }
+      if (j.intent === 'error') {
+        const tail = j.error || j._err || '';
+        botText('Asistent: ' + j.reply +
+          (tail ? '<details style="margin-top:6px"><summary>python detalj (za dijagnozu)</summary><pre>' + esc(tail) + '</pre></details>' : '') +
+          '<div class="sugg"><button onclick="retryLast()">↻ Pokušaj ponovo</button></div>', 'DNA Studio');
+        return;
+      }
       if (j.plan) { state.lastPlan = j.plan; renderPlan({ ok: true, report: j.plan }); }
       if (j.applied && j.applied.report) { state.lastPlan = j.applied.report; renderApplied(j.applied); }
       botText(j.reply, j.claims || []);

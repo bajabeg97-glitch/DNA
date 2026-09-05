@@ -217,12 +217,21 @@ function sessionList() {
   }).filter(Boolean).sort((a, b) => b.updated - a.updated);
 }
 async function brainOnce(text, report, historyTail) {
-  const py = await runPython(['dna_midi_studio/assistant_brain.py'], 30000,
-    JSON.stringify({ text: String(text || ''), report: report || null, history: historyTail || [] }));
+  const payload = JSON.stringify({ text: String(text || ''), report: report || null, history: historyTail || [] });
+  let py = await runPython(['dna_midi_studio/assistant_brain.py'], 30000, payload);
+  // retry once: transient python/import hiccups must not surface as a user error
   if (py.code !== 0) {
-    return { intent: 'error', reply: 'Asistent trenutno nije dostupan (python greška).', claims: [], tool: null, _err: (py.err || '').slice(-300) };
+    py = await runPython(['dna_midi_studio/assistant_brain.py'], 30000, payload);
   }
-  try { return JSON.parse(py.out); } catch { return { intent: 'error', reply: 'Asistent je vratio neispravan odgovor.', claims: [], tool: null }; }
+  if (py.code !== 0) {
+    const tail = (py.err || '').split('\n').slice(-6).join('\n').slice(0, 500);
+    console.error('[brain] python failed (code ' + py.code + '):\n' + tail);
+    return { intent: 'error', reply: 'Asistent trenutno nije dostupan (python greška).', claims: [], tool: null, _err: tail };
+  }
+  try { return JSON.parse(py.out); } catch {
+    console.error('[brain] bad JSON out:', (py.out || '').slice(0, 300));
+    return { intent: 'error', reply: 'Asistent je vratio neispravan odgovor.', claims: [], tool: null };
+  }
 }
 async function assistantTurn(text, sid) {
   const sid2 = ensureSession(sid);

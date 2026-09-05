@@ -318,13 +318,29 @@ def answer(text: str, report: dict[str, Any] | None,
 
 
 def _main() -> int:
-    payload = json.load(sys.stdin)
-    text = str(payload.get("text") or "")
-    report = payload.get("report")
-    history = payload.get("history") or []
-    out = answer(text, report, history)
-    sys.stdout.write(json.dumps(out, ensure_ascii=False))
-    return 0
+    """Read JSON on stdin, answer, print JSON.
+
+    Any unexpected failure still prints a structured JSON reply (never a raw
+    python traceback) so the bridge can show a useful message instead of the
+    generic "python greška" — the reason text stays in `_err` for debugging.
+    """
+    try:
+        payload = json.load(sys.stdin)
+        text = str(payload.get("text") or "")
+        report = payload.get("report")
+        history = payload.get("history") or []
+        out = answer(text, report, history)
+        sys.stdout.write(json.dumps(out, ensure_ascii=False))
+        return 0
+    except Exception as exc:  # pragma: no cover - defensive
+        out = {"intent": "error",
+               "reply": "Asistent trenutno nije dostupan (python greška: {}). "
+                        "Pokušaj ponovo ili napiši „pomoć”.".format(
+                            str(exc).splitlines()[0][:120]),
+               "claims": [], "tool": None,
+               "_err": "{}: {}".format(type(exc).__name__, exc)}
+        sys.stdout.write(json.dumps(out, ensure_ascii=False))
+        return 0
 
 
 if __name__ == "__main__":
