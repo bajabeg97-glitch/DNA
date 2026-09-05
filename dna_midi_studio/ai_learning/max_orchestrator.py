@@ -47,8 +47,14 @@ SOURCE_CLASS = {
 class MaxModelRegistry:
     """Machine-readable inventory of every learned model used by MAX orchestration."""
     def __init__(self, project_root: str | Path):
-        self.root = Path(project_root)
+        self.root = Path(project_root).resolve()
+        # Layout-aware resolution: the repository is a flattened export of a
+        # classic workspace (data/, models/, learning_data/).  The registry
+        # therefore searches the flat repo root first, then classic data/ and
+        # models/ dirs when present.  Kept dependency-free on purpose.
         self.data_dir = self.root / "data"
+        bases = [self.root, self.data_dir, self.root / "models"]
+        self._bases = list(dict.fromkeys(b for b in bases))
 
     @staticmethod
     def _file_state(path: Path) -> dict[str, Any]:
@@ -57,18 +63,27 @@ class MaxModelRegistry:
         raw = path.read_bytes()
         return {"present": True, "sha256": sha256(raw).hexdigest(), "bytes": len(raw)}
 
+    @staticmethod
+    def _cleaned(relative_path: str) -> str:
+        parts = [x for x in relative_path.replace("\\", "/").split("/") if x not in ("", ".", "..", "data", "models")]
+        return "/".join(parts)
+
+    def _candidates(self, relative_path: str) -> list[Path]:
+        cleaned = self._cleaned(relative_path)
+        out: list[Path] = []
+        for base in self._bases:
+            for p in (base / cleaned, base / relative_path):
+                if p not in out:
+                    out.append(p)
+        return out
+
     def scan(self) -> dict[str, Any]:
         rows=[]
         for spec in MODEL_SPECS:
-            base = self.data_dir
-            p = (base / spec.relative_path).resolve()
-            # pattern reconstructor lives under project/models, not data/models.
-            if spec.key == "pattern_reconstructor":
-                candidates=[self.root/"models"/"dna-reconstructor-v2"/"dna_reconstruction_model_v2.npz",
-                            self.root/"models"/"dna-reconstructor-v2"/"dna_reconstruction_model_v2.pt",
-                            self.root/"models"/"dna-reconstructor-v1"/"dna_reconstruction_model_v1.npz"]
-                p=next((x for x in candidates if x.exists()), candidates[0])
+            candidates = self._candidates(spec.relative_path)
+            p = next((x for x in candidates if x.exists()), candidates[0]).resolve()
             row=asdict(spec); row.update(self._file_state(p)); row["path"]=str(p.relative_to(self.root)) if p.is_relative_to(self.root) else str(p)
+            row["layoutProbeBases"]=[str(b) for b in self._bases]
             rows.append(row)
         return {
             "schema":"dna-max-model-registry","version":"1.0",
