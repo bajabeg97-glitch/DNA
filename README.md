@@ -2,6 +2,16 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **User Reference Bank 4.65:** tvoje reference klasifikovane u isti 16-step
+> format kao preuzeti korpus — reference-style (22 takta/51 motiv/15 korpus
+> pogodaka), session35 (18/76/8), song19-01 (8/2/2); 6 bubnjarskih redova
+> deljeno između tvojih fajlova. `patternRecognition` je sada u **svakom**
+> Session Pass izveštaju + UI kartica „Prepoznavanje obrazaca (4.65)”.
+> Iskreni izveštaj šta radi/ne radi: `docs/honest-report-4.65.md` +
+> `dna-honest-report-4.65.json` (29 stavki: works / works-limited /
+> by-design / not-built / needs-hardware — npr. A01 nije testiran na fizičkoj
+> Pa800, A03 nikad APPLIED na trenutnim fajlovima, WebAudio A/B nije
+> izgrađen). Testovi: +13; Python 131 + 5 legacy; npm 14/14.
 > **GitHub Copy 4.64:** sken 95 najjačih MIDI/music projekata (9 upita +
 > 7 velikih referenci); po politici permissive licence prekopiran
 > `gvellut/dmp_midi` (MIT) — **468 drum-machine patterna** iz knjiga

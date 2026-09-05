@@ -1,0 +1,22 @@
+{
+ "healthVersion": "4.65",
+ "uiHasRecognitionCard": true,
+ "uiHasRenderer": true,
+ "reportHasRecognition": true,
+ "recSchema": "dna-pattern-recognition",
+ "recBars": 22,
+ "corpusRows": 15,
+ "statuses": [
+  "A01_STY_EXPORT=READY",
+  "A02_PERCUSSION_CC11_GAIN=READY",
+  "A03_ECHO_TERCA=SKIPPED",
+  "A04_STUDIO_FILLS=NEEDS_DECISION",
+  "A05_DEVICE_LOCKED_TRIGGERS=LOCKED"
+ ],
+ "ok": true,
+ "summary": {
+  "GET /api/health": "version 4.65",
+  "GET /": "UI sadrzi 'Prepoznavanje obrazaca (4.65)' karticu + addRecognitionCard renderer",
+  "GET /api/sample-analyze?p=reference-style": "ok:true; report.patternRecognition prisutan (schema dna-pattern-recognition, 22 takta, 15 korpus redova); akcije nepromenjene"
+ }
+}

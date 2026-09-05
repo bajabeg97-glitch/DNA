@@ -1,0 +1,60 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.65",
+  "date": "2026-09-05",
+  "python": "python3.11",
+  "node": "v22.22.3",
+  "suites": [
+    {
+      "command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_session_pass_v462 test_mido_independent_v452 test_pattern_library_v464 test_user_reference_bank_v465",
+      "result": "OK",
+      "tests": 133,
+      "skipped": 3,
+      "note": "102 pre-4.64 + 16 (4.64) + 15 (4.65: bank/classifikacija/recognition/honest-report)"
+    },
+    {
+      "command": "python3.11 -m unittest test_max_registry_v448",
+      "result": "OK",
+      "tests": 5,
+      "note": "legacy MAX registry"
+    },
+    {
+      "command": "npm test (node --test tests/**/*.test.mjs)",
+      "result": "OK",
+      "tests": 14,
+      "note": "version assert -> 4.65"
+    },
+    {
+      "command": "node HTTP e2e -> reports-max-4.65/02-http-recognition.json",
+      "result": "OK",
+      "note": "health 4.65; GET / sadrzi karticu 'Prepoznavanje obrazaca (4.65)'; sample-analyze report nosi patternRecognition (22 takta, 15 corpus redova)"
+    },
+    {
+      "command": "python3.11 -m dna_midi_studio.user_reference_bank --json",
+      "result": "OK",
+      "note": "artifacts-max-4.65/user-reference-bank.json + user-reference-classification.json regenerisani deterministicki"
+    }
+  ],
+  "newForMilestone": {
+    "test_user_reference_bank_v465": {
+      "tests": 15,
+      "covered": [
+        "banka pokriva 3 korisnikove reference",
+        "bar rows su 16-step (regex [01]{16}), ppq*4 razmak",
+        "per-file brojevi zakucani (22/10/51/15, 18/10/76/8, 8/4/2/2)",
+        "patternEntry zrcali korpus semu (4/4 assumed, length 16, gm int)",
+        "reference-style kick == Rock1MeasureB (korpus)",
+        "deljeni redovi izmedju fajlova: 6, iskreno razdvojeni od repeated",
+        "bank deterministicka (digest)",
+        "pattern_recognition deterministicka + digest 16-hex",
+        "self-match vidljiv kad je ulaz bank fajl (51 red)",
+        "session_pass izvestaj sadrzi patternRecognition; akcije nepromenjene; note 4.65",
+        "artifacts validni i konzistentni sa svezim build-om",
+        "sha256 za svaki bank fajl + fajlovi postoje",
+        "modul stdlib-only",
+        "honest report JSON: jedinstveni id-evi, statusi iz vokabulara, 3.1=not-built, 3.3=needs-hardware, 2.1=works-limited",
+        "honest report MD prisutan sa kljucnim sekcijama"
+      ]
+    }
+  }
+}

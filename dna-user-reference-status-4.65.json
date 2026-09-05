@@ -1,0 +1,35 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.65",
+  "status": "complete",
+  "date": "2026-09-05",
+  "phase": "User references classified like the vendored corpus + pattern recognition in full use (Session Pass + UI) + honest report",
+  "summary": "Korisnikove reference (baseline/reference-style.mid, session35-partial-preview.mid, session19-benchmark/song19-01.mid) su klasifikovane u isti kanonski 16-step format kao preuzeti dmp korpus: novi stdlib modul dna_midi_studio/user_reference_bank.py kvantizuje ch9/10 u 16-step redove po taktu, gradi bank (reference-style: 22 takta/10 markera/51 motiv/15 korpus-poklapanja; session35: 18/10/76/8; song19-01: 8/4/2/2; ukupno 48 taktova) i nalazi 6 redova deljenih izmedju fajlova (snare backbeat 0000100000001000 u reference-style i song19-01; kick 1000100010001000 u reference-style i session35). Prepoznavanje je u full upotrebi: svaki Session Pass izvestaj nosi patternRecognition (korpus + user bank, deterministicki digest) i UI prikazuje karticu 'Prepoznavanje obrazaca (4.65)'. Uradjen i iskreni izvestaj sta radi / sta ne radi (docs/honest-report-4.65.md + dna-honest-report-4.65.json, 29 stavki: works / works-limited / by-design / not-built / needs-hardware): krunski nalazi - A01 nije testiran na fizickoj Pa800, A03 nikad APPLIED na trenutnim referencama, device capture ne postoji (A05 LOCKED), WebAudio A/B i React/persistence nisu izgradjeni. Testovi: 15 novih (bank, pinned brojevi, determinizam, session-pass integracija, stdlib-only) + svi stari: python 133 (102+16+15), legacy 5, npm 14/14.",
+  "deliverables": {
+    "dna_midi_studio/user_reference_bank.py": "stdlib: bars_of, bank, classification (repeated vs shared-across-files, iskreno razdvojeno), pattern_recognition za Session Pass",
+    "dna_midi_studio/session_pass.py": "report sada uvek sadrzi patternRecognition (4.65)",
+    "dna_bridge.mjs": "UI kartica 'Prepoznavanje obrazaca (4.65)' u planu; version -> 4.65",
+    "artifacts-max-4.65/user-reference-bank.json": "bank sa bar rows/elementima/sha256/motifima/korpus-match-evima",
+    "artifacts-max-4.65/user-reference-classification.json": "klasifikacija: per-file + repeatedRows + sharedRowsAcrossFiles + digest",
+    "artifacts-max-4.65/recognition-overview.json": "session-pass priznavanje na 4 fajla (3 reference + fixture): matchedCorpusTitles po fajlu",
+    "artifacts-max-4.65/session-pass-reference-style.json": "primer izvestaja sa patternRecognition sekcijom",
+    "docs/honest-report-4.65.md": "iskreni izvestaj (ljudska verzija)",
+    "dna-honest-report-4.65.json": "iskreni izvestaj (strukturisan, 29 stavki + preporuke)",
+    "docs/user-reference-bank-4.65.md": "vodic kroz bank i klasifikaciju",
+    "test_user_reference_bank_v465.py": "15 testova",
+    "reports-max-4.65/03-tests.json": "test run report",
+    "README.md": "bullet za 4.65"
+  },
+  "tests": {
+    "python": { "result": "OK", "tests": 133, "skipped": 3, "note": "102 + 16 (4.64) + 15 (4.65)" },
+    "pythonLegacy": { "result": "OK", "tests": 5 },
+    "npm": { "result": "OK", "tests": 14 }
+  },
+  "honestHighlights": {
+    "works": ["chain", "gates", "STY shape", "CC11 plan", "groove evidence", "468 corpus", "user bank + shared rows", "recognition in reports/UI", "determinism", "licenses", "green suites"],
+    "limited": ["A01 nije fizicki testiran na Pa800", "A02 samo gde CC11 postoji", "A03 nikad APPLIED na trenutnim referencama", "recognition: 16-step/4-4/GM/exact only; swing perc i niske note 16-21 van opsega", "bank: 3 fajla (song19-02..20 nisu jos ukljuceni)", "UI = imitacija AI (regex), ne LLM", "legacy test arhiva ne radi u cistom checkout-u"],
+    "byDesign": ["A04 NEEDS_DECISION", "A05 LOCKED do device capture", "bez generisanja od nule"],
+    "notBuilt": ["WebAudio A/B (Faza D)", "React skin + persistence", "veliki dataset-i (licence)", "CI/CD"],
+    "needsHardware": ["device capture/warrant ledger", "FACTORY velocity sa uredjaja", "fizicki Pa800 import test"]
+  }
+}

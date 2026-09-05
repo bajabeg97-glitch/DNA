@@ -1,0 +1,1375 @@
+{
+  "schema": "dna-session-pass",
+  "version": "4.60",
+  "sourceName": "reference-style.mid",
+  "sourceSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "fileFacts": {
+    "format": 0,
+    "ppq": 480,
+    "tracks": 1,
+    "channels": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "markers": [
+      "i1cv1",
+      "i2cv1",
+      "v1cv1",
+      "v2cv1",
+      "v3cv1",
+      "v4cv1",
+      "f1cv1",
+      "f2cv1",
+      "e1cv1",
+      "e2cv1"
+    ],
+    "markerCount": 10,
+    "elementsInStyle": 10
+  },
+  "roleMapUsed": {
+    "8": "bass",
+    "9": "drums",
+    "10": "percussion",
+    "11": "accompaniment",
+    "12": "accompaniment",
+    "13": "accompaniment",
+    "14": "accompaniment",
+    "15": "accompaniment"
+  },
+  "unclassifiedChannels": [],
+  "perRolePatterns": {
+    "8": {
+      "role": "bass",
+      "channel": 8,
+      "noteCount": 107,
+      "register": [
+        34,
+        55
+      ],
+      "densityNotesPerBar": 4.86,
+      "velocity": {
+        "n": 107,
+        "min": 97.0,
+        "max": 126.0,
+        "mean": 116.3,
+        "q20": 114.0,
+        "q50": 119.0,
+        "q80": 120.0,
+        "std": 7.7
+      },
+      "durationTicks": {
+        "n": 107,
+        "min": 40.0,
+        "max": 735.0,
+        "mean": 222.0,
+        "q20": 115.0,
+        "q50": 160.0,
+        "q80": 380.0,
+        "std": 154.1
+      },
+      "gateRatio": {
+        "n": 107,
+        "min": 0.123,
+        "max": 0.958,
+        "mean": 0.569,
+        "q20": 0.354,
+        "q50": 0.562,
+        "q80": 0.729,
+        "std": 0.208
+      },
+      "onsetGapTicks": {
+        "n": 106,
+        "min": 110.0,
+        "max": 960.0,
+        "mean": 396.2,
+        "q20": 240.0,
+        "q50": 250.0,
+        "q80": 720.0,
+        "std": 227.4
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.075,
+      "shortGateShare": 0.168
+    },
+    "9": {
+      "role": "drums",
+      "channel": 9,
+      "noteCount": 263,
+      "register": [
+        16,
+        79
+      ],
+      "densityNotesPerBar": 11.95,
+      "velocity": {
+        "n": 263,
+        "min": 36.0,
+        "max": 127.0,
+        "mean": 108.2,
+        "q20": 87.0,
+        "q50": 114.0,
+        "q80": 124.0,
+        "std": 18.9
+      },
+      "durationTicks": {
+        "n": 263,
+        "min": 15.0,
+        "max": 620.0,
+        "mean": 113.7,
+        "q20": 55.0,
+        "q50": 95.0,
+        "q80": 160.0,
+        "std": 84.7
+      },
+      "gateRatio": {
+        "n": 263,
+        "min": 0.03,
+        "max": 1.0,
+        "mean": 0.474,
+        "q20": 0.229,
+        "q50": 0.375,
+        "q80": 0.792,
+        "std": 0.282
+      },
+      "onsetGapTicks": {
+        "n": 262,
+        "min": 60.0,
+        "max": 1560.0,
+        "mean": 254.7,
+        "q20": 240.0,
+        "q50": 240.0,
+        "q80": 240.0,
+        "std": 158.1
+      },
+      "polyphonyPeak": 3,
+      "graceShortNoteShare": 0.243,
+      "shortGateShare": 0.449
+    },
+    "10": {
+      "role": "percussion",
+      "channel": 10,
+      "noteCount": 589,
+      "register": [
+        17,
+        69
+      ],
+      "densityNotesPerBar": 26.77,
+      "velocity": {
+        "n": 589,
+        "min": 36.0,
+        "max": 127.0,
+        "mean": 101.1,
+        "q20": 68.0,
+        "q50": 114.0,
+        "q80": 123.0,
+        "std": 26.4
+      },
+      "durationTicks": {
+        "n": 589,
+        "min": 10.0,
+        "max": 1495.0,
+        "mean": 87.5,
+        "q20": 55.0,
+        "q50": 60.0,
+        "q80": 80.0,
+        "std": 166.2
+      },
+      "gateRatio": {
+        "n": 589,
+        "min": 0.035,
+        "max": 1.0,
+        "mean": 0.695,
+        "q20": 0.292,
+        "q50": 0.812,
+        "q80": 1.0,
+        "std": 0.329
+      },
+      "onsetGapTicks": {
+        "n": 587,
+        "min": 5.0,
+        "max": 240.0,
+        "mean": 123.1,
+        "q20": 75.0,
+        "q50": 80.0,
+        "q80": 235.0,
+        "std": 86.7
+      },
+      "polyphonyPeak": 4,
+      "graceShortNoteShare": 0.52,
+      "shortGateShare": 0.309
+    },
+    "11": {
+      "role": "accompaniment",
+      "channel": 11,
+      "noteCount": 213,
+      "register": [
+        43,
+        79
+      ],
+      "densityNotesPerBar": 9.68,
+      "velocity": {
+        "n": 213,
+        "min": 78.0,
+        "max": 124.0,
+        "mean": 104.4,
+        "q20": 103.0,
+        "q50": 106.0,
+        "q80": 109.0,
+        "std": 13.0
+      },
+      "durationTicks": {
+        "n": 213,
+        "min": 5.0,
+        "max": 1910.0,
+        "mean": 210.4,
+        "q20": 35.0,
+        "q50": 60.0,
+        "q80": 250.0,
+        "std": 369.5
+      },
+      "gateRatio": {
+        "n": 213,
+        "min": 0.021,
+        "max": 1.0,
+        "mean": 0.53,
+        "q20": 0.139,
+        "q50": 0.5,
+        "q80": 1.0,
+        "std": 0.35
+      },
+      "onsetGapTicks": {
+        "n": 212,
+        "min": 5.0,
+        "max": 1925.0,
+        "mean": 203.5,
+        "q20": 35.0,
+        "q50": 120.0,
+        "q80": 240.0,
+        "std": 281.2
+      },
+      "polyphonyPeak": 2,
+      "graceShortNoteShare": 0.526,
+      "shortGateShare": 0.347
+    },
+    "12": {
+      "role": "accompaniment",
+      "channel": 12,
+      "noteCount": 272,
+      "register": [
+        52,
+        84
+      ],
+      "densityNotesPerBar": 12.36,
+      "velocity": {
+        "n": 272,
+        "min": 78.0,
+        "max": 124.0,
+        "mean": 100.4,
+        "q20": 81.0,
+        "q50": 103.0,
+        "q80": 109.0,
+        "std": 15.1
+      },
+      "durationTicks": {
+        "n": 272,
+        "min": 5.0,
+        "max": 1890.0,
+        "mean": 184.4,
+        "q20": 5.0,
+        "q50": 70.0,
+        "q80": 375.0,
+        "std": 276.8
+      },
+      "gateRatio": {
+        "n": 272,
+        "min": 0.007,
+        "max": 1.0,
+        "mean": 0.569,
+        "q20": 0.083,
+        "q50": 0.667,
+        "q80": 1.0,
+        "std": 0.397
+      },
+      "onsetGapTicks": {
+        "n": 271,
+        "min": 5.0,
+        "max": 1065.0,
+        "mean": 178.2,
+        "q20": 15.0,
+        "q50": 165.0,
+        "q80": 240.0,
+        "std": 189.5
+      },
+      "polyphonyPeak": 3,
+      "graceShortNoteShare": 0.445,
+      "shortGateShare": 0.441
+    },
+    "13": {
+      "role": "accompaniment",
+      "channel": 13,
+      "noteCount": 254,
+      "register": [
+        60,
+        91
+      ],
+      "densityNotesPerBar": 11.55,
+      "velocity": {
+        "n": 254,
+        "min": 66.0,
+        "max": 124.0,
+        "mean": 100.1,
+        "q20": 78.0,
+        "q50": 104.0,
+        "q80": 108.0,
+        "std": 16.7
+      },
+      "durationTicks": {
+        "n": 254,
+        "min": 10.0,
+        "max": 280.0,
+        "mean": 74.4,
+        "q20": 55.0,
+        "q50": 60.0,
+        "q80": 90.0,
+        "std": 31.7
+      },
+      "gateRatio": {
+        "n": 254,
+        "min": 0.051,
+        "max": 1.0,
+        "mean": 0.486,
+        "q20": 0.347,
+        "q50": 0.5,
+        "q80": 0.636,
+        "std": 0.165
+      },
+      "onsetGapTicks": {
+        "n": 253,
+        "min": 45.0,
+        "max": 480.0,
+        "mean": 166.0,
+        "q20": 120.0,
+        "q50": 120.0,
+        "q80": 240.0,
+        "std": 77.5
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.535,
+      "shortGateShare": 0.205
+    },
+    "14": {
+      "role": "accompaniment",
+      "channel": 14,
+      "noteCount": 242,
+      "register": [
+        67,
+        96
+      ],
+      "densityNotesPerBar": 11.0,
+      "velocity": {
+        "n": 242,
+        "min": 66.0,
+        "max": 124.0,
+        "mean": 101.5,
+        "q20": 86.0,
+        "q50": 104.0,
+        "q80": 108.0,
+        "std": 15.0
+      },
+      "durationTicks": {
+        "n": 242,
+        "min": 10.0,
+        "max": 100.0,
+        "mean": 57.6,
+        "q20": 50.0,
+        "q50": 60.0,
+        "q80": 70.0,
+        "std": 18.6
+      },
+      "gateRatio": {
+        "n": 242,
+        "min": 0.021,
+        "max": 1.0,
+        "mean": 0.412,
+        "q20": 0.25,
+        "q50": 0.5,
+        "q80": 0.5,
+        "std": 0.19
+      },
+      "onsetGapTicks": {
+        "n": 241,
+        "min": 60.0,
+        "max": 600.0,
+        "mean": 172.8,
+        "q20": 120.0,
+        "q50": 120.0,
+        "q80": 240.0,
+        "std": 111.7
+      },
+      "polyphonyPeak": 1,
+      "graceShortNoteShare": 0.748,
+      "shortGateShare": 0.31
+    },
+    "15": {
+      "role": "accompaniment",
+      "channel": 15,
+      "noteCount": 141,
+      "register": [
+        48,
+        84
+      ],
+      "densityNotesPerBar": 6.41,
+      "velocity": {
+        "n": 141,
+        "min": 78.0,
+        "max": 124.0,
+        "mean": 103.4,
+        "q20": 81.0,
+        "q50": 106.0,
+        "q80": 122.0,
+        "std": 16.8
+      },
+      "durationTicks": {
+        "n": 141,
+        "min": 20.0,
+        "max": 1910.0,
+        "mean": 187.5,
+        "q20": 50.0,
+        "q50": 80.0,
+        "q80": 185.0,
+        "std": 299.2
+      },
+      "gateRatio": {
+        "n": 141,
+        "min": 0.073,
+        "max": 1.0,
+        "mean": 0.427,
+        "q20": 0.208,
+        "q50": 0.312,
+        "q80": 0.688,
+        "std": 0.268
+      },
+      "onsetGapTicks": {
+        "n": 140,
+        "min": 20.0,
+        "max": 2720.0,
+        "mean": 382.1,
+        "q20": 120.0,
+        "q50": 240.0,
+        "q80": 360.0,
+        "std": 435.9
+      },
+      "polyphonyPeak": 3,
+      "graceShortNoteShare": 0.277,
+      "shortGateShare": 0.567
+    }
+  },
+  "grooveVsHuman": [
+    {
+      "channel": 9,
+      "role": "drums",
+      "noteCount": 263,
+      "stdMs": 6.64,
+      "exactOnGridShare": 0.9886
+    },
+    {
+      "channel": 10,
+      "role": "percussion",
+      "noteCount": 589,
+      "stdMs": 22.24,
+      "exactOnGridShare": 0.2818
+    }
+  ],
+  "techniqueCandidates": [
+    {
+      "channel": 8,
+      "role": "bass",
+      "counts": {
+        "total": 107,
+        "perLabel": {
+          "sustain": 49,
+          "short-mid": 29,
+          "ghost-candidate": 16,
+          "short-accent-mid": 6,
+          "slap-candidate": 5,
+          "pop-candidate": 2
+        }
+      }
+    },
+    {
+      "channel": 11,
+      "role": "rhythm-guitar",
+      "counts": {
+        "total": 205,
+        "perLabel": {
+          "sustain": 109,
+          "single-string-candidate": 88,
+          "open-strum": 4,
+          "accent-stroke": 4
+        }
+      }
+    }
+  ],
+  "echoScan": {
+    "run": false,
+    "reason": "no solo/lead channel present"
+  },
+  "mixPlan": {
+    "targets": {
+      "10": 0.55
+    },
+    "eventsPlanned": 10,
+    "channelsMissingCC": []
+  },
+  "actions": [
+    {
+      "id": "A01_STY_EXPORT",
+      "engine": "sty_mapper 4.53",
+      "status": "READY",
+      "evidence": {
+        "markers": 10,
+        "addedTotal": 0,
+        "cc11Added": [],
+        "setupsAdded": []
+      },
+      "effect": "Pa800-importable SMF0 with per-element setup",
+      "gates": {
+        "smf0": true,
+        "singleTrack": true,
+        "markersRecognized": true,
+        "markersStrictlyIncreasing": true,
+        "markersOnBarGrid": true,
+        "markersMatchLayout": true,
+        "noteGeometryUnchanged": true,
+        "reparsed": true
+      }
+    },
+    {
+      "id": "A02_PERCUSSION_CC11_GAIN",
+      "engine": "mix_engine 4.52",
+      "status": "READY",
+      "evidence": {
+        "targets": {
+          "10": 0.55
+        },
+        "eventsPlanned": 10,
+        "gainFactor": 0.55,
+        "noteVelocitiesUntouched": true
+      },
+      "effect": "per-channel CC11 expression scaled -45% on percussion",
+      "gates": {
+        "reparsed": true,
+        "noteGeometryUnchanged": true,
+        "velocitiesUntouched": true,
+        "onlyTargetChannelCCScaled": true,
+        "exactScaleApplied": true,
+        "maskingWindowsUnchanged": true
+      }
+    },
+    {
+      "id": "A03_ECHO_TERCA",
+      "engine": "special_track_engine 4.57",
+      "status": "SKIPPED",
+      "reason": "no solo/lead channel present"
+    },
+    {
+      "id": "A04_STUDIO_FILLS",
+      "engine": "studio_flow 4.50-4.51",
+      "status": "NEEDS_DECISION",
+      "reason": "legal only in empty, warranted slots of a chosen target channel; requires user decision + chord context"
+    },
+    {
+      "id": "A05_DEVICE_LOCKED_TRIGGERS",
+      "engine": "instrument_techniques 4.55",
+      "status": "LOCKED",
+      "reason": "slap/pop/guitar-mode/DNC triggers require an exact sound profile + device capture (warrant ledger); never emitted",
+      "evidence": {
+        "emittedTriggers": 0
+      }
+    }
+  ],
+  "gatesSummary": {
+    "readOnly": true,
+    "techniqueRunsGates": [
+      {},
+      {}
+    ],
+    "mix": {
+      "reparsed": true,
+      "noteGeometryUnchanged": true,
+      "velocitiesUntouched": true,
+      "onlyTargetChannelCCScaled": true,
+      "exactScaleApplied": true,
+      "maskingWindowsUnchanged": true
+    },
+    "sty": {
+      "smf0": true,
+      "singleTrack": true,
+      "markersRecognized": true,
+      "markersStrictlyIncreasing": true,
+      "markersOnBarGrid": true,
+      "markersMatchLayout": true,
+      "noteGeometryUnchanged": true,
+      "reparsed": true
+    }
+  },
+  "patternRecognition": {
+    "schema": "dna-pattern-recognition",
+    "version": "4.65",
+    "sourceName": "reference-style.mid",
+    "note": "16-step rows on channels 9/10, 4/4 bar grid, exact matches only; non-GM or swung tracks may legitimately match nothing",
+    "barsAnalyzed": 22,
+    "corpusMatches": {
+      "36:1000001010100010": {
+        "gm": 36,
+        "row": "1000001010100010",
+        "titles": [
+          "Patterns_200:Rock1MeasureB",
+          "Patterns_260:Rock7"
+        ]
+      },
+      "49:1000000000000000": {
+        "gm": 49,
+        "row": "1000000000000000",
+        "titles": [
+          "Patterns_200:EndingsMeasureA",
+          "Patterns_260:AfroCubBreak2",
+          "Patterns_260:PopBreak3",
+          "Patterns_260:PopBreak6",
+          "Patterns_260:RockBreak7",
+          "Patterns_260:RnbBreak3"
+        ]
+      },
+      "36:1000001010000000": {
+        "gm": 36,
+        "row": "1000001010000000",
+        "titles": [
+          "Patterns_200:Rock1MeasureA",
+          "Patterns_200:Rock5MeasureB",
+          "Patterns_200:Ballad1MeasureA",
+          "Patterns_260:Rock3",
+          "Patterns_260:Rock11",
+          "Patterns_260:RockBreak1"
+        ]
+      },
+      "38:0000100000001000": {
+        "gm": 38,
+        "row": "0000100000001000",
+        "titles": [
+          "Patterns_200:Rock1MeasureA",
+          "Patterns_200:Rock1MeasureB",
+          "Patterns_200:Rock2MeasureA",
+          "Patterns_200:Rock3MeasureA",
+          "Patterns_200:Rock3MeasureB",
+          "Patterns_200:Rock4MeasureA",
+          "Patterns_200:Rock5MeasureA",
+          "Patterns_200:Rock5MeasureB",
+          "Patterns_200:Funk1MeasureA",
+          "Patterns_200:Funk1MeasureB",
+          "Patterns_200:Funk2MeasureA",
+          "Patterns_200:Funk4MeasureA",
+          "Patterns_200:Funk7MeasureA",
+          "Patterns_200:Funk9MeasureA",
+          "Patterns_200:Funk9MeasureB",
+          "Patterns_200:Funk10MeasureA",
+          "Patterns_200:Funk10MeasureB",
+          "Patterns_200:Funk11MeasureA",
+          "Patterns_200:Funk11MeasureB",
+          "Patterns_200:Funk12MeasureA",
+          "Patterns_200:Funk12MeasureB",
+          "Patterns_200:Funk14MeasureA",
+          "Patterns_200:Funk14MeasureB",
+          "Patterns_200:Rhythm&Blues2MeasureA",
+          "Patterns_200:Rhythm&Blues3MeasureA",
+          "Patterns_200:Rhythm&Blues5MeasureB",
+          "Patterns_200:Ballad1MeasureA",
+          "Patterns_200:Ballad1MeasureB",
+          "Patterns_200:Ballad2MeasureA",
+          "Patterns_200:Ballad2MeasureB",
+          "Patterns_200:Ballad3MeasureB",
+          "Patterns_200:Ballad4MeasureA",
+          "Patterns_200:Ballad4MeasureB",
+          "Patterns_200:Ballad5MeasureA",
+          "Patterns_200:Ballad5MeasureB",
+          "Patterns_200:Pop3MeasureB",
+          "Patterns_200:Disco1MeasureA",
+          "Patterns_200:Disco2MeasureA",
+          "Patterns_200:Disco2MeasureB",
+          "Patterns_200:Disco3MeasureA",
+          "Patterns_200:Disco3MeasureB",
+          "Patterns_200:Disco4MeasureA",
+          "Patterns_200:Disco5MeasureA",
+          "Patterns_200:Disco5MeasureB",
+          "Patterns_200:Samba3MeasureA",
+          "Patterns_200:SkaMeasureA",
+          "Patterns_200:SkaMeasureB",
+          "Patterns_260:Boogie1",
+          "Patterns_260:Boogie2",
+          "Patterns_260:Disco1",
+          "Patterns_260:Disco7",
+          "Patterns_260:Disco9",
+          "Patterns_260:Disco11",
+          "Patterns_260:Charleston1",
+          "Patterns_260:Pop1",
+          "Patterns_260:Pop2",
+          "Patterns_260:Pop3",
+          "Patterns_260:Pop4",
+          "Patterns_260:Pop5",
+          "Patterns_260:Pop6",
+          "Patterns_260:Pop8",
+          "Patterns_260:Pop12",
+          "Patterns_260:Rock1",
+          "Patterns_260:Rock2",
+          "Patterns_260:Rock4",
+          "Patterns_260:Rock5",
+          "Patterns_260:Rock6",
+          "Patterns_260:Rock10",
+          "Patterns_260:Rock13",
+          "Patterns_260:Rock14",
+          "Patterns_260:Rock14",
+          "Patterns_260:Rnb3",
+          "Patterns_260:Rnb5",
+          "Patterns_260:Rnb6",
+          "Patterns_260:Rnb8",
+          "Patterns_260:Rnb9",
+          "Patterns_260:Rnb12",
+          "Patterns_260:Ska1",
+          "Patterns_260:Ska2",
+          "Patterns_260:Ska3",
+          "Patterns_260:Slow1",
+          "Patterns_260:Slow2",
+          "Patterns_260:Slow3",
+          "Patterns_260:Slow4",
+          "Patterns_260:Slow5",
+          "Patterns_260:Slow10",
+          "Patterns_260:Slow11",
+          "Patterns_260:Slow12",
+          "Patterns_260:SlowBreak6"
+        ]
+      },
+      "36:1000100010001000": {
+        "gm": 36,
+        "row": "1000100010001000",
+        "titles": [
+          "Patterns_200:Rock4MeasureA",
+          "Patterns_200:Rock4MeasureB",
+          "Patterns_200:Rock4Break",
+          "Patterns_200:Pop5Break",
+          "Patterns_200:Reggae3MeasureB",
+          "Patterns_200:Reggae5MeasureA",
+          "Patterns_200:Reggae5MeasureB",
+          "Patterns_200:Disco1MeasureA",
+          "Patterns_200:Disco1MeasureB",
+          "Patterns_200:Disco1Break",
+          "Patterns_200:Disco2MeasureA",
+          "Patterns_200:Disco2MeasureB",
+          "Patterns_200:Disco2Break",
+          "Patterns_200:Disco3MeasureA",
+          "Patterns_200:Disco3MeasureB",
+          "Patterns_200:Disco3Break",
+          "Patterns_200:Disco4MeasureA",
+          "Patterns_200:Disco4Break",
+          "Patterns_200:Disco5MeasureA",
+          "Patterns_200:Disco5MeasureB",
+          "Patterns_200:Disco5Break",
+          "Patterns_200:SkaMeasureB",
+          "Patterns_260:AfroCub5",
+          "Patterns_260:AfroCub6",
+          "Patterns_260:AfroCub8",
+          "Patterns_260:AfroCub9",
+          "Patterns_260:Disco1",
+          "Patterns_260:Disco1",
+          "Patterns_260:Disco2",
+          "Patterns_260:Disco4",
+          "Patterns_260:Disco5",
+          "Patterns_260:Disco7",
+          "Patterns_260:Disco8",
+          "Patterns_260:Disco9",
+          "Patterns_260:Disco10",
+          "Patterns_260:March1",
+          "Patterns_260:March2",
+          "Patterns_260:MarchBreak2",
+          "Patterns_260:Tango1",
+          "Patterns_260:Paso1",
+          "Patterns_260:Paso2",
+          "Patterns_260:PasoBreak1",
+          "Patterns_260:PasoBreak2",
+          "Patterns_260:Reggae1",
+          "Patterns_260:Reggae5",
+          "Patterns_260:Reggae10",
+          "Patterns_260:RockBreak8",
+          "Patterns_260:Ska3",
+          "Patterns_260:SkaBreak3"
+        ]
+      },
+      "42:1010101010101010": {
+        "gm": 42,
+        "row": "1010101010101010",
+        "titles": [
+          "Patterns_200:Rock3MeasureA",
+          "Patterns_200:Rock3MeasureB",
+          "Patterns_200:Rock4MeasureA",
+          "Patterns_200:Rock4MeasureB",
+          "Patterns_200:Funk1MeasureA",
+          "Patterns_200:Funk5MeasureA",
+          "Patterns_200:Funk14MeasureA",
+          "Patterns_200:Funk14MeasureB",
+          "Patterns_200:Rhythm&Blues1MeasureA",
+          "Patterns_200:Rhythm&Blues1MeasureB",
+          "Patterns_200:Rhythm&Blues2MeasureA",
+          "Patterns_200:Rhythm&Blues2MeasureB",
+          "Patterns_200:Rhythm&Blues3MeasureA",
+          "Patterns_200:Rhythm&Blues5MeasureA",
+          "Patterns_200:Rhythm&Blues5MeasureB",
+          "Patterns_200:Ballad1MeasureA",
+          "Patterns_200:Ballad1MeasureB",
+          "Patterns_200:Ballad2MeasureB",
+          "Patterns_200:Ballad3MeasureB",
+          "Patterns_200:Ballad4MeasureA",
+          "Patterns_200:Ballad4MeasureB",
+          "Patterns_200:Pop1MeasureA",
+          "Patterns_200:Pop1MeasureB",
+          "Patterns_200:BossaNova1MeasureA",
+          "Patterns_200:BossaNova1MeasureB",
+          "Patterns_200:Twist1MeasureA",
+          "Patterns_200:SkaMeasureA",
+          "Patterns_260:AfroCub3",
+          "Patterns_260:AfroCub4",
+          "Patterns_260:AfroCub7",
+          "Patterns_260:Bossa2",
+          "Patterns_260:ChaCha3",
+          "Patterns_260:Disco12",
+          "Patterns_260:Pop1",
+          "Patterns_260:Pop2",
+          "Patterns_260:Pop4",
+          "Patterns_260:Pop5",
+          "Patterns_260:Pop6",
+          "Patterns_260:Reggae5",
+          "Patterns_260:Reggae6",
+          "Patterns_260:Reggae12",
+          "Patterns_260:Rock1",
+          "Patterns_260:Rock2",
+          "Patterns_260:Rock3",
+          "Patterns_260:Rock4",
+          "Patterns_260:Rock5",
+          "Patterns_260:Rock6",
+          "Patterns_260:Rock7",
+          "Patterns_260:Rock8",
+          "Patterns_260:Rock9",
+          "Patterns_260:Rock10",
+          "Patterns_260:Rock11",
+          "Patterns_260:Rock12",
+          "Patterns_260:Rnb1",
+          "Patterns_260:Rnb2",
+          "Patterns_260:Rnb3",
+          "Patterns_260:Rnb4",
+          "Patterns_260:Rnb5",
+          "Patterns_260:Rnb6",
+          "Patterns_260:Ska2",
+          "Patterns_260:Slow1",
+          "Patterns_260:Slow2",
+          "Patterns_260:Slow5",
+          "Patterns_260:Slow8",
+          "Patterns_260:Twist3"
+        ]
+      },
+      "43:0000001000000000": {
+        "gm": 43,
+        "row": "0000001000000000",
+        "titles": [
+          "Patterns_260:BossaBreak3",
+          "Patterns_260:FunkBreak10",
+          "Patterns_260:PopBreak5",
+          "Patterns_260:Ending3"
+        ]
+      },
+      "42:1111111111111111": {
+        "gm": 42,
+        "row": "1111111111111111",
+        "titles": [
+          "Patterns_200:Funk3MeasureA",
+          "Patterns_200:Funk3MeasureB",
+          "Patterns_200:Rhythm&Blues4MeasureA",
+          "Patterns_200:Ballad5MeasureB",
+          "Patterns_200:Reggae1MeasureA",
+          "Patterns_200:Reggae1MeasureB",
+          "Patterns_200:Disco1MeasureA",
+          "Patterns_200:Samba3MeasureA",
+          "Patterns_260:Rock13",
+          "Patterns_260:Rock14"
+        ]
+      },
+      "43:0000000000000010": {
+        "gm": 43,
+        "row": "0000000000000010",
+        "titles": [
+          "Patterns_200:Afro-Cuban3MeasureA",
+          "Patterns_200:Afro-Cuban4MeasureB",
+          "Patterns_200:Afro-Cuban5MeasureA",
+          "Patterns_200:Afro-Cuban5Break",
+          "Patterns_260:AfroCub2",
+          "Patterns_260:AfroCub3",
+          "Patterns_260:AfroCub7",
+          "Patterns_260:AfroCubBreak1",
+          "Patterns_260:ChaCha2",
+          "Patterns_260:Funk2",
+          "Patterns_260:FunkBreak11",
+          "Patterns_260:RockBreak6",
+          "Patterns_260:RnbBreak1",
+          "Patterns_260:SkaBreak3"
+        ]
+      },
+      "47:0000000000000100": {
+        "gm": 47,
+        "row": "0000000000000100",
+        "titles": [
+          "Patterns_260:FunkBreak11"
+        ]
+      },
+      "36:1000000010000000": {
+        "gm": 36,
+        "row": "1000000010000000",
+        "titles": [
+          "Patterns_200:Rhythm&Blues4MeasureB",
+          "Patterns_200:Ballad2Break",
+          "Patterns_200:Afro-Cuban1MeasureA",
+          "Patterns_200:Afro-Cuban2MeasureA",
+          "Patterns_200:Afro-Cuban3MeasureB",
+          "Patterns_200:Afro-Cuban4MeasureB",
+          "Patterns_200:Afro-Cuban5MeasureA",
+          "Patterns_200:Twist1MeasureA",
+          "Patterns_200:Twist2MeasureA",
+          "Patterns_200:Twist2Break",
+          "Patterns_200:SkaMeasureA",
+          "Patterns_260:AfroCub3",
+          "Patterns_260:AfroCub4",
+          "Patterns_260:Charleston1",
+          "Patterns_260:CharlestonBreak1",
+          "Patterns_260:PopBreak3",
+          "Patterns_260:RockBreak2",
+          "Patterns_260:RockBreak9",
+          "Patterns_260:RockBreak12",
+          "Patterns_260:Ska1",
+          "Patterns_260:Ska2",
+          "Patterns_260:SkaBreak2",
+          "Patterns_260:Twist2",
+          "Patterns_260:Twist3"
+        ]
+      },
+      "46:0010001000100010": {
+        "gm": 46,
+        "row": "0010001000100010",
+        "titles": [
+          "Patterns_200:Rock3Break",
+          "Patterns_200:Rhythm&Blues4MeasureB",
+          "Patterns_200:Disco4Break",
+          "Patterns_260:Pop8",
+          "Patterns_260:Rnb9",
+          "Patterns_260:Rnb10",
+          "Patterns_260:Rnb12",
+          "Patterns_260:SkaBreak3",
+          "Patterns_260:Slow7"
+        ]
+      },
+      "38:0010001000000000": {
+        "gm": 38,
+        "row": "0010001000000000",
+        "titles": [
+          "Patterns_260:PopBreak3"
+        ]
+      },
+      "46:0000000000100010": {
+        "gm": 46,
+        "row": "0000000000100010",
+        "titles": [
+          "Patterns_260:Disco5",
+          "Patterns_260:Disco6",
+          "Patterns_260:Funk8",
+          "Patterns_260:Pop9",
+          "Patterns_260:Slow6"
+        ]
+      },
+      "38:0010000000001000": {
+        "gm": 38,
+        "row": "0010000000001000",
+        "titles": [
+          "Patterns_260:Funk1",
+          "Patterns_260:Rock11",
+          "Patterns_260:RockBreak7"
+        ]
+      }
+    },
+    "userReferenceMatches": {
+      "17:0011101000111010": {
+        "gm": 17,
+        "row": "0011101000111010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "18:0010001000100010": {
+        "gm": 18,
+        "row": "0010001000100010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "21:0011101000111010": {
+        "gm": 21,
+        "row": "0011101000111010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "36:1000001010100010": {
+        "gm": 36,
+        "row": "1000001010100010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "38:0000100000001100": {
+        "gm": 38,
+        "row": "0000100000001100",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "42:1010101010001010": {
+        "gm": 42,
+        "row": "1010101010001010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "46:0000000000100000": {
+        "gm": 46,
+        "row": "0000000000100000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "49:1000000000000000": {
+        "gm": 49,
+        "row": "1000000000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "54:1000000000000000": {
+        "gm": 54,
+        "row": "1000000000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "36:1000001010000000": {
+        "gm": 36,
+        "row": "1000001010000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "38:0000100000001000": {
+        "gm": 38,
+        "row": "0000100000001000",
+        "userFiles": [
+          "reference-style.mid",
+          "song19-01.mid"
+        ]
+      },
+      "57:1000000000000000": {
+        "gm": 57,
+        "row": "1000000000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "36:1000100010001000": {
+        "gm": 36,
+        "row": "1000100010001000",
+        "userFiles": [
+          "reference-style.mid",
+          "session35-partial-preview.mid"
+        ]
+      },
+      "38:0010001000100010": {
+        "gm": 38,
+        "row": "0010001000100010",
+        "userFiles": [
+          "reference-style.mid",
+          "session35-partial-preview.mid"
+        ]
+      },
+      "42:1010101010101010": {
+        "gm": 42,
+        "row": "1010101010101010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "44:0000100010001000": {
+        "gm": 44,
+        "row": "0000100010001000",
+        "userFiles": [
+          "reference-style.mid",
+          "session35-partial-preview.mid"
+        ]
+      },
+      "19:1000000010001000": {
+        "gm": 19,
+        "row": "1000000010001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "38:0000000001000000": {
+        "gm": 38,
+        "row": "0000000001000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "40:0000000000101011": {
+        "gm": 40,
+        "row": "0000000000101011",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "43:0000001000000000": {
+        "gm": 43,
+        "row": "0000001000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "45:0000010000000010": {
+        "gm": 45,
+        "row": "0000010000000010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "47:0101000000001000": {
+        "gm": 47,
+        "row": "0101000000001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "48:0000000010100000": {
+        "gm": 48,
+        "row": "0000000010100000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "54:0000000000001000": {
+        "gm": 54,
+        "row": "0000000000001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "45:0000010000000000": {
+        "gm": 45,
+        "row": "0000010000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "47:0101000000000000": {
+        "gm": 47,
+        "row": "0101000000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "54:1000000010000000": {
+        "gm": 54,
+        "row": "1000000010000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "54:1000000010001000": {
+        "gm": 54,
+        "row": "1000000010001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "19:1000100010001001": {
+        "gm": 19,
+        "row": "1000100010001001",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "42:1111111111111111": {
+        "gm": 42,
+        "row": "1111111111111111",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "43:0000001000000010": {
+        "gm": 43,
+        "row": "0000001000000010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "47:0101000000000100": {
+        "gm": 47,
+        "row": "0101000000000100",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "55:0000000000000001": {
+        "gm": 55,
+        "row": "0000000000000001",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "57:0000000010000000": {
+        "gm": 57,
+        "row": "0000000010000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "69:1111111111111111": {
+        "gm": 69,
+        "row": "1111111111111111",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "19:1000100010000001": {
+        "gm": 19,
+        "row": "1000100010000001",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "43:0000000000000010": {
+        "gm": 43,
+        "row": "0000000000000010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "47:0000000000000100": {
+        "gm": 47,
+        "row": "0000000000000100",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "36:1000000010000000": {
+        "gm": 36,
+        "row": "1000000010000000",
+        "userFiles": [
+          "reference-style.mid",
+          "song19-01.mid"
+        ]
+      },
+      "44:1000100010001000": {
+        "gm": 44,
+        "row": "1000100010001000",
+        "userFiles": [
+          "reference-style.mid",
+          "session35-partial-preview.mid"
+        ]
+      },
+      "46:0010001000100010": {
+        "gm": 46,
+        "row": "0010001000100010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "16:1000100010001000": {
+        "gm": 16,
+        "row": "1000100010001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "38:0010001000000000": {
+        "gm": 38,
+        "row": "0010001000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "39:1000000000000000": {
+        "gm": 39,
+        "row": "1000000000000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "46:0000000000100010": {
+        "gm": 46,
+        "row": "0000000000100010",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "79:0000000000001000": {
+        "gm": 79,
+        "row": "0000000000001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "16:1000001010000000": {
+        "gm": 16,
+        "row": "1000001010000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "44:1000000010000000": {
+        "gm": 44,
+        "row": "1000000010000000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "18:0010001000100011": {
+        "gm": 18,
+        "row": "0010001000100011",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "38:0010000000001000": {
+        "gm": 38,
+        "row": "0010000000001000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      },
+      "46:0000000000101000": {
+        "gm": 46,
+        "row": "0000000000101000",
+        "userFiles": [
+          "reference-style.mid"
+        ]
+      }
+    },
+    "digest": "ab542bc156e56c01"
+  },
+  "note": "engine set: 4.52 mix, 4.53 sty, 4.54 groove, 4.55 techniques, 4.57 special track, 4.59 role patterns, 4.65 pattern bank"
+}

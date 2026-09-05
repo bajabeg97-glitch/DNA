@@ -1,0 +1,2343 @@
+[
+ {
+  "file": "/home/user/DNA/baseline/reference-style.mid",
+  "sha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "markers": [
+   "i1cv1",
+   "i2cv1",
+   "v1cv1",
+   "v2cv1",
+   "v3cv1",
+   "v4cv1",
+   "f1cv1",
+   "f2cv1",
+   "e1cv1",
+   "e2cv1"
+  ],
+  "bars": [
+   {
+    "bar": 0,
+    "startTick": 0,
+    "endTick": 1920,
+    "element": "i1cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100010",
+     "21": "0011101000111010",
+     "36": "1000001010100010",
+     "38": "0000100000001100",
+     "42": "1010101010001010",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000"
+    }
+   },
+   {
+    "bar": 1,
+    "startTick": 1920,
+    "endTick": 3840,
+    "element": "i1cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100010",
+     "21": "0011101000111010",
+     "36": "1000001010000000",
+     "38": "0000100000001000",
+     "42": "1010101010001010",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000",
+     "57": "1000000000000000"
+    }
+   },
+   {
+    "bar": 2,
+    "startTick": 3840,
+    "endTick": 5760,
+    "element": "i2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000100010001000",
+     "38": "0010001000100010",
+     "42": "1010101010101010",
+     "44": "0000100010001000",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000"
+    }
+   },
+   {
+    "bar": 3,
+    "startTick": 5760,
+    "endTick": 7680,
+    "element": "i2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000100010001000",
+     "38": "0010001000100010",
+     "42": "1010101010101010",
+     "44": "0000100010001000",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000"
+    }
+   },
+   {
+    "bar": 4,
+    "startTick": 7680,
+    "endTick": 9600,
+    "element": "i2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000100010001000",
+     "38": "0010001000100010",
+     "42": "1010101010101010",
+     "44": "0000100010001000",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000"
+    }
+   },
+   {
+    "bar": 5,
+    "startTick": 9600,
+    "endTick": 11520,
+    "element": "i2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000100010001000",
+     "38": "0010001000100010",
+     "42": "1010101010101010",
+     "44": "0000100010001000",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "1000000000000000"
+    }
+   },
+   {
+    "bar": 6,
+    "startTick": 11520,
+    "endTick": 13440,
+    "element": "v1cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "19": "1000000010001000",
+     "21": "0011101000111010",
+     "38": "0000000001000000",
+     "40": "0000000000101011",
+     "42": "1010101010001010",
+     "43": "0000001000000000",
+     "45": "0000010000000010",
+     "46": "0000000000100000",
+     "47": "0101000000001000",
+     "48": "0000000010100000"
+    }
+   },
+   {
+    "bar": 7,
+    "startTick": 13440,
+    "endTick": 15360,
+    "element": "v1cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "42": "1010101010001010",
+     "46": "0000000000100000",
+     "49": "1000000000000000",
+     "54": "0000000000001000"
+    }
+   },
+   {
+    "bar": 8,
+    "startTick": 15360,
+    "endTick": 17280,
+    "element": "v2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "19": "1000000010001000",
+     "21": "0011101000111010",
+     "38": "0000000001000000",
+     "40": "0000000000101011",
+     "42": "1010101010001010",
+     "43": "0000001000000000",
+     "45": "0000010000000000",
+     "46": "0000000000100000",
+     "47": "0101000000000000",
+     "54": "1000000010000000"
+    }
+   },
+   {
+    "bar": 9,
+    "startTick": 17280,
+    "endTick": 19200,
+    "element": "v2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "42": "1010101010001010",
+     "46": "0000000000100000",
+     "54": "1000000010001000"
+    }
+   },
+   {
+    "bar": 10,
+    "startTick": 19200,
+    "endTick": 21120,
+    "element": "v3cv1",
+    "rows": {
+     "19": "1000100010001001",
+     "38": "0000000001000000",
+     "40": "0000000000101011",
+     "42": "1111111111111111",
+     "43": "0000001000000010",
+     "45": "0000010000000000",
+     "47": "0101000000000100",
+     "55": "0000000000000001",
+     "57": "0000000010000000",
+     "69": "1111111111111111"
+    }
+   },
+   {
+    "bar": 11,
+    "startTick": 21120,
+    "endTick": 23040,
+    "element": "v3cv1",
+    "rows": {
+     "19": "1000100010000001",
+     "42": "1111111111111111",
+     "43": "0000000000000010",
+     "47": "0000000000000100",
+     "54": "0000000000001000",
+     "55": "0000000000000001",
+     "57": "0000000010000000",
+     "69": "1111111111111111"
+    }
+   },
+   {
+    "bar": 12,
+    "startTick": 23040,
+    "endTick": 24960,
+    "element": "v4cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000000010000000",
+     "38": "0000100000001000",
+     "42": "1010101010001010",
+     "44": "1000100010001000",
+     "46": "0010001000100010",
+     "49": "1000000000000000"
+    }
+   },
+   {
+    "bar": 13,
+    "startTick": 24960,
+    "endTick": 26880,
+    "element": "v4cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000000010000000",
+     "38": "0000100000001000",
+     "42": "1010101010001010",
+     "44": "0000100010001000",
+     "46": "0010001000100010"
+    }
+   },
+   {
+    "bar": 14,
+    "startTick": 26880,
+    "endTick": 28800,
+    "element": "f1cv1",
+    "rows": {
+     "16": "1000100010001000",
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "42": "1010101010101010",
+     "46": "0000000000100000"
+    }
+   },
+   {
+    "bar": 15,
+    "startTick": 28800,
+    "endTick": 30720,
+    "element": "f2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "36": "1000000010000000",
+     "38": "0010001000000000",
+     "39": "1000000000000000",
+     "42": "1010101010101010",
+     "44": "0000100010001000",
+     "46": "0000000000100010",
+     "54": "1000000010000000",
+     "79": "0000000000001000"
+    }
+   },
+   {
+    "bar": 16,
+    "startTick": 30720,
+    "endTick": 32640,
+    "element": "e1cv1",
+    "rows": {
+     "16": "1000001010000000",
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "42": "1010101010001010",
+     "44": "1000000010000000",
+     "46": "0000000000100000"
+    }
+   },
+   {
+    "bar": 17,
+    "startTick": 32640,
+    "endTick": 34560,
+    "element": "e1cv1",
+    "rows": {
+     "16": "1000001010000000",
+     "17": "0011101000111010",
+     "21": "0011101000111010",
+     "42": "1010101010001010",
+     "44": "1000000010000000",
+     "46": "0000000000100000"
+    }
+   },
+   {
+    "bar": 18,
+    "startTick": 34560,
+    "endTick": 36480,
+    "element": "e2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100011",
+     "21": "0011101000111010",
+     "36": "1000001010000000",
+     "38": "0010000000001000",
+     "42": "1010101010001010",
+     "46": "0000000000101000"
+    }
+   },
+   {
+    "bar": 19,
+    "startTick": 36480,
+    "endTick": 38400,
+    "element": "e2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100011",
+     "21": "0011101000111010",
+     "36": "1000001010000000",
+     "38": "0010000000001000",
+     "42": "1010101010001010",
+     "46": "0000000000101000"
+    }
+   },
+   {
+    "bar": 20,
+    "startTick": 38400,
+    "endTick": 40320,
+    "element": "e2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100011",
+     "21": "0011101000111010",
+     "36": "1000001010000000",
+     "38": "0010000000001000",
+     "42": "1010101010001010",
+     "46": "0000000000101000"
+    }
+   },
+   {
+    "bar": 21,
+    "startTick": 40320,
+    "endTick": 42240,
+    "element": "e2cv1",
+    "rows": {
+     "17": "0011101000111010",
+     "18": "0010001000100011",
+     "21": "0011101000111010",
+     "36": "1000001010000000",
+     "38": "0010000000001000",
+     "42": "1010101010001010",
+     "46": "0000000000101000"
+    }
+   }
+  ],
+  "patternEntry": {
+   "source": "/home/user/DNA/baseline/reference-style.mid",
+   "title": "reference-style",
+   "signature": "4/4",
+   "signatureAssumed": true,
+   "length": 16,
+   "barsAnalyzed": 22,
+   "tracks": {
+    "GM17": {
+     "gm": 17,
+     "steps": "0011101000111010",
+     "distinctRows": 1,
+     "hits": 160
+    },
+    "GM18": {
+     "gm": 18,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 28
+    },
+    "GM21": {
+     "gm": 21,
+     "steps": "0011101000111010",
+     "distinctRows": 1,
+     "hits": 160
+    },
+    "BassDrum": {
+     "gm": 36,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 42
+    },
+    "SnareDrum": {
+     "gm": 38,
+     "steps": null,
+     "distinctRows": 6,
+     "hits": 38
+    },
+    "ClosedHiHat": {
+     "gm": 42,
+     "steps": null,
+     "distinctRows": 3,
+     "hits": 178
+    },
+    "OpenHiHat": {
+     "gm": 46,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 31
+    },
+    "Cymbal": {
+     "gm": 49,
+     "steps": "1000000000000000",
+     "distinctRows": 1,
+     "hits": 8
+    },
+    "Tambourine": {
+     "gm": 54,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 15
+    },
+    "GM57": {
+     "gm": 57,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 3
+    },
+    "GM44": {
+     "gm": 44,
+     "steps": null,
+     "distinctRows": 3,
+     "hits": 26
+    },
+    "GM19": {
+     "gm": 19,
+     "steps": null,
+     "distinctRows": 3,
+     "hits": 15
+    },
+    "GM40": {
+     "gm": 40,
+     "steps": "0000000000101011",
+     "distinctRows": 1,
+     "hits": 12
+    },
+    "LowTom": {
+     "gm": 43,
+     "steps": null,
+     "distinctRows": 3,
+     "hits": 5
+    },
+    "GM45": {
+     "gm": 45,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 4
+    },
+    "MediumTom": {
+     "gm": 47,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 9
+    },
+    "GM48": {
+     "gm": 48,
+     "steps": "0000000010100000",
+     "distinctRows": 1,
+     "hits": 2
+    },
+    "GM55": {
+     "gm": 55,
+     "steps": "0000000000000001",
+     "distinctRows": 1,
+     "hits": 2
+    },
+    "GM69": {
+     "gm": 69,
+     "steps": "1111111111111111",
+     "distinctRows": 1,
+     "hits": 32
+    },
+    "GM16": {
+     "gm": 16,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 10
+    },
+    "Clap": {
+     "gm": 39,
+     "steps": "1000000000000000",
+     "distinctRows": 1,
+     "hits": 1
+    },
+    "GM79": {
+     "gm": 79,
+     "steps": "0000000000001000",
+     "distinctRows": 1,
+     "hits": 1
+    }
+   },
+   "digest": "0f04236ed440b515"
+  },
+  "corpusMatches": {
+   "36:1000001010100010": {
+    "gm": 36,
+    "row": "1000001010100010",
+    "titles": [
+     "Patterns_200:Rock1MeasureB",
+     "Patterns_260:Rock7"
+    ]
+   },
+   "49:1000000000000000": {
+    "gm": 49,
+    "row": "1000000000000000",
+    "titles": [
+     "Patterns_200:EndingsMeasureA",
+     "Patterns_260:AfroCubBreak2",
+     "Patterns_260:PopBreak3",
+     "Patterns_260:PopBreak6",
+     "Patterns_260:RockBreak7",
+     "Patterns_260:RnbBreak3"
+    ]
+   },
+   "36:1000001010000000": {
+    "gm": 36,
+    "row": "1000001010000000",
+    "titles": [
+     "Patterns_200:Rock1MeasureA",
+     "Patterns_200:Rock5MeasureB",
+     "Patterns_200:Ballad1MeasureA",
+     "Patterns_260:Rock3",
+     "Patterns_260:Rock11",
+     "Patterns_260:RockBreak1"
+    ]
+   },
+   "38:0000100000001000": {
+    "gm": 38,
+    "row": "0000100000001000",
+    "titles": [
+     "Patterns_200:Rock1MeasureA",
+     "Patterns_200:Rock1MeasureB",
+     "Patterns_200:Rock2MeasureA",
+     "Patterns_200:Rock3MeasureA",
+     "Patterns_200:Rock3MeasureB",
+     "Patterns_200:Rock4MeasureA",
+     "Patterns_200:Rock5MeasureA",
+     "Patterns_200:Rock5MeasureB",
+     "Patterns_200:Funk1MeasureA",
+     "Patterns_200:Funk1MeasureB",
+     "Patterns_200:Funk2MeasureA",
+     "Patterns_200:Funk4MeasureA",
+     "Patterns_200:Funk7MeasureA",
+     "Patterns_200:Funk9MeasureA",
+     "Patterns_200:Funk9MeasureB",
+     "Patterns_200:Funk10MeasureA",
+     "Patterns_200:Funk10MeasureB",
+     "Patterns_200:Funk11MeasureA",
+     "Patterns_200:Funk11MeasureB",
+     "Patterns_200:Funk12MeasureA",
+     "Patterns_200:Funk12MeasureB",
+     "Patterns_200:Funk14MeasureA",
+     "Patterns_200:Funk14MeasureB",
+     "Patterns_200:Rhythm&Blues2MeasureA",
+     "Patterns_200:Rhythm&Blues3MeasureA",
+     "Patterns_200:Rhythm&Blues5MeasureB",
+     "Patterns_200:Ballad1MeasureA",
+     "Patterns_200:Ballad1MeasureB",
+     "Patterns_200:Ballad2MeasureA",
+     "Patterns_200:Ballad2MeasureB",
+     "Patterns_200:Ballad3MeasureB",
+     "Patterns_200:Ballad4MeasureA",
+     "Patterns_200:Ballad4MeasureB",
+     "Patterns_200:Ballad5MeasureA",
+     "Patterns_200:Ballad5MeasureB",
+     "Patterns_200:Pop3MeasureB",
+     "Patterns_200:Disco1MeasureA",
+     "Patterns_200:Disco2MeasureA",
+     "Patterns_200:Disco2MeasureB",
+     "Patterns_200:Disco3MeasureA",
+     "Patterns_200:Disco3MeasureB",
+     "Patterns_200:Disco4MeasureA",
+     "Patterns_200:Disco5MeasureA",
+     "Patterns_200:Disco5MeasureB",
+     "Patterns_200:Samba3MeasureA",
+     "Patterns_200:SkaMeasureA",
+     "Patterns_200:SkaMeasureB",
+     "Patterns_260:Boogie1",
+     "Patterns_260:Boogie2",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco7",
+     "Patterns_260:Disco9",
+     "Patterns_260:Disco11",
+     "Patterns_260:Charleston1",
+     "Patterns_260:Pop1",
+     "Patterns_260:Pop2",
+     "Patterns_260:Pop3",
+     "Patterns_260:Pop4",
+     "Patterns_260:Pop5",
+     "Patterns_260:Pop6",
+     "Patterns_260:Pop8",
+     "Patterns_260:Pop12",
+     "Patterns_260:Rock1",
+     "Patterns_260:Rock2",
+     "Patterns_260:Rock4",
+     "Patterns_260:Rock5",
+     "Patterns_260:Rock6",
+     "Patterns_260:Rock10",
+     "Patterns_260:Rock13",
+     "Patterns_260:Rock14",
+     "Patterns_260:Rock14",
+     "Patterns_260:Rnb3",
+     "Patterns_260:Rnb5",
+     "Patterns_260:Rnb6",
+     "Patterns_260:Rnb8",
+     "Patterns_260:Rnb9",
+     "Patterns_260:Rnb12",
+     "Patterns_260:Ska1",
+     "Patterns_260:Ska2",
+     "Patterns_260:Ska3",
+     "Patterns_260:Slow1",
+     "Patterns_260:Slow2",
+     "Patterns_260:Slow3",
+     "Patterns_260:Slow4",
+     "Patterns_260:Slow5",
+     "Patterns_260:Slow10",
+     "Patterns_260:Slow11",
+     "Patterns_260:Slow12",
+     "Patterns_260:SlowBreak6"
+    ]
+   },
+   "36:1000100010001000": {
+    "gm": 36,
+    "row": "1000100010001000",
+    "titles": [
+     "Patterns_200:Rock4MeasureA",
+     "Patterns_200:Rock4MeasureB",
+     "Patterns_200:Rock4Break",
+     "Patterns_200:Pop5Break",
+     "Patterns_200:Reggae3MeasureB",
+     "Patterns_200:Reggae5MeasureA",
+     "Patterns_200:Reggae5MeasureB",
+     "Patterns_200:Disco1MeasureA",
+     "Patterns_200:Disco1MeasureB",
+     "Patterns_200:Disco1Break",
+     "Patterns_200:Disco2MeasureA",
+     "Patterns_200:Disco2MeasureB",
+     "Patterns_200:Disco2Break",
+     "Patterns_200:Disco3MeasureA",
+     "Patterns_200:Disco3MeasureB",
+     "Patterns_200:Disco3Break",
+     "Patterns_200:Disco4MeasureA",
+     "Patterns_200:Disco4Break",
+     "Patterns_200:Disco5MeasureA",
+     "Patterns_200:Disco5MeasureB",
+     "Patterns_200:Disco5Break",
+     "Patterns_200:SkaMeasureB",
+     "Patterns_260:AfroCub5",
+     "Patterns_260:AfroCub6",
+     "Patterns_260:AfroCub8",
+     "Patterns_260:AfroCub9",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco2",
+     "Patterns_260:Disco4",
+     "Patterns_260:Disco5",
+     "Patterns_260:Disco7",
+     "Patterns_260:Disco8",
+     "Patterns_260:Disco9",
+     "Patterns_260:Disco10",
+     "Patterns_260:March1",
+     "Patterns_260:March2",
+     "Patterns_260:MarchBreak2",
+     "Patterns_260:Tango1",
+     "Patterns_260:Paso1",
+     "Patterns_260:Paso2",
+     "Patterns_260:PasoBreak1",
+     "Patterns_260:PasoBreak2",
+     "Patterns_260:Reggae1",
+     "Patterns_260:Reggae5",
+     "Patterns_260:Reggae10",
+     "Patterns_260:RockBreak8",
+     "Patterns_260:Ska3",
+     "Patterns_260:SkaBreak3"
+    ]
+   },
+   "42:1010101010101010": {
+    "gm": 42,
+    "row": "1010101010101010",
+    "titles": [
+     "Patterns_200:Rock3MeasureA",
+     "Patterns_200:Rock3MeasureB",
+     "Patterns_200:Rock4MeasureA",
+     "Patterns_200:Rock4MeasureB",
+     "Patterns_200:Funk1MeasureA",
+     "Patterns_200:Funk5MeasureA",
+     "Patterns_200:Funk14MeasureA",
+     "Patterns_200:Funk14MeasureB",
+     "Patterns_200:Rhythm&Blues1MeasureA",
+     "Patterns_200:Rhythm&Blues1MeasureB",
+     "Patterns_200:Rhythm&Blues2MeasureA",
+     "Patterns_200:Rhythm&Blues2MeasureB",
+     "Patterns_200:Rhythm&Blues3MeasureA",
+     "Patterns_200:Rhythm&Blues5MeasureA",
+     "Patterns_200:Rhythm&Blues5MeasureB",
+     "Patterns_200:Ballad1MeasureA",
+     "Patterns_200:Ballad1MeasureB",
+     "Patterns_200:Ballad2MeasureB",
+     "Patterns_200:Ballad3MeasureB",
+     "Patterns_200:Ballad4MeasureA",
+     "Patterns_200:Ballad4MeasureB",
+     "Patterns_200:Pop1MeasureA",
+     "Patterns_200:Pop1MeasureB",
+     "Patterns_200:BossaNova1MeasureA",
+     "Patterns_200:BossaNova1MeasureB",
+     "Patterns_200:Twist1MeasureA",
+     "Patterns_200:SkaMeasureA",
+     "Patterns_260:AfroCub3",
+     "Patterns_260:AfroCub4",
+     "Patterns_260:AfroCub7",
+     "Patterns_260:Bossa2",
+     "Patterns_260:ChaCha3",
+     "Patterns_260:Disco12",
+     "Patterns_260:Pop1",
+     "Patterns_260:Pop2",
+     "Patterns_260:Pop4",
+     "Patterns_260:Pop5",
+     "Patterns_260:Pop6",
+     "Patterns_260:Reggae5",
+     "Patterns_260:Reggae6",
+     "Patterns_260:Reggae12",
+     "Patterns_260:Rock1",
+     "Patterns_260:Rock2",
+     "Patterns_260:Rock3",
+     "Patterns_260:Rock4",
+     "Patterns_260:Rock5",
+     "Patterns_260:Rock6",
+     "Patterns_260:Rock7",
+     "Patterns_260:Rock8",
+     "Patterns_260:Rock9",
+     "Patterns_260:Rock10",
+     "Patterns_260:Rock11",
+     "Patterns_260:Rock12",
+     "Patterns_260:Rnb1",
+     "Patterns_260:Rnb2",
+     "Patterns_260:Rnb3",
+     "Patterns_260:Rnb4",
+     "Patterns_260:Rnb5",
+     "Patterns_260:Rnb6",
+     "Patterns_260:Ska2",
+     "Patterns_260:Slow1",
+     "Patterns_260:Slow2",
+     "Patterns_260:Slow5",
+     "Patterns_260:Slow8",
+     "Patterns_260:Twist3"
+    ]
+   },
+   "43:0000001000000000": {
+    "gm": 43,
+    "row": "0000001000000000",
+    "titles": [
+     "Patterns_260:BossaBreak3",
+     "Patterns_260:FunkBreak10",
+     "Patterns_260:PopBreak5",
+     "Patterns_260:Ending3"
+    ]
+   },
+   "42:1111111111111111": {
+    "gm": 42,
+    "row": "1111111111111111",
+    "titles": [
+     "Patterns_200:Funk3MeasureA",
+     "Patterns_200:Funk3MeasureB",
+     "Patterns_200:Rhythm&Blues4MeasureA",
+     "Patterns_200:Ballad5MeasureB",
+     "Patterns_200:Reggae1MeasureA",
+     "Patterns_200:Reggae1MeasureB",
+     "Patterns_200:Disco1MeasureA",
+     "Patterns_200:Samba3MeasureA",
+     "Patterns_260:Rock13",
+     "Patterns_260:Rock14"
+    ]
+   },
+   "43:0000000000000010": {
+    "gm": 43,
+    "row": "0000000000000010",
+    "titles": [
+     "Patterns_200:Afro-Cuban3MeasureA",
+     "Patterns_200:Afro-Cuban4MeasureB",
+     "Patterns_200:Afro-Cuban5MeasureA",
+     "Patterns_200:Afro-Cuban5Break",
+     "Patterns_260:AfroCub2",
+     "Patterns_260:AfroCub3",
+     "Patterns_260:AfroCub7",
+     "Patterns_260:AfroCubBreak1",
+     "Patterns_260:ChaCha2",
+     "Patterns_260:Funk2",
+     "Patterns_260:FunkBreak11",
+     "Patterns_260:RockBreak6",
+     "Patterns_260:RnbBreak1",
+     "Patterns_260:SkaBreak3"
+    ]
+   },
+   "47:0000000000000100": {
+    "gm": 47,
+    "row": "0000000000000100",
+    "titles": [
+     "Patterns_260:FunkBreak11"
+    ]
+   },
+   "36:1000000010000000": {
+    "gm": 36,
+    "row": "1000000010000000",
+    "titles": [
+     "Patterns_200:Rhythm&Blues4MeasureB",
+     "Patterns_200:Ballad2Break",
+     "Patterns_200:Afro-Cuban1MeasureA",
+     "Patterns_200:Afro-Cuban2MeasureA",
+     "Patterns_200:Afro-Cuban3MeasureB",
+     "Patterns_200:Afro-Cuban4MeasureB",
+     "Patterns_200:Afro-Cuban5MeasureA",
+     "Patterns_200:Twist1MeasureA",
+     "Patterns_200:Twist2MeasureA",
+     "Patterns_200:Twist2Break",
+     "Patterns_200:SkaMeasureA",
+     "Patterns_260:AfroCub3",
+     "Patterns_260:AfroCub4",
+     "Patterns_260:Charleston1",
+     "Patterns_260:CharlestonBreak1",
+     "Patterns_260:PopBreak3",
+     "Patterns_260:RockBreak2",
+     "Patterns_260:RockBreak9",
+     "Patterns_260:RockBreak12",
+     "Patterns_260:Ska1",
+     "Patterns_260:Ska2",
+     "Patterns_260:SkaBreak2",
+     "Patterns_260:Twist2",
+     "Patterns_260:Twist3"
+    ]
+   },
+   "46:0010001000100010": {
+    "gm": 46,
+    "row": "0010001000100010",
+    "titles": [
+     "Patterns_200:Rock3Break",
+     "Patterns_200:Rhythm&Blues4MeasureB",
+     "Patterns_200:Disco4Break",
+     "Patterns_260:Pop8",
+     "Patterns_260:Rnb9",
+     "Patterns_260:Rnb10",
+     "Patterns_260:Rnb12",
+     "Patterns_260:SkaBreak3",
+     "Patterns_260:Slow7"
+    ]
+   },
+   "38:0010001000000000": {
+    "gm": 38,
+    "row": "0010001000000000",
+    "titles": [
+     "Patterns_260:PopBreak3"
+    ]
+   },
+   "46:0000000000100010": {
+    "gm": 46,
+    "row": "0000000000100010",
+    "titles": [
+     "Patterns_260:Disco5",
+     "Patterns_260:Disco6",
+     "Patterns_260:Funk8",
+     "Patterns_260:Pop9",
+     "Patterns_260:Slow6"
+    ]
+   },
+   "38:0010000000001000": {
+    "gm": 38,
+    "row": "0010000000001000",
+    "titles": [
+     "Patterns_260:Funk1",
+     "Patterns_260:Rock11",
+     "Patterns_260:RockBreak7"
+    ]
+   }
+  },
+  "motifCounts": {
+   "16:1000001010000000": 2,
+   "16:1000100010001000": 1,
+   "17:0011101000111010": 20,
+   "18:0010001000100010": 2,
+   "18:0010001000100011": 4,
+   "19:1000000010001000": 2,
+   "19:1000100010000001": 1,
+   "19:1000100010001001": 1,
+   "21:0011101000111010": 20,
+   "36:1000000010000000": 3,
+   "36:1000001010000000": 5,
+   "36:1000001010100010": 1,
+   "36:1000100010001000": 4,
+   "38:0000000001000000": 3,
+   "38:0000100000001000": 3,
+   "38:0000100000001100": 1,
+   "38:0010000000001000": 4,
+   "38:0010001000000000": 1,
+   "38:0010001000100010": 4,
+   "39:1000000000000000": 1,
+   "40:0000000000101011": 3,
+   "42:1010101010001010": 14,
+   "42:1010101010101010": 6,
+   "42:1111111111111111": 2,
+   "43:0000000000000010": 1,
+   "43:0000001000000000": 2,
+   "43:0000001000000010": 1,
+   "44:0000100010001000": 6,
+   "44:1000000010000000": 2,
+   "44:1000100010001000": 1,
+   "45:0000010000000000": 2,
+   "45:0000010000000010": 1,
+   "46:0000000000100000": 13,
+   "46:0000000000100010": 1,
+   "46:0000000000101000": 4,
+   "46:0010001000100010": 2,
+   "47:0000000000000100": 1,
+   "47:0101000000000000": 1,
+   "47:0101000000000100": 1,
+   "47:0101000000001000": 1,
+   "48:0000000010100000": 1,
+   "49:1000000000000000": 8,
+   "54:0000000000001000": 2,
+   "54:1000000000000000": 6,
+   "54:1000000010000000": 2,
+   "54:1000000010001000": 1,
+   "55:0000000000000001": 2,
+   "57:0000000010000000": 2,
+   "57:1000000000000000": 1,
+   "69:1111111111111111": 2,
+   "79:0000000000001000": 1
+  },
+  "barOfMotif": {
+   "16:1000001010000000": [
+    16,
+    17
+   ],
+   "16:1000100010001000": [
+    14
+   ],
+   "17:0011101000111010": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "18:0010001000100010": [
+    0,
+    1
+   ],
+   "18:0010001000100011": [
+    18,
+    19,
+    20,
+    21
+   ],
+   "19:1000000010001000": [
+    6,
+    8
+   ],
+   "19:1000100010000001": [
+    11
+   ],
+   "19:1000100010001001": [
+    10
+   ],
+   "21:0011101000111010": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "36:1000000010000000": [
+    12,
+    13,
+    15
+   ],
+   "36:1000001010000000": [
+    1,
+    18,
+    19,
+    20,
+    21
+   ],
+   "36:1000001010100010": [
+    0
+   ],
+   "36:1000100010001000": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "38:0000000001000000": [
+    6,
+    8,
+    10
+   ],
+   "38:0000100000001000": [
+    1,
+    12,
+    13
+   ],
+   "38:0000100000001100": [
+    0
+   ],
+   "38:0010000000001000": [
+    18,
+    19,
+    20,
+    21
+   ],
+   "38:0010001000000000": [
+    15
+   ],
+   "38:0010001000100010": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "39:1000000000000000": [
+    15
+   ],
+   "40:0000000000101011": [
+    6,
+    8,
+    10
+   ],
+   "42:1010101010001010": [
+    0,
+    1,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "42:1010101010101010": [
+    2,
+    3,
+    4,
+    5,
+    14,
+    15
+   ],
+   "42:1111111111111111": [
+    10,
+    11
+   ],
+   "43:0000000000000010": [
+    11
+   ],
+   "43:0000001000000000": [
+    6,
+    8
+   ],
+   "43:0000001000000010": [
+    10
+   ],
+   "44:0000100010001000": [
+    2,
+    3,
+    4,
+    5,
+    13,
+    15
+   ],
+   "44:1000000010000000": [
+    16,
+    17
+   ],
+   "44:1000100010001000": [
+    12
+   ],
+   "45:0000010000000000": [
+    8,
+    10
+   ],
+   "45:0000010000000010": [
+    6
+   ],
+   "46:0000000000100000": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    14,
+    16,
+    17
+   ],
+   "46:0000000000100010": [
+    15
+   ],
+   "46:0000000000101000": [
+    18,
+    19,
+    20,
+    21
+   ],
+   "46:0010001000100010": [
+    12,
+    13
+   ],
+   "47:0000000000000100": [
+    11
+   ],
+   "47:0101000000000000": [
+    8
+   ],
+   "47:0101000000000100": [
+    10
+   ],
+   "47:0101000000001000": [
+    6
+   ],
+   "48:0000000010100000": [
+    6
+   ],
+   "49:1000000000000000": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    12
+   ],
+   "54:0000000000001000": [
+    7,
+    11
+   ],
+   "54:1000000000000000": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "54:1000000010000000": [
+    8,
+    15
+   ],
+   "54:1000000010001000": [
+    9
+   ],
+   "55:0000000000000001": [
+    10,
+    11
+   ],
+   "57:0000000010000000": [
+    10,
+    11
+   ],
+   "57:1000000000000000": [
+    1
+   ],
+   "69:1111111111111111": [
+    10,
+    11
+   ],
+   "79:0000000000001000": [
+    15
+   ]
+  }
+ },
+ {
+  "file": "/home/user/DNA/session35-partial-preview.mid",
+  "sha256": "02ff1e50860ae2a2c800b8c080ed0ea2754affdf9c3e85ff8ffa9eb14f933a10",
+  "markers": [
+   "i1cv1",
+   "i2cv1",
+   "v1cv1",
+   "v2cv1",
+   "v3cv1",
+   "v4cv1",
+   "f1cv1",
+   "f2cv1",
+   "e1cv1",
+   "e2cv1"
+  ],
+  "bars": [
+   {
+    "bar": 0,
+    "startTick": 0,
+    "endTick": 1920,
+    "element": "i1cv1",
+    "rows": {
+     "36": "1000100100001000",
+     "38": "0100001000100100",
+     "42": "0010010000100010",
+     "44": "0001000100001000"
+    }
+   },
+   {
+    "bar": 1,
+    "startTick": 1920,
+    "endTick": 3840,
+    "element": "i1cv1",
+    "rows": {
+     "36": "1001000010001000",
+     "38": "0010001000100010",
+     "42": "0100001000100010",
+     "44": "0001000010010000"
+    }
+   },
+   {
+    "bar": 2,
+    "startTick": 3840,
+    "endTick": 5760,
+    "element": "i2cv1",
+    "rows": {
+     "36": "1001000010001000",
+     "38": "0100001001000010",
+     "42": "0010001000100010",
+     "44": "1000100010001000"
+    }
+   },
+   {
+    "bar": 3,
+    "startTick": 5760,
+    "endTick": 7680,
+    "element": "i2cv1",
+    "rows": {
+     "36": "1001000010001000",
+     "38": "0010001000100010",
+     "42": "0100001001000100",
+     "44": "1000100100010000"
+    }
+   },
+   {
+    "bar": 4,
+    "startTick": 7680,
+    "endTick": 9600,
+    "element": "v1cv1",
+    "rows": {
+     "36": "1000100100010000",
+     "38": "0010010001000100",
+     "42": "0010001000100000",
+     "44": "1001000010001000",
+     "46": "0000000000000010"
+    }
+   },
+   {
+    "bar": 5,
+    "startTick": 9600,
+    "endTick": 11520,
+    "element": "v1cv1",
+    "rows": {
+     "36": "1001000010001000",
+     "38": "0010010000100100",
+     "42": "0010001001000000",
+     "44": "1000100010010000",
+     "46": "0000000000000100"
+    }
+   },
+   {
+    "bar": 6,
+    "startTick": 11520,
+    "endTick": 13440,
+    "element": "v2cv1",
+    "rows": {
+     "36": "1001000100010000",
+     "38": "0100010000100010",
+     "42": "1100001000100100",
+     "44": "0000100010001000"
+    }
+   },
+   {
+    "bar": 7,
+    "startTick": 13440,
+    "endTick": 15360,
+    "element": "v2cv1",
+    "rows": {
+     "36": "1000100100010000",
+     "38": "0010010000100010",
+     "42": "1100001000100100",
+     "44": "0001000100010000"
+    }
+   },
+   {
+    "bar": 8,
+    "startTick": 15360,
+    "endTick": 17280,
+    "element": "v3cv1",
+    "rows": {
+     "35": "1000100010010001",
+     "36": "1001000110011000",
+     "38": "0010001000100100",
+     "42": "0010001001000010",
+     "44": "1000100010010000",
+     "68": "0010000000000000",
+     "70": "1101011101111111"
+    }
+   },
+   {
+    "bar": 9,
+    "startTick": 17280,
+    "endTick": 19200,
+    "element": "v3cv1",
+    "rows": {
+     "35": "0000100010010000",
+     "36": "1000100010001000",
+     "38": "0010001001000010",
+     "42": "0010001000100100",
+     "44": "1001000010001000",
+     "68": "0010000000000000",
+     "70": "1111111101110101"
+    }
+   },
+   {
+    "bar": 10,
+    "startTick": 19200,
+    "endTick": 21120,
+    "element": "v4cv1",
+    "rows": {
+     "35": "1000000010000000",
+     "36": "1000100010001000",
+     "38": "0010001000100100",
+     "40": "0001000000001000",
+     "42": "0010001000100010",
+     "44": "1001100110011001",
+     "46": "0010001001000010",
+     "54": "1101111011111010",
+     "61": "1001000010100001",
+     "63": "1000000100000011",
+     "64": "0000001000000000"
+    }
+   },
+   {
+    "bar": 11,
+    "startTick": 21120,
+    "endTick": 23040,
+    "element": "v4cv1",
+    "rows": {
+     "35": "1000000100000000",
+     "36": "1000100010010000",
+     "38": "0010010000100010",
+     "40": "0001000000001000",
+     "42": "0010010000100100",
+     "44": "1001100100010001",
+     "46": "0100001001000100",
+     "54": "1111011101110110",
+     "61": "1010000100010001",
+     "63": "1000000100000011",
+     "64": "0000010000000000"
+    }
+   },
+   {
+    "bar": 12,
+    "startTick": 23040,
+    "endTick": 24960,
+    "element": "f1cv1",
+    "rows": {
+     "35": "1000000010000000",
+     "36": "1000100100001000",
+     "38": "0010001000100010",
+     "40": "0000100000001000",
+     "42": "0010000001000100",
+     "44": "1001000100011001",
+     "46": "0010011001000010",
+     "54": "1011111111110111",
+     "55": "1000000000000000",
+     "61": "1010000010010001",
+     "63": "1000001000000010",
+     "64": "0000010000000000"
+    }
+   },
+   {
+    "bar": 13,
+    "startTick": 24960,
+    "endTick": 26880,
+    "element": "f2cv1",
+    "rows": {
+     "35": "1000000010000000",
+     "36": "1000100010001000",
+     "38": "0111011101110111",
+     "40": "0000100000001000",
+     "42": "1111111111111010",
+     "44": "0001000100010101",
+     "46": "0010001001000011",
+     "54": "1111111101111101",
+     "61": "1010001010010000",
+     "63": "1000001000000010",
+     "64": "0000001000000000"
+    }
+   },
+   {
+    "bar": 14,
+    "startTick": 26880,
+    "endTick": 28800,
+    "element": "e1cv1",
+    "rows": {
+     "36": "1000100100001000",
+     "38": "0010001001000010",
+     "42": "0100001001000000",
+     "44": "1001000010010000",
+     "46": "0000000000000010"
+    }
+   },
+   {
+    "bar": 15,
+    "startTick": 28800,
+    "endTick": 30720,
+    "element": "e1cv1",
+    "rows": {
+     "36": "1000100100010000",
+     "38": "0010001000100010",
+     "42": "0100001000100100",
+     "44": "0000100010001000"
+    }
+   },
+   {
+    "bar": 16,
+    "startTick": 30720,
+    "endTick": 32640,
+    "element": "e2cv1",
+    "rows": {
+     "36": "1000100010010000",
+     "38": "0100001000100010",
+     "42": "0010010000100010",
+     "44": "1000100100001000"
+    }
+   },
+   {
+    "bar": 17,
+    "startTick": 32640,
+    "endTick": 34560,
+    "element": "e2cv1",
+    "rows": {
+     "36": "1001000010001000",
+     "38": "0100010000100010",
+     "42": "1010001001000010",
+     "44": "0000100100010000"
+    }
+   }
+  ],
+  "patternEntry": {
+   "source": "/home/user/DNA/session35-partial-preview.mid",
+   "title": "session35-partial-preview",
+   "signature": "4/4",
+   "signatureAssumed": true,
+   "length": 16,
+   "barsAnalyzed": 18,
+   "tracks": {
+    "BassDrum": {
+     "gm": 36,
+     "steps": null,
+     "distinctRows": 7,
+     "hits": 74
+    },
+    "SnareDrum": {
+     "gm": 38,
+     "steps": null,
+     "distinctRows": 11,
+     "hits": 80
+    },
+    "ClosedHiHat": {
+     "gm": 42,
+     "steps": null,
+     "distinctRows": 15,
+     "hits": 81
+    },
+    "GM44": {
+     "gm": 44,
+     "steps": null,
+     "distinctRows": 15,
+     "hits": 75
+    },
+    "OpenHiHat": {
+     "gm": 46,
+     "steps": null,
+     "distinctRows": 6,
+     "hits": 21
+    },
+    "GM35": {
+     "gm": 35,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 16
+    },
+    "GM68": {
+     "gm": 68,
+     "steps": "0010000000000000",
+     "distinctRows": 1,
+     "hits": 2
+    },
+    "GM70": {
+     "gm": 70,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 26
+    },
+    "GM40": {
+     "gm": 40,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 8
+    },
+    "Tambourine": {
+     "gm": 54,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 52
+    },
+    "GM61": {
+     "gm": 61,
+     "steps": null,
+     "distinctRows": 4,
+     "hits": 20
+    },
+    "GM63": {
+     "gm": 63,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 14
+    },
+    "GM64": {
+     "gm": 64,
+     "steps": null,
+     "distinctRows": 2,
+     "hits": 4
+    },
+    "GM55": {
+     "gm": 55,
+     "steps": "1000000000000000",
+     "distinctRows": 1,
+     "hits": 1
+    }
+   },
+   "digest": "6876381ba23059e1"
+  },
+  "corpusMatches": {
+   "36:1001000010001000": {
+    "gm": 36,
+    "row": "1001000010001000",
+    "titles": [
+     "Patterns_200:Reggae3MeasureA"
+    ]
+   },
+   "42:0010001000100010": {
+    "gm": 42,
+    "row": "0010001000100010",
+    "titles": [
+     "Patterns_200:Disco2MeasureA",
+     "Patterns_260:AfroCub5",
+     "Patterns_260:AfroCub6",
+     "Patterns_260:AfroCub8",
+     "Patterns_260:AfroCub9",
+     "Patterns_260:DiscoBreak8",
+     "Patterns_260:March1",
+     "Patterns_260:March2",
+     "Patterns_260:Paso1",
+     "Patterns_260:Paso2",
+     "Patterns_260:Reggae2",
+     "Patterns_260:Reggae4",
+     "Patterns_260:Samba5",
+     "Patterns_260:Samba6"
+    ]
+   },
+   "42:0010001000100000": {
+    "gm": 42,
+    "row": "0010001000100000",
+    "titles": [
+     "Patterns_260:MarchBreak2",
+     "Patterns_260:Ska1"
+    ]
+   },
+   "46:0000000000000010": {
+    "gm": 46,
+    "row": "0000000000000010",
+    "titles": [
+     "Patterns_200:Funk1MeasureB",
+     "Patterns_200:Ballad2MeasureA",
+     "Patterns_200:Reggae2MeasureA",
+     "Patterns_200:Reggae2MeasureB",
+     "Patterns_200:Reggae3Break",
+     "Patterns_200:SkaMeasureB",
+     "Patterns_260:Funk3",
+     "Patterns_260:Funk4",
+     "Patterns_260:Funk12",
+     "Patterns_260:FunkBreak2",
+     "Patterns_260:PopBreak6",
+     "Patterns_260:ReggaeBreak3",
+     "Patterns_260:Rock14",
+     "Patterns_260:RockBreak10",
+     "Patterns_260:Ska1",
+     "Patterns_260:Ska3",
+     "Patterns_260:SlowBreak3",
+     "Patterns_260:SlowBreak4"
+    ]
+   },
+   "36:1001000100010000": {
+    "gm": 36,
+    "row": "1001000100010000",
+    "titles": [
+     "Patterns_200:Funk12MeasureB",
+     "Patterns_200:Rhythm&Blues5Break"
+    ]
+   },
+   "36:1000100010001000": {
+    "gm": 36,
+    "row": "1000100010001000",
+    "titles": [
+     "Patterns_200:Rock4MeasureA",
+     "Patterns_200:Rock4MeasureB",
+     "Patterns_200:Rock4Break",
+     "Patterns_200:Pop5Break",
+     "Patterns_200:Reggae3MeasureB",
+     "Patterns_200:Reggae5MeasureA",
+     "Patterns_200:Reggae5MeasureB",
+     "Patterns_200:Disco1MeasureA",
+     "Patterns_200:Disco1MeasureB",
+     "Patterns_200:Disco1Break",
+     "Patterns_200:Disco2MeasureA",
+     "Patterns_200:Disco2MeasureB",
+     "Patterns_200:Disco2Break",
+     "Patterns_200:Disco3MeasureA",
+     "Patterns_200:Disco3MeasureB",
+     "Patterns_200:Disco3Break",
+     "Patterns_200:Disco4MeasureA",
+     "Patterns_200:Disco4Break",
+     "Patterns_200:Disco5MeasureA",
+     "Patterns_200:Disco5MeasureB",
+     "Patterns_200:Disco5Break",
+     "Patterns_200:SkaMeasureB",
+     "Patterns_260:AfroCub5",
+     "Patterns_260:AfroCub6",
+     "Patterns_260:AfroCub8",
+     "Patterns_260:AfroCub9",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco2",
+     "Patterns_260:Disco4",
+     "Patterns_260:Disco5",
+     "Patterns_260:Disco7",
+     "Patterns_260:Disco8",
+     "Patterns_260:Disco9",
+     "Patterns_260:Disco10",
+     "Patterns_260:March1",
+     "Patterns_260:March2",
+     "Patterns_260:MarchBreak2",
+     "Patterns_260:Tango1",
+     "Patterns_260:Paso1",
+     "Patterns_260:Paso2",
+     "Patterns_260:PasoBreak1",
+     "Patterns_260:PasoBreak2",
+     "Patterns_260:Reggae1",
+     "Patterns_260:Reggae5",
+     "Patterns_260:Reggae10",
+     "Patterns_260:RockBreak8",
+     "Patterns_260:Ska3",
+     "Patterns_260:SkaBreak3"
+    ]
+   },
+   "46:0010001001000010": {
+    "gm": 46,
+    "row": "0010001001000010",
+    "titles": [
+     "Patterns_200:Disco1MeasureB"
+    ]
+   },
+   "36:1000100010010000": {
+    "gm": 36,
+    "row": "1000100010010000",
+    "titles": [
+     "Patterns_260:Funk9"
+    ]
+   }
+  },
+  "motifCounts": {
+   "35:0000100010010000": 1,
+   "35:1000000010000000": 3,
+   "35:1000000100000000": 1,
+   "35:1000100010010001": 1,
+   "36:1000100010001000": 3,
+   "36:1000100010010000": 2,
+   "36:1000100100001000": 3,
+   "36:1000100100010000": 3,
+   "36:1001000010001000": 5,
+   "36:1001000100010000": 1,
+   "36:1001000110011000": 1,
+   "38:0010001000100010": 4,
+   "38:0010001000100100": 2,
+   "38:0010001001000010": 2,
+   "38:0010010000100010": 2,
+   "38:0010010000100100": 1,
+   "38:0010010001000100": 1,
+   "38:0100001000100010": 1,
+   "38:0100001000100100": 1,
+   "38:0100001001000010": 1,
+   "38:0100010000100010": 2,
+   "38:0111011101110111": 1,
+   "40:0000100000001000": 2,
+   "40:0001000000001000": 2,
+   "42:0010000001000100": 1,
+   "42:0010001000100000": 1,
+   "42:0010001000100010": 2,
+   "42:0010001000100100": 1,
+   "42:0010001001000000": 1,
+   "42:0010001001000010": 1,
+   "42:0010010000100010": 2,
+   "42:0010010000100100": 1,
+   "42:0100001000100010": 1,
+   "42:0100001000100100": 1,
+   "42:0100001001000000": 1,
+   "42:0100001001000100": 1,
+   "42:1010001001000010": 1,
+   "42:1100001000100100": 2,
+   "42:1111111111111010": 1,
+   "44:0000100010001000": 2,
+   "44:0000100100010000": 1,
+   "44:0001000010010000": 1,
+   "44:0001000100001000": 1,
+   "44:0001000100010000": 1,
+   "44:0001000100010101": 1,
+   "44:1000100010001000": 1,
+   "44:1000100010010000": 2,
+   "44:1000100100001000": 1,
+   "44:1000100100010000": 1,
+   "44:1001000010001000": 2,
+   "44:1001000010010000": 1,
+   "44:1001000100011001": 1,
+   "44:1001100100010001": 1,
+   "44:1001100110011001": 1,
+   "46:0000000000000010": 2,
+   "46:0000000000000100": 1,
+   "46:0010001001000010": 1,
+   "46:0010001001000011": 1,
+   "46:0010011001000010": 1,
+   "46:0100001001000100": 1,
+   "54:1011111111110111": 1,
+   "54:1101111011111010": 1,
+   "54:1111011101110110": 1,
+   "54:1111111101111101": 1,
+   "55:1000000000000000": 1,
+   "61:1001000010100001": 1,
+   "61:1010000010010001": 1,
+   "61:1010000100010001": 1,
+   "61:1010001010010000": 1,
+   "63:1000000100000011": 2,
+   "63:1000001000000010": 2,
+   "64:0000001000000000": 2,
+   "64:0000010000000000": 2,
+   "68:0010000000000000": 2,
+   "70:1101011101111111": 1,
+   "70:1111111101110101": 1
+  },
+  "barOfMotif": {
+   "35:0000100010010000": [
+    9
+   ],
+   "35:1000000010000000": [
+    10,
+    12,
+    13
+   ],
+   "35:1000000100000000": [
+    11
+   ],
+   "35:1000100010010001": [
+    8
+   ],
+   "36:1000100010001000": [
+    9,
+    10,
+    13
+   ],
+   "36:1000100010010000": [
+    11,
+    16
+   ],
+   "36:1000100100001000": [
+    0,
+    12,
+    14
+   ],
+   "36:1000100100010000": [
+    4,
+    7,
+    15
+   ],
+   "36:1001000010001000": [
+    1,
+    2,
+    3,
+    5,
+    17
+   ],
+   "36:1001000100010000": [
+    6
+   ],
+   "36:1001000110011000": [
+    8
+   ],
+   "38:0010001000100010": [
+    1,
+    3,
+    12,
+    15
+   ],
+   "38:0010001000100100": [
+    8,
+    10
+   ],
+   "38:0010001001000010": [
+    9,
+    14
+   ],
+   "38:0010010000100010": [
+    7,
+    11
+   ],
+   "38:0010010000100100": [
+    5
+   ],
+   "38:0010010001000100": [
+    4
+   ],
+   "38:0100001000100010": [
+    16
+   ],
+   "38:0100001000100100": [
+    0
+   ],
+   "38:0100001001000010": [
+    2
+   ],
+   "38:0100010000100010": [
+    6,
+    17
+   ],
+   "38:0111011101110111": [
+    13
+   ],
+   "40:0000100000001000": [
+    12,
+    13
+   ],
+   "40:0001000000001000": [
+    10,
+    11
+   ],
+   "42:0010000001000100": [
+    12
+   ],
+   "42:0010001000100000": [
+    4
+   ],
+   "42:0010001000100010": [
+    2,
+    10
+   ],
+   "42:0010001000100100": [
+    9
+   ],
+   "42:0010001001000000": [
+    5
+   ],
+   "42:0010001001000010": [
+    8
+   ],
+   "42:0010010000100010": [
+    0,
+    16
+   ],
+   "42:0010010000100100": [
+    11
+   ],
+   "42:0100001000100010": [
+    1
+   ],
+   "42:0100001000100100": [
+    15
+   ],
+   "42:0100001001000000": [
+    14
+   ],
+   "42:0100001001000100": [
+    3
+   ],
+   "42:1010001001000010": [
+    17
+   ],
+   "42:1100001000100100": [
+    6,
+    7
+   ],
+   "42:1111111111111010": [
+    13
+   ],
+   "44:0000100010001000": [
+    6,
+    15
+   ],
+   "44:0000100100010000": [
+    17
+   ],
+   "44:0001000010010000": [
+    1
+   ],
+   "44:0001000100001000": [
+    0
+   ],
+   "44:0001000100010000": [
+    7
+   ],
+   "44:0001000100010101": [
+    13
+   ],
+   "44:1000100010001000": [
+    2
+   ],
+   "44:1000100010010000": [
+    5,
+    8
+   ],
+   "44:1000100100001000": [
+    16
+   ],
+   "44:1000100100010000": [
+    3
+   ],
+   "44:1001000010001000": [
+    4,
+    9
+   ],
+   "44:1001000010010000": [
+    14
+   ],
+   "44:1001000100011001": [
+    12
+   ],
+   "44:1001100100010001": [
+    11
+   ],
+   "44:1001100110011001": [
+    10
+   ],
+   "46:0000000000000010": [
+    4,
+    14
+   ],
+   "46:0000000000000100": [
+    5
+   ],
+   "46:0010001001000010": [
+    10
+   ],
+   "46:0010001001000011": [
+    13
+   ],
+   "46:0010011001000010": [
+    12
+   ],
+   "46:0100001001000100": [
+    11
+   ],
+   "54:1011111111110111": [
+    12
+   ],
+   "54:1101111011111010": [
+    10
+   ],
+   "54:1111011101110110": [
+    11
+   ],
+   "54:1111111101111101": [
+    13
+   ],
+   "55:1000000000000000": [
+    12
+   ],
+   "61:1001000010100001": [
+    10
+   ],
+   "61:1010000010010001": [
+    12
+   ],
+   "61:1010000100010001": [
+    11
+   ],
+   "61:1010001010010000": [
+    13
+   ],
+   "63:1000000100000011": [
+    10,
+    11
+   ],
+   "63:1000001000000010": [
+    12,
+    13
+   ],
+   "64:0000001000000000": [
+    10,
+    13
+   ],
+   "64:0000010000000000": [
+    11,
+    12
+   ],
+   "68:0010000000000000": [
+    8,
+    9
+   ],
+   "70:1101011101111111": [
+    8
+   ],
+   "70:1111111101110101": [
+    9
+   ]
+  }
+ },
+ {
+  "file": "/home/user/DNA/session19-benchmark/song19-01.mid",
+  "sha256": "c992893d6ab4ceb8ec0851212ab6212e734794c9b048887534b24dd2638e1833",
+  "markers": [
+   "intro",
+   "verse",
+   "chorus",
+   "ending"
+  ],
+  "bars": [
+   {
+    "bar": 0,
+    "startTick": 0,
+    "endTick": 1920,
+    "element": "intro",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 1,
+    "startTick": 1920,
+    "endTick": 3840,
+    "element": "intro",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 2,
+    "startTick": 3840,
+    "endTick": 5760,
+    "element": "verse",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 3,
+    "startTick": 5760,
+    "endTick": 7680,
+    "element": "verse",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 4,
+    "startTick": 7680,
+    "endTick": 9600,
+    "element": "chorus",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 5,
+    "startTick": 9600,
+    "endTick": 11520,
+    "element": "chorus",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 6,
+    "startTick": 11520,
+    "endTick": 13440,
+    "element": "ending",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   },
+   {
+    "bar": 7,
+    "startTick": 13440,
+    "endTick": 15360,
+    "element": "ending",
+    "rows": {
+     "36": "1000000010000000",
+     "38": "0000100000001000"
+    }
+   }
+  ],
+  "patternEntry": {
+   "source": "/home/user/DNA/session19-benchmark/song19-01.mid",
+   "title": "song19-01",
+   "signature": "4/4",
+   "signatureAssumed": true,
+   "length": 16,
+   "barsAnalyzed": 8,
+   "tracks": {
+    "BassDrum": {
+     "gm": 36,
+     "steps": "1000000010000000",
+     "distinctRows": 1,
+     "hits": 16
+    },
+    "SnareDrum": {
+     "gm": 38,
+     "steps": "0000100000001000",
+     "distinctRows": 1,
+     "hits": 16
+    }
+   },
+   "digest": "8778f8ee48b12c0f"
+  },
+  "corpusMatches": {
+   "36:1000000010000000": {
+    "gm": 36,
+    "row": "1000000010000000",
+    "titles": [
+     "Patterns_200:Rhythm&Blues4MeasureB",
+     "Patterns_200:Ballad2Break",
+     "Patterns_200:Afro-Cuban1MeasureA",
+     "Patterns_200:Afro-Cuban2MeasureA",
+     "Patterns_200:Afro-Cuban3MeasureB",
+     "Patterns_200:Afro-Cuban4MeasureB",
+     "Patterns_200:Afro-Cuban5MeasureA",
+     "Patterns_200:Twist1MeasureA",
+     "Patterns_200:Twist2MeasureA",
+     "Patterns_200:Twist2Break",
+     "Patterns_200:SkaMeasureA",
+     "Patterns_260:AfroCub3",
+     "Patterns_260:AfroCub4",
+     "Patterns_260:Charleston1",
+     "Patterns_260:CharlestonBreak1",
+     "Patterns_260:PopBreak3",
+     "Patterns_260:RockBreak2",
+     "Patterns_260:RockBreak9",
+     "Patterns_260:RockBreak12",
+     "Patterns_260:Ska1",
+     "Patterns_260:Ska2",
+     "Patterns_260:SkaBreak2",
+     "Patterns_260:Twist2",
+     "Patterns_260:Twist3"
+    ]
+   },
+   "38:0000100000001000": {
+    "gm": 38,
+    "row": "0000100000001000",
+    "titles": [
+     "Patterns_200:Rock1MeasureA",
+     "Patterns_200:Rock1MeasureB",
+     "Patterns_200:Rock2MeasureA",
+     "Patterns_200:Rock3MeasureA",
+     "Patterns_200:Rock3MeasureB",
+     "Patterns_200:Rock4MeasureA",
+     "Patterns_200:Rock5MeasureA",
+     "Patterns_200:Rock5MeasureB",
+     "Patterns_200:Funk1MeasureA",
+     "Patterns_200:Funk1MeasureB",
+     "Patterns_200:Funk2MeasureA",
+     "Patterns_200:Funk4MeasureA",
+     "Patterns_200:Funk7MeasureA",
+     "Patterns_200:Funk9MeasureA",
+     "Patterns_200:Funk9MeasureB",
+     "Patterns_200:Funk10MeasureA",
+     "Patterns_200:Funk10MeasureB",
+     "Patterns_200:Funk11MeasureA",
+     "Patterns_200:Funk11MeasureB",
+     "Patterns_200:Funk12MeasureA",
+     "Patterns_200:Funk12MeasureB",
+     "Patterns_200:Funk14MeasureA",
+     "Patterns_200:Funk14MeasureB",
+     "Patterns_200:Rhythm&Blues2MeasureA",
+     "Patterns_200:Rhythm&Blues3MeasureA",
+     "Patterns_200:Rhythm&Blues5MeasureB",
+     "Patterns_200:Ballad1MeasureA",
+     "Patterns_200:Ballad1MeasureB",
+     "Patterns_200:Ballad2MeasureA",
+     "Patterns_200:Ballad2MeasureB",
+     "Patterns_200:Ballad3MeasureB",
+     "Patterns_200:Ballad4MeasureA",
+     "Patterns_200:Ballad4MeasureB",
+     "Patterns_200:Ballad5MeasureA",
+     "Patterns_200:Ballad5MeasureB",
+     "Patterns_200:Pop3MeasureB",
+     "Patterns_200:Disco1MeasureA",
+     "Patterns_200:Disco2MeasureA",
+     "Patterns_200:Disco2MeasureB",
+     "Patterns_200:Disco3MeasureA",
+     "Patterns_200:Disco3MeasureB",
+     "Patterns_200:Disco4MeasureA",
+     "Patterns_200:Disco5MeasureA",
+     "Patterns_200:Disco5MeasureB",
+     "Patterns_200:Samba3MeasureA",
+     "Patterns_200:SkaMeasureA",
+     "Patterns_200:SkaMeasureB",
+     "Patterns_260:Boogie1",
+     "Patterns_260:Boogie2",
+     "Patterns_260:Disco1",
+     "Patterns_260:Disco7",
+     "Patterns_260:Disco9",
+     "Patterns_260:Disco11",
+     "Patterns_260:Charleston1",
+     "Patterns_260:Pop1",
+     "Patterns_260:Pop2",
+     "Patterns_260:Pop3",
+     "Patterns_260:Pop4",
+     "Patterns_260:Pop5",
+     "Patterns_260:Pop6",
+     "Patterns_260:Pop8",
+     "Patterns_260:Pop12",
+     "Patterns_260:Rock1",
+     "Patterns_260:Rock2",
+     "Patterns_260:Rock4",
+     "Patterns_260:Rock5",
+     "Patterns_260:Rock6",
+     "Patterns_260:Rock10",
+     "Patterns_260:Rock13",
+     "Patterns_260:Rock14",
+     "Patterns_260:Rock14",
+     "Patterns_260:Rnb3",
+     "Patterns_260:Rnb5",
+     "Patterns_260:Rnb6",
+     "Patterns_260:Rnb8",
+     "Patterns_260:Rnb9",
+     "Patterns_260:Rnb12",
+     "Patterns_260:Ska1",
+     "Patterns_260:Ska2",
+     "Patterns_260:Ska3",
+     "Patterns_260:Slow1",
+     "Patterns_260:Slow2",
+     "Patterns_260:Slow3",
+     "Patterns_260:Slow4",
+     "Patterns_260:Slow5",
+     "Patterns_260:Slow10",
+     "Patterns_260:Slow11",
+     "Patterns_260:Slow12",
+     "Patterns_260:SlowBreak6"
+    ]
+   }
+  },
+  "motifCounts": {
+   "36:1000000010000000": 8,
+   "38:0000100000001000": 8
+  },
+  "barOfMotif": {
+   "36:1000000010000000": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "38:0000100000001000": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  }
+ }
+]

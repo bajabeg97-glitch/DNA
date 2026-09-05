@@ -42,6 +42,7 @@ from dna_midi_studio.mix_engine import plan_cc_gain, apply_gain_plan, mix_gates
 from dna_midi_studio.role_patterns import role_pattern_evidence
 from dna_midi_studio.sty_mapper import (export_korg_style, parse_markers,
                                         section_map, structure_gates)
+from dna_midi_studio.user_reference_bank import pattern_recognition
 
 SESSION_SCHEMA = "dna-session-pass"
 SESSION_VERSION = "4.60"
@@ -328,8 +329,9 @@ def session_pass(raw: bytes, *, source_name: str,
                     "channelsMissingCC": mix_summary["channelsMissingCC"]},
         "actions": actions,
         "gatesSummary": gates_summary,
+        "patternRecognition": pattern_recognition(raw, source_name),
         "note": "engine set: 4.52 mix, 4.53 sty, 4.54 groove, 4.55 techniques, "
-                "4.57 special track, 4.59 role patterns",
+                "4.57 special track, 4.59 role patterns, 4.65 pattern bank",
     }
     if out_dir:
         p = Path(out_dir)

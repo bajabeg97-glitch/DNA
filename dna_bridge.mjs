@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// DNA Optimizer bridge 4.63 — AI Studio UI (assistant + sidebar) over Session Pass. From 4.61 (Phase B): stdlib node:http, no npm deps.
+// DNA Optimizer bridge 4.65 — AI Studio UI (assistant + sidebar) over Session Pass. From 4.61 (Phase B): stdlib node:http, no npm deps.
 //
 // One node:http server (stdlib only) that
 //   * serves a minimal dark UI at /
@@ -237,7 +237,7 @@ pre{font-size:10.6px;max-height:300px;overflow:auto;color:#9db8dc}
   <div class="sec">Pravila</div>
   <button class="mi" onclick="rulesInfo()"><span class="ic">⚖</span>Licence i invarijante</button>
  </div>
- <footer><span class="alive"></span>bridge 4.63 · <span id="vstats">…</span></footer>
+ <footer><span class="alive"></span>bridge 4.65 · <span id="vstats">…</span></footer>
 </aside>
 <main id="main">
  <div id="top"><button id="hamb" class="ib" onclick="document.getElementById('side').classList.toggle('open')">☰</button>
@@ -364,6 +364,17 @@ function grooveTable(r){if(!((r.grooveVsHuman||[]).length))return '';
  return '<div style="margin-top:8px"><span style="color:var(--muted);font-size:11px">Groove vs ljudska referenca (pravi bubnjari: std ≈ 27,96 ms)</span><table><tr><th>kanal</th><th>note</th><th>std ms</th><th>na gridu</th></tr>'
  +r.grooveVsHuman.map(function(g){return '<tr><td>ch'+esc(g.channel)+' '+esc(g.role)+'</td><td>'+esc(g.noteCount)+'</td><td>'+esc(g.stdMs)+'</td><td>'+Math.round((g.exactOnGridShare||0)*100)+' %</td></tr>';}).join('')+'</table></div>';}
 function countReady(r){return (r.actions||[]).filter(function(a){return a.status==='READY';}).length;}
+
+function addRecognitionCard(r){var pr=r.patternRecognition;if(!pr)return;
+ var cm=Object.values(pr.corpusMatches||{});var titles=[];
+ cm.forEach(function(m){m.titles.forEach(function(t){if(titles.indexOf(t)<0)titles.push(t);});});
+ var um=Object.values(pr.userReferenceMatches||{});var uf=[];
+ um.forEach(function(m){m.userFiles.forEach(function(f){if(uf.indexOf(f)<0)uf.push(f);});});
+ var body='<div style="margin:0 0 4px"><b style="font-size:12.5px">Prepoznavanje obrazaca (4.65)</b> <span style="color:var(--muted);font-size:11px">· 16-step bubanj linije, tacna poklapanja</span></div>';
+ if(titles.length){body+='<div style="margin:6px 0;display:flex;flex-wrap:wrap;gap:6px">'+titles.slice(0,12).map(function(t){return '<span class="badge READY" style="background:#12492e">'+esc(t)+'</span>';}).join('')+'</div>';}
+ else {body+='<p style="margin:6px 0 2px;color:var(--muted)">Nema tacnih poklapanja sa 468 korpus obrazaca (ocekivano za swing/human tajming).</p>';}
+ if(uf.length){body+='<p style="margin:4px 0 0;font-size:12px">Poklapa se sa tvojim referencama: <b>'+uf.map(function(f){return esc(f.replace('.mid',''));}).join('</b>, <b>')+'</b></p>';}
+ addBot(card(body));}
 function renderPlan(j){var r=j.report;
  var actRows=(r.actions||[]).map(function(a){
   var cb=(a.status==='READY')?'<input type="checkbox" data-id="'+esc(a.id)+'" checked>':'<input type="checkbox" disabled>';
@@ -379,6 +390,7 @@ function renderPlan(j){var r=j.report;
    +'<button class="btn ghost" onclick="applyAllReady()">Primeni sve READY</button></div>');
  addBot(html);
  addBot(card('<div class="actrow-head"><b style="font-size:13px">Role patterni</b><span style="color:var(--muted);font-size:11px">+ melodijski profil za solo</span></div>'+roleTable(r)+grooveTable(r)));
+ addRecognitionCard(r);
  addBot(card('<details open><summary>sirovi izveštaj (JSON · Session Pass 4.60)</summary><pre>'+esc(JSON.stringify(r,null,1))+'</pre></details>'));
  window.__boxes=function(){var c=[].slice.call(document.querySelectorAll('.actions input[type=checkbox]:checked'));
   return c.map(function(i){return i.getAttribute('data-id');});};}
@@ -407,7 +419,7 @@ async function route(req, res) {
     return res.end(INDEX_HTML);
   }
   if (req.method === 'GET' && p === '/api/health') {
-    return json(res, 200, { ok: true, version: '4.63', python: PY, outDir: OUT_DIR,
+    return json(res, 200, { ok: true, version: '4.65', python: PY, outDir: OUT_DIR,
                             engines: ['session_pass 4.60', 'mix 4.52', 'sty 4.53',
                                       'groove 4.54', 'techniques 4.55', 'special 4.57',
                                       'roles 4.59'] });
