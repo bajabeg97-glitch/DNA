@@ -1,0 +1,36 @@
+{
+  "schema": "dna-product-decision-status",
+  "milestone": "5.0-vision",
+  "status": "recorded",
+  "date": "2026-09-05",
+  "productGoal": "Suno-like experience, but ONLY optimization (no from-scratch generation), built on the Korg Pa800 foundation: user brings a file, the system understands it, proposes evidence-backed optimizations, user confirms, and receives a Pa800-importable result (.sty/SMF) plus a gated report.",
+  "sourceOfTruth": {
+    "vision": "docs/dna-optimizer-vision.md",
+    "roadmap": "docs/roadmap-ai-session-musician.md (section 5.0 rewritten)"
+  },
+  "sunoMapping": {
+    "sunoPrompt": "dnaUpload: .mid/.sty/SMF with Pa800 markers",
+    "sunoGeneration": "NONE - measurement + evidence-gated optimization only",
+    "sunoStyleModel": "role/pattern evidence + Pa800 layout (markers, CV, sections)",
+    "sunoMakeSong": "optimization plan: per-action status DOKAZANO / ZAHTEVA_ODLUKU / ZAKLJUCANO",
+    "sunoAudioOut": "Pa800 .sty export (SMF0 + markers) + optimized SMF + gate report"
+  },
+  "phases": {
+    "A": "consolidated single-pass report over all engines (CLI) - ~90% exists",
+    "B": "Node stdlib bridge (node:http + child_process python, no npm deps)",
+    "C": "React flow: upload -> analysis -> plan -> apply confirmed actions -> export",
+    "D": "WebAudio A/B audition in browser (own small synth, no external deps)"
+  },
+  "feasibilityChecked": {
+    "registryNpmjs": "code 200 (reachable)",
+    "python": "3.11.2 present",
+    "reactApp": "src/main.jsx 415 lines + musicAnalysis.js 483 lines (exists, npm test 7/7)"
+  },
+  "invariants": [
+    "original file never overwritten (outputs to artifacts-*)",
+    "velocity authority FACTORY_ONLY; no bank/program without evidence",
+    "DNC/slap/pop triggers locked until device capture (warrant ledger)",
+    "every applied action carries reason + gate; reports are the proof",
+    "no network/no extra installs at runtime (stdlib + built-in JS)"
+  ]
+}

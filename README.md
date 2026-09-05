@@ -2,6 +2,13 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **DNA Optimizer 5.0 (vizija):** proizvodni cilj je „Suno iskustvo", ali SAMO
+> optimizacija (nema generisanja od nule), na Korg Pa800 temelju: upload →
+> razumevanje (role/patterni 4.59, groove 4.54, tehnike 4.55, echo/terca 4.57,
+> miks 4.52) → plan akcija sa kapijama → primena potvrđenih → Pa800 `.sty`
+> izvoz (4.53). Faze A–D u `docs/dna-optimizer-vision.md`; status
+> `dna-optimizer-vision-status-5.0.json`.
+> **GUI → role patterns 4.59:** dokazan lanac od GUI-ja nadalje — React GUI
 > **GUI → role patterns 4.59:** dokazan lanac od GUI-ja nadalje — React GUI
 > `analyzeUploadedFile` (src/musicAnalysis.js) analizira realne fajlove
 > (`artifacts-max-4.59/gui-analysis-*.json`), pa `role_patterns.py` meri

@@ -38,11 +38,23 @@ main tajmingu uz harmony dokaz, inferencija neimenovanih aux treka; main se
 nikada ne menja, 0 trigera. Dokazi: `artifacts-max-4.57/`, guide
 `docs/studio-special-track-4.57.md`.
 
-## 5.0 AI Session Musician — „zna kako svira i šta je gdje"
-Integracija svega u jedan prolaz:
-1. **Šta je gdje:** semantička mapa fajla (kanal → zvuk → uloga → registar → deo pesme).
-2. **Šta instrument može:** katalog + factory dokazi (postoji u `complete-instrument-profiles-4.44.json`).
-3. **Kako se svira:** 4.54 groove + 4.55 tehnike.
+## 5.0 DNA Optimizer — „Suno iskustvo", samo optimizacija, na Korg Pa800 temelju
+Proizvodni cilj (korisnik): korisnik donese fajl → sistem razume, predloži,
+korisnik klikne, dobije Pa800 rezultat. Nema generisanja od nule — sve je
+optimizacija postojećeg materijala, sve akcije sa dokazom i kapijom.
+Vizija: `docs/dna-optimizer-vision.md`.
+
+Integracija svega u jedan prolaz (faze):
+1. **Šta je gdje:** semantička mapa fajla — kanal → zvuk → uloga → registar →
+   deo pesme (4.51, 4.59 role patterni, GUI analiza).
+2. **Šta instrument može:** katalog + factory dokazi
+   (`complete-instrument-profiles-4.44.json`).
+3. **Kako se svira:** 4.54 groove + 4.55 tehnike + 4.57 echo/terca.
 4. **Miks:** 4.52 slojevi i balans.
-Izlaz: analiza + primenjen aranžman + izveštaj sa kapijama. Bez .md dokaza — samo
-izvršeni bytes/metrike/testovi.
+5. **Pa800 izlaz:** 4.53 STY mapper (SMF0 + markeri + setup iz dokaza).
+6. **Faze proizvoda:** A objedinjeni prolaz (CLI, 90 % postoji) → B Node
+   bridge bez dependencija → C React tok (upload/plan/apply/izvoz) →
+   D WebAudio A/B audicija u browseru.
+
+Izlaz svakog koraka: analiza + primenjen aranžman + izveštaj sa kapijama.
+Bez .md dokaza — samo izvršeni bytes/metrike/testovi (dokument nije dokaz).
