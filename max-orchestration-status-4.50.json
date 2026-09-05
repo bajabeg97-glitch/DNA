@@ -1,0 +1,46 @@
+{
+  "schema": "dna-max-orchestration-status",
+  "version": "1.0",
+  "reviewVersion": "4.50",
+  "reviewedAt": "2026-09-05",
+  "status": "ACTIVE_OPT_IN",
+  "milestone": "Studio Core 4.50 — reconstruction on a single arranger contract",
+  "decisionChain": [
+    "4.47 archive (B)",
+    "4.48 full MAX reactivation (A) — 13-agent team, neural REPLACE e2e",
+    "4.49 Arranger Pro — instrument-aware features working standalone",
+    "4.50 user request: is this really the best design? reconstruct every important file",
+    "Answer: design-critic review -> fragmentation identified -> consolidation on arranger_contract.py + planner + studio_flow (14-agent team)"
+  ],
+  "reconstruction": [
+    "arranger_contract.py — single source of truth (channel roles, polyphony budgets, factory velocity FACTORY_ONLY, strum register, chord tone classification, gates)",
+    "arranger_pro.py — rebuilt on the contract, public API unchanged (4.49 suite still green)",
+    "arranger_planner.py — NEW: per-channel instrument-fit diagnostics (register/density/dynamics/gate) and KEEP/REPAIR_WARRANT/FILL_EMPTY/MANUAL_REVIEW decisions",
+    "studio_flow.py — NEW single entry: analyze -> plan -> execute warranted fill -> metrics -> gates -> artifacts"
+  ],
+  "executionEvidence": {
+    "plan": {
+      "8 bass": "KEEP (fit 1.0)", "9 drums": "MANUAL_REVIEW", "10 percussion": "MANUAL_REVIEW",
+      "11-14 acc": "KEEP", "15 acc guitar slot": "FILL_EMPTY (budget 3 voices)"
+    },
+    "studioRun": {
+      "channel": 15, "bars": "1-18", "notes": 410,
+      "register": "48-72 (0 out of range)", "peakPolyphony": "3/3",
+      "velocity": "factory-only by 410 proofs", "velocityMax": 114, "headroomTo127": 13,
+      "chordToneCoverage": "410/410 cells (0 unknown)", "chordToneRatio": 0.737,
+      "gates": "all pass (reparse, protected diff, factory-only, polyphony limits)"
+    }
+  },
+  "agents": "agent-team-max-4.50.json (14, all done)",
+  "tasks": "task-plan-max-4.50.json (T26-T39, all done)",
+  "reports": "reports-max-4.50/",
+  "guide": "docs/studio-flow-4.50.md",
+  "constraints": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldAffectsDynamics": false,
+    "noUnverifiedBankProgramChange": true,
+    "defaultProductionFlowUntouched": true,
+    "neverOverwritesPopulatedChannel": true,
+    "finalValidatorRequired": true
+  }
+}

@@ -2,6 +2,11 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Studio Core 4.50 (reconstruction):** design review + consolidation on a single
+> arranger contract — `dna_midi_studio/arranger_contract.py` (one factory-velocity,
+> channel/polyphony facts, chord-tone classifier), `arranger_planner.py` (per-channel
+> instrument-fit + decisions), `studio_flow.py` (analyze→plan→execute→metrics→gates).
+> Evidence: `reports-max-4.50/`, guide `docs/studio-flow-4.50.md`, status `max-orchestration-status-4.50.json`.
 > **Arranger Pro 4.49:** a real arranger that knows how each instrument plays —
 > instrument briefs per channel, Factory-strum **Strumming**, advisory **Best
 > Instruments**, **Headroom** (PA800 polyphony budget + dynamics), register fit,

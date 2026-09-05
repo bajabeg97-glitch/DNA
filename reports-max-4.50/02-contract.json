@@ -1,0 +1,32 @@
+{
+  "schema": "dna-4.50-arranger-contract",
+  "agent": "contract-architect",
+  "module": "dna_midi_studio/arranger_contract.py",
+  "facts": [
+    {
+      "name": "CHANNEL_ROLES",
+      "value": "8 bass,9 drums,10 percussion,11-15 accompaniment"
+    },
+    {
+      "name": "polyphony_limit",
+      "value": "PA800_CHANNEL_POLYPHONY_LIMITS (ch15=3)"
+    },
+    {
+      "name": "factory_velocity",
+      "value": "single FACTORY_ONLY resolver (strong/highMid/optimal)"
+    },
+    {
+      "name": "STRUM_REGISTER",
+      "value": "48-72"
+    },
+    {
+      "name": "chord_pc_set",
+      "value": "quality aliases + symbol fallback, 0 unknown cells on fixture"
+    }
+  ],
+  "deduplicatedFrom": [
+    "track_replacement.FactoryVelocityProvider",
+    "arranger_pro 4.49 constants",
+    "pa800_validator limits"
+  ]
+}

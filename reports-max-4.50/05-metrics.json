@@ -1,0 +1,57 @@
+{
+  "schema": "dna-4.50-metrics",
+  "agent": "metrics-agent",
+  "metrics": {
+    "schema": "dna-studio-flow-metrics",
+    "version": "4.50",
+    "addedNotesTotal": 410,
+    "removedNotesTotal": 0,
+    "channelsWithAdditions": [
+      15
+    ],
+    "perChannel": {
+      "15": {
+        "addedNotes": 410,
+        "chordToneRatio": 0.737,
+        "chordToneChecked": 410,
+        "cellsWithoutChordQuality": 0,
+        "outOfStrumRegister": 0,
+        "register": [
+          48,
+          72
+        ],
+        "avgVelocity": 83.5,
+        "velocityMin": 82,
+        "velocityMax": 114
+      }
+    },
+    "headroomBefore": {
+      "8": true,
+      "9": true,
+      "10": true,
+      "11": true,
+      "12": true,
+      "13": true,
+      "14": true
+    },
+    "headroomAfter": {
+      "8": true,
+      "9": true,
+      "10": true,
+      "11": true,
+      "12": true,
+      "13": true,
+      "14": true,
+      "15": true
+    },
+    "mixNoteCountBefore": 1400,
+    "mixNoteCountAfter": 1810,
+    "policy": "notes outside the target channel must never change; velocity factory-only"
+  },
+  "interpretation": {
+    "chordToneRatio_15": 0.737,
+    "coverage": "410/410 cells classified",
+    "register": "all 410 notes within 48-72",
+    "dynamics": "factory-only, avg 83.5, max 114 (headroom 13)"
+  }
+}

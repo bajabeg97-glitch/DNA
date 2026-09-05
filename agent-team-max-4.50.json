@@ -1,0 +1,153 @@
+{
+  "schema": "dna-max-4.50-agent-team",
+  "version": "1.0",
+  "milestone": "Studio Core 4.50 reconstruction",
+  "date": "2026-09-05",
+  "manager": "orchestrator-max",
+  "priorTeams": [
+    "agent-team-max-4.48.json (13)",
+    "agent-team-max-4.49.json (10)"
+  ],
+  "invariants": {
+    "velocityAuthority": "FACTORY_ONLY",
+    "goldAffectsDynamics": false,
+    "noUnverifiedBankProgramChange": true,
+    "defaultProductionFlowUntouched": true,
+    "finalValidatorRequired": true
+  },
+  "agents": [
+    {
+      "id": "orchestrator-max",
+      "role": "manager",
+      "rounds": [
+        "4.48",
+        "4.49",
+        "4.50"
+      ],
+      "status": "done",
+      "evidence": "max-orchestration-status-4.50.json"
+    },
+    {
+      "id": "design-critic",
+      "role": "architecture-review",
+      "responsibilities": [
+        "honest review of 4.48/4.49 design",
+        "define consolidation"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/01-design-review.json"
+    },
+    {
+      "id": "contract-architect",
+      "role": "implementation",
+      "responsibilities": [
+        "single source of truth module (channels/registers/polyphony/factory-velocity/chord tones/gates)"
+      ],
+      "status": "done",
+      "evidence": "dna_midi_studio/arranger_contract.py, reports-max-4.50/02-contract.json"
+    },
+    {
+      "id": "reconstruction-engineer",
+      "role": "implementation",
+      "responsibilities": [
+        "rebuild arranger_pro.py on the contract, API unchanged"
+      ],
+      "status": "done",
+      "evidence": "dna_midi_studio/arranger_pro.py + 4.49 suite still green"
+    },
+    {
+      "id": "instrument-fit-planner",
+      "role": "arrangement",
+      "responsibilities": [
+        "per-channel fit vs instrument nature (register/density/dynamics/gate) + warrants + fill candidates"
+      ],
+      "status": "done",
+      "evidence": "dna_midi_studio/arranger_planner.py, reports-max-4.50/03-planner.json"
+    },
+    {
+      "id": "studio-orchestrator",
+      "role": "implementation",
+      "responsibilities": [
+        "studio_flow.py analyze->plan->execute->metrics->gates"
+      ],
+      "status": "done",
+      "evidence": "dna_midi_studio/studio_flow.py, reports-max-4.50/04-studio-run.json"
+    },
+    {
+      "id": "metrics-agent",
+      "role": "music-analysis",
+      "responsibilities": [
+        "before/after metrics: chord tones, register, dynamics, headroom"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/05-metrics.json"
+    },
+    {
+      "id": "gate-validator",
+      "role": "hard-validator",
+      "responsibilities": [
+        "reparse, protected diff, factory-only proofs, polyphony budget"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/06-gates.json"
+    },
+    {
+      "id": "test-agent",
+      "role": "implementation",
+      "responsibilities": [
+        "v450 + v449 suites"
+      ],
+      "status": "done",
+      "evidence": "test_studio_flow_v450.py, reports-max-4.50/07-tests.json"
+    },
+    {
+      "id": "scope-auditor",
+      "role": "data-quality",
+      "responsibilities": [
+        "production pipeline untouched proof"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/08-scope.json"
+    },
+    {
+      "id": "integration-advisor",
+      "role": "advisory",
+      "responsibilities": [
+        "map studio flow onto unified_pipeline engine contract"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/09-pipeline-integration.json"
+    },
+    {
+      "id": "roadmap-agent",
+      "role": "advisory",
+      "responsibilities": [
+        "next evidence-based features (comping slots, pads, style export)"
+      ],
+      "status": "done",
+      "evidence": "reports-max-4.50/10-next.json"
+    },
+    {
+      "id": "docs-agent",
+      "role": "documentation",
+      "responsibilities": [
+        "studio flow guide + README"
+      ],
+      "status": "done",
+      "evidence": "docs/studio-flow-4.50.md"
+    },
+    {
+      "id": "release-agent",
+      "role": "release",
+      "responsibilities": [
+        "4.50 status + completion"
+      ],
+      "status": "done",
+      "evidence": "max-orchestration-status-4.50.json"
+    }
+  ],
+  "completion": {
+    "allDone": true,
+    "tests": "17/17 fast suites + 15/15 max (4.48) green"
+  }
+}

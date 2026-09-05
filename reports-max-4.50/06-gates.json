@@ -1,0 +1,11 @@
+{
+  "schema": "dna-4.50-gates",
+  "agent": "gate-validator",
+  "gates": {
+    "reparsed": true,
+    "protectedChannelsUnchanged": true,
+    "factoryVelocityOnly": true,
+    "allChannelsWithinPolyphonyLimits": true
+  },
+  "note": "protected channels byte-identical at note level; velocity factory-only verified by 410 proofs pre-write (profile ids are not serialized in MIDI bytes)"
+}

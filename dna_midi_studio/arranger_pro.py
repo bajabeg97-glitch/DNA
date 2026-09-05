@@ -1,36 +1,13 @@
 """
-Arranger Pro 4.49 — a real arranger that knows how every instrument plays.
+Arranger Pro 4.49+ (reconstructed on the 4.50 contract).
 
-Layers (all deterministic, evidence-only, no torch required):
+Instrument-aware arrangement layers built on dna_midi_studio.arranger_contract
+so that channel facts, register windows and factory-velocity resolution exist
+exactly once in the codebase.
 
-1) INSTRUMENT INTELLIGENCE  - for every used channel: which instrument role it is,
-   how that instrument actually plays (player model, techniques, phrase rules,
-   register/gate/density/articulation policy from the 4.44 musician profile
-   catalog) PLUS observed stats (register used, gate ratio, dynamics) so the
-   arranger can compare the part against the instrument's nature.
-
-2) BEST INSTRUMENTS        - advisory factory sound recommendation per role
-   (bank/program) ranked by sample evidence.  Never writes a Bank/Program
-   change: global rule NO_UNVERIFIED_BANK_PROGRAM_CHANGE.
-
-3) STRUMMING               - rhythm-guitar strum part built from Factory strum
-   evidence (factory-strumming.json via PerformanceDNAEngine), chord-voiced from
-   the song's chord cells, velocity strictly from Factory curves (FACTORY_ONLY).
-
-4) HEADROOM                - per-channel polyphony audit against the fixed
-   PA800 channel limits plus dynamic headroom (distance of peak velocity from
-   127 and from the factory ceiling).  The arranger trims only its OWN new part
-   so it fits the target channel; pre-existing material is only reported.
-
-5) ARRANGE (orchestrator)  - brief -> instruments -> strum fill on the target
-   (empty) accompaniment channel -> headroom verify -> gates (reparse +
-   protected-events diff) -> arranged MIDI + full JSON report.
-
-Run:
-    python3 dna_midi_studio/arranger_pro.py arrange \
-        --input session35-partial-preview.mid --target-channel 15 --out-dir artifacts-max-4.49
-    python3 dna_midi_studio/arranger_pro.py brief --input <file.mid>
-    python3 dna_midi_studio/arranger_pro.py headroom --input <file.mid>
+API is backward compatible with the 4.49 release:
+    instruments_brief(raw) / best_instruments(raw) / build_strum_part(...) /
+    headroom_audit(raw) / arrange(...)  + the same CLI commands.
 """
 from __future__ import annotations
 
@@ -42,76 +19,41 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from dna_midi_studio.midi import MidiFile, Note  # noqa: E402
 from dna_midi_studio.song_understanding import analyze_song_map  # noqa: E402
-from dna_midi_studio.pa800_validator import PA800_CHANNEL_POLYPHONY_LIMITS, valid_marker  # noqa: E402
-
-# PA800 style channel map (0-based MIDI channels as used by the repo).
-CHANNEL_ROLES = {
-    8: "bass", 9: "drums", 10: "percussion",
-    11: "accompaniment", 12: "accompaniment", 13: "accompaniment",
-    14: "accompaniment", 15: "accompaniment",
-}
-FACTORY_ROLE_BY_STYLE_ROLE = {
-    "bass": "bass", "drums": "drums", "percussion": "drums",
-    "accompaniment": "chords", "solo": "melody",
-}
-STRUM_REGISTER = (48, 72)          # factory rhythm-guitar voicing window
-ACC_CHANNELS = (11, 12, 13, 14, 15)
+from dna_midi_studio.arranger_contract import (  # noqa: E402
+    ACC_CHANNELS, CHANNEL_ROLES, COMP_REGISTER, FACTORY_ROLE_BY_STYLE_ROLE,
+    STRUM_REGISTER, VELOCITY_ROLE, factory_velocity, factory_profiles,
+    instrument_catalog, polyphony_limit, protected_snapshot,
+)
 
 
-# --------------------------------------------------------------------------
-# data loaders (cached)
-# --------------------------------------------------------------------------
-_cache: dict[str, Any] = {}
-
-
-def _load(name: str):
-    if name not in _cache:
-        _cache[name] = json.loads((ROOT / name).read_text(encoding="utf-8"))
-    return _cache[name]
-
-
-def _instrument_catalog() -> dict[str, Any]:
-    return _load("complete-instrument-profiles-4.44.json")["roles"]
-
-
-def _factory_profiles() -> list[dict[str, Any]]:
-    return _load("factory-velocity-profiles.json")["profiles"]
-
-
-def _profile_for_role(factory_role: str) -> dict[str, Any]:
-    pool = [p for p in _factory_profiles() if p.get("role") == factory_role]
-    if not pool:
-        raise ValueError(f"no factory velocity profiles for role {factory_role}")
-    return max(pool, key=lambda p: (float(p.get("sample_count") or 0), float(p.get("confidence") or 0), str(p.get("id", ""))))
-
-
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # 1) instrument intelligence
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 def _observed_stats(midi: MidiFile, channel: int) -> dict[str, Any]:
     notes = [n for n in midi.notes() if n.channel == channel]
     if not notes:
         return {"present": False}
-    gates = []
-    by_start = {}
+    by_start: dict[int, list] = {}
     for n in notes:
         by_start.setdefault(n.start, []).append(n)
+    gates = []
     for onset in sorted(by_start):
         group = by_start[onset]
         nxt = min((x.start for x in notes if x.start > onset), default=None)
         ioi = max(1, (nxt - onset)) if nxt is not None else 1
         for n in group:
             gates.append(max(0.0, min(1.0, (n.end - n.start) / ioi)))
-    vel = [n.velocity for n in notes]
+    vels = [n.velocity for n in notes]
     return {
         "present": True, "noteCount": len(notes),
         "register": [min(n.pitch for n in notes), max(n.pitch for n in notes)],
-        "avgVelocity": round(sum(vel) / len(vel), 1),
-        "velocityMin": min(vel), "velocityMax": max(vel),
+        "avgVelocity": round(sum(vels) / len(vels), 1),
+        "velocityMin": min(vels), "velocityMax": max(vels),
         "avgGateRatio": round(sum(gates) / len(gates), 3) if gates else None,
         "polyphonyPeak": max((len(g) for g in by_start.values()), default=0),
     }
@@ -119,8 +61,8 @@ def _observed_stats(midi: MidiFile, channel: int) -> dict[str, Any]:
 
 def instruments_brief(raw: bytes) -> dict[str, Any]:
     midi = MidiFile.from_bytes(raw)
-    catalog = _instrument_catalog()
-    channels = {}
+    catalog = instrument_catalog()
+    channels: dict[str, Any] = {}
     for ch, style_role in CHANNEL_ROLES.items():
         obs = _observed_stats(midi, ch)
         if not obs["present"]:
@@ -133,7 +75,7 @@ def instruments_brief(raw: bytes) -> dict[str, Any]:
             "playerModel": entry.get("playerModel") or behavior.get("musician_model"),
             "techniques": behavior.get("techniques", []),
             "phraseRules": behavior.get("phrase_rules", []),
-            "registerPolicy": entry.get("register_policy") or behavior.get("register_policy", []),
+            "registerPolicy": entry.get("register_policy", []),
             "gatePolicy": entry.get("gate_policy", []),
             "densityPolicy": entry.get("density_policy", []),
             "articulationPolicy": entry.get("articulation_policy", []),
@@ -145,21 +87,20 @@ def instruments_brief(raw: bytes) -> dict[str, Any]:
             "instrumentCatalogVersion": "4.44.0", "channels": channels}
 
 
-# --------------------------------------------------------------------------
-# 2) best instruments (advisory)
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# 2) best instruments (advisory only)
+# ---------------------------------------------------------------------------
 def best_instruments(raw: bytes, *, limit: int = 3) -> dict[str, Any]:
-    profiles = _factory_profiles()
+    profiles = factory_profiles()
     brief = instruments_brief(raw)
     recs: dict[str, list[dict[str, Any]]] = {}
     for ch_key, info in brief["channels"].items():
-        ch = int(ch_key)
         f_role = FACTORY_ROLE_BY_STYLE_ROLE.get(info["styleRole"])
         if not f_role:
             continue
         pool = [p for p in profiles if p.get("role") == f_role]
-        pool.sort(key=lambda p: (float(p.get("sample_count") or 0), float(p.get("confidence") or 0)),
-                  reverse=True)
+        pool.sort(key=lambda p: (float(p.get("sample_count") or 0),
+                                 float(p.get("confidence") or 0)), reverse=True)
         recs[ch_key] = [{
             "instrument": p.get("instrument_name"), "bank": p.get("bankMsb"),
             "lsb": p.get("bankLsb"), "program": p.get("program"),
@@ -175,24 +116,14 @@ def best_instruments(raw: bytes, *, limit: int = 3) -> dict[str, Any]:
     }
 
 
-# --------------------------------------------------------------------------
-# 3) strumming (Factory strum evidence + Factory velocity only)
-# --------------------------------------------------------------------------
-def _factory_velocity(midi: MidiFile, ch: int, tick: int, pitch: int, f_role: str) -> dict[str, Any]:
-    """Deterministic factory-curve velocity, mirroring FactoryVelocityProvider semantics."""
-    profiles = _factory_profiles()
-    pool = [p for p in profiles if p.get("role") == f_role]
-    sound = midi.sound_at(ch, tick)
-    exact = []
-    if sound:
-        exact = [p for p in pool if (p.get("bankMsb"), p.get("bankLsb"), p.get("program")) == tuple(sound)]
-    chosen = max(exact or pool, key=lambda p: (bool(exact), float(p.get("sample_count") or 0), str(p.get("id", ""))))
-    phase = (tick % max(1, midi.ppq * 4)) / max(1, midi.ppq * 4)
-    label = "strong" if phase < .03 else ("highMid" if abs(phase - .5) < .04 else "optimal")
-    vel = chosen.get("velocity") or {}
-    value = int(vel.get(label, vel.get("optimal", vel.get("max", 96))))
-    return {"velocity": max(1, min(127, value)), "profileId": chosen.get("id"), "curvePoint": label,
-            "sound": list(sound) if sound else None}
+# ---------------------------------------------------------------------------
+# 3) strumming
+# ---------------------------------------------------------------------------
+def _music_track(midi: MidiFile) -> int:
+    counts: dict[int, int] = {}
+    for n in midi.notes():
+        counts[n.track] = counts.get(n.track, 0) + 1
+    return max(counts, key=lambda t: (counts[t], -t)) if counts else 0
 
 
 def _chord_root_at(song: dict[str, Any], tick: int) -> int:
@@ -211,13 +142,6 @@ def _bar_section(song: dict[str, Any], tick: int) -> str:
     return "unknown"
 
 
-def _music_track(midi: MidiFile) -> int:
-    counts: dict[int, int] = {}
-    for n in midi.notes():
-        counts[n.track] = counts.get(n.track, 0) + 1
-    return max(counts, key=lambda t: (counts[t], -t)) if counts else 0
-
-
 def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
                      track_index: int | None = None,
                      max_voices: int | None = None) -> dict[str, Any]:
@@ -229,8 +153,8 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
     bars = song["bars"]
     if not 1 <= start_bar <= end_bar <= len(bars):
         raise ValueError("invalid bar range")
-    f_role = FACTORY_ROLE_BY_STYLE_ROLE["accompaniment"]  # chords
-    limit = max_voices if (isinstance(max_voices, int) and max_voices > 0) else int(PA800_CHANNEL_POLYPHONY_LIMITS.get(channel, 16))
+    f_role = VELOCITY_ROLE["rhythm-guitar"]  # chords
+    limit = max_voices if (isinstance(max_voices, int) and max_voices > 0) else polyphony_limit(channel)
     engine = PerformanceDNAEngine(ROOT)
     notes: list[Note] = []
     proofs: list[dict[str, Any]] = []
@@ -242,7 +166,6 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
         bpm = float(song["tempoMap"][0]["bpm"])
         meter = f'{song["meterMap"][0]["numerator"]}/{song["meterMap"][0]["denominator"]}'
         root = _chord_root_at(song, bs)
-        # pattern variant from section energy (stable, no randomness)
         preferred = 1 if any(x in section for x in ("chorus", "fill", "transition")) else (2 if "intro" in section else 0)
         variants = [preferred] + [v for v in (0, 1, 2) if v != preferred]
         g = None
@@ -252,12 +175,12 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
                 g = engine.generate_pattern("rhythm-guitar", meter, bpm, section, 0.0,
                                             variant=variant, phrase_position=0.5, section_energy=0.6)
                 break
-            except ValueError as exc:  # anti-copy / evidence gates -> try next variant
+            except ValueError as exc:
                 last_error = exc
         if g is None:
             raise ValueError(f"strum evidence unavailable for section '{section}': {last_error}")
         source_ids.update(g.get("patternSourceIds") or [])
-        ringing: list[Note] = []  # headroom: voices still active in this bar
+        ringing: list[Note] = []
         for row in g["events"][0]:
             pos, dur, code, present = map(int, row[:4])
             if not present:
@@ -266,14 +189,14 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
             end = min(be, max(start + 1, start + round(dur * midi.ppq / 96)))
             ringing = [n for n in ringing if n.end > start]
             if len(ringing) >= limit:
-                continue  # skip extra voice -> target channel stays inside its PA800 limit
+                continue
             rel = code - 64
             base = 48 + (root % 12) + rel
             while base < STRUM_REGISTER[0]:
                 base += 12
             while base > STRUM_REGISTER[1]:
                 base -= 12
-            vel = _factory_velocity(midi, channel, start, base, f_role)
+            vel = factory_velocity(midi, channel, start, base, f_role)
             note = Note(track, channel, base, start, end, vel["velocity"],
                         factory_profile_id=vel["profileId"])
             notes.append(note)
@@ -290,24 +213,20 @@ def build_strum_part(raw: bytes, *, channel: int, start_bar: int, end_bar: int,
     }
 
 
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # 4) headroom audit
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 def headroom_audit(raw: bytes, *, channel_filter: set[int] | None = None) -> dict[str, Any]:
     midi = MidiFile.from_bytes(raw)
     notes = midi.notes()
-    channels = sorted({n.channel for n in notes if n.channel in PA800_CHANNEL_POLYPHONY_LIMITS})
+    channels = sorted({n.channel for n in notes if n.channel in CHANNEL_ROLES})
     if channel_filter:
         channels = [c for c in channels if c in channel_filter]
-    by_bar = {}
-    for n in midi.notes():
-        bar = int(n.start // max(1, midi.ppq * 4)) + 1
-        by_bar.setdefault(n.channel, {}).setdefault(bar, 0)
     report: dict[str, Any] = {}
-    violations = []
+    violations: list[dict[str, Any]] = []
     warnings: list[str] = []
     for ch in channels:
-        limit = PA800_CHANNEL_POLYPHONY_LIMITS[ch]
+        limit = polyphony_limit(ch)
         ch_notes = [n for n in notes if n.channel == ch]
         onsets = sorted({n.start for n in ch_notes})
         peak = 0
@@ -345,9 +264,9 @@ def headroom_audit(raw: bytes, *, channel_filter: set[int] | None = None) -> dic
     }
 
 
-# --------------------------------------------------------------------------
-# 5) arrange orchestrator
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# 5) arrange orchestrator (backward compatible entry; studio_flow preferred)
+# ---------------------------------------------------------------------------
 def arrange(raw: bytes, *, target_channel: int, start_bar: int | None = None,
             end_bar: int | None = None, out_dir: str | Path | None = None,
             write_artifacts: bool = True) -> dict[str, Any]:
@@ -366,34 +285,27 @@ def arrange(raw: bytes, *, target_channel: int, start_bar: int | None = None,
     brief = instruments_brief(raw)
     recs = best_instruments(raw)
     before = headroom_audit(raw)
-    music_track = _music_track(midi)
-    strum = build_strum_part(raw, channel=target_channel, start_bar=sb, end_bar=eb,
-                             track_index=music_track)
-    track = music_track
+    strum = build_strum_part(raw, channel=target_channel, start_bar=sb, end_bar=eb)
+    track = strum["track"]
     start_tick = int(bars[sb - 1]["startTick"])
     end_tick = int(bars[eb - 1]["endTick"])
     arranged = midi.replace_notes(track_index=track, channel=target_channel,
                                   start_tick=start_tick, end_tick=end_tick,
                                   new_notes=strum["notes"])
 
-    # gates
     raw_out = arranged.to_bytes()
     reparsed = MidiFile.from_bytes(raw_out)
-    # protected diff: every channel except the arranged one must be byte-identical at note level
-    def channel_snapshot(m: MidiFile) -> list[tuple[int, int, int, int, int, int]]:
-        return sorted((n.track, n.channel, n.pitch, n.start, n.end, n.velocity) for n in m.notes()
-                      if n.channel != target_channel)
-    protected_ok = channel_snapshot(reparsed) == channel_snapshot(midi)
+    protected_ok = protected_snapshot(reparsed, exclude_channels=(target_channel,)) == \
+        protected_snapshot(midi, exclude_channels=(target_channel,))
     after = headroom_audit(raw_out, channel_filter={target_channel})
     gates = {
         "reparsed": True,
         "protectedChannelsUnchanged": protected_ok,
-        "factoryVelocityOnly": all(p["curvePoint"] in {"strong", "highMid", "optimal"} for p in strum["velocityProofs"]),
+        "factoryVelocityOnly": all(p.get("authority") == "FACTORY_ONLY" for p in strum["velocityProofs"]),
         "targetChannelWithinPolyphonyLimit": after["channels"][str(target_channel)]["pass"],
     }
     out = Path(out_dir) if out_dir else ROOT / "artifacts-max-4.49"
     out.mkdir(parents=True, exist_ok=True)
-    name = "arranged.mid"
     files = {}
     if write_artifacts:
         fname = f"arranged.{target_channel}.bar{sb}-{eb}.mid"
@@ -405,14 +317,12 @@ def arrange(raw: bytes, *, target_channel: int, start_bar: int | None = None,
         "sourceSha256": hashlib.sha256(raw).hexdigest(),
         "request": {"targetChannel": target_channel, "startBar": sb, "endBar": eb,
                     "role": "rhythm-guitar (strum fill)", "barsInSong": len(bars)},
-        "intelligence": brief,
-        "bestInstruments": recs,
+        "intelligence": brief, "bestInstruments": recs,
         "headroomBefore": before,
         "headroomAfterTargetChannel": after,
         "strumPart": {k: v for k, v in strum.items() if k not in ("notes", "velocityProofs")},
         "strumNoteCount": len(strum["notes"]),
-        "gates": gates,
-        "outDir": str(out), **files,
+        "gates": gates, "outDir": str(out), **files,
         "status": "RENDERED_ARRANGEMENT_PASSES_ARRANGER_GATES",
     }
     return result
@@ -425,11 +335,11 @@ def _midi_bytes_for(path: str) -> bytes:
     return raw
 
 
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # CLI
-# --------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 def _main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Arranger Pro 4.49")
+    ap = argparse.ArgumentParser(description="Arranger Pro (contract-based)")
     sub = ap.add_subparsers(dest="cmd", required=True)
     for name in ("brief", "instruments", "headroom"):
         p = sub.add_parser(name)
@@ -442,18 +352,14 @@ def _main(argv: list[str] | None = None) -> int:
     p.add_argument("--target-channel", type=int, default=15)
     p.add_argument("--start-bar", type=int, default=None)
     p.add_argument("--end-bar", type=int, default=None)
-    p.add_argument("--out-dir", default="artifacts-max-4.49")
+    p.add_argument("--out-dir", default="artifacts-max-4.50")
     p.add_argument("--report", default=None)
     args = ap.parse_args(argv)
 
     if args.cmd in ("brief", "instruments", "headroom"):
         raw = _midi_bytes_for(args.input)
-        if args.cmd == "brief":
-            res = instruments_brief(raw)
-        elif args.cmd == "instruments":
-            res = best_instruments(raw)
-        else:
-            res = headroom_audit(raw)
+        res = {"brief": instruments_brief, "instruments": best_instruments,
+               "headroom": headroom_audit}[args.cmd](raw)
         print(json.dumps(res, indent=2, ensure_ascii=False, default=str))
         return 0
     if args.cmd == "strum":
@@ -472,8 +378,7 @@ def _main(argv: list[str] | None = None) -> int:
         report.parent.mkdir(parents=True, exist_ok=True)
         report.write_text(json.dumps(res, indent=2, ensure_ascii=False, default=str) + "\n")
         print(json.dumps({"request": res["request"], "strumNoteCount": res["strumNoteCount"],
-                          "gates": res["gates"], "headroomBefore": {k: v["pass"] for k, v in res["headroomBefore"]["channels"].items()},
-                          "outDir": res["outDir"]}, indent=2, ensure_ascii=False))
+                          "gates": res["gates"]}, indent=2, ensure_ascii=False))
         print(f"report: {report}")
         return 0
     ap.print_help()

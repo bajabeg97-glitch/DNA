@@ -1,0 +1,11 @@
+{
+  "schema": "dna-4.50-pipeline-integration",
+  "agent": "integration-advisor",
+  "status": "advisory-no-code-change",
+  "targets": [
+    "unified_pipeline.execute_pipeline uses _ENGINES map (config,loader,planner,applier); an opt-in 'arranger' engine can adopt the same contract",
+    "studio_flow.run_studio is the preflight: plan->warrant->gates; execute_web/api can call it behind a user flag",
+    "batch mode: allow only after gates pass per file; keep MAX neural path behind --force/creative flag",
+    "style export: PA800 style (SMF0+CV markers) remains a separate validated target; song-level arrangement is not claimed as style output"
+  ]
+}

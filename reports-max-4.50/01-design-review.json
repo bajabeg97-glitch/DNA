@@ -1,0 +1,16 @@
+{
+  "schema": "dna-4.50-design-review",
+  "agent": "design-critic",
+  "verdict": "4.48/4.49 were feature-complete but fragmented",
+  "critique": [
+    "same channel->role facts and factory-velocity resolution duplicated across track_replacement/arranger_pro/pa800_validator",
+    "arranger filled a channel but never judged whether existing parts match the instrument's nature",
+    "no single studio entry producing plan->execution->metrics in one report"
+  ],
+  "resolution": [
+    "arranger_contract.py = single source of truth (channels, registers, polyphony budgets, factory velocity, chord tones, gates)",
+    "arranger_pro.py reconstructed on the contract (API unchanged, 4.49 tests still green)",
+    "arranger_planner.py = per-channel instrument-fit + warrants + fill candidates",
+    "studio_flow.py = analyze->plan->execute->metrics->gates->artifacts"
+  ]
+}

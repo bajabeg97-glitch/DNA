@@ -1,0 +1,106 @@
+{
+  "schema": "dna-max-4.50-task-plan",
+  "version": "1.0",
+  "milestone": "Studio Core 4.50",
+  "date": "2026-09-05",
+  "tasks": [
+    {
+      "taskId": "T26",
+      "agent": "design-critic",
+      "task": "Design review + consolidation targets",
+      "deliverable": "reports-max-4.50/01-design-review.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T27",
+      "agent": "contract-architect",
+      "task": "arranger_contract.py single source of truth",
+      "deliverable": "reports-max-4.50/02-contract.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T28",
+      "agent": "reconstruction-engineer",
+      "task": "arranger_pro.py on contract (API same)",
+      "deliverable": "arranger_pro.py + v449 tests",
+      "state": "done"
+    },
+    {
+      "taskId": "T29",
+      "agent": "instrument-fit-planner",
+      "task": "arranger_planner.py instrument-fit + warrants",
+      "deliverable": "reports-max-4.50/03-planner.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T30",
+      "agent": "studio-orchestrator",
+      "task": "studio_flow.py e2e run on fixture",
+      "deliverable": "reports-max-4.50/04-studio-run.json + artifacts-max-4.50",
+      "state": "done"
+    },
+    {
+      "taskId": "T31",
+      "agent": "metrics-agent",
+      "task": "before/after metrics full chord coverage",
+      "deliverable": "reports-max-4.50/05-metrics.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T32",
+      "agent": "gate-validator",
+      "task": "gates all pass",
+      "deliverable": "reports-max-4.50/06-gates.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T33",
+      "agent": "test-agent",
+      "task": "v450+v449 suites green",
+      "deliverable": "reports-max-4.50/07-tests.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T34",
+      "agent": "scope-auditor",
+      "task": "production modules untouched",
+      "deliverable": "reports-max-4.50/08-scope.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T35",
+      "agent": "integration-advisor",
+      "task": "pipeline engine mapping note",
+      "deliverable": "reports-max-4.50/09-pipeline-integration.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T36",
+      "agent": "roadmap-agent",
+      "task": "next features",
+      "deliverable": "reports-max-4.50/10-next.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T37",
+      "agent": "docs-agent",
+      "task": "guide + README",
+      "deliverable": "docs/studio-flow-4.50.md",
+      "state": "done"
+    },
+    {
+      "taskId": "T38",
+      "agent": "release-agent",
+      "task": "status 4.50",
+      "deliverable": "max-orchestration-status-4.50.json",
+      "state": "done"
+    },
+    {
+      "taskId": "T39",
+      "agent": "orchestrator-max",
+      "task": "final review + push",
+      "deliverable": "git log arena branch",
+      "state": "done"
+    }
+  ]
+}

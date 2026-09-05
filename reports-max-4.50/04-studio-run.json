@@ -1,0 +1,30 @@
+{
+  "schema": "dna-4.50-studio-run",
+  "agent": "studio-orchestrator",
+  "execution": {
+    "executed": true,
+    "channel": 15,
+    "role": "rhythm-guitar",
+    "slot": "ACC5 guitar strum (<=3 voices)",
+    "bars": [
+      1,
+      18
+    ],
+    "noteCount": 410,
+    "register": [
+      48,
+      72
+    ],
+    "factoryStrumSourceIds": [],
+    "polyphonyBudget": 3,
+    "velocityProofsTotal": 410,
+    "factoryVelocityOnlyByProof": true
+  },
+  "gates": {
+    "reparsed": true,
+    "protectedChannelsUnchanged": true,
+    "factoryVelocityOnly": true,
+    "allChannelsWithinPolyphonyLimits": true
+  },
+  "status": "STUDIO_RUN_COMPLETE"
+}

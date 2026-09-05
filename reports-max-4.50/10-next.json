@@ -1,0 +1,12 @@
+{
+  "schema": "dna-4.50-next-features",
+  "agent": "roadmap-agent",
+  "candidates": [
+    "fill ACC1/ACC2 block comp slots with evidence comping patterns (4-voice, register-separated)",
+    "single-voice pad generator for ACC3/ACC4 from gold melodic patterns",
+    "register separation optimizer across acc channels (voice collision detection)",
+    "per-section density targets from producer brief (intro sparse -> chorus full)",
+    "style-format export with v*/i*/f*/e* CV markers + pa800 validator",
+    "REPAIR_WARRANT execution via evidence planners for busy channels flagged by planner"
+  ]
+}

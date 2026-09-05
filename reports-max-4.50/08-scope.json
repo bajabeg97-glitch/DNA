@@ -1,0 +1,12 @@
+{
+  "schema": "dna-4.50-scope",
+  "agent": "scope-auditor",
+  "reconstructed": "arranger_pro.py (now contract-based, same API)",
+  "added": [
+    "arranger_contract.py",
+    "arranger_planner.py",
+    "studio_flow.py"
+  ],
+  "preExistingProductionModulesTouched": [],
+  "note": "unified_pipeline/role_aware/song_understanding/evidence untouched"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "dna-4.50-tests",
+  "agent": "test-agent",
+  "suites": [
+    {
+      "suite": "test_studio_flow_v450.py",
+      "ran": 11,
+      "passed": 11
+    },
+    {
+      "suite": "test_arranger_pro_v449.py (reconstructed module)",
+      "ran": 6,
+      "passed": 6
+    }
+  ],
+  "total": {
+    "ran": 17,
+    "passed": 17
+  }
+}
