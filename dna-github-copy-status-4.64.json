@@ -1,0 +1,35 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.64",
+  "status": "complete",
+  "date": "2026-09-05",
+  "phase": "GitHub top-projects research + permissive copy (patterns/datasets) -> pattern library module; Phase C React skin/persistence and Phase D WebAudio A-B still open",
+  "summary": "Skenirano 95 unikatnih repoa kroz 9 GitHub upita + 7 velikih referenci (magenta/music21/mido/pretty-midi/JZZ/Tone.js...). Kopiran jedan vendored set po politici permissive licence: gvellut/dmp_midi (MIT) - 468 drum-machine patterna (200 + 260 iz knjiga Rene-Pierre Bardeta) u vendor-max-4.64/dmp-midi/ sa NOTICE.md i sha256 manifest.json (pin na upstream commit 81f926a). Novi stdlib modul dna_midi_studio/pattern_library.py normalizuje korpus, racuna statistike (4/4:429, 12/8:30, 3/4:9; 16-step:390, 12-step:78) i prepoznaje obrasce u pravim MIDI fajlovima (reference-style kick == Rock1MeasureB/Rock7; fixture snare == Rock4MeasureB/R&B2MeasureB/Pop11; song19-01 i session35 takodje). GPL/NC projekti i oni bez licence nisu kopirani (razlozi u 01-github-top-scan.json). Testovi: novi 16/16 (license allow-list, sha256, NOTICE, schema, determinizam, round-trip lookup, stdlib-only) + svi stari zeleni: python 118 (102+16, 3 skip), legacy 5, npm 14/14.",
+  "deliverables": {
+    "reports-max-4.64/01-github-top-scan.json": "95 repoa + 7 majora: zvezde/licence/permissive + copy verdict sa razlozima",
+    "reports-max-4.64/02-copied.json": "sta je prekopirano, odakle, sha256, atribucija",
+    "reports-max-4.64/03-tests.json": "test run report",
+    "vendor-max-4.64/dmp-midi/": "LICENSE, README, input/Patterns_200.json, input/Patterns_260.json, input/README.md (verbatim) + NOTICE.md + manifest.json",
+    "dna_midi_studio/pattern_library.py": "stdlib loader/normalizer/statistika/row-match preko korpusa",
+    "artifacts-max-4.64/dmp-library-stats.json": "agregatna statistika 468 patterna + digest",
+    "artifacts-max-4.64/dmp-patterns-normalized.json": "kompletna normalizovana biblioteka",
+    "artifacts-max-4.64/dmp-pattern-matches-demo.json": "probe na baseline/fixture/song19-01/session35",
+    "test_pattern_library_v464.py": "16 testova",
+    "docs/github-copy-4.64.md": "vodic: sta/kako/zasto",
+    "README.md": "bullet za 4.64"
+  },
+  "tests": {
+    "python": { "result": "OK", "tests": 118, "skipped": 3, "note": "102 pre-4.64 + 16 novih" },
+    "pythonLegacy": { "result": "OK", "tests": 5 },
+    "npm": { "result": "OK", "tests": 14 }
+  },
+  "licenseCompliance": {
+    "copied": ["MIT (gvellut/dmp_midi, verbatim + atribucija u NOTICE.md)"],
+    "notCopied": [
+      "GPL/AGPL/LGPL (study-only): Cadenza, Favorites-with-Style, Yamaha-Style-Studio, helio-sequencer, LMMS, crbm-drum-patterns, DawDreamer...",
+      "CC BY-NC (non-commercial): Tegridy .zip dataset-i, MAESTRO, Groove MIDI...",
+      "No-license / NOASSERTION: stephenhandley/DrumMachinePatterns, MarkCWirt/MIDIUtil, jpriebe/SRM-DB002...",
+      "Heavy-deps permissive (referenca, ne vend-ovano): isobar (mido/rtmidi), pydrums (torch/ollama), openarranger (37MB assets)"
+    ]
+  }
+}

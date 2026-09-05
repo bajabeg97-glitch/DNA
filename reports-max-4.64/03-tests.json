@@ -1,0 +1,54 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.64",
+  "date": "2026-09-05",
+  "python": "python3.11",
+  "node": "v22.22.3",
+  "suites": [
+    {
+      "command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_session_pass_v462 test_mido_independent_v452 test_pattern_library_v464",
+      "result": "OK",
+      "tests": 118,
+      "skipped": 3,
+      "note": "102 pre-4.64 + 16 novih pattern_library/vendor testova"
+    },
+    {
+      "command": "python3.11 -m unittest test_max_registry_v448",
+      "result": "OK",
+      "tests": 5,
+      "note": "legacy MAX registry"
+    },
+    {
+      "command": "npm test (node --test tests/**/*.test.mjs)",
+      "result": "OK",
+      "tests": 14
+    },
+    {
+      "command": "vendor sha256 manifest + NOTICE provjera (unutar test_pattern_library_v464)",
+      "result": "OK",
+      "note": "LICENSE MIT allow-listed; svih 5 vendored fajlova == manifest sha256; nema GPL/NC materijala"
+    }
+  ],
+  "newForMilestone": {
+    "test_pattern_library_v464": {
+      "tests": 16,
+      "covered": [
+        "MIT allow-list + license text",
+        "NOTICE.md + manifest prisutni i konzistentni",
+        "svaki vendored fajl == sha256 iz manifesta",
+        "nema disallowed licence u vendor allowlistu",
+        "korpus: 468 patterna (200 + 268)",
+        "sema svih patterna (tokeni, duzine, GM note, role)",
+        "distribucija (signatura, duzina) zakucana",
+        "accent linije validne svuda",
+        "normalizovan dump == build",
+        "statistike + 64-char deterministicki digest",
+        "row lookup round-trip (svaki pattern nalazi sam sebe)",
+        "proba na baseline/reference-style.mid (kick == Rock1MeasureB/Rock7)",
+        "artifacts konzistentni sa svezim build-om",
+        "modul je stdlib-only (bez mido/numpy/scipy/torch)",
+        "matches-demo artifact: 4 probe fajla, 16-step linije, Pattern_(200|260) naslovi"
+      ]
+    }
+  }
+}

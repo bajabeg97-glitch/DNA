@@ -1,0 +1,35 @@
+{
+  "schema": "dna-copied-material-report",
+  "milestone": "4.64",
+  "date": "2026-09-05",
+  "summary": "Jedan vendored set (dmp_midi, MIT): 468 drum-machine patterna iz knjiga '200 Drum Machine Patterns' i '260 Drum Machine Patterns' (Rene-Pierre Bardet), plus LICENSE/README/input-README. Pattern korpus je integrisan kroz novi stdlib modul dna_midi_studio/pattern_library.py (normalizacija, statistika, GM role, tacno prepoznavanje redova), bez ikakvog kopiranja koda koji zahteva mido/torch/druge zavisnosti.",
+  "entries": [
+    {
+      "project": "gvellut/dmp_midi",
+      "url": "https://github.com/gvellut/dmp_midi",
+      "license": "MIT",
+      "upstreamCommit": "81f926a4c7045a37dbadc21b9c332d799b1be9bf",
+      "type": ["dataset", "patterns"],
+      "destination": "vendor-max-4.64/dmp-midi/",
+      "files": {
+        "LICENSE": "f113e2ef899029205f65eec874af33f6ff88749497b60babd808ec790aea8834",
+        "README.md": "4ea93221bf8d3f0ff62241b0f72be7e11203cad3e5ace7f6b0a4d74f639e92a1",
+        "input/Patterns_200.json": "a8ff7a843c51b3d8c62c6d8f0663df96ca6309052ebb79b2e5b59f30e24a6ad7",
+        "input/Patterns_260.json": "31c5e8726f92ead0707bd764c5294a5423dc5bf745e65fe565b7a1570d1b90c1",
+        "input/README.md": "5c298edc7c61441730072b519ff40ca54b0f0c93b206a25904ff11d9641dff10"
+      },
+      "modified": "none (verbatim)",
+      "attribution": "vendor-max-4.64/dmp-midi/NOTICE.md"
+    }
+  ],
+  "derivedEvidence": {
+    "artifacts-max-4.64/dmp-library-stats.json": "agregatna statistika korpusa (468 patterna; 4/4:429, 12/8:30, 3/4:9; 16-step:390, 12-step:78; hit-ovi po delu; digest)",
+    "artifacts-max-4.64/dmp-patterns-normalized.json": "kompletna normalizovana biblioteka (468 patterna, kanonske 1/0 step linije, GM note, role, accent linije, per-pattern digesti)",
+    "artifacts-max-4.64/dmp-pattern-matches-demo.json": "probe na nasim fajlovima: reference-style kick linija == Rock1MeasureB/Rock7; fixture snare == Rock4MeasureB/Rhythm&Blues2MeasureB/Pop11 itd."
+  },
+  "engineIntegration": {
+    "module": "dna_midi_studio/pattern_library.py",
+    "stdlibOnly": true,
+    "verifiedBy": "test_pattern_library_v464.py (16 testova)"
+  }
+}

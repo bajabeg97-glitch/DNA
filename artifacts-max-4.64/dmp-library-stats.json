@@ -1,0 +1,53 @@
+{
+ "digest": "7b34252500b6ae249ee54b77848f73c2fea39792377e6bbc5ceb0743beeb74de",
+ "gmNoteHits": {
+  "36": 1711,
+  "37": 151,
+  "38": 1443,
+  "39": 42,
+  "42": 2209,
+  "43": 242,
+  "46": 243,
+  "47": 326,
+  "49": 407,
+  "50": 125,
+  "54": 46,
+  "56": 85
+ },
+ "lengths": {
+  "12 steps": 78,
+  "16 steps": 390
+ },
+ "partHits": {
+  "BassDrum": 1711,
+  "Clap": 42,
+  "ClosedHiHat": 2209,
+  "Cowbell": 85,
+  "Cymbal": 407,
+  "HighTom": 125,
+  "LowTom": 242,
+  "MediumTom": 326,
+  "OpenHiHat": 243,
+  "RimShot": 151,
+  "SnareDrum": 1443,
+  "Tambourine": 46
+ },
+ "patternsTotal": 468,
+ "perSource": {
+  "Patterns_200": {
+   "accentHits": 145,
+   "hitTotal": 3037,
+   "patterns": 200
+  },
+  "Patterns_260": {
+   "accentHits": 421,
+   "hitTotal": 3993,
+   "patterns": 268
+  }
+ },
+ "signatures": {
+  "12/8": 30,
+  "3/4": 9,
+  "4/4": 429
+ }
+}

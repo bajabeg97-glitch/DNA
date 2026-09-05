@@ -1,0 +1,20 @@
+{
+ "schema": "dna-vendor-manifest",
+ "milestone": "4.64",
+ "project": "gvellut/dmp_midi",
+ "url": "https://github.com/gvellut/dmp_midi",
+ "license": "MIT",
+ "licenseFile": "LICENSE",
+ "upstreamCommit": "81f926a4c7045a37dbadc21b9c332d799b1be9bf",
+ "copiedVerbatim": true,
+ "allowlist": [
+  "MIT"
+ ],
+ "files": {
+  "LICENSE": "f113e2ef899029205f65eec874af33f6ff88749497b60babd808ec790aea8834",
+  "README.md": "4ea93221bf8d3f0ff62241b0f72be7e11203cad3e5ace7f6b0a4d74f639e92a1",
+  "input/Patterns_200.json": "a8ff7a843c51b3d8c62c6d8f0663df96ca6309052ebb79b2e5b59f30e24a6ad7",
+  "input/Patterns_260.json": "31c5e8726f92ead0707bd764c5294a5423dc5bf745e65fe565b7a1570d1b90c1",
+  "input/README.md": "5c298edc7c61441730072b519ff40ca54b0f0c93b206a25904ff11d9641dff10"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "corpus": {
+  "Patterns_200.json": 200,
+  "Patterns_260.json": 268,
+  "total": 468
+ },
+ "digest": "7b34252500b6ae249ee54b77848f73c2fea39792377e6bbc5ceb0743beeb74de",
+ "method": "First full bar of each GM drum note of the real file quantized to 16 steps, then exact row lookup over all corpus part rows (see dna_midi_studio/pattern_library.py).",
+ "milestone": "4.64",
+ "probes": [
+  {
+   "file": "baseline/reference-style.mid",
+   "matches": {
+    "36": {
+     "row": "1000001010100010",
+     "titles": [
+      "Patterns_200:Rock1MeasureB",
+      "Patterns_260:Rock7"
+     ]
+    },
+    "46": {
+     "row": "1000000000000000",
+     "titles": [
+      "Patterns_260:DiscoBreak5",
+      "Patterns_260:ReggaeBreak1"
+     ]
+    },
+    "49": {
+     "row": "1000000000000000",
+     "titles": [
+      "Patterns_200:EndingsMeasureA",
+      "Patterns_260:AfroCubBreak2",
+      "Patterns_260:PopBreak3",
+      "Patterns_260:PopBreak6",
+      "Patterns_260:RockBreak7",
+      "Patterns_260:RnbBreak3"
+     ]
+    }
+   },
+   "rows": {
+    "36": "1000001010100010",
+    "38": "1000000011000000",
+    "39": "1000000000000000",
+    "42": "1010101010001010",
+    "43": "1000001010000000",
+    "46": "1000000000000000",
+    "47": "1101000010001000",
+    "49": "1000000000000000",
+    "54": "1000000000000000"
+   }
+  },
+  {
+   "file": "artifacts-max-4.51/arranged-4.51-fixture.mid",
+   "matches": {
+    "38": {
+     "row": "1000100010001000",
+     "titles": [
+      "Patterns_200:Rock4MeasureB",
+      "Patterns_200:Rhythm&Blues2MeasureB",
+      "Patterns_260:Pop11"
+     ]
+    },
+    "56": {
+     "row": "1000000000000000",
+     "titles": [
+      "Patterns_260:ChaChaBreak2"
+     ]
+    }
+   },
+   "rows": {
+    "36": "1000100100011000",
+    "38": "1000100010001000",
+    "42": "1001000010010001",
+    "43": "1000000000000000",
+    "46": "1000000000000001",
+    "50": "1001001000000000",
+    "54": "1010100000000000",
+    "56": "1000000000000000"
+   }
+  },
+  {
+   "file": "session19-benchmark/song19-01.mid",
+   "matches": {
+    "36": {
+     "row": "1000000010000000",
+     "titles": [
+      "Patterns_200:Rhythm&Blues4MeasureB",
+      "Patterns_200:Ballad2Break",
+      "Patterns_200:Afro-Cuban1MeasureA",
+      "Patterns_200:Afro-Cuban2MeasureA",
+      "Patterns_200:Afro-Cuban3MeasureB",
+      "Patterns_200:Afro-Cuban4MeasureB"
+     ]
+    }
+   },
+   "rows": {
+    "36": "1000000010000000",
+    "38": "1000000010000000",
+    "43": "1000000000000000"
+   }
+  },
+  {
+   "file": "session35-partial-preview.mid",
+   "matches": {
+    "38": {
+     "row": "1000100010001000",
+     "titles": [
+      "Patterns_200:Rock4MeasureB",
+      "Patterns_200:Rhythm&Blues2MeasureB",
+      "Patterns_260:Pop11"
+     ]
+    },
+    "56": {
+     "row": "1000000000000000",
+     "titles": [
+      "Patterns_260:ChaChaBreak2"
+     ]
+    }
+   },
+   "rows": {
+    "36": "1000100100011000",
+    "38": "1000100010001000",
+    "42": "1001000010010001",
+    "43": "1000000000000000",
+    "46": "1000000000000001",
+    "50": "1001001000000000",
+    "54": "1010100000000000",
+    "56": "1000000000000000"
+   }
+  }
+ ],
+ "schema": "dna-dmp-pattern-matches"
+}

@@ -1,0 +1,853 @@
+{
+ "schema": "dna-github-top-scan",
+ "milestone": "4.64",
+ "date": "2026-09-05",
+ "task": "Istrazi najjace GitHub projekte (MIDI/music/pattern/dataset); slobodno prekopiraj: skripte, algoritme, patterne, dataset-e",
+ "queries": [
+  "topic:midi (top15)",
+  "topic:drum-patterns",
+  "topic:midi-dataset",
+  "midi drum patterns",
+  "midi dataset",
+  "arranger style midi",
+  "topic:groove",
+  "midi python (top8)",
+  "drum machine patterns (top10)"
+ ],
+ "policy": "Kopira se samo permissive (MIT/Apache/BSD/CC0/Unlicense) uz atribuciju; GPL/AGPL/LGPL/CC-NC = study-only, ne vend-uje se.",
+ "uniqueReposScanned": 95,
+ "topByStars": [
+  {
+   "repo": "AudioKit/AudioKit",
+   "stars": 11458,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Swift",
+   "desc": "Audio synthesis, processing, & analysis platform for iOS, macOS and tvOS"
+  },
+  {
+   "repo": "LMMS/lmms",
+   "stars": 10327,
+   "license": "GPL-2.0",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Cross-platform music production software"
+  },
+  {
+   "repo": "mixxxdj/mixxx",
+   "stars": 7126,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Mixxx is Free DJ software that gives you everything you need to perform live mixes."
+  },
+  {
+   "repo": "hathach/tinyusb",
+   "stars": 7080,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "C",
+   "desc": "An open source  cross-platform USB stack for embedded system"
+  },
+  {
+   "repo": "spotify/basic-pitch",
+   "stars": 5536,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "A lightweight yet powerful audio-to-MIDI converter with pitch bend detection"
+  },
+  {
+   "repo": "Ardour/ardour",
+   "stars": 5261,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Mirror of Ardour Source Code"
+  },
+  {
+   "repo": "hundredrabbits/Orca",
+   "stars": 5080,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "JavaScript",
+   "desc": "Esoteric Programming Language"
+  },
+  {
+   "repo": "MoonInTheRiver/DiffSinger",
+   "stars": 4853,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism (SVS & TTS); AAAI 2022; Official code"
+  },
+  {
+   "repo": "scribbletune/scribbletune",
+   "stars": 3768,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "Create music with JavaScript"
+  },
+  {
+   "repo": "helio-fm/helio-sequencer",
+   "stars": 3534,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Libre music sequencer for desktop and mobile platforms"
+  },
+  {
+   "repo": "zrythm/zrythm",
+   "stars": 3113,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "a highly automated and intuitive digital audio workstation - official mirror"
+  },
+  {
+   "repo": "DamRsn/NeuralNote",
+   "stars": 2909,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "C++",
+   "desc": "Audio Plugin for Audio to MIDI transcription using deep learning."
+  },
+  {
+   "repo": "noteflakes/awesome-music",
+   "stars": 2484,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": "Awesome Music Projects"
+  },
+  {
+   "repo": "FluidSynth/fluidsynth",
+   "stars": 2479,
+   "license": "LGPL-2.1",
+   "permissive": false,
+   "lang": "C",
+   "desc": "Software synthesizer based on the SoundFont 2 specifications"
+  },
+  {
+   "repo": "earlephilhower/ESP8266Audio",
+   "stars": 2396,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "C",
+   "desc": "Arduino library to play MOD, WAV, FLAC, MIDI, RTTTL, OGG/Opus, MP3, and AAC files on I2S DACs or with a software emulated delta-sigma DAC on"
+  },
+  {
+   "repo": "mido/mido",
+   "stars": 1638,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "MIDI Objects for Python"
+  },
+  {
+   "repo": "vishnubob/python-midi",
+   "stars": 1548,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "Python MIDI library"
+  },
+  {
+   "repo": "Rainbow-Dreamer/musicpy",
+   "stars": 1492,
+   "license": "LGPL-2.1",
+   "permissive": false,
+   "lang": null,
+   "desc": "Musicpy is a music programming language in Python designed to write music in very handy syntax through music theory and algorithms."
+  },
+  {
+   "repo": "DBraun/DawDreamer",
+   "stars": 1290,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": null,
+   "desc": "Digital Audio Workstation with Python; VST instruments/effects, parameter automation, FAUST, JAX, Warp Markers, and JUCE processors"
+  },
+  {
+   "repo": "ideoforms/isobar",
+   "stars": 431,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "A Python package for creating and manipulating musical patterns, designed for use in algorithmic composition, generative music and sonificat"
+  },
+  {
+   "repo": "DawVert/DawVert",
+   "stars": 419,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": null,
+   "desc": "DawVert - The DAW ConVERTer"
+  },
+  {
+   "repo": "SpotlightKid/python-rtmidi",
+   "stars": 411,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": null,
+   "desc": "Python bindings for the cross-platform MIDI I/O library RtMidi"
+  },
+  {
+   "repo": "thecodrr/BreadPlayer",
+   "stars": 308,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "C#",
+   "desc": "Bread Player, a free and open source music player powered by UWP and C#/.NET with a sleek and polished design built for, and by, the people "
+  },
+  {
+   "repo": "asigalov61/Tegridy-MIDI-Dataset",
+   "stars": 289,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "Tegridy MIDI Dataset for precise and effective Music AI models creation."
+  },
+  {
+   "repo": "danderfer/Comp_Sci_Sem_2",
+   "stars": 205,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": "According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little bod"
+  },
+  {
+   "repo": "craffel/midi-dataset",
+   "stars": 175,
+   "license": null,
+   "permissive": false,
+   "lang": "Jupyter Notebook",
+   "desc": "Code for creating a dataset of MIDI ground truth"
+  },
+  {
+   "repo": "loubbrad/aria-midi",
+   "stars": 100,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": null,
+   "desc": "Official repository for Aria-MIDI: a MIDI dataset of 1,186,253 transcribed solo-piano recordings."
+  },
+  {
+   "repo": "Metacreation-Lab/GigaMIDI-Dataset",
+   "stars": 93,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "Jupyter Notebook",
+   "desc": ""
+  },
+  {
+   "repo": "AMAAI-Lab/MidiCaps",
+   "stars": 86,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "A large-scale dataset of caption-annotated MIDI files. "
+  },
+  {
+   "repo": "jojo2357/Music-Discord-Rich-Presence",
+   "stars": 75,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "C#",
+   "desc": "Provides groove discord rich presence for media playing on a computer"
+  },
+  {
+   "repo": "asigalov61/Los-Angeles-MIDI-Dataset",
+   "stars": 68,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "SOTA kilo-scale MIDI dataset for MIR and Music AI purposes"
+  },
+  {
+   "repo": "lucasnfe/adl-piano-midi",
+   "stars": 68,
+   "license": null,
+   "permissive": false,
+   "lang": "Python",
+   "desc": "A dataset of piano midi files organized by genres, sub-genres and artists."
+  },
+  {
+   "repo": "InToEtherion/DrumGroovePro",
+   "stars": 66,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "A free,  open-source MIDI drum groove sequencer VST3 plugin. Create, organize, and play custom drum patterns with an intuitive interface.  F"
+  },
+  {
+   "repo": "MarieLynneBlock/digital-sound-playground",
+   "stars": 62,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": "Design new algorithmic patterns to generate music samples or build drum machines and on top of it, build user-friendly and beautiful UIs to "
+  },
+  {
+   "repo": "808StaN/OpenStudio",
+   "stars": 61,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "JavaScript",
+   "desc": "OpenStudio is a browser and desktop DAW built with React, Web Audio API, and Electron. It brings the core beatmaking workflow into one app: "
+  },
+  {
+   "repo": "gvellut/dmp_midi",
+   "stars": 59,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "MIDI files for the patterns in the books \"200 Drum Machine Patterns\" & \"260 Drum Machine Patterns\""
+  },
+  {
+   "repo": "tangjjbetsy/ATEPP",
+   "stars": 55,
+   "license": "CC0-1.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "ATEPP is a dataset of expressive piano performances by virtuoso pianists. (ISMIR2022)"
+  },
+  {
+   "repo": "JamesOwers/midi_degradation_toolkit",
+   "stars": 42,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "A toolkit for generating datasets of midi files which have been degraded to be 'un-musical'."
+  },
+  {
+   "repo": "dsdude123/GroovyRP",
+   "stars": 36,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "C#",
+   "desc": "Groove Music rich presence for Discord"
+  },
+  {
+   "repo": "centomila/BitwigBuddy-Bitwig-Extension",
+   "stars": 29,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Java",
+   "desc": "BitwigBuddy is a Bitwig Studio extension for generating drum patterns, editing velocities and creating macros! 🧡"
+  },
+  {
+   "repo": "audionerd/minimidi-data",
+   "stars": 28,
+   "license": "Unlicense",
+   "permissive": true,
+   "lang": null,
+   "desc": "TRS MIDI device dataset used by minimidi.world"
+  },
+  {
+   "repo": "schollz/supertonic",
+   "stars": 26,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Lua",
+   "desc": "an instrospective drum machien"
+  },
+  {
+   "repo": "ebattenberg/crbm-drum-patterns",
+   "stars": 26,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": null,
+   "desc": "Python code to do Conditional Restricted Boltzmann machine training applied to drum pattern generation."
+  },
+  {
+   "repo": "ilya16/PianoCoRe",
+   "stars": 25,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": null,
+   "desc": "PianoCoRe: Combined and Refined Piano MIDI Dataset (TISMIR)"
+  },
+  {
+   "repo": "innermost47/beatcrafter",
+   "stars": 25,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "C++",
+   "desc": "Intelligent MIDI drum pattern generator VST3 designed for live performance with foot controllers. Generate authentic patterns across multipl"
+  },
+  {
+   "repo": "tomto66/Topiary-Beatz",
+   "stars": 23,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Topiary Beatz is a MIDI drum pattern generator for live use"
+  },
+  {
+   "repo": "beatboxjs/ror-player",
+   "stars": 23,
+   "license": "AGPL-3.0",
+   "permissive": false,
+   "lang": null,
+   "desc": "A pattern-based drumming machine based on TypeScript, beatbox.js, Vue.js and Bootstrap."
+  },
+  {
+   "repo": "lucylow/Stochastic_SoundCloud",
+   "stars": 22,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "Machine Learning Generative Classical Music using RNN LSTMs with MIDI music dataset and Magenta Tensorflow "
+  },
+  {
+   "repo": "dumbie/ZuseMe",
+   "stars": 22,
+   "license": null,
+   "permissive": false,
+   "lang": "C#",
+   "desc": "ZuseMe allows you to scrobble songs to Last.fm from players like Groove Music, Media Player (Windows 11) and more."
+  },
+  {
+   "repo": "compphoto/MIDIntrinsics",
+   "stars": 21,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "Python",
+   "desc": "Intrinsic components for the MIT Multi-Illumination Dataset"
+  },
+  {
+   "repo": "pozalabs/MID-FiLD",
+   "stars": 21,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "[AAAI'24] Official dataset & demo code for MID-FiLD: MIDI Dataset for Fine-Level Dynamics"
+  },
+  {
+   "repo": "stephenhandley/DrumMachinePatterns",
+   "stars": 21,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": ""
+  },
+  {
+   "repo": "georgid/lakh_vocal_segments_dataset",
+   "stars": 20,
+   "license": null,
+   "permissive": false,
+   "lang": "Jupyter Notebook",
+   "desc": "singing voice with annotations of vocal onsets,  based on the matched MIDI from http://colinraffel.com/projects/lmd/  "
+  },
+  {
+   "repo": "MrBMueller/playsmf",
+   "stars": 20,
+   "license": null,
+   "permissive": false,
+   "lang": "C",
+   "desc": "command line smf midi looper / style player"
+  },
+  {
+   "repo": "asigalov61/LAKH-MuseNet-MIDI-Dataset",
+   "stars": 19,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Jupyter Notebook",
+   "desc": "Full LAKH MIDI dataset converted to MuseNet MIDI output format (9 instruments + drums)"
+  },
+  {
+   "repo": "constcut/aurals",
+   "stars": 17,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "C++",
+   "desc": "Cross-platform application for music and speech visual analysis, and music creation"
+  },
+  {
+   "repo": "danryland/groove-ai",
+   "stars": 17,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Vue",
+   "desc": "AI driven drum patterns 🥈 Runner up for \"Most fun/Best easter egg\" in Supabase's Launch Week 7 Hackathon"
+  },
+  {
+   "repo": "jpriebe/SRM-DB002",
+   "stars": 16,
+   "license": null,
+   "permissive": false,
+   "lang": "JavaScript",
+   "desc": "Ableton Live MIDI Tool generator for creating house drum patterns"
+  },
+  {
+   "repo": "samik-saha/glyrics",
+   "stars": 15,
+   "license": null,
+   "permissive": false,
+   "lang": "JavaScript",
+   "desc": "Gaana Lyrics App and Extensions for Google Chrome browser - shows lyrics on streaming music services like Youtube music, Spotify, Pandora, G"
+  },
+  {
+   "repo": "alexdevero/grease-the-groove-app",
+   "stars": 14,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "Electron app to help you practice Grease the Groove method to achieve your goals and get stronger 💪!"
+  },
+  {
+   "repo": "Ayokanmi-Adejola/Drum-Machine",
+   "stars": 14,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": "A beautiful, responsive drum machine built with React and TypeScript. It allows users to create and play drum patterns directly in their web"
+  },
+  {
+   "repo": "bryanrtboy/MetronomeBeatMachine",
+   "stars": 11,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "A metronome based on the Unity DSP Time Example. This example has an option to turn on/off the metronome ticks and uses events and listeners"
+  },
+  {
+   "repo": "asigalov61/Monster-MIDI-Dataset",
+   "stars": 10,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "Giant searchable raw MIDI dataset for MIR and Music AI purposes"
+  },
+  {
+   "repo": "dfkettle/MIDI-Drum-Sequencer",
+   "stars": 10,
+   "license": "MIT",
+   "permissive": true,
+   "lang": null,
+   "desc": "The MIDI Drum Sequencer (MDS) is designed to emulate hardware drum machines, allowing you to create and edit drum sequences (patterns) and c"
+  },
+  {
+   "repo": "asigalov61/discovermidi",
+   "stars": 9,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "Ultimate MIDI dataset for MIDI music discovery and symbolic music AI purposes"
+  },
+  {
+   "repo": "gdamdam/mpump",
+   "stars": 8,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "TypeScript",
+   "desc": "A browser drum machine and synth where the beat lives in the link. Open it, change it, send it back different.  It works on iPhone, iPad, An"
+  },
+  {
+   "repo": "fabianostermann/EAR-Drummer",
+   "stars": 8,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Java",
+   "desc": "EAR Drummer is a interactive music system that generates rhythmical drum patterns and bass lines. It produces midi output that provides back"
+  },
+  {
+   "repo": "HegartyMaths/php-groove-api",
+   "stars": 8,
+   "license": null,
+   "permissive": false,
+   "lang": "PHP",
+   "desc": "PHP wrapper for the Groove API"
+  },
+  {
+   "repo": "scribbletune/pydrums",
+   "stars": 7,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "AI-powered drum pattern generation and MIDI conversion"
+  },
+  {
+   "repo": "vah7id/drum-randomizer",
+   "stars": 7,
+   "license": null,
+   "permissive": false,
+   "lang": "TypeScript",
+   "desc": "Create a drum machine with random sounds and midi patterns generated by AI and machine learning algorithms! "
+  },
+  {
+   "repo": "david-a-campbell/W1_Hit",
+   "stars": 7,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "W1_Hit is a temporal convolutional network (TCN) for generating expressive single-voice MIDI drum patterns."
+  },
+  {
+   "repo": "dnvsfn/ableton-breakdowns",
+   "stars": 6,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "An Ableton Live 12 extension: right-click drum-fill / breakdown generator with accelerating rolls, build-up velocity curves, and humanized f"
+  },
+  {
+   "repo": "johnrswanson/drum_brain",
+   "stars": 6,
+   "license": null,
+   "permissive": false,
+   "lang": "JavaScript",
+   "desc": "improvise drum patterns / beats with webmidi"
+  },
+  {
+   "repo": "hmerritt/groovebox-player",
+   "stars": 6,
+   "license": null,
+   "permissive": false,
+   "lang": "PHP",
+   "desc": "A self-hosted web-based music player - just drag, drop and listen 🎵"
+  },
+  {
+   "repo": "asigalov61/Rock-Piano-MIDI-Dataset",
+   "stars": 5,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": null,
+   "desc": "Piano-Drums MIDI Dataset"
+  },
+  {
+   "repo": "asigalov61/godzillamididataset",
+   "stars": 5,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Python",
+   "desc": "Enormous, comprehensive, normalized and searchable MIDI dataset for MIR and symbolic music AI purposes"
+  },
+  {
+   "repo": "RedFerret61/DrumRPG",
+   "stars": 5,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "Java",
+   "desc": "Drum Rhythm Pattern Generator"
+  },
+  {
+   "repo": "Piskocis/Cadenza",
+   "stars": 5,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Free, open-source software arranger workstation (JUCE/C++, Windows). Live chord-following accompaniment, piano-roll style editor, MIDI-to-st"
+  },
+  {
+   "repo": "AidFTech/Favorites-with-Style",
+   "stars": 4,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "Java",
+   "desc": "A MIDI arranger designed to create auto accompaniment songs for keyboard play."
+  },
+  {
+   "repo": "asigalov61/Los-Angeles-MIDI-Metabase",
+   "stars": 3,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": "Jupyter Notebook",
+   "desc": "LAMB: Kilo-Scale MIDI MIR Meta Database"
+  },
+  {
+   "repo": "jozphe/Yamaha-Style-Studio",
+   "stars": 3,
+   "license": "GPL-3.0",
+   "permissive": false,
+   "lang": "TypeScript",
+   "desc": "design, edit and build Yamaha PSR-SX & Genos styles directly in your browser. Edit Live Audio Styles (.aus), MIDI channels, intros, endings,"
+  },
+  {
+   "repo": "danielbrask/greenhouse",
+   "stars": 3,
+   "license": "GPL-2.0",
+   "permissive": false,
+   "lang": "C++",
+   "desc": "Build it yourself automated greenhouse"
+  },
+  {
+   "repo": "danielmroczek/pat2midi",
+   "stars": 2,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "🔄 A command-line tool to convert drum pattern text files (.pat) to MIDI files"
+  },
+  {
+   "repo": "dnvsfn/ableton-pocket-operations",
+   "stars": 2,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "TypeScript",
+   "desc": "Pocket Operations — a right-click drum-pattern library extension for Ableton Live 12 (official Extensions SDK). Patterns from Paul Wenzel's "
+  },
+  {
+   "repo": "asigalov61/Endless-MIDI-Dataset",
+   "stars": 2,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "lang": null,
+   "desc": "Novel MIDI dataset for SOTA Music AI purposes"
+  },
+  {
+   "repo": "ShinniUwU/HanaGrooveBot",
+   "stars": 2,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "HanaGrooveBot is your ultimate Discord music companion! Stream and enjoy your favorite tunes with seamless playback and intuitive commands. "
+  },
+  {
+   "repo": "ZaxMith/bread-adventure",
+   "stars": 2,
+   "license": null,
+   "permissive": false,
+   "lang": null,
+   "desc": "🍞 Explore a Metroidvania game built with Godot, blending adventure and challenge in a captivating bread-themed world."
+  },
+  {
+   "repo": "benface/grav-plugin-groove",
+   "stars": 2,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "PHP",
+   "desc": "Grav plugin to create Groove tickets"
+  },
+  {
+   "repo": "boyvanamstel/groove-backup",
+   "stars": 2,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "Ruby",
+   "desc": "👇 Create a backup of your Groove HQ ticket history."
+  },
+  {
+   "repo": "Anarchy-music/Rhytm-Lens",
+   "stars": 2,
+   "license": null,
+   "permissive": false,
+   "lang": "Python",
+   "desc": "Rhythm Lens — draw a drum pattern, find matching grooves in your MIDI / BFD / EZdrummer library. Mute/Solo per lane, keyboard shortcuts, tim"
+  },
+  {
+   "repo": "realsigmamusic/openarranger",
+   "stars": 1,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "JavaScript",
+   "desc": "A lightweight, zero-dependency accompaniment tool. OpenArranger emulates traditional arranger keyboards, offering real-time control over non"
+  },
+  {
+   "repo": "JazzMove/jmove-generator",
+   "stars": 0,
+   "license": "MIT",
+   "permissive": true,
+   "lang": "TypeScript",
+   "desc": "The band that lives in your terminal."
+  },
+  {
+   "repo": "myBytesResearch/drum-vae-mixer",
+   "stars": 0,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "lang": "Jupyter Notebook",
+   "desc": "Browser-side drum pattern VAE for the myBytes AI Music Mixer - training pipeline, TF.js export, results notebook"
+  },
+  {
+   "repo": "juanpestanamusic/WEB-ARRANGER",
+   "stars": 0,
+   "license": null,
+   "permissive": false,
+   "lang": "TypeScript",
+   "desc": "Web Arranger is a powerful MIDI-driven performance tool that transforms your browser into a hardware-style arranger keyboard. By leveraging "
+  },
+  {
+   "repo": "tiger-w-jin/acappella-arranger",
+   "stars": 0,
+   "license": null,
+   "permissive": false,
+   "lang": "Python",
+   "desc": "Turn a melody into a singable a cappella arrangement. Takes a notated score or an audio recording, lets you pick a harmony style for every b"
+  }
+ ],
+ "majorsReference": [
+  {
+   "repo": "magenta/magenta",
+   "stars": 19799,
+   "license": "Apache-2.0",
+   "permissive": true,
+   "desc": "Magenta: Music and Art Generation with Machine Intelligence"
+  },
+  {
+   "repo": "cuthbertLab/music21",
+   "stars": 2573,
+   "license": "BSD-3-Clause",
+   "permissive": true,
+   "desc": "music21: a Toolkit for Computer-Aided Musical Analysis and Computational Musicology"
+  },
+  {
+   "repo": "craffel/pretty-midi",
+   "stars": 1036,
+   "license": "MIT",
+   "permissive": true,
+   "desc": "Utility functions for handling MIDI data in a nice/intuitive way."
+  },
+  {
+   "repo": "mido/mido",
+   "stars": 1638,
+   "license": "MIT",
+   "permissive": true,
+   "desc": "MIDI Objects for Python"
+  },
+  {
+   "repo": "MarkCWirt/MIDIUtil",
+   "stars": 269,
+   "license": "NOASSERTION",
+   "permissive": false,
+   "desc": "A pure Python library for creating multi-track MIDI files"
+  },
+  {
+   "repo": "jazz-soft/JZZ",
+   "stars": 594,
+   "license": "MIT",
+   "permissive": true,
+   "desc": " MIDI library for Node.js and web-browsers"
+  },
+  {
+   "repo": "Tonejs/Tone.js",
+   "stars": 14717,
+   "license": "MIT",
+   "permissive": true,
+   "desc": "A Web Audio framework for making interactive music in the browser."
+  }
+ ],
+ "unavailableOrRenamed": [
+  "google/magenta (404; koristi se magenta/magenta)",
+  "bytedance/GiantMIDI-Piano (repo vise nije dostupan na tom putu)",
+  "colinraffel/lmd_public (repo vise nije dostupan na tom putu; Lakh MIDI dataset i dalje postoji na ofsajt stranici)",
+  "audiocogs/midi.js (repo uklonjen)"
+ ],
+ "copyVerdict": {
+  "COPIED": [
+   "gvellut/dmp_midi (MIT) — 200+268 drum-machine patterna iz knjiga R.-P. Bardeta; JSON korpus + LICENSE/README; integrisano u dna_midi_studio/pattern_library.py"
+  ],
+  "NOT_COPIED_reasons": {
+   "scribbletune/pydrums (MIT)": "patterni dupliraju dmp korpus; generativni kod trazi torch/ollama/transformers — nije kompatibilno sa stdlib engine-om",
+   "ideoforms/isobar (MIT, 431*)": "odlicna pattern biblioteka ali paket zahteva mido/python-rtmidi/numpy+ — ostaje kao referenca, ne vend-uje se (engine je mido-free)",
+   "realsigmamusic/openarranger (MIT)": "najblizi MIT aranzer (Mains/Fills/Intros/Endings/Breaks kao Pa800 elementi); 37MB sa sample asset-ima, patterni se ucitavaju iz fajlova — referenca za arhitekturu, ne vend-uje se",
+   "asigalov61/Tegridy-MIDI-Dataset (Apache-2.0)": "repo ~1GB; unutra .zip dataset-i pod CC-BY-NC-SA (non-commercial) — mesovite licence, preskoceno",
+   "MarkCWirt/MIDIUtil": "GitHub license=NOASSERTION — nije proverljivo na prvi pogled, preskoceno",
+   "stephenhandley/DrumMachinePatterns": "nema LICENSE fajl (license=null) — preskoceno direktno; korpus uzet preko MIT dmp_midi repoa",
+   "GPL/AGPL/LGPL (Cadenza, Favorites-with-Style, Yamaha-Style-Studio, helio, lmms, crbm-drum-patterns...)": "study-only po politici",
+   "CC BY-NC-* dataset-i (MAESTRO, Groove MIDI, Tegridy zipovi...)": "non-commercial — nisu za kopiranje u projekat"
+  }
+ }
+}

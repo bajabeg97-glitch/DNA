@@ -2,6 +2,17 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **GitHub Copy 4.64:** sken 95 najjačih MIDI/music projekata (9 upita +
+> 7 velikih referenci); po politici permissive licence prekopiran
+> `gvellut/dmp_midi` (MIT) — **468 drum-machine patterna** iz knjiga
+> „200/260 Drum Machine Patterns” → `vendor-max-4.64/dmp-midi/` (NOTICE +
+> sha256 manifest, pin na upstream commit). Novi stdlib modul
+> `dna_midi_studio/pattern_library.py` normalizuje korpus, računa statistike
+> i **prepoznaje obrasce** u pravim MIDI fajlovima (reference-style kick =
+> Rock1MeasureB/Rock7; fixture snare = Rock4MeasureB/Pop11). GPL/CC-NC i
+> no-license projekti nisu kopirani (razlozi u `reports-max-4.64/`).
+> Testovi: +16 (license allow-list, sha256, NOTICE, round-trip lookup);
+> Python 118 + 5 legacy; npm 14/14. Vodič `docs/github-copy-4.64.md`.
 > **Session Studio 4.63 (Faza C: AI studio GUI):** novi izgled „kao AI model” —
 > levi meni (Nova sesija / demo korpus / pravila) + chat asistent sa plan
 > karticama, checkbox-ovima (samo READY), gates detaljima i download linkovima;
