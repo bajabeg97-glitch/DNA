@@ -174,6 +174,3 @@ Baja Beg - DNA Music Optimizer Team
 - Korg PA800 documentation for style format specifications
 - Standard MIDI File specification (RP-001)
 - Music theory algorithms based on established research
-=======
-# DNA
->>>>>>> origin/main
