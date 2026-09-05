@@ -1,0 +1,27 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.57",
+  "date": "2026-09-05",
+  "python": "python3.11 (engine stdlib-only)",
+  "suites": [
+    {"command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_mido_independent_v452",
+     "result": "OK", "tests": 80, "note": "80 = 71 pre-existing + 9 new for 4.57"},
+    {"command": "python3.11 -m unittest test_max_registry_v448", "result": "OK", "tests": 5},
+    {"command": "python3.11 -m unittest test_special_track_engine_v457",
+     "result": "OK", "tests": 9, "newForMilestone": true,
+     "covered": [
+       "legacy v413 spec: echo REPAIR aligns/snaps to half-beat, quieter + shorter than main",
+       "legacy v413 spec: terca REPAIR uses diatonic third on main timing (C major: E->G, not G#)",
+       "legacy v413 spec: low-similarity echo REBUILD removes unrelated notes and generates from main",
+       "legacy v413 spec: unnamed aux track inferred as echo from consistent delayed/quieter copy",
+       "main part never modified (pitch/tick/velocity/duration unchanged)",
+       "echo velocity ratio respected (x0.80, never louder than main - 5)",
+       "terca without harmony evidence stays PRESERVE (no pitch authority without a key)",
+       "rebuild velocity capped by factory curve ceiling",
+       "polyphonic consistent echo (chordal main) is REPAIRed, never REBUILT"
+     ]},
+    {"command": "legacy runner: python3.11 - <<EOF test_echo_terca_engine_v413 functions EOF",
+     "result": "OK", "tests": 4,
+     "note": "test_echo_terca_engine_v413.py defines bare test_* functions (old runner style); executed directly: 4/4 pass against dna_midi_studio.special_track_engine via root shim"}
+  ]
+}

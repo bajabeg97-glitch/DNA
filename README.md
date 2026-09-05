@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Special Track Engine 4.57:** echo/terca optimizacija implementirana iz
+> v413 spec (ranije: spec bez modula). Echo REPAIR: snap na half-beat grid,
+> tiši i kraći od main dela; REBUILD: nesličan echo se uklanja i generiše od
+> main dela; terca: dijatonska terca na main tajmingu uz harmony dokaz
+> (bez dokaza = PRESERVE); inferencija neimenovanih aux treka. Main se nikada
+> ne menja, 0 trigera (kapije). Evidence: `artifacts-max-4.57/` +
+> `reports-max-4.57/`; guide `docs/studio-special-track-4.57.md`; status
+> `dna-special-track-engine-status-4.57.json`.
 > **Special-tracks research 4.56:** istražene bass-slide finese (MIDI 1.0
 > mehanizmi: pitch-bend rampa, portamento CC84/65, overlap-legato, keyswitch),
 > svetska potraga za echo/terca optimizacijom (`optimize_existing_echo_terca`:

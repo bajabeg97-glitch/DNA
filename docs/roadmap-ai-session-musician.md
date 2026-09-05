@@ -25,6 +25,19 @@ klasifikuje fabričke note/udare isključivo u postojeći rečnik profila
 ledger), kapije dokazuju da se ništa ne emituje. Dokazi u
 `artifacts-max-4.55/`.
 
+## 4.56 Special-track research — DONE
+Bass-slide finese (šta je rešivo u MIDI 1.0: pitch bend / portamento CC84+CC65 /
+overlap-legato / keyswitch), svetska potraga za echo/terca optimizacijom
+(**0 javnih rešenja**) i repo gap analiza. Dokazi: `reports-max-4.56/`,
+vodič `docs/finesse-special-tracks-research.md`.
+
+## 4.57 Special Track Engine — DONE (ovaj korak)
+`special_track_engine.py` — echo/terca optimizacija iz v413 spec (spec je
+ranije postojao bez modula): echo REPAIR/REBUILD, terca = dijatonska terca na
+main tajmingu uz harmony dokaz, inferencija neimenovanih aux treka; main se
+nikada ne menja, 0 trigera. Dokazi: `artifacts-max-4.57/`, guide
+`docs/studio-special-track-4.57.md`.
+
 ## 5.0 AI Session Musician — „zna kako svira i šta je gdje"
 Integracija svega u jedan prolaz:
 1. **Šta je gdje:** semantička mapa fajla (kanal → zvuk → uloga → registar → deo pesme).

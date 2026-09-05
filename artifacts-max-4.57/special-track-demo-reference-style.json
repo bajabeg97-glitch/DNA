@@ -1,0 +1,31 @@
+{
+  "schema": "dna-special-track-demo",
+  "version": "4.57",
+  "date": "2026-09-05",
+  "source": "baseline/reference-style.mid",
+  "sourceSha256": "899abe3ea95e442db3ac17c3a8e3bf0e64a7f200866386b9e32442a8b123632e",
+  "honesty": {
+    "mainPart": "real ch12 acc notes (evidence: comp role)",
+    "auxLayer": "SYNTHETIC echo copy (+240 ticks, vel x0.8, dur x0.8) created only to demonstrate the engine; not part of any protected file"
+  },
+  "mainNoteCount": 272,
+  "auxNoteCount": 272,
+  "changedAuxNotes": 139,
+  "mainUntouched": true,
+  "reports": [
+    {
+      "kind": "echo",
+      "mode": "REPAIR",
+      "channel": 12,
+      "trackName": "Echo Demo",
+      "trackIndex": 1,
+      "delayTicks": 210,
+      "delayRatio": 1.0,
+      "pitchMatch": 1.0,
+      "consistent": true
+    }
+  ],
+  "stats": {
+    "echo.notes.repaired": 272
+  }
+}
