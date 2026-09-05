@@ -1,0 +1,44 @@
+{
+ "schema": "dna-bats-manifest",
+ "milestone": "4.66",
+ "date": "2026-09-05",
+ "note": "Svi .bat su CRLF (Windows-safe) i cist ASCII (bez dijakritika - zastita od codepage problema); poruke su na engleskom namerno.",
+ "files": {
+  "start-bridge.bat": {
+   "sha256": "b3c222336abd40ba97de9884aa5d0dafcbdf54cc69d16a96d9629b5368a23dce",
+   "purpose": "pokrece bridge (AI Studio UI) na http://localhost:8123",
+   "bytes": 447,
+   "crlf": 16
+  },
+  "session-pass.bat": {
+   "sha256": "3662368dfc42047f2991c1ca3a366d82cb839efc63308c72bee99606959c6477",
+   "purpose": "Session Pass CLI: jedan MIDI kroz sve engine-e -> plan/primena",
+   "bytes": 819,
+   "crlf": 26
+  },
+  "run-tests.bat": {
+   "sha256": "752a44f5391ba7da2efe7d0b75cecc992f3273838da4094263021e6cd0bead8f",
+   "purpose": "puna test baterija: Python core lista + legacy MAX registry + npm",
+   "bytes": 1222,
+   "crlf": 44
+  },
+  "refresh-patterns.bat": {
+   "sha256": "ae77440e0afe97d587550ef545b6e7bd15f83c3baada1a1a4dbc4241bc9a0524",
+   "purpose": "regenerise artifacts-max-4.64 (dmp stats) i artifacts-max-4.65 (user bank)",
+   "bytes": 702,
+   "crlf": 29
+  },
+  "setup-windows.bat": {
+   "sha256": "c6877bbe8b8cc3cc1b4c4c74d4fef102b3fafad22c03686a3582d6d6cdd79e92",
+   "purpose": "jednokratna Windows priprema: numpy + node provera",
+   "bytes": 873,
+   "crlf": 30
+  },
+  ".gitattributes": {
+   "sha256": "65b1023623fb87849b0d7e7a39141bd9d2662d98dcd55fefc9e8bf1683d2d934",
+   "purpose": "*.bat text eol=crlf - garantuje CRLF na svakom checkout-u",
+   "bytes": 20,
+   "crlf": 0
+  }
+ }
+}

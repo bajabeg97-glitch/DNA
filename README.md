@@ -2,6 +2,14 @@
 
 Professional MIDI and style file optimizer designed for Korg PA800 and other keyboards. Analyze, repair, and export stage-ready performances with advanced music theory algorithms.
 
+> **Windows .bat 4.66:** prvi .bat fajlovi u repou — `start-bridge.bat`
+> (UI na http://localhost:8123), `session-pass.bat` (CLI wrapper sa `%*`),
+> `run-tests.bat` (puna baterija: python 145 + legacy 5 + npm 14),
+> `refresh-patterns.bat` (regeneracija 4.64/4.65 artefakata),
+> `setup-windows.bat` (numpy + node provere); `.gitattributes` pina
+> `*.bat` na CRLF; svi su čist ASCII (bez codepage rizika). Testovi: +12
+> (format, CRLF, reference, sinhronizacija lista). Vodič
+> `docs/windows-launchers-4.66.md`.
 > **User Reference Bank 4.65:** tvoje reference klasifikovane u isti 16-step
 > format kao preuzeti korpus — reference-style (22 takta/51 motiv/15 korpus
 > pogodaka), session35 (18/76/8), song19-01 (8/2/2); 6 bubnjarskih redova

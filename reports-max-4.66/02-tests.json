@@ -1,0 +1,46 @@
+{
+  "schema": "dna-test-run-report",
+  "milestone": "4.66",
+  "date": "2026-09-05",
+  "python": "python3.11",
+  "node": "v22.22.3",
+  "suites": [
+    {
+      "command": "python3.11 -m unittest test_arranger_pro_v449 test_studio_flow_v450 test_truth_engine_v451 test_mix_engine_v452 test_sty_mapper_v453 test_groove_engine_v454 test_instrument_techniques_v455 test_special_track_engine_v457 test_role_patterns_v459 test_session_pass_v460 test_session_pass_v462 test_mido_independent_v452 test_pattern_library_v464 test_user_reference_bank_v465 test_windows_bats_v466",
+      "result": "OK",
+      "tests": 145,
+      "skipped": 3,
+      "note": "133 pre-4.66 + 12 novih (windows .bat launcheri)"
+    },
+    {
+      "command": "python3.11 -m unittest test_max_registry_v448",
+      "result": "OK",
+      "tests": 5,
+      "note": "legacy MAX registry"
+    },
+    {
+      "command": "npm test (node --test tests/**/*.test.mjs)",
+      "result": "OK",
+      "tests": 14
+    }
+  ],
+  "newForMilestone": {
+    "test_windows_bats_v466": {
+      "tests": 12,
+      "covered": [
+        "svih 5 .bat launcher-a postoji",
+        ".gitattributes pina *.bat na CRLF",
+        "CRLF završeci + cist ASCII + @echo off (nema mojibake-a)",
+        "svaki launcher cd-uje na repo root preko %~dp0",
+        "nema tab karaktera",
+        "start-bridge.bat -> node dna_bridge.mjs + localhost:8123",
+        "session-pass.bat -> session_pass.py sa %* i --apply-actions/--roles uputstvom",
+        "run-tests.bat sadrzi celu kuriranu python listu + legacy + npm + ALL SUITES GREEN",
+        "lista u run-tests.bat sinhronizovana sa reports-max-4.66/02-tests.json",
+        "refresh-patterns.bat -> pattern_library + user_reference_bank moduli",
+        "setup-windows.bat -> pip install numpy + node provera",
+        "manifest (reports-max-4.66/01-bats-manifest.json) pokriva svaki .bat sa sha256"
+      ]
+    }
+  }
+}

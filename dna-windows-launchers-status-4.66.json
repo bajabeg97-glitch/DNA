@@ -1,0 +1,27 @@
+{
+  "schema": "dna-milestone-status",
+  "milestone": "4.66",
+  "status": "complete",
+  "date": "2026-09-05",
+  "phase": "Windows .bat launcheri za ceo tok (bridge, Session Pass CLI, test baterija, pattern refresh, setup)",
+  "summary": "Do 4.65 u repou nije postojao nijedan .bat fajl - sve se pokretalo bash komandama. Kreirano 5 Windows launcher-a + .gitattributes (*.bat text eol=crlf): start-bridge.bat (node dna_bridge.mjs -> http://localhost:8123), session-pass.bat (python dna_midi_studio\\session_pass.py %* sa uputstvom za --roles/--apply-safe/--apply-actions), run-tests.bat (puna baterija: kurirana python lista uklj. test_windows_bats_v466 + legacy MAX registry + npm test, sa [FAIL]/ALL SUITES GREEN pauzama), refresh-patterns.bat (pattern_library + user_reference_bank --json), setup-windows.bat (pip install numpy + node/python provere). Svi .bat su CRLF i cist ASCII (bez dijakritika - zastita od Windows codepage problema); poruke namerno engleski. Dokazi: reports-max-4.66/01-bats-manifest.json (sha256 svakog fajla), 02-tests.json, docs/windows-launchers-4.66.md. Testovi: +12 (prisustvo, CRLF+ASCII+@echo off, %~dp0, reference na stvarne fajlove, sinhronizacija liste sa izvestajem, manifest sha256); puna suita: python 145 (133+12, 3 skip) OK, legacy 5 OK, npm 14/14 OK.",
+  "deliverables": {
+    "start-bridge.bat": "pokrece bridge/UI na localhost:8123 (node dna_bridge.mjs)",
+    "session-pass.bat": "Session Pass CLI wrapper sa %* prosledjivanjem i uputstvom",
+    "run-tests.bat": "puna test baterija (python core + legacy + npm)",
+    "refresh-patterns.bat": "regeneracija artifacts-max-4.64 i artifacts-max-4.65",
+    "setup-windows.bat": "jednokratna Windows priprema (numpy + node/python provere)",
+    ".gitattributes": "*.bat text eol=crlf",
+    "test_windows_bats_v466.py": "12 testova",
+    "reports-max-4.66/01-bats-manifest.json": "sha256 + svrha + CRLF broj po fajlu",
+    "reports-max-4.66/02-tests.json": "test run report",
+    "docs/windows-launchers-4.66.md": "vodic za Windows korisnike",
+    "README.md": "bullet za 4.66"
+  },
+  "tests": {
+    "python": { "result": "OK", "tests": 145, "skipped": 3, "note": "133 + 12 (4.66)" },
+    "pythonLegacy": { "result": "OK", "tests": 5 },
+    "npm": { "result": "OK", "tests": 14 }
+  },
+  "note": ".bat fajlovi se ne mogu izvrsiti u Linux sandbox-u; verifikacija je staticka (format, CRLF, ASCII, reference na postojece fajlove/komande, sinhronizacija lista) - izvrsenje na Windowsu je na korisniku, po istoj logici kao sto se i python/node komande pozivaju."
+}
