@@ -1,0 +1,186 @@
+{
+  "schema": "dna-midi-generation-plan",
+  "version": "4.69",
+  "date": "2026-09-06",
+  "status": "agreed-plan",
+  "scope": {
+    "generation": "full-from-scratch",
+    "reconstruction": true,
+    "compute": "local-cpu-no-keys",
+    "input": [
+      "midi-sketch",
+      "text-description"
+    ],
+    "output": "linear-song-smf-pa800-compatible",
+    "experience": "suno-like-loop"
+  },
+  "sessionCount": {
+    "planning": 1,
+    "work": 8,
+    "optional": [
+      "pa800-device-validation",
+      "cloud-llm-upgrade"
+    ]
+  },
+  "hardware": {
+    "cpus": 2,
+    "ramGb": 4,
+    "python": "3.11+numpy",
+    "node": 22
+  },
+  "constraints": [
+    "no-api-keys",
+    "uploads-never-modified",
+    "outputs-always-new-artifacts",
+    "model-never-mutates-status",
+    "no-unverified-program/cc/bank/dnc/slap/pop/keyswitch-triggers",
+    "permissive-licenses-only-with-attribution",
+    "sr-bs-language",
+    "deterministic-verifiable-with-tests+json-artifacts"
+  ],
+  "sessions": [
+    {
+      "id": "S1",
+      "milestone": "4.69",
+      "title": "Korpus + tokenski jezik + Pa800 validator",
+      "goal": "score language, tokenizer v1 (vocab<=1024), roundtrip test, pa800_validator, korpus sa manifestom (originKind+sha256+licenca)",
+      "acceptance": [
+        "roundtrip tokeni->dogadjaji identican",
+        "midi->tokeni->midi ~= fajl",
+        "100% korpusa prolazi pa800_validator",
+        ">=300 kompletnih aranzmana / >=2000 song-momenata",
+        "corpus-stats-4.69.json + testovi + commit"
+      ],
+      "gate": "D1"
+    },
+    {
+      "id": "S2",
+      "milestone": "4.70",
+      "title": "Deterministički kompozitor, prvi slušljiv rezultat",
+      "goal": "strukturna gramatika pesme, uloge iz pattern evidencije, humanizacija 4.54, CC11 4.52, SMF0 + scorecard, 10 templejta x seed",
+      "acceptance": [
+        "30 generisanih pesama",
+        "validator 100%",
+        "scorecard sa izvorima za svaku pesmu",
+        "regresija zelena",
+        "korisnik slusa probe"
+      ],
+      "gate": "D2a"
+    },
+    {
+      "id": "S3",
+      "milestone": "4.71",
+      "title": "Statistički + mikro-neuro sloj",
+      "goal": "n-gram/Markov + mikro-GPT (numpy, <=2M param, ctx<=1024), hibridna petlja kroz validator",
+      "acceptance": [
+        "validnost 100% kroz kapiju",
+        "raznovrsnost metrika",
+        "loss krive + checkpoint",
+        "slepi A/B korisnika (5 parova)"
+      ],
+      "gate": "D2"
+    },
+    {
+      "id": "S4",
+      "milestone": "4.72",
+      "title": "Rekonstrukcija, Suno-like jezgro",
+      "goal": "kept trekovi se ne diraju, popunjavanje uloga/sekcija, produzetak na celu strukturu, sinteticki parovi za trening",
+      "acceptance": [
+        "5 zlatnih ulaza (1 pravi Pa800 izvoz)",
+        "fidelity 100% na kept trekovima",
+        "zadrzanost melodije/harmonije metrika",
+        "izlazi validni + scorecard",
+        "korisnik slusa i daje fidbek"
+      ],
+      "gate": "D3"
+    },
+    {
+      "id": "S5",
+      "milestone": "4.73",
+      "title": "Tekst kontrola + UI",
+      "goal": "text_to_condition (sr/bs/en), BrainV1 intenti generisi/rekonstruisi/produzi, POST /api/generate, UI panel, analiziraj generisano",
+      "acceptance": [
+        "zlatni tekst->parametri testovi",
+        "e2e node test generisanja",
+        "tok generisi->analiziraj->primeni radi",
+        "korisnik proba u live preview"
+      ],
+      "gate": "D3b"
+    },
+    {
+      "id": "S6",
+      "milestone": "4.74",
+      "title": "Nadogradnja modela podacima korisnika",
+      "goal": "korisnikovi Pa800 stilovi (opt-in), curriculum, duzi trening ako CPU dozvoli, A/B pre/posle",
+      "acceptance": [
+        "A/B poboljsanje po rubrici",
+        "kompletna regresija",
+        "manifest korisnickog korpusa"
+      ],
+      "gate": "D4"
+    },
+    {
+      "id": "S7",
+      "milestone": "4.75",
+      "title": "Kvalitet, rubni slučajevi, isporuka",
+      "goal": "gustina/masking, CC11 krive, zavrsci, reproduktibilnost seed-a, performanse <30s, windows launcheri, srpski UI, kompletna regresija",
+      "acceptance": [
+        "stres set: 50 generacija + 20 rekonstrukcija bez gresaka",
+        "generisanje tipicno < 30 s na CPU",
+        "sve test suite zelene"
+      ],
+      "gate": null
+    },
+    {
+      "id": "S8",
+      "milestone": "4.76",
+      "title": "Završna evaluacija + zlatni set + paket",
+      "goal": "golden eval (30 generacija + 20 rekonstrukcija), metrike JSON, rubrika slusanja na Pa800, docs, cloud/GPU upgrade opcija dokumentovana",
+      "acceptance": [
+        "golden eval asserti prolaze",
+        "demo u preview",
+        "uporedba sa ciljem + ogranicenja ispisana"
+      ],
+      "gate": null
+    }
+  ],
+  "gates": [
+    {
+      "id": "D1",
+      "at": "kraj S1",
+      "decision": "korpus+validator dovoljno dobri -> S2"
+    },
+    {
+      "id": "D2a",
+      "at": "prva polovina S2",
+      "decision": "kvalitet deterministicke baze -> vredi li neuro sloj"
+    },
+    {
+      "id": "D2",
+      "at": "kraj S3",
+      "decision": "neuro vredi -> S4; inace statisticki+deterministicki je v1"
+    },
+    {
+      "id": "D3",
+      "at": "kraj S4",
+      "decision": "rekonstrukcija korisna -> S6 fokus na korpus"
+    },
+    {
+      "id": "D3b",
+      "at": "kraj S5",
+      "decision": "tok generisi->analiziraj->primeni radi od kraja do kraja"
+    },
+    {
+      "id": "D4",
+      "at": "kraj S6",
+      "decision": "korisnikov korpus pomaze -> S7"
+    }
+  ],
+  "riskNotes": [
+    "cpu trening spor: mikro-GPT <=2M param; fallback statisticki (D2)",
+    "korpus mali vs suno skala -> kvalitet raste sa korisnikovim stilovima (S6)",
+    "rizik jednolikog zvuka -> metrika raznovrsnosti + A/B",
+    "nema audio previewa -> slusanje na Pa800 ili MIDI playeru",
+    "overfit na fabrickе pattern-e -> evaluacija stratifikovana po originKind"
+  ]
+}
