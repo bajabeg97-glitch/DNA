@@ -1,0 +1,131 @@
+{
+  "schema": "dna-max-orchestration-status",
+  "version": "1.0",
+  "reviewVersion": "4.47",
+  "reviewedAt": "2026-09-05",
+  "status": "ARCHIVED",
+  "statusReason": "MAX orchestration and the neural candidate line (event decoder -> autoregressive -> multibar -> phrase/section/transition -> MAX ranking -> track replacement, phases 4.16-4.35) are superseded by the evidence-only production architecture (4.36-4.47). unified_pipeline.py executes REPAIR/REPLACE/AUGMENT exclusively through evidence-registry planners and escalates to MANUAL_REVIEW when evidence is insufficient; it never regenerates with neural candidates.",
+  "decision": {
+    "option": "B-archive",
+    "chosenBy": "user approval (efikasnije per recommendation)",
+    "codeUntouched": true,
+    "reversible": true,
+    "reEnableRequires": [
+      "restore data/, models/, learning_data/, artifacts/ layout (original workspace)",
+      "wire TrackReplacementEngine into a REPLACE executor",
+      "revalidate against 4.47 guarantees + refresh final-software-completion"
+    ]
+  },
+  "successors": [
+    "dna_midi_studio/role_aware_repair.py (4.42) - decide REPAIR/REPLACE/AUGMENT/MANUAL_REVIEW from evidence",
+    "dna_midi_studio/song_reconstruction_planner.py (4.43) - global repair budget, escalate not regenerate",
+    "dna_midi_studio/structural_recovery.py (4.45) - prepare_for_musical_reconstruction",
+    "dna_midi_studio/overlap_recovery.py (4.46)",
+    "dna_midi_studio/role_disambiguation.py (4.47)",
+    "dna_midi_studio/unified_pipeline.py - production flow, APPLY_EXISTING_EVIDENCE_PLAN"
+  ],
+  "principlesCarriedForward": [
+    "velocity authority FACTORY_ONLY (no GOLD/neural velocity)",
+    "hard symbolic checks before any application",
+    "ranking is never validation; final PA800 validator mandatory",
+    "original (protected) material outside the target region is never touched"
+  ],
+  "registry": {
+    "present": 10,
+    "missing": 0,
+    "models": [
+      {
+        "key": "pattern_reconstructor",
+        "present": true,
+        "path": "dna-reconstructor-v2/dna_reconstruction_model_v2.npz",
+        "sha256": "20a3441fd574b0605f80d88d2468cad0a1dcd9bb16aa8cfa08a1dedb63fc7e0b",
+        "bytes": 185721,
+        "sameFileAsStatus432": true,
+        "status432Path": "models/dna-reconstructor-v2/dna_reconstruction_model_v2.npz"
+      },
+      {
+        "key": "song_context",
+        "present": true,
+        "path": "ai_song_context/model/song_context_model_v1.pt",
+        "sha256": "30cd865d0e4130d73410ec48d0d6d86c2c1fa365c3eacb41e53cce2381df4019",
+        "bytes": 41440,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_song_context/model/song_context_model_v1.pt"
+      },
+      {
+        "key": "event_v1",
+        "present": true,
+        "path": "ai_event_decoder/event_decoder_model_v1.npz",
+        "sha256": "0b4c8eca161beba196b7d198e86ae521c59db95080a67f63598d384d6f22fcef",
+        "bytes": 201339,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_event_decoder/event_decoder_model_v1.npz"
+      },
+      {
+        "key": "event_ar_v2",
+        "present": true,
+        "path": "ai_autoregressive_event/autoregressive_event_model_v2.npz",
+        "sha256": "6dcb96aa664209c664c72d78dd18dcd9a6cc21c51879c70bda91c8fcab1d2052",
+        "bytes": 288017,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_autoregressive_event/autoregressive_event_model_v2.npz"
+      },
+      {
+        "key": "phrase_planner",
+        "present": true,
+        "path": "ai_phrase_context/phrase_planner_model_v1.npz",
+        "sha256": "e17c7170da4969e34f91ce098a2fc314f9bc82324f798585fdf007bef8c09bca",
+        "bytes": 102116,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_phrase_context/phrase_planner_model_v1.npz"
+      },
+      {
+        "key": "multibar_v3",
+        "present": true,
+        "path": "ai_multibar_event/multibar_event_model_v3.npz",
+        "sha256": "a94fc9dc7e4497591241220a6a543c87820d45db397589f7b154a90d0bc3756e",
+        "bytes": 202905,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_multibar_event/multibar_event_model_v3.npz"
+      },
+      {
+        "key": "section_arranger",
+        "present": true,
+        "path": "ai_section_context/section_arranger_model_v1.npz",
+        "sha256": "95344a364bf88aa03d523c3c8999282e6ce6a39c657a0e50383f5c01c9277ffb",
+        "bytes": 77300,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_section_context/section_arranger_model_v1.npz"
+      },
+      {
+        "key": "transition_fill",
+        "present": true,
+        "path": "ai_transition_fill/transition_fill_model_v1.npz",
+        "sha256": "d0c44c5d688dbe2086f4c6243f1c7d515a92fe41665b427ba8c999c2ad77d4c5",
+        "bytes": 59477,
+        "sameFileAsStatus432": true,
+        "status432Path": "data/ai_transition_fill/transition_fill_model_v1.npz"
+      },
+      {
+        "key": "relationship_ranker",
+        "present": true,
+        "path": "relationship-transformer-v1/relationship_transformer_v1.npz",
+        "sha256": "2c3cba82f650616004d7f7f63ee04bfb4ed3398cdb438cdc3cab05e10c9a262c",
+        "bytes": 332454,
+        "sameFileAsStatus432": true,
+        "status432Path": "models/relationship-transformer-v1/relationship_transformer_v1.npz"
+      },
+      {
+        "key": "relationship_sequence",
+        "present": true,
+        "path": "relationship-sequence-v2/relationship_sequence_transformer_v2.npz",
+        "sha256": "ab99c0e3045818bd45cbb99258c801c8ce5a67063eed26a494ded135b8906842",
+        "bytes": 73052,
+        "sameFileAsStatus432": true,
+        "status432Path": "models/relationship-sequence-v2/relationship_sequence_transformer_v2.npz"
+      }
+    ]
+  },
+  "layoutCaveat": "Original status 4.32 and MaxModelRegistry expect data/, models/, learning_data/, artifacts/ dirs; this repository is a flattened export where those files live at repo root. Registry.scan() on this tree reports 0/10 present although all 10 files exist (see paths above).",
+  "reviewReport": "max-orchestration-review-4.47.md"
+}

@@ -68,8 +68,25 @@ Ako je namjera da MAX **ne** bude dio finalne verzije (jer su ga zamijenili hard
 
 ---
 
-## 4. Šta je urađeno u ovom prolazu
+## 4. Odluka (implementirano 2026-09-05)
+
+**Izabrana opcija B — MAX zvanično arhiviran (kod netaknut, reverzibilno).**
+
+Obrazloženje efikasnosti (na osnovu uvida u finalni tok):
+
+1. **Finalni `unified_pipeline.py` već ima sopstveni izvršni put zamene** — REPAIR/REPLACE/AUGMENT se izvršavaju isključivo kroz evidencijske planere (`drum`, `harmonic`, `guitar`, `solo`, `dnc` → `APPLY_EXISTING_EVIDENCE_PLAN`); kada evidencija nije dovoljna, odluka je `MANUAL_REVIEW` — **nikad neuralna regeneracija**. To je namjerni smjer razvoja 4.36–4.47 („nemoj izmišljati — eskaliraj"), uz `CoreInvariantGuard` koji poništava primjenu ako invarijante padnu.
+2. **Uključiti MAX = preoblikovati gotov i verifikovan sistem**: prvo bi se morao vratiti pravi layout (`data/`, `models/`, `learning_data/`, `artifacts/`) ili prepraviti sve putanje, zatim spojiti `TrackReplacementEngine` u produkcijski tok i ponovo proći kroz sve garancije 4.47 — veliki trošak koji protivrječi `final-software-completion-4.46.json`.
+3. **Arhiviranje je jeftino i bezbjedno**: ništa se ne briše, modul i testovi ostaju kao referenca, a izvještaji prestaju da se protivrječe.
+
+Dokument odluke: **`max-orchestration-status-4.47.json`** (`"status": "ARCHIVED"`, sa listom nasljednika i stvarnim putanjama + SHA-256 svih 10 modela — svi identični onima iz statusa 4.32, tj. isti fajlovi, drugačiji layout).
+
+Ako se ikad zatraži „creative mode" (neuralna generacija uz eksplicitni pristanak korisnika), kod je netaknut i u status fajlu je zapisano šta re-aktivacija zahtijeva.
+
+---
+
+## 5. Šta je urađeno u ovom prolazu
 
 - `git fetch origin main` + merge u radni workspace (`f06a57f`, „Preuzmi…") — kompletan projekat DNA MIDI Studio Pa800 4.47 je sada lokalno dostupan uz web aplikaciju (README i .gitignore spojeni).
 - Pokrenuta provera `MaxModelRegistry.scan()` → **0/10 modela prisutno** (dokaz nalaza 2.1).
 - Ovaj izvještaj.
+- Odluka B + `max-orchestration-status-4.47.json` (status: ARCHIVED).
